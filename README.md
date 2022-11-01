@@ -154,22 +154,10 @@ npm run start
 </details>
 
 <details>
-  <summary>5. sample</summary>
+  <summary>5. Install all dependencies from Package.json</summary>
 
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
+```bash
+npm install
 ```
 
 </details>
