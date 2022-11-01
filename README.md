@@ -10,14 +10,18 @@ Learn React by Ifeanyi Omeata
 +INTRODUCTION
 
 <details>
-  <summary>1. sample</summary>
+  <summary>1. Introduction</summary>
 
-```Javascript
+Check Node Version
 
+```bash
+node -v
 ```
 
-```Javascript
+Create React App
 
+```bash
+npx create-react-app dojo-blog
 ```
 
 ```Javascript
