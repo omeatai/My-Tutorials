@@ -10,47 +10,19 @@ Learn React by Ifeanyi Omeata
 +INTRODUCTION
 
 <details>
-  <summary>1. Introduction</summary>
-
-Check Node Version
+  <summary>1. Check Node Version</summary>
 
 ```bash
 node -v
 ```
 
-Create React App
-
-```bash
-npx create-react-app dojo-blog
-```
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
 </details>
 
 <details>
-  <summary>2. sample</summary>
+  <summary>2. Create React App</summary>
 
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
+```bash
+npx create-react-app dojo-blog
 ```
 
 </details>
