@@ -163,10 +163,24 @@ npm install
 </details>
 
 <details>
-  <summary>6. sample</summary>
+  <summary>6. App Component</summary>
+
+App.js:
 
 ```Javascript
+import './App.css';
 
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>App Component</h1>
+      </header>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ```Javascript
