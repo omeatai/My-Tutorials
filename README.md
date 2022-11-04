@@ -171,22 +171,6 @@ App.js:
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>App Component</h1>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-```
-
-```Javascript
-import './App.css';
-
-function App() {
   const title = 'Welcome to the new blog';
   const likes = 50;
   const person = { name: 'yoshi' , age: 30 };
