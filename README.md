@@ -265,21 +265,84 @@ export default Home;
 </details>
 
 <details>
-  <summary>8. sample</summary>
+  <summary>8. Global Styling from Index</summary>
+
+Index.js:
 
 ```Javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 ```
 
-```Javascript
+App.js:
 
+```Javascript
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+
+function App() {
+
+  return (
+    <div className="App">
+      <Navbar />
+      <header className="content">
+        <Home />
+      </header>
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```Javascript
+Index.css:
 
-```
+```CSS
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-```Javascript
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
 ```
 
