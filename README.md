@@ -184,7 +184,26 @@ export default App;
 ```
 
 ```Javascript
+import './App.css';
 
+function App() {
+  const title = 'Welcome to the new blog';
+  const likes = 50;
+  const person = { name: 'yoshi' , age: 30 };
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>App Component</h1>
+        <h2>{ title}</h2>
+        <p>Liked { likes } times</p>
+        <p>{ person.name }</p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ```Javascript
