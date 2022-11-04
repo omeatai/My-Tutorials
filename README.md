@@ -200,22 +200,66 @@ export default App;
 </details>
 
 <details>
-  <summary>7. sample</summary>
+  <summary>7. Importing Multiple Components</summary>
+
+App.js:
 
 ```Javascript
+import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
+function App() {
+
+  return (
+    <div className="App">
+      <Navbar />
+      <header className="content">
+        <Home />
+      </header>
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```Javascript
+Navbar.js:
 
+```Javascript
+const Navbar = () => {
+    return (
+        <nav className="navbar">
+            <h1>The Dojo Blog</h1>
+            <div className="links">
+                <a href="/">Home</a>
+                <a href="/create" style={{
+                    color: "white",
+                    backgroundColor: "#f1356d",
+                    borderRadius: "8px",
+                    padding: "5px",
+                    textDecoration: "none"
+                }}>New Blog</a>
+            </div>
+        </nav>
+    );
+}
+
+export default Navbar;
 ```
 
-```Javascript
-
-```
+Home.js:
 
 ```Javascript
+const Home = ()=> {
+    return (
+        <div className="home">
+            <h2>This is the Homepage</h2>
+        </div>
+    );
+}
 
+export default Home;
 ```
 
 </details>
