@@ -349,7 +349,7 @@ Index.css:
 </details>
 
 <details>
-  <summary>9. sample</summary>
+  <summary>9. Click Events</summary>
 
 ```Javascript
 
