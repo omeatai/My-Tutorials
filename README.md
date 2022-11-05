@@ -351,8 +351,24 @@ Index.css:
 <details>
   <summary>9. Click Events</summary>
 
-```Javascript
+Home.js:
 
+```Javascript
+const Home = ()=> {
+
+    const handleClick = (e) => {
+        console.log('hello, ninjas', e.target);
+    }
+
+    return (
+        <div className="home">
+            <h2>This is the Homepage</h2>
+            <button onClick={handleClick}>Click me</button>
+        </div>
+    );
+}
+
+export default Home;
 ```
 
 ```Javascript
