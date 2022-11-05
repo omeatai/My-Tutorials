@@ -495,6 +495,7 @@ export default Home;
 Index.css:
 
 ```css
+
 /* blog previews / list */
 .blog-preview {
   padding: 10px 16px;
