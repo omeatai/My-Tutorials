@@ -567,22 +567,28 @@ export default BlogList;
 </details>
 
 <details>
-  <summary>13. sample</summary>
+  <summary>13. Filtering Props</summary>
+
+Home.js:
 
 ```Javascript
+import {useState} from 'react';
+import BlogList from './BlogList';
 
-```
+const Home = () => {
 
-```Javascript
+    const [blogs, setBlogs] = useState([
+        {title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1},
+        {title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2},
+        {title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3}
+    ]);
 
-```
+    return (
+        <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title="All Blogs!" />
+    );
+}
 
-```Javascript
-
-```
-
-```Javascript
-
+export default Home;
 ```
 
 </details>
