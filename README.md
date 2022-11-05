@@ -372,11 +372,36 @@ export default Home;
 ```
 
 ```Javascript
-
+// hello, ninjas <button>Click me Again</button>
 ```
 
 ```Javascript
+const Home = ()=> {
 
+    const handleClick = (e) => {
+        console.log('hello, ninjas', e.target);
+    }
+
+    const handleClickAgain = (e, name) => {
+        console.log('hello ' + name);
+        console.log(e.target);
+    }
+
+    return (
+        <div className="home">
+            <h2>This is the Homepage</h2>
+            <button onClick={handleClick}>Click me</button>
+            <button onClick={(e)=>handleClickAgain(e, 'Ben')}>Click me Again</button>
+        </div>
+    );
+}
+
+export default Home;
+```
+
+```Javascript
+// hello Ben
+// <button>Click me Again</button>
 ```
 
 ```Javascript
