@@ -409,6 +409,8 @@ export default Home;
 <details>
   <summary>10. Using State</summary>
 
+Home.js:
+
 ```Javascript
 import {useState} from 'react';
 
@@ -433,15 +435,28 @@ export default Home;
 ```
 
 ```Javascript
+import {useState} from 'react';
 
-```
+const Home = () => {
 
-```Javascript
+    const [name, setName] = useState('Andrew');
+    const [age, setAge] = useState(25);
 
-```
+    const handleClick = (e) => {
+        setName('Mike');
+        setAge(30);
+    }
 
-```Javascript
+    return (
+        <div className="home">
+            <h2>This is the Homepage</h2>
+            <p>{ name } is { age } years old</p>
+            <button onClick={handleClick}>Click me</button>
+        </div>
+    );
+}
 
+export default Home;
 ```
 
 </details>
