@@ -483,7 +483,6 @@ const Home = () => {
                 <div className="blog-preview" key={blog.id}>
                     <h2>{ blog.title }</h2>
                     <p>Written by { blog.author }</p>
-                    <br />
                 </div>
             ))}
         </div>
@@ -493,14 +492,29 @@ const Home = () => {
 export default Home;
 ```
 
+Index.css:
+
+```css
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+```
+
 </details>
 
 <details>
   <summary>12. sample</summary>
-
-```Javascript
-
-```
 
 ```Javascript
 
