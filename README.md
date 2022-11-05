@@ -407,10 +407,29 @@ export default Home;
 </details>
 
 <details>
-  <summary>10. sample</summary>
+  <summary>10. Using State</summary>
 
 ```Javascript
+import {useState} from 'react';
 
+const Home = () => {
+
+    const [name, setName] = useState('Andrew');
+
+    const handleClick = (e) => {
+        setName(e.target.value);
+    }
+
+    return (
+        <div className="home">
+            <h2>This is the Homepage</h2>
+            <p>{name}</p>
+            <button value='Mike' onClick={handleClick}>Click me</button>
+        </div>
+    );
+}
+
+export default Home;
 ```
 
 ```Javascript
