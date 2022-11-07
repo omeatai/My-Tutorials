@@ -694,28 +694,146 @@ export default Home;
 </details>
 
 <details>
-  <summary>16. sample</summary>
+  <summary>16. JSON Server - Setup Files</summary>
 
-```Javascript
+index.html:
 
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
+
+  <nav>
+    <h1>All Blogs</h1>
+    <a href="/create.html">Add a new blog</a>
+  </nav>
+
+  <div class="blogs">
+    <!-- inject blogs here from js -->
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
 ```
 
-```Javascript
+create.html:
 
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
+
+  <h1>Create a New Blog</h1>
+
+  <form>
+    <input type="text" name="title" required placeholder="Blog title">
+    <textarea name="body" required placeholder="Blog body"></textarea>
+    <button>Create</button>
+  </form>
+
+  <script src="js/create.js"></script>
+</body>
+</html>
 ```
 
-```Javascript
+details.html:
 
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
+
+  <div class="details">
+    <!-- inject blog details here -->
+  </div>
+
+  <script src="js/details.js"></script>
+</body>
+</html>
 ```
 
-```Javascript
+styles.css:
 
+```css
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* base styles */
+body {
+  background: #eee;
+  font-family: 'Roboto';
+  color: #444;
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav h1 {
+  margin: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  background: #36cca2;
+  padding: 10px;
+  border-radius: 10px;
+}
+form {
+  max-width: 500px;
+}
+input, textarea {
+  display: block;
+  margin: 16px 0;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-family: 'Roboto';
+}
+textarea {
+  min-height:200px;
+}
+```
+
+js/index.js
+
+```Javascript
+// javascript for index.html
+```
+
+js/create.js:
+
+```Javascript
+// javascript for create.html
+```
+
+js/details.js:
+
+```Javascript
+// javascript for details.html
 ```
 
 </details>
 
 <details>
-  <summary>17. sample</summary>
+  <summary>17. JSON Server - </summary>
 
 ```Javascript
 
