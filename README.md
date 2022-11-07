@@ -652,7 +652,7 @@ export default BlogList;
 </details>
 
 <details>
-  <summary>15. sample</summary>
+  <summary>15. UseEffect</summary>
 
 ```Javascript
 
