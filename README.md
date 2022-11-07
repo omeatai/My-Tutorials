@@ -652,26 +652,43 @@ export default BlogList;
 </details>
 
 <details>
-  <summary>15. UseEffect</summary>
+  <summary>15. UseEffect Dependency</summary>
+
+Home.js:
 
 ```Javascript
+import { useEffect, useState } from "react";
+import BlogList from "./BlogList";
 
-```
+const Home = () => {
+    const [blogs, setBlogs] = useState([
+        { title: "My new website", body: "lorem ipsum...", author: "mario", id: 1 },
+        { title: "Welcome party!", body: "lorem ipsum...", author: "yoshi", id: 2 },
+        { title: "Web dev top tips", body: "lorem ipsum...", author: "mario", id: 3},
+    ]);
 
-```Javascript
+    const [name, setName] = useState('mario');
 
-```
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter((blog) => blog.id !== id);
+        setBlogs(newBlogs);
+    };
 
-```Javascript
+    useEffect(() => {
+        console.log("use effect ran");
+        console.log(name);
+    },[name]);
 
-```
+    return (
+        <div className="home">
+            <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
+            <button onClick={() => setName('luigi')}>change name</button>
+            <p>{ name }</p>
+        </div>
+    );
+};
 
-```Javascript
-
-```
-
-```Javascript
-
+export default Home;
 ```
 
 </details>
