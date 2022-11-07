@@ -833,10 +833,21 @@ js/details.js:
 </details>
 
 <details>
-  <summary>17. JSON Server - </summary>
+  <summary>17. JSON Server - Install</summary>
 
-```Javascript
+```bash
+# Install JSON Server Globally
+npm install -g json-server
 
+# #Install JSON Server Locally
+npm install json-server
+
+# Check JSON Server version
+json-server --version
+
+# Run JSON server
+json-server --watch db.json
+json-server --watch db.json --port 3004
 ```
 
 ```Javascript
