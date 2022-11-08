@@ -908,14 +908,29 @@ json-server --watch data/db.json
 json-server --watch data/db.json --port 3004
 ```
 
+```javascript
+// \{^_^}/ hi!
+
+//   Loading data/db.json
+//   Done
+
+//   Resources
+//   http://localhost:3000/posts
+//   http://localhost:3000/polls
+
+//   Home
+//   http://localhost:3000
+
+//   Type s + enter at any time to create a snapshot of the database
+//   Watching...
+```
+
 </details>
 
 <details>
   <summary>20. sample</summary>
 
-```Javascript
 
-```
 
 ```Javascript
 
