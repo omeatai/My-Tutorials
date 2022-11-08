@@ -833,7 +833,7 @@ js/details.js:
 </details>
 
 <details>
-  <summary>17. JSON Server - Install</summary>
+  <summary>17. JSON Server - Install Server</summary>
 
 ```bash
 # Install JSON Server Globally
@@ -850,58 +850,60 @@ json-server --watch db.json
 json-server --watch db.json --port 3004
 ```
 
-```Javascript
+</details>
 
-```
+<details>
+  <summary>18. JSON Server - Create a Database</summary>
 
-```Javascript
+data/db.json:
 
-```
-
-```Javascript
+```Json
+{
+  "posts": [
+    {
+      "id": 1,
+      "likes": 30,
+      "title": "Welcome to the new blog",
+      "body": "Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+    },
+    {
+      "id": 2,
+      "likes": 15,
+      "title": "How to be a Net Ninja",
+      "body": "Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+    },
+    {
+      "title": "New Vue course coming soon!",
+      "body": "Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "likes": 20,
+      "id": 3
+    },
+    {
+      "title": "Mario Kart Live review",
+      "body": "Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "likes": 69,
+      "id": 4
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "question": "Do you prefer Vue or React?",
+      "answerA": "Vue",
+      "answerB": "React"
+    }
+  ]
+}
 
 ```
 
 </details>
 
 <details>
-  <summary>18. sample</summary>
+  <summary>19. JSON Server - Watch Database</summary>
 
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-</details>
-
-<details>
-  <summary>19. sample</summary>
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
+```bash
+json-server --watch data/db.json
 ```
 
 </details>
