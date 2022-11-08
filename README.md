@@ -1258,7 +1258,7 @@ window.addEventListener('DOMContentLoaded', renderDetails);
 </details>
 
 <details>
-  <summary>26. JSON Server - Search for Posts</summary>
+  <summary>26. JSON Server - Search for Posts Keywords</summary>
 
 index.html:
 
