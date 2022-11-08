@@ -1391,11 +1391,6 @@ import BlogList from "./BlogList";
 const Home = () => {
     const [blogs, setBlogs] = useState(null)
 
-    const handleDelete = (id) => {
-        const newBlogs = blogs.filter((blog) => blog.id !== id);
-        setBlogs(newBlogs);
-        };
-
     useEffect(() => {
         fetch('http://localhost:8000/blogs')
         .then(res => {
@@ -1408,13 +1403,36 @@ const Home = () => {
 
     return (
         <div className="home">
-        {blogs && <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />}
+        {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
         </div>
     );
 }
 
 export default Home;
 
+```
+
+BlogList.js:
+
+```javascript
+import React from 'react';
+
+const BlogList = ({blogs, title}) => {
+
+    return (
+        <div className="blog-list">
+            <h2>{ title }</h2>
+            {blogs.map((blog) => (
+                <div className="blog-preview" key={blog.id}>
+                    <h2>{ blog.title }</h2>
+                    <p>Written by { blog.author }</p>
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export default BlogList;
 ```
 
 </details>
