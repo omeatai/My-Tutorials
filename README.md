@@ -928,7 +928,7 @@ json-server --watch data/db.json --port 3004
 </details>
 
 <details>
-  <summary>20. JSON Server - Fetch Data</summary>
+  <summary>20. JSON Server - Fetch All Data</summary>
 
 Index.html:
 
