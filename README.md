@@ -1596,20 +1596,41 @@ export default useFetch;
 
 
 <details>
-  <summary>32. sample</summary>
+  <summary>32. Using React Router for Routes</summary>
 
+Install React Router:
 
-
-```Javascript
-
+```bash
+npm install react-router-dom@5
 ```
 
+Import BrowserRouter:
+
+App.js:
+
 ```Javascript
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-```
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  );
+}
 
-```Javascript
-
+export default App;
 ```
 
 </details>
