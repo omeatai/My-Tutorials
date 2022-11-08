@@ -1193,7 +1193,7 @@ form.addEventListener('submit', createPost);
 </details>
 
 <details>
-  <summary>25. JSON Server - Add</summary>
+  <summary>25. JSON Server - Delete Post from DB</summary>
 
 
 
