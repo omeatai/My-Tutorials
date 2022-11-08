@@ -1014,15 +1014,50 @@ styles.css:
 <details>
   <summary>21. JSON Server - Fetch Single Post </summary>
 
-```Javascript
+details.html:
 
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
+
+  <div class="details">
+    <!-- inject blog details here -->
+  </div>
+
+  <script src="js/details.js"></script>
+</body>
+</html>
 ```
 
-```Javascript
+js/details.js:
 
-```
+```javascript
+// javascript for details.html
+const id = new URLSearchParams(window.location.search).get('id');
+const container = document.querySelector('.details');
 
-```Javascript
+const renderDetails = async () => {
+  const res = await fetch('http://localhost:3000/posts/' + id);
+  if (!res.ok) {
+    window.location.replace("/");
+  }
+  const post = await res.json();
+
+  const template = `
+    <h1>${post.title}</h1>
+    <p>${post.body}</p>
+  `
+
+  container.innerHTML = template;
+}
+
+window.addEventListener('DOMContentLoaded', renderDetails);
 
 ```
 
