@@ -1789,20 +1789,92 @@ root.render(
 
 
 <details>
-  <summary>36. sample</summary>
+  <summary>36. Using Route Parameters for Blog Details Page</summary>
 
-
+BlogDetails.js:
 
 ```Javascript
+import { useParams } from "react-router-dom";
+
+const BlogDetails = () => {
+  const { id } = useParams();
+
+  return (
+    <div className="blog-details">
+      <h2>Blog details - { id }</h2>
+    </div>
+  );
+}
+
+export default BlogDetails;
 
 ```
 
+App.js:
+
 ```Javascript
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './components/Create';
+import BlogDetails from './components/BlogDetails';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
 
 ```
 
-```Javascript
+BlogList.js:
 
+```Javascript
+import { Link } from 'react-router-dom';
+
+const BlogList = ({ blogs }) => {
+    return (
+        <div className="blog-list">
+        {blogs.map(blog => (
+            <div className="blog-preview" key={blog.id} >
+            <Link to={`/blogs/${blog.id}`}>
+                <h2>{ blog.title }</h2>
+                <p>Written by { blog.author }</p>
+            </Link>
+            </div>
+        ))}
+        </div>
+    );
+}
+
+export default BlogList;
+```
+
+Index.css:
+
+```CSS
+.blog-preview a{
+  text-decoration: none;
+}
 ```
 
 </details>
