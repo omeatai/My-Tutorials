@@ -1069,7 +1069,7 @@ window.addEventListener('DOMContentLoaded', renderDetails);
 </details>
 
 <details>
-  <summary>22. Window location</summary>
+  <summary>22. JSON Server - Window location</summary>
 
 ```javascript
 // window.location.href returns the href (URL) of the current page
@@ -1088,18 +1088,43 @@ const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
 </details>
 
 <details>
-  <summary>23. sample</summary>
+  <summary>23. JSON Server - Sorting Posts</summary>
 
 ```Javascript
-
+let uri = 'http://localhost:3000/posts?_sort=likes&_order=desc';
 ```
 
-```Javascript
-
-```
+Index.js:
 
 ```Javascript
+// javascript for index.html
+const container = document.querySelector('.blogs');
+const pathname = window.location.pathname;
+const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
 
+const renderPosts = async () => {
+  let uri = 'http://localhost:3000/posts?_sort=likes&_order=desc';
+
+  const res = await fetch(uri);
+  const posts = await res.json();
+
+  let template = '';
+  posts.forEach(post => {
+    template += `
+      <div class="post">
+        <h2>${post.title}</h2>
+        <p><small>${post.likes} likes</small></p>
+        <p>${post.body.slice(0, 200)}...</p>
+        <a href="${dirname}/details.html?id=${post.id}">Read more</a>
+      </div>
+    `
+  });
+
+  container.innerHTML = template;
+}
+
+window.addEventListener('DOMContentLoaded', () => renderPosts());
 ```
 
 </details>
