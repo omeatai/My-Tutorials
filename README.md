@@ -1012,9 +1012,7 @@ styles.css:
 </details>
 
 <details>
-  <summary>21. sample</summary>
-
-
+  <summary>21. JSON Server - Fetch Single Post </summary>
 
 ```Javascript
 
