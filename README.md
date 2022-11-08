@@ -1380,19 +1380,40 @@ API Endpoints:
 </details>
 
 <details>
-  <summary>28. sample</summary>
+  <summary>28. Fetch All Blogs with UseEffect</summary>
 
+Home.js:
 
+```javascript
+import { useEffect, useState } from "react";
+import BlogList from "./BlogList";
 
-```Javascript
+const Home = () => {
+    const [blogs, setBlogs] = useState(null)
 
-```
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter((blog) => blog.id !== id);
+        setBlogs(newBlogs);
+        };
 
-```Javascript
+    useEffect(() => {
+        fetch('http://localhost:8000/blogs')
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            setBlogs(data);
+        })
+    }, [])
 
-```
+    return (
+        <div className="home">
+        {blogs && <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />}
+        </div>
+    );
+}
 
-```Javascript
+export default Home;
 
 ```
 
