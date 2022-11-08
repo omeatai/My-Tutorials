@@ -1195,17 +1195,63 @@ form.addEventListener('submit', createPost);
 <details>
   <summary>25. JSON Server - Delete Post from DB</summary>
 
+details.html:
 
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
 
-```Javascript
+  <div class="details">
+    <!-- inject blog details here -->
+  </div>
+  <button class="delete">delete</button>
 
+  <script src="js/details.js"></script>
+</body>
+</html>
 ```
 
-```Javascript
+details.js:
 
-```
+```javascript
+// javascript for details.html
+const id = new URLSearchParams(window.location.search).get('id');
+const container = document.querySelector('.details');
+const deleteBtn = document.querySelector('.delete');
 
-```Javascript
+const pathname = window.location.pathname;
+const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
+
+const renderDetails = async () => {
+  const res = await fetch('http://localhost:3000/posts/' + id);
+  if (!res.ok) {
+    window.location.replace(`${dirname}/index.html`);
+  }
+  const post = await res.json();
+
+  const template = `
+    <h1>${post.title}</h1>
+    <p>${post.body}</p>
+  `
+
+  container.innerHTML = template;
+}
+
+deleteBtn.addEventListener('click', async () => {
+  const res = await fetch('http://localhost:3000/posts/' + id, {
+    method: 'DELETE'
+  });
+  window.location.replace(`${dirname}/index.html`);
+})
+
+window.addEventListener('DOMContentLoaded', renderDetails);
 
 ```
 
