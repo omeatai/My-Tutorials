@@ -1130,19 +1130,63 @@ window.addEventListener('DOMContentLoaded', () => renderPosts());
 </details>
 
 <details>
-  <summary>24. sample</summary>
+  <summary>24. JSON Server - Add Posts to JSON DB</summary>
 
+create.html:
 
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
 
-```Javascript
+  <h1>Create a New Blog</h1>
 
+  <form>
+    <input type="text" name="title" required placeholder="Blog title">
+    <textarea name="body" required placeholder="Blog body"></textarea>
+    <button>Create</button>
+  </form>
+
+  <script src="js/create.js"></script>
+</body>
+</html>
 ```
 
-```Javascript
+create.js:
 
-```
+```javascript
+// javascript for create.html
 
-```Javascript
+const form = document.querySelector('form');
+
+const pathname = window.location.pathname;
+const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
+
+const createPost = async (e) => {
+  e.preventDefault();
+
+  const doc = {
+    title: form.title.value,
+    body: form.body.value,
+    likes: 0,
+  }
+
+  await fetch('http://localhost:3000/posts', {
+    method: 'POST',
+    body: JSON.stringify(doc),
+    headers: { 'Content-Type': 'application/json' }
+  })
+
+  window.location.replace(`${dirname}/index.html`);
+}
+
+form.addEventListener('submit', createPost);
 
 ```
 
