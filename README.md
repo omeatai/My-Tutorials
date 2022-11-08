@@ -928,16 +928,63 @@ json-server --watch data/db.json --port 3004
 </details>
 
 <details>
-  <summary>20. sample</summary>
+  <summary>20. JSON Server - Fetch Data</summary>
 
+Index.html:
 
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
 
-```Javascript
+  <nav>
+    <h1>All Blogs</h1>
+    <a href="/create.html">Add a new blog</a>
+  </nav>
 
+  <div class="blogs">
+    <!-- inject blogs here from js -->
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
 ```
 
-```Javascript
+js/index.js:
 
+```javascript
+// javascript for index.html
+const container = document.querySelector('.blogs');
+
+const renderPosts = async () => {
+  let uri = 'http://localhost:3000/posts';
+
+  const res = await fetch(uri);
+  const posts = await res.json();
+  console.log(posts);
+
+  let template = '';
+  posts.forEach(post => {
+    template += `
+      <div class="post">
+        <h2>${post.title}</h2>
+        <p><small>${post.likes} likes</small></p>
+        <p>${post.body.slice(0, 200)}...</p>
+        <a href="/details.html?id=${post.id}">Read more</a>
+      </div>
+    `
+  });
+
+  container.innerHTML = template;
+}
+
+window.addEventListener('DOMContentLoaded', () => renderPosts());
 ```
 
 ```Javascript
