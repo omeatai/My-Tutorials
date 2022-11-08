@@ -961,13 +961,15 @@ js/index.js:
 ```javascript
 // javascript for index.html
 const container = document.querySelector('.blogs');
+const pathname = window.location.pathname;
+const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
 
 const renderPosts = async () => {
   let uri = 'http://localhost:3000/posts';
 
   const res = await fetch(uri);
   const posts = await res.json();
-  console.log(posts);
 
   let template = '';
   posts.forEach(post => {
@@ -976,7 +978,7 @@ const renderPosts = async () => {
         <h2>${post.title}</h2>
         <p><small>${post.likes} likes</small></p>
         <p>${post.body.slice(0, 200)}...</p>
-        <a href="/details.html?id=${post.id}">Read more</a>
+        <a href="${dirname}/details.html?id=${post.id}">Read more</a>
       </div>
     `
   });
@@ -1041,11 +1043,14 @@ js/details.js:
 // javascript for details.html
 const id = new URLSearchParams(window.location.search).get('id');
 const container = document.querySelector('.details');
+const pathname = window.location.pathname;
+const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
 
 const renderDetails = async () => {
   const res = await fetch('http://localhost:3000/posts/' + id);
   if (!res.ok) {
-    window.location.replace("/");
+    window.location.replace(`${dirname}/index.html`);
   }
   const post = await res.json();
 
@@ -1064,28 +1069,26 @@ window.addEventListener('DOMContentLoaded', renderDetails);
 </details>
 
 <details>
-  <summary>22. sample</summary>
+  <summary>22. Window location</summary>
 
-
-
-```Javascript
-
+```javascript
+// window.location.href returns the href (URL) of the current page
+// window.location.hostname returns the domain name of the web host
+// window.location.pathname returns the path and filename of the current page
+// window.location.protocol returns the web protocol used (http: or https:)
+// window.location.assign() loads a new document
 ```
 
 ```Javascript
-
-```
-
-```Javascript
-
+const pathname = window.location.pathname;
+const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
 ```
 
 </details>
 
 <details>
   <summary>23. sample</summary>
-
-
 
 ```Javascript
 
