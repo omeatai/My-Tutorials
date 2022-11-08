@@ -987,7 +987,25 @@ const renderPosts = async () => {
 window.addEventListener('DOMContentLoaded', () => renderPosts());
 ```
 
-```Javascript
+styles.css:
+
+```css
+/* post list */
+.post {
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.post h2 {
+  margin: 0;
+}
+.post p {
+  margin-top: 0;
+}
+.post a {
+  color: #36cca2;
+}
 
 ```
 
