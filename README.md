@@ -900,10 +900,12 @@ data/db.json:
 </details>
 
 <details>
-  <summary>19. JSON Server - Watch Database</summary>
+  <summary>19. JSON Server - Run Server/Watch Database</summary>
 
 ```bash
+# Run JSON server
 json-server --watch data/db.json
+json-server --watch data/db.json --port 3004
 ```
 
 </details>
