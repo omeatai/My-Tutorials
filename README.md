@@ -1338,20 +1338,43 @@ window.addEventListener('DOMContentLoaded', () => renderPosts());
 </details>
 
 <details>
-  <summary>27. sample</summary>
+  <summary>27. Using JSON Server for REST API</summary>
 
+data/db.json:
 
-
-```Javascript
+```json
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "Opening Party!",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+      "author": "yoshi",
+      "id": 2
+    }
+  ]
+}
 
 ```
 
-```Javascript
+Run JSON Server:
 
+```bash
+json-server --watch data/db.json --port 8000
 ```
 
-```Javascript
+API Endpoints:
 
+```bash
+/blogs        GET     Fetch all blogs
+/blogs/{id}   GET     Fetch a single blog
+/blogs        POST    Add a new blog
+/blogs/{id}   DELETE  Delete a blog
 ```
 
 </details>
