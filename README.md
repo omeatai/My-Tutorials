@@ -1734,28 +1734,28 @@ const useFetch = (url) => {
         const abortCont = new AbortController();
 
         setTimeout(() => {
-        fetch(url, { signal: abortCont.signal })
-        .then(res => {
-            if (!res.ok) { // error coming back from server
-            throw Error('could not fetch the data for that resource');
-            }
-            return res.json();
-        })
-        .then(data => {
-            setIsPending(false);
-            setData(data);
-            setError(null);
-        })
-        .catch(err => {
-            if (err.name === 'AbortError') {
-            console.log('fetch aborted')
-            } else {
-            // auto catches network / connection error
-            setIsPending(false);
-            setError(err.message);
-            setData(null);
-            }
-        })
+            fetch(url, { signal: abortCont.signal })
+                .then(res => {
+                    if (!res.ok) { // error coming back from server
+                        throw Error('could not fetch the data for that resource');
+                    }
+                    return res.json();
+                })
+                .then(data => {
+                    setIsPending(false);
+                    setData(data);
+                    setError(null);
+                })
+                .catch(err => {
+                    if (err.name === 'AbortError') {
+                        console.log('fetch aborted')
+                    } else {
+                        // auto catches network / connection error
+                        setIsPending(false);
+                        setError(err.message);
+                        setData(null);
+                    }
+                })
         }, 1000);
 
         // abort the fetch
@@ -1766,6 +1766,23 @@ const useFetch = (url) => {
 }
 
 export default useFetch;
+```
+
+Index.js:
+
+```Javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  //<React.StrictMode>
+    <App />
+  //</React.StrictMode>
+);
+
 ```
 
 </details>
