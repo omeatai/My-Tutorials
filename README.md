@@ -1637,20 +1637,51 @@ export default App;
 
 
 <details>
-  <summary>33. sample</summary>
+  <summary>33. Create Route for Create Page</summary>
 
-
+App.js:
 
 ```Javascript
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './components/Create';
 
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
 ```
 
-```Javascript
-
-```
+Create.js:
 
 ```Javascript
+const Create = () => {
+        return (
+        <div className="create">
+            <h2>Add a New Blog</h2>
+        </div>
+        );
+    }
 
+export default Create;
 ```
 
 </details>
