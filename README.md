@@ -1881,19 +1881,48 @@ Index.css:
 
 
 <details>
-  <summary>37. sample</summary>
+  <summary>37. Reusing Custom Hooks for BlogDetails Page</summary>
 
-
+BlogDetails.js:
 
 ```Javascript
+import { useParams } from "react-router-dom";
+import useFetch from "./useFetch";
 
+const BlogDetails = () => {
+    const { id } = useParams();
+    const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
+
+    return (
+        <div className="blog-details">
+        { isPending && <div>Loading...</div> }
+        { error && <div>{ error }</div> }
+        { blog && (
+            <article>
+            <h2>{ blog.title }</h2>
+            <p>Written by { blog.author }</p>
+            <div>{ blog.body }</div>
+            </article>
+        )}
+        </div>
+    );
+}
+
+export default BlogDetails;
 ```
 
-```Javascript
+index.css:
 
-```
-
-```Javascript
+```CSS
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
 
 ```
 
