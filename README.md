@@ -1939,7 +1939,7 @@ index.css:
 
 
 <details>
-  <summary>38. Using Controlled Inputs for Create Page</summary>
+  <summary>38. Using Controlled Form Inputs for Create Page</summary>
 
 Create.js:
 
