@@ -693,6 +693,8 @@ export default Home;
 
 </details>
 
++JSON-SERVER
+
 <details>
   <summary>16. JSON Server - Setup Files</summary>
 
@@ -1336,6 +1338,8 @@ window.addEventListener('DOMContentLoaded', () => renderPosts());
 ```
 
 </details>
+
++BUILDING REST API FOR BLOG
 
 <details>
   <summary>27. Using JSON Server for REST API</summary>
@@ -2330,6 +2334,11 @@ export default App;
 ```
 
 </details>
+
+
+### [2-REACTJS COURSE - PEDROTECH](#)
+
++INTRODUCTION
 
 <details>
   <summary>44. sample</summary>
