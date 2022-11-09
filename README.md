@@ -2021,10 +2021,6 @@ index.css:
 }
 ```
 
-```Javascript
-
-```
-
 </details>
 
 
