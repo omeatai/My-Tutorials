@@ -1924,6 +1924,15 @@ index.css:
   margin: 20px 0;
 }
 
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 ```
 
 </details>
