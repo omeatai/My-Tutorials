@@ -2269,20 +2269,64 @@ Index.css:
 </details>
 
 <details>
-  <summary>43. sample</summary>
+  <summary>43. Redirect to 404 Page</summary>
 
-
+NotFound.js:
 
 ```Javascript
+import { Link } from "react-router-dom"
+
+const NotFound = () => {
+    return (
+        <div className="not-found">
+        <h2>Sorry</h2>
+        <p>That page cannot be found</p>
+        <Link to="/">Back to the homepage...</Link>
+        </div>
+    );
+}
+
+export default NotFound;
 
 ```
 
-```Javascript
-
-```
+App.js:
 
 ```Javascript
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './components/Create';
+import BlogDetails from './components/BlogDetails';
+import NotFound from './components/NotFound';
 
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
 ```
 
 </details>
