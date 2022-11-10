@@ -2669,7 +2669,7 @@ function App() {
     <div className="App">
       <h2>Not Gas Planets:</h2>
       {planets.map(
-        (planet, key, arr) => !planet.isGasPlanet && <h1> {planet.name} </h1>
+        (planet, key, arr) => !planet.isGasPlanet && <h1 key={key}> {planet.name} </h1>
       )}
     </div>
   );
