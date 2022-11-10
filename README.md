@@ -2562,8 +2562,21 @@ if(age >= 18) {
 age >= 18 ? console.log("IS OVER AGE") : console.log("IS UNDER AGE");
 ```
 
-```Javascript
+App.js:
 
+```Javascript
+import "./App.css";
+
+function App() {
+  const age = 19;
+
+  return (
+    <div className="App">
+      {age >= 18 ? <h1> OVER AGE</h1> : <h1> UNDER AGE</h1>}
+    </div>
+  );
+}
+export default App;
 ```
 
 ```Javascript
