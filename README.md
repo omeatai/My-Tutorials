@@ -2681,20 +2681,45 @@ export default App;
 </details>
 
 <details>
-  <summary>53. sample</summary>
+  <summary>53. Importing Components</summary>
 
-
+App.js:
 
 ```Javascript
+import "./App.css";
+import { User } from "./User";
 
+function App() {
+    const users = [
+      { name: "Pedro", age: 21 },
+      { name: "Jake", age: 25 },
+      { name: "Jessica" , age: 45 },
+    ];
+
+    return (
+      <div className="App">
+        {users.map((user, key, arr) => {
+          return <User name={user.name} age={user.age} />;
+        })}
+      </div>
+    );
+}
+
+export default App;
 ```
 
-```Javascript
-
-```
+User.js:
 
 ```Javascript
+export const User = (props) => {
+    return (
+        <div>
+            <h2>{props.name} - {props.age}</h2>
+        </div>
+    );
+};
 
+//export default User;
 ```
 
 </details>
