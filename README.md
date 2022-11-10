@@ -2755,6 +2755,56 @@ function App() {
 export default App;
 ```
 
+
+```Javascript
+import "./App.css";
+import { useState, useEffect} from 'react';
+
+function App() {
+
+    const [time, setTime] = useState('00:00:00 AM');
+    const [isON, setIsON] = useState(true);
+
+    useEffect(() => {
+      if(isON) {
+        const interval = setInterval(myTimer, 1000);
+        return () => clearInterval(interval);
+      }
+    }, [isON])
+
+    function myTimer() {
+        const date = new Date();
+        setTime(date.toLocaleTimeString('en-US'));
+    }
+
+    const handleStop = () => {
+      console.log('Stopping...');
+      setIsON(false);
+    }
+
+    const handleStart = () => {
+      console.log('Starting...');
+      setIsON(true);
+    }
+
+    const myStyle = {
+      padding: '10px 20px',
+      marginRight: '10px',
+    }
+
+    return (
+      <div className="App">
+        <h1>My Digital Clock</h1>
+        <h2 style={{fontSize: "3rem", color: "gray"}}>{time}</h2>
+        <button onClick={handleStart} style={myStyle }>Start</button>
+        <button onClick={handleStop} style={myStyle }>Stop</button>
+      </div>
+    );
+}
+
+export default App;
+```
+
 </details>
 
 <details>
@@ -2762,9 +2812,6 @@ export default App;
 
 
 
-```Javascript
-
-```
 
 ```Javascript
 
