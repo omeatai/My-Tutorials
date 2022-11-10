@@ -2725,26 +2725,40 @@ export const User = (props) => {
 </details>
 
 <details>
-  <summary>54. sample</summary>
+  <summary>54. **Digital Clock</summary>
 
-
-
-```Javascript
-
-```
+App.js:
 
 ```Javascript
+import "./App.css";
+import {useState} from 'react';
 
-```
+function App() {
+    const [age, setAge] = useState(0);
+    const [time, setTime] = useState('00:00:00 AM');
 
-```Javascript
+    setInterval(() => {
+      const date = new Date();
+      setTime(date.toLocaleTimeString("en-us"));
+    }, 1000);
 
+    return (
+      <div className="App">
+        <h1>Age: {age}</h1>
+        <h1 style={{color: "grey"}}>Time: {time}</h1>
+        <button onClick={() => setAge(age => age + 1)}>Increase</button>
+        <button onClick={() => setAge(age => age - 1)}>Decrease</button>
+      </div>
+    );
+}
+
+export default App;
 ```
 
 </details>
 
 <details>
-  <summary>55. sample</summary>
+  <summary>55. Using State Hooks</summary>
 
 
 
