@@ -2375,19 +2375,37 @@ npm start
 </details>
 
 <details>
-  <summary>45. sample</summary>
+  <summary>45. Setup Files</summary>
 
-
+Index.js:
 
 ```Javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 ```
 
-```Javascript
-
-```
+App.js:
 
 ```Javascript
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Home</h1>
+    </div>
+  );
+}
+
+export default App;
 
 ```
 
