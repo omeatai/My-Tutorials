@@ -2602,6 +2602,8 @@ function App() {
 export default App;
 ```
 
+with Ternary Operator:
+
 ```Javascript
 import "./App.css";
 
