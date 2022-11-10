@@ -2341,20 +2341,29 @@ export default App;
 +INTRODUCTION
 
 <details>
-  <summary>44. sample</summary>
+  <summary>44. Initialize React App</summary>
 
+NPM Version:
 
-
-```Javascript
-
+```bash
+npm -v
 ```
 
-```Javascript
+Node Version:
 
+```bash
+node -v
 ```
 
-```Javascript
+Install React App:
 
+```bash
+npx create-react-app .
+npx create-react-app reactjs-course
+
+npx create-react-app reactjs-course --template typescript
+npx create-react-app reactjs-course --template redux
+npx create-react-app reactjs-course --template redux-typescript
 ```
 
 </details>
