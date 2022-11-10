@@ -2412,28 +2412,43 @@ export default App;
 </details>
 
 <details>
-  <summary>46. sample</summary>
+  <summary>46. JSX and Components</summary>
 
-
-
-```Javascript
-
-```
+App.js:
 
 ```Javascript
+import './App.css';
 
-```
+function App() {
+  return (
+    <div className="App">
+      <User />
+      <User />
+      <User />
+    </div>
+  );
+};
 
-```Javascript
+const User = () => {
+  return (
+    <div>
+      <h1>Pedro</h1>
+      <h2>21</h2>
+      <h2>pedro@pedro.com</h2>
+    </div>
+  );
+};
+
+export default App;
 
 ```
 
 </details>
 
 <details>
-  <summary>47. sample</summary>
+  <summary>47. Props</summary>
 
-
+App.js:
 
 ```Javascript
 
