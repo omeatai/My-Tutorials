@@ -2479,19 +2479,65 @@ export default App;
 </details>
 
 <details>
-  <summary>48. sample</summary>
+  <summary>48. CSS Module Stylesheets</summary>
 
-
+App.js:
 
 ```Javascript
+import styles from "./App.module.css";
 
+function App() {
+  return (
+    <div className={styles.App}>
+    <h1 className={styles.name}> Pedro </h1>
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```Javascript
+App.module.css:
 
-```
+```css
+.App {
+  text-align: center;
+}
 
-```Javascript
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 ```
 
