@@ -2645,14 +2645,10 @@ function App() {
 export default App;
 ```
 
-```Javascript
-
-```
-
 </details>
 
 <details>
-  <summary>52. sample</summary>
+  <summary>52. Lists in React</summary>
 
 
 
