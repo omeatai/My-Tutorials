@@ -2366,6 +2366,12 @@ npx create-react-app reactjs-course --template redux
 npx create-react-app reactjs-course --template redux-typescript
 ```
 
+Run React App:
+
+```bash
+npm start
+```
+
 </details>
 
 <details>
