@@ -2628,7 +2628,21 @@ export default App;
   <summary>51. Conditional Rendering</summary>
 
 ```Javascript
+import "./App.css";
 
+function App() {
+  const age = 19;
+  const isActive = true;
+
+  return (
+    <div className="App">
+      {age >= 18 ? <h1> OVER AGE</h1> : <h1> UNDER AGE</h1>}
+      {isActive &&  <button>Continue Registration</button>}
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ```Javascript
