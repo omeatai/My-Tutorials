@@ -2548,12 +2548,18 @@ App.module.css:
 </details>
 
 <details>
-  <summary>49. sample</summary>
-
-
+  <summary>49. Ternary Operator & Conditional Rendering</summary>
 
 ```Javascript
+const age = 15;
 
+if(age >= 18) {
+  console.log("IS OVER AGE");
+  } else {
+  console.log("IS UNDER AGE");
+}
+
+age >= 18 ? console.log("IS OVER AGE") : console.log("IS UNDER AGE");
 ```
 
 ```Javascript
