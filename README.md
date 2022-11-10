@@ -2504,6 +2504,10 @@ App.module.css:
   text-align: center;
 }
 
+.name {
+  color: red;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
