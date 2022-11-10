@@ -2650,10 +2650,32 @@ export default App;
 <details>
   <summary>52. Lists in React</summary>
 
-
+App.js:
 
 ```Javascript
+import "./App.css";
 
+function App() {
+  const planets = [
+    { name: "Mars", isGasPlanet: false },
+    { name: "Earth", isGasPlanet: false },
+    { name: "Jupiter", isGasPlanet: true },
+    { name: "Venus", isGasPlanet: false },
+    { name: "Neptune", isGasPlanet: true },
+    { name: "Uranus", isGasPlanet: true },
+  ];
+
+  return (
+    <div className="App">
+      <h2>Not Gas Planets:</h2>
+      {planets.map(
+        (planet, key, arr) => !planet.isGasPlanet && <h1> {planet.name} </h1>
+      )}
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ```Javascript
