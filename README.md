@@ -2548,7 +2548,7 @@ App.module.css:
 </details>
 
 <details>
-  <summary>49. Ternary Operator & Conditional Rendering</summary>
+  <summary>49. Ternary Operator</summary>
 
 ```Javascript
 const age = 15;
@@ -2579,6 +2579,44 @@ function App() {
 export default App;
 ```
 
+</details>
+
+<details>
+  <summary>50. Inline Styling</summary>
+
+App.js:
+
+```Javascript
+import "./App.css";
+
+function App() {
+  const age = 19;
+
+  return (
+    <div className="App">
+      {age >= 18 ? <h1> OVER AGE</h1> : <h1> UNDER AGE</h1>}
+      <h1 style={{color: "red", backgroundColor: "black"}}> THIS HAS COLOR </h1>
+    </div>
+  );
+}
+export default App;
+```
+
+</details>
+
+<details>
+  <summary>51. Conditional Rendering</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
 ```Javascript
 
 ```
@@ -2586,7 +2624,159 @@ export default App;
 </details>
 
 <details>
-  <summary>50. sample</summary>
+  <summary>52. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>53. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>54. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>55. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>56. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>57. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>58. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>59. sample</summary>
+
+
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+```Javascript
+
+```
+
+</details>
+
+<details>
+  <summary>60. sample</summary>
 
 
 
