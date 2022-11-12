@@ -2960,14 +2960,6 @@ function App() {
 export default App;
 ```
 
-```Javascript
-
-```
-
-```Javascript
-
-```
-
 </details>
 
 <details>
