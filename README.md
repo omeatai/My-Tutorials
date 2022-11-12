@@ -2862,7 +2862,44 @@ Set homepage in package.json:
 }
 ```
 
+Add Scripts to package.json:
 
+```json
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+{
+  "homepage": "https://omeatai.github.io/Digital-Clock-Project/",
+  "name": "digital-clock-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+}
+```
+
+```json
+
+```
+
+```json
+
+```
 
 </details>
 
