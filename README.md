@@ -2897,8 +2897,15 @@ Add Scripts to package.json:
 }
 ```
 
-```json
+Make Commit:
 
+```bash
+git add .
+git commit -m "Deploy to Github Pages"
+git push -u origin main
+
+# git push origin main
+# git push
 ```
 
 ```json
