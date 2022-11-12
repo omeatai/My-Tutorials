@@ -2808,7 +2808,7 @@ export default App;
 </details>
 
 <details>
-  <summary>55. Using State Hooks</summary>
+  <summary>55. **Deploying to Github Pages**</summary>
 
 
 
@@ -2824,7 +2824,7 @@ export default App;
 </details>
 
 <details>
-  <summary>56. sample</summary>
+  <summary>56. Using State Hooks</summary>
 
 
 
