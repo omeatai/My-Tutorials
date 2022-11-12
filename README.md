@@ -2808,7 +2808,7 @@ export default App;
 </details>
 
 <details>
-  <summary>55. **Deploying to Github Pages**</summary>
+  <summary>55. **Deploy React App to Github Pages**</summary>
 
 Create a new repository on the command line:
 
