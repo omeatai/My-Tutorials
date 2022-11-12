@@ -2914,9 +2914,13 @@ Deploy github pages branch:
 npm run deploy
 ```
 
+```bash
 Settings -> Pages -> Source -> Branch (gh-pages) -> /(root) folder
+```
 
+```bash
 Click on the publish link to see the app.
+```
 
 </details>
 
