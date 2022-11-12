@@ -2831,6 +2831,12 @@ git branch -M main
 git push -u origin main
 ```
 
+```bash
+git remote -v
+git remote remove origin
+git remote add origin https://<your-username>:<token>@github.com/<username>/<repo-name>.git
+```
+
 Install dependencies:
 
 ```bash
@@ -2839,9 +2845,6 @@ npm install gh-pages --save-dev
 yarn add -D gh-pages
 ```
 
-```bash
-
-```
 
 ```bash
 
