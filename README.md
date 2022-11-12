@@ -2851,13 +2851,13 @@ yarn add -D gh-pages
 Set homepage in package.json:
 
 ```bash
-"homepage": "https://<username>.github.io/<repo-name>/"
-"homepage": "https://machadop1487.github.io/my-project/"
+"homepage": "http://<username>.github.io/<repo-name>/"
+"homepage": "http://machadop1487.github.io/my-project/"
 ```
 
 ```json
 {
-  "homepage": "https://omeatai.github.io/Digital-Clock-Project/",
+  "homepage": "http://omeatai.github.io/Digital-Clock-Project/",
   "name": "digital-clock-project",
   "version": "0.1.0",
   "private": true,
@@ -2873,7 +2873,7 @@ Add Scripts to package.json:
 
 ```json
 {
-  "homepage": "https://omeatai.github.io/Digital-Clock-Project/",
+  "homepage": "http://omeatai.github.io/Digital-Clock-Project/",
   "name": "digital-clock-project",
   "version": "0.1.0",
   "private": true,
