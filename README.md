@@ -2908,9 +2908,15 @@ git push -u origin main
 # git push
 ```
 
-```json
+Deploy github pages branch:
 
+```bash
+npm run deploy
 ```
+
+Settings -> Pages -> Source -> Branch (gh-pages) -> /(root) folder
+
+Click on the publish link to see the app.
 
 </details>
 
