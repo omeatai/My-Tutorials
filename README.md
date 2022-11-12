@@ -2725,7 +2725,7 @@ export const User = (props) => {
 </details>
 
 <details>
-  <summary>54. **Digital Clock</summary>
+  <summary>54. **Digital Clock**</summary>
 
 App.js:
 
@@ -2810,16 +2810,43 @@ export default App;
 <details>
   <summary>55. **Deploying to Github Pages**</summary>
 
+Create a new repository on the command line:
 
+```bash
+echo "# my-project" >> README.md
+git init
+git add .
+# git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/machadop1487/my-project.git
+git push -u origin main
+```
 
+Push an existing repository from the command line:
 
-```Javascript
+```bash
+git remote add origin https://github.com/machadop1487/my-project.git
+git branch -M main
+git push -u origin main
+```
+
+Install dependencies:
+
+```bash
+npm install gh-pages --save-dev
+
+yarn add -D gh-pages
+```
+
+```bash
 
 ```
 
-```Javascript
+```bash
 
 ```
+
 
 </details>
 
