@@ -2848,10 +2848,14 @@ npm install gh-pages --save-dev
 yarn add -D gh-pages
 ```
 
+Set homepage in package.json:
 
-```bash
+```json
+"homepage": "https://<username>.github.io/<repo-name>/"
 
+"homepage": "https://machadop1487.github.io/my-project/"
 ```
+
 
 
 </details>
