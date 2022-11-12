@@ -2850,10 +2850,12 @@ yarn add -D gh-pages
 
 Set homepage in package.json:
 
-```json
+```bash
 "homepage": "https://<username>.github.io/<repo-name>/"
 "homepage": "https://machadop1487.github.io/my-project/"
+```
 
+```json
 {
   "homepage": "https://omeatai.github.io/Digital-Clock-Project/",
   "name": "digital-clock-project",
@@ -2864,10 +2866,12 @@ Set homepage in package.json:
 
 Add Scripts to package.json:
 
-```json
+```bash
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build",
+```
 
+```json
 {
   "homepage": "https://omeatai.github.io/Digital-Clock-Project/",
   "name": "digital-clock-project",
