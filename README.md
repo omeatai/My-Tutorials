@@ -2831,6 +2831,9 @@ git branch -M main
 git push -u origin main
 ```
 
+Use Access Token to connect to Github -
+Generate a personal access token. This can be done in the application settings of your GitHub account.
+
 ```bash
 git remote -v
 git remote remove origin
