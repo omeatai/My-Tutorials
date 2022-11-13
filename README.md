@@ -3151,9 +3151,15 @@ export default App;
 </details>
 
 <details>
-  <summary>58. sample</summary>
+  <summary>58. React Component Lifecycle</summary>
 
-```Javascript
+```bash
+- mounting
+- updating
+- unmounting
+```
+
+```bash
 
 ```
 
