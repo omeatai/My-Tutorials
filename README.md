@@ -2963,13 +2963,55 @@ export default App;
 </details>
 
 <details>
-  <summary>57. sample</summary>
-
-
+  <summary>57. TodoList - Handle Delete</summary>
 
 ```Javascript
+import "./App.css";
+import { useState } from "react";
+
+function App() {
+  const [todoList, setTodoList] = useState([]);
+  const [newTask, setNewTask] = useState("");
+
+  const handleChange = (e) => {
+    setNewTask(e.target.value);
+  };
+
+  const addTask = () => {
+    if(newTask !== "") {
+      setTodoList([...todoList, newTask]);
+      setNewTask("");
+      console.log(todoList);
+    }
+  };
+
+  const handleDelete = (e) => {
+    const index = e.target.id;
+    console.log(e.target.id)
+    const newTodoList = todoList.filter((task, i) => i !== parseInt(index));
+    setTodoList(newTodoList);
+  };
+
+  return (
+    <div className="App">
+      <div className="addTask">
+        <input onChange={handleChange} value={newTask}/>
+        <button onClick={addTask}>Add Task</button>
+      </div>
+      <div className="list"></div>
+      <div>{newTask}</div>
+      <div>{todoList.map((todo, id)=>{
+        return <div key={id}>{todo} <button id={id} onClick={handleDelete} style={{backgroundColor: "red"}}>X</button></div>
+      })}</div>
+    </div>
+  );
+}
+
+export default App;
 
 ```
+
+App.js:
 
 ```Javascript
 
