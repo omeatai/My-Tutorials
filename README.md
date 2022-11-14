@@ -3303,7 +3303,38 @@ export default App;
 ```
 
 ```Javascript
+import "./App.css";
+import { useState } from "react";
+import Axios from "axios";
 
+function App() {
+  const [person, setPerson] = useState({name: "John", age: 30});
+
+  const fetchData = () => {
+    Axios.get(`https://api.agify.io?name=${person.name}`)
+      .then((res) => {
+        setPerson(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const handleChange = (e) => {
+    setPerson({ ...person, name: e.target.value });
+  };
+
+  return (
+    <div className="App">
+      <button onClick={fetchData}>Generate Age</button>
+      <input onChange={handleChange} type="text" value={person.name} />
+      <p>{person.name} is {person.age} years old.</p>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ```Javascript
