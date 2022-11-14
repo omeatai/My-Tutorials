@@ -3308,15 +3308,16 @@ With https://api.agify.io?name= API:
 
 ```Javascript
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Axios from "axios";
 
 function App() {
-  const [person, setPerson] = useState({name: "", age: 0});
+  const [person, setPerson] = useState({name: "", age: ""});
   const [show, setShow] = useState(false);
 
   const fetchData = () => {
-    Axios.get(`https://api.agify.io?name=${person.name}`)
+    if(person?.name){
+      Axios.get(`https://api.agify.io?name=${person?.name}`)
       .then((res) => {
         setPerson(res.data);
         console.log(res.data);
@@ -3325,6 +3326,8 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
+    }
+
   };
 
   const handleChange = (e) => {
@@ -3335,10 +3338,10 @@ function App() {
   return (
     <div className="App">
       <br/>
-      <input onChange={handleChange} type="text" placeholder="Charles..." value={person.name} />
+      <input onChange={handleChange} type="text" placeholder="Charles..." value={person?.name} />
       <br/>
       <button onClick={fetchData}>Generate Age</button>
-      <p>{person.name || "Charles"} is {show ? person.age : "___"} years old.</p>
+      <p>{person?.name || "Charles"} is {show ? person?.age : "___"} years old.</p>
     </div>
   );
 }
