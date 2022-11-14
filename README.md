@@ -3221,7 +3221,7 @@ export const Text = () => {
 </details>
 
 <details>
-  <summary>59. sample</summary>
+  <summary>59. Fetching Data from API</summary>
 
 
 
