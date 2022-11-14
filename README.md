@@ -3221,11 +3221,9 @@ export const Text = () => {
 </details>
 
 <details>
-  <summary>59. Fetching Data from API - Fetch & Axios</summary>
+  <summary>59. Fetching Data from API</summary>
 
 App.js:
-
-with Fetch:
 
 ```Javascript
 import "./App.css";
@@ -3259,12 +3257,6 @@ function App() {
 export default App;
 ```
 
-with Axios:
-
-```Javascript
-
-```
-
 ```Javascript
 
 ```
@@ -3272,9 +3264,13 @@ with Axios:
 </details>
 
 <details>
-  <summary>60. sample</summary>
+  <summary>60. Using Axios to Fetch API</summary>
 
+Install Axios:
 
+```bash
+npm install axios
+```
 
 ```Javascript
 
