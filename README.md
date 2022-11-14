@@ -3257,10 +3257,6 @@ function App() {
 export default App;
 ```
 
-```Javascript
-
-```
-
 </details>
 
 <details>
