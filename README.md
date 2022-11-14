@@ -3349,7 +3349,7 @@ function App() {
 export default App;
 ```
 
-With excuser.herokuapp.com/v1/excuse/ API:
+With https://excuser.herokuapp.com/v1/excuse/ API:
 
 ```Javascript
 import "./App.css";
