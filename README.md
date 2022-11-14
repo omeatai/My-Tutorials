@@ -3268,6 +3268,8 @@ Install Axios:
 npm install axios
 ```
 
+With https://catfact.ninja/fact API:
+
 ```Javascript
 import "./App.css";
 import { useEffect, useState } from "react";
@@ -3301,6 +3303,8 @@ function App() {
 
 export default App;
 ```
+
+With https://api.agify.io?name= API:
 
 ```Javascript
 import "./App.css";
