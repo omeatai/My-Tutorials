@@ -3269,7 +3269,37 @@ npm install axios
 ```
 
 ```Javascript
+import "./App.css";
+import { useEffect, useState } from "react";
+import Axios from "axios";
 
+function App() {
+  const [fact, setFact] = useState("");
+
+  useEffect(() => {
+    handleNewFact();
+  }, []);
+
+  const handleNewFact = () => {
+    Axios.get("https://catfact.ninja/fact")
+      .then((res) => {
+        setFact(res.data.fact);
+        console.log(res.data.fact);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  return (
+    <div className="App">
+      <button onClick={handleNewFact}>Generate Cat Fact</button>
+      <p>{fact}</p>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ```Javascript
