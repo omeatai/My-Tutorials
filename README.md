@@ -3221,13 +3221,45 @@ export const Text = () => {
 </details>
 
 <details>
-  <summary>59. Fetching Data from API</summary>
+  <summary>59. Fetching Data from API - Fetch & Axios</summary>
 
+App.js:
 
+with Fetch:
 
 ```Javascript
+import "./App.css";
+import { useEffect, useState } from "react";
 
+function App() {
+
+  const [fact, setFact] = useState("");
+
+  useEffect(() => {
+    handleNewFact();
+  }, []);
+
+  const handleNewFact = () => {
+    fetch("https://catfact.ninja/fact")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setFact(data.fact);
+      });
+  };
+
+  return (
+    <div className="App">
+      <button onClick={handleNewFact}>Generate Cat Fact</button>
+      <p>{fact}</p>
+    </div>
+  );
+}
+
+export default App;
 ```
+
+with Axios:
 
 ```Javascript
 
