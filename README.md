@@ -3465,12 +3465,14 @@ export const Contact = () => {
 </details>
 
 <details>
-  <summary>62. sample</summary>
+  <summary>62. React Router Dom Version 6</summary>
 
+Install React Router Dom Version 6:
 
+```bash
+npm install react-router-dom@6
 
-```Javascript
-
+yarn add react-router-dom@6
 ```
 
 ```Javascript
