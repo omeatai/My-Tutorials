@@ -3308,17 +3308,19 @@ With https://api.agify.io?name= API:
 
 ```Javascript
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Axios from "axios";
 
 function App() {
-  const [person, setPerson] = useState({name: "John", age: 30});
+  const [person, setPerson] = useState({name: "", age: 0});
+  const [show, setShow] = useState(false);
 
   const fetchData = () => {
     Axios.get(`https://api.agify.io?name=${person.name}`)
       .then((res) => {
         setPerson(res.data);
         console.log(res.data);
+        setShow(true);
       })
       .catch((err) => {
         console.log(err);
@@ -3327,13 +3329,16 @@ function App() {
 
   const handleChange = (e) => {
     setPerson({ ...person, name: e.target.value });
+    setShow(false);
   };
 
   return (
     <div className="App">
+      <br/>
+      <input onChange={handleChange} type="text" placeholder="Charles..." value={person.name} />
+      <br/>
       <button onClick={fetchData}>Generate Age</button>
-      <input onChange={handleChange} type="text" value={person.name} />
-      <p>{person.name} is {person.age} years old.</p>
+      <p>{person.name || "Charles"} is {show ? person.age : "___"} years old.</p>
     </div>
   );
 }
