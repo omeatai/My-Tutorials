@@ -3562,19 +3562,98 @@ export default Profile;
 </details>
 
 <details>
-  <summary>63. sample</summary>
+  <summary>63. useContext Hook (Context API)</summary>
 
-
+App.js:
 
 ```Javascript
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Profile } from "./pages/Profile";
+import { Contact } from "./pages/Contact";
+import { Navbar } from "./Navbar";
+import {useState, createContext } from "react";
+
+export const AppContext = createContext();
+
+function App() {
+  const [username, setUsername] = useState("Pedro");
+
+  return (
+    <div className="App">
+      <AppContext.Provider value={{username, setUsername}}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home username={username}/>} />
+          <Route path="/profile" element={<Profile username={username} setUsername={setUsername}/>} />
+          <Route path="/contact" element={<Contact username={username} />} />
+          <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
+        </Routes>
+      </Router>
+      </AppContext.Provider>
+    </div>
+  );
+}
+
+export default App;
 
 ```
 
-```Javascript
+Home.js:
 
+```Javascript
+import { useContext } from 'react';
+import { AppContext } from '../App';
+
+export const Home = () => {
+  const { username } = useContext(AppContext);
+  return <h1> THIS IS THE HOME PAGE for {username}.</h1>;
+};
 ```
 
+Profile.js:
+
 ```Javascript
+import { ChangeProfile } from "./changeProfile";
+import { useContext } from 'react';
+import { AppContext } from '../App';
+
+export const Profile = (props) => {
+  const { username } = useContext(AppContext);
+
+  return (
+    <div>
+      PROFILE, user is: {username}
+      <ChangeProfile />
+    </div>
+  );
+};
+```
+
+ChangeProfile.js:
+
+```Javascript
+import { useState } from "react";
+import { useContext } from 'react';
+import { AppContext } from '../App';
+
+export const ChangeProfile = (props) => {
+    const [newUsername, setNewUsername] = useState("");
+    const { setUsername } = useContext(AppContext);
+
+    return (
+        <div>
+            <input
+                onChange={(event) => {
+                    setNewUsername(event.target.value);
+                }}
+            />
+            <button onClick={()=>{setUsername(newUsername)}}> Change Username</button>
+        </div>
+    );
+};
 
 ```
 
