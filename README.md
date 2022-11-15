@@ -3475,12 +3475,88 @@ npm install react-router-dom@6
 yarn add react-router-dom@6
 ```
 
-```Javascript
+App.js:
 
+```Javascript
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Profile from "./pages/Profile";
+import ErrorPage from "./pages/ErrorPage";
+
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/"> Home </Link>
+        <Link to="/about"> About </Link>
+        <Link to="/profile"> Profile </Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/profile/" element={<Profile />} />
+        <Route path="/profile/:username" element={<Profile />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      <div> Foooter </div>
+    </Router>
+  );
+}
+
+export default App;
 ```
 
-```Javascript
+Home.js:
 
+```Javascript
+import React from "react";
+
+function Home() {
+  return <div> THIS IS THE HOME PAGE</div>;
+}
+
+export default Home;
+```
+
+About.js:
+
+```Javascript
+import React from "react";
+
+function About() {
+  return <div>THIS IS THE ABOUT PAGE</div>;
+}
+
+export default About;
+```
+
+Profile.js:
+
+```Javascript
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
+
+function Profile() {
+  let navigate = useNavigate();
+  let { username } = useParams();
+  return (
+    <div>
+      THIS IS THE PROFILE PAGE FOR {username || "Admin"}!
+      <button
+        onClick={() => {
+          navigate("/about");
+        }}
+      >
+        {" "}
+        Change to about page
+      </button>
+    </div>
+  );
+}
+
+export default Profile;
 ```
 
 </details>
