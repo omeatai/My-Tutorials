@@ -3660,9 +3660,23 @@ export const ChangeProfile = (props) => {
 </details>
 
 <details>
-  <summary>64. sample</summary>
+  <summary>64. React Query Library</summary>
 
+Install React Query:
 
+```bash
+npm install @tanstack/react-query
+```
+
+Install Axios:
+
+```bash
+npm install axios
+```
+
+```Javascript
+
+```
 
 ```Javascript
 
