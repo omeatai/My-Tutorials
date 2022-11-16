@@ -3759,8 +3759,8 @@ Install Yup:
 npm install react-hook-form yup
 ```
 
-```Javascript
-
+```bash
+npm install @hookform/resolvers
 ```
 
 ```Javascript
