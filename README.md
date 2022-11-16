@@ -3674,20 +3674,78 @@ Install Axios:
 npm install axios
 ```
 
+App.js:
+
 ```Javascript
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Profile } from "./pages/Profile";
+import { Contact } from "./pages/Contact";
+import { Navbar } from "./Navbar";
+import {useState, createContext } from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+export const AppContext = createContext();
+
+function App() {
+  const [username, setUsername] = useState("Pedro");
+  const [newUsername, setNewUsername] = useState("");
+  const client = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: true,
+      },
+    },
+  });
+
+  return (
+    <div className="App">
+      <QueryClientProvider client={client}>
+      <AppContext.Provider value={{username, setUsername, newUsername, setNewUsername}}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home username={username}/>} />
+          <Route path="/profile" element={<Profile username={username} setUsername={setUsername}/>} />
+          <Route path="/contact" element={<Contact username={username} />} />
+          <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
+        </Routes>
+      </Router>
+      </AppContext.Provider>
+      </QueryClientProvider>
+    </div>
+  );
+}
+
+export default App;
 
 ```
 
-```Javascript
-
-```
+Home.js:
 
 ```Javascript
+import { useContext } from 'react';
+import { AppContext } from '../App';
+import { useQuery } from '@tanstack/react-query';
+import Axios from 'axios';
 
-```
+export const Home = () => {
+  const { username } = useContext(AppContext);
+  const { data: catData, isLoading, isError, error, refetch } = useQuery(["cat"], () => {
+    return Axios.get("https://catfact.ninja/fact").then((res) => res.data);
+      //.catch((err) => console.log(`There was an error: ${err}`));
+  });
 
-```Javascript
-
+  return (
+    <section className="home">
+      <h1> THIS IS THE HOME PAGE for {username}.</h1>
+      <h2>Quote:</h2>
+      <p>{ isLoading && "Loading..."}{ isError ? error.message : catData?.fact }</p>
+      <button onClick={() => refetch()}>Update Data</button>
+    </section>
+    );
+};
 ```
 
 </details>
