@@ -3751,9 +3751,13 @@ export const Home = () => {
 </details>
 
 <details>
-  <summary>65. sample</summary>
+  <summary>65. React-Hook-Form & Yup</summary>
 
+Install Yup:
 
+```bash
+npm install react-hook-form yup
+```
 
 ```Javascript
 
