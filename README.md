@@ -4050,12 +4050,60 @@ Install PropTypes:
 npm install prop-types
 ```
 
+App.js:
 
 ```Javascript
+import "./App.css";
+import { Person } from "./pages/Person";
 
+function App() {
+  return (
+    <div className="App">
+      <Person
+        name="Pedro"
+        email="pedro@gmail.com"
+        age={21}
+        isMarried={true}
+        friends={["jessica", "jake", "jerry", "jasmine"]}
+      />
+    </div>
+  );
+}
+
+export default App;
 ```
 
+Person.js:
+
 ```Javascript
+import PropTypes from "prop-types";
+
+export const Person = (props) => {
+    return (
+        <div>
+            <h1>Name: {props.name}</h1>
+            <h1>Email: {props.email}</h1>
+            <h1>Age: {props.age}</h1>
+            <h1>This person {props.isMarried ? "is" : "is not"} MARRIED</h1>
+            <h1>Friends:</h1>
+            <ol>
+            {props.friends.map((friend, index) => (
+                <li key={index}>{`${friend.charAt(0).toUpperCase()}${friend.slice(1)}`}</li>
+            ))}
+            </ol>
+        </div>
+    );
+};
+
+Person.propTypes = {
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    isMarried: PropTypes.bool.isRequired,
+    friends: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+export default Person;
 
 ```
 
