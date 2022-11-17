@@ -3882,7 +3882,12 @@ export const useToggle = (initialVal = false) => {
 
 ```
 
-CAT.JS Example:
+</details>
+
+
+
+<details>
+  <summary>67. Cat.js Custom Hook Example</summary>
 
 App.js:
 
@@ -3954,6 +3959,11 @@ const useGetCat = () => {
 
 export default useGetCat;
 ```
+
+</details>
+
+<details>
+  <summary>68. Counter Custom Hook Example</summary>
 
 COUNTER Example:
 
@@ -4027,46 +4037,6 @@ export const useCounter = (initialCount = 0) => {
     return {state, increment, decrement, reset};
 
 }
-```
-
-</details>
-
-
-
-<details>
-  <summary>67. sample</summary>
-
-
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-</details>
-
-<details>
-  <summary>68. sample</summary>
-
-
-
-```Javascript
-
-```
-
-```Javascript
-
-```
-
-```Javascript
-
 ```
 
 </details>
