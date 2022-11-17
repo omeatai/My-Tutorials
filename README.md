@@ -3882,6 +3882,79 @@ export const useToggle = (initialVal = false) => {
 
 ```
 
+Another Example:
+
+App.js:
+
+```Javascript
+import "./App.css";
+import { Cat } from "./pages/Cat";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+function App() {
+  const client = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: true,
+      },
+    },
+  });
+
+  return (
+    <div className="App">
+      <QueryClientProvider client={client}>
+        <Cat />
+      </QueryClientProvider>
+    </div>
+  );
+}
+export default App;
+```
+
+Cat.js:
+
+```Javascript
+import useGetCat from "../useGetCat";
+
+export const Cat = () => {
+    const { data: catData, refetchData: refresh, isCatLoading } = useGetCat();
+
+    if(isCatLoading) {
+        return <h1>Loading...</h1>
+    }
+
+    return (
+        <div>
+            <h1> {isCatLoading ? "Loading..." : catData?.fact}</h1>
+            <button onClick={refresh}>Refresh</button>
+        </div>
+
+    );
+};
+```
+
+useGetCat.js:
+
+```Javascript
+import { useQuery } from "@tanstack/react-query";
+import Axios from "axios";
+
+const useGetCat = () => {
+    const { data, refetch, isLoading: isCatLoading } = useQuery(["cat"] , async () => {
+        return Axios.get("https://catfact.ninja/fact").then((res) => res.data);
+    });
+
+    const refetchData = () => {
+        console.log("DATA REFRESHED");
+        refetch();
+    };
+
+    return { data, refetchData, isCatLoading };
+};
+
+export default useGetCat;
+```
+
 </details>
 
 <details>
