@@ -3990,7 +3990,7 @@ Counter.js:
 import { useCounter } from './useCounter';
 
 export const Counter = () => {
-    const [count, increment, decrement, reset] = useCounter();
+    const {state: count, increment, decrement, reset} = useCounter();
 
     return (
         <div>
@@ -4024,7 +4024,7 @@ export const useCounter = (initialCount = 0) => {
         setState(0);
     };
 
-    return [state, increment, decrement, reset];
+    return {state, increment, decrement, reset};
 
 }
 ```
