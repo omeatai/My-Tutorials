@@ -4115,7 +4115,7 @@ export default Person;
 Install TypeScript App:
 
 ```bash
-npx create-react-app . -template typescript
+npx create-react-app . --template typescript
 ```
 
 ```Javascript
