@@ -4042,13 +4042,14 @@ export const useCounter = (initialCount = 0) => {
 </details>
 
 <details>
-  <summary>69. sample</summary>
+  <summary>69. React Type Safety (PropTypes)</summary>
 
+Install PropTypes:
 
-
-```Javascript
-
+```bash
+npm install prop-types
 ```
+
 
 ```Javascript
 
@@ -4061,7 +4062,7 @@ export const useCounter = (initialCount = 0) => {
 </details>
 
 <details>
-  <summary>70. sample</summary>
+  <summary>70. React Type Safety (TypeScript)</summary>
 
 
 
