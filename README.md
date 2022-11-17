@@ -4112,10 +4112,10 @@ export default Person;
 <details>
   <summary>70. React Type Safety (TypeScript)</summary>
 
+Install TypeScript App:
 
-
-```Javascript
-
+```bash
+npx create-react-app . -template typescript
 ```
 
 ```Javascript
