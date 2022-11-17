@@ -3882,7 +3882,7 @@ export const useToggle = (initialVal = false) => {
 
 ```
 
-Another Example:
+CAT.JS Example:
 
 App.js:
 
@@ -3955,7 +3955,83 @@ const useGetCat = () => {
 export default useGetCat;
 ```
 
+COUNTER Example:
+
+App.js:
+
+```Javascript
+import "./App.css";
+import { Counter } from "./pages/Counter";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+function App() {
+  const client = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: true,
+      },
+    },
+  });
+
+  return (
+    <div className="App">
+      <QueryClientProvider client={client}>
+        <Counter />
+      </QueryClientProvider>
+    </div>
+  );
+}
+export default App;
+```
+
+Counter.js:
+
+```Javascript
+import { useCounter } from './useCounter';
+
+export const Counter = () => {
+    const [count, increment, decrement, reset] = useCounter();
+
+    return (
+        <div>
+            <h1>{count}</h1>
+            <button onClick={increment}>Increment</button>
+            <button onClick={reset}>Reset</button>
+            <button onClick={decrement}>Decrement</button>
+        </div>
+    );
+}
+```
+
+useCounter.js:
+
+```Javascript
+import { useState } from 'react';
+
+export const useCounter = (initialCount = 0) => {
+
+    const [state, setState] = useState(initialCount);
+
+    const increment = () => {
+        setState(state + 1);
+    };
+
+    const decrement = () => {
+        setState(state - 1);
+    };
+
+    const reset = () => {
+        setState(0);
+    };
+
+    return [state, increment, decrement, reset];
+
+}
+```
+
 </details>
+
+
 
 <details>
   <summary>67. sample</summary>
