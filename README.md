@@ -4118,11 +4118,78 @@ Install TypeScript App:
 npx create-react-app . --template typescript
 ```
 
-```Javascript
+App.tsx:
 
+```typescript
+import { Person, Country } from "./Person";
+
+function App() {
+  return (
+    <div className="App">
+      <Person
+        name="Pedro"
+        email="pedro@gmail.com"
+        age={21}
+        isMarried={true}
+        friends={["jessica", "jake", "jerry", "jasmine"]}
+        country={Country.Nigeria}
+      />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```Javascript
+Person.tsx:
+
+```typescript
+import { useState } from 'react'
+
+interface Props {
+    name: string;
+    email: string;
+    age: number;
+    isMarried: boolean;
+    friends: string[];
+    country: string;
+}
+
+export enum Country {
+    Brazil = "Brazil",
+    Nigeria = "Nigeria",
+    USA = "USA",
+}
+
+export const Person = (props: Props) => {
+
+    const firstName: string = "Dave"
+    const [name, setName] = useState<string>("Adam")
+    const getAge = (name: string): number => {
+        return props.age
+    }
+
+    return (
+        <div>
+            <h1>Name: {props.name}</h1>
+            <h1>Email: {props.email}</h1>
+            <h1>Age: {props.age}</h1>
+            <h1>This person {props.isMarried ? "is" : "is not"} MARRIED</h1>
+            <h1>{firstName}</h1>
+            <h1>{name}</h1>
+            <h1>{typeof String(getAge(props.name))}</h1>
+            <h1>Friends:</h1>
+            <ol>
+            {props.friends.map((friend: string, index: number) => (
+                <li key={index}>{`${friend.charAt(0).toUpperCase()}${friend.slice(1)}`}</li>
+            ))}
+            </ol>
+            <h1>Country: {props.country}</h1>
+        </div>
+    );
+};
+
+export default Person;
 
 ```
 
