@@ -4204,12 +4204,127 @@ Install Redux Toolkit Packages:
 npm install @reduxjs/toolkit react-redux
 ```
 
+App.tsx:
+
 ```typescript
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { Home } from "./pages/Home";
+import { Contact } from "./pages/Contact";
+import { Login } from "./pages/Login";
+import { Provider } from "react-redux";
+import { store } from "./store";
+
+function App() {
+  return (
+    <div className="App">
+      <Provider store={store}>
+      <Router>
+        <Link to="/">Home</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/contact">Contact</Link>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+      </Provider>
+    </div>
+  );
+}
+
+export default App;
 
 ```
 
-```typescript
+store.ts:
 
+```typescript
+import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+interface UserStateValue {
+    username: string;
+}
+
+interface UserState {
+    value: UserStateValue;
+}
+
+const initialState = { value: { username: "" } } as UserState;
+const userSlice = createSlice({
+    name: "user",
+    initialState,
+    reducers: {
+        login: (state: UserState, action: PayloadAction<UserStateValue>) => {
+            state.value = action.payload;
+        },
+        logout: (state: UserState) => {
+            state.value = initialState.value;
+        },
+    },
+});
+
+export const { login, logout } = userSlice.actions;
+
+export const store = configureStore({
+    reducer: {
+        user: userSlice.reducer,
+    },
+});
+
+```
+
+Login.tsx:
+
+```typescript
+import React, { useState } from "react";
+import { login, logout } from "../store";
+import { useDispatch, useSelector } from "react-redux";
+
+export const Login = () => {
+    const [newUsername, setNewUsername] = useState<string>("");
+    const dispatch = useDispatch();
+    const username = useSelector((state: any) => state.user.value.username);
+
+    return (
+        <div>
+            <h1>Login</h1>
+            <h2>Username: {username}</h2>
+            <input onChange={(e: React.ChangeEvent<HTMLInputElement>)=>setNewUsername(e.target.value)} type="text" placeholder="username" />
+            <button onClick={()=>dispatch(login({username: newUsername}))}>Submit Login</button>
+            <button onClick={()=>dispatch(logout())}>Logout</button>
+        </div>
+
+    );
+}
+```
+
+Home.tsx:
+
+```typescript
+import { useDispatch, useSelector } from "react-redux";
+
+export const Home = () => {
+    const username = useSelector((state: any) => state.user.value.username);
+
+    return (
+        <div>
+            <h1>Home</h1>
+            <h2>Username: {username}</h2>
+        </div>
+    );
+}
+
+```
+
+Contact.tsx:
+
+```typescript
+export const Contact = () => {
+    return (
+        <h1>Contact</h1>
+    );
+}
 ```
 
 </details>
