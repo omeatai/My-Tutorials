@@ -4204,13 +4204,11 @@ Install Redux Toolkit Packages:
 npm install @reduxjs/toolkit react-redux
 ```
 
-```
-
-```Javascript
+```typescript
 
 ```
 
-```Javascript
+```typescript
 
 ```
 
@@ -4221,15 +4219,15 @@ npm install @reduxjs/toolkit react-redux
 
 
 
-```Javascript
+```typescript
 
 ```
 
-```Javascript
+```typescript
 
 ```
 
-```Javascript
+```typescript
 
 ```
 
@@ -4240,15 +4238,15 @@ npm install @reduxjs/toolkit react-redux
 
 
 
-```Javascript
+```typescript
 
 ```
 
-```Javascript
+```typescript
 
 ```
 
-```Javascript
+```typescript
 
 ```
 
