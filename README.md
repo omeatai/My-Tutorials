@@ -4196,11 +4196,13 @@ export default Person;
 </details>
 
 <details>
-  <summary>71. sample</summary>
+  <summary>71. Redux Toolkit</summary>
 
+Install Redux Toolkit Packages:
 
-
-```Javascript
+```bash
+npm install @reduxjs/toolkit react-redux
+```
 
 ```
 
