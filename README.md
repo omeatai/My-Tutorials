@@ -1,4 +1,4 @@
-# React-Tutorial-2
+# React-Tutorial
 Learn React by Ifeanyi Omeata
 
 ## Tutorial
