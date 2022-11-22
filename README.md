@@ -4346,7 +4346,38 @@ Run Project:
 npm start
 ```
 
+index.tsx:
+
 ```typescript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+App.tsx:
+
+```typescript
+import React from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>React App</h1>
+    </div>
+  );
+}
+
+export default App;
 
 ```
 
