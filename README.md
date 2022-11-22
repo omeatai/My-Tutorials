@@ -4332,16 +4332,18 @@ export const Contact = () => {
 +FIREBASE SOCIAL MEDIA PROJECT
 
 <details>
-  <summary>72. sample</summary>
+  <summary>72. Introduction</summary>
 
+Create React Project:
 
-
-```typescript
-
+```bash
+npx create-react-app . --template typescript
 ```
 
-```typescript
+Run Project:
 
+```bash
+npm start
 ```
 
 ```typescript
