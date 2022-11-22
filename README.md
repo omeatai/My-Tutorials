@@ -1,4 +1,5 @@
 # React-Tutorial
+
 Learn React by Ifeanyi Omeata
 
 ## Tutorial
@@ -495,7 +496,6 @@ export default Home;
 Index.css:
 
 ```css
-
 /* blog previews / list */
 .blog-preview {
   padding: 10px 16px;
@@ -503,7 +503,7 @@ Index.css:
   border-bottom: 1px solid #fafafa;
 }
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .blog-preview h2 {
   font-size: 20px;
@@ -702,25 +702,24 @@ index.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <nav>
+      <h1>All Blogs</h1>
+      <a href="/create.html">Add a new blog</a>
+    </nav>
 
-  <nav>
-    <h1>All Blogs</h1>
-    <a href="/create.html">Add a new blog</a>
-  </nav>
+    <div class="blogs">
+      <!-- inject blogs here from js -->
+    </div>
 
-  <div class="blogs">
-    <!-- inject blogs here from js -->
-  </div>
-
-  <script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
 ```
 
@@ -728,24 +727,23 @@ create.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <h1>Create a New Blog</h1>
 
-  <h1>Create a New Blog</h1>
+    <form>
+      <input type="text" name="title" required placeholder="Blog title" />
+      <textarea name="body" required placeholder="Blog body"></textarea>
+      <button>Create</button>
+    </form>
 
-  <form>
-    <input type="text" name="title" required placeholder="Blog title">
-    <textarea name="body" required placeholder="Blog body"></textarea>
-    <button>Create</button>
-  </form>
-
-  <script src="js/create.js"></script>
-</body>
+    <script src="js/create.js"></script>
+  </body>
 </html>
 ```
 
@@ -753,32 +751,31 @@ details.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <div class="details">
+      <!-- inject blog details here -->
+    </div>
 
-  <div class="details">
-    <!-- inject blog details here -->
-  </div>
-
-  <script src="js/details.js"></script>
-</body>
+    <script src="js/details.js"></script>
+  </body>
 </html>
 ```
 
 styles.css:
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 /* base styles */
 body {
   background: #eee;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   color: #444;
   max-width: 960px;
   margin: 100px auto;
@@ -801,16 +798,17 @@ nav a {
 form {
   max-width: 500px;
 }
-input, textarea {
+input,
+textarea {
   display: block;
   margin: 16px 0;
   padding: 6px 10px;
   width: 100%;
   border: 1px solid #ddd;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 textarea {
-  min-height:200px;
+  min-height: 200px;
 }
 ```
 
@@ -936,25 +934,24 @@ Index.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <nav>
+      <h1>All Blogs</h1>
+      <a href="/create.html">Add a new blog</a>
+    </nav>
 
-  <nav>
-    <h1>All Blogs</h1>
-    <a href="/create.html">Add a new blog</a>
-  </nav>
+    <div class="blogs">
+      <!-- inject blogs here from js -->
+    </div>
 
-  <div class="blogs">
-    <!-- inject blogs here from js -->
-  </div>
-
-  <script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
 ```
 
@@ -962,19 +959,19 @@ js/index.js:
 
 ```javascript
 // javascript for index.html
-const container = document.querySelector('.blogs');
+const container = document.querySelector(".blogs");
 const pathname = window.location.pathname;
-const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
-const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
+const filename = pathname.slice(pathname.lastIndexOf("/") + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf("/"));
 
 const renderPosts = async () => {
-  let uri = 'http://localhost:3000/posts';
+  let uri = "http://localhost:3000/posts";
 
   const res = await fetch(uri);
   const posts = await res.json();
 
-  let template = '';
-  posts.forEach(post => {
+  let template = "";
+  posts.forEach((post) => {
     template += `
       <div class="post">
         <h2>${post.title}</h2>
@@ -982,13 +979,13 @@ const renderPosts = async () => {
         <p>${post.body.slice(0, 200)}...</p>
         <a href="${dirname}/details.html?id=${post.id}">Read more</a>
       </div>
-    `
+    `;
   });
 
   container.innerHTML = template;
-}
+};
 
-window.addEventListener('DOMContentLoaded', () => renderPosts());
+window.addEventListener("DOMContentLoaded", () => renderPosts());
 ```
 
 styles.css:
@@ -1010,7 +1007,6 @@ styles.css:
 .post a {
   color: #36cca2;
 }
-
 ```
 
 </details>
@@ -1022,20 +1018,19 @@ details.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <div class="details">
+      <!-- inject blog details here -->
+    </div>
 
-  <div class="details">
-    <!-- inject blog details here -->
-  </div>
-
-  <script src="js/details.js"></script>
-</body>
+    <script src="js/details.js"></script>
+  </body>
 </html>
 ```
 
@@ -1043,14 +1038,14 @@ js/details.js:
 
 ```javascript
 // javascript for details.html
-const id = new URLSearchParams(window.location.search).get('id');
-const container = document.querySelector('.details');
+const id = new URLSearchParams(window.location.search).get("id");
+const container = document.querySelector(".details");
 const pathname = window.location.pathname;
-const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
-const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
+const filename = pathname.slice(pathname.lastIndexOf("/") + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf("/"));
 
 const renderDetails = async () => {
-  const res = await fetch('http://localhost:3000/posts/' + id);
+  const res = await fetch("http://localhost:3000/posts/" + id);
   if (!res.ok) {
     window.location.replace(`${dirname}/index.html`);
   }
@@ -1059,13 +1054,12 @@ const renderDetails = async () => {
   const template = `
     <h1>${post.title}</h1>
     <p>${post.body}</p>
-  `
+  `;
 
   container.innerHTML = template;
-}
+};
 
-window.addEventListener('DOMContentLoaded', renderDetails);
-
+window.addEventListener("DOMContentLoaded", renderDetails);
 ```
 
 </details>
@@ -1138,24 +1132,23 @@ create.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <h1>Create a New Blog</h1>
 
-  <h1>Create a New Blog</h1>
+    <form>
+      <input type="text" name="title" required placeholder="Blog title" />
+      <textarea name="body" required placeholder="Blog body"></textarea>
+      <button>Create</button>
+    </form>
 
-  <form>
-    <input type="text" name="title" required placeholder="Blog title">
-    <textarea name="body" required placeholder="Blog body"></textarea>
-    <button>Create</button>
-  </form>
-
-  <script src="js/create.js"></script>
-</body>
+    <script src="js/create.js"></script>
+  </body>
 </html>
 ```
 
@@ -1164,11 +1157,11 @@ create.js:
 ```javascript
 // javascript for create.html
 
-const form = document.querySelector('form');
+const form = document.querySelector("form");
 
 const pathname = window.location.pathname;
-const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
-const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
+const filename = pathname.slice(pathname.lastIndexOf("/") + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf("/"));
 
 const createPost = async (e) => {
   e.preventDefault();
@@ -1177,19 +1170,18 @@ const createPost = async (e) => {
     title: form.title.value,
     body: form.body.value,
     likes: 0,
-  }
+  };
 
-  await fetch('http://localhost:3000/posts', {
-    method: 'POST',
+  await fetch("http://localhost:3000/posts", {
+    method: "POST",
     body: JSON.stringify(doc),
-    headers: { 'Content-Type': 'application/json' }
-  })
+    headers: { "Content-Type": "application/json" },
+  });
 
   window.location.replace(`${dirname}/index.html`);
-}
+};
 
-form.addEventListener('submit', createPost);
-
+form.addEventListener("submit", createPost);
 ```
 
 </details>
@@ -1201,21 +1193,20 @@ details.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <div class="details">
+      <!-- inject blog details here -->
+    </div>
+    <button class="delete">delete</button>
 
-  <div class="details">
-    <!-- inject blog details here -->
-  </div>
-  <button class="delete">delete</button>
-
-  <script src="js/details.js"></script>
-</body>
+    <script src="js/details.js"></script>
+  </body>
 </html>
 ```
 
@@ -1223,16 +1214,16 @@ details.js:
 
 ```javascript
 // javascript for details.html
-const id = new URLSearchParams(window.location.search).get('id');
-const container = document.querySelector('.details');
-const deleteBtn = document.querySelector('.delete');
+const id = new URLSearchParams(window.location.search).get("id");
+const container = document.querySelector(".details");
+const deleteBtn = document.querySelector(".delete");
 
 const pathname = window.location.pathname;
-const filename = pathname.slice(pathname.lastIndexOf('/') + 1);
-const dirname = pathname.slice(0, pathname.lastIndexOf('/'));
+const filename = pathname.slice(pathname.lastIndexOf("/") + 1);
+const dirname = pathname.slice(0, pathname.lastIndexOf("/"));
 
 const renderDetails = async () => {
-  const res = await fetch('http://localhost:3000/posts/' + id);
+  const res = await fetch("http://localhost:3000/posts/" + id);
   if (!res.ok) {
     window.location.replace(`${dirname}/index.html`);
   }
@@ -1241,20 +1232,19 @@ const renderDetails = async () => {
   const template = `
     <h1>${post.title}</h1>
     <p>${post.body}</p>
-  `
+  `;
 
   container.innerHTML = template;
-}
+};
 
-deleteBtn.addEventListener('click', async () => {
-  const res = await fetch('http://localhost:3000/posts/' + id, {
-    method: 'DELETE'
+deleteBtn.addEventListener("click", async () => {
+  const res = await fetch("http://localhost:3000/posts/" + id, {
+    method: "DELETE",
   });
   window.location.replace(`${dirname}/index.html`);
-})
+});
 
-window.addEventListener('DOMContentLoaded', renderDetails);
-
+window.addEventListener("DOMContentLoaded", renderDetails);
 ```
 
 </details>
@@ -1266,31 +1256,29 @@ index.html:
 
 ```html
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JSON Server</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JSON Server</title>
+  </head>
+  <body>
+    <nav>
+      <h1>All Blogs</h1>
+      <a href="/Cloud/Json-Server/create.html">Add a new blog</a>
+    </nav>
 
-  <nav>
-    <h1>All Blogs</h1>
-    <a href="/Cloud/Json-Server/create.html">Add a new blog</a>
-  </nav>
+    <form class="search">
+      <input type="text" placeholder="search term" name="term" />
+    </form>
 
-  <form class="search">
-    <input type="text" placeholder="search term" name="term">
-  </form>
+    <div class="blogs">
+      <!-- inject blogs here from js -->
+    </div>
 
-  <div class="blogs">
-    <!-- inject blogs here from js -->
-  </div>
-
-  <script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
-
 ```
 
 js/index.js:
@@ -1363,7 +1351,6 @@ data/db.json:
     }
   ]
 }
-
 ```
 
 Run JSON Server:
@@ -1393,48 +1380,46 @@ import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-    const [blogs, setBlogs] = useState(null)
+  const [blogs, setBlogs] = useState(null);
 
-    useEffect(() => {
-        fetch('http://localhost:8000/blogs')
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            setBlogs(data);
-        })
-    }, [])
+  useEffect(() => {
+    fetch("http://localhost:8000/blogs")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+      });
+  }, []);
 
-    return (
-        <div className="home">
-        {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
-        </div>
-    );
-}
+  return (
+    <div className="home">
+      {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
+    </div>
+  );
+};
 
 export default Home;
-
 ```
 
 BlogList.js:
 
 ```javascript
-import React from 'react';
+import React from "react";
 
-const BlogList = ({blogs, title}) => {
-
-    return (
-        <div className="blog-list">
-            <h2>{ title }</h2>
-            {blogs.map((blog) => (
-                <div className="blog-preview" key={blog.id}>
-                    <h2>{ blog.title }</h2>
-                    <p>Written by { blog.author }</p>
-                </div>
-            ))}
+const BlogList = ({ blogs, title }) => {
+  return (
+    <div className="blog-list">
+      <h2>{title}</h2>
+      {blogs.map((blog) => (
+        <div className="blog-preview" key={blog.id}>
+          <h2>{blog.title}</h2>
+          <p>Written by {blog.author}</p>
         </div>
-    );
-}
+      ))}
+    </div>
+  );
+};
 
 export default BlogList;
 ```
@@ -1451,29 +1436,29 @@ import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-    const [blogs, setBlogs] = useState(null);
-    const [isPending, setIsPending] = useState(true);
+  const [blogs, setBlogs] = useState(null);
+  const [isPending, setIsPending] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => {
-        fetch('http://localhost:8000/blogs')
-        .then(res => {
-            return res.json();
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogs")
+        .then((res) => {
+          return res.json();
         })
-        .then(data => {
-            setIsPending(false);
-            setBlogs(data);
-        })
-        }, 1000);
-    }, [])
+        .then((data) => {
+          setIsPending(false);
+          setBlogs(data);
+        });
+    }, 1000);
+  }, []);
 
-    return (
-        <div className="home">
-        { isPending && <div>Loading...</div> }
-        {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
-        </div>
-    );
-}
+  return (
+    <div className="home">
+      {isPending && <div>Loading...</div>}
+      {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
+    </div>
+  );
+};
 
 export default Home;
 ```
@@ -1490,41 +1475,42 @@ import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-    const [blogs, setBlogs] = useState(null);
-    const [isPending, setIsPending] = useState(true);
-    const [error, setError] = useState(null);
+  const [blogs, setBlogs] = useState(null);
+  const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(null);
 
-    useEffect(() => {
-        setTimeout(() => {
-        fetch('http://localhost:8000/blogs')
-        .then(res => {
-            if (!res.ok) { // error coming back from server
-            throw Error('could not fetch the data for that resource');
-            }
-            return res.json();
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogs")
+        .then((res) => {
+          if (!res.ok) {
+            // error coming back from server
+            throw Error("could not fetch the data for that resource");
+          }
+          return res.json();
         })
-        .then(data => {
-            setIsPending(false);
-            setBlogs(data);
-            setError(null);
+        .then((data) => {
+          setIsPending(false);
+          setBlogs(data);
+          setError(null);
         })
-        .catch(err => {
-            // auto catches network / connection error
-            setIsPending(false);
-            setError(err.message);
-            setBlogs(null);
-        })
-        }, 1000);
-    }, [])
+        .catch((err) => {
+          // auto catches network / connection error
+          setIsPending(false);
+          setError(err.message);
+          setBlogs(null);
+        });
+    }, 1000);
+  }, []);
 
-    return (
-        <div className="home">
-        { error && <div>{ error }</div> }
-        { isPending && <div>Loading...</div> }
-        {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
-        </div>
-    );
-}
+  return (
+    <div className="home">
+      {error && <div>{error}</div>}
+      {isPending && <div>Loading...</div>}
+      {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
+    </div>
+  );
+};
 
 export default Home;
 ```
@@ -1559,45 +1545,44 @@ export default Home;
 useFetch.js:
 
 ```javascript
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
-    const [data, setData] = useState(null);
-    const [isPending, setIsPending] = useState(true);
-    const [error, setError] = useState(null);
+  const [data, setData] = useState(null);
+  const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(null);
 
-    useEffect(() => {
-        setTimeout(() => {
-        fetch(url)
-        .then(res => {
-            if (!res.ok) { // error coming back from server
-            throw Error('could not fetch the data for that resource');
-            }
-            return res.json();
+  useEffect(() => {
+    setTimeout(() => {
+      fetch(url)
+        .then((res) => {
+          if (!res.ok) {
+            // error coming back from server
+            throw Error("could not fetch the data for that resource");
+          }
+          return res.json();
         })
-        .then(data => {
-            setIsPending(false);
-            setData(data);
-            setError(null);
+        .then((data) => {
+          setIsPending(false);
+          setData(data);
+          setError(null);
         })
-        .catch(err => {
-            // auto catches network / connection error
-            setIsPending(false);
-            setError(err.message);
-            setData(null);
-        })
-        }, 1000);
-    }, [url])
+        .catch((err) => {
+          // auto catches network / connection error
+          setIsPending(false);
+          setError(err.message);
+          setData(null);
+        });
+    }, 1000);
+  }, [url]);
 
-    return { data, isPending, error };
-}
+  return { data, isPending, error };
+};
 
 export default useFetch;
-
 ```
 
 </details>
-
 
 <details>
   <summary>32. Using React Router for Routes</summary>
@@ -1638,7 +1623,6 @@ export default App;
 ```
 
 </details>
-
 
 <details>
   <summary>33. Create Route for Create Page</summary>
@@ -1690,7 +1674,6 @@ export default Create;
 
 </details>
 
-
 <details>
   <summary>34. Using Route Links</summary>
 
@@ -1719,7 +1702,6 @@ export default Navbar;
 ```
 
 </details>
-
 
 <details>
   <summary>35. UseEffect Cleanup using Abort Controller</summary>
@@ -1790,7 +1772,6 @@ root.render(
 ```
 
 </details>
-
 
 <details>
   <summary>36. Using Route Parameters for Blog Details Page</summary>
@@ -1883,7 +1864,6 @@ Index.css:
 
 </details>
 
-
 <details>
   <summary>37. Reusing Custom Hooks for BlogDetails Page</summary>
 
@@ -1940,7 +1920,6 @@ index.css:
 ```
 
 </details>
-
 
 <details>
   <summary>38. Using Controlled Form Inputs for Create Page</summary>
@@ -2007,7 +1986,9 @@ index.css:
   color: #f1356d;
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+.create input,
+.create textarea,
+.create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -2026,7 +2007,6 @@ index.css:
 ```
 
 </details>
-
 
 <details>
   <summary>39. Submitting Form Events</summary>
@@ -2083,7 +2063,6 @@ export default Create;
 ```
 
 </details>
-
 
 <details>
   <summary>40. Creating Post Request for Create Page</summary>
@@ -2335,7 +2314,6 @@ export default App;
 
 </details>
 
-
 ### [2-REACTJS COURSE - PEDROTECH](#)
 
 +INTRODUCTION
@@ -2542,7 +2520,6 @@ App.module.css:
     transform: rotate(360deg);
   }
 }
-
 ```
 
 </details>
@@ -2755,7 +2732,6 @@ function App() {
 export default App;
 ```
 
-
 ```Javascript
 import "./App.css";
 import { useState, useEffect} from 'react';
@@ -2860,7 +2836,7 @@ Set homepage in package.json:
   "homepage": "http://omeatai.github.io/Digital-Clock-Project/",
   "name": "digital-clock-project",
   "version": "0.1.0",
-  "private": true,
+  "private": true
 }
 ```
 
@@ -2893,7 +2869,7 @@ Add Scripts to package.json:
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+  }
 }
 ```
 
@@ -3884,8 +3860,6 @@ export const useToggle = (initialVal = false) => {
 
 </details>
 
-
-
 <details>
   <summary>67. Cat.js Custom Hook Example</summary>
 
@@ -4144,53 +4118,53 @@ export default App;
 Person.tsx:
 
 ```typescript
-import { useState } from 'react'
+import { useState } from "react";
 
 interface Props {
-    name: string;
-    email: string;
-    age: number;
-    isMarried: boolean;
-    friends: string[];
-    country: string;
+  name: string;
+  email: string;
+  age: number;
+  isMarried: boolean;
+  friends: string[];
+  country: string;
 }
 
 export enum Country {
-    Brazil = "Brazil",
-    Nigeria = "Nigeria",
-    USA = "USA",
+  Brazil = "Brazil",
+  Nigeria = "Nigeria",
+  USA = "USA",
 }
 
 export const Person = (props: Props) => {
+  const firstName: string = "Dave";
+  const [name, setName] = useState<string>("Adam");
+  const getAge = (name: string): number => {
+    return props.age;
+  };
 
-    const firstName: string = "Dave"
-    const [name, setName] = useState<string>("Adam")
-    const getAge = (name: string): number => {
-        return props.age
-    }
-
-    return (
-        <div>
-            <h1>Name: {props.name}</h1>
-            <h1>Email: {props.email}</h1>
-            <h1>Age: {props.age}</h1>
-            <h1>This person {props.isMarried ? "is" : "is not"} MARRIED</h1>
-            <h1>{firstName}</h1>
-            <h1>{name}</h1>
-            <h1>{typeof String(getAge(props.name))}</h1>
-            <h1>Friends:</h1>
-            <ol>
-            {props.friends.map((friend: string, index: number) => (
-                <li key={index}>{`${friend.charAt(0).toUpperCase()}${friend.slice(1)}`}</li>
-            ))}
-            </ol>
-            <h1>Country: {props.country}</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Name: {props.name}</h1>
+      <h1>Email: {props.email}</h1>
+      <h1>Age: {props.age}</h1>
+      <h1>This person {props.isMarried ? "is" : "is not"} MARRIED</h1>
+      <h1>{firstName}</h1>
+      <h1>{name}</h1>
+      <h1>{typeof String(getAge(props.name))}</h1>
+      <h1>Friends:</h1>
+      <ol>
+        {props.friends.map((friend: string, index: number) => (
+          <li key={index}>{`${friend.charAt(0).toUpperCase()}${friend.slice(
+            1
+          )}`}</li>
+        ))}
+      </ol>
+      <h1>Country: {props.country}</h1>
+    </div>
+  );
 };
 
 export default Person;
-
 ```
 
 </details>
@@ -4207,7 +4181,7 @@ npm install @reduxjs/toolkit react-redux
 App.tsx:
 
 ```typescript
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 import { Login } from "./pages/Login";
@@ -4218,23 +4192,22 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-      <Router>
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/contact">Contact</Link>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
+        <Router>
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/contact">Contact</Link>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Router>
       </Provider>
     </div>
   );
 }
 
 export default App;
-
 ```
 
 store.ts:
@@ -4243,35 +4216,34 @@ store.ts:
 import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface UserStateValue {
-    username: string;
+  username: string;
 }
 
 interface UserState {
-    value: UserStateValue;
+  value: UserStateValue;
 }
 
 const initialState = { value: { username: "" } } as UserState;
 const userSlice = createSlice({
-    name: "user",
-    initialState,
-    reducers: {
-        login: (state: UserState, action: PayloadAction<UserStateValue>) => {
-            state.value = action.payload;
-        },
-        logout: (state: UserState) => {
-            state.value = initialState.value;
-        },
+  name: "user",
+  initialState,
+  reducers: {
+    login: (state: UserState, action: PayloadAction<UserStateValue>) => {
+      state.value = action.payload;
     },
+    logout: (state: UserState) => {
+      state.value = initialState.value;
+    },
+  },
 });
 
 export const { login, logout } = userSlice.actions;
 
 export const store = configureStore({
-    reducer: {
-        user: userSlice.reducer,
-    },
+  reducer: {
+    user: userSlice.reducer,
+  },
 });
-
 ```
 
 Login.tsx:
@@ -4282,21 +4254,28 @@ import { login, logout } from "../store";
 import { useDispatch, useSelector } from "react-redux";
 
 export const Login = () => {
-    const [newUsername, setNewUsername] = useState<string>("");
-    const dispatch = useDispatch();
-    const username = useSelector((state: any) => state.user.value.username);
+  const [newUsername, setNewUsername] = useState<string>("");
+  const dispatch = useDispatch();
+  const username = useSelector((state: any) => state.user.value.username);
 
-    return (
-        <div>
-            <h1>Login</h1>
-            <h2>Username: {username}</h2>
-            <input onChange={(e: React.ChangeEvent<HTMLInputElement>)=>setNewUsername(e.target.value)} type="text" placeholder="username" />
-            <button onClick={()=>dispatch(login({username: newUsername}))}>Submit Login</button>
-            <button onClick={()=>dispatch(logout())}>Logout</button>
-        </div>
-
-    );
-}
+  return (
+    <div>
+      <h1>Login</h1>
+      <h2>Username: {username}</h2>
+      <input
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setNewUsername(e.target.value)
+        }
+        type="text"
+        placeholder="username"
+      />
+      <button onClick={() => dispatch(login({ username: newUsername }))}>
+        Submit Login
+      </button>
+      <button onClick={() => dispatch(logout())}>Logout</button>
+    </div>
+  );
+};
 ```
 
 Home.tsx:
@@ -4305,26 +4284,23 @@ Home.tsx:
 import { useDispatch, useSelector } from "react-redux";
 
 export const Home = () => {
-    const username = useSelector((state: any) => state.user.value.username);
+  const username = useSelector((state: any) => state.user.value.username);
 
-    return (
-        <div>
-            <h1>Home</h1>
-            <h2>Username: {username}</h2>
-        </div>
-    );
-}
-
+  return (
+    <div>
+      <h1>Home</h1>
+      <h2>Username: {username}</h2>
+    </div>
+  );
+};
 ```
 
 Contact.tsx:
 
 ```typescript
 export const Contact = () => {
-    return (
-        <h1>Contact</h1>
-    );
-}
+  return <h1>Contact</h1>;
+};
 ```
 
 </details>
@@ -4349,12 +4325,12 @@ npm start
 index.tsx:
 
 ```typescript
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
@@ -4366,8 +4342,8 @@ root.render(
 App.tsx:
 
 ```typescript
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
@@ -4378,7 +4354,6 @@ function App() {
 }
 
 export default App;
-
 ```
 
 </details>
@@ -4395,12 +4370,12 @@ npm install react-router-dom
 App.tsx:
 
 ```typescript
-import React from 'react';
-import './App.css';
-import { Main } from './pages/Main';
-import { Login } from './pages/Login';
-import { Navbar } from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import "./App.css";
+import { Main } from "./pages/Main";
+import { Login } from "./pages/Login";
+import { Navbar } from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -4417,21 +4392,20 @@ function App() {
 }
 
 export default App;
-
 ```
 
 Navbar.tsx:
 
 ```typescript
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-    return (
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-        </nav>
-    );
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/login">Login</Link>
+    </nav>
+  );
 };
 ```
 
@@ -4439,7 +4413,7 @@ Main.tsx:
 
 ```ts
 export const Main = () => {
-    return <h1>Home Page</h1>;
+  return <h1>Home Page</h1>;
 };
 ```
 
@@ -4447,7 +4421,7 @@ Login.tsx:
 
 ```ts
 export const Login = () => {
-    return <h1> Login Page</h1>;
+  return <h1> Login Page</h1>;
 };
 ```
 
@@ -4467,52 +4441,161 @@ config.ts:
 ```ts
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDdFw8SFSfGwmm3S5CBX5nFi7KMxd8GyyQ",
-    authDomain: "pedro-app-8bd3b.firebaseapp.com",
-    projectId: "pedro-app-8bd3b",
-    storageBucket: "pedro-app-8bd3b.appspot.com",
-    messagingSenderId: "679821378683",
-    appId: "1:679821378683:web:54f00cc4f7433907150ede"
+  apiKey: "AIzaSyDdFw8SFSfGwmm3S5CBX5nFi7KMxd8GyyQ",
+  authDomain: "pedro-app-8bd3b.firebaseapp.com",
+  projectId: "pedro-app-8bd3b",
+  storageBucket: "pedro-app-8bd3b.appspot.com",
+  messagingSenderId: "679821378683",
+  appId: "1:679821378683:web:54f00cc4f7433907150ede",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-```
 
-```Javascript
-
+export const auth = getAuth(app);
+export const provider = new GoogleAuthProvider();
 ```
 
 </details>
 
 <details>
-  <summary>75. sample</summary>
+  <summary>75. Login Google Authentication</summary>
 
-
-
-```Javascript
-
+```bs
+npm install react-firebase-hooks
 ```
 
-```Javascript
+Login.tsx:
 
+```tsx
+import { auth, provider } from "../config/firebase";
+import { signInWithPopup } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+
+export const Login = () => {
+  const navigate = useNavigate();
+
+  const signInWithGoogle = async () => {
+    const result = await signInWithPopup(auth, provider);
+    if (result) {
+      navigate("/");
+    }
+  };
+
+  return (
+    <div>
+      <h1> Login Page</h1>
+      <p>Sign In With Google To Continue</p>
+      <button onClick={signInWithGoogle}>Sign In With Google</button>
+    </div>
+  );
+};
 ```
 
-```Javascript
+Navbar.tsx:
 
+```tsx
+import { Link } from "react-router-dom";
+import { auth } from "../config/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
+
+export const Navbar = () => {
+  const [user, loading, error] = useAuthState(auth);
+
+  const signUserOut = async () => {
+    await signOut(auth);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/login">Login</Link>
+      </div>
+      <div className="user">
+        {user ? (
+          <>
+            <p>{user?.displayName}</p>
+            <img
+              src={user?.photoURL || ""}
+              alt="photoURL"
+              width="20"
+              height="20"
+            />
+            <button onClick={signUserOut}> Log Out</button>
+          </>
+        ) : null}
+      </div>
+    </nav>
+  );
+};
+```
+
+App.css:
+
+```css
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: slateblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar .links {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 10px;
+}
+
+.navbar .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.user p {
+  font-size: 15px;
+  margin-right: 10px;
+  color: white;
+}
+
+.user img {
+  font-size: 15px;
+  border-radius: 50%;
+}
 ```
 
 </details>
 
 <details>
   <summary>76. sample</summary>
-
-
 
 ```Javascript
 
@@ -4531,8 +4614,6 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>77. sample</summary>
 
-
-
 ```Javascript
 
 ```
@@ -4549,8 +4630,6 @@ const app = initializeApp(firebaseConfig);
 
 <details>
   <summary>78. sample</summary>
-
-
 
 ```Javascript
 
@@ -4569,8 +4648,6 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>79. sample</summary>
 
-
-
 ```Javascript
 
 ```
@@ -4588,8 +4665,6 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>80. sample</summary>
 
-
-
 ```Javascript
 
 ```
@@ -4603,5 +4678,3 @@ const app = initializeApp(firebaseConfig);
 ```
 
 </details>
-
-
