@@ -4437,7 +4437,7 @@ export const Navbar = () => {
 
 Main.tsx:
 
-```typescript
+```ts
 export const Main = () => {
     return <h1>Home Page</h1>;
 };
@@ -4445,7 +4445,7 @@ export const Main = () => {
 
 Login.tsx:
 
-```typescript
+```ts
 export const Login = () => {
     return <h1> Login Page</h1>;
 };
@@ -4454,16 +4454,34 @@ export const Login = () => {
 </details>
 
 <details>
-  <summary>74. sample</summary>
+  <summary>74. Integrate Firebase</summary>
 
+Install Firebase:
 
-
-```Javascript
-
+```bash
+npm install firebase
 ```
 
-```Javascript
+config.ts:
 
+```ts
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDdFw8SFSfGwmm3S5CBX5nFi7KMxd8GyyQ",
+  authDomain: "pedro-app-8bd3b.firebaseapp.com",
+  projectId: "pedro-app-8bd3b",
+  storageBucket: "pedro-app-8bd3b.appspot.com",
+  messagingSenderId: "679821378683",
+  appId: "1:679821378683:web:54f00cc4f7433907150ede"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 ```
 
 ```Javascript
