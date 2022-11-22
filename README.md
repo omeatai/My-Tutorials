@@ -4384,20 +4384,71 @@ export default App;
 </details>
 
 <details>
-  <summary>73. sample</summary>
+  <summary>73. Setting up Components</summary>
 
+Install React Router DOM
 
+```bash
+npm install react-router-dom
+```
+
+App.tsx:
 
 ```typescript
+import React from 'react';
+import './App.css';
+import { Main } from './pages/Main';
+import { Login } from './pages/Login';
+import { Navbar } from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+export default App;
 
 ```
 
-```typescript
+Navbar.tsx:
 
+```typescript
+import { Link } from 'react-router-dom';
+
+export const Navbar = () => {
+    return (
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+        </nav>
+    );
+};
 ```
 
-```typescript
+Main.tsx:
 
+```typescript
+export const Main = () => {
+    return <h1>Home Page</h1>;
+};
+```
+
+Login.tsx:
+
+```typescript
+export const Login = () => {
+    return <h1> Login Page</h1>;
+};
 ```
 
 </details>
