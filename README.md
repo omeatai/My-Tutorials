@@ -4611,35 +4611,87 @@ username -> "PedroTech" -> (string)
 </details>
 
 <details>
-  <summary>77. sample</summary>
+  <summary>77. Controlling Login availability</summary>
 
-```Javascript
+Navbar.tsx:
 
-```
+```tsx
+import { Link } from "react-router-dom";
+import { auth } from "../config/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
 
-```Javascript
+export const Navbar = () => {
+  const [user, loading, error] = useAuthState(auth);
 
-```
+  const signUserOut = async () => {
+    await signOut(auth);
+  };
 
-```Javascript
-
+  return (
+    <nav className="navbar">
+      <div className="links">
+        <Link to="/">Home</Link>
+        {!user ? (
+          <Link to="/login">Login</Link>
+        ) : (
+          <Link to="/createpost">Create Post</Link>
+        )}
+      </div>
+      <div className="user">
+        {user ? (
+          <>
+            <p>{user?.displayName}</p>
+            <img src={user?.photoURL || ""} alt="" width="20" height="20" />
+            <button onClick={signUserOut}> Log Out</button>
+          </>
+        ) : null}
+      </div>
+    </nav>
+  );
+};
 ```
 
 </details>
 
 <details>
-  <summary>78. sample</summary>
+  <summary>78. Create Post route and Component</summary>
 
-```Javascript
+App.tsx:
 
+```tsx
+import React from "react";
+import "./App.css";
+import { Main } from "./pages/Main";
+import { Login } from "./pages/Login";
+import { CreatePost } from "./pages/CreatePost";
+import { Navbar } from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/createpost" element={<CreatePost />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```Javascript
+CreatePost.tsx:
 
-```
-
-```Javascript
-
+```tsx
+export const CreatePost = () => {
+  return <div>Create Post</div>;
+};
 ```
 
 </details>
