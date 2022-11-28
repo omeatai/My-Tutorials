@@ -4595,18 +4595,17 @@ body {
 </details>
 
 <details>
-  <summary>76. sample</summary>
+  <summary>76. Create Firebase Collection</summary>
 
-```Javascript
-
+```bs
+Firebase -> Build -> Firestore Database -> Collection -> "Posts"
 ```
 
-```Javascript
-
-```
-
-```Javascript
-
+```bs
+description -> "Hello, people." -> (string)
+id -> "pedrotech01" -> (string)
+title -> "the first post" -> (string)
+username -> "PedroTech" -> (string)
 ```
 
 </details>
