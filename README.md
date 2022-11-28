@@ -4664,7 +4664,7 @@ import React from "react";
 import "./App.css";
 import { Main } from "./pages/Main";
 import { Login } from "./pages/Login";
-import { CreatePost } from "./pages/CreatePost";
+import { CreatePost } from "./pages/createpost/CreatePost";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
