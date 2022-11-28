@@ -4697,18 +4697,67 @@ export const CreatePost = () => {
 </details>
 
 <details>
-  <summary>79. sample</summary>
+  <summary>79. Create Post Form</summary>
 
-```Javascript
-
+```bs
+npm install react-hook-form yup @hookform/resolvers
 ```
 
-```Javascript
+CreatePost.tsx:
 
+```tsx
+import { CreateForm } from "./CreateForm";
+
+export const CreatePost = () => {
+  return (
+    <div>
+      <h1>Create Post</h1>
+      <CreateForm />
+    </div>
+  );
+};
 ```
 
-```Javascript
+CreateForm.tsx:
 
+```tsx
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+export const CreateForm = () => {
+  interface CreateFormData {
+    title: string;
+    description: string;
+  }
+
+  const schema = yup.object().shape({
+    title: yup.string().required("You must add a Title."),
+    description: yup.string().required("You must add a Description."),
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<CreateFormData>({
+    resolver: yupResolver(schema),
+  });
+
+  const onCreatePost = (data: CreateFormData) => {
+    console.log(data);
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onCreatePost)}>
+      <input placeholder="Title..." {...register("title")} />
+      <p style={{ color: "red" }}>{errors.title?.message}</p>
+      <textarea placeholder="Description..." {...register("description")} />
+      <p style={{ color: "red" }}>{errors.description?.message}</p>
+      <input type="submit" />
+    </form>
+  );
+};
 ```
 
 </details>
