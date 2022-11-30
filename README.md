@@ -5169,6 +5169,55 @@ npm install -g firebase-tools
 npm run build
 ```
 
+Git:
+
+```bs
+#Just follow next steps in console terminal ;)
+git init	#Initialize git in folder
+git add .	#add all files of folder to be pushed
+git commit -m "First commit"	#add first commit
+git remote add origin remote_repository_URL #replace with your remote repo url
+git remote -v	#verify that your remote repository url is properly found
+git push --force origin master	#force pushing your project into github repo
+
+# Push newly created local branch to remote
+git push --set-upstream origin <branch name>
+
+git push --force origin main //force pushing to remote github repo
+
+git push -u origin new_branch
+
+github@branch/c/remote/push  (new-branch)
+git clone https://github.com/learn-git-fast/git-branch-examples.git
+cd git*
+git checkout -b new-branch
+
+github@branch/c/remote/push (new-branch)
+git branch -a
+touch devolution.jpg
+git add .
+git commit -m "Are we not gender neutral people? We are Devo?"
+git push --set-upstream origin new-branch
+
+github@branch/c/remote/push (new-branch)
+touch eden.html
+git add .
+git commit -m "Eden added"
+git push origin
+
+git init
+# Optional: create branch
+git checkout -b branch_name
+git add .
+git commit -m "Adds existing project to GitHub remote repository"
+
+git remote add origin https://github.com/username/example-project.git
+
+git pull --rebase origin main
+# Resolve merge conflicts if needed
+git push origin main
+```
+
 ```bs
 firebase login
 ```
