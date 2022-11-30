@@ -5178,7 +5178,8 @@ git add .	#add all files of folder to be pushed
 git commit -m "First commit"	#add first commit
 git remote add origin remote_repository_URL #replace with your remote repo url
 git remote -v	#verify that your remote repository url is properly found
-git push --force origin master	#force pushing your project into github repo
+git branch -M main  #change main branch name to main
+git push --force origin main	#force pushing your project into github repo
 
 //make sure you're on the local branch, then:
 git pull origin YourRemoteBranch
