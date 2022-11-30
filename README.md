@@ -5180,11 +5180,15 @@ git remote add origin remote_repository_URL #replace with your remote repo url
 git remote -v	#verify that your remote repository url is properly found
 git push --force origin master	#force pushing your project into github repo
 
+//make sure you're on the local branch, then:
+git pull origin YourRemoteBranch
+//which is the same as:
+git fetch origin YourRemoteBranch
+git merge origin/YourRemoteBranch
+
 # Push newly created local branch to remote
 git push --set-upstream origin <branch name>
-
 git push --force origin main //force pushing to remote github repo
-
 git push -u origin new_branch
 
 github@branch/c/remote/push  (new-branch)
@@ -5198,20 +5202,6 @@ touch devolution.jpg
 git add .
 git commit -m "Are we not gender neutral people? We are Devo?"
 git push --set-upstream origin new-branch
-
-github@branch/c/remote/push (new-branch)
-touch eden.html
-git add .
-git commit -m "Eden added"
-git push origin
-
-git init
-# Optional: create branch
-git checkout -b branch_name
-git add .
-git commit -m "Adds existing project to GitHub remote repository"
-
-git remote add origin https://github.com/username/example-project.git
 
 git pull --rebase origin main
 # Resolve merge conflicts if needed
