@@ -5155,17 +5155,21 @@ service cloud.firestore {
 </details>
 
 <details>
-  <summary>84. sample</summary>
+  <summary>84. Deploy Firebase</summary>
 
-```tsx
+```bs
+Firebase -> Build -> Hosting -> Get Started
+```
+
+```bs
+npm install -g firebase-tools
+```
+
+```bs
 
 ```
 
-```tsx
-
-```
-
-```Javascript
+```bs
 
 ```
 
