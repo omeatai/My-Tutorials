@@ -5413,6 +5413,16 @@ getDocs(colRef)
   });
 ```
 
+```js
+// author: "patrick bamford"
+// id: "5t16O84fjMNOU73F1pC5"
+// title: "the fall of snowden"
+
+// author: "gary nerds"
+// id: "OKNxNdBC2ncnpa16SjDB"
+// title: "the cloud"
+```
+
 </details>
 
 <details>
