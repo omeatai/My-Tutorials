@@ -5226,6 +5226,10 @@ firebase deploy
 
 </details>
 
+### [3-FIREBASE 9 TUTORIAL - NET NINJA](#)
+
++INTRODUCTION
+
 <details>
   <summary>85. sample</summary>
 
