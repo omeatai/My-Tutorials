@@ -5356,17 +5356,25 @@ const app = initializeApp(firebaseConfig);
 </details>
 
 <details>
-  <summary>87. sample</summary>
+  <summary>87. Connect Firebase App</summary>
 
-```tsx
-
-```
-
-```tsx
+```bs
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5375,15 +5383,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>88. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5392,15 +5408,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>89. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5426,15 +5450,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>91. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5443,15 +5475,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>92. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5460,15 +5500,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>93. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5494,15 +5542,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>95. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5528,15 +5584,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>97. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5562,15 +5626,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>99. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -5579,15 +5651,23 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>100. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
