@@ -5428,10 +5428,6 @@ getDocs(colRef)
 <details>
   <summary>88. Adding and Deleting Documents</summary>
 
-```bs
-
-```
-
 index.html:
 
 ```js
