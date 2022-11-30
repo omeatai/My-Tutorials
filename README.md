@@ -5267,6 +5267,22 @@ module.exports = {
 };
 ```
 
+```js
+const path = require("path");
+
+module.exports = {
+  mode: "development",
+  entry: "./src/index.js",
+  output: {
+    path: path.join(__dirname, "dist"),
+    filename: "bundle.js",
+    sourceMapFilename: "bundle.js.map",
+  },
+  devtool: "source-map",
+  watch: true,
+};
+```
+
 package.json:
 
 ```bs
@@ -5358,24 +5374,43 @@ const app = initializeApp(firebaseConfig);
 <details>
   <summary>87. Connect Firebase App</summary>
 
-```bs
-
-```
+index.js:
 
 ```js
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 
-```
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-```js
+// Initialize Firebase App
+initializeApp(firebaseConfig);
 
-```
+// init db services
+const db = getFirestore();
 
-```js
+// collection ref
+const colRef = collection(db, "books");
 
-```
-
-```js
-
+// get collection data
+getDocs(colRef)
+  .then((snapshot) => {
+    // console.log(snapshot.docs)
+    let books = [];
+    snapshot.docs.forEach((doc) => {
+      books.push({ ...doc.data(), id: doc.id });
+    });
+    console.log(books);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
 ```
 
 </details>
