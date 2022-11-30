@@ -5426,14 +5426,46 @@ getDocs(colRef)
 </details>
 
 <details>
-  <summary>88. sample</summary>
+  <summary>88. Adding and Deleting Documents</summary>
 
 ```bs
 
 ```
 
-```js
+index.html:
 
+```js
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase 9</title>
+</head>
+<body>
+  <h1>Getting Started with Firebase 9</h1>
+
+  <h2>Firebase Firestore</h2>
+
+  <form class="add">
+    <label for="title">Title:</label>
+    <input type="text" name="title" required>
+    <label for="author">Author:</label>
+    <input type="text" name="author" required>
+
+    <button>add a new book</button>
+  </form>
+
+  <form class="delete">
+    <label for="id">Document id:</label>
+    <input type="text" name="id" required>
+
+    <button>delete a book</button>
+  </form>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
 ```
 
 ```js
