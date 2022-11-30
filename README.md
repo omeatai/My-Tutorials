@@ -5186,6 +5186,9 @@ git pull origin YourRemoteBranch
 git fetch origin YourRemoteBranch
 git merge origin/YourRemoteBranch
 
+git push origin --delete feature/login
+git push origin --delete master
+
 # Push newly created local branch to remote
 git push --set-upstream origin <branch name>
 git push --force origin main //force pushing to remote github repo
