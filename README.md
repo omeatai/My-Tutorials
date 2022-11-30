@@ -5231,17 +5231,31 @@ firebase deploy
 +INTRODUCTION
 
 <details>
-  <summary>85. sample</summary>
+  <summary>85. Setting up Webpack</summary>
 
-```tsx
+```bs
+dist -> index.html
+src -> index.js
+```
 
+Create package.json file:
+
+```bs
+npm init -y
+```
+
+Install webpack:
+
+```bs
+npm i webpack webpack-cli -D
+npm i webpack webpack-cli webpack-dev-server html-webpack-plugin -D
 ```
 
 ```tsx
 
 ```
 
-```Javascript
+```tsx
 
 ```
 
