@@ -5267,8 +5267,30 @@ module.exports = {
 };
 ```
 
-```tsx
+package.json:
 
+```js
+{
+  "name": "firebase-netninja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
+}
+```
+
+```bs
+npm run build
 ```
 
 </details>
