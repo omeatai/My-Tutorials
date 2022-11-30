@@ -5251,8 +5251,20 @@ npm i webpack webpack-cli -D
 npm i webpack webpack-cli webpack-dev-server html-webpack-plugin -D
 ```
 
-```tsx
+watch.config.js:
 
+```bs
+const path = require('path')
+
+module.exports = {
+  mode: 'development',
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  watch: true
+}
 ```
 
 ```tsx
