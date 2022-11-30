@@ -5166,11 +5166,19 @@ npm install -g firebase-tools
 ```
 
 ```bs
-
+npm run build
 ```
 
 ```bs
+firebase login
+```
 
+```bs
+firebase init
+```
+
+```bs
+firebase deploy
 ```
 
 </details>
