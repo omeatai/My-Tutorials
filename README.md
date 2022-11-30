@@ -5327,18 +5327,30 @@ index.html:
 </details>
 
 <details>
-  <summary>86. sample</summary>
+  <summary>86. Create Firebase Project</summary>
 
-```tsx
+Install Firebase:
 
+```bs
+npm install firebase
 ```
 
-```tsx
+index.js:
 
-```
+```js
+import { initializeApp } from "firebase/app";
 
-```Javascript
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 ```
 
 </details>
