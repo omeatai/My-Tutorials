@@ -6136,7 +6136,7 @@ updateForm.addEventListener("submit", (e) => {
 </details>
 
 <details>
-  <summary>95. Setting up Firebase Auth</summary>
+  <summary>95. Signing up Users</summary>
 
 index.html:
 
@@ -6350,15 +6350,23 @@ signupForm.addEventListener("submit", (e) => {
 <details>
   <summary>96. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
@@ -6392,15 +6400,23 @@ signupForm.addEventListener("submit", (e) => {
 <details>
   <summary>98. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
