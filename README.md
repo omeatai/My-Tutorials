@@ -6136,7 +6136,7 @@ updateForm.addEventListener("submit", (e) => {
 </details>
 
 <details>
-  <summary>95. sample</summary>
+  <summary>95. Setting up Firebase Auth</summary>
 
 ```bs
 
