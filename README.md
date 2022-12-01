@@ -6138,24 +6138,211 @@ updateForm.addEventListener("submit", (e) => {
 <details>
   <summary>95. Setting up Firebase Auth</summary>
 
+index.html:
+
+```html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase 9</title>
+  </head>
+  <body>
+    <h1>Getting Started with Firebase 9</h1>
+
+    <h2>Firebase Firestore</h2>
+
+    <form class="add">
+      <label for="title">Title:</label>
+      <input type="text" name="title" required />
+      <label for="author">Author:</label>
+      <input type="text" name="author" required />
+
+      <button>add a new book</button>
+    </form>
+
+    <form class="delete">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>delete a book</button>
+    </form>
+
+    <form class="update">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>update a book</button>
+    </form>
+
+    <h2>Firebase Auth</h2>
+
+    <form class="signup">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>signup</button>
+    </form>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
+```
+
+index.js:
+
 ```bs
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+} from 'firebase/auth'
+```
 
+```bs
+// init db services
+const db = getFirestore()
+const auth = getAuth()
+```
+
+```bs
+// signing users up
+const signupForm = document.querySelector('.signup')
+signupForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  const email = signupForm.email.value
+  const password = signupForm.password.value
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then(cred => {
+      console.log('user created:', cred.user)
+      signupForm.reset()
+    })
+    .catch(err => {
+      console.log(err.message)
+    })
+})
 ```
 
 ```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  getDoc,
+  updateDoc,
+} from "firebase/firestore";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
-```
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-```js
+// Initialize Firebase App
+initializeApp(firebaseConfig);
 
-```
+// init db services
+const db = getFirestore();
+const auth = getAuth();
 
-```js
+// collection ref
+const colRef = collection(db, "books");
 
-```
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
 
-```js
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
 
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "gGu4P9x0ZHK9SspA1d9j");
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+
+// updating a document
+const updateForm = document.querySelector(".update");
+updateForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let docRef = doc(db, "books", updateForm.id.value);
+
+  updateDoc(docRef, {
+    title: "updated title",
+  }).then(() => {
+    updateForm.reset();
+  });
+});
+
+// signing users up
+const signupForm = document.querySelector(".signup");
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = signupForm.email.value;
+  const password = signupForm.password.value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user created:", cred.user);
+      signupForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
 ```
 
 </details>
