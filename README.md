@@ -5683,32 +5683,91 @@ deleteBookForm.addEventListener("submit", (e) => {
 </details>
 
 <details>
-  <summary>91. sample</summary>
+  <summary>91. Ordering by Property</summary>
 
 ```bs
-
+// queries
+const q = query(colRef, where("author", "==", "dave ramsey"), orderBy("title", "asc"))
 ```
 
 ```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+} from "firebase/firestore";
 
-```
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-```js
+// Initialize Firebase App
+initializeApp(firebaseConfig);
 
-```
+// init db services
+const db = getFirestore();
 
-```js
+// collection ref
+const colRef = collection(db, "books");
 
-```
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("title", "asc")
+);
 
-```js
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
 
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
 ```
 
 </details>
 
 <details>
-  <summary>92. sample</summary>
+  <summary>92. Ordering by Timestamps</summary>
 
 ```bs
 
