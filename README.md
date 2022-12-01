@@ -5540,6 +5540,8 @@ deleteBookForm.addEventListener("submit", (e) => {
 <details>
   <summary>89. Real Time onSnapshot Listener </summary>
 
+index.js:
+
 ```js
 import { initializeApp } from "firebase/app";
 import {
@@ -5602,22 +5604,6 @@ deleteBookForm.addEventListener("submit", (e) => {
     deleteBookForm.reset();
   });
 });
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
 ```
 
 </details>
