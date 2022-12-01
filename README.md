@@ -5769,6 +5769,15 @@ deleteBookForm.addEventListener("submit", (e) => {
 <details>
   <summary>92. Ordering by Timestamps</summary>
 
+```bs
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
+```
+
 ```js
 import { initializeApp } from "firebase/app";
 import {
@@ -5851,23 +5860,106 @@ deleteBookForm.addEventListener("submit", (e) => {
   <summary>93. Fetching a Single Document</summary>
 
 ```bs
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "M3bROLjs0pyabVoNvUaK");
 
+// getDoc(docRef)
+//   .then(doc => {
+//     console.log(doc.data(), doc.id)
+//   })
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
 ```
 
 ```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  getDoc,
+} from "firebase/firestore";
 
-```
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-```js
+// Initialize Firebase App
+initializeApp(firebaseConfig);
 
-```
+// init db services
+const db = getFirestore();
 
-```js
+// collection ref
+const colRef = collection(db, "books");
 
-```
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
 
-```js
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
 
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "M3bROLjs0pyabVoNvUaK");
+
+// getDoc(docRef)
+//   .then(doc => {
+//     console.log(doc.data(), doc.id)
+//   })
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
 ```
 
 </details>
@@ -5875,15 +5967,23 @@ deleteBookForm.addEventListener("submit", (e) => {
 <details>
   <summary>94. sample</summary>
 
-```tsx
+```bs
 
 ```
 
-```tsx
+```js
 
 ```
 
-```Javascript
+```js
+
+```
+
+```js
+
+```
+
+```js
 
 ```
 
