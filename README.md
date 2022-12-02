@@ -6795,7 +6795,6 @@ onAuthStateChanged(auth, (user) => {
 index.html:
 
 ```bs
-<h2>Unsubscribing</h2>
   <button class="unsub">unsubscribe from db/auth changes</button>
 ```
 
@@ -6864,31 +6863,6 @@ index.html:
 ```
 
 index.js:
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>99. sample</summary>
 
 ```bs
 // realtime collection data
@@ -7087,6 +7061,31 @@ unsubButton.addEventListener("click", () => {
   unsubDoc();
   unsubAuth();
 });
+```
+
+</details>
+
+<details>
+  <summary>99. sample</summary>
+
+```bs
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
 ```
 
 </details>
