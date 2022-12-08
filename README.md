@@ -7197,6 +7197,10 @@ export default function handler(req, res) {
 
 pages/index.js:
 
+```bs
+Route: http://localhost:3000/
+```
+
 ```js
 export default function Home() {
   return (
@@ -7219,6 +7223,10 @@ export default function Home() {
 ```
 
 pages/about.js:
+
+```bs
+Route: http://localhost:3000/about
+```
 
 ```js
 const About = () => {
@@ -7245,6 +7253,10 @@ export default About;
 ```
 
 pages/ninjas/index.js:
+
+```bs
+Route: http://localhost:3000/ninjas
+```
 
 ```js
 const Ninjas = () => {
