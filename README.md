@@ -7273,26 +7273,64 @@ export default Ninjas;
 </details>
 
 <details>
-  <summary>101. sample</summary>
+  <summary>101. Adding Components</summary>
 
-```bs
-
-```
+index.js:
 
 ```js
+import Head from "next/head";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import styles from "../styles/Home.module.css";
 
+export default function Home() {
+  return (
+    <div>
+      <Navbar />
+      <h1>Homepage</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+        omnis, animi cum perferendis, similique commodi fugit eos sequi maiores
+        minima inventore dolorem dolore vitae quam. Ea quasi nihil nesciunt.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus
+        iste veniam sequi dolores inventore, placeat aliquid. Nulla dolores
+        tenetur hic est nobis non at eum ipsam similique. Reprehenderit,
+        provident!
+      </p>
+      <Footer />
+    </div>
+  );
+}
 ```
 
-```js
+components/Navbar.js:
 
+```js
+const Navbar = () => {
+  return (
+    <nav>
+      <div className="logo">
+        <h1>Ninja List</h1>
+      </div>
+      <a>Home</a>
+      <a>About</a>
+      <a>Ninja Listing</a>
+    </nav>
+  );
+};
+
+export default Navbar;
 ```
 
-```js
-
-```
+components/Footer.js:
 
 ```js
-
+const Footer = () => {
+  return <div>Copyright 2022 Ninja List</div>;
+};
+export default Footer;
 ```
 
 </details>
