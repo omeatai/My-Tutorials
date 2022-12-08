@@ -7193,26 +7193,69 @@ export default function handler(req, res) {
 </details>
 
 <details>
-  <summary>100. sample</summary>
+  <summary>100. Automatically Generated Routes</summary>
 
-```bs
-
-```
+pages/index.js:
 
 ```js
-
+export default function Home() {
+  return (
+    <div>
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+        omnis, animi cum perferendis, similique commodi fugit eos sequi maiores
+        minima inventore dolorem dolore vitae quam. Ea quasi nihil nesciunt.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus
+        iste veniam sequi dolores inventore, placeat aliquid. Nulla dolores
+        tenetur hic est nobis non at eum ipsam similique. Reprehenderit,
+        provident!
+      </p>
+    </div>
+  );
+}
 ```
 
-```js
+pages/about.js:
 
+```js
+const About = () => {
+  return (
+    <div>
+      <h1>Find out more About us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        consequatur ad necessitatibus. Autem, culpa! Vitae, accusamus doloremque
+        alias praesentium a eos dolorem, voluptas maiores dicta, adipisci atque.
+        Fugit, velit natus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        assumenda incidunt totam sit cupiditate tenetur sunt! Nam distinctio
+        corporis consectetur fugiat omnis, quam, laborum necessitatibus facere
+        tempore nihil doloribus vero?
+      </p>
+    </div>
+  );
+};
+
+export default About;
 ```
 
-```js
-
-```
+pages/ninjas/index.js:
 
 ```js
+const Ninjas = () => {
+  return (
+    <div>
+      <h1>All Ninjas</h1>
+    </div>
+  );
+};
 
+export default Ninjas;
 ```
 
 </details>
