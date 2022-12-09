@@ -7454,26 +7454,111 @@ export const Footer = () => {
 </details>
 
 <details>
-  <summary>103. sample</summary>
+  <summary>103. Creating a Layout Component</summary>
 
-```bs
-
-```
+pages/\_app.js:
 
 ```js
+import "../styles/globals.css";
+import Layout from "../components/Layout";
 
+function MyApp({ Component, pageProps }) {
+  //return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+}
+
+export default MyApp;
 ```
 
-```js
+components/layout.js:
 
+```js
+import { Navbar } from "./navbar";
+import { Footer } from "./footer";
+
+const Layout = ({ children }) => {
+  return (
+    <div className="content">
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
 ```
 
-```js
+pages/index.js:
 
+```js
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Homepage</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+        omnis, animi cum perferendis, similique commodi fugit eos sequi maiores
+        minima inventore dolorem dolore vitae quam. Ea quasi nihil nesciunt.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus
+        iste veniam sequi dolores inventore, placeat aliquid. Nulla dolores
+        tenetur hic est nobis non at eum ipsam similique. Reprehenderit,
+        provident!
+      </p>
+      <Link href="/ninjas">See Ninja Listing</Link>
+    </div>
+  );
+}
 ```
 
-```js
+pages/about.js:
 
+```js
+const About = () => {
+  return (
+    <div>
+      <h1>Find out more About us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        consequatur ad necessitatibus. Autem, culpa! Vitae, accusamus doloremque
+        alias praesentium a eos dolorem, voluptas maiores dicta, adipisci atque.
+        Fugit, velit natus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        assumenda incidunt totam sit cupiditate tenetur sunt! Nam distinctio
+        corporis consectetur fugiat omnis, quam, laborum necessitatibus facere
+        tempore nihil doloribus vero?
+      </p>
+    </div>
+  );
+};
+
+export default About;
+```
+
+pages/ninjas/index.js:
+
+```js
+const Ninjas = () => {
+  return (
+    <div>
+      <h1>All Ninjas</h1>
+    </div>
+  );
+};
+
+export default Ninjas;
 ```
 
 </details>
