@@ -7564,7 +7564,7 @@ export default Ninjas;
 </details>
 
 <details>
-  <summary>104. Styling</summary>
+  <summary>104. Global Styling</summary>
 
 styles/globals.css:
 
@@ -7614,22 +7614,36 @@ footer {
 }
 ```
 
-```js
+components/Footer:
 
+```js
+export const Footer = () => {
+  return <footer>Copyright 2022 Ninja List</footer>;
+};
 ```
 
-```js
-
-```
+pages/\_app.js:
 
 ```js
+import "../styles/globals.css";
+import Layout from "../components/Layout";
 
+function MyApp({ Component, pageProps }) {
+  //return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+}
+
+export default MyApp;
 ```
 
 </details>
 
 <details>
-  <summary>105. sample</summary>
+  <summary>105. Styling with CSS Modules</summary>
 
 ```bs
 
