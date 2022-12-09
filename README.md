@@ -7564,14 +7564,54 @@ export default Ninjas;
 </details>
 
 <details>
-  <summary>104. sample</summary>
+  <summary>104. Styling</summary>
 
-```bs
+styles/globals.css:
 
-```
+```css
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
-```js
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Nunito";
+}
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 12px;
+}
+
+nav .logo {
+  margin-right: auto;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
 ```
 
 ```js
