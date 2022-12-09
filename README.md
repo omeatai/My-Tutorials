@@ -7336,26 +7336,119 @@ export default Footer;
 </details>
 
 <details>
-  <summary>102. sample</summary>
+  <summary>102. using Links</summary>
 
-```bs
-
-```
+pages/index.js:
 
 ```js
+import Head from "next/head";
+import Link from "next/link";
+import { Navbar, Footer } from "../components";
+import styles from "../styles/Home.module.css";
 
+export default function Home() {
+  return (
+    <div>
+      <Navbar />
+      <h1>Homepage</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+        omnis, animi cum perferendis, similique commodi fugit eos sequi maiores
+        minima inventore dolorem dolore vitae quam. Ea quasi nihil nesciunt.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus
+        iste veniam sequi dolores inventore, placeat aliquid. Nulla dolores
+        tenetur hic est nobis non at eum ipsam similique. Reprehenderit,
+        provident!
+      </p>
+      <Link href="/ninjas">See Ninja Listing</Link>
+      <Footer />
+    </div>
+  );
+}
 ```
 
-```js
+pages/about.js:
 
+```js
+import { Navbar, Footer } from "../components";
+
+const About = () => {
+  return (
+    <div>
+      <Navbar />
+      <h1>Find out more About us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        consequatur ad necessitatibus. Autem, culpa! Vitae, accusamus doloremque
+        alias praesentium a eos dolorem, voluptas maiores dicta, adipisci atque.
+        Fugit, velit natus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        assumenda incidunt totam sit cupiditate tenetur sunt! Nam distinctio
+        corporis consectetur fugiat omnis, quam, laborum necessitatibus facere
+        tempore nihil doloribus vero?
+      </p>
+      <Footer />
+    </div>
+  );
+};
+
+export default About;
 ```
 
-```js
+pages/ninjas/index.js:
 
+```js
+import { Navbar, Footer } from "../../components";
+
+const Ninjas = () => {
+  return (
+    <div>
+      <Navbar />
+      <h1>All Ninjas</h1>
+      <Footer />
+    </div>
+  );
+};
+
+export default Ninjas;
 ```
 
-```js
+components/index.js:
 
+```js
+export { Navbar } from "./Navbar";
+export { Footer } from "./Footer";
+```
+
+components/Navbar.js:
+
+```js
+import Link from "next/link";
+
+export const Navbar = () => {
+  return (
+    <nav>
+      <div className="logo">
+        <h1>Ninja List</h1>
+      </div>
+      <Link href="/">Home</Link>
+      <Link href="/about">About</Link>
+      <Link href="/ninjas">Ninja Listing</Link>
+    </nav>
+  );
+};
+```
+
+components/Footer.js:
+
+```js
+export const Footer = () => {
+  return <div>Copyright 2022 Ninja List</div>;
+};
 ```
 
 </details>
