@@ -7645,24 +7645,59 @@ export default MyApp;
 <details>
   <summary>105. Styling with CSS Modules</summary>
 
-```bs
+Home.module.css:
 
+```css
+.title {
+  color: #333;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.text {
+  color: #777;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #4979ff;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
 ```
 
-```js
-
-```
+index.js:
 
 ```js
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
-```
-
-```js
-
-```
-
-```js
-
+export default function Home() {
+  return (
+    <div>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+        omnis, animi cum perferendis, similique commodi fugit eos sequi maiores
+        minima inventore dolorem dolore vitae quam. Ea quasi nihil nesciunt.
+      </p>
+      <p className={styles.text}>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia delectus
+        iste veniam sequi dolores inventore, placeat aliquid. Nulla dolores
+        tenetur hic est nobis non at eum ipsam similique. Reprehenderit,
+        provident!
+      </p>
+      <Link className={styles.btn} href="/ninjas">
+        See Ninja Listing
+      </Link>
+    </div>
+  );
+}
 ```
 
 </details>
