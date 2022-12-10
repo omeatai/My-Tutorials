@@ -7703,26 +7703,94 @@ export default function Home() {
 </details>
 
 <details>
-  <summary>106. sample</summary>
+  <summary>106. Custom 404 page</summary>
+
+pages/404.js:
+
+```js
+import Link from "next/link";
+
+const NotFound = () => {
+  return (
+    <div className="not-found">
+      <h1>Oooops...</h1>
+      <h2>That page cannot be found. </h2>
+      <p>
+        Go back to the <Link href="/">Homepage</Link>
+      </p>
+    </div>
+  );
+};
+
+export default NotFound;
+```
+
+styles/globals.css:
 
 ```bs
+.not-found {
+  text-align: center;
+}
 
+.not-found a {
+  color: #4979ff;
+  text-decoration: underline;
+}
 ```
 
-```js
+```css
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
-```
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Nunito";
+}
 
-```js
+a {
+  color: #333;
+  text-decoration: none;
+}
 
-```
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-```js
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
 
-```
+nav a {
+  margin-left: 12px;
+}
 
-```js
+nav .logo {
+  margin-right: auto;
+}
 
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found a {
+  color: #4979ff;
+  text-decoration: underline;
+}
 ```
 
 </details>
