@@ -7336,7 +7336,7 @@ export default Footer;
 </details>
 
 <details>
-  <summary>102. using Links</summary>
+  <summary>102. Using Links</summary>
 
 pages/index.js:
 
