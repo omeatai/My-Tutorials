@@ -7832,32 +7832,32 @@ export default NotFound;
 </details>
 
 <details>
-  <summary>108. sample</summary>
+  <summary>108. Adding Images</summary>
 
-```bs
-
-```
+components/Navbar.js:
 
 ```js
+import Link from "next/link";
+import Image from "next/image";
 
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+export const Navbar = () => {
+  return (
+    <nav>
+      <div className="logo">
+        <Image src="/undraw.svg" width={128} height={77} />
+      </div>
+      <Link href="/">Home</Link>
+      <Link href="/about">About</Link>
+      <Link href="/ninjas">Ninja Listing</Link>
+    </nav>
+  );
+};
 ```
 
 </details>
 
 <details>
-  <summary>109. sample</summary>
+  <summary>109. Custom Metadata</summary>
 
 ```bs
 
