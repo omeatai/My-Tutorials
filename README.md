@@ -8378,24 +8378,54 @@ https://jsonplaceholder.typicode.com/users
 <details>
   <summary>111. Fetch Data</summary>
 
-```bs
-
-```
+pages/index.js:
 
 ```js
+import styles from "../../styles/Jobs.module.css";
 
+export const getStaticProps = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+
+  return {
+    props: { ninjas: data },
+  };
+};
+
+const Ninjas = ({ ninjas }) => {
+  console.log(ninjas);
+
+  return (
+    <div>
+      <h1>All Ninjas</h1>
+      {ninjas.map((ninja) => (
+        <div key={ninja.id}>
+          <a className={styles.single}>
+            <h3>{ninja.name}</h3>
+          </a>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Ninjas;
 ```
 
-```js
+styles/Jobs.module.css:
 
-```
+```css
+.single {
+  padding: 2px 16px;
+  background: #fff;
+  display: block;
+  margin: 20px 10px;
+  border-left: 8px solid #fff;
+}
 
-```js
-
-```
-
-```js
-
+.single:hover {
+  border-left: 8px solid #4979ff;
+}
 ```
 
 </details>
