@@ -7943,25 +7943,6 @@ export default About;
 https://jsonplaceholder.typicode.com/
 ```
 
-Try:
-
-```js
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-  .then((response) => response.json())
-  .then((json) => console.log(json));
-```
-
-Result:
-
-```js
-// {
-//   "userId": 1,
-//   "id": 1,
-//   "title": "delectus aut autem",
-//   "completed": false
-// }
-```
-
 JSONPlaceholder comes with a set of 6 common resources:
 
 ```bs
@@ -7985,6 +7966,174 @@ POST	      /posts
 PUT	      /posts/1
 PATCH	      /posts/1
 DELETE	      /posts/1
+```
+
+Getting a resource 1:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+Result:
+
+```js
+// {
+//   "userId": 1,
+//   "id": 1,
+//   "title": "delectus aut autem",
+//   "completed": false
+// }
+```
+
+Getting a resource 2:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+Result:
+
+```js
+// {
+//   id: 1,
+//   title: '...',
+//   body: '...',
+//   userId: 1
+// }
+```
+
+Listing all resources:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+Result:
+
+```js
+// [
+//   { id: 1, title: '...' /* ... */ },
+//   { id: 2, title: '...' /* ... */ },
+//   { id: 3, title: '...' /* ... */ },
+//   /* ... */
+//   { id: 100, title: '...' /* ... */ },
+// ];
+```
+
+Creating a resource:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts", {
+  method: "POST",
+  body: JSON.stringify({
+    title: "foo",
+    body: "bar",
+    userId: 1,
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+Result:
+
+```js
+// {
+//   id: 101,
+//   title: 'foo',
+//   body: 'bar',
+//   userId: 1
+// }
+```
+
+Updating a resource:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts/1", {
+  method: "PUT",
+  body: JSON.stringify({
+    id: 1,
+    title: "foo",
+    body: "bar",
+    userId: 1,
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+Result:
+
+```js
+// {
+//   id: 1,
+//   title: 'foo',
+//   body: 'bar',
+//   userId: 1
+// }
+```
+
+Patching a resource:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts/1", {
+  method: "PATCH",
+  body: JSON.stringify({
+    title: "foo",
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8",
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+```js
+// {
+//   id: 1,
+//   title: 'foo',
+//   body: '...',
+//   userId: 1
+// }
+```
+
+Deleting a resource:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts/1", {
+  method: "DELETE",
+});
+```
+
+Filtering resources:
+
+```js
+// This will return all the posts that belong to the first user
+fetch("https://jsonplaceholder.typicode.com/posts?userId=1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+Listing nested resources:
+
+```js
+// This is equivalent to /comments?postId=1
+fetch("https://jsonplaceholder.typicode.com/posts/1/comments")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
 ```
 
 </details>
