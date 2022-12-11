@@ -8431,7 +8431,7 @@ styles/Jobs.module.css:
 </details>
 
 <details>
-  <summary>112. sample</summary>
+  <summary>112. Dynamic Routes (Details Page)</summary>
 
 ```bs
 
