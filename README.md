@@ -7834,6 +7834,8 @@ export default NotFound;
 <details>
   <summary>108. Adding Images</summary>
 
+- Put images to Public Folder
+
 components/Navbar.js:
 
 ```js
