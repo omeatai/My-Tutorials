@@ -7859,26 +7859,79 @@ export const Navbar = () => {
 </details>
 
 <details>
-  <summary>109. Custom Metadata</summary>
+  <summary>109. Adding Custom Metadata</summary>
 
-```bs
-
-```
+pages/index.js:
 
 ```js
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Ninja List | Home</title>
+        <meta name="description" content="Ninja List Website" />
+        <meta name="keywords" content="ninjas" />
+      </Head>
+      <div>
+        <h1 className={styles.title}>Homepage</h1>
+        <p className={styles.text}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+          omnis, animi cum perferendis, similique commodi fugit eos sequi
+          maiores minima inventore dolorem dolore vitae quam. Ea quasi nihil
+          nesciunt.
+        </p>
+        <p className={styles.text}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+          delectus iste veniam sequi dolores inventore, placeat aliquid. Nulla
+          dolores tenetur hic est nobis non at eum ipsam similique.
+          Reprehenderit, provident!
+        </p>
+        <Link className={styles.btn} href="/ninjas">
+          See Ninja Listing
+        </Link>
+      </div>
+    </>
+  );
+}
 ```
 
-```js
-
-```
+pages/about.js:
 
 ```js
+import Head from "next/head";
 
-```
+const About = () => {
+  return (
+    <>
+      <Head>
+        <title>Ninja List | About</title>
+        <meta name="description" content="Ninja List Website" />
+        <meta name="keywords" content="About ninjas" />
+      </Head>
+      <div>
+        <h1>Find out more About us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          consequatur ad necessitatibus. Autem, culpa! Vitae, accusamus
+          doloremque alias praesentium a eos dolorem, voluptas maiores dicta,
+          adipisci atque. Fugit, velit natus!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          assumenda incidunt totam sit cupiditate tenetur sunt! Nam distinctio
+          corporis consectetur fugiat omnis, quam, laborum necessitatibus facere
+          tempore nihil doloribus vero?
+        </p>
+      </div>
+    </>
+  );
+};
 
-```js
-
+export default About;
 ```
 
 </details>
