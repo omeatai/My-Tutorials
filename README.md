@@ -7937,32 +7937,60 @@ export default About;
 </details>
 
 <details>
-  <summary>110. sample</summary>
+  <summary>110. {JSON} Placeholder</summary>
+
+```bs
+https://jsonplaceholder.typicode.com/
+```
+
+Try:
+
+```js
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+Result:
+
+```js
+// {
+//   "userId": 1,
+//   "id": 1,
+//   "title": "delectus aut autem",
+//   "completed": false
+// }
+```
+
+JSONPlaceholder comes with a set of 6 common resources:
+
+```bs
+/posts	    100 posts
+/comments	    500 comments
+/albums	    100 albums
+/photos	    5000 photos
+/todos	    200 todos
+/users	    10 users
+```
+
+Routes
 
 ```bs
 
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+GET	      /posts
+GET	      /posts/1
+GET	      /posts/1/comments
+GET	      /comments?postId=1
+POST	      /posts
+PUT	      /posts/1
+PATCH	      /posts/1
+DELETE	      /posts/1
 ```
 
 </details>
 
 <details>
-  <summary>111. sample</summary>
+  <summary>111. Fetch Data</summary>
 
 ```bs
 
