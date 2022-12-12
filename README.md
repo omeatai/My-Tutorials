@@ -8593,10 +8593,6 @@ Vercel:
 Create new project -> Import Git Repository -> Deploy
 ```
 
-```bs
-
-```
-
 </details>
 
 <details>
