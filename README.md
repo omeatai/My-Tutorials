@@ -8584,7 +8584,7 @@ Deploy to Github:
 git remote add origin https://github.com/omeatai/practice-ninja-blog-app.git
 git add .
 git commit -m "initial commit"
-git push -u origin main
+git push --force origin main
 ```
 
 ```bs
