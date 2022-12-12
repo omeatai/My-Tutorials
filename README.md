@@ -8433,30 +8433,59 @@ styles/Jobs.module.css:
 <details>
   <summary>112. Dynamic Routes (Details Page)</summary>
 
-```bs
-
-```
+pages/ninjas/[id].js:
 
 ```js
+const Details = () => {
+  return (
+    <div>
+      <h1>Details Page</h1>
+    </div>
+  );
+};
 
+export default Details;
 ```
 
-```js
-
-```
+pages/index.js:
 
 ```js
+import Link from "next/link";
+import styles from "../../styles/Jobs.module.css";
 
-```
+export const getStaticProps = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
 
-```js
+  return {
+    props: { ninjas: data },
+  };
+};
 
+const Ninjas = ({ ninjas }) => {
+  console.log(ninjas);
+
+  return (
+    <div>
+      <h1>All Ninjas</h1>
+      {ninjas.map((ninja) => (
+        <div key={ninja.id}>
+          <Link href={`/ninjas/${ninja.id}`} className={styles.single}>
+            <h3>{ninja.name}</h3>
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Ninjas;
 ```
 
 </details>
 
 <details>
-  <summary>113. sample</summary>
+  <summary>113. Dynamic Routes (getStaticPaths)</summary>
 
 ```bs
 
