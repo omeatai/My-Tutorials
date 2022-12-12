@@ -8572,23 +8572,26 @@ export default Details;
 <details>
   <summary>115. Deploy NextJS App in Vercel</summary>
 
+Build NextJS app:
+
 ```bs
 npm run build
 ```
 
-```js
+Deploy to Github:
+
+```bs
+git remote add origin https://github.com/omeatai/practice-ninja-blog-app.git
+git add .
+git commit -m "initial commit"
+git push -u origin main
+```
+
+```bs
 
 ```
 
-```js
-
-```
-
-```js
-
-```
-
-```js
+```bs
 
 ```
 
