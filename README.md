@@ -8487,30 +8487,41 @@ export default Ninjas;
 <details>
   <summary>113. Dynamic Routes (getStaticPaths)</summary>
 
-```bs
-
-```
+pages/ninjas/[id].js:
 
 ```js
+export const getStaticPaths = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
 
-```
+  // map data to an array of path objects with params (id)
+  const paths = data.map((ninja) => {
+    return {
+      params: { id: ninja.id.toString() },
+    };
+  });
 
-```js
+  return {
+    paths,
+    fallback: false,
+  };
+};
 
-```
+const Details = () => {
+  return (
+    <div>
+      <h1>Details Page</h1>
+    </div>
+  );
+};
 
-```js
-
-```
-
-```js
-
+export default Details;
 ```
 
 </details>
 
 <details>
-  <summary>114. sample</summary>
+  <summary>114. Fetching a Single Item (Detial)</summary>
 
 ```bs
 
