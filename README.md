@@ -8587,8 +8587,10 @@ git commit -m "initial commit"
 git push --force origin main
 ```
 
-```bs
+Vercel:
 
+```bs
+Create new project -> Import Git Repository -> Deploy
 ```
 
 ```bs
