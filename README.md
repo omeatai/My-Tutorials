@@ -8700,22 +8700,10 @@ function App() {
 export default App;
 ```
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
 </details>
 
 <details>
-  <summary>118. sample</summary>
+  <summary>118. Using React Components</summary>
 
 ```bs
 
