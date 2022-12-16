@@ -9127,6 +9127,8 @@ const Content = () => {
 export default Content;
 ```
 
+index.css:
+
 ```css
 /* ........................continue */
 ul {
