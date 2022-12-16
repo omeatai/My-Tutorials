@@ -8610,16 +8610,10 @@ node -v
 npx create-react-app .
 ```
 
-```js
+Start App:
 
-```
-
-```js
-
-```
-
-```js
-
+```bs
+npm start
 ```
 
 </details>
