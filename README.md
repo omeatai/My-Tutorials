@@ -8891,7 +8891,7 @@ root.render(
 </details>
 
 <details>
-  <summary>120. **DoubleClick**</summary>
+  <summary>120. **DoubleClick Event**</summary>
 
 ```js
 import { useState, useEffect } from "react";
@@ -8945,26 +8945,70 @@ return <button onClick={handleClick}>Click me</button>;
 </details>
 
 <details>
-  <summary>121. sample</summary>
+  <summary>121. onClick Events</summary>
 
-```bs
+Content.js:
 
+```js
+import React from "react";
+
+const Content = () => {
+  const handleChange = () => {
+    const names = ["Dave", "Sally", "Ben", "Andrew"];
+    const indexPos = Math.floor(Math.random() * names.length);
+    return names[indexPos];
+  };
+
+  const handleClick1 = () => {
+    console.log("Click 1 button was clicked.");
+  };
+
+  const handleClick2 = (name) => {
+    console.log(`Click 2 button with name "${name}" was clicked.`);
+  };
+
+  const handleClick3 = (obj) => {
+    console.log(
+      `Click 3 button with ${Object.keys(obj)} "${Object.values(
+        obj
+      )}" was clicked.`
+    );
+  };
+
+  const handleClick4 = (e) => {
+    console.log(e.target);
+    console.log("Text: ", e.target.innerText);
+    console.log("Value: ", e.target.value);
+    console.log("Type: ", e.target.type);
+  };
+
+  return (
+    <main>
+      <p>Hello, {handleChange()}!</p>
+      <button onClick={handleClick1}>Click 1</button>
+      <button onClick={() => handleClick2("David")}>Click 2</button>
+      <button onClick={() => handleClick3({ Age: "32" })}>Click 3</button>
+      <button value={"Button Value"} onClick={(e) => handleClick4(e)}>
+        Click 4
+      </button>
+    </main>
+  );
+};
+
+export default Content;
 ```
 
 ```js
+// Click 1 button was clicked.
 
-```
+// Click 2 button with name "David" was clicked.
 
-```js
+// Click 3 button with Age "32" was clicked.
 
-```
-
-```js
-
-```
-
-```js
-
+// <button value="Button Value">Click 4</button>
+// Text:  Click 4
+// Value:  Button Value
+// Type:  submit
 ```
 
 </details>
