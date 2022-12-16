@@ -9108,7 +9108,7 @@ const Content = () => {
             />
             <label
               style={
-                !item.checked
+                item.checked
                   ? { textDecoration: "line-through" }
                   : { textDecoration: "none" }
               }
