@@ -9073,7 +9073,7 @@ const Content = () => {
   const [items, setItems] = useState([
     {
       id: 1,
-      checked: true,
+      checked: false,
       item: "Item 1",
     },
     {
