@@ -8785,14 +8785,26 @@ export default Footer;
 </details>
 
 <details>
-  <summary>119. sample</summary>
+  <summary>119. Styling Components</summary>
 
-```bs
+1. Styled Components - https://styled-components.com/
 
-```
+2. Inline Styling -
+
+Header.js:
 
 ```js
+import React from "react";
 
+const Header = () => {
+  return (
+    <header style={{ backgroundColor: "mediumblue", color: "white" }}>
+      <h1>Groceries List</h1>
+    </header>
+  );
+};
+
+export default Header;
 ```
 
 ```js
