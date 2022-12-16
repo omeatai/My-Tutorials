@@ -8705,24 +8705,81 @@ export default App;
 <details>
   <summary>118. Using React Components</summary>
 
-```bs
-
-```
+App.js:
 
 ```js
+import "./App.css";
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Header.js:
 
+```js
+import React from "react";
+
+const Header = () => {
+  return (
+    <header>
+      <h1>Groceries List</h1>
+    </header>
+  );
+};
+
+export default Header;
 ```
 
-```js
+Content.js:
 
+```js
+import React from "react";
+
+const Content = () => {
+  const handleChange = () => {
+    const names = ["Dave", "Sally", "Ben", "Andrew"];
+    const indexPos = Math.floor(Math.random() * names.length);
+    return names[indexPos];
+  };
+
+  return (
+    <main>
+      <p>Hello, {handleChange()}!</p>
+    </main>
+  );
+};
+
+export default Content;
 ```
 
-```js
+Footer.js:
 
+```js
+import React from "react";
+
+const Footer = () => {
+  const today = new Date();
+
+  return (
+    <footer>
+      <p>Copyright &copy; {today.getFullYear()}</p>
+    </footer>
+  );
+};
+
+export default Footer;
 ```
 
 </details>
