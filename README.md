@@ -9056,32 +9056,143 @@ export default Content;
 </details>
 
 <details>
-  <summary>123. sample</summary>
+  <summary>123. handleCheck + LocalStorage</summary>
 
 ```bs
-
+npm i react-icons -D
+npm install react-icons --save
 ```
 
-```js
+Content.js:
 
+```js
+import React, { useState } from "react";
+import { FaTrashAlt } from "react-icons/fa";
+
+const Content = () => {
+  const [items, setItems] = useState([
+    {
+      id: 1,
+      checked: true,
+      item: "Item 1",
+    },
+    {
+      id: 2,
+      checked: false,
+      item: "Item 2",
+    },
+    {
+      id: 3,
+      checked: false,
+      item: "Item 3",
+    },
+  ]);
+
+  const handleCheck = (id) => {
+    const listItems = items.map((item) =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+    setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  };
+
+  return (
+    <main>
+      <ul>
+        {items.map((item) => (
+          <li className="item" key={item.id}>
+            <input
+              onChange={() => handleCheck(item.id)}
+              type="checkbox"
+              checked={item.checked}
+            />
+            <label
+              style={
+                !item.checked
+                  ? { textDecoration: "line-through" }
+                  : { textDecoration: "none" }
+              }
+              onClick={() => handleCheck(item.id)}
+            >
+              {item.item}
+            </label>
+            <FaTrashAlt role="button" tabIndex="0" />
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
+};
+
+export default Content;
 ```
 
-```js
+```css
+/* ........................continue */
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
 
-```
+ul li::before {
+  content: "\200B";
+}
 
-```js
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #eee;
+}
 
-```
+.item:first-child {
+  margin: 0;
+}
 
-```js
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
 
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item > label {
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: red;
+  outline: none;
+}
 ```
 
 </details>
 
 <details>
-  <summary>124. sample</summary>
+  <summary>124. handle Delete</summary>
 
 ```bs
 
