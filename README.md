@@ -8891,26 +8891,55 @@ root.render(
 </details>
 
 <details>
-  <summary>120. sample</summary>
+  <summary>120. **DoubleClick**</summary>
 
-```bs
+```js
+import { useState, useEffect } from "react";
 
+function useSingleAndDoubleClick(
+  actionSimpleClick,
+  actionDoubleClick,
+  delay = 250
+) {
+  const [click, setClick] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // simple click
+      if (click === 1) actionSimpleClick();
+      setClick(0);
+    }, delay);
+
+    // the duration between this click and the previous one
+    // is less than the value of delay = double-click
+    if (click === 2) actionDoubleClick();
+
+    return () => clearTimeout(timer);
+  }, [click]);
+
+  return () => setClick((prev) => prev + 1);
+}
+
+const click = useSingleAndDoubleClick(callbackClick, callbackDoubleClick);
+<button onClick={click}>clic</button>;
 ```
 
 ```js
+const handleClick = (e) => {
+  switch (e.detail) {
+    case 1:
+      console.log("click");
+      break;
+    case 2:
+      console.log("double click");
+      break;
+    case 3:
+      console.log("triple click");
+      break;
+  }
+};
 
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+return <button onClick={handleClick}>Click me</button>;
 ```
 
 </details>
