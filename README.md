@@ -9196,24 +9196,82 @@ ul li::before {
 <details>
   <summary>124. handle Delete</summary>
 
-```bs
-
-```
+Content.js:
 
 ```js
+import React, { useState } from "react";
+import { FaTrashAlt } from "react-icons/fa";
 
-```
+const Content = () => {
+  const [items, setItems] = useState([
+    {
+      id: 1,
+      checked: false,
+      item: "Item 1",
+    },
+    {
+      id: 2,
+      checked: false,
+      item: "Item 2",
+    },
+    {
+      id: 3,
+      checked: false,
+      item: "Item 3",
+    },
+  ]);
 
-```js
+  const handleCheck = (id) => {
+    const listItems = items.map((item) =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+    setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  };
 
-```
+  const handleDelete = (id) => {
+    const listItems = items.filter((item) => item.id !== id);
+    setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  };
 
-```js
+  return (
+    <main>
+      {items.length ? (
+        <ul>
+          {items.map((item) => (
+            <li className="item" key={item.id}>
+              <input
+                onChange={() => handleCheck(item.id)}
+                type="checkbox"
+                checked={item.checked}
+              />
+              <label
+                style={
+                  item.checked
+                    ? { textDecoration: "line-through" }
+                    : { textDecoration: "none" }
+                }
+                onClick={() => handleCheck(item.id)}
+              >
+                {item.item}
+              </label>
+              <FaTrashAlt
+                onClick={() => handleDelete(item.id)}
+                role="button"
+                tabIndex="0"
+              />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p style={{ marginTop: "2rem" }}>Your List is empty!</p>
+      )}
+    </main>
+  );
+};
 
-```
-
-```js
-
+export default Content;
 ```
 
 </details>
