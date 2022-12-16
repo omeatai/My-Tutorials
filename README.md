@@ -9016,24 +9016,41 @@ export default Content;
 <details>
   <summary>122. useState Hooks</summary>
 
-```bs
-
-```
+Content.js:
 
 ```js
+import React, { useState } from "react";
 
-```
+const Content = () => {
+  const [name, setName] = useState("Dave");
+  const [count, setCount] = useState(0);
 
-```js
+  const handleNameChange = () => {
+    const names = ["Dave", "Sally", "Ben", "Andrew"];
+    const indexPos = Math.floor(Math.random() * names.length);
+    setName(names[indexPos]);
+  };
 
-```
+  const handleCount = () => {
+    setCount((count) => count + 1);
+  };
 
-```js
+  const handleReset = () => {
+    setCount(0);
+  };
 
-```
+  return (
+    <main>
+      <h1>Hello, {name}!</h1>
+      <h2>Count: {count}</h2>
+      <button onClick={handleNameChange}>Change Name</button>
+      <button onClick={handleCount}>Count</button>
+      <button onClick={handleReset}>Reset</button>
+    </main>
+  );
+};
 
-```js
-
+export default Content;
 ```
 
 </details>
