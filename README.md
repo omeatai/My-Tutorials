@@ -8600,14 +8600,14 @@ Create new project -> Import Git Repository -> Deploy
 +INTRODUCTION
 
 <details>
-  <summary>116. sample</summary>
+  <summary>116. Create React App</summary>
 
 ```bs
-
+node -v
 ```
 
-```js
-
+```bs
+npx create-react-app .
 ```
 
 ```js
