@@ -9337,20 +9337,60 @@ export default Content;
 <details>
   <summary>125. React Props</summary>
 
-```bs
+\*Using Props -
 
-```
-
-```js
-
-```
+App.js:
 
 ```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
+function App() {
+  return (
+    <div className="App">
+      <Header title="Groceries" />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Header.js:
 
+```js
+import React from "react";
+
+const Header = (props) => {
+  return (
+    <header>
+      <h1>{props.title}</h1>
+    </header>
+  );
+};
+
+export default Header;
+```
+
+\*Destructuring -
+
+Header.js:
+
+```js
+import React from "react";
+
+const Header = ({ title }) => {
+  return (
+    <header>
+      <h1>{title} List</h1>
+    </header>
+  );
+};
+
+export default Header;
 ```
 
 ```js
