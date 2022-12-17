@@ -9393,33 +9393,49 @@ const Header = ({ title }) => {
 export default Header;
 ```
 
-```js
-
-```
-
 </details>
 
 <details>
-  <summary>126. sample</summary>
+  <summary>126. Default Props</summary>
 
-```bs
-
-```
+App.js:
 
 ```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
-
-```
+Header.js:
 
 ```js
+import React from "react";
 
-```
+const Header = ({ title }) => {
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
+};
 
-```js
+Header.defaultProps = {
+  title: "Default Title",
+};
 
+export default Header;
 ```
 
 </details>
