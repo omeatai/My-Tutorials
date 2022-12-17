@@ -9739,7 +9739,7 @@ export default LineItem;
 </details>
 
 <details>
-  <summary>129. React Forms</summary>
+  <summary>129. React Forms - AddItem</summary>
 
 Move React icons to Production Dependency:
 
@@ -9747,20 +9747,306 @@ Move React icons to Production Dependency:
 npm i react-icons --save-prod
 ```
 
-```js
+App.js:
 
+```js
+import Header from "./Header";
+import AddItem from "./AddItem";
+import Content from "./Content";
+import Footer from "./Footer";
+import React, { useState } from "react";
+
+function App() {
+  const [items, setItems] = useState([
+    {
+      id: 1,
+      checked: false,
+      item: "Item 1",
+    },
+    {
+      id: 2,
+      checked: false,
+      item: "Item 2",
+    },
+    {
+      id: 3,
+      checked: false,
+      item: "Item 3",
+    },
+  ]);
+
+  const [newItem, setNewItem] = useState("");
+
+  const setAndSaveItems = (newItems) => {
+    setItems(newItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(newItems));
+  };
+
+  const handleCheck = (id) => {
+    const listItems = items.map((item) =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+    setAndSaveItems(listItems);
+  };
+
+  const handleDelete = (id) => {
+    const listItems = items.filter((item) => item.id !== id);
+    setAndSaveItems(listItems);
+  };
+
+  const addItem = (item) => {
+    const id = items.length ? items[items.length - 1].id + 1 : 1;
+    const myNewItem = { id, checked: false, item };
+    const listItems = [...items, myNewItem];
+    setAndSaveItems(listItems);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!newItem) return;
+    // addItem
+    addItem(newItem);
+    setNewItem("");
+  };
+
+  return (
+    <div className="App">
+      <Header title="Groceries List" />
+      <AddItem
+        newItem={newItem}
+        setNewItem={setNewItem}
+        handleSubmit={handleSubmit}
+      />
+      <Content
+        items={items}
+        handleCheck={handleCheck}
+        handleDelete={handleDelete}
+      />
+      <Footer itemLength={items.length} />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+AddItem.js:
 
+```js
+import React from "react";
+import { FaPlus } from "react-icons/fa";
+
+const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
+  return (
+    <form onSubmit={handleSubmit} className="addForm">
+      <label htmlFor="addItem">Add Item</label>
+      <input
+        type="text"
+        id="addItem"
+        placeholder="Add Item"
+        autoFocus
+        required
+        value={newItem}
+        onChange={(e) => setNewItem(e.target.value)}
+      />
+      <button type="submit" arai-label="Add Item">
+        <FaPlus />
+      </button>
+    </form>
+  );
+};
+
+export default AddItem;
 ```
 
-```js
-
-```
+Index.css:
 
 ```js
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid mediumblue;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  padding: 0 0.25em;
+  background-color: mediumblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+
+footer {
+  width: 100%;
+  padding: 0.25em;
+  background-color: mediumblue;
+  color: aliceblue;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: "\200B";
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #eee;
+}
+
+.item:first-child {
+  margin: 0;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item > label {
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: red;
+  outline: none;
+}
+
+.addForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type="text"] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type="text"] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
 ```
 
 </details>
