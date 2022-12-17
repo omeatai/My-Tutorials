@@ -9741,8 +9741,10 @@ export default LineItem;
 <details>
   <summary>129. React Forms</summary>
 
-```bs
+Move React icons to Production Dependency:
 
+```bs
+npm i react-icons --save-prod
 ```
 
 ```js
