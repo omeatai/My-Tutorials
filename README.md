@@ -9187,6 +9187,7 @@ footer {
   color: aliceblue;
   display: grid;
   place-content: center;
+  text-align: center;
 }
 
 ul {
@@ -9441,26 +9442,149 @@ export default Header;
 </details>
 
 <details>
-  <summary>127. sample</summary>
+  <summary>127. Passing Props</summary>
 
-```bs
-
-```
+App.js:
 
 ```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+import React, { useState } from "react";
 
+function App() {
+  const [items, setItems] = useState([
+    {
+      id: 1,
+      checked: false,
+      item: "Item 1",
+    },
+    {
+      id: 2,
+      checked: false,
+      item: "Item 2",
+    },
+    {
+      id: 3,
+      checked: false,
+      item: "Item 3",
+    },
+  ]);
+
+  const handleCheck = (id) => {
+    const listItems = items.map((item) =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+    setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  };
+
+  const handleDelete = (id) => {
+    const listItems = items.filter((item) => item.id !== id);
+    setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  };
+
+  return (
+    <div className="App">
+      <Header title="Groceries List" />
+      <Content
+        items={items}
+        handleCheck={handleCheck}
+        handleDelete={handleDelete}
+      />
+      <Footer itemLength={items.length} />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Header.js:
 
+```js
+import React from "react";
+
+const Header = ({ title }) => {
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
+};
+
+Header.defaultProps = {
+  title: "Default Title",
+};
+
+export default Header;
 ```
 
-```js
+Content.js:
 
+```js
+import { FaTrashAlt } from "react-icons/fa";
+
+const Content = ({ items, handleCheck, handleDelete }) => {
+  return (
+    <main>
+      {items.length ? (
+        <ul>
+          {items.map((item) => (
+            <li className="item" key={item.id}>
+              <input
+                onChange={() => handleCheck(item.id)}
+                type="checkbox"
+                checked={item.checked}
+              />
+              <label
+                style={
+                  item.checked
+                    ? { textDecoration: "line-through" }
+                    : { textDecoration: "none" }
+                }
+                onClick={() => handleCheck(item.id)}
+              >
+                {item.item}
+              </label>
+              <FaTrashAlt
+                onClick={() => handleDelete(item.id)}
+                role="button"
+                tabIndex="0"
+              />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p style={{ marginTop: "2rem" }}>Your List is empty!</p>
+      )}
+    </main>
+  );
+};
+
+export default Content;
 ```
 
-```js
+Footer.js:
 
+```js
+import React from "react";
+
+const Footer = ({ itemLength }) => {
+  const today = new Date();
+
+  return (
+    <footer>
+      <p>
+        {itemLength} List {itemLength === 1 ? "item" : "items"}
+      </p>
+      <p>Copyright &copy; {today.getFullYear()}</p>
+    </footer>
+  );
+};
+
+export default Footer;
 ```
 
 </details>
