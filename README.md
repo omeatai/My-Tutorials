@@ -9337,8 +9337,6 @@ export default Content;
 <details>
   <summary>125. React Props</summary>
 
-\*Using Props -
-
 App.js:
 
 ```js
@@ -9358,6 +9356,8 @@ function App() {
 
 export default App;
 ```
+
+\*Using Props -
 
 Header.js:
 
