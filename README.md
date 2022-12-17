@@ -10132,7 +10132,7 @@ export default App;
 </details>
 
 <details>
-  <summary>131. sample</summary>
+  <summary>131. Search Functionality </summary>
 
 ```bs
 
