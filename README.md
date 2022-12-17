@@ -9590,26 +9590,150 @@ export default Footer;
 </details>
 
 <details>
-  <summary>128. sample</summary>
+  <summary>128. ItemList, LineItem & Prop Drilling</summary>
 
-```bs
+App.js -> Content.js -> ItemList.js -> LineItem.js
 
-```
-
-```js
-
-```
+App.js:
 
 ```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+import React, { useState } from "react";
 
+function App() {
+  const [items, setItems] = useState([
+    {
+      id: 1,
+      checked: false,
+      item: "Item 1",
+    },
+    {
+      id: 2,
+      checked: false,
+      item: "Item 2",
+    },
+    {
+      id: 3,
+      checked: false,
+      item: "Item 3",
+    },
+  ]);
+
+  const handleCheck = (id) => {
+    const listItems = items.map((item) =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+    setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  };
+
+  const handleDelete = (id) => {
+    const listItems = items.filter((item) => item.id !== id);
+    setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
+  };
+
+  return (
+    <div className="App">
+      <Header title="Groceries List" />
+      <Content
+        items={items}
+        handleCheck={handleCheck}
+        handleDelete={handleDelete}
+      />
+      <Footer itemLength={items.length} />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Content.js:
 
+```js
+import ItemList from "./ItemList";
+
+const Content = ({ items, handleCheck, handleDelete }) => {
+  return (
+    <main>
+      {items.length ? (
+        <ItemList
+          items={items}
+          handleCheck={handleCheck}
+          handleDelete={handleDelete}
+        />
+      ) : (
+        <p style={{ marginTop: "2rem" }}>Your List is empty!</p>
+      )}
+    </main>
+  );
+};
+
+export default Content;
 ```
 
-```js
+ItemList.js:
 
+```js
+import React from "react";
+import LineItem from "./LineItem";
+
+const ItemList = ({ items, handleCheck, handleDelete }) => {
+  return (
+    <ul>
+      {items.map((item) => (
+        <LineItem
+          key={item.id}
+          item={item}
+          handleCheck={handleCheck}
+          handleDelete={handleDelete}
+        />
+      ))}
+    </ul>
+  );
+};
+
+export default ItemList;
+```
+
+LineItem.js:
+
+```js
+import React from "react";
+import { FaTrashAlt } from "react-icons/fa";
+
+const LineItem = ({ item, handleCheck, handleDelete }) => {
+  return (
+    <li className="item">
+      <input
+        onChange={() => handleCheck(item.id)}
+        type="checkbox"
+        checked={item.checked}
+      />
+      <label
+        style={
+          item.checked
+            ? { textDecoration: "line-through" }
+            : { textDecoration: "none" }
+        }
+        onClick={() => handleCheck(item.id)}
+      >
+        {item.item}
+      </label>
+      <FaTrashAlt
+        onClick={() => handleDelete(item.id)}
+        role="button"
+        tabIndex="0"
+        aria-label={`Delete ${item.id}`}
+      />
+    </li>
+  );
+};
+
+export default LineItem;
 ```
 
 </details>
