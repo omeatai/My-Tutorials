@@ -10108,7 +10108,7 @@ export default App;
 </details>
 
 <details>
-  <summary>131. Search Input </summary>
+  <summary>131. Search Functionality </summary>
 
 App.js:
 
@@ -10170,7 +10170,9 @@ function App() {
       />
       <SearchItem search={search} setSearch={setSearch} />
       <Content
-        items={items}
+        items={items.filter((item) =>
+          item.item.toLowerCase().includes(search.toLowerCase())
+        )}
         handleCheck={handleCheck}
         handleDelete={handleDelete}
       />
@@ -10425,7 +10427,7 @@ button:hover {
 </details>
 
 <details>
-  <summary>132. Search Functionality</summary>
+  <summary>132. S</summary>
 
 ```bs
 
