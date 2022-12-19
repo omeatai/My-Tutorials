@@ -10540,19 +10540,28 @@ export default Input;
 <details>
   <summary>134. Color Selector App - Setup Square.js and Input.js components</summary>
 
+colors.json:
+
+```json
+{
+  "lilac": "#c8a2c8"
+}
+```
+
 App.js:
 
 ```js
 import React, { useState } from "react";
 import Square from "./Square";
 import Input from "./Input";
+import colors from "./colors.json";
 
 function App() {
   const [colorValue, setColorValue] = useState("");
 
   return (
     <div className="App">
-      <Square colorValue={colorValue} />
+      <Square colorValue={colorValue} colors={colors} />
       <Input colorValue={colorValue} setColorValue={setColorValue} />
     </div>
   );
@@ -10566,9 +10575,12 @@ Square.js:
 ```js
 import React from "react";
 
-const Square = ({ colorValue }) => {
+const Square = ({ colorValue, colors }) => {
   return (
-    <section className="square" style={{ backgroundColor: colorValue }}>
+    <section
+      className="square"
+      style={{ backgroundColor: colors[colorValue] || colorValue }}
+    >
       <p>{colorValue ? colorValue : "Empty Value"}</p>
     </section>
   );
