@@ -11048,14 +11048,45 @@ export default App;
 </details>
 
 <details>
-  <summary>138. sample</summary>
+  <summary>138. Using Json Server</summary>
+
+Install and start JSON Server:
 
 ```bs
+npm i json-server
+npm install -g json-server
 
+json-server -p 3500 --watch data/db.json
 ```
 
-```js
+OR
 
+```bs
+npx json-server -p 3500 -w data/db.json
+```
+
+data/db.json:
+
+```json
+{
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "item": "Almonds, Unsalted, in the blue bag"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "item": "Pizza"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "item": "Bread"
+    }
+  ]
+}
 ```
 
 ```js
