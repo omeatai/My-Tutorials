@@ -10468,51 +10468,96 @@ export default AddItem;
 </details>
 
 <details>
-  <summary>133. sample</summary>
+  <summary>133. Color Selector App - Introduction</summary>
+
+Install React App:
 
 ```bs
-
+npx create-react-app .
+npx create-react-app color-selector
 ```
 
-```js
+Index.js:
 
+```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 ```
 
-```js
+App.js:
 
+```js
+import Square from "./Square";
+import Input from "./Input";
+
+function App() {
+  return (
+    <div className="App">
+      <Square />
+      <Input />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Square.js:
 
+```js
+import React from "react";
+
+const Square = () => {
+  return <h2>Square</h2>;
+};
+
+export default Square;
 ```
 
-```js
+Input.js:
 
+```js
+import React from "react";
+
+const Input = () => {
+  return <h2>Input</h2>;
+};
+
+export default Input;
 ```
 
 </details>
 
 <details>
-  <summary>134. sample</summary>
+  <summary>134. Setup Square.js component</summary>
 
-```bs
-
-```
+Square.js:
 
 ```js
+import React from "react";
 
-```
+const Square = ({ colorValue }) => {
+  return (
+    <section className="square" style={{ backgroundColor: colorValue }}>
+      <p>{colorValue ? colorValue : "Empty Value"}</p>
+    </section>
+  );
+};
 
-```js
+Square.defaultProps = {
+  colorValue: "Empty Color Value",
+};
 
-```
-
-```js
-
-```
-
-```js
-
+export default Square;
 ```
 
 </details>
