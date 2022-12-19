@@ -11103,22 +11103,6 @@ http://localhost:3500/items/1
 }
 ```
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
 </details>
 
 <details>
