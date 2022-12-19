@@ -11048,7 +11048,7 @@ export default App;
 </details>
 
 <details>
-  <summary>138. Using Json Server</summary>
+  <summary>138. Using JSON Server</summary>
 
 Install and start JSON Server:
 
