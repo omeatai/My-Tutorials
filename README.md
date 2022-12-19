@@ -10791,26 +10791,179 @@ colors.json:
 </details>
 
 <details>
-  <summary>136. sample</summary>
+  <summary>136. Color Selector App - Toggling Black and White Text</summary>
 
-```bs
-
-```
+App.js:
 
 ```js
+import React, { useState } from "react";
+import Square from "./Square";
+import Input from "./Input";
+import colors from "./colors.json";
 
+function App() {
+  const [colorValue, setColorValue] = useState("");
+  const [hexValue, setHexValue] = useState("");
+  const [isDarktext, setIsDarktext] = useState(true);
+
+  return (
+    <div className="App">
+      <Square
+        colorValue={colorValue}
+        hexValue={hexValue}
+        colors={colors}
+        isDarktext={isDarktext}
+      />
+      <Input
+        colorValue={colorValue}
+        setColorValue={setColorValue}
+        setHexValue={setHexValue}
+        colors={colors}
+        isDarktext={isDarktext}
+        setIsDarktext={setIsDarktext}
+      />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Square.js:
 
+```js
+import React from "react";
+
+const Square = ({ colorValue, colors, hexValue, isDarktext }) => {
+  return (
+    <section
+      className="square"
+      style={{
+        backgroundColor: colors[colorValue] || colorValue,
+        color: isDarktext ? "#000" : "#fff",
+      }}
+    >
+      <p>{colorValue ? colorValue : "Empty Value"}</p>
+      <p>{hexValue && hexValue}</p>
+    </section>
+  );
+};
+
+Square.defaultProps = {
+  colorValue: "Empty Color Value",
+};
+
+export default Square;
 ```
 
-```js
+Input.js:
 
+```js
+import React from "react";
+import colorNames from "colornames";
+
+const Input = ({
+  colorValue,
+  setColorValue,
+  setHexValue,
+  colors,
+  isDarktext,
+  setIsDarktext,
+}) => {
+  return (
+    <form onSubmit={(e) => e.preventDefault()}>
+      <label htmlFor="">Add Color Name:</label>
+      <input
+        type="text"
+        placeholder="Add color name"
+        value={colorValue}
+        onChange={(e) => {
+          setColorValue(e.target.value);
+          setHexValue(colorNames(e.target.value) || colors[e.target.value]);
+        }}
+        autoFocus
+        required
+      />
+      <button type="button" onClick={() => setIsDarktext(!isDarktext)}>
+        Toggle Text Color
+      </button>
+    </form>
+  );
+};
+
+export default Input;
 ```
 
-```js
+index.css:
 
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 36px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 0.25rem;
+  display: grid;
+  place-content: center;
+}
+
+.square p {
+  text-align: center;
+}
+
+form {
+  width: 400px;
+}
+
+label {
+  position: absolute;
+  left: -99999px;
+}
+
+input[type="text"] {
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 5px #000;
+  padding: 0.25rem;
+}
 ```
 
 </details>
