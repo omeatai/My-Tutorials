@@ -10692,25 +10692,99 @@ button {
 </details>
 
 <details>
-  <summary>135. Color Selector App - </summary>
+  <summary>135. Color Selector App - Passing Hex Values</summary>
 
 ```bs
-
+npm i colornames -S
 ```
 
-```js
+App.js:
 
+```js
+import React, { useState } from "react";
+import Square from "./Square";
+import Input from "./Input";
+import colors from "./colors.json";
+
+function App() {
+  const [colorValue, setColorValue] = useState("");
+  const [hexValue, setHexValue] = useState("");
+
+  return (
+    <div className="App">
+      <Square colorValue={colorValue} hexValue={hexValue} colors={colors} />
+      <Input
+        colorValue={colorValue}
+        setColorValue={setColorValue}
+        setHexValue={setHexValue}
+        colors={colors}
+      />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Square.js:
 
+```js
+import React from "react";
+
+const Square = ({ colorValue, colors, hexValue }) => {
+  return (
+    <section
+      className="square"
+      style={{ backgroundColor: colors[colorValue] || colorValue }}
+    >
+      <p>{colorValue ? colorValue : "Empty Value"}</p>
+      <p>{hexValue && hexValue}</p>
+    </section>
+  );
+};
+
+Square.defaultProps = {
+  colorValue: "Empty Color Value",
+};
+
+export default Square;
 ```
 
-```js
+Input.js:
 
+```js
+import React from "react";
+import colorNames from "colornames";
+
+const Input = ({ colorValue, setColorValue, setHexValue, colors }) => {
+  return (
+    <form onSubmit={(e) => e.preventDefault()}>
+      <label htmlFor="">Add Color Name:</label>
+      <input
+        type="text"
+        placeholder="Add color name"
+        value={colorValue}
+        onChange={(e) => {
+          setColorValue(e.target.value);
+          setHexValue(colorNames(e.target.value) || colors[e.target.value]);
+        }}
+        autoFocus
+        required
+      />
+    </form>
+  );
+};
+
+export default Input;
 ```
 
+colors.json:
+
 ```js
+{
+  "lilac": "#c8a2c8",
+  "rose": "#ff007f"
+}
 
 ```
 
