@@ -11089,6 +11089,24 @@ data/db.json:
 }
 ```
 
+Fetch call for item 1:
+
+```bs
+http://localhost:3500/items/1
+```
+
+```js
+// {
+// "id": 1,
+// "checked": false,
+// "item": "Almonds, Unsalted, in the blue bag"
+}
+```
+
+```js
+
+```
+
 ```js
 
 ```
