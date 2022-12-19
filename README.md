@@ -10538,7 +10538,28 @@ export default Input;
 </details>
 
 <details>
-  <summary>134. Color Selector App - Setup Square.js component</summary>
+  <summary>134. Color Selector App - Setup Square.js and Input.js components</summary>
+
+App.js:
+
+```js
+import React, { useState } from "react";
+import Square from "./Square";
+import Input from "./Input";
+
+function App() {
+  const [colorValue, setColorValue] = useState("");
+
+  return (
+    <div className="App">
+      <Square colorValue={colorValue} />
+      <Input colorValue={colorValue} setColorValue={setColorValue} />
+    </div>
+  );
+}
+
+export default App;
+```
 
 Square.js:
 
@@ -10558,6 +10579,102 @@ Square.defaultProps = {
 };
 
 export default Square;
+```
+
+Input.js:
+
+```js
+import React from "react";
+
+const Input = ({ colorValue, setColorValue }) => {
+  return (
+    <form onSubmit={(e) => e.preventDefault()}>
+      <label htmlFor="">Add Color Name:</label>
+      <input
+        type="text"
+        placeholder="Add color name"
+        value={colorValue}
+        onChange={(e) => setColorValue(e.target.value)}
+        autoFocus
+        required
+      />
+    </form>
+  );
+};
+
+export default Input;
+```
+
+index.css:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 36px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 0.25rem;
+  display: grid;
+  place-content: center;
+}
+
+.square p {
+  text-align: center;
+}
+
+form {
+  width: 400px;
+}
+
+label {
+  position: absolute;
+  left: -99999px;
+}
+
+input[type="text"] {
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 5px #000;
+  padding: 0.25rem;
+}
 ```
 
 </details>
