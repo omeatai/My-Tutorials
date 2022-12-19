@@ -10538,7 +10538,7 @@ export default Input;
 </details>
 
 <details>
-  <summary>134. Setup Square.js component</summary>
+  <summary>134. Color Selector App - Setup Square.js component</summary>
 
 Square.js:
 
@@ -10563,7 +10563,7 @@ export default Square;
 </details>
 
 <details>
-  <summary>135. sample</summary>
+  <summary>135. Color Selector App - </summary>
 
 ```bs
 
