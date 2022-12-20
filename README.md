@@ -11745,7 +11745,7 @@ export default App;
 </details>
 
 <details>
-  <summary>145. sample</summary>
+  <summary>145. JSON server - Delete an Item</summary>
 
 ```bs
 
