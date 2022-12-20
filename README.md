@@ -11439,7 +11439,7 @@ export default App;
 </details>
 
 <details>
-  <summary>142. Building API Request Function </summary>
+  <summary>142. JSON server - Building API Request Function </summary>
 
 src/apiRequest.js:
 
@@ -11461,7 +11461,7 @@ export default apiRequest;
 </details>
 
 <details>
-  <summary>143. sample</summary>
+  <summary>143. JSON server -  </summary>
 
 ```bs
 
