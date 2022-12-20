@@ -11891,7 +11891,7 @@ export default App;
 </details>
 
 <details>
-  <summary>146. Fetch API Task - users, posts, comments</summary>
+  <summary>146. Fetch API Task (PART A) - users, posts, comments</summary>
 
 ```bs
 https://jsonplaceholder.typicode.com/
@@ -12007,22 +12007,179 @@ button:hover {
 
 Second Implementation:
 
-```js
+App.js:
 
+```js
+import { useState, useEffect } from "react";
+import Form from "./Form";
+import List from "./List";
+
+function App() {
+  const API_URL = "https://jsonplaceholder.typicode.com/";
+  const [reqType, setReqType] = useState("users");
+  const [items, setItems] = useState([]);
+  const [errMsg, setErrMsg] = useState("");
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      try {
+        setErrMsg("");
+        const response = await fetch(`${API_URL}${reqType}`);
+        if (!response.ok) throw new Error("No Data!");
+        const data = await response.json();
+        setItems(data);
+      } catch (err) {
+        setErrMsg(`Error: ${err.message}`);
+      } finally {
+        //
+      }
+    };
+
+    fetchItems();
+  }, [reqType]);
+
+  return (
+    <div className="App">
+      <Form reqType={reqType} setReqType={setReqType} />
+      <List items={items} errMsg={errMsg} />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Form.js:
 
+```js
+import React from "react";
+import Button from "./Button";
+
+const Form = ({ reqType, setReqType }) => {
+  return (
+    <form onSubmit={(e) => e.preventDefault()}>
+      <Button buttonText="users" reqType={reqType} setReqType={setReqType} />
+      <Button buttonText="posts" reqType={reqType} setReqType={setReqType} />
+      <Button buttonText="comments" reqType={reqType} setReqType={setReqType} />
+    </form>
+  );
+};
+
+export default Form;
+```
+
+Button.js:
+
+```js
+import React from "react";
+
+const Button = ({ buttonText, reqType, setReqType }) => {
+  return (
+    <button
+      className={buttonText === reqType ? "selected" : null}
+      type="button"
+      onClick={(e) => setReqType(buttonText)}
+    >
+      {buttonText}
+    </button>
+  );
+};
+
+export default Button;
+```
+
+List.js:
+
+```js
+import React from "react";
+import ListItem from "./ListItem";
+
+const List = ({ items, errMsg }) => {
+  return (
+    <main>
+      <h2 style={{ color: "red" }}>{errMsg}</h2>
+      <ul>
+        {!errMsg && items.map((item) => <ListItem key={item.id} item={item} />)}
+      </ul>
+    </main>
+  );
+};
+
+export default List;
+```
+
+ListItem.js:
+
+```js
+import React from "react";
+
+const ListItem = ({ item }) => {
+  return <li>{JSON.stringify(item)}</li>;
+};
+
+export default ListItem;
+```
+
+index.css:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+form {
+  width: 100%;
+  position: fixed;
+}
+
+button {
+  width: 33.33%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+ul {
+  padding: 3rem 2rem 1rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.table-container {
+  width: 100%;
+  overflow-y: auto;
+  padding-top: 52px;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 0.25rem;
+}
 ```
 
 </details>
 
 <details>
   <summary>147. sample</summary>
-
-```bs
-
-```
 
 ```js
 
