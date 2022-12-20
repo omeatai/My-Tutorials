@@ -11439,26 +11439,23 @@ export default App;
 </details>
 
 <details>
-  <summary>142. sample</summary>
+  <summary>142. Building API Request Function </summary>
 
-```bs
-
-```
+src/apiRequest.js:
 
 ```js
+const apiRequest = async (url = "", optionsObj = null, errMsg = null) => {
+  try {
+    const response = await fetch(url, optionsObj);
+    if (!response.ok) throw Error("Error, Please reload the app");
+  } catch (err) {
+    errMsg = err.message;
+  } finally {
+    return errMsg;
+  }
+};
 
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+export default apiRequest;
 ```
 
 </details>
