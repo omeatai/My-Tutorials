@@ -11891,19 +11891,121 @@ export default App;
 </details>
 
 <details>
-  <summary>146. sample</summary>
+  <summary>146. Fetch API Task - users, posts, comments</summary>
 
 ```bs
+https://jsonplaceholder.typicode.com/
 
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/comments
 ```
+
+index.js:
 
 ```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 ```
+
+First Implementation:
+
+App.js:
 
 ```js
+import { useState, useEffect } from "react";
 
+function App() {
+  const API_URL = "https://jsonplaceholder.typicode.com/";
+  const [reqType, setReqType] = useState("users");
+  const [items, setItems] = useState([]);
+  const [errMsg, setErrMsg] = useState("");
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      try {
+        setErrMsg("");
+        const response = await fetch(`${API_URL}${reqType}`);
+        if (!response.ok) throw new Error("No Data!");
+        const data = await response.json();
+        setItems(data);
+      } catch (err) {
+        setErrMsg(`Error: ${err.message}`);
+      } finally {
+        //
+      }
+    };
+
+    fetchItems();
+  }, [reqType]);
+
+  return (
+    <div className="App">
+      <header className="header">
+        <button onClick={(e) => setReqType(e.target.innerHTML)}>users</button>
+        <button onClick={(e) => setReqType(e.target.innerHTML)}>posts</button>
+        <button onClick={(e) => setReqType(e.target.innerHTML)}>
+          comments
+        </button>
+      </header>
+      <main>
+        <h2 style={{ color: "red" }}>{errMsg}</h2>
+        <ul>
+          {!errMsg && items.map((item) => <li>{JSON.stringify(item)}</li>)}
+        </ul>
+      </main>
+    </div>
+  );
+}
+
+export default App;
 ```
+
+Index.css:
+
+```css
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header > button {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+button:focus,
+button:active,
+button:hover {
+  background-color: #141414;
+  color: #fff;
+}
+```
+
+Second Implementation:
 
 ```js
 
