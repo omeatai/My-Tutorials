@@ -11228,7 +11228,7 @@ export default Content;
 </details>
 
 <details>
-  <summary>140. sample</summary>
+  <summary>140. Simulating a slow REST API Response</summary>
 
 ```bs
 
