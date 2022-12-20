@@ -12179,7 +12179,7 @@ td {
 </details>
 
 <details>
-  <summary>147. sample</summary>
+  <summary>147. Fetch API Task (PART B) - Tables</summary>
 
 ```js
 
