@@ -12351,6 +12351,13 @@ Install React Router DOM:
 
 ```bs
 npm i react-router-dom -S
+npm i react-router-dom@6 -S
+```
+
+Update React Router DOM:
+
+```bs
+npm update react-router-dom
 ```
 
 Run React Server:
@@ -12394,30 +12401,31 @@ export default App;
 <details>
   <summary>149. Setup React Router DOM</summary>
 
-```bs
-
-```
+index.js:
 
 ```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/*" element={<App />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>
+);
 ```
 
 </details>
 
 <details>
-  <summary>150. sample</summary>
+  <summary>150. Routing Components</summary>
 
 ```bs
 
