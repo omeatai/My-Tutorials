@@ -12339,26 +12339,54 @@ td {
 </details>
 
 <details>
-  <summary>148. sample</summary>
+  <summary>148. Blog App - Introduction</summary>
+
+Create React App:
 
 ```bs
-
+npx create-react-app .
 ```
 
-```js
+Install React Router DOM:
 
+```bs
+npm i react-router-dom -S
 ```
 
-```js
+Run React Server:
 
+```bs
+npm run start
 ```
 
-```js
+index.js:
 
+```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 ```
 
-```js
+App.js:
 
+```js
+function App() {
+  return (
+    <div className="App">
+      <h1>App</h1>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 </details>
