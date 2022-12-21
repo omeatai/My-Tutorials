@@ -12427,24 +12427,187 @@ root.render(
 <details>
   <summary>150. Routing Components</summary>
 
-```bs
-
-```
+index.js:
 
 ```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/*" element={<App />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>
+);
 ```
 
-```js
+App.js:
 
+```js
+import { useState, useEffect } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import Header from "./Header";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Home from "./Home";
+import NewPost from "./NewPost";
+import PostPage from "./PostPage";
+import About from "./About";
+import Missing from "./Missing";
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/post" element={<NewPost />} />
+        <Route path="/post/:id" element={<PostPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Missing />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Heading.js:
 
+```js
+import React from "react";
+
+const Header = () => {
+  return (
+    <header>
+      <h1>Header</h1>
+    </header>
+  );
+};
+
+export default Header;
 ```
 
-```js
+Nav.js:
 
+```js
+import React from "react";
+
+const Nav = () => {
+  return (
+    <nav>
+      <h1>Nav</h1>
+    </nav>
+  );
+};
+
+export default Nav;
+```
+
+Home.js:
+
+```js
+import React from "react";
+
+const Home = () => {
+  return (
+    <main>
+      <h1>Home</h1>
+    </main>
+  );
+};
+
+export default Home;
+```
+
+NewPost.js:
+
+```js
+import React from "react";
+
+const NewPost = () => {
+  return (
+    <main>
+      <h1>NewPost</h1>
+    </main>
+  );
+};
+
+export default NewPost;
+```
+
+PostPage.js:
+
+```js
+import React from "react";
+
+const PostPage = () => {
+  return (
+    <main>
+      <h1>PostPage</h1>
+    </main>
+  );
+};
+
+export default PostPage;
+```
+
+About.js:
+
+```js
+import React from "react";
+
+const About = () => {
+  return (
+    <main>
+      <h1>About</h1>
+    </main>
+  );
+};
+
+export default About;
+```
+
+Missing.js:
+
+```js
+import React from "react";
+
+const Missing = () => {
+  return (
+    <main>
+      <h1>Missing</h1>
+    </main>
+  );
+};
+
+export default Missing;
+```
+
+Footer.js:
+
+```js
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+  );
+};
+
+export default Footer;
 ```
 
 </details>
