@@ -12181,20 +12181,159 @@ td {
 <details>
   <summary>147. Fetch API Task (PART B) - Tables</summary>
 
-```js
+App.js:
 
+```js
+import { useState, useEffect } from "react";
+import Form from "./Form";
+// import List from "./List";
+import Table from "./Table";
+
+function App() {
+  const API_URL = "https://jsonplaceholder.typicode.com/";
+  const [reqType, setReqType] = useState("users");
+  const [items, setItems] = useState([]);
+  const [errMsg, setErrMsg] = useState("");
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      try {
+        setErrMsg("");
+        const response = await fetch(`${API_URL}${reqType}`);
+        if (!response.ok) throw new Error("No Data!");
+        const data = await response.json();
+        setItems(data);
+      } catch (err) {
+        setErrMsg(`Error: ${err.message}`);
+      } finally {
+        //
+      }
+    };
+
+    fetchItems();
+  }, [reqType]);
+
+  return (
+    <div className="App">
+      <Form reqType={reqType} setReqType={setReqType} />
+      {/* <List items={items} errMsg={errMsg} /> */}
+      <Table items={items} errMsg={errMsg} />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Table.js:
 
+```js
+import React from "react";
+import Row from "./Row";
+
+const Table = ({ items, errMsg }) => {
+  return (
+    <div className="table-container">
+      <h2 style={{ color: "red" }}>{errMsg}</h2>
+      <table>
+        <tbody>
+          {items.map((item) => (
+            <Row key={item.id} item={item} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default Table;
 ```
 
-```js
+Row.js:
 
+```js
+import React from "react";
+import Cell from "./Cell";
+
+const Row = ({ item }) => {
+  return (
+    <tr>
+      {Object.entries(item).map(([key, value]) => (
+        <Cell key={key} cellData={JSON.stringify(value)} />
+      ))}
+    </tr>
+  );
+};
+
+export default Row;
 ```
 
-```js
+Cell.js:
 
+```js
+import React from "react";
+
+const Cell = ({ cellData }) => {
+  return <td>{cellData}</td>;
+};
+
+export default Cell;
+```
+
+index.css:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+form {
+  width: 100%;
+  position: fixed;
+}
+
+button {
+  width: 33.33%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+ul {
+  padding: 3rem 2rem 1rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.table-container {
+  width: 100%;
+  overflow-y: auto;
+  padding-top: 52px;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 0.25rem;
+}
 ```
 
 </details>
