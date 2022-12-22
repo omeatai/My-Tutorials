@@ -12674,6 +12674,69 @@ const Nav = ({ search, setSearch }) => {
 export default Nav;
 ```
 
+Home.js:
+
+```js
+import React from "react";
+import Feed from "./Feed";
+
+const Home = ({ posts }) => {
+  return (
+    <main className="Home">
+      {posts.length ? (
+        <Feed posts={posts} />
+      ) : (
+        <p style={{ marginTop: "2rem" }}>No Posts to display.</p>
+      )}
+    </main>
+  );
+};
+
+export default Home;
+```
+
+Feed.js:
+
+```js
+import React from "react";
+import Post from "./Post";
+
+const Feed = ({ posts }) => {
+  return (
+    <>
+      {posts.map((post) => (
+        <Post key={post.id} post={post} />
+      ))}
+    </>
+  );
+};
+
+export default Feed;
+```
+
+Post.js:
+
+```js
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Post = ({ post }) => {
+  return (
+    <article className="post">
+      <Link to={`/post/${post.id}`}>
+        <h2>{post.title}</h2>
+        <p className="postDate">{post.datetime}</p>
+      </Link>
+      <p>
+        {post.body.length <= 25 ? post.body : `${post.body.slice(0, 25)}...`}
+      </p>
+    </article>
+  );
+};
+
+export default Post;
+```
+
 ```js
 
 ```
