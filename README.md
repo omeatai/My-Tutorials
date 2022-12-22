@@ -13275,7 +13275,7 @@ export default NewPost;
 </details>
 
 <details>
-  <summary>153. sample</summary>
+  <summary>153. Blog App - Adding Search Functionality</summary>
 
 ```bs
 
