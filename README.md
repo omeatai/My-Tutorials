@@ -12399,7 +12399,7 @@ export default App;
 </details>
 
 <details>
-  <summary>149. Setup React Router DOM</summary>
+  <summary>149. Blog App - Setup React Router DOM</summary>
 
 index.js:
 
@@ -12425,7 +12425,7 @@ root.render(
 </details>
 
 <details>
-  <summary>150. Routing Components</summary>
+  <summary>150. Blog App - Routing Components</summary>
 
 index.js:
 
@@ -12613,7 +12613,7 @@ export default Footer;
 </details>
 
 <details>
-  <summary>151. Reading and Deleting Blog Data</summary>
+  <summary>151. Blog App - Reading and Deleting Blog Data</summary>
 
 App.js:
 
@@ -13125,7 +13125,7 @@ body {
 </details>
 
 <details>
-  <summary>152. sample</summary>
+  <summary>152. Blog App - Adding New Post</summary>
 
 ```bs
 
