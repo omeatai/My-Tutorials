@@ -12841,18 +12841,6 @@ const PostPage = ({ posts, handleDelete }) => {
 export default PostPage;
 ```
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
 index.css:
 
 ```css
