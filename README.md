@@ -13436,51 +13436,48 @@ export default Missing;
 </details>
 
 <details>
-  <summary>155. sample</summary>
+  <summary>155. Blog App - Footer Component</summary>
 
-```bs
-
-```
+Footer.js:
 
 ```js
+import React from "react";
 
-```
+const Footer = () => {
+  const today = new Date();
 
-```js
+  return (
+    <footer className="Footer">
+      <p>Copyright &copy; {today.getFullYear()}</p>
+    </footer>
+  );
+};
 
-```
-
-```js
-
-```
-
-```js
-
+export default Footer;
 ```
 
 </details>
 
 <details>
-  <summary>156. sample</summary>
+  <summary>156. Blog App - About Component</summary>
 
-```bs
-
-```
+About.js:
 
 ```js
+import React from "react";
 
-```
+const About = () => {
+  return (
+    <main className="About">
+      <h2>About</h2>
+      <p style={{ marginTop: "1rem" }}>
+        This is a Blog app project in Learn React App Series.
+      </p>
+    </main>
+  );
+};
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+export default About;
 ```
 
 </details>
