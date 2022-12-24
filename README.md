@@ -13778,7 +13778,7 @@ body {
 </details>
 
 <details>
-  <summary>158. Blog App - Setup data/db.json file for Axios</summary>
+  <summary>158. Blog App - Setup data/db.json file for JSON Server and Axios</summary>
 
 Install Axios:
 
@@ -13909,6 +13909,23 @@ export default App;
 
 <details>
   <summary>159. Blog App - Post with Axios</summary>
+
+Install JSON Server:
+
+```bs
+npm i json-server
+npm install -g json-server
+
+json-server -p 3500 --watch data/db.json
+```
+
+OR
+
+Lunch JSON Server:
+
+```bs
+npx json-server -p 3500 -w data/db.json
+```
 
 api/posts.js
 
