@@ -13935,6 +13935,8 @@ import axios from "axios";
 export default axios.create({ baseURL: "http://localhost:3500" });
 ```
 
+App.js:
+
 ```bs
 const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13954,8 +13956,6 @@ const handleSubmit = async (e) => {
     }
   };
 ```
-
-App.js:
 
 ```js
 import { useState, useEffect } from "react";
