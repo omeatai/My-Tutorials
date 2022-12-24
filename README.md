@@ -14345,24 +14345,555 @@ export default App;
 <details>
   <summary>162. Blog App - Update Data with Axios</summary>
 
-```bs
-
-```
+App.js:
 
 ```js
+import { useState, useEffect } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { format } from "date-fns";
+import Header from "./Header";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Home from "./Home";
+import NewPost from "./NewPost";
+import PostPage from "./PostPage";
+import About from "./About";
+import Missing from "./Missing";
+import api from "./api/posts";
+import EditPost from "./EditPost";
 
+function App() {
+  const [posts, setPosts] = useState([]);
+  const [search, setSearch] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [postTitle, setPostTitle] = useState("");
+  const [postBody, setPostBody] = useState("");
+  const [editTitle, setEditTitle] = useState("");
+  const [editBody, setEditBody] = useState("");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await api.get("/posts");
+        setPosts(response.data);
+      } catch (err) {
+        if (err.response) {
+          // Got Data Error but Not in the 200 response range
+          console.log(err.response.data.message);
+          console.log(err.response.data);
+          console.log(err.response.status);
+          console.log(err.response.headers);
+        } else {
+          //No Data Error, if (err.code === 404)
+          console.log(`Error: ${err.message}`);
+        }
+      }
+    };
+    fetchPosts();
+  }, []);
+
+  useEffect(() => {
+    const filteredResults = posts.filter(
+      (post) =>
+        post.body.toLowerCase().includes(search.toLowerCase()) ||
+        post.title.toLowerCase().includes(search.toLowerCase())
+    );
+
+    setSearchResults(filteredResults.reverse());
+  }, [posts, search]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    //const datetime = format(new Date(), "yyyy-MM-dd HH:mm:ss");
+    const newPost = { id, title: postTitle, datetime, body: postBody };
+    try {
+      const response = await api.post("/posts", newPost);
+      const allPosts = [...posts, response.data];
+      setPosts(allPosts);
+      setPostTitle("");
+      setPostBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleEdit = async (id) => {
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const updatedPost = { id, title: editTitle, datetime, body: editBody };
+    try {
+      const response = await api.put(`/posts/${id}`, updatedPost);
+      setPosts(
+        posts.map((post) => (post.id === id ? { ...response.data } : post))
+      );
+      setEditTitle("");
+      setEditBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await api.delete(`/posts/${id}`);
+      const postList = posts.filter((post) => post.id !== id);
+      setPosts(postList);
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  return (
+    <div className="App">
+      <Header title="React JS Blog" />
+      <Nav search={search} setSearch={setSearch} />
+      <Routes>
+        <Route exact path="/" element={<Home posts={searchResults} />} />
+        <Route
+          exact
+          path="/post"
+          element={
+            <NewPost
+              handleSubmit={handleSubmit}
+              postTitle={postTitle}
+              setPostTitle={setPostTitle}
+              postBody={postBody}
+              setPostBody={setPostBody}
+            />
+          }
+        />
+        <Route
+          path="/edit/:id"
+          element={
+            <EditPost
+              posts={posts}
+              handleEdit={handleEdit}
+              editTitle={editTitle}
+              setEditTitle={setEditTitle}
+              editBody={editBody}
+              setEditBody={setEditBody}
+            />
+          }
+        />
+        <Route
+          path="/post/:id"
+          element={<PostPage posts={posts} handleDelete={handleDelete} />}
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Missing />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+EditPost.js:
 
+```js
+import React, { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+
+const EditPost = ({
+  posts,
+  handleEdit,
+  editBody,
+  setEditBody,
+  editTitle,
+  setEditTitle,
+}) => {
+  const { id } = useParams();
+  const post = posts.find((post) => post.id.toString() === id);
+
+  useEffect(() => {
+    if (post) {
+      setEditTitle(post.title);
+      setEditBody(post.body);
+    }
+  }, [post, setEditTitle, setEditBody]);
+
+  return (
+    <main className="NewPost">
+      {editTitle ? (
+        <>
+          <h2>EditPost</h2>
+          <form className="newPostForm" onSubmit={(e) => e.preventDefault()}>
+            <label htmlFor="postTitle">Title:</label>
+            <input
+              type="text"
+              id="postTitle"
+              value={editTitle}
+              onChange={(e) => setEditTitle(e.target.value)}
+              required
+            />
+            <label htmlFor="postBody">Post:</label>
+            <textarea
+              id="postBody"
+              value={editBody}
+              onChange={(e) => setEditBody(e.target.value)}
+              // cols="10"
+              // rows="30"
+              required
+            />
+            <button type="submit" onClick={() => handleEdit(post.id)}>
+              Submit
+            </button>
+          </form>
+        </>
+      ) : (
+        <>
+          <h2>Post Not Found</h2>
+          <p>Well, that's disappointing.</p>
+          <p>
+            <Link to="/">Visit our Homepage</Link>
+          </p>
+        </>
+      )}
+    </main>
+  );
+};
+
+export default EditPost;
 ```
 
-```js
+PostPage.js:
 
+```js
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+
+const PostPage = ({ posts, handleDelete }) => {
+  const { id } = useParams();
+  const post = posts.find((post) => post.id.toString() === id);
+
+  return (
+    <main className="PostPage">
+      <article className="post">
+        {post ? (
+          <>
+            <h2>{post.title}</h2>
+            <p className="postDate">{post.datetime}</p>
+            <p className="postBody">{post.body}</p>
+            <Link to={`/edit/${post.id}`}>
+              <button className="editButton">Edit Post</button>
+            </Link>
+            <button
+              className="deleteButton"
+              onClick={() => handleDelete(post.id)}
+            >
+              Delete Post
+            </button>
+          </>
+        ) : (
+          <>
+            <h2>Post Not Found</h2>
+            <p>Well, that's disappointing.</p>
+            <p>
+              <Link to="/">Visit our Home Page</Link>
+            </p>
+          </>
+        )}
+      </article>
+    </main>
+  );
+};
+
+export default PostPage;
 ```
 
-```js
+index.css:
 
+```css
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  background-color: #efefef;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px gray;
+}
+
+.Header,
+.Footer {
+  width: 100%;
+  background-color: #66d8f5;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header h1 {
+  font-size: 1.5rem;
+}
+
+.Header svg {
+  font-size: 2rem;
+}
+
+.Footer {
+  padding: 0.75rem;
+  display: grid;
+  place-content: center;
+}
+
+.Nav {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.searchForm {
+  width: 80%;
+  padding: 1rem 0 0 0.75rem;
+}
+
+.searchForm input[type="text"] {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.Nav ul {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.Nav li {
+  padding: 1rem;
+}
+
+.Nav li:hover,
+.Nav li:focus {
+  padding: 1rem;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Nav li:hover,
+.Nav li:focus,
+.Nav li:hover a,
+.Nav li:focus a {
+  background-color: #eee;
+  color: #333;
+}
+
+.Nav li:hover a,
+.Nav li:focus a {
+  cursor: pointer;
+}
+
+.Home,
+.NewPost,
+.PostPage,
+.About,
+.Missing {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.post {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.Home .post a {
+  text-decoration: none;
+}
+
+.Home .post a,
+.Home .post a:visited {
+  color: #000;
+}
+
+.post:first-child {
+  margin-top: 0;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.postDate {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.postBody {
+  margin: 1rem 0;
+}
+
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newPostForm label {
+  margin-top: 1rem;
+}
+
+.newPostForm input[type="text"],
+.newPostForm textarea {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+.newPostForm textarea {
+  height: 100px;
+}
+
+.newPostForm button {
+  margin-top: 1rem;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Missing p,
+.PostPage p,
+.NewPost p {
+  margin-top: 1rem;
+}
+
+.PostPage button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: red;
+}
+
+.editButton {
+  background-color: #333;
+}
+
+.statusMsg {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 610px) {
+  html {
+    font-size: 22px;
+  }
+
+  .Header h1 {
+    font-size: 2rem;
+  }
+
+  .Nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Nav ul {
+    text-align: right;
+  }
+
+  .Nav li:hover,
+  .Nav li:focus,
+  .Nav li:hover a,
+  .Nav li:focus a {
+    background-color: #eee;
+    color: #333;
+  }
+
+  .searchForm {
+    width: 50%;
+    padding: 0.5rem 0;
+  }
+
+  .searchForm input[type="text"] {
+    margin-left: 0.5rem;
+  }
+
+  .newPostForm textarea {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .Header svg {
+    font-size: 3rem;
+  }
+}
 ```
 
 </details>
