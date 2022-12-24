@@ -14323,7 +14323,7 @@ export default App;
 </details>
 
 <details>
-  <summary>162. sample</summary>
+  <summary>162. Blog App - Update Data with Axios</summary>
 
 ```bs
 
