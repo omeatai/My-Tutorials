@@ -14184,7 +14184,7 @@ export default App;
 </details>
 
 <details>
-  <summary>161. sample</summary>
+  <summary>161. Blog App - Delete Data with Axios</summary>
 
 ```bs
 
