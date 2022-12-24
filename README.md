@@ -13908,7 +13908,7 @@ export default App;
 </details>
 
 <details>
-  <summary>159. Blog App - Post with Axios</summary>
+  <summary>159. Blog App - Fetch Data with Axios</summary>
 
 Install JSON Server:
 
@@ -13930,7 +13930,9 @@ npx json-server -p 3500 -w data/db.json
 api/posts.js
 
 ```js
+import axios from "axios";
 
+export default axios.create({ baseURL: "http://localhost:3500" });
 ```
 
 ```js
