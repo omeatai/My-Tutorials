@@ -16505,26 +16505,207 @@ export default EditPost;
 </details>
 
 <details>
-  <summary>170. sample</summary>
+  <summary>170. Blog App - Isolating Header and Footer Component State from Shared Context API</summary>
 
-```bs
-
-```
+App.js:
 
 ```js
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Header from "./Header";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Home from "./Home";
+import NewPost from "./NewPost";
+import PostPage from "./PostPage";
+import About from "./About";
+import Missing from "./Missing";
+import EditPost from "./EditPost";
 
+import { DataProvider } from "./context/DataContext";
+
+function App() {
+  return (
+    <div className="App">
+      <Header title="React JS Blog" />
+      <DataProvider>
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/post" element={<NewPost />} />
+          <Route path="/edit/:id" element={<EditPost />} />
+          <Route path="/post/:id" element={<PostPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Missing />} />
+        </Routes>
+      </DataProvider>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+context/DataContext.js:
 
+```js
+import React, { createContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { format } from "date-fns";
+import api from "../api/posts";
+import useAxiosFetch from "../hooks/useAxiosFetch";
+
+const DataContext = createContext({});
+
+export const DataProvider = ({ children }) => {
+  const [posts, setPosts] = useState([]);
+  const [search, setSearch] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [postTitle, setPostTitle] = useState("");
+  const [postBody, setPostBody] = useState("");
+  const [editTitle, setEditTitle] = useState("");
+  const [editBody, setEditBody] = useState("");
+  const navigate = useNavigate();
+
+  const { data, fetchError, isLoading } = useAxiosFetch(
+    "http://localhost:3500/posts"
+  );
+
+  useEffect(() => {
+    setPosts(data);
+  }, [data]);
+
+  useEffect(() => {
+    const filteredResults = posts.filter(
+      (post) =>
+        post.body.toLowerCase().includes(search.toLowerCase()) ||
+        post.title.toLowerCase().includes(search.toLowerCase())
+    );
+
+    setSearchResults(filteredResults.reverse());
+  }, [posts, search]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    //const datetime = format(new Date(), "yyyy-MM-dd HH:mm:ss");
+    const newPost = { id, title: postTitle, datetime, body: postBody };
+    try {
+      const response = await api.post("/posts", newPost);
+      const allPosts = [...posts, response.data];
+      setPosts(allPosts);
+      setPostTitle("");
+      setPostBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleEdit = async (id) => {
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const updatedPost = { id, title: editTitle, datetime, body: editBody };
+    try {
+      const response = await api.put(`/posts/${id}`, updatedPost);
+      setPosts(
+        posts.map((post) => (post.id === id ? { ...response.data } : post))
+      );
+      setEditTitle("");
+      setEditBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await api.delete(`/posts/${id}`);
+      const postList = posts.filter((post) => post.id !== id);
+      setPosts(postList);
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  return (
+    <DataContext.Provider
+      value={{
+        search,
+        setSearch,
+        searchResults,
+        fetchError,
+        isLoading,
+        handleSubmit,
+        postTitle,
+        setPostTitle,
+        postBody,
+        setPostBody,
+        posts,
+        handleEdit,
+        editBody,
+        setEditBody,
+        editTitle,
+        setEditTitle,
+        handleDelete,
+      }}
+    >
+      {children}
+    </DataContext.Provider>
+  );
+};
+
+export default DataContext;
 ```
 
-```js
+Header.js:
 
+```js
+import React from "react";
+import { FaLaptop, FaTabletAlt, FaMobileAlt } from "react-icons/fa";
+import useWindowSize from "./hooks/useWindowSize";
+// import DataContext from "./context/DataContext";
+
+const Header = ({ title }) => {
+  // const { width } = useContext(DataContext);
+  const { width } = useWindowSize();
+
+  return (
+    <header className="Header">
+      <h1>{title}</h1>
+      {width < 768 ? (
+        <FaMobileAlt />
+      ) : width < 992 ? (
+        <FaTabletAlt />
+      ) : (
+        <FaLaptop />
+      )}
+    </header>
+  );
+};
+
+export default Header;
 ```
 
-```js
+Footer.js:
 
+```js
+import React from "react";
+
+const Footer = () => {
+  const today = new Date();
+
+  return (
+    <footer className="Footer">
+      <p>Copyright &copy; {today.getFullYear()}</p>
+    </footer>
+  );
+};
+
+export default Footer;
 ```
 
 </details>
