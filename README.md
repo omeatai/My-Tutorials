@@ -16232,7 +16232,7 @@ export default NewPost;
 </details>
 
 <details>
-  <summary>169. sample</summary>
+  <summary>169. Blog App - Refactor EditPost with Context API</summary>
 
 ```bs
 
