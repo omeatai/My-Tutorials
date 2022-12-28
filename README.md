@@ -15751,26 +15751,263 @@ export default Header;
 </details>
 
 <details>
-  <summary>167. Blog App - Refactor Nav with Context API</summary>
+  <summary>167. Blog App - Refactor Nav and Home with Context API</summary>
 
-```bs
-
-```
+context/DataContext.js:
 
 ```js
+import React, { createContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { format } from "date-fns";
+import api from "../api/posts";
+import useAxiosFetch from "../hooks/useAxiosFetch";
+import useWindowSize from "../hooks/useWindowSize";
 
+const DataContext = createContext({});
+
+export const DataProvider = ({ children }) => {
+  const { width } = useWindowSize();
+  const [posts, setPosts] = useState([]);
+  const [search, setSearch] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [postTitle, setPostTitle] = useState("");
+  const [postBody, setPostBody] = useState("");
+  const [editTitle, setEditTitle] = useState("");
+  const [editBody, setEditBody] = useState("");
+  const navigate = useNavigate();
+
+  const { data, fetchError, isLoading } = useAxiosFetch(
+    "http://localhost:3500/posts"
+  );
+
+  useEffect(() => {
+    setPosts(data);
+  }, [data]);
+
+  useEffect(() => {
+    const filteredResults = posts.filter(
+      (post) =>
+        post.body.toLowerCase().includes(search.toLowerCase()) ||
+        post.title.toLowerCase().includes(search.toLowerCase())
+    );
+
+    setSearchResults(filteredResults.reverse());
+  }, [posts, search]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    //const datetime = format(new Date(), "yyyy-MM-dd HH:mm:ss");
+    const newPost = { id, title: postTitle, datetime, body: postBody };
+    try {
+      const response = await api.post("/posts", newPost);
+      const allPosts = [...posts, response.data];
+      setPosts(allPosts);
+      setPostTitle("");
+      setPostBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleEdit = async (id) => {
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const updatedPost = { id, title: editTitle, datetime, body: editBody };
+    try {
+      const response = await api.put(`/posts/${id}`, updatedPost);
+      setPosts(
+        posts.map((post) => (post.id === id ? { ...response.data } : post))
+      );
+      setEditTitle("");
+      setEditBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await api.delete(`/posts/${id}`);
+      const postList = posts.filter((post) => post.id !== id);
+      setPosts(postList);
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  return (
+    <DataContext.Provider
+      value={{
+        width,
+        search,
+        setSearch,
+        searchResults,
+        fetchError,
+        isLoading,
+      }}
+    >
+      {children}
+    </DataContext.Provider>
+  );
+};
+
+export default DataContext;
 ```
 
-```js
+App.js:
 
+```js
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Header from "./Header";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Home from "./Home";
+import NewPost from "./NewPost";
+import PostPage from "./PostPage";
+import About from "./About";
+import Missing from "./Missing";
+import EditPost from "./EditPost";
+
+import { DataProvider } from "./context/DataContext";
+
+function App() {
+  const {
+    handleSubmit,
+    postTitle,
+    setPostTitle,
+    postBody,
+    setPostBody,
+    posts,
+    handleEdit,
+    editTitle,
+    setEditTitle,
+    editBody,
+    setEditBody,
+    handleDelete,
+  } = {};
+  return (
+    <div className="App">
+      <DataProvider>
+        <Header title="React JS Blog" />
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route
+            exact
+            path="/post"
+            element={
+              <NewPost
+                handleSubmit={handleSubmit}
+                postTitle={postTitle}
+                setPostTitle={setPostTitle}
+                postBody={postBody}
+                setPostBody={setPostBody}
+              />
+            }
+          />
+          <Route
+            path="/edit/:id"
+            element={
+              <EditPost
+                posts={posts}
+                handleEdit={handleEdit}
+                editTitle={editTitle}
+                setEditTitle={setEditTitle}
+                editBody={editBody}
+                setEditBody={setEditBody}
+              />
+            }
+          />
+          <Route
+            path="/post/:id"
+            element={<PostPage posts={posts} handleDelete={handleDelete} />}
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Missing />} />
+        </Routes>
+        <Footer />
+      </DataProvider>
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+Nav.js:
 
+```js
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import DataContext from "./context/DataContext";
+
+const Nav = () => {
+  const { search, setSearch } = useContext(DataContext);
+
+  return (
+    <nav className="Nav">
+      <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
+        <label htmlFor="search">Search Posts</label>
+        <input
+          id="search"
+          type="text"
+          placeholder="Search Posts"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </form>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/post">Post</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Nav;
 ```
 
-```js
+Home.js:
 
+```js
+import React, { useContext } from "react";
+import DataContext from "./context/DataContext";
+import Feed from "./Feed";
+
+const Home = () => {
+  const { searchResults, fetchError, isLoading } = useContext(DataContext);
+  return (
+    <main className="Home">
+      {isLoading && <p className="statusMsg">Loading posts...</p>}
+      {!isLoading && fetchError && (
+        <p className="statusMsg" style={{ color: "red" }}>
+          {fetchError}
+        </p>
+      )}
+      {!isLoading &&
+        !fetchError &&
+        (searchResults?.length ? (
+          <Feed posts={searchResults} />
+        ) : (
+          <p className="statusMsg">No Posts to display.</p>
+        ))}
+    </main>
+  );
+};
+
+export default Home;
 ```
 
 </details>
