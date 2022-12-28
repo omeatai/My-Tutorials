@@ -16232,26 +16232,274 @@ export default NewPost;
 </details>
 
 <details>
-  <summary>169. Blog App - Refactor EditPost with Context API</summary>
+  <summary>169. Blog App - Refactor PostPage and EditPost with Context API</summary>
 
-```bs
-
-```
+context/DataContext.js:
 
 ```js
+import React, { createContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { format } from "date-fns";
+import api from "../api/posts";
+import useAxiosFetch from "../hooks/useAxiosFetch";
+import useWindowSize from "../hooks/useWindowSize";
 
+const DataContext = createContext({});
+
+export const DataProvider = ({ children }) => {
+  const { width } = useWindowSize();
+  const [posts, setPosts] = useState([]);
+  const [search, setSearch] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [postTitle, setPostTitle] = useState("");
+  const [postBody, setPostBody] = useState("");
+  const [editTitle, setEditTitle] = useState("");
+  const [editBody, setEditBody] = useState("");
+  const navigate = useNavigate();
+
+  const { data, fetchError, isLoading } = useAxiosFetch(
+    "http://localhost:3500/posts"
+  );
+
+  useEffect(() => {
+    setPosts(data);
+  }, [data]);
+
+  useEffect(() => {
+    const filteredResults = posts.filter(
+      (post) =>
+        post.body.toLowerCase().includes(search.toLowerCase()) ||
+        post.title.toLowerCase().includes(search.toLowerCase())
+    );
+
+    setSearchResults(filteredResults.reverse());
+  }, [posts, search]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    //const datetime = format(new Date(), "yyyy-MM-dd HH:mm:ss");
+    const newPost = { id, title: postTitle, datetime, body: postBody };
+    try {
+      const response = await api.post("/posts", newPost);
+      const allPosts = [...posts, response.data];
+      setPosts(allPosts);
+      setPostTitle("");
+      setPostBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleEdit = async (id) => {
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const updatedPost = { id, title: editTitle, datetime, body: editBody };
+    try {
+      const response = await api.put(`/posts/${id}`, updatedPost);
+      setPosts(
+        posts.map((post) => (post.id === id ? { ...response.data } : post))
+      );
+      setEditTitle("");
+      setEditBody("");
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await api.delete(`/posts/${id}`);
+      const postList = posts.filter((post) => post.id !== id);
+      setPosts(postList);
+      navigate("/");
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    }
+  };
+
+  return (
+    <DataContext.Provider
+      value={{
+        width,
+        search,
+        setSearch,
+        searchResults,
+        fetchError,
+        isLoading,
+        handleSubmit,
+        postTitle,
+        setPostTitle,
+        postBody,
+        setPostBody,
+        posts,
+        handleEdit,
+        editBody,
+        setEditBody,
+        editTitle,
+        setEditTitle,
+        handleDelete,
+      }}
+    >
+      {children}
+    </DataContext.Provider>
+  );
+};
+
+export default DataContext;
 ```
 
-```js
+App.js:
 
+```js
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Header from "./Header";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Home from "./Home";
+import NewPost from "./NewPost";
+import PostPage from "./PostPage";
+import About from "./About";
+import Missing from "./Missing";
+import EditPost from "./EditPost";
+
+import { DataProvider } from "./context/DataContext";
+
+function App() {
+  return (
+    <div className="App">
+      <DataProvider>
+        <Header title="React JS Blog" />
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/post" element={<NewPost />} />
+          <Route path="/edit/:id" element={<EditPost />} />
+          <Route path="/post/:id" element={<PostPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Missing />} />
+        </Routes>
+        <Footer />
+      </DataProvider>
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```js
+PostPage.js:
 
+```js
+import React, { useContext } from "react";
+import DataContext from "./context/DataContext";
+import { useParams, Link } from "react-router-dom";
+
+const PostPage = () => {
+  const { posts, handleDelete } = useContext(DataContext);
+  const { id } = useParams();
+  const post = posts.find((post) => post.id.toString() === id);
+
+  return (
+    <main className="PostPage">
+      <article className="post">
+        {post ? (
+          <>
+            <h2>{post.title}</h2>
+            <p className="postDate">{post.datetime}</p>
+            <p className="postBody">{post.body}</p>
+            <Link to={`/edit/${post.id}`}>
+              <button className="editButton">Edit Post</button>
+            </Link>
+            <button
+              className="deleteButton"
+              onClick={() => handleDelete(post.id)}
+            >
+              Delete Post
+            </button>
+          </>
+        ) : (
+          <>
+            <h2>Post Not Found</h2>
+            <p>Well, that's disappointing.</p>
+            <p>
+              <Link to="/">Visit our Home Page</Link>
+            </p>
+          </>
+        )}
+      </article>
+    </main>
+  );
+};
+
+export default PostPage;
 ```
 
-```js
+EditPost.js:
 
+```js
+import React, { useEffect, useContext } from "react";
+import DataContext from "./context/DataContext";
+import { useParams, Link } from "react-router-dom";
+
+const EditPost = () => {
+  const { posts, handleEdit, editBody, setEditBody, editTitle, setEditTitle } =
+    useContext(DataContext);
+  const { id } = useParams();
+  const post = posts.find((post) => post.id.toString() === id);
+
+  useEffect(() => {
+    if (post) {
+      setEditTitle(post.title);
+      setEditBody(post.body);
+    }
+  }, [post, setEditTitle, setEditBody]);
+
+  return (
+    <main className="NewPost">
+      {post ? (
+        <>
+          <h2>EditPost</h2>
+          <form className="newPostForm" onSubmit={(e) => e.preventDefault()}>
+            <label htmlFor="postTitle">Title:</label>
+            <input
+              type="text"
+              id="postTitle"
+              value={editTitle}
+              onChange={(e) => setEditTitle(e.target.value)}
+              required
+            />
+            <label htmlFor="postBody">Post:</label>
+            <textarea
+              id="postBody"
+              value={editBody}
+              onChange={(e) => setEditBody(e.target.value)}
+              // cols="10"
+              // rows="30"
+              required
+            />
+            <button type="submit" onClick={() => handleEdit(post.id)}>
+              Submit
+            </button>
+          </form>
+        </>
+      ) : (
+        <>
+          <h2>Post Not Found</h2>
+          <p>Well, that's disappointing.</p>
+          <p>
+            <Link to="/">Visit our Homepage</Link>
+          </p>
+        </>
+      )}
+    </main>
+  );
+};
+
+export default EditPost;
 ```
 
 </details>
