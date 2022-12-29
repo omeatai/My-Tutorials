@@ -16789,8 +16789,10 @@ Install Easy Peasy v5 Redux:
 npm install easy-peasy
 ```
 
-```bs
+Start npx server:
 
+```bs
+npx json-server -p 3500 -w data/db.json
 ```
 
 ```js
