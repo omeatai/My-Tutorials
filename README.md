@@ -16795,7 +16795,9 @@ Start npx server:
 npx json-server -p 3500 -w data/db.json
 ```
 
-Create Easy Peasy store:
+Create Easy Peasy store -
+
+store.js:
 
 ```js
 
