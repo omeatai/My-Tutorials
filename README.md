@@ -16783,8 +16783,10 @@ Remove unused packages:
 npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event web-vitals
 ```
 
-```bs
+Install Easy Peasy v5 Redux:
 
+```bs
+npm install easy-peasy
 ```
 
 ```bs
