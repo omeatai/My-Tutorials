@@ -16711,40 +16711,66 @@ export default Footer;
 </details>
 
 <details>
-  <summary>171. Blog App - using Easy Peasy Redux for State Management</summary>
+  <summary>171. Easy Peasy v5</summary>
+
+Install Easy Peasy:
 
 ```bs
-
+npm install easy-peasy
 ```
 
-```bs
-
-```
-
-```bs
-
-```
+Create your store:
 
 ```js
-
+const store = createStore({
+  todos: ["Create store", "Wrap application", "Use store"],
+  addTodo: action((state, payload) => {
+    state.todos.push(payload);
+  }),
+});
 ```
 
-```js
+Wrap your application:
 
+```js
+function App() {
+  return (
+    <StoreProvider store={store}>
+      <TodoList />
+    </StoreProvider>
+  );
+}
 ```
 
-```js
-
-```
+Use the store:
 
 ```js
-
+function TodoList() {
+  const todos = useStoreState((state) => state.todos);
+  const addTodo = useStoreActions((actions) => actions.addTodo);
+  return (
+    <div>
+      {todos.map((todo, idx) => (
+        <div key={idx}>{todo}</div>
+      ))}
+      <AddTodo onAdd={addTodo} />
+    </div>
+  );
+}
 ```
 
 </details>
 
 <details>
-  <summary>172. sample</summary>
+  <summary>172. Blog App - using Easy Peasy Redux for State Management</summary>
+
+```bs
+
+```
+
+```bs
+
+```
 
 ```bs
 
