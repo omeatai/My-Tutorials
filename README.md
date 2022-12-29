@@ -16719,9 +16719,13 @@ Install Easy Peasy:
 npm install easy-peasy
 ```
 
-Create your store:
+Create your store -
+
+store.js:
 
 ```js
+import { createStore, action } from "easy-peasy";
+
 const store = createStore({
   todos: ["Create store", "Wrap application", "Use store"],
   addTodo: action((state, payload) => {
@@ -16730,9 +16734,14 @@ const store = createStore({
 });
 ```
 
-Wrap your application:
+Wrap your application -
+
+App.js:
 
 ```js
+import { StoreProvider } from "easy-peasy";
+import { store } from "./store";
+
 function App() {
   return (
     <StoreProvider store={store}>
@@ -16742,9 +16751,13 @@ function App() {
 }
 ```
 
-Use the store:
+Use the store state in your components -
+
+TodoList.js:
 
 ```js
+import { useStoreState, useStoreActions } from "easy-peasy";
+
 function TodoList() {
   const todos = useStoreState((state) => state.todos);
   const addTodo = useStoreActions((actions) => actions.addTodo);
