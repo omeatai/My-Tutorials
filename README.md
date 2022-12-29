@@ -3196,6 +3196,8 @@ export const Text = () => {
 
 </details>
 
++REACT-FETCH
+
 <details>
   <summary>59. Fetching Data from API</summary>
 
@@ -3234,6 +3236,8 @@ export default App;
 ```
 
 </details>
+
++REACT-AXIOS
 
 <details>
   <summary>60. Using Axios to Fetch API</summary>
@@ -3359,6 +3363,8 @@ export default App;
 ```
 
 </details>
+
++REACT-ROUTER
 
 <details>
   <summary>61. React Router Dom</summary>
@@ -3537,6 +3543,8 @@ export default Profile;
 
 </details>
 
++CONTEXT-API
+
 <details>
   <summary>63. useContext Hook (Context API)</summary>
 
@@ -3635,6 +3643,8 @@ export const ChangeProfile = (props) => {
 
 </details>
 
++REACT-QUERY
+
 <details>
   <summary>64. React Query Library</summary>
 
@@ -3726,6 +3736,8 @@ export const Home = () => {
 
 </details>
 
++YUP/REACT-HOOK-FORM
+
 <details>
   <summary>65. React-Hook-Form & Yup</summary>
 
@@ -3814,6 +3826,8 @@ export const Form = () => {
 ```
 
 </details>
+
++CUSTOM-HOOKS
 
 <details>
   <summary>66. Custom Hooks</summary>
@@ -4015,6 +4029,8 @@ export const useCounter = (initialCount = 0) => {
 
 </details>
 
++TYPESCRIPT
+
 <details>
   <summary>69. React Type Safety (PropTypes)</summary>
 
@@ -4168,6 +4184,8 @@ export default Person;
 ```
 
 </details>
+
++REDUX-TOOLKIT
 
 <details>
   <summary>71. Redux Toolkit</summary>
