@@ -16711,7 +16711,15 @@ export default Footer;
 </details>
 
 <details>
-  <summary>171. sample</summary>
+  <summary>171. Blog App - using Easy Peasy Redux for State Management</summary>
+
+```bs
+
+```
+
+```bs
+
+```
 
 ```bs
 
