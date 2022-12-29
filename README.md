@@ -16777,8 +16777,10 @@ function TodoList() {
 <details>
   <summary>172. Blog App - using Easy Peasy Redux for State Management</summary>
 
-```bs
+Remove unused packages:
 
+```bs
+npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event web-vitals
 ```
 
 ```bs
