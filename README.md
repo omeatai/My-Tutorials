@@ -10467,6 +10467,8 @@ export default AddItem;
 
 </details>
 
++COLOR SELECTOR APP
+
 <details>
   <summary>133. Color Selector App - Introduction</summary>
 
@@ -11047,8 +11049,10 @@ export default App;
 
 </details>
 
+- JSON SERVER
+
 <details>
-  <summary>138. Using JSON Server</summary>
+  <summary>138. JSON sever - Using JSON Server</summary>
 
 Install and start JSON Server:
 
@@ -11106,7 +11110,7 @@ http://localhost:3500/items/1
 </details>
 
 <details>
-  <summary>139. Fetch JSON API Data & Catch Errors</summary>
+  <summary>139. JSON sever - Fetch JSON API Data & Catch Errors</summary>
 
 App.js:
 
@@ -11228,7 +11232,7 @@ export default Content;
 </details>
 
 <details>
-  <summary>140. SetTimeout to simulate a slow REST API Response</summary>
+  <summary>140. JSON sever - SetTimeout to simulate a slow REST API Response</summary>
 
 ```bs
 setTimeout(() => {
@@ -11335,7 +11339,7 @@ export default App;
 </details>
 
 <details>
-  <summary>141. Set isLoading Hook</summary>
+  <summary>141. JSON sever - Set isLoading Hook</summary>
 
 App.js:
 
@@ -11890,6 +11894,8 @@ export default App;
 
 </details>
 
++FETCH API TASK
+
 <details>
   <summary>146. Fetch API Task (PART A) - users, posts, comments</summary>
 
@@ -12337,6 +12343,8 @@ td {
 ```
 
 </details>
+
++BLOG APP
 
 <details>
   <summary>148. Blog App - Introduction</summary>
@@ -16709,6 +16717,8 @@ export default Footer;
 ```
 
 </details>
+
++EASY PEASY REDUX
 
 <details>
   <summary>171. Easy Peasy v5</summary>
