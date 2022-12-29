@@ -11049,7 +11049,7 @@ export default App;
 
 </details>
 
-- JSON SERVER
++JSON-SERVER
 
 <details>
   <summary>138. JSON sever - Using JSON Server</summary>
