@@ -16834,23 +16834,23 @@ export default createStore({
   setPosts: action((state, payload) => {
     state.posts = payload;
   }),
-  postTitle: [],
+  postTitle: "",
   setPostTitle: action((state, payload) => {
     state.postTitle = payload;
   }),
-  postBody: [],
+  postBody: "",
   setPostBody: action((state, payload) => {
     state.postBody = payload;
   }),
-  editTitle: [],
+  editTitle: "",
   setEditTitle: action((state, payload) => {
     state.editTitle = payload;
   }),
-  editBody: [],
+  editBody: "",
   setEditBody: action((state, payload) => {
     state.editBody = payload;
   }),
-  search: [],
+  search: "",
   setSearch: action((state, payload) => {
     state.search = payload;
   }),
@@ -16932,24 +16932,23 @@ root.render(
 App.js:
 
 ```js
-import React, { createContext, useState, useEffect } from "react";
-import { useStoreState, useStoreActions } from "easy-peasy";
-import { Route, Routes } from "react-router-dom";
-import useAxiosFetch from "../hooks/useAxiosFetch";
 import Header from "./Header";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Home from "./Home";
 import NewPost from "./NewPost";
 import PostPage from "./PostPage";
+import EditPost from "./EditPost";
 import About from "./About";
 import Missing from "./Missing";
-import EditPost from "./EditPost";
-
-// import { DataProvider } from "./context/DataContext";
+import { Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import useAxiosFetch from "./hooks/useAxiosFetch";
+import { useStoreActions } from "easy-peasy";
 
 function App() {
   const setPosts = useStoreActions((actions) => actions.setPosts);
+
   const { data, fetchError, isLoading } = useAxiosFetch(
     "http://localhost:3500/posts"
   );
@@ -16961,7 +16960,6 @@ function App() {
   return (
     <div className="App">
       <Header title="React JS Blog" />
-      {/* <DataProvider> */}
       <Nav />
       <Routes>
         <Route
@@ -16975,7 +16973,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Missing />} />
       </Routes>
-      {/* </DataProvider> */}
       <Footer />
     </div>
   );
@@ -17083,57 +17080,126 @@ export default Home;
 </details>
 
 <details>
-  <summary>176. sample</summary>
+  <summary>176. Blog App - Refactoring PostPage.js</summary>
 
-```bs
-
-```
+PostPage.js:
 
 ```js
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { useStoreState, useStoreActions } from "easy-peasy";
 
-```
+const PostPage = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const deletePost = useStoreActions((actions) => actions.deletePost);
+  const getPostById = useStoreState((state) => state.getPostById);
+  const post = getPostById(id);
 
-```js
+  const handleDelete = (id) => {
+    deletePost(id);
+    navigate("/");
+  };
 
-```
+  return (
+    <main className="PostPage">
+      <article className="post">
+        {post && (
+          <>
+            <h2>{post.title}</h2>
+            <p className="postDate">{post.datetime}</p>
+            <p className="postBody">{post.body}</p>
+            <Link to={`/edit/${post.id}`}>
+              <button className="editButton">Edit Post</button>
+            </Link>
+            <button
+              className="deleteButton"
+              onClick={() => handleDelete(post.id)}
+            >
+              Delete Post
+            </button>
+          </>
+        )}
+        {!post && (
+          <>
+            <h2>Post Not Found</h2>
+            <p>Well, that's disappointing.</p>
+            <p>
+              <Link to="/">Visit Our Homepage</Link>
+            </p>
+          </>
+        )}
+      </article>
+    </main>
+  );
+};
 
-```js
-
-```
-
-```js
-
+export default PostPage;
 ```
 
 </details>
 
 <details>
-  <summary>177. sample</summary>
+  <summary>177. Blog App - Refactoring NewPost.js</summary>
 
-```bs
-
-```
+NewPost.js:
 
 ```js
+import { useNavigate } from "react-router-dom";
+import { format } from "date-fns";
+import { useStoreState, useStoreActions } from "easy-peasy";
 
-```
+const NewPost = () => {
+  const navigate = useNavigate();
 
-```js
+  const posts = useStoreState((state) => state.posts);
+  const postTitle = useStoreState((state) => state.postTitle);
+  const postBody = useStoreState((state) => state.postBody);
 
-```
+  const savePost = useStoreActions((actions) => actions.savePost);
+  const setPostTitle = useStoreActions((actions) => actions.setPostTitle);
+  const setPostBody = useStoreActions((actions) => actions.setPostBody);
 
-```js
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const newPost = { id, title: postTitle, datetime, body: postBody };
+    savePost(newPost);
+    navigate("/");
+  };
 
-```
+  return (
+    <main className="NewPost">
+      <h2>New Post</h2>
+      <form className="newPostForm" onSubmit={handleSubmit}>
+        <label htmlFor="postTitle">Title:</label>
+        <input
+          id="postTitle"
+          type="text"
+          required
+          value={postTitle}
+          onChange={(e) => setPostTitle(e.target.value)}
+        />
+        <label htmlFor="postBody">Post:</label>
+        <textarea
+          id="postBody"
+          required
+          value={postBody}
+          onChange={(e) => setPostBody(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  );
+};
 
-```js
-
+export default NewPost;
 ```
 
 </details>
 
 <details>
-  <summary>178. sample</summary>
+  <summary>178. Blog App - Refactoring NewPost.js</summary>
 
 ```bs
 
