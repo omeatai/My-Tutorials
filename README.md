@@ -17425,26 +17425,58 @@ Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 +REACT-HOOKS
 
 <details>
-  <summary>181. sample</summary>
+  <summary>181. Using PrevState to update React State Hooks </summary>
 
-```bs
-
-```
-
-```bs
-
-```
+Counter.js:
 
 ```js
+import React, { useState } from "react";
 
-```
+const Counter = () => {
+  const [count, setCount] = useState(0);
+  const [values, setValues] = useState([]);
+  const [names, setNames] = useState({
+    firstName: "John",
+    lastName: "Mcgrill",
+  });
 
-```js
+  const add = () => setCount((prevState) => prevState + 1);
+  const subtract = () => setCount((prevState) => prevState - 1);
+  const updateValue = (newVal) =>
+    setValues((prevState) => [...prevState, newVal]);
+  const updateName = (first, last) =>
+    setNames((prevState) => ({
+      ...prevState,
+      firstName: first,
+      lastName: last,
+    }));
 
-```
+  return (
+    <div className="Counter">
+      <h1>Counter</h1>
+      <h1>{count}</h1>
+      <div className="row">
+        <button onClick={add}>+</button>
+        <button onClick={subtract}>-</button>
+      </div>
+      <div className="row">
+        <button onClick={() => setCount(0)}>Reset</button>
+      </div>
+      <div>
+        <h2>{values}</h2>
+        <button onClick={() => updateValue(count)}>Update Value</button>
+      </div>
+      <div>
+        <h2>
+          {names.firstName} {names.lastName}
+        </h2>
+        <button onClick={() => updateName("Bob", "Ashley")}>Update Name</button>
+      </div>
+    </div>
+  );
+};
 
-```js
-
+export default Counter;
 ```
 
 </details>
