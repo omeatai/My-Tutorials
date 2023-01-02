@@ -17307,7 +17307,7 @@ export default Footer;
 +DEPLOY
 
 <details>
-  <summary>180. Deploy React App to Github Pages and Netlify</summary>
+  <summary>180. Deploy React App to Netlify and Github Pages</summary>
 
 Uninstall unused modules:
 
@@ -17325,27 +17325,17 @@ npm i json-server -S
 json-server -p 3500 -w data/db.json
 ```
 
-Setup up GIT & GitHub
-
-```bs
-git init
-git add .
-git commit -m "first commit"
-```
+Setup up GIT & GitHub:
 
 ```bs
 echo "# deploy_react_blog_netlify" >> README.md
 git init
-git add README.md
+git add README.md OR git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/omeatai/deploy_react_blog_netlify.git
-git push -u origin main
-```
-
-```bs
-git remote add origin https://github.com/omeatai/deploy_react_blog_netlify.git
-git branch -M main
+OR
+git remote set-url origin https://github.com/omeatai/deploy_react_blog_netlify.git
 git push -u origin main
 ```
 
@@ -17409,27 +17399,14 @@ npm i gh-pages -D
 ```
 
 ```bs
-git init
-git add .
-git commit -m "first commit"
-git remote set-url origin https://github.com/omeatai/deploy_react_blog_gh.git
-git branch -M main
-git push -u origin main
-```
-
-```bs
 echo "# deploy_react_blog_gh" >> README.md
 git init
-git add README.md
+git add README.md OR git add .
 git commit -m "first commit"
 git branch -M main
+git remote set-url origin https://github.com/omeatai/deploy_react_blog_gh.git
+OR
 git remote add origin https://github.com/omeatai/deploy_react_blog_gh.git
-git push -u origin main
-```
-
-```bs
-git remote add origin https://github.com/omeatai/deploy_react_blog_gh.git
-git branch -M main
 git push -u origin main
 ```
 
@@ -17445,14 +17422,16 @@ Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 
 </details>
 
++REACT-HOOKS
+
 <details>
-  <summary>181. Host and Deploy JSON API Server on Github</summary>
+  <summary>181. sample</summary>
 
 ```bs
 
 ```
 
-```js
+```bs
 
 ```
 
@@ -17471,7 +17450,7 @@ Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 </details>
 
 <details>
-  <summary>182. Host and Deploy JSON API Server to Heroku</summary>
+  <summary>182. sample</summary>
 
 ```bs
 
