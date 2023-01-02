@@ -17283,7 +17283,7 @@ export default EditPost;
 </details>
 
 <details>
-  <summary>179. sample</summary>
+  <summary>179. Blog App - Refactoring EditPost.js</summary>
 
 ```bs
 
