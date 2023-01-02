@@ -17325,7 +17325,7 @@ npm i json-server -S
 json-server -p 3500 -w data/db.json
 ```
 
-Setup up GIT
+Setup up GIT & GitHub
 
 ```bs
 git init
@@ -17349,12 +17349,98 @@ git branch -M main
 git push -u origin main
 ```
 
-```bs
+For Github-Pages:
 
+```bs
+npm i gh-pages -D
 ```
 
 ```bs
+"homepage": "https://omeatai.github.io/deploy_react_blog_gh",
 
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+"devDependencies": {
+  "gh-pages": "^4.0.0"
+}
+```
+
+```json
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "homepage": "https://omeatai.github.io/deploy_react_blog_gh",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.2.1",
+    "date-fns": "^2.29.3",
+    "easy-peasy": "^5.2.0",
+    "json-server": "^0.17.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.5.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
+```
+
+```bs
+git init
+git add .
+git commit -m "first commit"
+git remote set-url origin https://github.com/omeatai/deploy_react_blog_gh.git
+git branch -M main
+git push -u origin main
+```
+
+```bs
+echo "# deploy_react_blog_gh" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/omeatai/deploy_react_blog_gh.git
+git push -u origin main
+```
+
+```bs
+git remote add origin https://github.com/omeatai/deploy_react_blog_gh.git
+git branch -M main
+git push -u origin main
+```
+
+Deploy App on GitHub Pages:
+
+```bs
+npm run deploy
+```
+
+```bs
+Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 ```
 
 </details>
