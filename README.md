@@ -17446,7 +17446,7 @@ Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 </details>
 
 <details>
-  <summary>181. sample</summary>
+  <summary>181. Host and Deploy JSON API Server on Github</summary>
 
 ```bs
 
@@ -17471,7 +17471,7 @@ Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 </details>
 
 <details>
-  <summary>182. sample</summary>
+  <summary>182. Host and Deploy JSON API Server to Heroku</summary>
 
 ```bs
 
