@@ -17325,7 +17325,12 @@ npm i json-server -S
 json-server -p 3500 -w data/db.json
 ```
 
-```js
+Setup up GIT
+
+```bs
+git init
+git add .
+git commit -m "first commit"
 
 ```
 
