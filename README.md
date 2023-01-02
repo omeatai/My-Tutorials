@@ -17283,26 +17283,23 @@ export default EditPost;
 </details>
 
 <details>
-  <summary>179. Blog App - Refactoring EditPost.js</summary>
+  <summary>179. Blog App - Refactoring Footer.js</summary>
 
-```bs
-
-```
+Footer.js:
 
 ```js
+import { useStoreState } from "easy-peasy";
 
-```
+const Footer = () => {
+  const postCount = useStoreState((state) => state.postCount);
+  return (
+    <footer className="Footer">
+      <p>{postCount} Blog Posts</p>
+    </footer>
+  );
+};
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+export default Footer;
 ```
 
 </details>
