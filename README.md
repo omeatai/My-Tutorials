@@ -17309,6 +17309,12 @@ export default Footer;
 <details>
   <summary>180. Deploy React App to Github Pages and Netlify</summary>
 
+Uninstall unused modules:
+
+```bs
+npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event web-vitals
+```
+
 Install JSON Server to Production:
 
 ```bs
