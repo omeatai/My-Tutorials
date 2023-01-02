@@ -17483,8 +17483,11 @@ export default Counter;
 
 <details>
   <summary>182. useCallback Hook</summary>
-useCallback is usually used when a function is used within a dependency array.
-The 'sum' function makes the dependencies of useEffect Hook change on every render. Move it inside the useEffect callback. Alternatively, wrap the definition of 'sum' in its own useCallback() Hook.
+useCallback provides a memorized function.<br>
+useCallback is usually used when a function is used within a dependency array.<br>
+The 'sum' function makes the dependencies of useEffect Hook change on every render.
+Move it inside the useEffect callback.
+Alternatively, wrap the definition of 'sum' in its own useCallback() Hook.<br>
 
 Input.js -
 
@@ -17563,24 +17566,63 @@ export default Input;
 <details>
   <summary>183. useMemo Hook</summary>
 
-```bs
+useMemo provides a memorized result.
 
-```
-
-```js
-
-```
+Fibonnaci.js:
 
 ```js
+import { useCallback } from "react";
+import { useState, useEffect, useMemo } from "react";
 
-```
+const Fibonnaci = () => {
+  const [userNumber, setUserNumber] = useState("");
+  const [randomInput, setRandomInput] = useState("");
 
-```js
+  const fib = useCallback((n) => {
+    return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+  }, []);
 
-```
+  const getArray = () => {
+    for (let i = 0; i < 1000000000; i++) {
+      //do something expensive
+    }
+    return ["Dave", "Gray"];
+  };
 
-```js
+  const fibNumber = useMemo(() => fib(userNumber), [fib, userNumber]);
 
+  const myArray = useMemo(() => getArray(), []);
+
+  useEffect(() => {
+    console.log("new number");
+    console.log("my Array");
+  }, [fibNumber, fib, myArray]);
+
+  return (
+    <main className="App">
+      <label>Fibonacci Sequence: </label>
+      <input
+        type="number"
+        value={userNumber}
+        placeholder="Position"
+        onChange={(e) => setUserNumber(e.target.value)}
+      />
+      <p>Number: {fibNumber || "--"}</p>
+      <br />
+      <br />
+      <label>Random Input: </label>
+      <input
+        type="text"
+        value={randomInput}
+        placeholder="Random Input"
+        onChange={(e) => setRandomInput(e.target.value)}
+      />
+      <p>{randomInput}</p>
+    </main>
+  );
+};
+
+export default Fibonnaci;
 ```
 
 </details>
