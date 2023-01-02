@@ -17482,14 +17482,43 @@ export default Counter;
 </details>
 
 <details>
-  <summary>182. sample</summary>
+  <summary>182. useCallback Hook</summary>
+useCallback is usually used when a function is used within a dependency array.
+The 'sum' function makes the dependencies of useEffect Hook change on every render. Move it inside the useEffect callback. Alternatively, wrap the definition of 'sum' in its own useCallback() Hook.
 
-```bs
-
-```
+Input.js:
 
 ```js
+import { useState, useEffect, useCallback } from "react";
 
+const Input = () => {
+  const [userInput, setUserInput] = useState("");
+  const [result, setResult] = useState(0);
+  const [num1] = useState(4);
+  const [num2] = useState(5);
+
+  const sum = useCallback(() => num1 + num2, [num1, num2]);
+
+  useEffect(() => {
+    console.log(`New sum. Value: ${sum()}`);
+    setResult(sum());
+  }, [sum]);
+
+  return (
+    <main className="Input">
+      <input
+        type="text"
+        placeholder="input"
+        value={userInput}
+        onChange={(e) => setUserInput(e.target.value)}
+      />
+      <h1>Output: {userInput || "--"}</h1>
+      <h2>{result}</h2>
+    </main>
+  );
+};
+
+export default Input;
 ```
 
 ```js
