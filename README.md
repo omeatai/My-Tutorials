@@ -18267,6 +18267,8 @@ p {
 <details>
   <summary>187. useImperativeHandle Hook</summary>
 
+useImperativeHandle enables the Child state to be changed by the Parent. It calls a function from the Parent component that is defined in the Child component.
+
 UseImperativeHandle.js:
 
 ```js
@@ -18402,7 +18404,7 @@ p {
 </details>
 
 <details>
-  <summary>188. sample</summary>
+  <summary>188. useTransition vs useDeferredValue</summary>
 
 ```bs
 
