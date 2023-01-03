@@ -17559,7 +17559,7 @@ const Input = () => {
 export default Input;
 ```
 
-Input.js:
+UseCallback.js:
 
 ```js
 import { useState, useEffect, useCallback } from "react";
@@ -17654,13 +17654,13 @@ input {
 
 useMemo provides a memorized result.
 
-Fibonnaci.js:
+UseMemo.js:
 
 ```js
 import { useCallback } from "react";
 import { useState, useEffect, useMemo } from "react";
 
-const Fibonnaci = () => {
+const UseMemo = () => {
   const [userNumber, setUserNumber] = useState("");
   const [randomInput, setRandomInput] = useState("");
 
@@ -17708,7 +17708,111 @@ const Fibonnaci = () => {
   );
 };
 
-export default Fibonnaci;
+export default UseMemo;
+```
+
+```js
+import { useState, useEffect, useMemo, useCallback } from "react";
+
+const getArray = () => {
+  for (let i = 0; i < 1000000000; i++) {
+    //do something expensive
+  }
+  return ["Dave", "Gray"];
+};
+
+const UseMemo = () => {
+  const [userNumber, setUserNumber] = useState("");
+  const [randomInput, setRandomInput] = useState("");
+
+  const fib = useCallback((n) => {
+    return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+  }, []);
+
+  const fibNumber = useMemo(() => fib(userNumber), [userNumber, fib]);
+
+  const myArray = useMemo(() => getArray(), []);
+
+  useEffect(() => {
+    console.log("New array");
+  }, [myArray]);
+
+  return (
+    <main className="App">
+      <label>Fibonacci Sequence:</label>
+      <input
+        type="number"
+        value={userNumber}
+        placeholder="Position"
+        onChange={(e) => setUserNumber(e.target.value)}
+      />
+      <p>Number: {fibNumber || "--"}</p>
+      <br />
+      <br />
+      <label>Random Input:</label>
+      <input
+        type="text"
+        value={randomInput}
+        placeholder="Random Input"
+        onChange={(e) => setRandomInput(e.target.value)}
+      />
+      <p>{randomInput}</p>
+    </main>
+  );
+};
+
+export default UseMemo;
+```
+
+Index.css:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+button {
+  min-width: 50px;
+  padding: 1em;
+  margin: 0.25em;
+  border-radius: 0.5em;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5em;
+  margin-bottom: 1rem;
+  outline: none;
+}
 ```
 
 </details>
