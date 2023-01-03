@@ -17483,13 +17483,11 @@ export default Counter;
 
 <details>
   <summary>182. useCallback Hook</summary>
-useCallback provides a memorized function.<br>
+useCallback provides a memoized function.<br>
 useCallback is usually used when a function is used within a dependency array.<br>
 The 'sum' function makes the dependencies of useEffect Hook change on every render.
 Move it inside the useEffect callback.
 Alternatively, wrap the definition of 'sum' in its own useCallback() Hook.<br>
-
-Input.js -
 
 Example 1:
 
@@ -17559,6 +17557,94 @@ const Input = () => {
 };
 
 export default Input;
+```
+
+Input.js:
+
+```js
+import { useState, useEffect, useCallback } from "react";
+
+const App = () => {
+  const [userInput, setUserInput] = useState("");
+  const [result, setResult] = useState(0);
+  const [num1] = useState(4);
+  const [num2] = useState(5);
+
+  //const sum = useCallback(() => num1 + num2, [num1, num2]);
+  const buildArray = useCallback(() => [num1, num2], [num1, num2]);
+
+  useEffect(() => {
+    console.log(`New array: ${buildArray()}`);
+    setResult(buildArray());
+  }, [buildArray]);
+
+  return (
+    <main className="App">
+      <input
+        type="text"
+        placeholder="input"
+        value={userInput}
+        onChange={(e) => setUserInput(e.target.value)}
+      />
+      <h1>Output: {userInput || "--"}</h1>
+      <p>Result: {JSON.stringify(result)}</p>
+    </main>
+  );
+};
+
+export default App;
+```
+
+Input.css:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+button {
+  min-width: 50px;
+  padding: 1em;
+  margin: 0.25em;
+  border-radius: 0.5em;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5em;
+  margin-bottom: 1rem;
+  outline: none;
+}
 ```
 
 </details>
