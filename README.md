@@ -18536,9 +18536,62 @@ button {
 +AUTHENTICATION
 
 <details>
-  <summary>189. sample</summary>
+  <summary>189. React Form Registration - Introduction</summary>
+
+Index.js:
+
+```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+App.js:
+
+```js
+import Register from "./Register";
+
+function App() {
+  return (
+    <div className="App">
+      <Register />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Set Up Font-Awesome with React:
+
+-Add SVG Core
 
 ```bs
+npm i --save @fortawesome/fontawesome-svg-core
+```
+
+-Add Icon Packages
+
+```bs
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-ico
+```
+
+-Add the React Component
+
+```bs
+npm i --save @fortawesome/react-fontawesome@latest
+```
+
+```js
 
 ```
 
