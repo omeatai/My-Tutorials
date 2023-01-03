@@ -18152,26 +18152,114 @@ input {
 </details>
 
 <details>
-  <summary>186. sample</summary>
+  <summary>186. useLayoutEffect Hook</summary>
 
-```bs
+useLayoutEffect is Synchorous, which means it will delay running the DOM to the browser until it has concluded its operation; unlike useEffect, which is Asynchronous and will allow changes to the DOM while processing its operation.
+useLayoutEffect denies the user from observing changes to state on the browser unlike useEffect which makes the changes noticable on the browser.
 
-```
-
-```js
-
-```
+UseLayoutEffect.js:
 
 ```js
+import { useState, useRef, useEffect, useLayoutEffect } from "react";
 
+function UseLayoutEffect() {
+  const [number, setNumber] = useState(0);
+  const [sectionStyle, setSectionStyle] = useState({});
+  const sectionRef = useRef();
+
+  /*
+  useEffect is asynchronous.
+  You see the number change in the DOM before the padding changes.
+
+  useLayoutEffect is synchronous.
+  You see the number change only after the padding has changed.
+  */
+
+  // change to useLayoutEffect to see the difference
+  useLayoutEffect(() => {
+    const random = Math.floor(Math.random() * 500);
+
+    /* loop is just to make the changes in this example slow enough to be observable */
+    for (let i = 0; i <= 100000000; i++) {
+      if (i === 100000000) setSectionStyle({ paddingTop: `${random}px` });
+    }
+  }, [number]);
+
+  return (
+    <main className="App">
+      <section ref={sectionRef} style={sectionStyle}>
+        <p>{number}</p>
+        <div>
+          <button onClick={() => setNumber((prev) => prev - 1)}>-</button>
+          <button onClick={() => setNumber((prev) => prev + 1)}>+</button>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+export default UseLayoutEffect;
 ```
 
-```js
+Index.css:
 
-```
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-```js
+html {
+  font-size: 48px;
+}
 
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: inherit;
+}
+
+.App {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+button {
+  min-width: 75px;
+  padding: 1em;
+  margin: 0.25em;
+  border-radius: 0.5em;
+  font-size: 0.5rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5em;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+p {
+  text-align: center;
+}
 ```
 
 </details>
