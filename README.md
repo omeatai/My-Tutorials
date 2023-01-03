@@ -18582,7 +18582,6 @@ npm i --save @fortawesome/fontawesome-svg-core
 
 ```bs
 npm i --save @fortawesome/free-solid-svg-icons
-npm i --save @fortawesome/free-regular-svg-ico
 ```
 
 -Add the React Component
