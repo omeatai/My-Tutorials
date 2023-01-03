@@ -17891,6 +17891,135 @@ const UseRef = () => {
 export default UseRef;
 ```
 
+```js
+import { useState, useRef } from "react";
+
+function UseRef() {
+  const [randomInput, setRandomInput] = useState("");
+  const [seconds, setSeconds] = useState(0);
+
+  const renders = useRef(0);
+  const inputRef = useRef();
+  const timerId = useRef();
+
+  const handleChange = (e) => {
+    setRandomInput(e.target.value);
+    renders.current++;
+  };
+
+  const startTimer = () => {
+    timerId.current = setInterval(() => {
+      renders.current++;
+      setSeconds((prev) => prev + 1);
+    }, 1000);
+    inputRef.current.focus();
+  };
+
+  const stopTimer = () => {
+    clearInterval(timerId.current);
+    timerId.current = 0;
+    inputRef.current.focus();
+  };
+
+  const resetTimer = () => {
+    stopTimer();
+    if (seconds) {
+      renders.current++;
+      setSeconds(0);
+    }
+    inputRef.current.focus();
+  };
+
+  return (
+    <main className="App">
+      <input
+        ref={inputRef}
+        type="text"
+        value={randomInput}
+        placeholder="Random Input"
+        onChange={handleChange}
+      />
+      <p>Renders: {renders.current}</p>
+      <br />
+      <br />
+      <section>
+        <button onClick={startTimer}>Start</button>
+        <button onClick={stopTimer}>Stop</button>
+        <button onClick={resetTimer}>Reset</button>
+      </section>
+      <br />
+      <br />
+      <p>Seconds: {seconds}</p>
+      <br />
+      <br />
+      <p>{randomInput}</p>
+    </main>
+  );
+}
+
+export default UseRef;
+```
+
+Index.css:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 36px;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1rem;
+  width: 150px;
+  padding: 1em;
+  margin: 0.25em;
+  border-radius: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5em;
+  margin-bottom: 1rem;
+  outline: none;
+}
+```
+
 </details>
 
 <details>
