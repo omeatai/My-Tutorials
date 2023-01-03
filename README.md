@@ -18265,26 +18265,138 @@ p {
 </details>
 
 <details>
-  <summary>187. sample</summary>
+  <summary>187. useImperativeHandle Hook</summary>
 
-```bs
-
-```
+UseImperativeHandle.js:
 
 ```js
+import { useRef } from "react";
+import Modal from "./Modal";
 
+function UseImperativeHandle() {
+  const modalRef = useRef();
+
+  const handleOpenModal = () => {
+    modalRef.current.openModal();
+  };
+
+  console.log("parent rendered");
+
+  return (
+    <main className="App">
+      <p>Parent Component</p>
+      <Modal ref={modalRef} />
+      <button onClick={handleOpenModal}>Open</button>
+    </main>
+  );
+}
+
+export default UseImperativeHandle;
 ```
 
-```js
+Modal.js:
 
+```js
+import { forwardRef, useImperativeHandle, useState } from "react";
+
+const Modal = (props, ref) => {
+  const [modalState, setModalState] = useState(false);
+
+  useImperativeHandle(ref, () => ({
+    openModal: () => setModalState(true),
+  }));
+
+  console.log("child rendered");
+
+  if (!modalState) return null;
+
+  return (
+    <div className="modal">
+      <p>This is my modal!</p>
+      <button onClick={() => setModalState(false)}>Close</button>
+    </div>
+  );
+};
+
+export default forwardRef(Modal);
 ```
 
-```js
+Index.css:
 
-```
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-```js
+html {
+  font-size: 48px;
+}
 
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: inherit;
+}
+
+.App {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+button {
+  min-width: 75px;
+  padding: 1em;
+  margin: 0.25em;
+  border-radius: 0.5em;
+  font-size: 0.5rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5em;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+p {
+  text-align: center;
+}
+
+.modal {
+  z-index: 1;
+  position: absolute;
+  top: 50;
+  left: 50;
+  display: grid;
+  place-content: center;
+  min-height: 400px;
+  min-width: 400px;
+  border-radius: 1.5rem;
+  background-color: papayawhip;
+  color: #000;
+  box-shadow: 0 0 40px #fff;
+  margin: 1rem;
+  padding: 0.25rem;
+}
 ```
 
 </details>
