@@ -18406,24 +18406,129 @@ p {
 <details>
   <summary>188. useTransition vs useDeferredValue</summary>
 
-```bs
-
-```
+App.js:
 
 ```js
+import Example1 from "./Example1";
+import Example2 from "./Example2";
 
+const App = () => {
+  return <Example1 />;
+};
+
+export default App;
 ```
 
-```js
+Example1.js:
 
+```js
+import { useState, useTransition, useDeferredValue } from "react";
+
+const Example1 = () => {
+  const [count, setCount] = useState(0);
+  const [items, setItems] = useState([]);
+  const [isPending, startTransition] = useTransition();
+  const deferredCount = useDeferredValue(count);
+
+  const handleClick = () => {
+    // urgent update
+    setCount(count + 1);
+    // transition update
+    startTransition(() => {
+      const myArr = Array(20000)
+        .fill(1)
+        .map((el, i) => count + 20000 - i);
+      setItems(myArr);
+    });
+  };
+
+  const content = (
+    <div className="App">
+      <button onClick={handleClick}>{count}</button>
+      {isPending ? <p>Loading...</p> : null}
+      <p>Deferred: {deferredCount}</p>
+      <ul>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+
+  return content;
+};
+export default Example1;
 ```
 
-```js
+Example2.js:
 
+```js
+import { useDeferredValue, useState, useTransition, useEffect } from "react";
+
+const bigArray = [...Array(20000).keys()];
+
+const Example2 = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [list, setList] = useState(bigArray);
+  const [isPending, startTransition] = useTransition();
+  const deferredInput = useDeferredValue(inputValue);
+
+  const handleInput = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  useEffect(() => {
+    startTransition(() => {
+      console.log(deferredInput);
+      const filtered = bigArray.filter((item) =>
+        item.toString().includes(deferredInput)
+      );
+      setList(filtered);
+    });
+  }, [deferredInput]);
+
+  const content = (
+    <section style={isPending ? { opacity: 0.4 } : null}>
+      <p>Searching for: {deferredInput || "All"}</p>
+      {isPending ? <p>Loading...</p> : null}
+      <ul>
+        {list.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </section>
+  );
+
+  return (
+    <div className="App">
+      <input type="text" val={inputValue} onChange={handleInput} />
+      {content}
+    </div>
+  );
+};
+export default Example2;
 ```
 
-```js
+Index.css:
 
+```css
+body {
+  background-color: #333;
+  color: whitesmoke;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 1rem;
+}
+
+button {
+  display: block;
+  margin-bottom: 1rem;
+}
 ```
 
 </details>
