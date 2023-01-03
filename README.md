@@ -17704,7 +17704,7 @@ export default UseRef;
 </details>
 
 <details>
-  <summary>185. sample</summary>
+  <summary>185. useReducer Hook</summary>
 
 ```bs
 
