@@ -18973,8 +18973,8 @@ const Register = () => {
 
   useEffect(() => {
     const result = USER_REGEX.test(user);
-    console.log(result);
-    console.log(user);
+    //console.log(result);
+    //console.log(user);
     setValidName(result);
     //setValidName(USER_REGEX.test(user));
   }, [user]);
