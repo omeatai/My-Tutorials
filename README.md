@@ -18898,7 +18898,7 @@ button {
 </details>
 
 <details>
-  <summary>190. React Form - Handle Submit with Axios</summary>
+  <summary>190. React Form - Handle Submit with Axios to Register Inputs</summary>
 
 Install Axios:
 
