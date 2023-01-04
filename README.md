@@ -19191,6 +19191,27 @@ const Register = () => {
 export default Register;
 ```
 
+Add React Frontend to Node backend Server -
+
+allowedOrigins.js:
+
+```js
+const allowedOrigins = [
+  "https://www.yoursite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+  "http://localhost:3000",
+];
+
+module.exports = allowedOrigins;
+```
+
+Run Node.js Server:
+
+```bs
+npm run dev
+```
+
 </details>
 
 <details>
