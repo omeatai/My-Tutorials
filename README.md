@@ -20059,7 +20059,7 @@ Connected to MongoDB
 Server running on port 3500
 ```
 
-IN MONGODB:
+In MongoDB:
 
 ```bs
 UN: dave1
