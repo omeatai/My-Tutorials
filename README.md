@@ -19939,23 +19939,42 @@ export default Login;
 <details>
   <summary>195. React Form - Setup Node Server and Test</summary>
 
+config/allowedOrigins.js:
+
+```js
+const allowedOrigins = [
+  "https://www.yoursite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+  "http://localhost:3000", // include React URL for CORS to allow
+];
+
+module.exports = allowedOrigins;
+```
+
+```js
+
+module.exports = { handleLogin };
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:21485) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Connected to MongoDB
+Server running on port 3500
+```
+
 ```bs
 
 ```
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
+```bs
 
 ```
 
