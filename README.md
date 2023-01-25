@@ -19939,6 +19939,31 @@ export default Login;
 <details>
   <summary>195. React Form - Setup Node Server and Test</summary>
 
+Frontend -
+
+index.js:
+
+```js
+import React from "react";
+import { createRoot } from "react-dom/client";
+// import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { AuthProvider } from "./context/AuthProvider";
+
+const root = createRoot(document.getElementById("root"));
+
+root.render(
+  <React.StrictMode>
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  </React.StrictMode>
+);
+```
+
+Backend -
+
 config/allowedOrigins.js:
 
 ```js
@@ -20040,12 +20065,22 @@ Login with:
 UN: ifeanyi
 PW: password123
 ```
-  
+
 ![proj13](https://user-images.githubusercontent.com/32337103/214529888-3afbb369-825f-45a0-bd99-9d9c73f748da.png)
-  
 
 ```bs
+POST http://localhost:3500/auth 401 (Unauthorized)
+```
 
+Login with:
+
+```bs
+UN: dave1
+PW: Aa$12345
+```
+
+```bs
+{"roles":[2001],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6ImRhdmUxIiwicm9sZXMiOlsyMDAxXX0sImlhdCI6MTY3NDY0MTYxNCwiZXhwIjoxNjc0NjQxNjI0fQ.JmsQ6tBQRBSMagaN2YRaa56ngDvqKg7M-0_bNLU9RuI"}
 ```
 
 ```bs
