@@ -21262,14 +21262,14 @@ ROLE: 2001 (User), 1984 (Editor), 5150 (Admin)
 ```
 
 Note: Can Access all routes - Home, Editor, Lounge and Admin Routes!
-  
+
 ![proj22](https://user-images.githubusercontent.com/32337103/214819972-8abd55a1-0088-447c-8901-70bbcbc51b61.png)
 
 ![proj002](https://user-images.githubusercontent.com/32337103/214821717-74eb4e61-6926-46bc-8be1-a170144c0bf6.png)
 
 ![proj003](https://user-images.githubusercontent.com/32337103/214821803-820cfb1e-53d5-4c45-b801-da93ad3e00b1.png)
-  
-![proj004](https://user-images.githubusercontent.com/32337103/214823396-7b64ec32-7270-4c4c-9f6a-6f4f3ecb3fe0.png)  
+
+![proj004](https://user-images.githubusercontent.com/32337103/214823396-7b64ec32-7270-4c4c-9f6a-6f4f3ecb3fe0.png)
 
 </details>
 
