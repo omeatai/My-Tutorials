@@ -21235,6 +21235,16 @@ Note: Can only Access Home Route. Unauthorized access to Editor, Admin and Loung
 
 ![proj001](https://user-images.githubusercontent.com/32337103/214820079-df6cd3ee-68ae-4e00-91d2-f204eddd801b.png)
 
+Login with jane1:
+
+```bs
+UN: jane1
+PW: Aa$12345
+ROLE: 2001 (User), 1984 (Editor)
+```
+
+Note: Can only Access Home Route. Unauthorized access to Editor, Admin and Lounge Pages!
+
 ```bs
 
 ```
