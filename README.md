@@ -20155,7 +20155,43 @@ root.render(
 App.js:
 
 ```js
+import Register from "./components/Register";
+import Login from "./components/Login";
+import Home from "./components/Home";
+import Layout from "./components/Layout";
+import Editor from "./components/Editor";
+import Admin from "./components/Admin";
+import Missing from "./components/Missing";
+import Unauthorized from "./components/Unauthorized";
+import Lounge from "./components/Lounge";
+import LinkPage from "./components/LinkPage";
+// import RequireAuth from "./components/RequireAuth";
+import { Routes, Route } from "react-router-dom";
 
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        {/* public routes */}
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="linkpage" element={<LinkPage />} />
+        <Route path="unauthorized" element={<Unauthorized />} />
+
+        {/* we want to protect these routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="editor" element={<Editor />} />
+        <Route path="admin" element={<Admin />} />
+        <Route path="lounge" element={<Lounge />} />
+
+        {/* catch all */}
+        <Route path="*" element={<Missing />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default App;
 ```
 
 components/Layout.js:
@@ -20553,44 +20589,153 @@ const LinkPage = () => {
 export default LinkPage;
 ```
 
-```js
+components/Unauthorized.js:
 
+```js
+import { useNavigate } from "react-router-dom";
+
+const Unauthorized = () => {
+  const navigate = useNavigate();
+
+  const goBack = () => navigate(-1);
+
+  return (
+    <section>
+      <h1>Unauthorized</h1>
+      <br />
+      <p>You do not have access to the requested page.</p>
+      <div className="flexGrow">
+        <button onClick={goBack}>Go Back</button>
+      </div>
+    </section>
+  );
+};
+
+export default Unauthorized;
 ```
 
-```js
+components/Home.js:
 
+```js
+import { useNavigate, Link } from "react-router-dom";
+import { useContext } from "react";
+import AuthContext from "../context/AuthProvider";
+
+const Home = () => {
+  const { setAuth } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const logout = async () => {
+    // if used in more components, this should be in context
+    // axios to /logout endpoint
+    setAuth({});
+    navigate("/linkpage");
+  };
+
+  return (
+    <section>
+      <h1>Home</h1>
+      <br />
+      <p>You are logged in!</p>
+      <br />
+      <Link to="/editor">Go to the Editor page</Link>
+      <br />
+      <Link to="/admin">Go to the Admin page</Link>
+      <br />
+      <Link to="/lounge">Go to the Lounge</Link>
+      <br />
+      <Link to="/linkpage">Go to the link page</Link>
+      <div className="flexGrow">
+        <button onClick={logout}>Sign Out</button>
+      </div>
+    </section>
+  );
+};
+
+export default Home;
 ```
 
-```js
+components/Editor.js:
 
+```js
+import { Link } from "react-router-dom";
+
+const Editor = () => {
+  return (
+    <section>
+      <h1>Editors Page</h1>
+      <br />
+      <p>You must have been assigned an Editor role.</p>
+      <div className="flexGrow">
+        <Link to="/">Home</Link>
+      </div>
+    </section>
+  );
+};
+
+export default Editor;
 ```
 
-```js
+components/Admin.js:
 
+```js
+import { Link } from "react-router-dom";
+
+const Admin = () => {
+  return (
+    <section>
+      <h1>Admins Page</h1>
+      <br />
+      <p>You must have been assigned an Admin role.</p>
+      <div className="flexGrow">
+        <Link to="/">Home</Link>
+      </div>
+    </section>
+  );
+};
+
+export default Admin;
 ```
 
-```js
+components/Lounge.js:
 
+```js
+import { Link } from "react-router-dom";
+
+const Lounge = () => {
+  return (
+    <section>
+      <h1>The Lounge</h1>
+      <br />
+      <p>Admins and Editors can hang out here.</p>
+      <div className="flexGrow">
+        <Link to="/">Home</Link>
+      </div>
+    </section>
+  );
+};
+
+export default Lounge;
 ```
 
-```js
-
-```
+components/Missing.js:
 
 ```js
+import { Link } from "react-router-dom";
 
-```
+const Missing = () => {
+  return (
+    <article style={{ padding: "100px" }}>
+      <h1>Oops!</h1>
+      <p>Page Not Found</p>
+      <div className="flexGrow">
+        <Link to="/">Visit Our Homepage</Link>
+      </div>
+    </article>
+  );
+};
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+export default Missing;
 ```
 
 </details>
