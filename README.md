@@ -20966,14 +20966,201 @@ export default App;
 </details>
 
 <details>
-  <summary>198. React Form (Role-Based Authorization) - </summary>
+  <summary>198. React Form (Role-Based Authorization) - Require Auth Component 2 with Route Auth </summary>
 
-```bs
-
-```
+components/RequireAuth.js:
 
 ```js
+import { useLocation, Navigate, Outlet } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
+const RequireAuth = ({ allowedRoles }) => {
+  const { auth } = useAuth();
+  const location = useLocation();
+
+  return auth?.roles?.find((role) => allowedRoles?.includes(role)) ? (
+    <Outlet />
+  ) : auth?.user ? (
+    <Navigate to="/unauthorized" state={{ from: location }} replace />
+  ) : (
+    <Navigate to="/login" state={{ from: location }} replace />
+  );
+};
+
+export default RequireAuth;
+```
+
+App.js:
+
+```js
+import Register from "./components/Register";
+import Login from "./components/Login";
+import Home from "./components/Home";
+import Layout from "./components/Layout";
+import Editor from "./components/Editor";
+import Admin from "./components/Admin";
+import Missing from "./components/Missing";
+import Unauthorized from "./components/Unauthorized";
+import Lounge from "./components/Lounge";
+import LinkPage from "./components/LinkPage";
+import RequireAuth from "./components/RequireAuth";
+import { Routes, Route } from "react-router-dom";
+
+const ROLES = {
+  User: 2001,
+  Editor: 1984,
+  Admin: 5150,
+};
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        {/* public routes */}
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="linkpage" element={<LinkPage />} />
+        <Route path="unauthorized" element={<Unauthorized />} />
+
+        {/* we want to protect these routes */}
+        <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+
+        <Route element={<RequireAuth allowedRoles={[ROLES.Editor]} />}>
+          <Route path="editor" element={<Editor />} />
+        </Route>
+
+        <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
+          <Route path="admin" element={<Admin />} />
+        </Route>
+
+        <Route
+          element={<RequireAuth allowedRoles={[ROLES.Editor, ROLES.Admin]} />}
+        >
+          <Route path="lounge" element={<Lounge />} />
+        </Route>
+
+        {/* catch all */}
+        <Route path="*" element={<Missing />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default App;
+```
+
+components/Login.js:
+
+```js
+import { useRef, useState, useEffect } from "react";
+import useAuth from "../hooks/useAuth";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+
+import axios from "../api/axios";
+const LOGIN_URL = "/auth";
+
+const Login = () => {
+  const { setAuth } = useAuth();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
+  const userRef = useRef();
+  const errRef = useRef();
+
+  const [user, setUser] = useState("");
+  const [pwd, setPwd] = useState("");
+  const [errMsg, setErrMsg] = useState("");
+
+  useEffect(() => {
+    userRef.current.focus();
+  }, []);
+
+  useEffect(() => {
+    setErrMsg("");
+  }, [user, pwd]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        LOGIN_URL,
+        JSON.stringify({ user, pwd }),
+        {
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+        }
+      );
+      console.log(JSON.stringify(response?.data));
+      //console.log(JSON.stringify(response));
+      const accessToken = response?.data?.accessToken;
+      const roles = response?.data?.roles;
+      setAuth({ user, pwd, roles, accessToken });
+      setUser("");
+      setPwd("");
+      navigate(from, { replace: true });
+    } catch (err) {
+      if (!err?.response) {
+        setErrMsg("No Server Response");
+      } else if (err.response?.status === 400) {
+        setErrMsg("Missing Username or Password");
+      } else if (err.response?.status === 401) {
+        setErrMsg("Unauthorized");
+      } else {
+        setErrMsg("Login Failed");
+      }
+      errRef.current.focus();
+    }
+  };
+
+  return (
+    <section>
+      <p
+        ref={errRef}
+        className={errMsg ? "errmsg" : "offscreen"}
+        aria-live="assertive"
+      >
+        {errMsg}
+      </p>
+      <h1>Sign In</h1>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          ref={userRef}
+          autoComplete="off"
+          onChange={(e) => setUser(e.target.value)}
+          value={user}
+          required
+        />
+
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          onChange={(e) => setPwd(e.target.value)}
+          value={pwd}
+          required
+        />
+        <button>Sign In</button>
+      </form>
+      <p>
+        Need an Account?
+        <br />
+        <span className="line">
+          <Link to="/register">Sign Up</Link>
+        </span>
+      </p>
+    </section>
+  );
+};
+
+export default Login;
 ```
 
 ```js
