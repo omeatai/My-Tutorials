@@ -21243,7 +21243,15 @@ PW: Aa$12345
 ROLE: 2001 (User), 1984 (Editor)
 ```
 
-Note: Can only Access Home Route. Unauthorized access to Editor, Admin and Lounge Pages!
+Note: Can Access Home, Editor and Lounge Routes, But Unauthorized access to Admin Route!
+  
+![proj22](https://user-images.githubusercontent.com/32337103/214819972-8abd55a1-0088-447c-8901-70bbcbc51b61.png)
+  
+![proj002](https://user-images.githubusercontent.com/32337103/214821717-74eb4e61-6926-46bc-8be1-a170144c0bf6.png)
+  
+![proj003](https://user-images.githubusercontent.com/32337103/214821803-820cfb1e-53d5-4c45-b801-da93ad3e00b1.png)
+  
+![proj001](https://user-images.githubusercontent.com/32337103/214820079-df6cd3ee-68ae-4e00-91d2-f204eddd801b.png)
 
 ```bs
 
