@@ -21244,34 +21244,24 @@ ROLE: 2001 (User), 1984 (Editor)
 ```
 
 Note: Can Access Home, Editor and Lounge Routes, But Unauthorized access to Admin Route!
-  
+
 ![proj22](https://user-images.githubusercontent.com/32337103/214819972-8abd55a1-0088-447c-8901-70bbcbc51b61.png)
-  
+
 ![proj002](https://user-images.githubusercontent.com/32337103/214821717-74eb4e61-6926-46bc-8be1-a170144c0bf6.png)
-  
+
 ![proj003](https://user-images.githubusercontent.com/32337103/214821803-820cfb1e-53d5-4c45-b801-da93ad3e00b1.png)
-  
+
 ![proj001](https://user-images.githubusercontent.com/32337103/214820079-df6cd3ee-68ae-4e00-91d2-f204eddd801b.png)
 
-```bs
-
-```
+Login with walt1:
 
 ```bs
-
+UN: walt1
+PW: Aa$12345
+ROLE: 2001 (User), 1984 (Editor), 5150 (Admin)
 ```
 
-```bs
-
-```
-
-```bs
-
-```
-
-```bs
-
-```
+Note: Can Access all routes - Home, Editor, Lounge and Admin Routes!
 
 ```bs
 
