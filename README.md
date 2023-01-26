@@ -20127,6 +20127,19 @@ Install react-router-dom@6:
 npm i react-router-dom@6
 ```
 
+hooks/useAuth.js:
+
+```js
+import { useContext } from "react";
+import AuthContext from "../context/AuthProvider";
+
+const useAuth = () => {
+  return useContext(AuthContext);
+};
+
+export default useAuth;
+```
+
 index.js:
 
 ```js
@@ -20741,7 +20754,7 @@ export default Missing;
 </details>
 
 <details>
-  <summary>197. React Form (Role-Based Authorization) - </summary>
+  <summary>197. React Form (Role-Based Authorization) -  </summary>
 
 ```bs
 
