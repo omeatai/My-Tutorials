@@ -21216,8 +21216,8 @@ UN: mike
 PW: Aa$12345
 ROLE: None
 ```
-  
-Note: Cannot Access any Routes! Unauthorized!  
+
+Note: Cannot Access any Routes! Unauthorized!
 
 ![proj21](https://user-images.githubusercontent.com/32337103/214816284-a28a9c3a-1e7d-4786-b3e5-6f22d20e6b64.png)
 
@@ -21228,13 +21228,12 @@ UN: dave1
 PW: Aa$12345
 ROLE: 2001 (User)
 ```
-  
-Note: Can only Access Home Route. Unauthorized access to Editor, Admin and Lounge Pages!    
-  
+
+Note: Can only Access Home Route. Unauthorized access to Editor, Admin and Lounge Pages!
+
 ![proj22](https://user-images.githubusercontent.com/32337103/214819972-8abd55a1-0088-447c-8901-70bbcbc51b61.png)
 
-<img width="1182" alt="image" src="https://user-images.githubusercontent.com/32337103/214820079-df6cd3ee-68ae-4e00-91d2-f204eddd801b.png"
-
+![proj001](https://user-images.githubusercontent.com/32337103/214820079-df6cd3ee-68ae-4e00-91d2-f204eddd801b.png)
 
 ```bs
 
