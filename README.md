@@ -21163,15 +21163,68 @@ const Login = () => {
 export default Login;
 ```
 
+components/Unauthorized.js:
+
 ```js
+import { useNavigate } from "react-router-dom";
+
+const Unauthorized = () => {
+  const navigate = useNavigate();
+
+  const goBack = () => navigate(-1);
+
+  return (
+    <section>
+      <h1>Unauthorized</h1>
+      <br />
+      <p>You do not have access to the requested page.</p>
+      <div className="flexGrow">
+        <button onClick={goBack}>Go Back</button>
+      </div>
+    </section>
+  );
+};
+
+export default Unauthorized;
+```
+
+Users -
+
+```bs
+UN: dave1
+PW: Aa$12345
+ROLE: 2001 (User)
+
+UN: jane1
+PW: Aa$12345
+ROLE: 2001 (User), 1984 (Editor)
+
+UN: walt1
+PW: Aa$12345
+ROLE: 2001 (User), 1984 (Editor), 5150 (Admin)
+```
+
+Login with mike:
+
+```bs
+UN: mike
+PW: Aa$12345
+ROLE: None
+```
+
+```bs
 
 ```
 
-```js
+```bs
 
 ```
 
-```js
+```bs
+
+```
+
+```bs
 
 ```
 
