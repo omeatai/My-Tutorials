@@ -21274,26 +21274,248 @@ Note: Can Access all routes - Home, Editor, Lounge and Admin Routes!
 </details>
 
 <details>
-  <summary>200. sample</summary>
+  <summary>200. React Login - Authentication with JWT Access, Refresh Tokens, Cookies and Axios</summary>
 
 ```bs
-
+npm update
 ```
 
-```js
+components/Users.js:
 
+```js
+import { useState, useEffect } from "react";
+import useAxiosPrivate from "../hooks/useAxiosPrivate";
+import { useNavigate, useLocation } from "react-router-dom";
+
+const Users = () => {
+  const [users, setUsers] = useState();
+  const axiosPrivate = useAxiosPrivate();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    let isMounted = true;
+    const controller = new AbortController();
+
+    const getUsers = async () => {
+      try {
+        const response = await axiosPrivate.get("/users", {
+          signal: controller.signal,
+        });
+        console.log(response.data);
+        isMounted && setUsers(response.data);
+      } catch (err) {
+        console.error(err);
+        navigate("/login", { state: { from: location }, replace: true });
+      }
+    };
+
+    getUsers();
+
+    return () => {
+      isMounted = false;
+      controller.abort();
+    };
+  }, []);
+
+  return (
+    <article>
+      <h2>Users List</h2>
+      {users?.length ? (
+        <ul>
+          {users.map((user, i) => (
+            <li key={i}>{user?.username}</li>
+          ))}
+        </ul>
+      ) : (
+        <p>No users to display</p>
+      )}
+    </article>
+  );
+};
+
+export default Users;
 ```
 
-```js
+component/Admin.js:
 
+```js
+import { Link } from "react-router-dom";
+import Users from "./Users";
+
+const Admin = () => {
+  return (
+    <section>
+      <h1>Admins Page</h1>
+      <br />
+      <Users />
+      <br />
+      <div className="flexGrow">
+        <Link to="/">Home</Link>
+      </div>
+    </section>
+  );
+};
+
+export default Admin;
 ```
 
-```js
+hooks/useRefreshToken.js:
 
+```js
+import axios from "../api/axios";
+import useAuth from "./useAuth";
+
+const useRefreshToken = () => {
+  const { setAuth } = useAuth();
+
+  const refresh = async () => {
+    const response = await axios.get("/refresh", {
+      withCredentials: true,
+    });
+    setAuth((prev) => {
+      console.log(JSON.stringify(prev));
+      console.log(response.data.accessToken);
+      return { ...prev, accessToken: response.data.accessToken };
+    });
+    return response.data.accessToken;
+  };
+  return refresh;
+};
+
+export default useRefreshToken;
 ```
 
-```js
+api/axios.js:
 
+```js
+import axios from "axios";
+const BASE_URL = "http://localhost:3500";
+
+export default axios.create({
+  baseURL: BASE_URL,
+});
+
+export const axiosPrivate = axios.create({
+  baseURL: BASE_URL,
+  headers: { "Content-Type": "application/json" },
+  withCredentials: true,
+});
+```
+
+hooks/useAxiosPrivate.js:
+
+```js
+import { axiosPrivate } from "../api/axios";
+import { useEffect } from "react";
+import useRefreshToken from "./useRefreshToken";
+import useAuth from "./useAuth";
+
+const useAxiosPrivate = () => {
+  const refresh = useRefreshToken();
+  const { auth } = useAuth();
+
+  useEffect(() => {
+    const requestIntercept = axiosPrivate.interceptors.request.use(
+      (config) => {
+        if (!config.headers["Authorization"]) {
+          config.headers["Authorization"] = `Bearer ${auth?.accessToken}`;
+        }
+        return config;
+      },
+      (error) => Promise.reject(error)
+    );
+
+    const responseIntercept = axiosPrivate.interceptors.response.use(
+      (response) => response,
+      async (error) => {
+        const prevRequest = error?.config;
+        if (error?.response?.status === 403 && !prevRequest?.sent) {
+          prevRequest.sent = true;
+          const newAccessToken = await refresh();
+          prevRequest.headers["Authorization"] = `Bearer ${newAccessToken}`;
+          return axiosPrivate(prevRequest);
+        }
+        return Promise.reject(error);
+      }
+    );
+
+    return () => {
+      axiosPrivate.interceptors.request.eject(requestIntercept);
+      axiosPrivate.interceptors.response.eject(responseIntercept);
+    };
+  }, [auth, refresh]);
+
+  return axiosPrivate;
+};
+
+export default useAxiosPrivate;
+```
+
+hooks/useAuth.js:
+
+```js
+import { useContext, useDebugValue } from "react";
+import AuthContext from "../context/AuthProvider";
+
+const useAuth = () => {
+  const { auth } = useContext(AuthContext);
+  useDebugValue(auth, (auth) => (auth?.user ? "Logged In" : "Logged Out"));
+  return useContext(AuthContext);
+};
+
+export default useAuth;
+```
+
+Axios sample 1:
+
+```js
+import { useState, useEffect } from "react";
+import axios, { AxiosResponse } from "axios";
+
+const useAxiosFetch = (url: string, timeout?: number) => {
+  const [data, setData] = (useState < AxiosResponse) | (null > null);
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let unmounted = false;
+    let source = axios.CancelToken.source();
+    axios
+      .get(url, {
+        cancelToken: source.token,
+        timeout: timeout,
+      })
+      .then((a) => {
+        if (!unmounted) {
+          // @ts-ignore
+          setData(a.data);
+          setLoading(false);
+        }
+      })
+      .catch(function (e) {
+        if (!unmounted) {
+          setError(true);
+          setErrorMessage(e.message);
+          setLoading(false);
+          if (axios.isCancel(e)) {
+            console.log(`request cancelled:${e.message}`);
+          } else {
+            console.log("another error happened:" + e.message);
+          }
+        }
+      });
+    return function () {
+      unmounted = true;
+      source.cancel("Cancelling in cleanup");
+    };
+  }, [url, timeout]);
+
+  return { data, loading, error, errorMessage };
+};
+
+export default useAxiosFetch;
 ```
 
 </details>
