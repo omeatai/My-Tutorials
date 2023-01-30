@@ -21477,24 +21477,143 @@ export default useAuth;
 <details>
   <summary>201. React Form - Persistent User Login Authentication with JWT Tokens</summary>
 
-```bs
-
-```
+components/PersistLogin.js:
 
 ```js
+import { Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
+import useRefreshToken from "../hooks/useRefreshToken";
+import useAuth from "../hooks/useAuth";
 
+const PersistLogin = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const refresh = useRefreshToken();
+  const { auth, persist } = useAuth();
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const verifyRefreshToken = async () => {
+      try {
+        await refresh();
+      } catch (err) {
+        console.error(err);
+      } finally {
+        isMounted && setIsLoading(false);
+      }
+    };
+
+    // Avoids unwanted call to verifyRefreshToken
+    !auth?.accessToken && persist ? verifyRefreshToken() : setIsLoading(false);
+
+    return () => (isMounted = false);
+  }, []);
+
+  useEffect(() => {
+    console.log(`isLoading: ${isLoading}`);
+    console.log(`aT: ${JSON.stringify(auth?.accessToken)}`);
+  }, [isLoading, auth]);
+
+  return (
+    <>{!persist ? <Outlet /> : isLoading ? <p>Loading...</p> : <Outlet />}</>
+  );
+};
+
+export default PersistLogin;
 ```
 
-```js
+useRefreshToken.js:
 
+```js
+import axios from "../api/axios";
+import useAuth from "./useAuth";
+
+const useRefreshToken = () => {
+  const { setAuth } = useAuth();
+
+  const refresh = async () => {
+    const response = await axios.get("/refresh", {
+      withCredentials: true,
+    });
+    setAuth((prev) => {
+      console.log(JSON.stringify(prev));
+      console.log(response.data.accessToken);
+      return {
+        ...prev,
+        roles: response.data.roles,
+        accessToken: response.data.accessToken,
+      };
+    });
+    return response.data.accessToken;
+  };
+  return refresh;
+};
+
+export default useRefreshToken;
 ```
 
-```js
-
-```
+App.js:
 
 ```js
+import Register from "./components/Register";
+import Login from "./components/Login";
+import Home from "./components/Home";
+import Layout from "./components/Layout";
+import Editor from "./components/Editor";
+import Admin from "./components/Admin";
+import Missing from "./components/Missing";
+import Unauthorized from "./components/Unauthorized";
+import Lounge from "./components/Lounge";
+import LinkPage from "./components/LinkPage";
+import RequireAuth from "./components/RequireAuth";
+import PersistLogin from "./components/PersistLogin";
+import { Routes, Route } from "react-router-dom";
 
+const ROLES = {
+  User: 2001,
+  Editor: 1984,
+  Admin: 5150,
+};
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        {/* public routes */}
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="linkpage" element={<LinkPage />} />
+        <Route path="unauthorized" element={<Unauthorized />} />
+
+        {/* we want to protect these routes */}
+        <Route element={<PersistLogin />}>
+          <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
+            <Route path="/" element={<Home />} />
+          </Route>
+
+          <Route element={<RequireAuth allowedRoles={[ROLES.Editor]} />}>
+            <Route path="editor" element={<Editor />} />
+          </Route>
+
+          <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
+            <Route path="admin" element={<Admin />} />
+          </Route>
+
+          <Route
+            element={<RequireAuth allowedRoles={[ROLES.Editor, ROLES.Admin]} />}
+          >
+            <Route path="lounge" element={<Lounge />} />
+          </Route>
+        </Route>
+
+        {/* catch all */}
+        <Route path="*" element={<Missing />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default App;
 ```
 
 </details>
