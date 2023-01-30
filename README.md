@@ -21274,7 +21274,7 @@ Note: Can Access all routes - Home, Editor, Lounge and Admin Routes!
 </details>
 
 <details>
-  <summary>200. React Login - Authentication with JWT Access, Refresh Tokens, Cookies and Axios</summary>
+  <summary>200. React Form - Authentication with JWT Access, Refresh Tokens, Cookies and Axios</summary>
 
 ```bs
 npm update
@@ -21475,7 +21475,7 @@ export default useAuth;
 </details>
 
 <details>
-  <summary>201. sample</summary>
+  <summary>201. React Form - Persistent User Login Authentication with JWT Tokens</summary>
 
 ```bs
 
