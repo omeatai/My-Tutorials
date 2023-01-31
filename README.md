@@ -21522,7 +21522,7 @@ const PersistLogin = () => {
 export default PersistLogin;
 ```
 
-useRefreshToken.js:
+hooks/useRefreshToken.js:
 
 ```js
 import axios from "../api/axios";
