@@ -17,3 +17,7 @@ Learn React by Ifeanyi Omeata
 ### [4-NEXTJS TUTORIAL - NET NINJA](/courses/4.md)
 
 ### [5-REACT TUTORIAL - DAVE GRAY](/courses/5.md)
+
+### [6-NODE CRASH COURSE - NET NINJA](/courses/6.md)
+
+### [7-NODE.JS TUTORIAL - DAVE GRAY](/courses/7.md)
