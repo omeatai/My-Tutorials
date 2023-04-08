@@ -21,3 +21,5 @@ Learn React by Ifeanyi Omeata
 ### [6-NODE CRASH COURSE - NET NINJA](/courses/6.md)
 
 ### [7-NODE.JS TUTORIAL - DAVE GRAY](/courses/7.md)
+
+### [8-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/8.md)
