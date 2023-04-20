@@ -8,6 +8,10 @@ Learn React by Ifeanyi Omeata
 
 ### [A1-SCRIMBA REACT TUTORIAL - SCRIMBA](/courses/A1.md)
 
+### [A2-SCRIMBA JAVASCRIPT TUTORIAL - SCRIMBA](/courses/A2.md)
+
+### [A3-JAVASCRIPT COURSE - W3SCHOOLS](/courses/A3.md)
+
 ### [1-REACT CRASH COURSE - NET NINJA](/courses/1.md)
 
 ### [2-REACTJS COURSE - PEDROTECH](/courses/2.md)
@@ -23,3 +27,5 @@ Learn React by Ifeanyi Omeata
 ### [7-NODE.JS TUTORIAL - DAVE GRAY](/courses/7.md)
 
 ### [8-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/8.md)
+
+### [9-JAVASCRIPT COURSE - DAVE GRAY](/courses/9.md)
