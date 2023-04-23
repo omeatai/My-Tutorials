@@ -12,20 +12,20 @@ Learn React by Ifeanyi Omeata
 
 ### [A3-JAVASCRIPT COURSE - W3SCHOOLS](/courses/A3.md)
 
-### [1-REACT CRASH COURSE - NET NINJA](/courses/1.md)
+### [B1-REACT CRASH COURSE - NET NINJA](/courses/B1.md)
 
-### [2-REACTJS COURSE - PEDROTECH](/courses/2.md)
+### [B2-FIREBASE 9 TUTORIAL - NET NINJA](/courses/B2.md)
 
-### [3-FIREBASE 9 TUTORIAL - NET NINJA](/courses/3.md)
+### [B3-NODE CRASH COURSE - NET NINJA](/courses/B3.md)
 
-### [4-NEXTJS TUTORIAL - NET NINJA](/courses/4.md)
+### [B4-NEXTJS TUTORIAL - NET NINJA](/courses/B4.md)
 
-### [5-REACT TUTORIAL - DAVE GRAY](/courses/5.md)
+### [C1-REACTJS COURSE - PEDROTECH](/courses/C1.md)
 
-### [6-NODE CRASH COURSE - NET NINJA](/courses/6.md)
+### [D1-REACT TUTORIAL - DAVE GRAY](/courses/D1.md)
 
-### [7-NODE.JS TUTORIAL - DAVE GRAY](/courses/7.md)
+### [D2-NODE.JS TUTORIAL - DAVE GRAY](/courses/D2.md)
 
-### [8-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/8.md)
+### [D3-JAVASCRIPT COURSE - DAVE GRAY](/courses/D3.md)
 
-### [9-JAVASCRIPT COURSE - DAVE GRAY](/courses/9.md)
+### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/1.md)
