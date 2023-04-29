@@ -22,6 +22,8 @@ Learn React by Ifeanyi Omeata
 
 ### [C1-REACTJS COURSE - PEDROTECH](/courses/C1.md)
 
+### [C2-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/C2.md)
+
 ### [D1-REACT TUTORIAL - DAVE GRAY](/courses/D1.md)
 
 ### [D2-NODE.JS TUTORIAL - DAVE GRAY](/courses/D2.md)
