@@ -30,6 +30,8 @@ Learn React by Ifeanyi Omeata
 
 ### [D3-JAVASCRIPT COURSE - DAVE GRAY](/courses/D3.md)
 
+### [E1-USING MYSQL WITH NODE.JS - BRAD TRAVESY](/courses/E1.md)
+
 ### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/1.md)
 
 ### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/2.md)
