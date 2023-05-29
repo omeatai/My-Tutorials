@@ -35,3 +35,5 @@ Learn React by Ifeanyi Omeata
 ### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/1.md)
 
 ### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/2.md)
+
+### [3-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](/courses/3.md)
