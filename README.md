@@ -32,6 +32,8 @@ Learn React by Ifeanyi Omeata
 
 ### [E1-USING MYSQL WITH NODE.JS - BRAD TRAVESY](/courses/E1.md)
 
+### [F1-SASS TUTORIAL FOR BEGINNERS - CSS WITH SUPERPOWERS - FCC](/courses/F1.md)
+
 ### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/1.md)
 
 ### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/2.md)
