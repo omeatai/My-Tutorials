@@ -1,7 +1,5 @@
 # My-Tutorials
 
-Learn by Ifeanyi Omeata
-
 ## REACT Tutorials
 
 ---
