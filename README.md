@@ -1,8 +1,8 @@
-# React-Tutorial
+# My-Tutorials
 
-Learn React by Ifeanyi Omeata
+Learn by Ifeanyi Omeata
 
-## Tutorial
+## REACT Tutorials
 
 ---
 
@@ -37,6 +37,8 @@ Learn React by Ifeanyi Omeata
 ### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/1.md)
 
 ### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/2.md)
+
+### [3-COMPLETE REACT NATIVE IN 2023: ZERO TO MASTERY (WITH HOOKS) - ZTM](/courses/3.md)
 
 ### [6-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](/courses/6.md)
 
