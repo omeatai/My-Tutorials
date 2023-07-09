@@ -537,6 +537,9 @@ export default Content;
 
 # Rendering Lists + using LocalStorage
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c9fb229d-23d4-41f3-951f-b6d22950050c">
+<img width="1158" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/87a3d8d1-4575-4b76-b031-e8c853787111">
+
 # Install React-Icons
 
 ```bs
