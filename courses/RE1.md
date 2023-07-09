@@ -1178,7 +1178,7 @@ export default LineItem;
 # #End  </details>
 
 <details>
-  <summary>129. React Forms - AddItem</summary>
+  <summary>11. AddItems with React Forms </summary>
 
 Move React icons to Production Dependency:
 
