@@ -123,6 +123,9 @@ export default App;
 
 # Using React Functional Components
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4f7308fd-a44f-40b8-bd92-fb6bff029db5">
+<img width="1158" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4b461b3b-04ec-4154-8861-8f07e2b82756">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```js
