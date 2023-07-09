@@ -1031,6 +1031,9 @@ export default Footer;
 
 App.js -> Content.js -> ItemList.js -> LineItem.js
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7c640ba2-1c7f-42a1-bfc7-4a2ca2861371">
+<img width="1162" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5d19c5b0-5df0-44a7-8a69-d5a89aa285a6">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```js
