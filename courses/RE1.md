@@ -470,6 +470,9 @@ return <button onClick={handleClick}>Click me</button>;
 
 # Using React useState Hooks
 
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ffd66132-3a7f-4186-a704-218f34e4d3b5">
+<img width="1158" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/85aa594a-6c2a-4393-b031-c89b58108218">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```js
