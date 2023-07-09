@@ -1025,17 +1025,20 @@ export default Footer;
 # #End  </details>
 
 <details>
-  <summary>128. ItemList, LineItem & Prop Drilling</summary>
+  <summary>10. Create ItemList and LineItem Components </summary>
+
+# Create ItemList and LineItem Components
 
 App.js -> Content.js -> ItemList.js -> LineItem.js
 
-App.js:
+### x-dave-gray/myapp/src/App.js:
 
 ```js
+import React, { useState } from "react";
+
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
-import React, { useState } from "react";
 
 function App() {
   const [items, setItems] = useState([
@@ -1072,7 +1075,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="Groceries List" />
+      <Header title="My Grocery List" />
       <Content
         items={items}
         handleCheck={handleCheck}
@@ -1086,9 +1089,10 @@ function App() {
 export default App;
 ```
 
-Content.js:
+### x-dave-gray/myapp/src/Content.js:
 
 ```js
+import React from "react";
 import ItemList from "./ItemList";
 
 const Content = ({ items, handleCheck, handleDelete }) => {
@@ -1101,7 +1105,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
           handleDelete={handleDelete}
         />
       ) : (
-        <p style={{ marginTop: "2rem" }}>Your List is empty!</p>
+        <p style={{ textAlign: "center" }}>No Items to display!</p>
       )}
     </main>
   );
@@ -1110,7 +1114,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
 export default Content;
 ```
 
-ItemList.js:
+### x-dave-gray/myapp/src/ItemList.js:
 
 ```js
 import React from "react";
@@ -1134,7 +1138,7 @@ const ItemList = ({ items, handleCheck, handleDelete }) => {
 export default ItemList;
 ```
 
-LineItem.js:
+### x-dave-gray/myapp/src/LineItem.js:
 
 ```js
 import React from "react";
@@ -1154,7 +1158,7 @@ const LineItem = ({ item, handleCheck, handleDelete }) => {
             ? { textDecoration: "line-through" }
             : { textDecoration: "none" }
         }
-        onClick={() => handleCheck(item.id)}
+        onDoubleClick={() => handleCheck(item.id)}
       >
         {item.item}
       </label>
