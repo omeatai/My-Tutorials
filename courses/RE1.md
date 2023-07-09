@@ -341,7 +341,73 @@ footer {
 # #End  </details>
 
 <details>
-  <summary>120. **DoubleClick Event**</summary>
+  <summary>5. React onClick Events</summary>
+
+# React onClick Events
+
+### x-dave-gray/myapp/src/App.js:
+
+```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+### x-dave-gray/myapp/src/Content.js:
+
+```js
+import React from "react";
+
+const Content = () => {
+  const handleChange = () => {
+    const names = ["Dave", "Sally", "Ben", "Andrew"];
+    const int = Math.floor(Math.random() * names.length);
+    return names[int];
+  };
+
+  const handleClick = () => {
+    console.log("Click 1 button was clicked.");
+  };
+
+  const handleClick2 = (name) => {
+    console.log(`Click 2 button with name "${name}" was clicked.`);
+  };
+
+  const handleClick3 = (e) => {
+    console.log(e.target.innerText);
+  };
+
+  const handleDoubleClick = () => {
+    console.log("The Item was clicked twice!");
+  };
+
+  return (
+    <main>
+      <p onDoubleClick={handleDoubleClick}>Hello, {handleChange()}!</p>
+      <button onClick={handleClick}>Click 1</button>
+      <button onClick={() => handleClick2("David")}>Click 2</button>
+      <button onClick={(e) => handleClick3(e)}>Click 3</button>
+    </main>
+  );
+};
+
+export default Content;
+```
+
+# Other applications of Single And DoubleClick function
 
 ```js
 import { useState, useEffect } from "react";
@@ -371,7 +437,9 @@ function useSingleAndDoubleClick(
 }
 
 const click = useSingleAndDoubleClick(callbackClick, callbackDoubleClick);
-<button onClick={click}>clic</button>;
+
+<button onClick={click}>click</button>;
+
 ```
 
 ```js
@@ -390,75 +458,6 @@ const handleClick = (e) => {
 };
 
 return <button onClick={handleClick}>Click me</button>;
-```
-
-# #End  </details>
-
-<details>
-  <summary>121. onClick Events</summary>
-
-Content.js:
-
-```js
-import React from "react";
-
-const Content = () => {
-  const handleChange = () => {
-    const names = ["Dave", "Sally", "Ben", "Andrew"];
-    const indexPos = Math.floor(Math.random() * names.length);
-    return names[indexPos];
-  };
-
-  const handleClick1 = () => {
-    console.log("Click 1 button was clicked.");
-  };
-
-  const handleClick2 = (name) => {
-    console.log(`Click 2 button with name "${name}" was clicked.`);
-  };
-
-  const handleClick3 = (obj) => {
-    console.log(
-      `Click 3 button with ${Object.keys(obj)} "${Object.values(
-        obj
-      )}" was clicked.`
-    );
-  };
-
-  const handleClick4 = (e) => {
-    console.log(e.target);
-    console.log("Text: ", e.target.innerText);
-    console.log("Value: ", e.target.value);
-    console.log("Type: ", e.target.type);
-  };
-
-  return (
-    <main>
-      <p>Hello, {handleChange()}!</p>
-      <button onClick={handleClick1}>Click 1</button>
-      <button onClick={() => handleClick2("David")}>Click 2</button>
-      <button onClick={() => handleClick3({ Age: "32" })}>Click 3</button>
-      <button value={"Button Value"} onClick={(e) => handleClick4(e)}>
-        Click 4
-      </button>
-    </main>
-  );
-};
-
-export default Content;
-```
-
-```js
-// Click 1 button was clicked.
-
-// Click 2 button with name "David" was clicked.
-
-// Click 3 button with Age "32" was clicked.
-
-// <button value="Button Value">Click 4</button>
-// Text:  Click 4
-// Value:  Button Value
-// Type:  submit
 ```
 
 # #End  </details>
