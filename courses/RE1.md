@@ -322,7 +322,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: space-around;
   overflow-y: auto;
 }
@@ -677,7 +677,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: space-around;
   overflow-y: auto;
 }
@@ -864,121 +864,18 @@ export default Content;
 # #End  </details>
 
 <details>
-  <summary>125. React Props</summary>
+  <summary>9. Passing Props to Components</summary>
 
-App.js:
+# Passing Props to Components
 
-```js
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
-
-function App() {
-  return (
-    <div className="App">
-      <Header title="Groceries" />
-      <Content />
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
-```
-
-\*Using Props -
-
-Header.js:
+### x-dave-gray/myapp/src/App.js:
 
 ```js
-import React from "react";
-
-const Header = (props) => {
-  return (
-    <header>
-      <h1>{props.title}</h1>
-    </header>
-  );
-};
-
-export default Header;
-```
-
-\*Destructuring -
-
-Header.js:
-
-```js
-import React from "react";
-
-const Header = ({ title }) => {
-  return (
-    <header>
-      <h1>{title} List</h1>
-    </header>
-  );
-};
-
-export default Header;
-```
-
-# #End  </details>
-
-<details>
-  <summary>126. Default Props</summary>
-
-App.js:
-
-```js
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
-
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Content />
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
-```
-
-Header.js:
-
-```js
-import React from "react";
-
-const Header = ({ title }) => {
-  return (
-    <header>
-      <h1>{title}</h1>
-    </header>
-  );
-};
-
-Header.defaultProps = {
-  title: "Default Title",
-};
-
-export default Header;
-```
-
-# #End  </details>
-
-<details>
-  <summary>127. Passing Props</summary>
-
-App.js:
-
-```js
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
 import React, { useState } from "react";
+
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
 function App() {
   const [items, setItems] = useState([
@@ -1015,7 +912,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="Groceries List" />
+      <Header title="My Grocery List" />
       <Content
         items={items}
         handleCheck={handleCheck}
@@ -1029,7 +926,7 @@ function App() {
 export default App;
 ```
 
-Header.js:
+### x-dave-gray/myapp/src/Header.js:
 
 ```js
 import React from "react";
@@ -1049,9 +946,10 @@ Header.defaultProps = {
 export default Header;
 ```
 
-Content.js:
+### x-dave-gray/myapp/src/Content.js:
 
 ```js
+import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
 const Content = ({ items, handleCheck, handleDelete }) => {
@@ -1072,7 +970,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
                     ? { textDecoration: "line-through" }
                     : { textDecoration: "none" }
                 }
-                onClick={() => handleCheck(item.id)}
+                onDoubleClick={() => handleCheck(item.id)}
               >
                 {item.item}
               </label>
@@ -1085,7 +983,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
           ))}
         </ul>
       ) : (
-        <p style={{ marginTop: "2rem" }}>Your List is empty!</p>
+        <p style={{ textAlign: "center" }}>No Items to display!</p>
       )}
     </main>
   );
@@ -1094,7 +992,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
 export default Content;
 ```
 
-Footer.js:
+### x-dave-gray/myapp/src/Footer.js:
 
 ```js
 import React from "react";
@@ -1102,12 +1000,16 @@ import React from "react";
 const Footer = ({ itemLength }) => {
   const today = new Date();
 
+  const centerText = {
+    textAlign: "center",
+  };
+
   return (
     <footer>
-      <p>
+      <p style={centerText}>
         {itemLength} List {itemLength === 1 ? "item" : "items"}
       </p>
-      <p>Copyright &copy; {today.getFullYear()}</p>
+      <p style={centerText}>Copyright &copy; {today.getFullYear()}</p>
     </footer>
   );
 };
