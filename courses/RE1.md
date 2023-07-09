@@ -80,12 +80,15 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>2. HandleNameChange Function</summary>
 
 # HandleNameChange Function
+
+<img width="972" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0a7de29b-3ae6-45fb-82bb-d64439e6727e">
+<img width="1158" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/167cea6a-feab-42d9-8515-2d12b419a4df">
 
 ### x-dave-gray/myapp/src/App.js:
 
@@ -113,7 +116,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>118. Using React Components</summary>
@@ -195,7 +198,7 @@ const Footer = () => {
 export default Footer;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>119. Styling Components</summary>
@@ -301,7 +304,7 @@ root.render(
 );
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>120. **DoubleClick Event**</summary>
@@ -355,7 +358,7 @@ const handleClick = (e) => {
 return <button onClick={handleClick}>Click me</button>;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>121. onClick Events</summary>
@@ -424,7 +427,7 @@ export default Content;
 // Type:  submit
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>122. useState Hooks</summary>
@@ -466,7 +469,7 @@ const Content = () => {
 export default Content;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>123. handleCheck + LocalStorage</summary>
@@ -663,7 +666,7 @@ ul li::before {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>124. handle Delete</summary>
@@ -746,7 +749,7 @@ const Content = () => {
 export default Content;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>125. React Props</summary>
@@ -807,7 +810,7 @@ const Header = ({ title }) => {
 export default Header;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>126. Default Props</summary>
@@ -852,7 +855,7 @@ Header.defaultProps = {
 export default Header;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>127. Passing Props</summary>
@@ -1000,7 +1003,7 @@ const Footer = ({ itemLength }) => {
 export default Footer;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>128. ItemList, LineItem & Prop Drilling</summary>
@@ -1149,7 +1152,7 @@ const LineItem = ({ item, handleCheck, handleDelete }) => {
 export default LineItem;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>129. React Forms - AddItem</summary>
@@ -1438,7 +1441,7 @@ button:hover {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>130. Fetch from LocalStorage Database</summary>
@@ -1518,7 +1521,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>131. Search Functionality </summary>
@@ -1837,7 +1840,7 @@ button:hover {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>132. Using useRef Hook</summary>
@@ -1878,7 +1881,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
 export default AddItem;
 ```
 
-</details>
+# #End  </details>
 
 +COLOR SELECTOR APP
 
@@ -1950,7 +1953,7 @@ const Input = () => {
 export default Input;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>134. Color Selector App - Setup Square.js and Input.js components</summary>
@@ -2104,7 +2107,7 @@ button {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>135. Color Selector App - Passing Hex Values</summary>
@@ -2203,7 +2206,7 @@ colors.json:
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>136. Color Selector App - Toggling Black and White Text</summary>
@@ -2381,7 +2384,7 @@ button {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>137. Using useEffect to save Data</summary>
@@ -2460,7 +2463,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 +JSON-SERVER
 
@@ -2520,7 +2523,7 @@ http://localhost:3500/items/1
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>139. JSON sever - Fetch JSON API Data & Catch Errors</summary>
@@ -2642,7 +2645,7 @@ const Content = ({ items, handleCheck, handleDelete }) => {
 export default Content;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>140. JSON sever - SetTimeout to simulate a slow REST API Response</summary>
@@ -2749,7 +2752,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>141. JSON sever - Set isLoading Hook</summary>
@@ -2853,7 +2856,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>142. JSON server - Building API Request Function </summary>
@@ -2875,7 +2878,7 @@ const apiRequest = async (url = "", optionsObj = null, errMsg = null) => {
 export default apiRequest;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>143. JSON server - Create/Add an Item </summary>
@@ -3010,7 +3013,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>144. JSON server - Update an Item</summary>
@@ -3159,7 +3162,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>145. JSON server - Delete an Item</summary>
@@ -3305,7 +3308,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 +FETCH API TASK
 
@@ -3595,7 +3598,7 @@ td {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>147. Fetch API Task (PART B) - Tables</summary>
@@ -3755,7 +3758,7 @@ td {
 }
 ```
 
-</details>
+# #End  </details>
 
 +BLOG APP
 
@@ -3817,7 +3820,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>149. Blog App - Setup React Router DOM</summary>
@@ -3843,7 +3846,7 @@ root.render(
 );
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>150. Blog App - Routing Components</summary>
@@ -4031,7 +4034,7 @@ const Footer = () => {
 export default Footer;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>151. Blog App - Reading and Deleting Blog Data</summary>
@@ -4539,7 +4542,7 @@ body {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>152. Blog App - Adding New Post</summary>
@@ -4693,7 +4696,7 @@ const NewPost = ({
 export default NewPost;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>153. Blog App - Adding Search Functionality</summary>
@@ -4828,7 +4831,7 @@ const Feed = ({ posts }) => {
 export default Feed;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>154. Blog App - Page Not Found (Missing Page)</summary>
@@ -4854,7 +4857,7 @@ const Missing = () => {
 export default Missing;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>155. Blog App - Footer Component</summary>
@@ -4877,7 +4880,7 @@ const Footer = () => {
 export default Footer;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>156. Blog App - About Component</summary>
@@ -4901,7 +4904,7 @@ const About = () => {
 export default About;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>157. Blog App - Customise CSS Width and Height Properties</summary>
@@ -5196,7 +5199,7 @@ body {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>158. Blog App - Setup data/db.json file for JSON Server and Axios</summary>
@@ -5326,7 +5329,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>159. Blog App - Fetch Data with Axios</summary>
@@ -5484,7 +5487,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>160. Blog App - Post/Create Data with Axios</summary>
@@ -5624,7 +5627,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>161. Blog App - Delete Data with Axios</summary>
@@ -5761,7 +5764,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>162. Blog App - Update Data with Axios</summary>
@@ -6317,7 +6320,7 @@ body {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>163. Blog App - Create useWindowSize Custom Hook</summary>
@@ -6541,7 +6544,7 @@ const Header = ({ title, width }) => {
 export default Header;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>164. Blog App - Create useAxiosFetch Custom Hook</summary>
@@ -6795,7 +6798,7 @@ const Home = ({ posts, fetchError, isLoading }) => {
 export default Home;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>165. Blog App - Create Context API</summary>
@@ -6966,7 +6969,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>166. Blog App - Refactor Header with Context API</summary>
@@ -7169,7 +7172,7 @@ const Header = ({ title }) => {
 export default Header;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>167. Blog App - Refactor Nav and Home with Context API</summary>
@@ -7431,7 +7434,7 @@ const Home = () => {
 export default Home;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>168. Blog App - Refactor NewPost with Context API</summary>
@@ -7650,7 +7653,7 @@ const NewPost = () => {
 export default NewPost;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>169. Blog App - Refactor PostPage and EditPost with Context API</summary>
@@ -7923,7 +7926,7 @@ const EditPost = () => {
 export default EditPost;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>170. Blog App - Isolating Header and Footer Component State from Shared Context API</summary>
@@ -8129,7 +8132,7 @@ const Footer = () => {
 export default Footer;
 ```
 
-</details>
+# #End  </details>
 
 +EASY PEASY REDUX
 
@@ -8195,7 +8198,7 @@ function TodoList() {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>172. Blog App - Create Easy Peasy store </summary>
@@ -8294,7 +8297,7 @@ export default createStore({
 });
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>173.  Blog App - Refactoring Index.js and App.js </summary>
@@ -8376,7 +8379,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>174. Blog App - Refactoring Nav.js</summary>
@@ -8436,7 +8439,7 @@ const Nav = () => {
 export default Nav;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>175. Blog App - Refactoring Home.js</summary>
@@ -8472,7 +8475,7 @@ const Home = ({ isLoading, fetchError }) => {
 export default Home;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>176. Blog App - Refactoring PostPage.js</summary>
@@ -8531,7 +8534,7 @@ const PostPage = () => {
 export default PostPage;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>177. Blog App - Refactoring NewPost.js</summary>
@@ -8591,7 +8594,7 @@ const NewPost = () => {
 export default NewPost;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>178. Blog App - Refactoring EditPost.js</summary>
@@ -8675,7 +8678,7 @@ const EditPost = () => {
 export default EditPost;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>179. Blog App - Refactoring Footer.js</summary>
@@ -8697,7 +8700,7 @@ const Footer = () => {
 export default Footer;
 ```
 
-</details>
+# #End  </details>
 
 +DEPLOY
 
@@ -8815,7 +8818,7 @@ npm run deploy
 Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 ```
 
-</details>
+# #End  </details>
 
 +REACT-HOOKS
 
@@ -8874,7 +8877,7 @@ const Counter = () => {
 export default Counter;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>182. useCallback Hook</summary>
@@ -9042,7 +9045,7 @@ input {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>183. useMemo Hook</summary>
@@ -9210,7 +9213,7 @@ input {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>184. useRef Hook</summary>
@@ -9415,7 +9418,7 @@ input {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>185. useReducer Hook</summary>
@@ -9544,7 +9547,7 @@ input {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>186. useLayoutEffect Hook</summary>
@@ -9657,7 +9660,7 @@ p {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>187. useImperativeHandle Hook</summary>
@@ -9796,7 +9799,7 @@ p {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>188. useTransition vs useDeferredValue</summary>
@@ -9926,7 +9929,7 @@ button {
 }
 ```
 
-</details>
+# #End  </details>
 
 +AUTHENTICATION
 
@@ -10292,7 +10295,7 @@ button {
 
 ![proj10](https://user-images.githubusercontent.com/32337103/214263079-855d21db-1aa5-4db5-bddb-32e8c87cbd40.png)
 
-</details>
+# #End  </details>
 
 <details>
   <summary>190. React Form - Handle Submit with Axios to Register Inputs</summary>
@@ -10729,7 +10732,7 @@ button {
 }
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>191. React Form - Create User Login Component </summary>
@@ -10944,7 +10947,7 @@ button {
 
 ![proj9](https://user-images.githubusercontent.com/32337103/214262692-28afe700-aaea-434a-82ed-f78539b4aa2a.png)
 
-</details>
+# #End  </details>
 
 <details>
   <summary>192. React Form - Handle Submit to Login Input </summary>
@@ -11042,7 +11045,7 @@ export default Login;
 
 ![proj12](https://user-images.githubusercontent.com/32337103/214399914-7a0ef78f-452c-4b87-9b58-3f2d21dc5277.png)
 
-</details>
+# #End  </details>
 
 <details>
   <summary>193. React Form -  Using Context API to create Auth Provider</summary>
@@ -11185,7 +11188,7 @@ const Login = () => {
 export default Login;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>194. React Form - Using Axios to handle Login Submit to NodeJS Server</summary>
@@ -11329,7 +11332,7 @@ const Login = () => {
 export default Login;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>195. React Form - Setup Node Server and Test</summary>
@@ -11511,7 +11514,7 @@ PW: Aa$12345
 {"roles":[2001,1984],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6ImphbmUxIiwicm9sZXMiOlsyMDAxLDE5ODRdfSwiaWF0IjoxNjc0NjQyNDI1LCJleHAiOjE2NzQ2NDI0MzV9.4WsQjSuFI7jjpbCBmAciO9J9X-0-QjaYL6JgCv2jR98"}
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>196. React Form (Role-Based Authorization) - Setup Routes and Components</summary>
@@ -12156,7 +12159,7 @@ export default Missing;
 
 ![proj20](https://user-images.githubusercontent.com/32337103/214806954-c3ff9aaa-2cc1-4555-bc92-aa1308008b36.png)
 
-</details>
+# #End  </details>
 
 <details>
   <summary>197. React Form (Role-Based Authorization) - Require Auth Component 1 </summary>
@@ -12358,7 +12361,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>198. React Form (Role-Based Authorization) - Require Auth Component 2 with Route Auth </summary>
@@ -12583,7 +12586,7 @@ const Unauthorized = () => {
 export default Unauthorized;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>199. React Form (Role-Based Authorization) - Testing Protected Routes </summary>
@@ -12666,7 +12669,7 @@ Note: Can Access all routes - Home, Editor, Lounge and Admin Routes!
 
 ![proj004](https://user-images.githubusercontent.com/32337103/214823396-7b64ec32-7270-4c4c-9f6a-6f4f3ecb3fe0.png)
 
-</details>
+# #End  </details>
 
 <details>
   <summary>200. React Form - Authentication with JWT Access, Refresh Tokens, Cookies and Axios</summary>
@@ -12867,7 +12870,7 @@ const useAuth = () => {
 export default useAuth;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>201. React Form - Persistent User Login Authentication with JWT Tokens</summary>
@@ -13011,7 +13014,7 @@ function App() {
 export default App;
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>202. sample</summary>
@@ -13036,7 +13039,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>203. sample</summary>
@@ -13061,7 +13064,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>204. sample</summary>
@@ -13086,7 +13089,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>205. sample</summary>
@@ -13111,7 +13114,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>206. sample</summary>
@@ -13136,7 +13139,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>207. sample</summary>
@@ -13161,7 +13164,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>208. sample</summary>
@@ -13186,7 +13189,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>209. sample</summary>
@@ -13211,7 +13214,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>210. sample</summary>
@@ -13236,7 +13239,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>211. sample</summary>
@@ -13261,7 +13264,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>212. sample</summary>
@@ -13286,7 +13289,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>213. sample</summary>
@@ -13311,7 +13314,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>214. sample</summary>
@@ -13336,7 +13339,7 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
 
 <details>
   <summary>215. sample</summary>
@@ -13361,4 +13364,4 @@ export default App;
 
 ```
 
-</details>
+# #End  </details>
