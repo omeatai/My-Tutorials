@@ -323,7 +323,7 @@ main {
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
-  align-items: center;
+  align-items: space-around;
   overflow-y: auto;
 }
 
@@ -533,14 +533,38 @@ export default Content;
 # #End  </details>
 
 <details>
-  <summary>123. handleCheck + LocalStorage</summary>
+  <summary>7. Rendering Lists + using LocalStorage</summary>
+
+# Rendering Lists + using LocalStorage
+
+# Install React-Icons
 
 ```bs
 npm i react-icons -D
 npm install react-icons --save
 ```
 
-Content.js:
+### x-dave-gray/myapp/src/App.js:
+
+```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+```
+
+### x-dave-gray/myapp/src/Content.js:
 
 ```js
 import React, { useState } from "react";
@@ -575,28 +599,26 @@ const Content = () => {
 
   return (
     <main>
-      <ul>
-        {items.map((item) => (
-          <li className="item" key={item.id}>
-            <input
-              onChange={() => handleCheck(item.id)}
-              type="checkbox"
-              checked={item.checked}
-            />
-            <label
-              style={
-                item.checked
-                  ? { textDecoration: "line-through" }
-                  : { textDecoration: "none" }
-              }
-              onClick={() => handleCheck(item.id)}
-            >
-              {item.item}
-            </label>
-            <FaTrashAlt role="button" tabIndex="0" />
-          </li>
-        ))}
-      </ul>
+      {items.map((item) => (
+        <li className="item" key={item.id}>
+          <input
+            onChange={() => handleCheck(item.id)}
+            type="checkbox"
+            checked={item.checked}
+          />
+          <label
+            style={
+              item.checked
+                ? { textDecoration: "line-through" }
+                : { textDecoration: "none" }
+            }
+            onDoubleClick={() => handleCheck(item.id)}
+          >
+            {item.item}
+          </label>
+          <FaTrashAlt role="button" tabIndex="0" />
+        </li>
+      ))}
     </main>
   );
 };
@@ -604,7 +626,7 @@ const Content = () => {
 export default Content;
 ```
 
-index.css:
+### x-dave-gray/myapp/src/index.css:
 
 ```css
 * {
@@ -652,8 +674,8 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: space-around;
   overflow-y: auto;
 }
 
@@ -664,7 +686,6 @@ footer {
   color: aliceblue;
   display: grid;
   place-content: center;
-  text-align: center;
 }
 
 ul {
@@ -725,6 +746,7 @@ ul li::before {
   color: red;
   outline: none;
 }
+
 ```
 
 # #End  </details>
