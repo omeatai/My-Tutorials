@@ -213,6 +213,9 @@ export default Footer;
 
 # Styling Components
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e1b5995b-e3e3-40f7-bf81-54c2f026f81a">
+<img width="1157" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4d1abe89-e81f-4270-9aac-fe0f619e3719">
+
 ### x-dave-gray/myapp/src/index.js:
 
 ```js
