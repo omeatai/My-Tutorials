@@ -869,6 +869,7 @@ export default Content;
 
 # Passing Props to Components
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/faa23f27-fc82-4f83-9e90-8540ae36743b">
 <img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ab42f489-6408-49f9-a440-516c020603ad">
 <img width="1161" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/df5fe0a7-da44-4a9d-a3d6-dc2e5bd68b73">
 
