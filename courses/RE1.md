@@ -83,33 +83,28 @@ export default App;
 </details>
 
 <details>
-  <summary>117. handleChange Function</summary>
+  <summary>2. HandleNameChange Function</summary>
 
-App.js:
+# HandleNameChange Function
+
+### x-dave-gray/myapp/src/App.js:
 
 ```js
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const handleChange = () => {
+  const handleNameChange = () => {
     const names = ["Dave", "Sally", "Ben", "Andrew"];
-    const indexPos = Math.floor(Math.random() * names.length);
-    return names[indexPos];
+    const int = Math.floor(Math.random() * names.length);
+    return names[int];
   };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello {handleChange()}!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Hello {handleNameChange()}!</p>
       </header>
     </div>
   );
