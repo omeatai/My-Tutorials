@@ -1183,7 +1183,9 @@ export default LineItem;
 <details>
   <summary>11. AddItems with React Forms </summary>
 
-Move React icons to Production Dependency:
+# AddItems with React Forms
+
+# Move React icons to Production Dependency:
 
 ```bs
 npm i react-icons --save-prod
