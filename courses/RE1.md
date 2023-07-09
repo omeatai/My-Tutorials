@@ -5,6 +5,9 @@
 
 # Create React App
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/72c7bd60-0dec-408f-aa2b-cb68733d52e9">
+<img width="1159" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/733b183d-9c73-450c-b930-befb787dd6e4">
+
 # Check node version
 
 ```bs
