@@ -533,9 +533,9 @@ export default Content;
 # #End  </details>
 
 <details>
-  <summary>7. Rendering Lists + using LocalStorage</summary>
+  <summary>7. Rendering Lists + adding Items to LocalStorage</summary>
 
-# Rendering Lists + using LocalStorage
+# Rendering Lists + adding Items to LocalStorage
 
 <img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c9fb229d-23d4-41f3-951f-b6d22950050c">
 <img width="1158" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/87a3d8d1-4575-4b76-b031-e8c853787111">
@@ -755,9 +755,9 @@ ul li::before {
 # #End  </details>
 
 <details>
-  <summary>8. Deleting Items </summary>
+  <summary>8. Deleting Items + Removing Items from LocalStorage </summary>
 
-# Deleting Items
+# Deleting Items + Removing Items from LocalStorage
 
 <img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ab504664-b70b-4ab1-a351-cf59aa4260a8">
 <img width="1161" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e087edfc-dd7c-4e10-ac79-48ae3cc5655b">
