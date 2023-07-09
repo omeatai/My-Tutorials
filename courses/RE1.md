@@ -209,20 +209,60 @@ export default Footer;
 # #End  </details>
 
 <details>
-  <summary>119. Styling Components</summary>
+  <summary>4. Styling Components</summary>
 
-1. Styled Components - https://styled-components.com/
+# Styling Components
 
-2. Inline Styling -
+### x-dave-gray/myapp/src/index.js:
 
-Header.js:
+```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+```
+
+### x-dave-gray/myapp/src/App.js:
+
+```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+```
+
+### x-dave-gray/myapp/src/Header.js:
 
 ```js
 import React from "react";
 
 const Header = () => {
+  const headerStyle = {
+    backgroundColor: "royalblue",
+    color: "#fff",
+  };
+
   return (
-    <header style={{ backgroundColor: "mediumblue", color: "white" }}>
+    <header style={headerStyle}>
       <h1>Groceries List</h1>
     </header>
   );
@@ -231,9 +271,7 @@ const Header = () => {
 export default Header;
 ```
 
-3. External Styling -
-
-index.css:
+### x-dave-gray/myapp/src/index.css:
 
 ```css
 * {
@@ -294,22 +332,7 @@ footer {
   display: grid;
   place-content: center;
 }
-```
 
-index.js:
-
-```js
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 ```
 
 # #End  </details>
