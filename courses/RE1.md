@@ -1,25 +1,31 @@
-### [D1-REACT TUTORIAL - DAVE GRAY](/courses/D1.md)
-
-+INTRODUCTION
+### [D1-REACT TUTORIAL - DAVE GRAY](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
 
 <details>
-  <summary>116. Create React App</summary>
+  <summary>1. Create React App</summary>
+
+# Create React App
+
+# Check node version
 
 ```bs
 node -v
 ```
 
+# Create App myapp
+
 ```bs
 npx create-react-app .
+npx create-react-app myapp
 ```
 
-Start App:
+# Start App:
 
 ```bs
+cd myapp
 npm start
 ```
 
-index.js:
+### x-dave-gray/myapp/src/index.js:
 
 ```js
 import React from "react";
@@ -35,7 +41,7 @@ root.render(
 );
 ```
 
-App.js:
+### x-dave-gray/myapp/src/App.js:
 
 ```js
 import logo from "./logo.svg";
