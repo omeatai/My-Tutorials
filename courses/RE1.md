@@ -322,7 +322,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   overflow-y: auto;
 }
@@ -466,9 +466,31 @@ return <button onClick={handleClick}>Click me</button>;
 # #End  </details>
 
 <details>
-  <summary>122. useState Hooks</summary>
+  <summary>6. Using React useState Hooks</summary>
 
-Content.js:
+# Using React useState Hooks
+
+### x-dave-gray/myapp/src/App.js:
+
+```js
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+```
+
+### x-dave-gray/myapp/src/Content.js:
 
 ```js
 import React, { useState } from "react";
@@ -479,8 +501,8 @@ const Content = () => {
 
   const handleNameChange = () => {
     const names = ["Dave", "Sally", "Ben", "Andrew"];
-    const indexPos = Math.floor(Math.random() * names.length);
-    setName(names[indexPos]);
+    const int = Math.floor(Math.random() * names.length);
+    setName(names[int]);
   };
 
   const handleCount = () => {
