@@ -25,6 +25,12 @@ cd myapp
 npm start
 ```
 
+# Stop App:
+
+```bs
+ctrl + c
+```
+
 ### x-dave-gray/myapp/src/index.js:
 
 ```js
