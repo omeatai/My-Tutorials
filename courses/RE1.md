@@ -119,9 +119,11 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>118. Using React Components</summary>
+  <summary>3. Using React Functional Components</summary>
 
-App.js:
+# Using React Functional Components
+
+### x-dave-gray/myapp/src/App.js:
 
 ```js
 import "./App.css";
@@ -142,7 +144,7 @@ function App() {
 export default App;
 ```
 
-Header.js:
+### x-dave-gray/myapp/src/Header.js:
 
 ```js
 import React from "react";
@@ -156,9 +158,10 @@ const Header = () => {
 };
 
 export default Header;
+
 ```
 
-Content.js:
+### x-dave-gray/myapp/src/Content.js:
 
 ```js
 import React from "react";
@@ -178,9 +181,10 @@ const Content = () => {
 };
 
 export default Content;
+
 ```
 
-Footer.js:
+### x-dave-gray/myapp/src/Footer.js:
 
 ```js
 import React from "react";
@@ -196,6 +200,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 ```
 
 # #End  </details>
