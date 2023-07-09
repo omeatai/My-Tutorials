@@ -345,6 +345,9 @@ footer {
 
 # React onClick Events
 
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/899644b5-a98c-4d77-ad8f-beb82c98307e">
+<img width="1157" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c57decdf-91d2-4ef2-bfd8-7c6557e8b01f">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```js
