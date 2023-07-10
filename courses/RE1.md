@@ -1986,9 +1986,11 @@ export default Input;
 # #End  </details>
 
 <details>
-  <summary>134. Color Selector App - Setup Square.js and Input.js components</summary>
+  <summary>16. Color Selector App - Style Square and Input Components</summary>
 
-colors.json:
+# Style Square and Input Components
+
+### x-dave-gray/color-selector/src/colors.json:
 
 ```json
 {
@@ -1996,7 +1998,7 @@ colors.json:
 }
 ```
 
-App.js:
+### x-dave-gray/color-selector/src/App.js:
 
 ```js
 import React, { useState } from "react";
@@ -2018,7 +2020,7 @@ function App() {
 export default App;
 ```
 
-Square.js:
+### x-dave-gray/color-selector/src/Square.js:
 
 ```js
 import React from "react";
@@ -2041,7 +2043,7 @@ Square.defaultProps = {
 export default Square;
 ```
 
-Input.js:
+### x-dave-gray/color-selector/src/Input.js:
 
 ```js
 import React from "react";
@@ -2065,7 +2067,7 @@ const Input = ({ colorValue, setColorValue }) => {
 export default Input;
 ```
 
-index.css:
+### x-dave-gray/color-selector/src/index.css:
 
 ```css
 * {
