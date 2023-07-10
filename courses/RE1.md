@@ -1191,14 +1191,14 @@ export default LineItem;
 npm i react-icons --save-prod
 ```
 
-App.js:
+### x-dave-gray/myapp/src/App.js:
 
 ```js
-import Header from "./Header";
+import React, { useState } from "react";
 import AddItem from "./AddItem";
+import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
-import React, { useState } from "react";
 
 function App() {
   const [items, setItems] = useState([
@@ -1226,6 +1226,20 @@ function App() {
     localStorage.setItem("shoppinglist", JSON.stringify(newItems));
   };
 
+  const addItem = (item) => {
+    const id = items.length ? items[items.length - 1].id + 1 : 1;
+    const myNewItem = { id, checked: false, item };
+    const listItems = [...items, myNewItem];
+    setAndSaveItems(listItems);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!newItem) return;
+    addItem(newItem);
+    setNewItem("");
+  };
+
   const handleCheck = (id) => {
     const listItems = items.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
@@ -1238,24 +1252,9 @@ function App() {
     setAndSaveItems(listItems);
   };
 
-  const addItem = (item) => {
-    const id = items.length ? items[items.length - 1].id + 1 : 1;
-    const myNewItem = { id, checked: false, item };
-    const listItems = [...items, myNewItem];
-    setAndSaveItems(listItems);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!newItem) return;
-    // addItem
-    addItem(newItem);
-    setNewItem("");
-  };
-
   return (
     <div className="App">
-      <Header title="Groceries List" />
+      <Header title="My Grocery List" />
       <AddItem
         newItem={newItem}
         setNewItem={setNewItem}
@@ -1272,9 +1271,10 @@ function App() {
 }
 
 export default App;
+
 ```
 
-AddItem.js:
+### x-dave-gray/myapp/src/AddItem.js:
 
 ```js
 import React from "react";
@@ -1301,11 +1301,12 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
 };
 
 export default AddItem;
+
 ```
 
-Index.css:
+### x-dave-gray/myapp/src/index.css:
 
-```js
+```css
 * {
   margin: 0;
   padding: 0;
@@ -1352,7 +1353,7 @@ main {
   flex-direction: column;
   flex-grow: 1;
   justify-content: flex-start;
-  align-items: center;
+  align-items: space-around;
   overflow-y: auto;
 }
 
@@ -1363,7 +1364,6 @@ footer {
   color: aliceblue;
   display: grid;
   place-content: center;
-  text-align: center;
 }
 
 ul {
@@ -1467,6 +1467,7 @@ button:hover {
   background-color: limegreen;
   outline: none;
 }
+
 ```
 
 # #End  </details>
