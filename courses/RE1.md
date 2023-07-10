@@ -1866,6 +1866,9 @@ button:hover {
 
 # Using useRef Hook to manage Input Focus
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/dc3f40c5-c753-4d91-aa0d-6c87b1a05819">
+<img width="1108" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/641eaab1-c4ce-46da-ae31-247a712ad266">
+
 ### x-dave-gray/myapp/src/AddItem.js:
 
 ```js
