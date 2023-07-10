@@ -2155,6 +2155,11 @@ button {
 
 # Color Names to Hex Values
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8ee4ccb6-e9f9-4ab8-933d-36ac57a45e85">
+<img width="1107" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/39610ac3-ac87-49d7-b5be-b46fdb4445ae">
+<img width="1107" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7ba4e921-15f5-4c8e-8806-4b08c4ac5168">
+
+
 # Install Colornames module
 
 ```bs
