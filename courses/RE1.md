@@ -1562,17 +1562,19 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>131. Search Functionality </summary>
+  <summary>13. Search Functionality with SearchItem Component </summary>
 
-App.js:
+# Search Functionality with SearchItem Component
+
+### x-dave-gray/myapp/src/App.js:
 
 ```js
-import Header from "./Header";
+import React, { useState } from "react";
 import AddItem from "./AddItem";
 import SearchItem from "./SearchItem";
+import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
-import React, { useState } from "react";
 
 function App() {
   const [items, setItems] = useState(
@@ -1587,6 +1589,20 @@ function App() {
     localStorage.setItem("shoppinglist", JSON.stringify(newItems));
   };
 
+  const addItem = (item) => {
+    const id = items.length ? items[items.length - 1].id + 1 : 1;
+    const myNewItem = { id, checked: false, item };
+    const listItems = [...items, myNewItem];
+    setAndSaveItems(listItems);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!newItem) return;
+    addItem(newItem);
+    setNewItem("");
+  };
+
   const handleCheck = (id) => {
     const listItems = items.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
@@ -1599,24 +1615,9 @@ function App() {
     setAndSaveItems(listItems);
   };
 
-  const addItem = (item) => {
-    const id = items.length ? items[items.length - 1].id + 1 : 1;
-    const myNewItem = { id, checked: false, item };
-    const listItems = [...items, myNewItem];
-    setAndSaveItems(listItems);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!newItem) return;
-    // addItem
-    addItem(newItem);
-    setNewItem("");
-  };
-
   return (
     <div className="App">
-      <Header title="Groceries List" />
+      <Header title="My Grocery List" />
       <AddItem
         newItem={newItem}
         setNewItem={setNewItem}
@@ -1636,9 +1637,10 @@ function App() {
 }
 
 export default App;
+
 ```
 
-SearchItem.js:
+### x-dave-gray/myapp/src/SearchItem.js:
 
 ```js
 import React from "react";
@@ -1660,35 +1662,10 @@ const SearchItem = ({ search, setSearch }) => {
 };
 
 export default SearchItem;
+
 ```
 
-index.css:
-
-```bs
-.searchForm {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin: 0.25rem 0 0;
-  padding: 0 0.5rem 0.25rem;
-  border-bottom: 1px solid #eee;
-}
-
-.searchForm label {
-  position: absolute;
-  left: -99999px;
-}
-
-.searchForm input[type="text"] {
-  flex-grow: 1;
-  max-width: 100%;
-  min-height: 48px;
-  font-size: 1rem;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
-  outline: none;
-}
-```
+### x-dave-gray/myapp/src/index.css:
 
 ```css
 * {
@@ -1737,7 +1714,7 @@ main {
   flex-direction: column;
   flex-grow: 1;
   justify-content: flex-start;
-  align-items: center;
+  align-items: space-around;
   overflow-y: auto;
 }
 
@@ -1748,7 +1725,6 @@ footer {
   color: aliceblue;
   display: grid;
   place-content: center;
-  text-align: center;
 }
 
 ul {
@@ -1876,6 +1852,7 @@ button:hover {
   border-radius: 0.25rem;
   outline: none;
 }
+
 ```
 
 # #End  </details>
