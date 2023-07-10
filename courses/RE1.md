@@ -1993,6 +1993,12 @@ export default Input;
 
 # Style Square and Input Components
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/43c4a2a5-9901-4333-81a2-20ab98620a51">
+<img width="1107" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9e6ccaea-36c5-4bf1-862a-be1ec92ce507">
+<img width="1107" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/60ee5c1a-b01b-41f9-8645-c1e6233e0003">
+<img width="1107" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/50ac974d-54dc-44f6-9f9e-f13e5d0dea20">
+<img width="1107" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/91f76af7-31d7-4e3b-bc52-da67a928a64e">
+
 ### x-dave-gray/color-selector/src/colors.json:
 
 ```json
