@@ -1181,9 +1181,13 @@ export default LineItem;
 # #End  </details>
 
 <details>
-  <summary>11. COntrolled Input - Add Items with React Forms </summary>
+  <summary>11. Controlled Input - Add Items with React Forms </summary>
 
 # Add Items with React Forms
+
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/082a9e01-2931-4329-8dcc-9800fe8dcfb1">
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/cb3acfad-a2f2-4032-bdc6-b73e005fc8a9">
+<img width="1100" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/a859efee-774f-4ba9-bdd0-c633aff33d5d">
 
 # Move React icons to Production Dependency:
 
