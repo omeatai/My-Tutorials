@@ -1911,16 +1911,18 @@ export default AddItem;
 +COLOR SELECTOR APP
 
 <details>
-  <summary>133. Color Selector App - Introduction</summary>
+  <summary>15. Color Selector App - Introduction</summary>
 
-Install React App:
+# Introduction
+
+# Install React App:
 
 ```bs
 npx create-react-app .
 npx create-react-app color-selector
 ```
 
-Index.js:
+### x-dave-gray/color-selector/src/index.js:
 
 ```js
 import React from "react";
@@ -1936,9 +1938,11 @@ root.render(
 );
 ```
 
-App.js:
+### x-dave-gray/color-selector/src/App.js:
 
 ```js
+import React from "react";
+
 import Square from "./Square";
 import Input from "./Input";
 
@@ -1952,9 +1956,10 @@ function App() {
 }
 
 export default App;
+
 ```
 
-Square.js:
+### x-dave-gray/color-selector/src/Square.js:
 
 ```js
 import React from "react";
@@ -1966,7 +1971,7 @@ const Square = () => {
 export default Square;
 ```
 
-Input.js:
+### x-dave-gray/color-selector/src/Input.js:
 
 ```js
 import React from "react";
