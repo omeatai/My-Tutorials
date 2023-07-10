@@ -2151,16 +2151,21 @@ button {
 # #End  </details>
 
 <details>
-  <summary>135. Color Selector App - Passing Hex Values</summary>
+  <summary>17. Color Selector App - Color Names to Hex Values</summary>
+
+# Color Names to Hex Values
+
+# Install Colornames module
 
 ```bs
 npm i colornames -S
 ```
 
-App.js:
+### x-dave-gray/color-selector/src/App.js:
 
 ```js
 import React, { useState } from "react";
+
 import Square from "./Square";
 import Input from "./Input";
 import colors from "./colors.json";
@@ -2183,9 +2188,10 @@ function App() {
 }
 
 export default App;
+
 ```
 
-Square.js:
+### x-dave-gray/color-selector/src/Square.js:
 
 ```js
 import React from "react";
@@ -2209,7 +2215,7 @@ Square.defaultProps = {
 export default Square;
 ```
 
-Input.js:
+### x-dave-gray/color-selector/src/Input.js:
 
 ```js
 import React from "react";
@@ -2237,7 +2243,7 @@ const Input = ({ colorValue, setColorValue, setHexValue, colors }) => {
 export default Input;
 ```
 
-colors.json:
+### x-dave-gray/color-selector/src/colors.json:
 
 ```js
 {
