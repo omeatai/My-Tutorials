@@ -1484,13 +1484,13 @@ button:hover {
 <img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/89eb2c7f-6455-4c1a-938a-e5dd93751bcc">
 <img width="1100" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9e3bdfb8-b4c2-435f-a95e-5c3af7f260d3">
 
+### x-dave-gray/myapp/src/App.js:
+
 ```jsbs
 const [items, setItems] = useState(
   JSON.parse(localStorage.getItem("shoppinglist"))
 );
 ```
-
-### x-dave-gray/myapp/src/App.js:
 
 ```js
 import React, { useState } from "react";
