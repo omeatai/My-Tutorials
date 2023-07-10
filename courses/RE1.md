@@ -1181,7 +1181,7 @@ export default LineItem;
 # #End  </details>
 
 <details>
-  <summary>11. Add Items with React Forms </summary>
+  <summary>11. COntrolled Input - Add Items with React Forms </summary>
 
 # Add Items with React Forms
 
