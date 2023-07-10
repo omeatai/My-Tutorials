@@ -2261,9 +2261,11 @@ export default Input;
 # #End  </details>
 
 <details>
-  <summary>136. Color Selector App - Toggling Black and White Text</summary>
+  <summary>18. Color Selector App - Toggling Black and White Text</summary>
 
-App.js:
+# Toggling Black and White Text
+
+### x-dave-gray/color-selector/src/App.js:
 
 ```js
 import React, { useState } from "react";
@@ -2299,7 +2301,7 @@ function App() {
 export default App;
 ```
 
-Square.js:
+### x-dave-gray/color-selector/src/Square.js:
 
 ```js
 import React from "react";
@@ -2326,7 +2328,7 @@ Square.defaultProps = {
 export default Square;
 ```
 
-Input.js:
+### x-dave-gray/color-selector/src/Input.js:
 
 ```js
 import React from "react";
@@ -2364,7 +2366,7 @@ const Input = ({
 export default Input;
 ```
 
-index.css:
+### x-dave-gray/color-selector/src/index.css:
 
 ```css
 * {
@@ -2434,6 +2436,7 @@ button {
   box-shadow: 2px 2px 5px #000;
   padding: 0.25rem;
 }
+
 ```
 
 # #End  </details>
