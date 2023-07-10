@@ -2255,7 +2255,6 @@ export default Input;
   "lilac": "#c8a2c8",
   "rose": "#ff007f"
 }
-
 ```
 
 # #End  </details>
@@ -2264,6 +2263,10 @@ export default Input;
   <summary>18. Color Selector App - Toggling Black and White Text</summary>
 
 # Toggling Black and White Text
+
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3a244918-d021-4571-a17e-a72c71d7e43f">
+<img width="1106" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/bb740896-2e7a-467a-bb4b-fe6c662337d1">
+<img width="1106" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ce3a9399-e1f9-4f77-8456-87dcb7a21a88">
 
 ### x-dave-gray/color-selector/src/App.js:
 
