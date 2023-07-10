@@ -1566,6 +1566,10 @@ export default App;
 
 # Search Functionality with SearchItem Component
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/44e9a8a1-9e58-4c49-a2b5-b959d4dad1cd">
+<img width="1108" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/cb582bcf-a589-4bad-aeb2-58b8d418d7ad">
+<img width="1108" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/74315192-c3a5-46f6-9795-ce5e07337a89">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```js
