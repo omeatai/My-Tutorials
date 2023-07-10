@@ -1862,9 +1862,11 @@ button:hover {
 # #End  </details>
 
 <details>
-  <summary>132. Using useRef Hook</summary>
+  <summary>14. Using useRef Hook to manage Input Focus</summary>
 
-AddItem.js:
+# Using useRef Hook to manage Input Focus
+
+### x-dave-gray/myapp/src/AddItem.js:
 
 ```js
 import React, { useRef } from "react";
@@ -1898,6 +1900,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
 };
 
 export default AddItem;
+
 ```
 
 # #End  </details>
