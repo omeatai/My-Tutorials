@@ -3710,8 +3710,6 @@ button:hover {
 
 ### x-dave-gray/challenge/src/App.js:
 
-App.js:
-
 ```js
 import { useState, useEffect } from "react";
 import Form from "./Form";
