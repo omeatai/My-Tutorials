@@ -3610,6 +3610,11 @@ export default App;
 
 # Challenge 1 - Fetch and display users, posts and comments data
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/54325a43-d917-4677-8df5-7ee7deb12c1c">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/089fd607-9e1e-412a-8994-239f5eb619c9">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ce4a79d9-238a-428b-8b7e-f3afff4c1335">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7b54df53-9ab6-41db-852f-fe9cebfe6c72">
+
 ### x-dave-gray/challenge/src/App.js:
 
 ```js
