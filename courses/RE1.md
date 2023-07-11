@@ -3145,6 +3145,10 @@ export default App;
 
 # Update an Item in DB
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9606f17a-b9c5-4e08-8ae3-dd23609710b2">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f3817c3f-cd3a-4f13-8e86-513ececce3d0">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6942de4b-ad48-4bbe-877a-d9ccc86c3974">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```bs
