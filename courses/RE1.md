@@ -3329,6 +3329,10 @@ export default App;
 
 # Delete an Item in DB
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f1f11c84-6714-4540-8f47-e84aee44e68b">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/42e27550-3300-4cc0-86be-a53083a68394">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ac903aa0-f461-4252-8a65-8b7c5c0adb47">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```bs
