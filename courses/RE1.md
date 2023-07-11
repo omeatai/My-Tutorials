@@ -2593,6 +2593,10 @@ http://localhost:3500/items/1
 
 # Fetch JSON API Data
 
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4d55270a-cf52-4d43-ab27-47886d9879f0">
+<img width="1243" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c6755f13-a965-43c9-a612-c2c9136ae96d">
+<img width="1244" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6a933933-68b5-4338-9403-65f095644b07">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```js
