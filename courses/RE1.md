@@ -3880,9 +3880,11 @@ td {
 # #End  </details>
 
 <details>
-  <summary>147. Fetch API Task (PART B) - Tables</summary>
+  <summary>32. Fetch API Task with JSONPLACEHOLDER - Challenge 3</summary>
 
-App.js:
+# Challenge 3 - Sort data into Table
+
+### x-dave-gray/challenge/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -3926,7 +3928,7 @@ function App() {
 export default App;
 ```
 
-Table.js:
+### x-dave-gray/challenge/src/Table.js:
 
 ```js
 import React from "react";
@@ -3950,7 +3952,7 @@ const Table = ({ items, errMsg }) => {
 export default Table;
 ```
 
-Row.js:
+### x-dave-gray/challenge/src/Row.js:
 
 ```js
 import React from "react";
@@ -3969,7 +3971,7 @@ const Row = ({ item }) => {
 export default Row;
 ```
 
-Cell.js:
+### x-dave-gray/challenge/src/Cell.js:
 
 ```js
 import React from "react";
@@ -3981,7 +3983,7 @@ const Cell = ({ cellData }) => {
 export default Cell;
 ```
 
-index.css:
+### x-dave-gray/challenge/src/index.css:
 
 ```css
 * {
