@@ -2441,8 +2441,10 @@ button {
 
 # #End  </details>
 
++JSON-SERVER
+
 <details>
-  <summary>137. Using useEffect to save Data</summary>
+  <summary>19. Using useEffect to set Data</summary>
 
 App.js
 
@@ -2455,13 +2457,11 @@ import Footer from "./Footer";
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem("shoppinglist")) || []
+  );
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    setItems(JSON.parse(localStorage.getItem("shoppinglist")) || []);
-  }, []);
 
   useEffect(() => {
     localStorage.setItem("shoppinglist", JSON.stringify(items));
@@ -2516,11 +2516,10 @@ function App() {
 }
 
 export default App;
+
 ```
 
 # #End  </details>
-
-+JSON-SERVER
 
 <details>
   <summary>138. JSON sever - Using JSON Server</summary>
