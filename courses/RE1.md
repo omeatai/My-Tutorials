@@ -3708,6 +3708,11 @@ button:hover {
 
 # Challenge 2 - Create Components to organise app
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ff368da4-9ff6-4b17-8eac-9aabe35c5023">
+<img width="1226" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/dc2bc101-e160-4ee0-bfd4-485580f4caf9">
+<img width="1226" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ecb2344c-b8dd-44c7-977e-102f20e10b02">
+<img width="1226" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f28e3340-73ab-4cab-b953-2dbd83a1269e">
+
 ### x-dave-gray/challenge/src/App.js:
 
 ```js
