@@ -2840,6 +2840,9 @@ export default App;
 
 # Set isLoading Hook
 
+<img width="980" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/72166225-d84d-4589-9ffb-116c3ffca57d">
+<img width="1244" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/de26770d-1cca-47d6-a579-f050d8679b8d">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```js
