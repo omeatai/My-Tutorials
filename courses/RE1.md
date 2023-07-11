@@ -3561,6 +3561,9 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 
 # Create Challenge App
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/dabbec9b-89a9-42c3-a8bf-bdf257f5af0b">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/07821a44-4640-48fd-b0d7-f82fb12e6bdb">
+
 # Install React App
 
 ```jsbs
