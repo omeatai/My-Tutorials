@@ -2969,7 +2969,11 @@ export default apiRequest;
 # #End  </details>
 
 <details>
-  <summary>143. JSON server - Create/Add an Item </summary>
+  <summary>25. JSON server - Create or POST a new item to DB </summary>
+
+# Create or POST a new item to DB
+
+### x-dave-gray/myapp/src/App.js:
 
 ```bs
 //Create/POST a new item to DB
@@ -2991,8 +2995,6 @@ export default apiRequest;
     if (result) setFetchError(result);
   };
 ```
-
-App.js:
 
 ```js
 import Header from "./Header";
@@ -3099,6 +3101,35 @@ function App() {
 }
 
 export default App;
+```
+
+### x-dave-gray/myapp/data/db.json:
+
+```json
+{
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "item": "Almonds, Unsalted, in the blue bag"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "item": "Pizza"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "item": "Bread"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "item": "See the Doctor"
+    }
+  ]
+}
 ```
 
 # #End  </details>
