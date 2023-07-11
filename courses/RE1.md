@@ -3889,6 +3889,11 @@ td {
 
 # Challenge 3 - Sort data into Table
 
+<img width="977" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/94989216-6930-48cc-b096-22e3138f227f">
+<img width="1214" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/71a3a101-def4-41ab-8c01-0781b35f7c94">
+<img width="1214" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9a43f1d5-4b28-4073-929d-58a1545c7541">
+<img width="1214" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0710751b-2bfc-4953-abfe-cb81306f29ac">
+
 ### x-dave-gray/challenge/src/App.js:
 
 ```js
