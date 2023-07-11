@@ -2975,6 +2975,10 @@ export default apiRequest;
 
 # Create or POST a new item to DB
 
+<img width="971" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1c979fbd-abc6-474c-bb39-b5f1a705c1bf">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2b049c94-c8a2-4efa-a342-08804dc29821">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e07cc1b7-6b65-45a2-a942-7415ca267616">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```bs
