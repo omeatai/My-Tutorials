@@ -2729,6 +2729,8 @@ export default Content;
 
 # SetTimeout to simulate a slow REST API Response
 
+<img width="980" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ed1656cd-48a6-4834-b8a2-8ce45b3d0b6b">
+
 ### x-dave-gray/myapp/src/App.js:
 
 ```bs
