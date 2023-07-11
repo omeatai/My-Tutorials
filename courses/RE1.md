@@ -3321,7 +3321,11 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>145. JSON server - Delete an Item</summary>
+  <summary>27. JSON server - Delete an Item in DB</summary>
+
+# Delete an Item in DB
+
+### x-dave-gray/myapp/src/App.js:
 
 ```bs
 //Delete an item in DB
@@ -3335,8 +3339,6 @@ export default App;
     if (result) setFetchError(result);
   };
 ```
-
-App.js:
 
 ```js
 import Header from "./Header";
@@ -3376,6 +3378,17 @@ function App() {
     }, 2000);
   }, []);
 
+  //Delete an item in DB
+  const handleDelete = async (id) => {
+    const listItems = items.filter((item) => item.id !== id);
+    setItems(listItems);
+
+    const deleteOptions = { method: "DELETE" };
+    const reqUrl = `${API_URL}/${id}`;
+    const result = await apiRequest(reqUrl, deleteOptions);
+    if (result) setFetchError(result);
+  };
+
   //Update an item in DB
   const handleCheck = async (id) => {
     const listItems = items.map((item) =>
@@ -3393,17 +3406,6 @@ function App() {
     };
     const reqUrl = `${API_URL}/${id}`;
     const result = await apiRequest(reqUrl, updateOptions);
-    if (result) setFetchError(result);
-  };
-
-  //Delete an item in DB
-  const handleDelete = async (id) => {
-    const listItems = items.filter((item) => item.id !== id);
-    setItems(listItems);
-
-    const deleteOptions = { method: "DELETE" };
-    const reqUrl = `${API_URL}/${id}`;
-    const result = await apiRequest(reqUrl, deleteOptions);
     if (result) setFetchError(result);
   };
 
@@ -3462,6 +3464,30 @@ function App() {
 }
 
 export default App;
+```
+
+### x-dave-gray/myapp/data/db.json:
+
+```json
+{
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "item": "Almonds, Unsalted, in the blue bag"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "item": "Pizza"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "item": "Bread"
+    }
+  ]
+}
 ```
 
 # #End  </details>
