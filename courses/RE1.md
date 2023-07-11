@@ -3500,19 +3500,65 @@ export default App;
 
 # #End  </details>
 
-+FETCH API TASK
++FETCH API TASK WITH JSONPLACEHOLDER
 
 <details>
-  <summary>146. Fetch API Task (PART A) - users, posts, comments</summary>
+  <summary>28. Fetch API Task with JSONPLACEHOLDER - Introduction </summary>
+
+# Fetch API Task with JSONPLACEHOLDER - Introduction
+
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/59f95f15-11e3-4a51-9851-e1cc664bad31">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1d3cd93c-63de-47c0-b6d6-1ba5c276bbeb">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/321c2427-ab8d-49fe-9bd8-488f58974ec3">
+<img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0e4ad0b2-1c1e-48a8-a2f6-3cb1977b5d4b">
+
+# Endpoints
 
 ```bs
 https://jsonplaceholder.typicode.com/
-
 https://jsonplaceholder.typicode.com/users
 https://jsonplaceholder.typicode.com/posts
 https://jsonplaceholder.typicode.com/comments
+https://jsonplaceholder.typicode.com/albums
+https://jsonplaceholder.typicode.com/photos
+https://jsonplaceholder.typicode.com/todos
 ```
 
+```bs
+/posts	  100 posts
+/comments	500 comments
+/albums	  100 albums
+/photos	  5000 photos
+/todos	  200 todos
+/users	  10 users
+```
+
+# HTTP Methods
+
+```bs
+GET	    /posts
+GET	    /posts/1
+GET	    /posts/1/comments
+GET	    /comments?postId=1
+POST	  /posts
+PUT	    /posts/1
+PATCH	  /posts/1
+DELETE	/posts/1
+```
+
+# Fetch a Todo Item
+
+```bs
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+```
+
+# #End  </details>
+
+<details>
+  <summary>29. Fetch API Task with JSONPLACEHOLDER - users, posts, comments</summary>
+  
 index.js:
 
 ```js
