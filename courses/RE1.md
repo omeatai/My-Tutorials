@@ -2971,9 +2971,9 @@ export default apiRequest;
 # #End  </details>
 
 <details>
-  <summary>25. JSON server - Create or POST a new item to DB </summary>
+  <summary>25. JSON server - Create or POST a new Item to DB </summary>
 
-# Create or POST a new item to DB
+# Create or POST a new Item to DB
 
 <img width="971" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1c979fbd-abc6-474c-bb39-b5f1a705c1bf">
 <img width="1245" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2b049c94-c8a2-4efa-a342-08804dc29821">
@@ -3141,7 +3141,11 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>144. JSON server - Update an Item</summary>
+  <summary>26. JSON server - Update an Item in DB</summary>
+
+# Update an Item in DB
+
+### x-dave-gray/myapp/src/App.js:
 
 ```bs
 //Update an item in DB
@@ -3164,8 +3168,6 @@ export default App;
     if (result) setFetchError(result);
   };
 ```
-
-App.js:
 
 ```js
 import Header from "./Header";
@@ -3285,6 +3287,35 @@ function App() {
 }
 
 export default App;
+```
+
+### x-dave-gray/myapp/data/db.json:
+
+```json
+{
+  "items": [
+    {
+      "id": 1,
+      "checked": false,
+      "item": "Almonds, Unsalted, in the blue bag"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "item": "Pizza"
+    },
+    {
+      "id": 3,
+      "checked": false,
+      "item": "Bread"
+    },
+    {
+      "id": 4,
+      "checked": true,
+      "item": "See the Doctor"
+    }
+  ]
+}
 ```
 
 # #End  </details>
