@@ -3605,30 +3605,9 @@ export default App;
 <details>
   <summary>30. Fetch API Task with JSONPLACEHOLDER - Challenge 1</summary>
 
-# Challenge 1 - Create users, posts and comments sections
+# Challenge 1 - Fetch and display users, posts and comments data
 
-# Install React App
-
-
-index.js:
-
-```js
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-```
-
-First Implementation:
-
-App.js:
+### x-dave-gray/challenge/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -3679,7 +3658,7 @@ function App() {
 export default App;
 ```
 
-Index.css:
+### x-dave-gray/challenge/src/index.css:
 
 ```css
 body {
@@ -3714,7 +3693,14 @@ button:hover {
 }
 ```
 
-Second Implementation:
+# #End  </details>
+
+<details>
+  <summary>31. Fetch API Task with JSONPLACEHOLDER - Challenge 2</summary>
+
+# Challenge 2 - Create Components to organise app
+
+### x-dave-gray/challenge/src/App.js:
 
 App.js:
 
