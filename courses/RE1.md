@@ -2942,9 +2942,11 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>142. JSON server - Building API Request Function </summary>
+  <summary>24. JSON server - Building API Request Function for CRUD </summary>
 
-src/apiRequest.js:
+# Building API Request Function for CRUD
+
+### x-dave-gray/myapp/src/apiRequest.js:
 
 ```js
 const apiRequest = async (url = "", optionsObj = null, errMsg = null) => {
