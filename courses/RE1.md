@@ -2949,6 +2949,8 @@ export default App;
 
 # Building API Request Function for CRUD
 
+<img width="974" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1c56e19d-bed8-4f87-8034-d5d4a16912c4">
+
 ### x-dave-gray/myapp/src/apiRequest.js:
 
 ```js
