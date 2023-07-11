@@ -2836,9 +2836,11 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>141. JSON sever - Set isLoading Hook</summary>
+  <summary>23. JSON sever - Set isLoading Hook</summary>
 
-App.js:
+# Set isLoading Hook
+
+### x-dave-gray/myapp/src/App.js:
 
 ```js
 import Header from "./Header";
