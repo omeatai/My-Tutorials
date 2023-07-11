@@ -3557,8 +3557,59 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 # #End  </details>
 
 <details>
-  <summary>29. Fetch API Task with JSONPLACEHOLDER - users, posts, comments</summary>
-  
+  <summary>29. Fetch API Task with JSONPLACEHOLDER - Create Challenge App</summary>
+
+# Create Challenge App
+
+# Install React App
+
+```jsbs
+npx create-react-app challenge
+yarn create react-app challenge
+```
+
+### x-dave-gray/challenge/src/index.js:
+
+```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+### x-dave-gray/challenge/src/App.js:
+
+```js
+import React from "react";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Challenge Page</h1>
+    </div>
+  );
+}
+
+export default App;
+```
+
+# #End  </details>
+
+<details>
+  <summary>30. Fetch API Task with JSONPLACEHOLDER - Challenge 1</summary>
+
+# Challenge 1 - Create users, posts and comments sections
+
+# Install React App
+
+
 index.js:
 
 ```js
