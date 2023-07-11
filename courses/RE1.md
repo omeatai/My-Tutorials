@@ -2585,9 +2585,11 @@ http://localhost:3500/items/1
 # #End  </details>
 
 <details>
-  <summary>139. JSON sever - Fetch JSON API Data & Catch Errors</summary>
+  <summary>21. JSON sever - Fetch JSON API Data </summary>
 
-App.js:
+# Fetch JSON API Data
+
+### x-dave-gray/myapp/src/App.js:
 
 ```js
 import Header from "./Header";
@@ -2600,7 +2602,9 @@ import React, { useState, useEffect } from "react";
 function App() {
   const API_URL = "http://localhost:3500/items";
 
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem("shoppinglist")) || []
+  );
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
   const [fetchError, setFetchError] = useState(null);
@@ -2609,18 +2613,19 @@ function App() {
     const fetchItems = async () => {
       try {
         const response = await fetch(API_URL);
-        if (!response.ok) throw new Error("No Data Found");
+        if (!response.ok) throw new Error("Did not receive Data from API");
         const listItems = await response.json();
+        console.log(listItems);
         setItems(listItems);
         setFetchError(null);
       } catch (err) {
-        //console.log(err.message);
+        // console.log(err.stack);
+        // console.log(err.message);
         setFetchError(err.message);
       }
     };
 
     fetchItems();
-    //(async () => await fetchItems())();
   }, []);
 
   const handleCheck = (id) => {
@@ -2660,7 +2665,11 @@ function App() {
       />
       <SearchItem search={search} setSearch={setSearch} />
       <main>
-        {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}
+        {fetchError && (
+          <p
+            style={{ color: "red", textAlign: "center" }}
+          >{`Error: ${fetchError}`}</p>
+        )}
         {!fetchError && (
           <Content
             items={items.filter((item) =>
@@ -2671,16 +2680,16 @@ function App() {
           />
         )}
       </main>
-
       <Footer itemLength={items.length} />
     </div>
   );
 }
 
 export default App;
+
 ```
 
-Content.js:
+### x-dave-gray/myapp/src/Content.js:
 
 ```js
 import ItemList from "./ItemList";
