@@ -2529,9 +2529,13 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>20 JSON sever - Using JSON Server</summary>
+  <summary>20. JSON sever - Using JSON Server</summary>
 
 # Using JSON Server
+
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/88054acd-04c3-4785-a2c7-57c701d4244b">
+<img width="1243" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d958c0fe-6638-4922-b266-99991b98337d">
+<img width="1243" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/722df0fe-272b-41c8-b653-041cfa969e6d">
 
 # Install and start JSON Server:
 
