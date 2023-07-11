@@ -2634,6 +2634,7 @@ function App() {
     };
 
     fetchItems();
+    //(async () => await fetchItems())();
   }, []);
 
   const handleCheck = (id) => {
@@ -2724,7 +2725,11 @@ export default Content;
 # #End  </details>
 
 <details>
-  <summary>140. JSON sever - SetTimeout to simulate a slow REST API Response</summary>
+  <summary>22. JSON sever - SetTimeout to simulate a slow REST API Response</summary>
+
+# SetTimeout to simulate a slow REST API Response
+
+### x-dave-gray/myapp/src/App.js:
 
 ```bs
 setTimeout(() => {
@@ -2732,8 +2737,6 @@ setTimeout(() => {
   //(async () => await fetchItems())();
 }, 2000);
 ```
-
-App.js:
 
 ```js
 import Header from "./Header";
