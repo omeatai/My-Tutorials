@@ -2529,24 +2529,22 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>138. JSON sever - Using JSON Server</summary>
+  <summary>20 JSON sever - Using JSON Server</summary>
 
-Install and start JSON Server:
+# Using JSON Server
+
+# Install and start JSON Server:
 
 ```bs
 npm i json-server
-npm install -g json-server
-
 json-server -p 3500 --watch data/db.json
 ```
-
-OR
 
 ```bs
 npx json-server -p 3500 -w data/db.json
 ```
 
-data/db.json:
+### x-dave-gray/myapp/data/db.json:
 
 ```json
 {
@@ -2570,7 +2568,7 @@ data/db.json:
 }
 ```
 
-Fetch call for item 1:
+# Fetch JSON Server for item 1:
 
 ```bs
 http://localhost:3500/items/1
@@ -2581,7 +2579,7 @@ http://localhost:3500/items/1
 // "id": 1,
 // "checked": false,
 // "item": "Almonds, Unsalted, in the blue bag"
-}
+// }
 ```
 
 # #End  </details>
