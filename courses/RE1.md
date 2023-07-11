@@ -2449,7 +2449,11 @@ button {
 <details>
   <summary>19. Using useEffect to set Data</summary>
 
-App.js
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/085ec7e9-1b3c-44da-b53c-8954f4b343ff">
+
+<img width="1244" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6b6d24d5-18cd-4861-a02b-06e0b2ad369b">
+
+### x-dave-gray/myapp/src/App.js:
 
 ```js
 import Header from "./Header";
