@@ -4130,16 +4130,11 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>149. Blog App - Setup React Router DOM</summary>
+  <summary>34. Blog App - Routing Components</summary>
 
+# Routing Components
 
-
-# #End  </details>
-
-<details>
-  <summary>150. Blog App - Routing Components</summary>
-
-index.js:
+### x-dave-gray/blogapp/src/index.js:
 
 ```js
 import React from "react";
@@ -4160,7 +4155,7 @@ root.render(
 );
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -4194,7 +4189,7 @@ function App() {
 export default App;
 ```
 
-Heading.js:
+### x-dave-gray/blogapp/src/Header.js:
 
 ```js
 import React from "react";
@@ -4210,7 +4205,7 @@ const Header = () => {
 export default Header;
 ```
 
-Nav.js:
+### x-dave-gray/blogapp/src/Nav.js:
 
 ```js
 import React from "react";
@@ -4226,7 +4221,7 @@ const Nav = () => {
 export default Nav;
 ```
 
-Home.js:
+### x-dave-gray/blogapp/src/Home.js:
 
 ```js
 import React from "react";
@@ -4242,7 +4237,7 @@ const Home = () => {
 export default Home;
 ```
 
-NewPost.js:
+### x-dave-gray/blogapp/src/NewPost.js:
 
 ```js
 import React from "react";
@@ -4258,7 +4253,7 @@ const NewPost = () => {
 export default NewPost;
 ```
 
-PostPage.js:
+### x-dave-gray/blogapp/src/PostPage.js:
 
 ```js
 import React from "react";
@@ -4274,7 +4269,7 @@ const PostPage = () => {
 export default PostPage;
 ```
 
-About.js:
+### x-dave-gray/blogapp/src/About.js:
 
 ```js
 import React from "react";
@@ -4290,7 +4285,7 @@ const About = () => {
 export default About;
 ```
 
-Missing.js:
+### x-dave-gray/blogapp/src/Missing.js:
 
 ```js
 import React from "react";
@@ -4306,7 +4301,7 @@ const Missing = () => {
 export default Missing;
 ```
 
-Footer.js:
+### x-dave-gray/blogapp/src/Footer.js:
 
 ```js
 import React from "react";
