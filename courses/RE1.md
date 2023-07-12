@@ -5068,9 +5068,9 @@ body {
 # #End  </details>
 
 <details>
-  <summary>36. Blog App - </summary>
+  <summary>37. Blog App - Customising Home Component </summary>
 
-#  Reading
+# Customising Home Component
 
 ```js
 
