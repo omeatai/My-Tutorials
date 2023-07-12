@@ -4342,6 +4342,9 @@ export default Footer;
 
 # Customising Header Component
 
+<img width="979" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0667513d-9f8f-4f4c-a520-8a18c0afc7ce">
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4b87395d-c3de-42a1-bccc-851ea67d71e9">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
