@@ -5481,9 +5481,9 @@ body {
 # #End  </details>
 
 <details>
-  <summary>38. Blog App - Customising PostPage Component with useParams Hook (Displaying a single page)</summary>
+  <summary>38. Blog App - Customising PostPage Component with useParams Hook (Displaying a single Post)</summary>
 
-# Customising PostPage Component with useParams Hook (Displaying a single page)
+# Customising PostPage Component with useParams Hook (Displaying a single Post)
 
 ```js
 
