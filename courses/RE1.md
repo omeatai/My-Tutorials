@@ -6978,6 +6978,9 @@ export default App;
 
 # Customise Page Not Found (Missing) Component
 
+<img width="972" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1e7c825e-fa92-416f-b07f-98265e0841b8">
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e057f8f8-abfb-484f-9353-d19aacb7eacb">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
@@ -7113,7 +7116,9 @@ export default Missing;
 # #End  </details>
 
 <details>
-  <summary>155. Blog App - Footer Component</summary>
+  <summary>44. Blog App - Customise Footer Component</summary>
+
+# Customise Footer Component
 
 Footer.js:
 
