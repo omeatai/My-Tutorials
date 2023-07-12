@@ -7259,6 +7259,9 @@ export default Footer;
 
 # Customise About Component
 
+<img width="970" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/603a5c37-6bd1-470b-8611-4209116f9a4d">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/92960296-8bff-4fdd-bfd9-a63b52bf3a90">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
@@ -7392,7 +7395,11 @@ export default About;
 # #End  </details>
 
 <details>
-  <summary>157. Blog App - Customise CSS Width and Height Properties</summary>
+  <summary>46. Blog App - Customise CSS Width and Height Properties</summary>
+
+# Customise CSS Width and Height Properties
+
+Index.css:
 
 ```bs
 #root {
@@ -7403,7 +7410,7 @@ export default About;
 }
 ```
 
-Index.css:
+
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
