@@ -4683,6 +4683,9 @@ body {
 
 # Customizing Nav Component
 
+<img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7b590a02-0c18-4ac6-813e-5abcc149489e">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ef3a3b91-7c5a-4a2a-a36d-a3d59d380e27">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
