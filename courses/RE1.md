@@ -7399,6 +7399,9 @@ export default About;
 
 # Customise CSS Width and Height Properties
 
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4d2c9bc6-506a-4823-ad2f-0db7d95d1c58">
+<img width="1214" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6a2af6da-7794-40e4-9037-f944d1455bce">
+
 ### x-dave-gray/blogapp/src/index.css:
 
 ```bs
