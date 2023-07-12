@@ -4134,6 +4134,17 @@ export default App;
 
 # Routing Components
 
+<img width="979" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3103c4bc-e046-4033-ba52-48199bcf3f83">
+
+### http://localhost:3000/
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7c7a0ba5-f7a0-4b54-a56f-a4014c06165b">
+### http://localhost:3000/about
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9d0c07fb-e0c4-4c7d-aae8-5105cf5eacb0">
+### http://localhost:3000/post
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/069d8785-3ae1-4ca2-afbc-4cbf8a81d764">
+### http://localhost:3000/post/1
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/20cda8b3-0783-49fc-9b22-6c2675458a28">
+
 ### x-dave-gray/blogapp/src/index.js:
 
 ```js
