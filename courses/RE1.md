@@ -5879,38 +5879,7 @@ body {
 
 #  Deleting a Blog and useNavigate()
 
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-# #End  </details>
-
-<details>
-  <summary>151. Blog App - Reading and Deleting Blog Data</summary>
-
-#  Reading and Deleting Blog Data
-
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -5925,6 +5894,8 @@ import About from "./About";
 import Missing from "./Missing";
 
 function App() {
+  const [search, setSearch] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
   const [posts, setPosts] = useState([
     {
       id: 1,
@@ -5951,8 +5922,7 @@ function App() {
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!",
     },
   ]);
-  const [search, setSearch] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+
   const navigate = useNavigate();
 
   const handleDelete = (id) => {
@@ -5983,66 +5953,7 @@ function App() {
 export default App;
 ```
 
-Home.js:
-
-```js
-import React from "react";
-import Feed from "./Feed";
-
-const Home = ({ posts }) => {
-  return (
-    <main className="Home">
-      {posts.length ? (
-        <Feed posts={posts} />
-      ) : (
-        <p style={{ marginTop: "2rem" }}>No Posts to display.</p>
-      )}
-    </main>
-  );
-};
-
-export default Home;
-```
-
-Feed.js:
-
-```js
-import React from "react";
-import Post from "./Post";
-
-const Feed = ({ posts }) => {
-  return (
-    <>{posts.map((post) => <Post key={post.id} post={post} />).reverse()}</>
-  );
-};
-
-export default Feed;
-```
-
-Post.js:
-
-```js
-import React from "react";
-import { Link } from "react-router-dom";
-
-const Post = ({ post }) => {
-  return (
-    <article className="post">
-      <Link to={`/post/${post.id}`}>
-        <h2>{post.title}</h2>
-        <p className="postDate">{post.datetime}</p>
-      </Link>
-      <p>
-        {post.body.length <= 25 ? post.body : `${post.body.slice(0, 25)}...`}
-      </p>
-    </article>
-  );
-};
-
-export default Post;
-```
-
-PostPage.js:
+### x-dave-gray/blogapp/src/PostPage.js:
 
 ```js
 import React from "react";
@@ -6079,7 +5990,7 @@ const PostPage = ({ posts, handleDelete }) => {
 export default PostPage;
 ```
 
-index.css:
+### x-dave-gray/blogapp/src/index.css:
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -6358,6 +6269,37 @@ body {
     font-size: 3rem;
   }
 }
+```
+
+# #End  </details>
+
+<details>
+  <summary>40. Blog App - Reading</summary>
+
+#  Reading
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
 ```
 
 # #End  </details>
