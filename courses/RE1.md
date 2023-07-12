@@ -7120,7 +7120,7 @@ export default Missing;
 
 # Customise Footer Component
 
-Footer.js:
+### x-dave-gray/blogapp/src/Footer.js:
 
 ```js
 import React from "react";
