@@ -6856,6 +6856,10 @@ export default NewPost;
 
 # Adding Search Functionality with useEffect
 
+<img width="972" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1cbba03e-ec58-4b43-80b3-27277e8ca89b">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/04b75d28-dfea-4230-8168-e3327da5e5b0">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/008f8191-19f8-46cf-9d54-e639c88bc773">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
