@@ -4676,6 +4676,29 @@ body {
 }
 ```
 
+# #End  </details>
+
+<details>
+  <summary>36. Blog App - Customizing Nav Component</summary>
+
+# Customizing Nav Component
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
 ```js
 
 ```
