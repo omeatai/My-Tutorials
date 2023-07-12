@@ -5879,6 +5879,10 @@ body {
 
 #  Deleting a Blog and useNavigate()
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/452133db-2300-487d-bada-20b47cdbf9c6">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/eaa26d79-8349-445c-93c7-fc29a1b4ee0f">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2467e41c-6615-4d1a-95fa-6435396b2fc8">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
