@@ -7399,18 +7399,37 @@ export default About;
 
 # Customise CSS Width and Height Properties
 
-Index.css:
+### x-dave-gray/blogapp/src/index.css:
 
 ```bs
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  background-color: #efefef;
+}
+
 #root {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px gray;
+}
 ```
-
-
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
