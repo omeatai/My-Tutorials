@@ -4058,6 +4058,9 @@ td {
 
 # Setup App with React-Router-DOM
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/eb868864-0055-41cd-9413-0c9ac46e7660">
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f7786ca5-5dee-42e9-94f2-9efba3e50a6a">
+
 # Create React App:
 
 ```bs
