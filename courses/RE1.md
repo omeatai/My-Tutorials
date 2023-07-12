@@ -5489,6 +5489,9 @@ body {
 
 # Customising PostPage Component with useParams Hook (Displaying a single Post)
 
+<img width="970" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/989f28a3-e3b1-48f4-9ca6-3dbd68e3e5d3">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/783046fe-c232-4959-a0ff-dcdbaf420ea2">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
