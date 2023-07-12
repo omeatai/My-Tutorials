@@ -6694,6 +6694,12 @@ body {
 
 # Blog App - Adding New Post (handleSubmit) Functionality
 
+<img width="974" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ec6e53c1-4569-46af-a3c8-86fc6d0b3424">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1c357e57-2ec1-4ab4-9cc7-3a150c6e9581">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c503845c-bb3a-41e5-81bd-29f31ac44d80">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/563a2b4a-30e3-4e02-ada3-3afd81841f18">
+<img width="1213" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/866228f4-9f43-408a-b7c8-c186e2b1b720">
+
 # Install Date-Functions Module:
 
 ```bs
