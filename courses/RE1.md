@@ -4054,69 +4054,39 @@ td {
 +BLOG APP
 
 <details>
-  <summary>148. Blog App - Introduction</summary>
+  <summary>33. Blog App - Setup App with React-Router-DOM</summary>
 
-Create React App:
+# Setup App with React-Router-DOM
+
+# Create React App:
 
 ```bs
 npx create-react-app .
+npx create-react-app blogapp
+yarn create react-app blogapp
 ```
 
-Install React Router DOM:
+# Install React-Router-DOM:
 
 ```bs
 npm i react-router-dom -S
 npm i react-router-dom@6 -S
 ```
 
-Update React Router DOM:
+# Update React-Router-DOM:
 
 ```bs
 npm update react-router-dom
 ```
 
-Run React Server:
+# Run React Server:
 
 ```bs
+npm start
 npm run start
 ```
 
-index.js:
-
-```js
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-```
-
-App.js:
-
-```js
-function App() {
-  return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
-  );
-}
-
-export default App;
-```
-
-# #End  </details>
-
-<details>
-  <summary>149. Blog App - Setup React Router DOM</summary>
-
-index.js:
+### x-dave-gray/blogapp/src/index.js:
 
 ```js
 import React from "react";
@@ -4135,7 +4105,31 @@ root.render(
     </Router>
   </React.StrictMode>
 );
+
 ```
+
+### x-dave-gray/blogapp/src/App.js:
+
+```js
+import React from "react";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Blog App</h1>
+    </div>
+  );
+}
+
+export default App;
+```
+
+# #End  </details>
+
+<details>
+  <summary>149. Blog App - Setup React Router DOM</summary>
+
+
 
 # #End  </details>
 
