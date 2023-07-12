@@ -6282,6 +6282,9 @@ body {
 
 # Customise NewPost Component
 
+<img width="976" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5614fde7-bb18-4fab-9e0a-9bb06af20bcb">
+<img width="1215" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ab80483d-fe05-4a06-b108-038f51d3cd70">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
