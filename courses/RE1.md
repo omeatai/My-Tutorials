@@ -6278,9 +6278,9 @@ body {
 # #End  </details>
 
 <details>
-  <summary>40. Blog App - Reading</summary>
+  <summary>40. Blog App - Customise NewPost Component</summary>
 
-#  Reading
+# Customise NewPost Component
 
 ```js
 
@@ -6309,7 +6309,9 @@ body {
 # #End  </details>
 
 <details>
-  <summary>152. Blog App - Adding New Post</summary>
+  <summary>41. Blog App - Adding New Post Functionality</summary>
+
+# Blog App - Adding New Post Functionality
 
 Install Date-Functions Module:
 
