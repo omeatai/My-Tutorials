@@ -6846,9 +6846,11 @@ export default NewPost;
 # #End  </details>
 
 <details>
-  <summary>153. Blog App - Adding Search Functionality</summary>
+  <summary>42. Blog App - Adding Search Functionality with useEffect</summary>
 
-App.js:
+# Adding Search Functionality with useEffect
+
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -6957,25 +6959,6 @@ function App() {
 }
 
 export default App;
-```
-
-Feed.js:
-
-```js
-import React from "react";
-import Post from "./Post";
-
-const Feed = ({ posts }) => {
-  return (
-    <>
-      {posts.map((post) => (
-        <Post key={post.id} post={post} />
-      ))}
-    </>
-  );
-};
-
-export default Feed;
 ```
 
 # #End  </details>
