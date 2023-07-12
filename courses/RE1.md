@@ -6694,13 +6694,13 @@ body {
 
 # Blog App - Adding New Post (handleSubmit) Functionality
 
-Install Date-Functions Module:
+# Install Date-Functions Module:
 
 ```bs
 npm i date-fns -S
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -6801,7 +6801,7 @@ function App() {
 export default App;
 ```
 
-NewPost.js:
+### x-dave-gray/blogapp/src/NewPost.js:
 
 ```js
 import React from "react";
