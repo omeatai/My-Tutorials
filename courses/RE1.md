@@ -7715,13 +7715,28 @@ body {
 
 # #End  </details>
 
-<details>
-  <summary>158. Blog App - Setup data/db.json file for JSON Server and Axios</summary>
++BLOG APP WITH JSON SERVER & AXIOS
 
-Install Axios:
+<details>
+  <summary>47. Blog App - Setup data/db.json file for JSON Server and Axios</summary>
+
+# Setup data/db.json file for JSON Server and Axios
+
+# Install Axios:
 
 ```bs
 npm i axios -S
+```
+
+# Install and start JSON Server:
+
+```bs
+npm i json-server
+json-server -p 3500 --watch data/db.json
+```
+
+```bs
+npx json-server -p 3500 -w data/db.json
 ```
 
 data/db.json:
