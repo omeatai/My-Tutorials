@@ -5075,6 +5075,10 @@ body {
 
 # Customising Home, Feed and Post Components (Displaying all Posts)
 
+<img width="975" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e859a990-c46a-47f1-af00-30b879c47af7">
+<img width="1214" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/253130cb-9958-4bab-9700-5c2ba8181097">
+<img width="1214" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4d19cde0-a110-4c82-b66a-b71886886653">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
