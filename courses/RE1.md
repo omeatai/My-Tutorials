@@ -7739,7 +7739,7 @@ json-server -p 3500 --watch data/db.json
 npx json-server -p 3500 -w data/db.json
 ```
 
-data/db.json:
+### x-dave-gray/blogapp/data/db.json:
 
 ```json
 {
@@ -7772,7 +7772,7 @@ data/db.json:
 }
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -7861,24 +7861,9 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>159. Blog App - Fetch Data with Axios</summary>
+  <summary>48. Blog App - Setting Base URL for Axios</summary>
 
-Install JSON Server:
-
-```bs
-npm i json-server
-npm install -g json-server
-
-json-server -p 3500 --watch data/db.json
-```
-
-OR
-
-Lunch JSON Server:
-
-```bs
-npx json-server -p 3500 -w data/db.json
-```
+# Setting Base URL for Axios
 
 api/posts.js
 
@@ -7887,6 +7872,13 @@ import axios from "axios";
 
 export default axios.create({ baseURL: "http://localhost:3500" });
 ```
+
+# #End  </details>
+
+<details>
+  <summary>49. Blog App - Fetch Data with Axios</summary>
+
+# Fetch Data with Axios
 
 App.js:
 
