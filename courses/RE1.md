@@ -7889,23 +7889,30 @@ export default axios.create({ baseURL: "http://localhost:3500" });
 ### x-dave-gray/blogapp/src/App.js:
 
 ```bs
-const handleSubmit = async (e) => {
-    e.preventDefault();
-    const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
-    const datetime = format(new Date(), "MMMM dd, yyyy pp");
-    //const datetime = format(new Date(), "yyyy-MM-dd HH:mm:ss");
-    const newPost = { id, title: postTitle, datetime, body: postBody };
-    try {
-      const response = await api.post("/posts", newPost);
-      const allPosts = [...posts, response.data];
-      setPosts(allPosts);
-      setPostTitle("");
-      setPostBody("");
-      navigate("/");
-    } catch (err) {
-      console.log(`Error: ${err.message}`);
-    }
-  };
+useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await api.get("/posts");
+        setPosts(response.data);
+        // if (response && response.data) {
+        //   setPosts(response.data);
+        // }
+      } catch (err) {
+        if (err.response) {
+          // Got Data Error response
+          console.log(err.response.data.message);
+          console.log(err.response.data);
+          console.log(err.response.status);
+          console.log(err.response.headers);
+        } else {
+          //Got No Data Error response, if (err.code === 404)
+          console.log(`Error: ${err.message}`);
+        }
+      }
+    };
+
+    fetchPosts();
+  }, []);
 ```
 
 ```js
@@ -7935,19 +7942,23 @@ function App() {
       try {
         const response = await api.get("/posts");
         setPosts(response.data);
+        // if (response && response.data) {
+        //   setPosts(response.data);
+        // }
       } catch (err) {
         if (err.response) {
-          // Got Data Error but Not in the 200 response range
+          // Got Data Error response
           console.log(err.response.data.message);
           console.log(err.response.data);
           console.log(err.response.status);
           console.log(err.response.headers);
         } else {
-          //No Data Error, if (err.code === 404)
+          //Got No Data Error response, if (err.code === 404)
           console.log(`Error: ${err.message}`);
         }
       }
     };
+
     fetchPosts();
   }, []);
 
