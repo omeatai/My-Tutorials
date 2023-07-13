@@ -8226,19 +8226,23 @@ function App() {
       try {
         const response = await api.get("/posts");
         setPosts(response.data);
+        // if (response && response.data) {
+        //   setPosts(response.data);
+        // }
       } catch (err) {
         if (err.response) {
-          // Got Data Error but Not in the 200 response range
+          // Got Data Error response
           console.log(err.response.data.message);
           console.log(err.response.data);
           console.log(err.response.status);
           console.log(err.response.headers);
         } else {
-          //No Data Error, if (err.code === 404)
+          //Got No Data Error response, if (err.code === 404)
           console.log(`Error: ${err.message}`);
         }
       }
     };
+
     fetchPosts();
   }, []);
 
@@ -8318,7 +8322,7 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>162. Blog App - Update Data with Axios</summary>
+  <summary>52. Blog App - Update Data with Axios</summary>
 
 App.js:
 
