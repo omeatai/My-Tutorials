@@ -7886,6 +7886,9 @@ export default axios.create({ baseURL: "http://localhost:3500" });
 
 # Fetch Data with Axios
 
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e3737711-757f-4c4d-bb8a-6a49e8ee4ab7">
+<img width="1106" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e792aa73-1d65-4fa9-93b1-343c2453db67">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```bs
