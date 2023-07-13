@@ -7722,6 +7722,10 @@ body {
 
 # Setup data/db.json file for JSON Server and Axios
 
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c6033862-3116-47c4-a67d-393c6f61208d">
+<img width="1107" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3a6f5086-0e8a-4d98-9d69-b5d6d1265432">
+<img width="1106" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/74aab502-53fa-47a0-b7da-5519b7f369a9">
+
 # Install Axios:
 
 ```bs
@@ -7865,7 +7869,9 @@ export default App;
 
 # Setting Base URL for Axios
 
-api/posts.js
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2f8f2a8b-171f-479a-8756-0f1717bf72bd">
+
+### x-dave-gray/blogapp/src/api/posts.js:
 
 ```js
 import axios from "axios";
@@ -7880,7 +7886,7 @@ export default axios.create({ baseURL: "http://localhost:3500" });
 
 # Fetch Data with Axios
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```bs
 const handleSubmit = async (e) => {
