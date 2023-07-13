@@ -8057,8 +8057,6 @@ const handleSubmit = async (e) => {
   };
 ```
 
-App.js:
-
 ```js
 import { useState, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
@@ -8177,7 +8175,11 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>161. Blog App - Delete Data with Axios</summary>
+  <summary>51. Blog App - Delete Data with Axios</summary>
+
+# Delete Data with Axios
+
+### x-dave-gray/blogapp/src/App.js:
 
 ```bs
 const handleDelete = async (id) => {
@@ -8190,10 +8192,7 @@ const handleDelete = async (id) => {
       console.log(`Error: ${err.message}`);
     }
   };
-
 ```
-
-App.js:
 
 ```js
 import { useState, useEffect } from "react";
