@@ -8035,6 +8035,10 @@ export default App;
 
 # Post/Create Data with Axios
 
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/24f42308-5bd1-4146-9e8f-be910a5eec60">
+<img width="1106" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/43c47a2b-d019-40f5-bfe5-fff6f5941466">
+<img width="1106" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2818fb71-2202-4957-8767-c99fbfd9ea2d">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```bs
