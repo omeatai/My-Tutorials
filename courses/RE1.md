@@ -8903,6 +8903,11 @@ body {
 
 # Create useWindowSize Custom Hook
 
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b04c3380-2f74-4846-b48e-15b4e61fbbe4">
+<img width="1272" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/855bb9b4-8f10-4d10-8bd8-6f868d437cf7">
+<img width="1272" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3be88ba0-0211-45a8-9e82-59eeef2285a5">
+<img width="1272" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5160161b-d1ca-45a6-b2d2-5fdb25719caf">
+
 # Install react-icons:
 
 ```bs
