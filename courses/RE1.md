@@ -9574,6 +9574,10 @@ export default App;
 
 # Refactor Header with Context API
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/214639db-2fea-4eee-9b5f-05069da59280">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4fee8db9-3c10-4cca-a3c7-f3aaa9b3350e">
+<img width="1250" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c4f0bb70-bfbe-480a-8f9a-67ab28467f52">
+
 ### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
@@ -9775,7 +9779,9 @@ export default Header;
 # #End  </details>
 
 <details>
-  <summary>167. Blog App - Refactor Nav and Home with Context API</summary>
+  <summary>57. Blog App - Refactor Nav and Home with Context API</summary>
+
+# Refactor Nav and Home with Context API
 
 context/DataContext.js:
 
