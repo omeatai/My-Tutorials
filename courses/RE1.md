@@ -9393,7 +9393,7 @@ export default Home;
 
 #  Create Context API
 
-context/DataContext.js:
+### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
 import React, { createContext, useState, useEffect } from "react";
@@ -9407,7 +9407,7 @@ export const DataProvider = ({ children }) => {
 export default DataContext;
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
