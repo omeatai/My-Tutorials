@@ -8896,8 +8896,12 @@ body {
 
 # #End  </details>
 
++BLOG APP WITH CUSTOM HOOKS
+
 <details>
-  <summary>163. Blog App - Create useWindowSize Custom Hook</summary>
+  <summary>53. Blog App - Create useWindowSize Custom Hook</summary>
+
+# Create useWindowSize Custom Hook
 
 Install react-icons:
 
@@ -9121,7 +9125,9 @@ export default Header;
 # #End  </details>
 
 <details>
-  <summary>164. Blog App - Create useAxiosFetch Custom Hook</summary>
+  <summary>54. Blog App - Create useAxiosFetch Custom Hook</summary>
+
+# Create useAxiosFetch Custom Hook
 
 hooks/useAxiosFetch.js:
 
@@ -9374,8 +9380,12 @@ export default Home;
 
 # #End  </details>
 
++BLOG APP WITH CONTEXT API
+
 <details>
-  <summary>165. Blog App - Create Context API</summary>
+  <summary>55. Blog App - Create Context API</summary>
+
+#  Create Context API
 
 context/DataContext.js:
 
