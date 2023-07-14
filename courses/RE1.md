@@ -10277,6 +10277,14 @@ export default NewPost;
 
 # Refactor PostPage and EditPost with Context API
 
+<img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/722a1c50-bcdd-44d8-94ac-b51b859296be">
+<img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ccece9ac-ce22-480f-bc5a-88e4306924da">
+<img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5a0c1c0e-8088-4055-ae84-5863543e4d23">
+<img width="1248" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/498fdbd3-cfb0-44f1-aff8-4ddc08432f0c">
+<img width="1248" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ba221715-f4f7-4cea-99e0-679ca528ce9d">
+<img width="1248" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9f1834ff-eb1d-4f42-b61d-74df2c08dd08">
+<img width="1248" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/276b6d71-1994-4007-ada0-cc8a7e2c2b33">
+
 ### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
