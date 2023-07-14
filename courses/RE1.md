@@ -10052,6 +10052,10 @@ export default Home;
 
 # Blog App - Refactor NewPost with Context API
 
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/590f94f6-9ab9-4573-89f9-df6fe7b56399">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/626f728c-b737-4481-92dd-5c2d27c7c7e2">
+<img width="1250" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/28c8a081-fdf7-4573-8bc3-c28e95c31f83">
+
 ### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
