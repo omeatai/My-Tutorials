@@ -10043,7 +10043,9 @@ export default Home;
 # #End  </details>
 
 <details>
-  <summary>168. Blog App - Refactor NewPost with Context API</summary>
+  <summary>58. Blog App - Refactor NewPost with Context API</summary>
+
+# Blog App - Refactor NewPost with Context API
 
 context/DataContext.js:
 
