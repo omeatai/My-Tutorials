@@ -9783,7 +9783,7 @@ export default Header;
 
 # Refactor Nav and Home with Context API
 
-context/DataContext.js:
+### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
 import React, { createContext, useState, useEffect } from "react";
@@ -9888,7 +9888,7 @@ export const DataProvider = ({ children }) => {
 export default DataContext;
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import React from "react";
@@ -9969,7 +9969,7 @@ function App() {
 export default App;
 ```
 
-Nav.js:
+### x-dave-gray/blogapp/src/Nav.js:
 
 ```js
 import React, { useContext } from "react";
@@ -10009,7 +10009,7 @@ const Nav = () => {
 export default Nav;
 ```
 
-Home.js:
+### x-dave-gray/blogapp/src/Home.js:
 
 ```js
 import React, { useContext } from "react";
