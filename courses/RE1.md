@@ -8903,13 +8903,13 @@ body {
 
 # Create useWindowSize Custom Hook
 
-Install react-icons:
+# Install react-icons:
 
 ```bs
 npm i react-icons -S
 ```
 
-hooks/useWindowSize.js:
+### x-dave-gray/blogapp/src/hooks/useWindowSize.js:
 
 ```js
 import React, { useState, useEffect } from "react";
@@ -8946,7 +8946,7 @@ const useWindowSize = () => {
 export default useWindowSize;
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -9098,7 +9098,7 @@ function App() {
 export default App;
 ```
 
-Header.js:
+### x-dave-gray/blogapp/src/Header.js:
 
 ```js
 import React from "react";
