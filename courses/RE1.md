@@ -10550,6 +10550,8 @@ export default EditPost;
 <details>
   <summary>60. Blog App - Isolating Header and Footer Component State from Shared Context API</summary>
 
+# Isolating Header and Footer Component State from Shared Context API
+
 App.js:
 
 ```js
