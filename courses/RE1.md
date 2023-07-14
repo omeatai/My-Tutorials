@@ -8328,9 +8328,16 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>52. Blog App - Update Data with Axios</summary>
+  <summary>52. Blog App - Update/Edit Post with Axios</summary>
 
-# Update Data with Axios
+# Update/Edit Post with Axios
+
+<img width="971" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c66b0892-3d93-43f0-905d-09705d462412">
+<img width="1105" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f37240e0-43ea-4724-8b3f-a7b06fc73734">
+<img width="1105" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f5e7a2f6-b464-4fe4-a829-1add12b9f01f">
+<img width="1105" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e8b02b87-da55-4fb9-a39c-4921878d81c0">
+<img width="1105" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/39dd736b-3aa9-46cf-a641-7d8cf16237cc">
+<img width="1105" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8c3060e3-8e52-4fa4-b0b7-b9de2c957539">
 
 ### x-dave-gray/blogapp/src/App.js:
 
