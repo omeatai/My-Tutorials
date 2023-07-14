@@ -9783,6 +9783,11 @@ export default Header;
 
 # Refactor Nav and Home with Context API
 
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/66acee86-e8f0-4702-a333-fcc049923188">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/740808b3-b398-453e-ac0d-76d44178ef79">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/a7496d22-4ef5-4bb3-b7d7-63584276793d">
+<img width="1249" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2561a649-8010-452f-a6fc-2b375d24cebf">
+
 ### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
