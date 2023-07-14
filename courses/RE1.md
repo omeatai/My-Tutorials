@@ -10277,7 +10277,7 @@ export default NewPost;
 
 # Refactor PostPage and EditPost with Context API
 
-context/DataContext.js:
+### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
 import React, { createContext, useState, useEffect } from "react";
@@ -10394,7 +10394,7 @@ export const DataProvider = ({ children }) => {
 export default DataContext;
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import React from "react";
@@ -10434,7 +10434,7 @@ function App() {
 export default App;
 ```
 
-PostPage.js:
+### x-dave-gray/blogapp/src/PostPage.js:
 
 ```js
 import React, { useContext } from "react";
@@ -10481,7 +10481,7 @@ const PostPage = () => {
 export default PostPage;
 ```
 
-EditPost.js:
+### x-dave-gray/blogapp/src/EditPost.js:
 
 ```js
 import React, { useEffect, useContext } from "react";
@@ -10548,7 +10548,7 @@ export default EditPost;
 # #End  </details>
 
 <details>
-  <summary>170. Blog App - Isolating Header and Footer Component State from Shared Context API</summary>
+  <summary>60. Blog App - Isolating Header and Footer Component State from Shared Context API</summary>
 
 App.js:
 
