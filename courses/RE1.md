@@ -10560,7 +10560,7 @@ export default EditPost;
 
 # Isolating Header and Footer Component State from Shared Context API
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import React from "react";
@@ -10600,7 +10600,7 @@ function App() {
 export default App;
 ```
 
-context/DataContext.js:
+### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
 import React, { createContext, useState, useEffect } from "react";
@@ -10714,7 +10714,7 @@ export const DataProvider = ({ children }) => {
 export default DataContext;
 ```
 
-Header.js:
+### x-dave-gray/blogapp/src/Header.js:
 
 ```js
 import React from "react";
@@ -10743,7 +10743,7 @@ const Header = ({ title }) => {
 export default Header;
 ```
 
-Footer.js:
+### x-dave-gray/blogapp/src/Footer.js:
 
 ```js
 import React from "react";
@@ -10763,10 +10763,12 @@ export default Footer;
 
 # #End  </details>
 
-+EASY PEASY REDUX
++BLOG APP WITH EASY PEASY REDUX
 
 <details>
-  <summary>171. Using Easy Peasy v5 for State Management</summary>
+  <summary>61. Blog App - Using Easy Peasy v5 for State Management</summary>
+
+# Using Easy Peasy v5 for State Management
 
 Install Easy Peasy:
 
@@ -10830,7 +10832,9 @@ function TodoList() {
 # #End  </details>
 
 <details>
-  <summary>172. Blog App - Create Easy Peasy store </summary>
+  <summary>62. Blog App - Create Easy Peasy store </summary>
+
+# Create Easy Peasy store
 
 Remove unused packages:
 
@@ -10929,7 +10933,9 @@ export default createStore({
 # #End  </details>
 
 <details>
-  <summary>173.  Blog App - Refactoring Index.js and App.js </summary>
+  <summary>63.  Blog App - Refactoring Index.js and App.js </summary>
+
+# Refactoring Index.js and App.js
 
 index.js:
 
