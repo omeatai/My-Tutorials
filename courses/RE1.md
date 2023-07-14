@@ -8324,7 +8324,9 @@ export default App;
 <details>
   <summary>52. Blog App - Update Data with Axios</summary>
 
-App.js:
+# Update Data with Axios
+
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { useState, useEffect } from "react";
@@ -8356,19 +8358,23 @@ function App() {
       try {
         const response = await api.get("/posts");
         setPosts(response.data);
+        // if (response && response.data) {
+        //   setPosts(response.data);
+        // }
       } catch (err) {
         if (err.response) {
-          // Got Data Error but Not in the 200 response range
+          // Got Data Error response
           console.log(err.response.data.message);
           console.log(err.response.data);
           console.log(err.response.status);
           console.log(err.response.headers);
         } else {
-          //No Data Error, if (err.code === 404)
+          //Got No Data Error response, if (err.code === 404)
           console.log(`Error: ${err.message}`);
         }
       }
     };
+
     fetchPosts();
   }, []);
 
@@ -8474,7 +8480,7 @@ function App() {
 export default App;
 ```
 
-EditPost.js:
+### x-dave-gray/blogapp/src/EditPost.js:
 
 ```js
 import React, { useEffect } from "react";
@@ -8542,7 +8548,7 @@ const EditPost = ({
 export default EditPost;
 ```
 
-PostPage.js:
+### x-dave-gray/blogapp/src/PostPage.js:
 
 ```js
 import React from "react";
@@ -8587,7 +8593,7 @@ const PostPage = ({ posts, handleDelete }) => {
 export default PostPage;
 ```
 
-index.css:
+### x-dave-gray/blogapp/src/index.css:
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
