@@ -9398,6 +9398,9 @@ export default Home;
 
 #  Create Context API
 
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/dab789fa-a85a-4cd2-b38e-055f17e78768">
+<img width="1271" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ef13f9e6-cded-4cb1-ac25-1d2082b7d37d">
+
 ### x-dave-gray/blogapp/src/context/DataContext.js:
 
 ```js
@@ -9567,7 +9570,9 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>166. Blog App - Refactor Header with Context API</summary>
+  <summary>56. Blog App - Refactor Header with Context API</summary>
+
+# Refactor Header with Context API
 
 context/DataContext.js:
 
