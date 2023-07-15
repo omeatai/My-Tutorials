@@ -11306,7 +11306,7 @@ export default NewPost;
 
 # Refactoring EditPost.js
 
-EditPost.js:
+### x-dave-gray/blogapp/src/EditPost.js:
 
 ```js
 import { useEffect } from "react";
