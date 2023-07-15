@@ -10985,7 +10985,7 @@ export default createStore({
 
 # Refactoring Index.js and App.js
 
-index.js:
+### x-dave-gray/blogapp/src/index.js:
 
 ```js
 import React from "react";
@@ -11010,7 +11010,7 @@ root.render(
 );
 ```
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import Header from "./Header";
