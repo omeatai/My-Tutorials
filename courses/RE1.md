@@ -10560,6 +10560,11 @@ export default EditPost;
 
 # Isolating Header and Footer Component State from Shared Context API
 
+<img width="970" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/bd5e60d4-a09c-4ec9-8025-5a26983c2408">
+<img width="970" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e3cb586f-c66d-4ac3-a205-69b58355a628">
+<img width="970" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/375e30db-9404-42a7-8602-fcb6d0e9592c">
+<img width="1249" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/04252edc-fa61-4b55-b1cc-38f0d485a46c">
+
 ### x-dave-gray/blogapp/src/App.js:
 
 ```js
