@@ -11241,6 +11241,9 @@ export default PostPage;
 
 # Refactoring NewPost.js
 
+<img width="1247" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/68918bc3-cdc3-4edb-a4b7-4da1945c4db6">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/960abae2-6393-474b-98b0-f449982b91ab">
+
 ### x-dave-gray/blogapp/src/NewPost.js:
 
 ```js
