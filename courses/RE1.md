@@ -10775,6 +10775,11 @@ export default Footer;
 
 # Using Easy Peasy v5 for State Management
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/74393f20-f162-463d-b863-13228f0612ce">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/62c8b5d9-ceef-43de-9716-4f2327409d51">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3313233f-d1ca-4567-8171-cc9ad54e1b4f">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/58893951-edfd-417f-98a9-136522fad77c">
+
 # Install Easy Peasy
 
 ```bs
