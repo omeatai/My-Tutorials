@@ -11137,6 +11137,7 @@ export default Nav;
 # Refactoring Home.js
 
 <img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9a2e02b6-cca1-4b3e-82f1-a134de518399">
+<img width="1251" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/bdcf0183-77db-4d21-a7f8-36711fd3bb43">
 
 ### x-dave-gray/blogapp/src/Home.js:
 
