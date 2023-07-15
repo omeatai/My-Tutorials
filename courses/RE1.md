@@ -11424,13 +11424,13 @@ export default Footer;
 
 # Deploy React App to Netlify and Github Pages
 
-Uninstall unused modules:
+# Uninstall unused modules
 
 ```bs
 npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event web-vitals
 ```
 
-Install JSON Server to Production:
+# Install JSON Server to Production
 
 ```bs
 npm i json-server -S
@@ -11440,7 +11440,7 @@ npm i json-server -S
 json-server -p 3500 -w data/db.json
 ```
 
-Setup up GIT & GitHub:
+# Setup up GIT & GitHub:
 
 ```bs
 echo "# deploy_react_blog_netlify" >> README.md
@@ -11449,12 +11449,14 @@ git add README.md OR git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/omeatai/deploy_react_blog_netlify.git
+
 OR
+
 git remote set-url origin https://github.com/omeatai/deploy_react_blog_netlify.git
 git push -u origin main
 ```
 
-For Github-Pages:
+# For Github-Pages:
 
 ```bs
 npm i gh-pages -D
@@ -11525,7 +11527,7 @@ git remote add origin https://github.com/omeatai/deploy_react_blog_gh.git
 git push -u origin main
 ```
 
-Deploy App on GitHub Pages:
+# Deploy App on GitHub Pages:
 
 ```bs
 npm run deploy
@@ -11540,7 +11542,9 @@ Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 +REACT-HOOKS
 
 <details>
-  <summary>181. Using PrevState to update React State Hooks </summary>
+  <summary>71. Using PrevState to update React State Hooks </summary>
+
+# Using PrevState to update React State Hooks
 
 Counter.js:
 
