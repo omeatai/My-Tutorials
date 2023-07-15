@@ -11434,25 +11434,29 @@ npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/
 
 ```bs
 npm i json-server -S
-```
-
-```bs
+json-server -p 3500 --watch data/db.json
 json-server -p 3500 -w data/db.json
 ```
 
-# Setup up GIT & GitHub:
+```bs
+ npx json-server -p 3500 -w data/db.json
+```
+
+# Setup GIT & GitHub:
 
 ```bs
-echo "# deploy_react_blog_netlify" >> README.md
+echo "# deploy_react_task_app" >> README.md
 git init
-git add README.md OR git add .
+git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/omeatai/deploy_react_blog_netlify.git
+git remote add origin https://github.com/omeatai/deploy_react_task_app.git
+git push -u origin main
 
 OR
 
-git remote set-url origin https://github.com/omeatai/deploy_react_blog_netlify.git
+git remote add origin https://github.com/omeatai/deploy_react_task_app.git
+git branch -M main
 git push -u origin main
 ```
 
