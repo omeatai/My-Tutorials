@@ -11072,6 +11072,8 @@ export default App;
 
 # Refactoring Nav.js
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/acaf99a4-38ba-4de9-83a0-a1c5499fa8d4">
+
 ### x-dave-gray/blogapp/src/Nav.js:
 
 ```js
