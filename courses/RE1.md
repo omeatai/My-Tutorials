@@ -11395,6 +11395,9 @@ export default EditPost;
 
 # Refactoring Footer.js
 
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/217e3b05-057d-47c9-910b-07445d960faf">
+<img width="1249" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f6e7ae23-cc45-4f37-9019-e2783b4bb946">
+
 ### x-dave-gray/blogapp/src/Footer.js:
 
 ```js
