@@ -10882,6 +10882,8 @@ export default AddTodo;
 
 # Create Easy Peasy store
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ef7a4b22-04a2-4c95-a449-907a065f73cc">
+
 # Remove unused packages
 
 ```bs
