@@ -11072,7 +11072,7 @@ export default App;
 
 # Refactoring Nav.js
 
-Nav.js:
+### x-dave-gray/blogapp/src/Nav.js:
 
 ```js
 import { Link } from "react-router-dom";
@@ -11132,7 +11132,7 @@ export default Nav;
 <details>
   <summary>65. Blog App - Refactoring Home.js</summary>
 
-# Refactoring Home.js  
+# Refactoring Home.js
 
 Home.js:
 
