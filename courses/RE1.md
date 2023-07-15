@@ -11136,7 +11136,7 @@ export default Nav;
 
 # Refactoring Home.js
 
-Home.js:
+### x-dave-gray/blogapp/src/Home.js:
 
 ```js
 import Feed from "./Feed";
@@ -11170,7 +11170,7 @@ export default Home;
 # #End  </details>
 
 <details>
-  <summary>176. Blog App - Refactoring PostPage.js</summary>
+  <summary>66. Blog App - Refactoring PostPage.js</summary>
 
 PostPage.js:
 
