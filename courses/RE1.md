@@ -11417,7 +11417,9 @@ export default Footer;
 +DEPLOY
 
 <details>
-  <summary>180. Deploy React App to Netlify and Github Pages</summary>
+  <summary>70. Deploy React App to Netlify and Github Pages</summary>
+
+# Deploy React App to Netlify and Github Pages
 
 Uninstall unused modules:
 
