@@ -11460,6 +11460,10 @@ git branch -M main
 git push -u origin main
 ```
 
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5c9b7ce8-e0ed-4404-a7f4-b4c5b25f4a36">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/dc233f08-f535-4b43-a665-8f499b007837">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/75bb3b82-c0d8-48bf-bbd0-93f41b6d40a7">
+
 # For Github-Pages:
 
 ```bs
