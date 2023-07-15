@@ -11068,7 +11068,9 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>174. Blog App - Refactoring Nav.js</summary>
+  <summary>64. Blog App - Refactoring Nav.js</summary>
+
+# Refactoring Nav.js
 
 Nav.js:
 
@@ -11128,7 +11130,7 @@ export default Nav;
 # #End  </details>
 
 <details>
-  <summary>64. Blog App - Refactoring Home.js</summary>
+  <summary>65. Blog App - Refactoring Home.js</summary>
 
 # Refactoring Home.js  
 
