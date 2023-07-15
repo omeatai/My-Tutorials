@@ -10882,25 +10882,25 @@ export default AddTodo;
 
 # Create Easy Peasy store
 
-Remove unused packages:
+# Remove unused packages
 
 ```bs
 npm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event web-vitals
 ```
 
-Install Easy Peasy v5 Redux:
+# Install Easy Peasy v5 Redux
 
 ```bs
 npm install easy-peasy
 ```
 
-Start npx server:
+# Start npx server:
 
 ```bs
 npx json-server -p 3500 -w data/db.json
 ```
 
-store.js:
+### x-dave-gray/blogapp/src/store.js:
 
 ```js
 import { createStore, action, thunk, computed } from "easy-peasy";
