@@ -11175,7 +11175,9 @@ export default Home;
 <details>
   <summary>66. Blog App - Refactoring PostPage.js</summary>
 
-PostPage.js:
+# Refactoring PostPage.js
+
+### x-dave-gray/blogapp/src/PostPage.js:
 
 ```js
 import { useParams, Link, useNavigate } from "react-router-dom";
@@ -11232,7 +11234,9 @@ export default PostPage;
 # #End  </details>
 
 <details>
-  <summary>177. Blog App - Refactoring NewPost.js</summary>
+  <summary>67. Blog App - Refactoring NewPost.js</summary>
+
+# Refactoring NewPost.js
 
 NewPost.js:
 
