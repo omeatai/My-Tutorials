@@ -11241,7 +11241,7 @@ export default PostPage;
 
 # Refactoring NewPost.js
 
-NewPost.js:
+### x-dave-gray/blogapp/src/NewPost.js:
 
 ```js
 import { useNavigate } from "react-router-dom";
@@ -11299,7 +11299,9 @@ export default NewPost;
 # #End  </details>
 
 <details>
-  <summary>178. Blog App - Refactoring EditPost.js</summary>
+  <summary>68. Blog App - Refactoring EditPost.js</summary>
+
+# Refactoring EditPost.js
 
 EditPost.js:
 
