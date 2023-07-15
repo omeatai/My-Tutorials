@@ -11177,6 +11177,9 @@ export default Home;
 
 # Refactoring PostPage.js
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2fb64ee5-a723-4d67-b3b2-263041167885">
+<img width="1247" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6cdf8638-9bd7-4fb9-8512-7c4ee7f7e8aa">
+
 ### x-dave-gray/blogapp/src/PostPage.js:
 
 ```js
