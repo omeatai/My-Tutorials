@@ -10985,6 +10985,9 @@ export default createStore({
 
 # Refactoring Index.js and App.js
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/14ec7db0-6a12-4a6d-b46e-97daf70d8753">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/53552fe8-d4d9-41af-a35c-1bf378b2e697">
+
 ### x-dave-gray/blogapp/src/index.js:
 
 ```js
@@ -11125,7 +11128,9 @@ export default Nav;
 # #End  </details>
 
 <details>
-  <summary>175. Blog App - Refactoring Home.js</summary>
+  <summary>64. Blog App - Refactoring Home.js</summary>
+
+# Refactoring Home.js  
 
 Home.js:
 
