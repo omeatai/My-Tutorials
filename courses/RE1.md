@@ -11391,9 +11391,11 @@ export default EditPost;
 # #End  </details>
 
 <details>
-  <summary>179. Blog App - Refactoring Footer.js</summary>
+  <summary>69. Blog App - Refactoring Footer.js</summary>
 
-Footer.js:
+# Refactoring Footer.js
+
+### x-dave-gray/blogapp/src/Footer.js:
 
 ```js
 import { useStoreState } from "easy-peasy";
