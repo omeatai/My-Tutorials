@@ -11609,14 +11609,17 @@ export default Counter;
 # #End  </details>
 
 <details>
-  <summary>182. useCallback Hook</summary>
-useCallback provides a memoized function.<br>
-useCallback is usually used when a function is used within a dependency array.<br>
-The 'sum' function makes the dependencies of useEffect Hook change on every render.
-Move it inside the useEffect callback.
-Alternatively, wrap the definition of 'sum' in its own useCallback() Hook.<br>
+  <summary>72. useCallback Hook</summary>
 
-Example 1:
+# useCallback Hook
+
+- useCallback provides a memoized function.
+- useCallback is usually used when a function is used within a dependency array.
+- The 'sum' function makes the dependencies of useEffect Hook change on every render.
+- Move it inside the useEffect callback.
+- Alternatively, wrap the definition of 'sum' in its own useCallback() Hook.
+
+# Example 1:
 
 ```js
 import { useState, useEffect, useCallback } from "react";
@@ -11651,7 +11654,7 @@ const Input = () => {
 export default Input;
 ```
 
-Example 2:
+# Example 2:
 
 ```js
 import { useState, useEffect, useCallback } from "react";
@@ -11686,7 +11689,7 @@ const Input = () => {
 export default Input;
 ```
 
-UseCallback.js:
+### UseCallback.js:
 
 ```js
 import { useState, useEffect, useCallback } from "react";
@@ -11722,7 +11725,7 @@ const App = () => {
 export default App;
 ```
 
-Input.css:
+### Input.css:
 
 ```css
 * {
@@ -11777,7 +11780,9 @@ input {
 # #End  </details>
 
 <details>
-  <summary>183. useMemo Hook</summary>
+  <summary>73. useMemo Hook</summary>
+
+# useMemo Hook
 
 useMemo provides a memorized result.
 
