@@ -11306,6 +11306,9 @@ export default NewPost;
 
 # Refactoring EditPost.js
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/48d9383c-93c4-412f-89d8-86bba818aa0e">
+<img width="1249" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b9d99e8b-41d0-4fc4-880e-bb7e5ec2c6a0">
+
 ### x-dave-gray/blogapp/src/EditPost.js:
 
 ```js
