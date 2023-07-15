@@ -10770,34 +10770,36 @@ export default Footer;
 
 # Using Easy Peasy v5 for State Management
 
-Install Easy Peasy:
+# Install Easy Peasy
 
 ```bs
 npm install easy-peasy
 ```
 
-Create your store -
+# Create your store
 
-store.js:
+### x-dave-gray/blogapp/src/store.js:
 
 ```js
 import { createStore, action } from "easy-peasy";
 
-const store = createStore({
+export const store = createStore({
   todos: ["Create store", "Wrap application", "Use store"],
+
   addTodo: action((state, payload) => {
     state.todos.push(payload);
   }),
 });
 ```
 
-Wrap your application -
+# Wrap your application
 
-App.js:
+### x-dave-gray/blogapp/src/App.js:
 
 ```js
 import { StoreProvider } from "easy-peasy";
 import { store } from "./store";
+import TodoList from "./TodoList";
 
 function App() {
   return (
@@ -10806,27 +10808,61 @@ function App() {
     </StoreProvider>
   );
 }
+
+export default App;
 ```
 
-Use the store state in your components -
+# Use the store state in your components
 
-TodoList.js:
+### x-dave-gray/blogapp/src/TodoList.js:
 
 ```js
 import { useStoreState, useStoreActions } from "easy-peasy";
+import AddTodo from "./AddTodo";
 
 function TodoList() {
   const todos = useStoreState((state) => state.todos);
   const addTodo = useStoreActions((actions) => actions.addTodo);
+
   return (
     <div>
       {todos.map((todo, idx) => (
-        <div key={idx}>{todo}</div>
+        <div key={idx}>
+          <h2>{todo}</h2>
+        </div>
       ))}
       <AddTodo onAdd={addTodo} />
     </div>
   );
 }
+
+export default TodoList;
+```
+
+### x-dave-gray/blogapp/src/AddTodo.js:
+
+```js
+import React, { useState } from "react";
+
+const AddTodo = ({ onAdd }) => {
+  const [todo, setTodo] = useState("");
+
+  return (
+    <div>
+      <input
+        onChange={(e) => {
+          setTodo(e.target.value);
+        }}
+        type="text"
+      />
+      <button onClick={() => onAdd(todo)}>Add Item</button>
+
+      <div>{todo}</div>
+    </div>
+  );
+};
+
+export default AddTodo;
 ```
 
 # #End  </details>
