@@ -11554,8 +11554,6 @@ Go to https://omeatai.github.io/deploy_react_blog_gh to view site.
 
 # Using PrevState to update React State Hooks
 
-Counter.js:
-
 ```js
 import React, { useState } from "react";
 
@@ -11610,6 +11608,11 @@ export default Counter;
 
 <details>
   <summary>72. useCallback Hook</summary>
+
+# Referential Equality
+
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e379b602-25be-489b-af51-d42df311afd6">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1b8b3c39-1da9-467e-9b72-0ce952d94ab0">  
 
 # useCallback Hook
 
@@ -11689,7 +11692,7 @@ const Input = () => {
 export default Input;
 ```
 
-### UseCallback.js:
+# Example 3:
 
 ```js
 import { useState, useEffect, useCallback } from "react";
@@ -11725,7 +11728,7 @@ const App = () => {
 export default App;
 ```
 
-### Input.css:
+### Index.css:
 
 ```css
 * {
