@@ -12083,6 +12083,9 @@ input {
 - useRef value persists (stays the same btw renders.
 - A change in useRef value does not trigger a rerender.
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/cf56c225-6dff-4166-a81b-fd033af83483">
+<img width="1178" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/fba6347f-2ff7-4a8d-af69-8e11e8dd1fe3">
+
 # Example 1:
 
 ```js
