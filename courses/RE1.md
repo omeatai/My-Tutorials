@@ -1,4 +1,4 @@
-### [RE1-REACT TUTORIAL - DAVE GRAY](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
+### [RE1-REACT & NODE TUTORIAL - DAVE GRAY](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
 
 <details>
   <summary>1. Create React App</summary>
