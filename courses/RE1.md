@@ -12295,6 +12295,9 @@ input {
 
 # useReducer Hook
 
+<img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/251f5da9-88ad-458f-843a-6ba74c353fc5">
+<img width="1177" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f4916527-57ca-4b48-ba4a-dff264d2bb21">
+
 # Example 1:
 
 ```js
