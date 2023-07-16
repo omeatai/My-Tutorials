@@ -11828,9 +11828,89 @@ input {
 
 # useMemo Hook
 
-useMemo provides a memorized result.
+- useMemo provides a memorized result.
 
-UseMemo.js:
+### x-dave-gray/react-hooks/src/App.js:
+
+```js
+import UseMemo from "./Memo";
+
+function App() {
+  return (
+    <div className="App">
+      <UseMemo />
+    </div>
+  );
+}
+
+export default App;
+```
+
+### x-dave-gray/react-hooks/src/Memo.js:
+
+# Example 1 (Without useMemo):
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c1abf3c6-849b-4cae-b883-5d62d8af8bb4">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/24e2c53d-66d2-4bcf-9a53-21916accaaae">
+
+```js
+import { useState, useEffect, useCallback } from "react";
+
+const UseMemo = () => {
+  const [userNumber, setUserNumber] = useState("");
+  const [randomInput, setRandomInput] = useState("");
+
+  const fib = useCallback((n) => {
+    return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+  }, []);
+
+  const getArray = () => {
+    for (let i = 0; i < 1000000000; i++) {
+      //do something expensive
+    }
+    return ["Dave", "Gray"];
+  };
+
+  const fibNumber = fib(userNumber);
+
+  const myArray = getArray();
+
+  useEffect(() => {
+    console.log("new number");
+    console.log("my Array");
+  }, [fibNumber, fib, myArray]);
+
+  return (
+    <main className="App">
+      <label>Fibonacci Sequence: </label>
+      <input
+        type="number"
+        value={userNumber}
+        placeholder="Position"
+        onChange={(e) => setUserNumber(e.target.value)}
+      />
+      <p>Number: {fibNumber || "--"}</p>
+      <br />
+      <br />
+      <label>Random Input: </label>
+      <input
+        type="text"
+        value={randomInput}
+        placeholder="Random Input"
+        onChange={(e) => setRandomInput(e.target.value)}
+      />
+      <p>{randomInput}</p>
+    </main>
+  );
+};
+
+export default UseMemo;
+```
+
+# Example 2:
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5a35b2f0-c4f3-4f59-ace3-cf50f513af26">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/001321b1-9494-4b9f-833a-9fc2babc7674">
 
 ```js
 import { useCallback } from "react";
@@ -11886,6 +11966,8 @@ const UseMemo = () => {
 
 export default UseMemo;
 ```
+
+# Example 3:
 
 ```js
 import { useState, useEffect, useMemo, useCallback } from "react";
