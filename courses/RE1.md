@@ -12821,6 +12821,10 @@ button {
 <details>
   <summary>79. Node - Introduction </summary>
 
+# Node - Introduction
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/328bbab0-7318-4f9d-9b5b-9b62f1fc245d">
+
 # Install and Check Node Version
 
 ```jsbs
@@ -12830,17 +12834,17 @@ nvm ls
 node -v
 ```
 
-# Run Node Server
-
-```jsbs
-node server
-```
-
 ### server.js:
 
 ```js
 console.log("Hello world!");
 console.log(global);
+```
+
+# Run Node Server
+
+```jsbs
+node server
 ```
 
 ### output:
@@ -12887,6 +12891,8 @@ console.log(global);
 
 # OS Object, dirname and filename
 
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1b7304d1-08e9-408a-a488-d661fd1d4147">
+
 ### server.js:
 
 ```js
@@ -12915,7 +12921,9 @@ console.log(10, os.uptime());
 // console.log(os.totalmem());
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node server
 ```
 
@@ -12943,9 +12951,11 @@ node server
 # #End </details>
 
 <details>
-  <summary>3. The Path Object</summary>
+  <summary>81. Node - The Path Object</summary>
 
-# Path Object
+# The Path Object
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7e9e3fde-7314-47bb-82ec-e175f5b9b441">
 
 ### server.js:
 
@@ -12962,7 +12972,9 @@ console.log(5, path.extname(__filename));
 console.log(6, path.parse(__filename));
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node server
 ```
 
@@ -12987,9 +12999,12 @@ node server
 # #End </details>
 
 <details>
-  <summary>4. Export Modules </summary>
+  <summary>82. Node - Export Modules </summary>
 
 # Export Modules Object
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0d555cbd-4161-46d3-8b39-6108aa763842">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/047052e0-1935-4e71-be4d-ecef590ee968">
 
 ### math.js:
 
@@ -13021,7 +13036,9 @@ console.log(multiply(3, 2));
 console.log(divide(3, 2));
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node server
 ```
 
@@ -13037,15 +13054,20 @@ node server
 # #End </details>
 
 <details>
-  <summary>63. Read File - fs.readFile()</summary>
+  <summary>83. Node - Read File with fs.readFile()</summary>
 
-files/starter.txt:
+# Read File fs.readFile()
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9bef1b9c-65cc-47a3-b4b1-ecb5c6667318">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1be14a09-a251-4f34-a489-85fa3961b841">
+
+### x-dave-gray/node-app/files/starter.txt:
 
 ```txt
 Hello, my name is Ifeanyi.
 ```
 
-index.js:
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13063,9 +13085,13 @@ process.on("uncaughtException", (err) => {
 });
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // Hello, my name is Ifeanyi.
@@ -13074,9 +13100,14 @@ node index
 # #End </details>
 
 <details>
-  <summary>64. Read File with Path Module - fs.readFile()</summary>
+  <summary>84. Node - Read File with path.join() and fs.readFile() </summary>
 
-files/starter.txt:
+# Read File with path.join() and fs.readFile()
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/76e62665-d552-4eb3-8f0a-1c0a394f2a7a">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/72deaf06-a161-4a26-b2a6-ebc946b988e2">
+
+### x-dave-gray/node-app/files/starter.txt:
 
 ```txt
 Hello, my name is Ifeanyi.
@@ -13105,9 +13136,13 @@ process.on("uncaughtException", (err) => {
 });
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // Hello, my name is Ifeanyi.
@@ -13116,9 +13151,14 @@ node index
 # #End </details>
 
 <details>
-  <summary>65. Write File - fs.writeFile()</summary>
+  <summary>85. Node - Write File with fs.writeFile() </summary>
 
-index.js:
+# Write File with fs.writeFile()  
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8e4f295b-9fbe-4abe-85d8-e23f29980f3e">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ed62ebfe-3500-4f52-ae6d-1c72a51b2ef1">
+
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13140,9 +13180,13 @@ process.on("uncaughtException", (err) => {
 });
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // Write Complete.
@@ -13151,9 +13195,14 @@ node index
 # #End </details>
 
 <details>
-  <summary>66. Update File - fs.appendFile()</summary>
+  <summary>86. Node - Update File with fs.appendFile()</summary>
 
-index.js:
+# Update File with fs.appendFile()
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/cab4e172-d5b4-486d-94b5-65dbf0d921ed">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c587d78f-a7b0-40d7-8dbf-b0c403a9aa77">
+
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13175,9 +13224,13 @@ process.on("uncaughtException", (err) => {
 });
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // Append Complete.
@@ -13186,7 +13239,7 @@ node index
 # #End </details>
 
 <details>
-  <summary>67. Write + Update File Sync order</summary>
+  <summary>87. Write + Update File Sync order</summary>
 
 index.js:
 
