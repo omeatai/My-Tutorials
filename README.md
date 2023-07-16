@@ -28,7 +28,7 @@
 
 ### [RE1-REACT & NODE TUTORIAL - DAVE GRAY](/courses/RE1.md)
 
-### [RE2-MERN TUTORIAL - DAVE GRAY](/courses/RE2.md)
+### [RE2-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/RE2.md)
 
 ### [RE3-JAVASCRIPT COURSE - DAVE GRAY](/courses/RE3.md)
 
