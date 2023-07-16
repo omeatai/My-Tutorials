@@ -1,4 +1,4 @@
-### [D1-REACT TUTORIAL - DAVE GRAY](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
+### [RE1-REACT TUTORIAL - DAVE GRAY](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
 
 <details>
   <summary>1. Create React App</summary>
@@ -12813,7 +12813,16 @@ button {
 
 # #End  </details>
 
-+AUTHENTICATION
+
++NODE
+
+<details>
+  <summary>79. React Form - Create Register Component with Custom Validation</summary>
+
+# #End  </details>
+
+
++REACT AUTHENTICATION
 
 <details>
   <summary>79. React Form - Create Register Component with Custom Validation</summary>
