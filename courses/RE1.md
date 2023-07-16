@@ -19863,7 +19863,7 @@ module.exports = verifyRoles;
 
 # #End </details>
 
-+DEPLOY
++DEPLOY REACT
 
 <details>
   <summary>129. Deploy Node Server to Glitch </summary>
