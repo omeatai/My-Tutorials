@@ -12076,9 +12076,14 @@ input {
 # #End  </details>
 
 <details>
-  <summary>184. useRef Hook</summary>
+  <summary>74. useRef Hook</summary>
 
-UseRef.js:
+# useRef Hook  
+
+- useRef value persists (stays the same btw renders.
+- A change in useRef value does not trigger a rerender.
+
+# Example 1:
 
 ```js
 import { useState, useRef } from "react";
@@ -12149,6 +12154,8 @@ const UseRef = () => {
 export default UseRef;
 ```
 
+# Example 2:
+
 ```js
 import { useState, useRef } from "react";
 
@@ -12218,7 +12225,7 @@ function UseRef() {
 export default UseRef;
 ```
 
-Index.css:
+# Index.css:
 
 ```css
 * {
