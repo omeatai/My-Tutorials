@@ -11419,7 +11419,7 @@ export default Footer;
 
 # #End  </details>
 
-+DEPLOY
++DEPLOY REACT
 
 <details>
   <summary>70. Deploy React App to Netlify and Github Pages</summary>
