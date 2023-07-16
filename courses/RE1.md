@@ -11612,7 +11612,7 @@ export default Counter;
 # Referential Equality
 
 <img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e379b602-25be-489b-af51-d42df311afd6">
-<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1b8b3c39-1da9-467e-9b72-0ce952d94ab0">  
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1b8b3c39-1da9-467e-9b72-0ce952d94ab0">
 
 # useCallback Hook
 
@@ -12078,7 +12078,7 @@ input {
 <details>
   <summary>74. useRef Hook</summary>
 
-# useRef Hook  
+# useRef Hook
 
 - useRef value persists (stays the same btw renders.
 - A change in useRef value does not trigger a rerender.
@@ -12291,9 +12291,11 @@ input {
 # #End  </details>
 
 <details>
-  <summary>185. useReducer Hook</summary>
+  <summary>75. useReducer Hook</summary>
 
-UseReducer.js:
+# useReducer Hook
+
+# Example 1:
 
 ```js
 import { useReducer } from "react";
@@ -12356,7 +12358,7 @@ const UseReducer = () => {
 export default UseReducer;
 ```
 
-Index.css:
+# Index.css:
 
 ```css
 * {
@@ -12420,12 +12422,15 @@ input {
 # #End  </details>
 
 <details>
-  <summary>186. useLayoutEffect Hook</summary>
+  <summary>76. useLayoutEffect Hook</summary>
 
-useLayoutEffect is Synchorous, which means it will delay running the DOM to the browser until it has concluded its operation; unlike useEffect, which is Asynchronous and will allow changes to the DOM while processing its operation.
-useLayoutEffect denies the user from observing changes to state on the browser unlike useEffect which makes the changes noticable on the browser.
+# useLayoutEffect Hook
 
-UseLayoutEffect.js:
+- useLayoutEffect is Synchorous, which means it will delay running the DOM to the browser until it has concluded its operation;
+- unlike useEffect, which is Asynchronous, it will allow changes to the DOM while processing its operation.
+- useLayoutEffect denies the user from observing changes to state on the browser unlike useEffect which makes the changes noticable on the browser.
+
+# Example 1:
 
 ```js
 import { useState, useRef, useEffect, useLayoutEffect } from "react";
@@ -12469,7 +12474,7 @@ function UseLayoutEffect() {
 export default UseLayoutEffect;
 ```
 
-Index.css:
+# Index.css:
 
 ```css
 * {
@@ -12533,11 +12538,13 @@ p {
 # #End  </details>
 
 <details>
-  <summary>187. useImperativeHandle Hook</summary>
+  <summary>77. useImperativeHandle Hook</summary>
 
-useImperativeHandle enables the Child state to be changed by the Parent. It calls a function from the Parent component that is defined in the Child component.
+# useImperativeHandle Hook
 
-UseImperativeHandle.js:
+- useImperativeHandle enables the Child state to be changed by the Parent. It calls a function from the Parent component that is defined in the Child component.
+
+# UseImperativeHandle.js:
 
 ```js
 import { useRef } from "react";
@@ -12564,7 +12571,7 @@ function UseImperativeHandle() {
 export default UseImperativeHandle;
 ```
 
-Modal.js:
+# Modal.js:
 
 ```js
 import { forwardRef, useImperativeHandle, useState } from "react";
@@ -12591,7 +12598,7 @@ const Modal = (props, ref) => {
 export default forwardRef(Modal);
 ```
 
-Index.css:
+# Index.css:
 
 ```css
 * {
@@ -12672,9 +12679,11 @@ p {
 # #End  </details>
 
 <details>
-  <summary>188. useTransition vs useDeferredValue</summary>
+  <summary>78. useTransition vs useDeferredValue</summary>
 
-App.js:
+# useTransition vs useDeferredValue
+
+# App.js:
 
 ```js
 import Example1 from "./Example1";
@@ -12687,7 +12696,7 @@ const App = () => {
 export default App;
 ```
 
-Example1.js:
+# Example 1:
 
 ```js
 import { useState, useTransition, useDeferredValue } from "react";
@@ -12728,7 +12737,7 @@ const Example1 = () => {
 export default Example1;
 ```
 
-Example2.js:
+# Example2 :
 
 ```js
 import { useDeferredValue, useState, useTransition, useEffect } from "react";
@@ -12777,7 +12786,7 @@ const Example2 = () => {
 export default Example2;
 ```
 
-Index.css:
+# Index.css:
 
 ```css
 body {
@@ -12804,7 +12813,9 @@ button {
 +AUTHENTICATION
 
 <details>
-  <summary>189. React Form - Create Register Component with Custom Validation</summary>
+  <summary>79. React Form - Create Register Component with Custom Validation</summary>
+
+# Create Register Component with Custom Validation
 
 App.js:
 
