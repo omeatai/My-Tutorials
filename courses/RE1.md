@@ -13174,15 +13174,17 @@ button {
 # #End  </details>
 
 <details>
-  <summary>190. React Form - Handle Submit with Axios to Register Inputs</summary>
+  <summary>80. React Form - Handle Submit with Axios to Register Inputs</summary>
 
-Install Axios:
+# Handle Submit with Axios to Register Inputs:
+
+# Install Axios:
 
 ```bs
 npm install axios -S
 ```
 
-api/axios.js:
+### x-dave-gray/react-auth/src/api/axios.js:
 
 ```js
 import axios from "axios";
@@ -13192,7 +13194,7 @@ export default axios.create({
 });
 ```
 
-App.js:
+### x-dave-gray/react-auth/src/App.js:
 
 ```js
 import Register from "./Register";
@@ -13208,7 +13210,7 @@ function App() {
 export default App;
 ```
 
-Register.js:
+### x-dave-gray/react-auth/src/Register.js:
 
 ```js
 import React, { useRef, useState, useEffect } from "react";
@@ -13467,9 +13469,9 @@ const Register = () => {
 export default Register;
 ```
 
-Add React Frontend to Node backend Server -
+# Add React Frontend to Node backend Server -
 
-allowedOrigins.js:
+### allowedOrigins.js (in backend server):
 
 ```js
 const allowedOrigins = [
@@ -13482,13 +13484,7 @@ const allowedOrigins = [
 module.exports = allowedOrigins;
 ```
 
-Run Node.js Server:
-
-```bs
-npm run dev
-```
-
-index.css:
+### x-dave-gray/react-auth/src/index.css:
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
@@ -13611,7 +13607,9 @@ button {
 # #End  </details>
 
 <details>
-  <summary>191. React Form - Create User Login Component </summary>
+  <summary>81. React Form - Create User Login Component </summary>
+
+# Create User Login Component   
 
 App.js:
 
