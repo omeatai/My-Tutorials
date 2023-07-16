@@ -12819,7 +12819,7 @@ button {
 +NODE INTRODUCTION
 
 <details>
-  <summary>1. Introduction </summary>
+  <summary>79. Node - Introduction </summary>
 
 # Install and Check Node Version
 
@@ -12827,22 +12827,20 @@ button {
 nvm install <version>
 nvm use <version>
 nvm ls
-
 node -v
 ```
 
 # Run Node Server
 
+```jsbs
+node server
+```
+
 ### server.js:
 
 ```js
 console.log("Hello world!");
-
 console.log(global);
-```
-
-```jsbs
-node server
 ```
 
 ### output:
@@ -12885,7 +12883,7 @@ node server
 # #End </details>
 
 <details>
-  <summary>2. The OS Object, dirname and filename </summary>
+  <summary>80. Node - The OS Object, dirname and filename </summary>
 
 # OS Object, dirname and filename
 
