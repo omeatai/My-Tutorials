@@ -13176,7 +13176,10 @@ button {
 <details>
   <summary>80. React Form - Handle Submit with Axios to Register Inputs</summary>
 
-# Handle Submit with Axios to Register Inputs:
+# Handle Submit with Axios to Register Inputs
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8562bebf-bb49-465d-8d14-690693dcea54">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7ab439a9-b2ac-4079-b145-c06289dcedf7">
 
 # Install Axios:
 
