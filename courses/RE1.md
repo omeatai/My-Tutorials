@@ -11622,7 +11622,48 @@ export default Counter;
 - Move it inside the useEffect callback.
 - Alternatively, wrap the definition of 'sum' in its own useCallback() Hook.
 
-# Example 1:
+# Example 1 (no useCallback):
+
+<img width="962" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3c117618-3ba3-428d-a986-e0140f1eab0f">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2f187652-7480-45bd-8458-bf1fa6ecaf36">
+
+```js
+import { useState, useEffect } from "react";
+
+const Input = () => {
+  const [userInput, setUserInput] = useState("");
+  const [result, setResult] = useState(0);
+  const [num1] = useState(4);
+  const [num2] = useState(5);
+
+  const sum = () => num1 + num2;
+
+  useEffect(() => {
+    console.log(`New sum. Value: ${sum()}`);
+    setResult(sum());
+  }, [sum]);
+
+  return (
+    <main className="App">
+      <input
+        type="text"
+        placeholder="input"
+        value={userInput}
+        onChange={(e) => setUserInput(e.target.value)}
+      />
+      <h1>Output: {userInput || "--"}</h1>
+      <h2>{result}</h2>
+    </main>
+  );
+};
+
+export default Input;
+```
+
+# Example 2:
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b83c332a-991a-4d38-8911-8e54a835dcf6">
+<img width="1177" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0faaa15c-84ff-4ee0-ab8e-21806177b5f9">
 
 ```js
 import { useState, useEffect, useCallback } from "react";
@@ -11641,7 +11682,7 @@ const Input = () => {
   }, [sum]);
 
   return (
-    <main className="Input">
+    <main className="App">
       <input
         type="text"
         placeholder="input"
@@ -11657,7 +11698,7 @@ const Input = () => {
 export default Input;
 ```
 
-# Example 2:
+# Example 3:
 
 ```js
 import { useState, useEffect, useCallback } from "react";
@@ -11692,7 +11733,7 @@ const Input = () => {
 export default Input;
 ```
 
-# Example 3:
+# Example 4:
 
 ```js
 import { useState, useEffect, useCallback } from "react";
