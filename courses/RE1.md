@@ -13239,9 +13239,14 @@ node index
 # #End </details>
 
 <details>
-  <summary>87. Write + Update File Sync order</summary>
+  <summary>87. Node - Write + Update (Append) File Sync order</summary>
 
-index.js:
+# Write + Update File Sync order
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2bd8b530-f1ca-47e0-a702-99c6e99467e8">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/075f0590-dee1-45c3-9af7-9712b5596f1e">
+
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13274,29 +13279,30 @@ process.on("uncaughtException", (err) => {
 });
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // Write Complete.
 // Append Complete.
 ```
 
-files/reply.txt:
-
-```txt
-Nice to meet you Bob!
-
-You really have a great car!
-```
-
 # #End </details>
 
 <details>
-  <summary>68. Write + Update + Rename File Sync order</summary>
+  <summary>88. Node - Write + Update + Rename File Sync order</summary>
 
-index.js:
+# Write + Update + Rename File Sync order
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/afa736d9-d332-424b-bbff-2e19377e0487">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e04243e1-72fe-4330-b9ce-3399230c52aa">
+
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13339,9 +13345,13 @@ process.on("uncaughtException", (err) => {
 });
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // Write Complete.
@@ -13349,26 +13359,23 @@ node index
 // Rename Complete.
 ```
 
-files/newReply.txt:
-
-```txt
-Nice to meet you Bob!
-
-You really have a great car!
-```
-
 # #End </details>
 
 <details>
-  <summary>69. Read File with Promises</summary>
+  <summary>89. Node - Read File with Promises</summary>
 
-starter.txt:
+# Read File with Promises
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f54a4295-5de6-419a-baf9-7c45e7843b96">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c2af22a1-eb7c-47cf-b46a-8b6337a77f52">
+
+### x-dave-gray/node-app/files/starter.txt:
 
 ```txt
 Hello, my name is Ifeanyi.
 ```
 
-index.js:
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fsPromises = require("fs").promises;
@@ -13389,9 +13396,13 @@ const fileOps = async () => {
 fileOps();
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // Hello, my name is Ifeanyi.
@@ -13400,15 +13411,20 @@ node index
 # #End </details>
 
 <details>
-  <summary>70. Read + Delete + Write + Update + Rename File with Promises</summary>
+  <summary>90. Node - Read + Delete + Write + Update + Rename File with Promises</summary>
 
-starter.txt:
+# Read + Delete + Write + Update + Rename File with Promises
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/409a25d1-5472-4001-8542-bc5366f86e4e">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/958c35b7-d1c1-4ab1-baea-12fe8c1eab1d">
+
+### x-dave-gray/node-app/files/starter.txt:
 
 ```txt
 Hello, my name is Ifeanyi.
 ```
 
-index.js:
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fsPromises = require("fs").promises;
@@ -13460,9 +13476,13 @@ const fileOps = async () => {
 fileOps();
 ```
 
-```bs
+# Run Node Server
+
+```jsbs
 node index
 ```
+
+### output:
 
 ```js
 // #### OLD ####
@@ -13471,14 +13491,6 @@ node index
 // Hello, my name is Ifeanyi.
 //
 // Nice to meet you.
-```
-
-files/promiseComplete.txt:
-
-```txt
-Hello, my name is Ifeanyi.
-
-Nice to meet you.
 ```
 
 # #End </details>
