@@ -1181,9 +1181,9 @@ export default LineItem;
 # #End  </details>
 
 <details>
-  <summary>11. Controlled Input - Add Items with React Forms </summary>
+  <summary>11. Controlled Input - Add Items with React Auths </summary>
 
-# Add Items with React Forms
+# Add Items with React Auths
 
 <img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/082a9e01-2931-4329-8dcc-9800fe8dcfb1">
 <img width="978" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/cb3acfad-a2f2-4032-bdc6-b73e005fc8a9">
@@ -12817,15 +12817,7128 @@ button {
 +NODE
 
 <details>
-  <summary>79. React Form - Create Register Component with Custom Validation</summary>
+  <summary>1. Introduction </summary>
 
-# #End  </details>
+# Install and Check Node Version
 
+```jsbs
+nvm install <version>
+nvm use <version>
+nvm ls
 
-+REACT AUTHENTICATION
+node -v
+```
+
+# Run Node Server
+
+### server.js:
+
+```js
+console.log("Hello world!");
+
+console.log(global);
+```
+
+```jsbs
+node server
+```
+
+### output:
+
+```js
+// Hello world!
+//
+// <ref *1> Object [global] {
+//   global: [Circular *1],
+//   clearInterval: [Function: clearInterval],
+//   clearTimeout: [Function: clearTimeout],
+//   setInterval: [Function: setInterval],
+//   setTimeout: [Function: setTimeout] {
+//     [Symbol(nodejs.util.promisify.custom)]: [Getter]
+//   },
+//   queueMicrotask: [Function: queueMicrotask],
+//   performance: Performance {
+//     nodeTiming: PerformanceNodeTiming {
+//       name: 'node',
+//       entryType: 'node',
+//       startTime: 0,
+//       duration: 115.58020782470703,
+//       nodeStart: 26.828166007995605,
+//       v8Start: 44.619500160217285,
+//       bootstrapComplete: 102.09924983978271,
+//       environment: 61.474082946777344,
+//       loopStart: -1,
+//       loopExit: -1,
+//       idleTime: 0
+//     },
+//     timeOrigin: 1672901956430.907
+//   },
+//   clearImmediate: [Function: clearImmediate],
+//   setImmediate: [Function: setImmediate] {
+//     [Symbol(nodejs.util.promisify.custom)]: [Getter]
+//   }
+// }
+```
+
+# #End </details>
 
 <details>
-  <summary>79. React Form - Create Register Component with Custom Validation</summary>
+  <summary>2. The OS Object, dirname and filename </summary>
+
+# OS Object, dirname and filename
+
+### server.js:
+
+```js
+const os = require("os");
+
+console.log(1, __dirname);
+console.log(2, __filename);
+
+console.log(3, os.type());
+console.log(4, os.version());
+console.log(5, os.homedir());
+
+console.log(6, os.hostname());
+console.log(7, os.platform());
+console.log(8, os.userInfo());
+console.log(9, os.release());
+console.log(10, os.uptime());
+
+// console.log(os.arch());
+// console.log(os.cpus());
+// console.log(os.endianness());
+// console.log(os.freemem());
+// console.log(os.getPriority());
+// console.log(os.loadavg());
+// console.log(os.networkInterfaces());
+// console.log(os.totalmem());
+```
+
+```bs
+node server
+```
+
+### output:
+
+```js
+// 1 /Users/ifeanyi/Desktop/SERVER/Cloud/Labs/nodeproj
+// 2 /Users/ifeanyi/Desktop/SERVER/Cloud/Labs/nodeproj/server.js
+// 3 Darwin
+// 4 Darwin Kernel Version 19.2.0: Mon Feb 19 20:36:53 PST 2020; root:xnu-4030.151.4~2
+// 5 /Users/ifeanyi
+// 6 Gmais-MacBook-Air.local
+// 7 darwin
+// 8  {
+//      uid: 503,
+//      gid: 25,
+//      username: 'ifeanyi',
+//      homedir: '/Users/ifeanyi',
+//      shell: '/bin/zsh'
+//    }
+// 9 19.4.0
+// 10 1939936
+```
+
+# #End </details>
+
+<details>
+  <summary>3. The Path Object</summary>
+
+# Path Object
+
+### server.js:
+
+```js
+const os = require("os");
+const path = require("path");
+
+console.log(1, __dirname);
+console.log(2, __filename);
+
+console.log(3, path.dirname(__filename));
+console.log(4, path.basename(__filename));
+console.log(5, path.extname(__filename));
+console.log(6, path.parse(__filename));
+```
+
+```bs
+node server
+```
+
+### output:
+
+```js
+// 1 /Users/ifeanyiomeata/Desktop/SERVER/Cloud/Labs/nodeproj
+// 2 /Users/ifeanyiomeata/Desktop/SERVER/Cloud/Labs/nodeproj/server.js
+
+// 3 /Users/ifeanyiomeata/Desktop/SERVER/Cloud/Labs/nodeproj
+// 4 server.js
+// 5 .js
+// 6 {
+//   root: '/',
+//   dir: '/Users/ifeanyiomeata/Desktop/SERVER/Cloud/Labs/nodeproj',
+//   base: 'server.js',
+//   ext: '.js',
+//   name: 'server'
+// }
+```
+
+# #End </details>
+
+<details>
+  <summary>4. Export Modules </summary>
+
+# Export Modules Object
+
+### math.js:
+
+```js
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+const divide = (a, b) => a / b;
+
+module.exports = { add, subtract, multiply, divide };
+
+// exports.add = (a, b) => a + b;
+// exports.subtract = (a, b) => a - b;
+// exports.multiply = (a, b) => a * b;
+// exports.divide = (a, b) => a / b;
+```
+
+### server.js:
+
+```js
+const os = require("os");
+const path = require("path");
+
+const { add, subtract, multiply, divide } = require("./math");
+
+console.log(add(3, 2));
+console.log(subtract(3, 2));
+console.log(multiply(3, 2));
+console.log(divide(3, 2));
+```
+
+```bs
+node server
+```
+
+### output:
+
+```js
+// 5
+// 1
+// 6
+// 1.5
+```
+
+# #End </details>
+
+<details>
+  <summary>63. Read File - fs.readFile()</summary>
+
+files/starter.txt:
+
+```txt
+Hello, my name is Ifeanyi.
+```
+
+index.js:
+
+```js
+const fs = require("fs");
+
+fs.readFile("./files/starter.txt", "utf8", (err, data) => {
+  if (err) throw err;
+  console.log(data);
+  //console.log(data.toString());
+});
+
+// exit on uncaught errors
+process.on("uncaughtException", (err) => {
+  console.error(`There was an uncaught error: ${err}`);
+  process.exit(1);
+});
+```
+
+```bs
+node index
+```
+
+```js
+// Hello, my name is Ifeanyi.
+```
+
+# #End </details>
+
+<details>
+  <summary>64. Read File with Path Module - fs.readFile()</summary>
+
+files/starter.txt:
+
+```txt
+Hello, my name is Ifeanyi.
+```
+
+index.js:
+
+```js
+const fs = require("fs");
+const path = require("path");
+
+fs.readFile(
+  path.join(__dirname, "files", "starter.txt"),
+  "utf8",
+  (err, data) => {
+    if (err) throw err;
+    console.log(data);
+    //console.log(data.toString());
+  }
+);
+
+// exit on uncaught errors
+process.on("uncaughtException", (err) => {
+  console.error(`There was an uncaught error: ${err}`);
+  process.exit(1);
+});
+```
+
+```bs
+node index
+```
+
+```js
+// Hello, my name is Ifeanyi.
+```
+
+# #End </details>
+
+<details>
+  <summary>65. Write File - fs.writeFile()</summary>
+
+index.js:
+
+```js
+const fs = require("fs");
+const path = require("path");
+
+fs.writeFile(
+  path.join(__dirname, "files", "reply.txt"),
+  "Nice to meet you!",
+  (err) => {
+    if (err) throw err;
+    console.log("Write Complete.");
+  }
+);
+
+// exit on uncaught errors
+process.on("uncaughtException", (err) => {
+  console.error(`There was an uncaught error: ${err}`);
+  process.exit(1);
+});
+```
+
+```bs
+node index
+```
+
+```js
+// Write Complete.
+```
+
+# #End </details>
+
+<details>
+  <summary>66. Update File - fs.appendFile()</summary>
+
+index.js:
+
+```js
+const fs = require("fs");
+const path = require("path");
+
+fs.appendFile(
+  path.join(__dirname, "files", "reappend.txt"),
+  "Hello, Nice to meet you Again!",
+  (err) => {
+    if (err) throw err;
+    console.log("Append Complete.");
+  }
+);
+
+// exit on uncaught errors
+process.on("uncaughtException", (err) => {
+  console.error(`There was an uncaught error: ${err}`);
+  process.exit(1);
+});
+```
+
+```bs
+node index
+```
+
+```js
+// Append Complete.
+```
+
+# #End </details>
+
+<details>
+  <summary>67. Write + Update File Sync order</summary>
+
+index.js:
+
+```js
+const fs = require("fs");
+const path = require("path");
+
+//Write File
+fs.writeFile(
+  path.join(__dirname, "files", "reply.txt"),
+  "Nice to meet you Bob!",
+  (err) => {
+    if (err) throw err;
+    console.log("Write Complete.");
+
+    //Append to File
+    fs.appendFile(
+      path.join(__dirname, "files", "reply.txt"),
+      "\n\nYou really have a great car!",
+      (err) => {
+        if (err) throw err;
+        console.log("Append Complete.");
+      }
+    );
+  }
+);
+
+// exit on uncaught errors
+process.on("uncaughtException", (err) => {
+  console.error(`There was an uncaught error: ${err}`);
+  process.exit(1);
+});
+```
+
+```bs
+node index
+```
+
+```js
+// Write Complete.
+// Append Complete.
+```
+
+files/reply.txt:
+
+```txt
+Nice to meet you Bob!
+
+You really have a great car!
+```
+
+# #End </details>
+
+<details>
+  <summary>68. Write + Update + Rename File Sync order</summary>
+
+index.js:
+
+```js
+const fs = require("fs");
+const path = require("path");
+
+//Write File
+fs.writeFile(
+  path.join(__dirname, "files", "reply.txt"),
+  "Nice to meet you Bob!",
+  (err) => {
+    if (err) throw err;
+    console.log("Write Complete.");
+
+    //Append to File
+    fs.appendFile(
+      path.join(__dirname, "files", "reply.txt"),
+      "\n\nYou really have a great car!",
+      (err) => {
+        if (err) throw err;
+        console.log("Append Complete.");
+
+        //Rename File
+        fs.rename(
+          path.join(__dirname, "files", "reply.txt"),
+          path.join(__dirname, "files", "newReply.txt"),
+          (err) => {
+            if (err) throw err;
+            console.log("Rename Complete.");
+          }
+        );
+      }
+    );
+  }
+);
+
+// exit on uncaught errors
+process.on("uncaughtException", (err) => {
+  console.error(`There was an uncaught error: ${err}`);
+  process.exit(1);
+});
+```
+
+```bs
+node index
+```
+
+```js
+// Write Complete.
+// Append Complete.
+// Rename Complete.
+```
+
+files/newReply.txt:
+
+```txt
+Nice to meet you Bob!
+
+You really have a great car!
+```
+
+# #End </details>
+
+<details>
+  <summary>69. Read File with Promises</summary>
+
+starter.txt:
+
+```txt
+Hello, my name is Ifeanyi.
+```
+
+index.js:
+
+```js
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const fileOps = async () => {
+  try {
+    const data = await fsPromises.readFile(
+      path.join(__dirname, "files", "starter.txt"),
+      "utf8"
+    );
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+fileOps();
+```
+
+```bs
+node index
+```
+
+```js
+// Hello, my name is Ifeanyi.
+```
+
+# #End </details>
+
+<details>
+  <summary>70. Read + Delete + Write + Update + Rename File with Promises</summary>
+
+starter.txt:
+
+```txt
+Hello, my name is Ifeanyi.
+```
+
+index.js:
+
+```js
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const fileOps = async () => {
+  try {
+    //Read File
+    const data = await fsPromises.readFile(
+      path.join(__dirname, "files", "starter.txt"),
+      "utf8"
+    );
+    console.log("#### OLD ####");
+    console.log(data);
+
+    //Delete old File
+    await fsPromises.unlink(path.join(__dirname, "files", "starter.txt"));
+
+    //Write new File
+    await fsPromises.writeFile(
+      path.join(__dirname, "files", "promiseWrite.txt"),
+      data
+    );
+
+    //Update new File
+    await fsPromises.appendFile(
+      path.join(__dirname, "files", "promiseWrite.txt"),
+      "\n\nNice to meet you."
+    );
+
+    //Rename new File
+    await fsPromises.rename(
+      path.join(__dirname, "files", "promiseWrite.txt"),
+      path.join(__dirname, "files", "promiseComplete.txt")
+    );
+
+    //Read the new File
+    const newData = await fsPromises.readFile(
+      path.join(__dirname, "files", "promiseComplete.txt"),
+      "utf8"
+    );
+    console.log("#### NEW ####");
+    console.log(newData);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+fileOps();
+```
+
+```bs
+node index
+```
+
+```js
+// #### OLD ####
+// Hello, my name is Ifeanyi.
+// #### NEW ####
+// Hello, my name is Ifeanyi.
+//
+// Nice to meet you.
+```
+
+files/promiseComplete.txt:
+
+```txt
+Hello, my name is Ifeanyi.
+
+Nice to meet you.
+```
+
+# #End </details>
+
+<details>
+  <summary>71. Read and Write streams for large files with DataChunks</summary>
+
+stream.js:
+
+```js
+const fs = require("fs");
+const path = require("path");
+
+const rs = fs.createReadStream(path.join(__dirname, "files", "lorem.txt"), {
+  encoding: "utf8",
+});
+const ws = fs.createWriteStream(path.join(__dirname, "files", "new-lorem.txt"));
+let count = 0;
+
+rs.on("data", (dataChunk) => {
+  try {
+    ws.write(dataChunk);
+    count += 1;
+    //   console.log(dataChunk);
+  } catch (err) {
+    console.error(err);
+  } finally {
+    console.log(`Completed Chunk: ${count}`);
+  }
+});
+```
+
+```bs
+node stream
+```
+
+```js
+// Completed Chunk: 1
+// Completed Chunk: 2
+// Completed Chunk: 3
+// Completed Chunk: 4
+// Completed Chunk: 5
+// Completed Chunk: 6
+// Completed Chunk: 7
+// Completed Chunk: 8
+// Completed Chunk: 9
+// Completed Chunk: 10
+// Completed Chunk: 11
+// Completed Chunk: 12
+// Completed Chunk: 13
+// Completed Chunk: 14
+// Completed Chunk: 15
+// Completed Chunk: 16
+// Completed Chunk: 17
+// Completed Chunk: 18
+// Completed Chunk: 19
+// Completed Chunk: 20
+// Completed Chunk: 21
+// Completed Chunk: 22
+// Completed Chunk: 23
+// Completed Chunk: 24
+// Completed Chunk: 25
+// Completed Chunk: 26
+// Completed Chunk: 27
+// Completed Chunk: 28
+// Completed Chunk: 29
+// Completed Chunk: 30
+```
+
+# #End </details>
+
+<details>
+  <summary>72. Piping Read streams to Write files </summary>
+
+stream.js:
+
+```js
+const fs = require("fs");
+const path = require("path");
+
+const rs = fs.createReadStream(path.join(__dirname, "files", "lorem.txt"), {
+  encoding: "utf8",
+});
+const ws = fs.createWriteStream(path.join(__dirname, "files", "new-lorem.txt"));
+
+try {
+  rs.pipe(ws);
+} catch (err) {
+  console.error(err);
+} finally {
+  console.log(`Completed Streaming.`);
+}
+```
+
+```bs
+node stream
+```
+
+```js
+// Completed Streaming.
+```
+
+# #End </details>
+
+<details>
+  <summary>73. Create Folder Directory</summary>
+
+index.js:
+
+```js
+const fs = require("fs");
+
+fs.mkdir("./newdir", (err) => {
+  if (err) throw err;
+  console.log("Directory created");
+});
+```
+
+```bs
+node index
+```
+
+```js
+// Directory created
+```
+
+# #End </details>
+
+<details>
+  <summary>74. Find out if Folder Directory Exists</summary>
+
+index.js:
+
+```js
+const fs = require("fs");
+
+if (!fs.existsSync("./newdir")) {
+  fs.mkdir("./newdir", (err) => {
+    if (err) throw err;
+    console.log("Directory created");
+  });
+}
+```
+
+# #End </details>
+
+<details>
+  <summary>75. Delete Folder Directory</summary>
+
+index.js:
+
+```js
+const fs = require("fs");
+
+if (fs.existsSync("./newdir")) {
+  fs.rmdir("./newdir", (err) => {
+    if (err) throw err;
+    console.log("Directory deleted successfully");
+  });
+}
+```
+
+```bs
+node index
+```
+
+```js
+// Directory deleted successfully
+```
+
+# #End </details>
+
++NPM
+
+<details>
+  <summary>76. NPM Nodemon</summary>
+
+Install Nodemon:
+
+```bs
+<!-- Global Dependency  -->
+npm install -g nodemon
+
+<!-- Production  -->
+npm install --save nodemon
+npm install -S nodemon
+
+<!-- Development -->
+npm install --save-dev nodemon
+npm install -D nodemon
+```
+
+Set Scripts-
+
+package.json:
+
+```json
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
+```
+
+Start Nodemon Server:
+
+```bs
+npm run dev
+OR
+nodemon server.js
+```
+
+```js
+// [nodemon] 2.0.20
+// [nodemon] to restart at any time, enter `rs`
+// [nodemon] watching path(s): *.*
+// [nodemon] watching extensions: js,mjs,json
+// [nodemon] starting `node server.js`
+// 5
+// 1
+// 6
+// 1.5
+// [nodemon] clean exit - waiting for changes before restart
+```
+
+# #End </details>
+
+<details>
+  <summary>77. NPM Date-fns</summary>
+
+NPM Initialization:
+
+```bs
+npm init -y
+```
+
+Setup .gitignore -
+
+.gitignore:
+
+```bs
+node_modules
+```
+
+Install date-fns:
+
+```bs
+npm install date-fns --save
+npm install date-fns --S
+```
+
+Example:
+
+```js
+import { compareAsc, format } from "date-fns";
+
+format(new Date(2014, 1, 11), "yyyy-MM-dd");
+//=> '2014-02-11'
+
+const dates = [
+  new Date(1995, 6, 2),
+  new Date(1987, 1, 11),
+  new Date(1989, 6, 10),
+];
+dates.sort(compareAsc);
+//=> [
+//   Wed Feb 11 1987 00:00:00,
+//   Mon Jul 10 1989 00:00:00,
+//   Sun Jul 02 1995 00:00:00
+// ]
+```
+
+server.js:
+
+```js
+const { format } = require("date-fns");
+
+console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss"));
+```
+
+```js
+// 20230105        15:11:20
+```
+
+# #End </details>
+
+<details>
+  <summary>78. NPM UUID</summary>
+
+Install UUID:
+
+```bs
+npm i uuid
+npm i uuid@8.3.2
+npm i uuid@latest
+```
+
+```js
+import { v4 as uuidv4 } from "uuid";
+uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+
+const { v4: uuidv4 } = require("uuid");
+uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+```
+
+server.js:
+
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss"));
+console.log(uuid());
+```
+
+```bs
+nodemon server.js
+```
+
+```js
+// 20230105        20:01:22
+// 36aee871-e2ef-4ce1-a75b-79e461ea685f
+```
+
+# #End </details>
+
+<details>
+  <summary>79. Uninstalling NPM Packages</summary>
+
+```bs
+npm uninstall nodemon -D
+npm uninstall uuid
+npm rm uuid
+```
+
+# #End </details>
+
++NODE-SERVER
+
+<details>
+  <summary>80. Node Server - Creating Node Log Events</summary>
+
+event.js:
+
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const logEvents = async (message) => {
+  const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
+  const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
+  console.log(logItem);
+  try {
+    if (!fs.existsSync(path.join(__dirname, "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "logs"));
+    }
+    await fsPromises.appendFile(
+      path.join(__dirname, "logs", "eventLog.txt"),
+      logItem
+    );
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+module.exports = logEvents;
+```
+
+index.js:
+
+```js
+const logEvents = require("./event");
+const EventEmitter = require("events");
+
+class MyEmitter extends EventEmitter {}
+
+// initialize object
+const myEmitter = new MyEmitter();
+
+// add listener for the log event
+myEmitter.on("log", (msg) => logEvents(msg));
+
+setTimeout(() => {
+  //Emit event
+  myEmitter.emit("log", "Log event emitted!");
+}, 2000);
+```
+
+```bs
+npm run dev
+```
+
+```js
+// 20230105        20:25:46        385ed21d-e060-4947-89e6-0bb2bd0e0904    Log event emitted!
+```
+
+log/eventLog.txt:
+
+```txt
+20230105	20:25:02	66da5e18-e0bf-4f20-926e-17f797e9edd4	Log event emitted!
+20230105	20:25:40	ba3759fb-c30e-4b5c-b9a4-2ce824076c00	Log event emitted!
+20230105	20:25:46	385ed21d-e060-4947-89e6-0bb2bd0e0904	Log event emitted!
+```
+
+# #End </details>
+
+<details>
+  <summary>81. Node Server - Initializing Server</summary>
+
+package.json:
+
+```json
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
+```
+
+server.js:
+
+```js
+const http = require("http");
+const path = require("path");
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+
+const logEvents = require("./logEvents");
+const EventEmitter = require("events");
+class Emitter extends EventEmitter {}
+
+// initialize object
+const myEmitter = new Emitter();
+myEmitter.on("log", (msg, fileName) => logEvents(msg, fileName));
+
+const PORT = process.env.PORT || 3500;
+
+const server = http.createServer((req, res) => {
+  console.log(req.url);
+  console.log(req.method);
+});
+
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+npm run dev
+```
+
+```bs
+> project@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Server running on port 3500
+/
+GET
+```
+
+# #End </details>
+
+<details>
+  <summary>82. Node Server - Create Node Server</summary>
+
+server.js
+
+```js
+const http = require("http");
+const path = require("path");
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+
+const logEvents = require("./logEvents");
+const EventEmitter = require("events");
+class Emitter extends EventEmitter {}
+
+// initialize object
+const myEmitter = new Emitter();
+myEmitter.on("log", (msg, fileName) => logEvents(msg, fileName));
+const PORT = process.env.PORT || 3500;
+
+const serveFile = async (filePath, contentType, response) => {
+  try {
+    const rawData = await fsPromises.readFile(
+      filePath,
+      !contentType.includes("image") ? "utf8" : ""
+    );
+    const data =
+      contentType === "application/json" ? JSON.parse(rawData) : rawData;
+    response.writeHead(filePath.includes("404.html") ? 404 : 200, {
+      "Content-Type": contentType,
+    });
+    response.end(
+      contentType === "application/json" ? JSON.stringify(data) : data
+    );
+  } catch (err) {
+    console.log(err);
+    myEmitter.emit("log", `${err.name}: ${err.message}`, "errLog.txt");
+    response.statusCode = 500;
+    response.end();
+  }
+};
+
+const server = http.createServer((req, res) => {
+  console.log(req.url);
+  console.log(req.method);
+  myEmitter.emit("log", `${req.url}\t${req.method}`, "reqLog.txt");
+
+  const extension = path.extname(req.url);
+
+  let contentType;
+
+  switch (extension) {
+    case ".css":
+      contentType = "text/css";
+      break;
+    case ".js":
+      contentType = "text/javascript";
+      break;
+    case ".json":
+      contentType = "application/json";
+      break;
+    case ".jpg":
+      contentType = "image/jpeg";
+      break;
+    case ".png":
+      contentType = "image/png";
+      break;
+    case ".txt":
+      contentType = "text/plain";
+      break;
+    default:
+      contentType = "text/html";
+  }
+
+  let filePath =
+    contentType === "text/html" && req.url === "/"
+      ? path.join(__dirname, "views", "index.html")
+      : contentType === "text/html" && req.url.slice(-1) === "/"
+      ? path.join(__dirname, "views", req.url, "index.html")
+      : contentType === "text/html"
+      ? path.join(__dirname, "views", req.url)
+      : path.join(__dirname, req.url);
+
+  // makes .html extension not required in the browser
+  if (!extension && req.url.slice(-1) !== "/") filePath += ".html";
+
+  const fileExists = fs.existsSync(filePath);
+
+  if (fileExists) {
+    serveFile(filePath, contentType, res);
+  } else {
+    switch (path.parse(filePath).base) {
+      case "old-page.html":
+        res.writeHead(301, { Location: "/new-page.html" });
+        res.end();
+        break;
+      case "www-page.html":
+        res.writeHead(301, { Location: "/" });
+        res.end();
+        break;
+      default:
+        serveFile(path.join(__dirname, "views", "404.html"), "text/html", res);
+    }
+  }
+});
+
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+logEvents.js:
+
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const logEvents = async (message, logName) => {
+  const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
+  const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
+
+  try {
+    if (!fs.existsSync(path.join(__dirname, "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "logs"));
+    }
+
+    await fsPromises.appendFile(path.join(__dirname, "logs", logName), logItem);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+module.exports = logEvents;
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+/index
+GET
+/css/style.css
+GET
+/new-page
+GET
+/css/style.css
+GET
+/img/img1.jpg
+GET
+```
+
+logs/reqLog.txt:
+
+```txt
+20230106	19:37:43	c5104bff-35f1-4346-b26c-67aee49052a0	/index	GET
+20230106	19:37:43	11d0a0bf-8c5f-43d5-9df9-a70d4b32d7ae	/css/style.css	GET
+20230106	19:38:27	c01a67e8-1255-4d21-9615-d7877282c4a5	/new-page	GET
+20230106	19:38:27	c2307b43-c81e-44ff-930c-1b0682e74232	/css/style.css	GET
+20230106	19:38:27	106b8afc-4352-4c80-bcaa-9e7434cb0bde	/img/img1.jpg	GET
+```
+
+# #End </details>
+
++EXPRESS
+
+<details>
+  <summary>83. Express - Send Simple Data to Page</summary>
+
+Install Express:
+
+```bs
+npm install express --save
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+> project@1.0.0 dev
+> nodemon server.js
+
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>84. Express - Send HTML page to render</summary>
+
+server.js
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("/", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>85. Express - Adding more routes</summary>
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("/", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>86. Express - Applying RegEx to routes </summary>
+
+"^/$|/index(.html)?" means:
+
+```bs
+^/ - it must begin with a slash
+/$ - it must end with a slash
+| - or
+/index(.html)? - it must look like /index or /index.html
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>87. Express - Redirect routes</summary>
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>88. Express - Adding Custom 404 route</summary>
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>89. Express - Next Route handlers</summary>
+
+```bs
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+loading hello.html...
+```
+
+# #End </details>
+
+<details>
+  <summary>90. Express - Chaining Route handlers</summary>
+
+```bs
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+one
+two
+three
+```
+
+# #End </details>
+
+<details>
+  <summary>91. Express - Built-in Middleware</summary>
+
+```bs
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>92. Express - Custom Middleware Logger</summary>
+
+```bs
+// custom middleware logger
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+node run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /sfd
+GET /css/style.css
+```
+
+# #End </details>
+
+<details>
+  <summary>93. Express - Custom Middleware with logEvents.js</summary>
+
+```bs
+// custom middleware logger
+app.use((req, res, next) => {
+  logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, "reqLog.txt");
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const logEvents = require("./middleware/logEvents");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use((req, res, next) => {
+  logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, "reqLog.txt");
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+middleware/logEvents.js:
+
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const logEvents = async (message, logName) => {
+  const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
+  const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
+
+  try {
+    if (!fs.existsSync(path.join(__dirname, "..", "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "..", "logs"));
+    }
+
+    await fsPromises.appendFile(
+      path.join(__dirname, "..", "logs", logName),
+      logItem
+    );
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+module.exports = logEvents;
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /
+GET /css/style.css
+```
+
+logs/reqLog.txt:
+
+```txt
+20230106	23:06:50	5eb41bdb-5938-46ec-b764-59cd9796fb4c	GET	undefined	/
+20230106	23:06:50	ac65dbd1-916a-42e2-9664-7f1ea2fc62e3	GET	undefined	/css/style.css
+```
+
+# #End </details>
+
+<details>
+  <summary>94. Express - Custom Middleware with logEvents.js (Refactored)</summary>
+
+```bs
+// custom middleware logger
+app.use(logger);
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const { logger } = require("./middleware/logEvents");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+middleware/logEvents.js:
+
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const logEvents = async (message, logName) => {
+  const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
+  const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
+
+  try {
+    if (!fs.existsSync(path.join(__dirname, "..", "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "..", "logs"));
+    }
+
+    await fsPromises.appendFile(
+      path.join(__dirname, "..", "logs", logName),
+      logItem
+    );
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const logger = (req, res, next) => {
+  logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, "reqLog.txt");
+  console.log(`${req.method} ${req.path}`);
+  next();
+};
+
+module.exports = { logger, logEvents };
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /about
+GET /css/style.css
+```
+
+logs/reqLog.txt:
+
+```txt
+20230106	23:06:50	5eb41bdb-5938-46ec-b764-59cd9796fb4c	GET	undefined	/
+20230106	23:06:50	ac65dbd1-916a-42e2-9664-7f1ea2fc62e3	GET	undefined	/css/style.css
+20230106	23:16:29	d14a07b1-fd03-4a9c-b65a-1704551b5516	GET	undefined	/about
+20230106	23:16:29	c23db065-ae38-4994-ac7a-f669fc9a60d6	GET	undefined	/css/style.css
+
+```
+
+# #End </details>
+
+<details>
+  <summary>95. Express - Third-Party Middleware (Cors)</summary>
+
+Install Cors:
+
+```bs
+npm i cors --save
+```
+
+```bs
+// Cross Origin Resource Sharing
+app.use(cors());
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors());
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+google.com -> fetch('http://localhost:3500');
+```
+
+```bs
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Server running on port 3500
+OPTIONS /
+GET /
+```
+
+log/reqLog.txt
+
+```bs
+20230106	23:06:50	5eb41bdb-5938-46ec-b764-59cd9796fb4c	GET	undefined	/
+20230106	23:06:50	ac65dbd1-916a-42e2-9664-7f1ea2fc62e3	GET	undefined	/css/style.css
+20230106	23:16:29	d14a07b1-fd03-4a9c-b65a-1704551b5516	GET	undefined	/about
+20230106	23:16:29	c23db065-ae38-4994-ac7a-f669fc9a60d6	GET	undefined	/css/style.css
+20230106	23:26:00	f45458b3-760b-417f-9652-c4f433fc0e93	OPTIONS	https://www.google.com	/
+20230106	23:26:00	dba79f61-9cc7-461c-82ab-3a23fa42a3f2	GET	https://www.google.com	/
+
+```
+
+# #End </details>
+
+<details>
+  <summary>96. Express -  Third-Party Middleware (Protected Cors with Whitelist)</summary>
+
+```bs
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+middleware/logEvents.js:
+
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const logEvents = async (message, logName) => {
+  const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
+  const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
+
+  try {
+    if (!fs.existsSync(path.join(__dirname, "..", "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "..", "logs"));
+    }
+
+    await fsPromises.appendFile(
+      path.join(__dirname, "..", "logs", logName),
+      logItem
+    );
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const logger = (req, res, next) => {
+  logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, "reqLog.txt");
+  console.log(`${req.method} ${req.path}`);
+  next();
+};
+
+module.exports = { logger, logEvents };
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>97. Express - Custom Error Handler</summary>
+
+```bs
+ if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    }
+```
+
+```bs
+//Custom Error Handler
+app.use(function (err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send(err.message);
+});
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.get("/*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+middleware/errorHandler.js:
+
+```js
+const { logEvents } = require("./logEvents");
+
+const errorHandler = (err, req, res, next) => {
+  logEvents(`${err.name}: ${err.message}`, "errLog.txt");
+  console.error(err.stack);
+  res.status(500).send(err.message);
+};
+module.exports = errorHandler;
+```
+
+middleware/logEvents.js:
+
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const logEvents = async (message, logName) => {
+  const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
+  const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
+
+  try {
+    if (!fs.existsSync(path.join(__dirname, "..", "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "..", "logs"));
+    }
+
+    await fsPromises.appendFile(
+      path.join(__dirname, "..", "logs", logName),
+      logItem
+    );
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const logger = (req, res, next) => {
+  logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, "reqLog.txt");
+  console.log(`${req.method} ${req.path}`);
+  next();
+};
+
+module.exports = { logger, logEvents };
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /
+GET /css/style.css
+```
+
+errLog.txt:
+
+```txt
+20230107	08:30:49	8b0bdd90-1ff8-41ad-b498-e77659453812	Error: Not allowed by CORS
+```
+
+reqLog.txt:
+
+```txt
+20230107	08:30:56	f1914109-16d7-48ec-bd64-3dcffb0ae53e	GET	undefined	/
+20230107	08:30:56	a1fb6427-e7a9-468a-aa01-aba9f5f93c3e	GET	undefined	/css/style.css
+```
+
+# #End </details>
+
+<details>
+  <summary>98. Express - Using app.all() for Custom 404 route</summary>
+
+```bs
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+```
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /dsfdf
+GET /css/style.css
+```
+
+# #End </details>
+
+<details>
+  <summary>99. Express - Protecting Custom 404 route</summary>
+
+```bs
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+```
+
+express.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use(express.static(path.join(__dirname, "/public")));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /dsfdf
+GET /css/style.css
+```
+
+# #End </details>
+
+<details>
+  <summary>100. Express - Creating Routes with Router for subdir</summary>
+
+routes/subdir.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const path = require("path");
+
+router.get("^/$|/index(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "views", "subdir", "index.html"));
+});
+
+router.get("/test(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "views", "subdir", "test.html"));
+});
+
+module.exports = router;
+```
+
+server.js:
+
+```bs
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+app.use("/subdir", require("./routes/subdir"));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+app.use("/subdir", require("./routes/subdir"));
+
+app.get("^/$|/index(.html)?", (req, res) => {
+  // res.sendFile("./views/index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "new-page.html"));
+});
+
+//redirect route
+app.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /subdir/index,html
+GET /subdir/css/style.css
+GET /subdir/index.html
+GET /subdir/test
+```
+
+# #End </details>
+
+<details>
+  <summary>101. Express - Creating Routes with Router for index page </summary>
+
+routes/root.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const path = require("path");
+
+router.get("^/$|/index(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "views", "index.html"));
+});
+
+router.get("/new-page(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "views", "new-page.html"));
+});
+
+//redirect route
+router.get("/old-page(.html)?", (req, res) => {
+  res.redirect(301, "/new-page.html"); //302 by default
+});
+
+module.exports = router;
+```
+
+server.js:
+
+```bs
+//Routes
+app.use("/", require("./routes/root"));
+app.use("/subdir", require("./routes/subdir"));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+//Routes
+app.use("/", require("./routes/root"));
+app.use("/subdir", require("./routes/subdir"));
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /
+GET /css/style.css
+GET /new-page
+GET /css/style.css
+GET /img/img1.jpg
+```
+
+# #End </details>
+
+<details>
+  <summary>102. Express - Creating REST API Router </summary>
+
+server.js:
+
+```bs
+//Routes
+app.use("/employees", require("./routes/api/employees"));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded data
+// in other words, form data:
+// 'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+//Routes
+app.use("/", require("./routes/root"));
+app.use("/subdir", require("./routes/subdir"));
+app.use("/employees", require("./routes/api/employees"));
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+routes/api/employees.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const data = {};
+data.employees = require("../../data/employees.json");
+
+router
+  .route("/")
+  .get((req, res) => {
+    res.json(data.employees);
+  })
+  .post((req, res) => {
+    res.json({
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+    });
+  })
+  .put((req, res) => {
+    res.json({
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+    });
+  })
+  .delete((req, res) => {
+    res.json({ id: req.body.id });
+  });
+
+router.route("/:id").get((req, res) => {
+  res.json({ id: req.params.id });
+});
+
+module.exports = router;
+```
+
+GET:
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
+```
+
+POST:
+
+Body = {"firstname":"John", "lastname":"Doe"}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+{
+  "firstname": "John",
+  "lastname": "Doe"
+}
+```
+
+PUT:
+
+Body = {"id":2, "firstname":"David"}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+{
+  "firstname": "David"
+}
+```
+
+DELETE:
+
+Body = {"id": 3}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+{
+  "id": 3
+}
+```
+
+GET:
+
+```bs
+http://localhost:3500/employees/1
+```
+
+```bs
+{
+  "id": "1"
+}
+```
+
+# #End </details>
+
+<details>
+  <summary>103. Express - Refactoring REST API to MVC Pattern </summary>
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+// app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+//Routes
+app.use("/", require("./routes/root"));
+// app.use("/subdir", require("./routes/subdir"));
+app.use("/employees", require("./routes/api/employees"));
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+config/corsOptions.js:
+
+```js
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+
+module.exports = corsOptions;
+```
+
+routes/root.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const path = require("path");
+
+router.get("^/$|/index(.html)?", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "views", "index.html"));
+});
+
+module.exports = router;
+```
+
+routes/api/employees.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const employeesController = require("../../controllers/employeesController");
+
+router
+  .route("/")
+  .get(employeesController.getAllEmployees)
+  .post(employeesController.createNewEmployee)
+  .put(employeesController.updateEmployee)
+  .delete(employeesController.deleteEmployee);
+
+router.route("/:id").get(employeesController.getEmployee);
+
+module.exports = router;
+```
+
+controllers/employeesController.js:
+
+```js
+const data = {};
+data.employees = require("../model/employees.json");
+
+//GET /employees
+const getAllEmployees = (req, res) => {
+  res.json(data.employees);
+};
+
+//POST /employees
+const createNewEmployee = (req, res) => {
+  res.json({
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+  });
+};
+
+//PUT /employees/:id
+const updateEmployee = (req, res) => {
+  res.json({
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+  });
+};
+
+//DELETE /employees/:id
+const deleteEmployee = (req, res) => {
+  res.json({ id: req.body.id });
+};
+
+//GET /employees/:id
+const getEmployee = (req, res) => {
+  res.json({ id: req.params.id });
+};
+
+module.exports = {
+  getAllEmployees,
+  createNewEmployee,
+  updateEmployee,
+  deleteEmployee,
+  getEmployee,
+};
+```
+
+model/employees.json:
+
+```js
+[
+  {
+    id: 1,
+    firstname: "Dave",
+    lastname: "Gray",
+  },
+  {
+    id: 2,
+    firstname: "John",
+    lastname: "Smith",
+  },
+];
+```
+
+# #End </details>
+
+<details>
+  <summary>104. Express - Simulating a REST API db with Controllers </summary>
+
+server.js:
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+// app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+//Routes
+app.use("/", require("./routes/root"));
+// app.use("/subdir", require("./routes/subdir"));
+app.use("/employees", require("./routes/api/employees"));
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+controllers/employeesController.js:
+
+```js
+// const data = {};
+// data.employees = require("../model/employees.json");
+
+const data = {
+  employees: require("../model/employees.json"),
+  setEmployees: function (data) {
+    this.employees = data;
+  },
+};
+
+//GET /employees
+const getAllEmployees = (req, res) => {
+  res.json(data.employees);
+};
+
+//POST /employees
+const createNewEmployee = (req, res) => {
+  const newEmployee = {
+    id: data.employees?.length
+      ? data.employees[data.employees.length - 1].id + 1
+      : 1,
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+  };
+
+  if (!newEmployee.firstname || !newEmployee.lastname) {
+    return res
+      .status(400)
+      .json({ message: "First and last names are required." });
+  }
+
+  data.setEmployees([...data.employees, newEmployee]);
+  res.status(201).json(data.employees);
+};
+
+//PUT /employees/:id
+const updateEmployee = (req, res) => {
+  const employee = data.employees.find(
+    (emp) => emp.id === parseInt(req.body.id)
+  );
+  if (!employee) {
+    return res
+      .status(400)
+      .json({ message: `Employee ID ${req.body.id} not found` });
+  }
+  if (req.body.firstname) employee.firstname = req.body.firstname;
+  if (req.body.lastname) employee.lastname = req.body.lastname;
+  const filteredArray = data.employees.filter(
+    (emp) => emp.id !== parseInt(req.body.id)
+  );
+  const unsortedArray = [...filteredArray, employee];
+  data.setEmployees(
+    unsortedArray.sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
+  );
+  res.json(data.employees);
+};
+
+//DELETE /employees/:id
+const deleteEmployee = (req, res) => {
+  const employee = data.employees.find(
+    (emp) => emp.id === parseInt(req.body.id)
+  );
+  if (!employee) {
+    return res
+      .status(400)
+      .json({ message: `Employee ID ${req.body.id} not found` });
+  }
+  const filteredArray = data.employees.filter(
+    (emp) => emp.id !== parseInt(req.body.id)
+  );
+  data.setEmployees([...filteredArray]);
+  res.json(data.employees);
+};
+
+//GET /employees/:id
+const getEmployee = (req, res) => {
+  const employee = data.employees.find(
+    (emp) => emp.id === parseInt(req.params.id)
+  );
+  if (!employee) {
+    return res
+      .status(400)
+      .json({ message: `Employee ID ${req.params.id} not found` });
+  }
+  res.json(employee);
+};
+
+module.exports = {
+  getAllEmployees,
+  createNewEmployee,
+  updateEmployee,
+  deleteEmployee,
+  getEmployee,
+};
+```
+
+```bs
+npm run dev
+```
+
+GET:
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
+```
+
+POST:
+
+Body = {"firstname":"John", "lastname": "Doe"}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  },
+  {
+    "id": 3,
+    "firstname": "John",
+    "lastname": "Doe"
+  }
+]
+```
+
+PUT:
+
+Body = {"id":2, "lastname": "Jonny"}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Jonny"
+  },
+  {
+    "id": 3,
+    "firstname": "John",
+    "lastname": "Doe"
+  }
+]
+```
+
+DELETE:
+
+Body = {"id":3}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Jonny"
+  }
+]
+```
+
+GET:
+
+```bs
+http://localhost:3500/employees/1
+```
+
+```bs
+{
+  "id": 1,
+  "firstname": "Dave",
+  "lastname": "Gray"
+}
+```
+
+# #End </details>
+
+<details>
+  <summary>105. Express - User Password Registration </summary>
+
+Install bcrypt to hash passwords:
+
+```bs
+npm install bcrypt --save
+npm i bcrypt
+```
+
+model/users.json:
+
+```js
+[];
+```
+
+server.js:
+
+```bs
+//Routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/employees", require("./routes/api/employees"));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+// app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+//Routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/employees", require("./routes/api/employees"));
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+routes/register.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const registerController = require("../controllers/registerController");
+
+router.post("/", registerController.handleNewUser);
+
+module.exports = router;
+```
+
+controllers/registerController.js:
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const fsPromises = require("fs").promises;
+const path = require("path");
+const bcrypt = require("bcrypt");
+
+const handleNewUser = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+  // check for duplicate usernames in the db
+  const duplicate = usersDB.users.find((person) => person.username === user);
+  if (duplicate) return res.sendStatus(409); //Conflict
+  try {
+    //encrypt the password
+    const hashedPwd = await bcrypt.hash(pwd, 10);
+    //store the new user
+    const newUser = { username: user, password: hashedPwd };
+    usersDB.setUsers([...usersDB.users, newUser]);
+    await fsPromises.writeFile(
+      path.join(__dirname, "..", "model", "users.json"),
+      JSON.stringify(usersDB.users)
+    );
+    console.log(usersDB.users);
+    res.status(201).json({ success: `New user ${user} created!` });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+module.exports = { handleNewUser };
+```
+
+```bs
+npm run dev
+```
+
+POST:
+
+Body = { "user": "walter1", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/register
+```
+
+```bs
+{
+  "success": "New user walter1 created!"
+}
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+POST /register
+[
+  {
+    username: 'walter1',
+    password: '$2b$10$PWehpDsejK6FpA3UNqXFCeLikAFtQG5YbtHPXKQM5/ckUN4MSAtU2'
+  }
+]
+```
+
+POST:
+
+Body = { "user": "walter2", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/register
+```
+
+```bs
+{
+  "success": "New user walter2 created!"
+}
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+POST /register
+[
+  {
+    username: 'walter1',
+    password: '$2b$10$PWehpDsejK6FpA3UNqXFCeLikAFtQG5YbtHPXKQM5/ckUN4MSAtU2'
+  },
+  {
+    username: 'walter2',
+    password: '$2b$10$J9/QhaIJO/Xhj86XzUaPBuftR/pJP/AEfbKhqw30.8/wbSkvvHKiC'
+  }
+]
+```
+
+POST:
+
+Already Exist:
+
+Body = { "user": "walter1", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/register
+```
+
+```bs
+Conflict
+```
+
+# #End </details>
+
+<details>
+  <summary>106. Express - User Password Login Authentication </summary>
+
+server.js:
+
+```bs
+//Routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+app.use("/employees", require("./routes/api/employees"));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+// app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+//Routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+app.use("/employees", require("./routes/api/employees"));
+
+// Next Route handlers
+app.get(
+  "/hello(.html)?",
+  (req, res, next) => {
+    console.log("loading hello.html...");
+    next();
+  },
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
+
+// chaining route handlers
+const one = (req, res, next) => {
+  console.log("one");
+  next();
+};
+const two = (req, res, next) => {
+  console.log("two");
+  next();
+};
+const three = (req, res) => {
+  console.log("three");
+  res.send("Finished!");
+};
+
+app.get("/chain(.html)?", [one, two, three]);
+
+//Custom 404 Page
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+//Custom Error Handler
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+routes/auth.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const authController = require("../controllers/authController");
+
+router.post("/", authController.handleLogin);
+
+module.exports = router;
+```
+
+controllers/authController.js:
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const bcrypt = require("bcrypt");
+
+const handleLogin = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+  const foundUser = usersDB.users.find((person) => person.username === user);
+  if (!foundUser) return res.sendStatus(401); //Unauthorized
+  // evaluate password
+  const match = await bcrypt.compare(pwd, foundUser.password);
+  if (match) {
+    // create JWTs
+    res.json({ success: `User ${user} is logged in!` });
+  } else {
+    res.sendStatus(401);
+  }
+};
+
+module.exports = { handleLogin };
+```
+
+```bs
+npm run dev
+```
+
+POST:
+
+Body = { "user": "walter1", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+{
+  "success": "User walter1 is logged in!"
+}
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+POST /auth
+```
+
+POST:
+
+Wrong password:
+
+Body = { "user": "walter1", "pwd": "walterpwdssss"}
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+Unauthorized
+```
+
+Wrong username:
+
+Body = { "user": "walter100", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+Unauthorized
+```
+
+# #End </details>
+
++JWT
+
+<details>
+  <summary>107. Express JWT Authentication - Creating .dotenv Secrets</summary>
+
+Install Dependencies:
+
+```bs
+npm i dotenv jsonwebtoken cookie-parser --save
+
+npm i dotenv
+npm i jsonwebtoken
+npm i cookie-parser
+```
+
+Generate Secret Keys:
+
+```bs
+node
+require("crypto").randomBytes(64).toString("Hex")
+```
+
+```js
+// f69ac98ba015a05a1043b4c9536c2b0ce47d3f1dc71dd65f96db8e5e062ad5fcbe5440fabef0ecf2475bbb869b1741f37094804dde65d1f08bcd9e762b9e6479
+// da009bd39b9455f84e4c55544587c8166b976d666bb5d7b79b3f77d0504500e02a0c01e9fe49d299acdd8d9f66df9b3258d083b38915d1a172842daacbca34f9
+```
+
+```bs
+Ctrl + c
+```
+
+.env:
+
+```bs
+ACCESS_TOKEN_SECRET=f69ac98ba015a05a1043b4c9536c2b0ce47d3f1dc71dd65f96db8e5e062ad5fcbe5440fabef0ecf2475bbb869b1741f37094804dde65d1f08bcd9e762b9e6479
+REFRESH_TOKEN_SECRET=da009bd39b9455f84e4c55544587c8166b976d666bb5d7b79b3f77d0504500e02a0c01e9fe49d299acdd8d9f66df9b3258d083b38915d1a172842daacbca34f9
+```
+
+.gitignore:
+
+```bs
+node_modules
+.env
+```
+
+# #End </details>
+
+<details>
+  <summary>108. Express JWT Authentication - Creating JWT tokens and verification at Login Authorization</summary>
+
+controllers/authController.js:
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const bcrypt = require("bcrypt");
+
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const handleLogin = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+  const foundUser = usersDB.users.find((person) => person.username === user);
+  if (!foundUser) return res.sendStatus(401); //Unauthorized
+  // evaluate password
+  const match = await bcrypt.compare(pwd, foundUser.password);
+  if (match) {
+    // create JWTs
+    const accessToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: "30s" }
+    );
+    const refreshToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.REFRESH_TOKEN_SECRET,
+      { expiresIn: "1d" }
+    );
+    // Saving refreshToken with current user
+    const otherUsers = usersDB.users.filter(
+      (person) => person.username !== foundUser.username
+    );
+    const currentUser = { ...foundUser, refreshToken };
+    usersDB.setUsers([...otherUsers, currentUser]);
+    await fsPromises.writeFile(
+      path.join(__dirname, "..", "model", "users.json"),
+      JSON.stringify(usersDB.users)
+    );
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      sameSite: "None",
+      secure: true,
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+    res.json({ accessToken });
+  } else {
+    res.sendStatus(401);
+  }
+};
+
+module.exports = { handleLogin };
+```
+
+Creating JWT verification middleware -
+
+middleware/verifyJWT.js:
+
+```js
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+
+const verifyJWT = (req, res, next) => {
+  const authHeader = req.headers["authorization"];
+  if (!authHeader) return res.sendStatus(401);
+  console.log(authHeader); // Bearer token
+  const token = authHeader.split(" ")[1];
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+    if (err) return res.sendStatus(403); //invalid token
+    req.user = decoded.username;
+    next();
+  });
+};
+
+module.exports = verifyJWT;
+```
+
+Placing verification middleware in GET Route -
+
+routes/api/employees.js:
+
+```bs
+.get(verifyJWT, employeesController.getAllEmployees)
+```
+
+```js
+const express = require("express");
+const router = express.Router();
+const employeesController = require("../../controllers/employeesController");
+const verifyJWT = require("../../middleware/verifyJWT");
+
+router
+  .route("/")
+  .get(verifyJWT, employeesController.getAllEmployees)
+  .post(employeesController.createNewEmployee)
+  .put(employeesController.updateEmployee)
+  .delete(employeesController.deleteEmployee);
+
+router.route("/:id").get(employeesController.getEmployee);
+
+module.exports = router;
+```
+
+POST:
+
+Body = { "user": "walter1", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM1NTA4MTgsImV4cCI6MTY3MzU1MDg0OH0.62Z_EOMV1FQJ7-bG84hApAWePKPkgynivA3zfXhs3KM"
+}
+```
+
+GET:
+
+Auth -> Bearer Token:
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM1NTA4MTgsImV4cCI6MTY3MzU1MDg0OH0.62Z_EOMV1FQJ7-bG84hApAWePKPkgynivA3zfXhs3KM
+```
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
+```
+
+If No Bearer Token is supplied -> 401 Unauthorized<br>
+If old Bearer Token is supplied -> 403 Forbidden (From verifyJWT middleware)<br>
+
+# #End </details>
+
+<details>
+  <summary>109. Express JWT Authentication - Protect all routes with JWT verification</summary>
+
+routes/api/employees.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const employeesController = require("../../controllers/employeesController");
+
+router
+  .route("/")
+  .get(employeesController.getAllEmployees)
+  .post(employeesController.createNewEmployee)
+  .put(employeesController.updateEmployee)
+  .delete(employeesController.deleteEmployee);
+
+router.route("/:id").get(employeesController.getEmployee);
+
+module.exports = router;
+```
+
+middleware/verifyJWT:
+
+```js
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+
+const verifyJWT = (req, res, next) => {
+  const authHeader = req.headers["authorization"];
+  if (!authHeader) return res.sendStatus(401);
+  console.log(authHeader); // Bearer token
+  const token = authHeader.split(" ")[1];
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+    if (err) return res.sendStatus(403); //invalid token
+    req.user = decoded.username;
+    next();
+  });
+};
+
+module.exports = verifyJWT;
+```
+
+server.js:
+
+```bs
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees"));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const verifyJWT = require("./middleware/verifyJWT");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+
+// routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees"));
+
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+POST:
+
+Body = {"firstname":"John", "lastname": "Doe"}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+401 Unauthorized
+```
+
+# #End </details>
+
+<details>
+  <summary>110. Express JWT Authentication -  Adding cookie parser middleware</summary>
+
+server.js:
+
+```bs
+const cookieParser = require('cookie-parser');
+
+//middleware for cookies
+app.use(cookieParser());
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const verifyJWT = require("./middleware/verifyJWT");
+const cookieParser = require("cookie-parser");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//middleware for cookies
+app.use(cookieParser());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+
+// routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees"));
+
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+# #End </details>
+
+<details>
+  <summary>111. Express JWT Authentication - Creating Refresh Token Controller and Route </summary>
+
+controller/refreshTokenController.js:
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+
+const handleRefreshToken = (req, res) => {
+  // console.log(req.cookies);
+  const cookies = req.cookies;
+  if (!cookies?.jwt) return res.sendStatus(401);
+  const refreshToken = cookies.jwt;
+
+  const foundUser = usersDB.users.find(
+    (person) => person.refreshToken === refreshToken
+  );
+  if (!foundUser) return res.sendStatus(403); //Forbidden
+  // evaluate jwt
+  jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, decoded) => {
+    if (err || foundUser.username !== decoded.username)
+      return res.sendStatus(403);
+    const accessToken = jwt.sign(
+      { username: decoded.username },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: "30s" }
+    );
+    res.json({ accessToken });
+  });
+};
+
+module.exports = { handleRefreshToken };
+```
+
+routes/refresh.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const refreshTokenController = require("../controllers/refreshTokenController");
+
+router.get("/", refreshTokenController.handleRefreshToken);
+
+module.exports = router;
+```
+
+server.js:
+
+```bs
+// routes
+app.use('/auth', require('./routes/auth'));
+app.use('/refresh', require('./routes/refresh'));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const verifyJWT = require("./middleware/verifyJWT");
+const cookieParser = require("cookie-parser");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//middleware for cookies
+app.use(cookieParser());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+
+// routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+app.use("/refresh", require("./routes/refresh"));
+
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees"));
+
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+npm run dev
+```
+
+POST:
+
+Body = { "user": "walter1", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM1OTg3MDgsImV4cCI6MTY3MzU5ODczOH0.JiNd0MtbgB1zfE6KxujV-VZtBTXnc55V8xJNV_m4aik"
+}
+```
+
+Cookies -> jwt:
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM1OTg3MDgsImV4cCI6MTY3MzY4NTEwOH0.zKPOHWMGPOyg-CGSSgQ9O6y3IGN7MDrmvQfDYU-RB8M
+```
+
+GET:
+
+```bs
+http://localhost:3500/refresh
+```
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM2MDM4NTUsImV4cCI6MTY3MzYwMzg4NX0.5wYLi2FL4bdsr8jKY7UU6Gd3hs-MaQpcSe5mYP81otA"
+}
+```
+
+# #End </details>
+
+<details>
+  <summary>112. Express JWT Authentication - Creating Logout Controller and Route </summary>
+
+controller/logoutController.js:
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const handleLogout = async (req, res) => {
+  // On client, also delete the accessToken
+
+  const cookies = req.cookies;
+  if (!cookies?.jwt) return res.sendStatus(204); //No content
+  const refreshToken = cookies.jwt;
+
+  // Is refreshToken in db?
+  const foundUser = usersDB.users.find(
+    (person) => person.refreshToken === refreshToken
+  );
+  if (!foundUser) {
+    res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+    return res.sendStatus(204);
+  }
+
+  // Delete refreshToken in db
+  const otherUsers = usersDB.users.filter(
+    (person) => person.refreshToken !== foundUser.refreshToken
+  );
+  const currentUser = { ...foundUser, refreshToken: "" };
+  usersDB.setUsers([...otherUsers, currentUser]);
+  await fsPromises.writeFile(
+    path.join(__dirname, "..", "model", "users.json"),
+    JSON.stringify(usersDB.users)
+  );
+
+  res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+  res.sendStatus(204);
+};
+
+module.exports = { handleLogout };
+```
+
+routes/logout.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const logoutController = require("../controllers/logoutController");
+
+router.get("/", logoutController.handleLogout);
+
+module.exports = router;
+```
+
+secure.js:
+
+```bs
+// routes
+app.use("/auth", require("./routes/auth"));
+app.use("/refresh", require("./routes/refresh"));
+app.use("/logout", require("./routes/logout"));
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const verifyJWT = require("./middleware/verifyJWT");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//middleware for cookies
+app.use(cookieParser());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+
+// routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+app.use("/refresh", require("./routes/refresh"));
+app.use("/logout", require("./routes/logout"));
+
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees"));
+
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+```bs
+npm run dev
+```
+
+POST:
+
+Body = { "user": "walter1", "pwd": "walterpwd"}
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM2MjU3MjEsImV4cCI6MTY3MzYyNTc1MX0.u71GPvCTREnMzLqZWY1KS6JkjsEz0hR7nWSJ1S4y91Y"
+}
+```
+
+Cookies -> jwt:
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM2MjU3MjEsImV4cCI6MTY3MzcxMjEyMX0.b-CE3NYxR3GfYnhjEVpzwev_x9GiRns91kvTgb5y0aY
+```
+
+GET:
+
+```bs
+http://localhost:3500/refresh
+```
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM2MjU3MjgsImV4cCI6MTY3MzYyNTc1OH0.yXMCjTG0ugca0Nx1HqqgAK-ZEKWNEzLSEypfV46b6c8"
+}
+```
+
+GET:
+
+```bs
+http://localhost:3500/logout
+```
+
+```bs
+204 No Content
+```
+
+Cookies -> jwt:
+
+```bs
+null
+```
+
+GET:
+
+```bs
+http://localhost:3500/refresh
+```
+
+```bs
+401 Unauthorized
+```
+
+# #End </details>
+
+<details>
+  <summary>113. Express JWT Authentication - Front-End/Back-End Modifications </summary>
+
+Use credentials option when using fetch -
+
+main.js:
+
+```bs
+credentials: 'include',
+```
+
+```js
+const sendLogin = async () => {
+  const user = document.getElementById("user").value;
+  const pwd = document.getElementById("pwd").value;
+  try {
+    const response = await fetch("http://localhost:3500/auth", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify({ user, pwd }),
+    });
+    if (!response.ok) {
+      if (response.status === 401) {
+        return await sendRefreshToken();
+      }
+    }
+    throw new Error(`${response.status} ${response.statusText}`);
+    return await response.json();
+  } catch (err) {
+    console.log(err.stack);
+    displayErr();
+  }
+};
+```
+
+Modify CORS Options config file -
+
+config/corsOptions.js:
+
+```js
+const allowedOrigins = require("./allowedOrigins");
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+
+module.exports = corsOptions;
+```
+
+config/allowedOrigins.js:
+
+```js
+const allowedOrigins = [
+  "https://www.yoursite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+
+module.exports = allowedOrigins;
+```
+
+Create credentials middleware -
+
+middleware/credentials.js:
+
+```js
+const allowedOrigins = require("../config/allowedOrigins");
+
+const credentials = (req, res, next) => {
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.header("Access-Control-Allow-Credentials", true);
+  }
+  next();
+};
+
+module.exports = credentials;
+```
+
+server.js:
+
+```bs
+const credentials = require('./middleware/credentials');
+
+// Handle options credentials check - before CORS!
+// and fetch cookies credentials requirement
+app.use(credentials);
+```
+
+```js
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const verifyJWT = require("./middleware/verifyJWT");
+const credentials = require("./middleware/credentials");
+const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+// Handle options credentials check - before CORS!
+// and fetch cookies credentials requirement
+app.use(credentials);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//middleware for cookies
+app.use(cookieParser());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+
+// routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+app.use("/refresh", require("./routes/refresh"));
+app.use("/logout", require("./routes/logout"));
+
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees"));
+
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+app.use(errorHandler);
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+Confirm sameSite and secure options in cookie creation -
+
+controller/authController.js:
+
+```bs
+res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      sameSite: "None", // None for production
+      secure: true, // true for production
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+```
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const bcrypt = require("bcrypt");
+
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const handleLogin = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+  const foundUser = usersDB.users.find((person) => person.username === user);
+  if (!foundUser) return res.sendStatus(401); //Unauthorized
+  // evaluate password
+  const match = await bcrypt.compare(pwd, foundUser.password);
+  if (match) {
+    // create JWTs
+    const accessToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: "30s" }
+    );
+    const refreshToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.REFRESH_TOKEN_SECRET,
+      { expiresIn: "1d" }
+    );
+    // Saving refreshToken with current user
+    const otherUsers = usersDB.users.filter(
+      (person) => person.username !== foundUser.username
+    );
+    const currentUser = { ...foundUser, refreshToken };
+    usersDB.setUsers([...otherUsers, currentUser]);
+    await fsPromises.writeFile(
+      path.join(__dirname, "..", "model", "users.json"),
+      JSON.stringify(usersDB.users)
+    );
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      sameSite: "None", // None for production
+      secure: true, // true for production
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+    res.json({ accessToken });
+  } else {
+    res.sendStatus(401);
+  }
+};
+
+module.exports = { handleLogin };
+```
+
+# #End </details>
+
+<details>
+  <summary>114. Authentication VS Authorization </summary>
+
+Authentication
+
+- The Process of verifying who someone is.
+- Confirm authentication with JWT
+- Allow access to API endpoints
+- Endpoints provide data resources
+
+Authorization
+
+- The Process of verifying what specific resources a user has access to.
+- Use Authorization header to restrict access
+
+User Roles & Permissions
+
+- Provide different levels of access
+- Sent in access token payload
+- Verified with middleware
+
+# #End </details>
+
+<details>
+  <summary>115. Express JWT Authorization - Create User ROLES </summary>
+
+config/role_list.js:
+
+```js
+const ROLES_LIST = {
+  Admin: 5150,
+  Editor: 1984,
+  User: 2001,
+};
+
+module.exports = ROLES_LIST;
+```
+
+model/users.json
+
+```js
+[
+  {
+    username: "dave1",
+    roles: { User: 2001 },
+    password: "$2b$10$oEbHZlazDHE1YnnJ4XdpGuGh9a/JZOO7Xe6WZtRRsSMgprxMXnKza",
+    refreshToken:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRhdmUxIiwiaWF0IjoxNjMzOTkyMjkwLCJleHAiOjE2MzQwNzg2OTB9.U85HVX_gcDZkHHSRWeo7AHfIe7q9i03dGW2ed3fHqAk",
+  },
+  {
+    username: "walt2",
+    roles: { User: 2001, Editor: 1984 },
+    password: "$2b$10$cvfmz./teMWDccIMChAxZ.HqgL3eoQGYTm1z9lGy5iRf8D7NNargC",
+    refreshToken:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQyIiwiaWF0IjoxNjMzOTkyNDU2LCJleHAiOjE2MzQwNzg4NTZ9.wRVJbN7_67JyTW9PALMWWEsO4BMkehyy5kXq6WilvWc",
+  },
+  {
+    username: "walt1",
+    roles: { User: 2001, Editor: 1984, Admin: 5150 },
+    password: "$2b$10$33Q9jtAoaXC4aUX9Bjihxum2BHG.ENB6JyoCvPjnuXpITtUd8x8/y",
+    refreshToken:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQxIiwiaWF0IjoxNjMzOTkyNTY0LCJleHAiOjE2MzQwNzg5NjR9.gE2CgbtEuqE42LeJ4dP6APmqyGTNBh53WXVyDdP47yM",
+  },
+];
+```
+
+Add Roles to User on registration -
+
+controllers/registerController.js:
+
+```bs
+//store the new user
+const newUser = {
+    "username": user,
+    "roles": { "User": 2001 },
+    "password": hashedPwd
+};
+```
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const fsPromises = require("fs").promises;
+const path = require("path");
+const bcrypt = require("bcrypt");
+
+const handleNewUser = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+  // check for duplicate usernames in the db
+  const duplicate = usersDB.users.find((person) => person.username === user);
+  if (duplicate) return res.sendStatus(409); //Conflict
+  try {
+    //encrypt the password
+    const hashedPwd = await bcrypt.hash(pwd, 10);
+    //store the new user
+    const newUser = {
+      username: user,
+      roles: { User: 2001 },
+      password: hashedPwd,
+    };
+    usersDB.setUsers([...usersDB.users, newUser]);
+    await fsPromises.writeFile(
+      path.join(__dirname, "..", "model", "users.json"),
+      JSON.stringify(usersDB.users)
+    );
+    console.log(usersDB.users);
+    res.status(201).json({ success: `New user ${user} created!` });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+module.exports = { handleNewUser };
+```
+
+Add user roles to access token at authentication -
+
+controllers/authController.js:
+
+```bs
+const roles = Object.values(foundUser.roles);
+// create JWTs
+const accessToken = jwt.sign(
+    {
+        "UserInfo": {
+            "username": foundUser.username,
+            "roles": roles
+        }
+    },
+    process.env.ACCESS_TOKEN_SECRET,
+    { expiresIn: '30s' }
+);
+```
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const bcrypt = require("bcrypt");
+
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+const fsPromises = require("fs").promises;
+const path = require("path");
+
+const handleLogin = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+  const foundUser = usersDB.users.find((person) => person.username === user);
+  if (!foundUser) return res.sendStatus(401); //Unauthorized
+  // evaluate password
+  const match = await bcrypt.compare(pwd, foundUser.password);
+  if (match) {
+    const roles = Object.values(foundUser.roles);
+    // create JWTs
+    const accessToken = jwt.sign(
+      {
+        UserInfo: {
+          username: foundUser.username,
+          roles: roles,
+        },
+      },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: "30s" }
+    );
+    const refreshToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.REFRESH_TOKEN_SECRET,
+      { expiresIn: "1d" }
+    );
+    // Saving refreshToken with current user
+    const otherUsers = usersDB.users.filter(
+      (person) => person.username !== foundUser.username
+    );
+    const currentUser = { ...foundUser, refreshToken };
+    usersDB.setUsers([...otherUsers, currentUser]);
+    await fsPromises.writeFile(
+      path.join(__dirname, "..", "model", "users.json"),
+      JSON.stringify(usersDB.users)
+    );
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      sameSite: "None",
+      secure: true,
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+    res.json({ accessToken });
+  } else {
+    res.sendStatus(401);
+  }
+};
+
+module.exports = { handleLogin };
+```
+
+Add user roles to access token when refreshed -
+
+controllers/refreshTokenController.js:
+
+```bs
+// evaluate jwt
+jwt.verify(
+    refreshToken,
+    process.env.REFRESH_TOKEN_SECRET,
+    (err, decoded) => {
+        if (err || foundUser.username !== decoded.username) return res.sendStatus(403);
+        const roles = Object.values(foundUser.roles);
+        const accessToken = jwt.sign(
+            {
+                "UserInfo": {
+                    "username": decoded.username,
+                    "roles": roles
+                }
+            },
+            process.env.ACCESS_TOKEN_SECRET,
+            { expiresIn: '30s' }
+        );
+        res.json({ accessToken })
+    }
+);
+```
+
+```js
+const usersDB = {
+  users: require("../model/users.json"),
+  setUsers: function (data) {
+    this.users = data;
+  },
+};
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+
+const handleRefreshToken = (req, res) => {
+  const cookies = req.cookies;
+  if (!cookies?.jwt) return res.sendStatus(401);
+  const refreshToken = cookies.jwt;
+
+  const foundUser = usersDB.users.find(
+    (person) => person.refreshToken === refreshToken
+  );
+  if (!foundUser) return res.sendStatus(403); //Forbidden
+  // evaluate jwt
+  jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, decoded) => {
+    if (err || foundUser.username !== decoded.username)
+      return res.sendStatus(403);
+    const roles = Object.values(foundUser.roles);
+    const accessToken = jwt.sign(
+      {
+        UserInfo: {
+          username: decoded.username,
+          roles: roles,
+        },
+      },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: "30s" }
+    );
+    res.json({ accessToken });
+  });
+};
+
+module.exports = { handleRefreshToken };
+```
+
+Update the verifyJWT middleware to include roles -
+
+middleware/verifyJWT.js:
+
+```js
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+
+const verifyJWT = (req, res, next) => {
+  const authHeader = req.headers.authorization || req.headers.Authorization;
+  if (!authHeader?.startsWith("Bearer ")) return res.sendStatus(401);
+  const token = authHeader.split(" ")[1];
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+    if (err) return res.sendStatus(403); //invalid token
+    req.user = decoded.UserInfo.username;
+    req.roles = decoded.UserInfo.roles;
+    next();
+  });
+};
+
+module.exports = verifyJWT;
+```
+
+# #End </details>
+
+<details>
+  <summary>116. Express JWT Authorization - Create verifyRoles middleware </summary>
+
+middleware/verifyRoles.js:
+
+```js
+const verifyRoles = (...allowedRoles) => {
+  return (req, res, next) => {
+    if (!req?.roles) return res.sendStatus(401);
+    const rolesArray = [...allowedRoles];
+    console.log(rolesArray);
+    console.log(req.roles);
+    const result = req.roles
+      .map((role) => rolesArray.includes(role))
+      .find((val) => val === true);
+    if (!result) return res.sendStatus(401);
+    next();
+  };
+};
+
+module.exports = verifyRoles;
+```
+
+Add verifyRoles middleware to routes -
+
+routes/api/employees.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const employeesController = require("../../controllers/employeesController");
+const ROLES_LIST = require("../../config/roles_list");
+const verifyRoles = require("../../middleware/verifyRoles");
+
+router
+  .route("/")
+  .get(employeesController.getAllEmployees)
+  .post(
+    verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),
+    employeesController.createNewEmployee
+  )
+  .put(
+    verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),
+    employeesController.updateEmployee
+  )
+  .delete(verifyRoles(ROLES_LIST.Admin), employeesController.deleteEmployee);
+
+router.route("/:id").get(employeesController.getEmployee);
+
+module.exports = router;
+```
+
+```bs
+npm run dev
+```
+
+1. Use dave1 (user) to create an Employee -
+
+POST: (Login)
+
+Body = { "user": "dave1", "pwd": "Aa$12345" }
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6ImRhdmUxIiwicm9sZXMiOlsyMDAxXX0sImlhdCI6MTY3Mzg2MzcxMCwiZXhwIjoxNjczODYzNzQwfQ.jWYqwGkmRO05oEjoKtveY8axuuxOigvFSG04_cJNudc"
+}
+```
+
+GET: (Get Employees)
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
+```
+
+POST: (Create a new Employee)
+
+Body = {"firstname":"John", "lastname": "Doe"}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+401 Unauthorized
+```
+
+dave1 is only a "user - 2001" not an "Editor - 1984" or "Admin - 5150", so he will not have authorized access to create a new Employee.
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+GET /employees
+POST /employees
+[ 5150, 1984 ]
+[ 2001 ]
+```
+
+2. Use walt2 (user & Editor) to create and Delete an Employee -
+
+POST: (Login)
+
+Body = { "user": "walt2", "pwd": "Aa$12345" }
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQyIiwicm9sZXMiOlsyMDAxLDE5ODRdfSwiaWF0IjoxNjczODY0NTY3LCJleHAiOjE2NzM4NjQ1OTd9.MLgiODweaqP8hpbM_CwITfRzMvTXWIQlF03HJYCIgRk"
+}
+```
+
+POST: (Create a new Employee)
+
+Body = {"firstname":"John", "lastname": "Doe"}
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  },
+  {
+    "id": 3,
+    "firstname": "John",
+    "lastname": "Doe"
+  }
+]
+```
+
+DELETE: (Delete Employee)
+
+Body = {"id":3}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+401 Unauthorized
+```
+
+walt2 is only a "user - 2001" and "Editor - 1984" but not an "Admin - 5150", so he will be able to create a new Employee but not have authorized access to delete an Employee.
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+DELETE /employees
+[ 5150 ]
+[ 2001, 1984 ]
+```
+
+3. Use walt1 (user, Editor & Admin) to create and Delete an Employee -
+
+POST: (Login)
+
+Body = { "user": "walt1", "pwd": "Aa$12345" }
+
+```bs
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzM4NjUyMTQsImV4cCI6MTY3Mzg2NTI0NH0.4MqeWhS8GFjCL4_H6kDfLmt8pmz_zGdt1GF3hQU8AAc"
+}
+```
+
+POST: (Create a new Employee)
+
+Body = {"firstname":"John", "lastname": "Doe"}
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  },
+  {
+    "id": 3,
+    "firstname": "John",
+    "lastname": "Doe"
+  }
+]
+```
+
+DELETE: (Delete Employee)
+
+Body = {"id":3}
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
+```
+
+walt1 has all previledges as a "user - 2001", "Editor - 1984" and "Admin - 5150", so he will be able to create a new Employee and delete an Employee.
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
+POST /employees
+[ 5150, 1984 ]
+[ 2001, 1984, 5150 ]
+DELETE /employees
+[ 5150 ]
+[ 2001, 1984, 5150 ]
+```
+
+# #End </details>
+
++MONGODB
+
+<details>
+  <summary>117. MongoDB - Connect MongoDB to Application </summary>
+
+Install Mongoose:
+
+```bs
+npm i mongoose --save
+```
+
+Connect to MongoDB from Application:
+
+```bs
+mongodb+srv://<username>:<password>@cluster1.ovf42ra.mongodb.net/?retryWrites=true&w=majority
+```
+
+```bs
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://<username>:<password>@cluster1.ovf42ra.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+```
+
+.env:
+
+```dotenv
+ACCESS_TOKEN_SECRET=f69ac98ba015a05a1043b4c9536c2b0ce47d3f1dc71dd65f96db8e5e062ad5fcbe5440fabef0ecf2475bbb869b1741f37094804dde65d1f08bcd9e762b9e6479
+REFRESH_TOKEN_SECRET=da009bd39b9455f84e4c55544587c8166b976d666bb5d7b79b3f77d0504500e02a0c01e9fe49d299acdd8d9f66df9b3258d083b38915d1a172842daacbca34f9
+DATABASE_URI=mongodb+srv://<username>:<password>@cluster1.ovf42ra.mongodb.net/<dbname>?retryWrites=true&w=majority
+```
+
+config/dbConn.js:
+
+```js
+const mongoose = require("mongoose");
+
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.DATABASE_URI, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+    });
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+module.exports = connectDB;
+```
+
+server.js:
+
+```bs
+require("dotenv").config();
+
+const mongoose = require("mongoose");
+const connectDB = require("./config/dbConn");
+
+// Connect to MongoDB
+connectDB();
+
+mongoose.connection.once("open", () => {
+  console.log("Connected to MongoDB");
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+});
+```
+
+```js
+require("dotenv").config();
+const express = require("express");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const verifyJWT = require("./middleware/verifyJWT");
+const cookieParser = require("cookie-parser");
+const credentials = require("./middleware/credentials");
+const mongoose = require("mongoose");
+const connectDB = require("./config/dbConn");
+const PORT = process.env.PORT || 3500;
+
+// Connect to MongoDB
+connectDB();
+
+// custom middleware logger
+app.use(logger);
+
+// Handle options credentials check - before CORS!
+// and fetch cookies credentials requirement
+app.use(credentials);
+
+// Cross Origin Resource Sharing
+app.use(cors(corsOptions));
+
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
+app.use(express.json());
+
+//middleware for cookies
+app.use(cookieParser());
+
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
+
+// routes
+app.use("/", require("./routes/root"));
+app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+app.use("/refresh", require("./routes/refresh"));
+app.use("/logout", require("./routes/logout"));
+
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees"));
+
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
+});
+
+app.use(errorHandler);
+
+mongoose.connection.once("open", () => {
+  console.log("Connected to MongoDB");
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+});
+```
+
+```bs
+npm run dev
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:73324) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Connected to MongoDB
+Server running on port 3500
+```
+
+# #End </details>
+
+<details>
+  <summary>118. MongoDB - Understanding Mongoose Schema </summary>
+
+```bs
+https://mongoosejs.com/
+```
+
+Defining your schema
+
+- Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
+
+- When you call mongoose.model() on a schema, Mongoose compiles a model for you.
+
+- The first argument is the singular name of the collection your model is for.
+
+- Mongoose automatically looks for the plural, lowercased version of your model name.
+
+- Thus, for the example above, the model Tank is for the tanks collection in the database.
+
+Note: The .model() function makes a copy of schema. Make sure that you've added everything you want to schema, including hooks, before calling .model()!
+
+```bs
+import mongoose from "mongoose";
+const { Schema } = mongoose;
+
+const blogSchema = new Schema({
+  title: String, // String is shorthand for {type: String}
+  author: String,
+  body: String,
+  comments: [{ body: String, date: Date }],
+  date: { type: Date, default: Date.now },
+  hidden: Boolean,
+  meta: {
+    votes: Number,
+    favs: Number,
+  },
+});
+
+module.exports = mongoose.model("Blog", blogSchema);
+```
+
+```bs
+const schema = new mongoose.Schema({ name: 'string', size: 'string' });
+const Tank = mongoose.model('Tank', schema);
+```
+
+# #End </details>
+
+<details>
+  <summary>119. MongoDB - Create Mongoose Employee Schema </summary>
+
+model/Employee.js:
+
+```js
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const employeeSchema = new Schema({
+  firstname: {
+    type: String,
+    required: true,
+  },
+  lastname: {
+    type: String,
+    required: true,
+  },
+});
+
+module.exports = mongoose.model("Employee", employeeSchema);
+```
+
+# #End </details>
+
+<details>
+  <summary>120. MongoDB - Create Mongoose User Schema </summary>
+
+model/User.js:
+
+```js
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const userSchema = new Schema({
+  username: {
+    type: String,
+    required: true,
+  },
+  roles: {
+    User: {
+      type: Number,
+      default: 2001,
+    },
+    Editor: Number,
+    Admin: Number,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  refreshToken: String,
+});
+
+module.exports = mongoose.model("User", userSchema);
+```
+
+# #End </details>
+
+<details>
+  <summary>121. MongoDB - Include Mongoose User data model in registerController  </summary>
+
+controller/registerController.js:
+
+```js
+const User = require("../model/User");
+const bcrypt = require("bcrypt");
+
+const handleNewUser = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+
+  // check for duplicate usernames in the db
+  const duplicate = await User.findOne({ username: user }).exec();
+  if (duplicate) return res.sendStatus(409); //Conflict
+
+  try {
+    //encrypt the password
+    const hashedPwd = await bcrypt.hash(pwd, 10);
+
+    //create and store the new user
+    const result = await User.create({
+      username: user,
+      password: hashedPwd,
+    });
+
+    // const newUser = new User();
+    // newUser.username = user;
+    // newUser.password = hashedPwd;
+    // const result = await newUser.save();
+
+    console.log(result);
+
+    res.status(201).json({ success: `New user ${user} created!` });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+module.exports = { handleNewUser };
+```
+
+```bs
+npm run dev
+```
+
+POST: register user 1
+
+Body = { "user": "steve1", "pwd": "Aa$12345"}
+
+```bs
+http://localhost:3500/register
+```
+
+```bs
+{
+  "success": "New user steve1 created!"
+}
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:77379) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Connected to MongoDB
+Server running on port 3500
+POST /register
+{
+  username: 'steve1',
+  roles: { User: 2001 },
+  password: '$2b$10$4Br2uwwFDIyOtQWag6KqMO7P9UhHxt2F37BiWPR8JkYyYDW96EU0G',
+  _id: new ObjectId("63c6e6dea56c2166c20704ec"),
+  __v: 0
+}
+```
+
+POST: register user 2
+
+Body = { "user": "walt1", "pwd": "Aa$12345"}
+
+```bs
+http://localhost:3500/register
+```
+
+```bs
+{
+  "success": "New user walt1 created!"
+}
+```
+
+```bs
+POST /register
+{
+  username: 'walt1',
+  roles: { User: 2001 },
+  password: '$2b$10$Bat8X9qoWpqt7..ZSkAYPOsxsTb7dXk7n/U2kfodmHIaxjyM363u.',
+  _id: new ObjectId("63c6e768a56c2166c20704ef"),
+  __v: 0
+}
+```
+
+Check Mongodb.com -> CompanyDB -> users (Manually Add Admin and Editor roles to walt1)
+
+```js
+{
+  "_id": {"$oid":"63c6e6dea56c2166c20704ec"},
+  "username":"steve1",
+  "roles":{
+    "User":{"$numberInt":"2001"}
+  },
+  "password":"$2b$10$4Br2uwwFDIyOtQWag6KqMO7P9UhHxt2F37BiWPR8JkYyYDW96EU0G",
+  "__v":{"$numberInt":"0"}
+}
+
+{
+  "_id":{"$oid":"63c6e768a56c2166c20704ef"},
+  "username":"walt1",
+  "roles":{
+    "User":{"$numberInt":"2001"},
+    "Admin":{"$numberInt":"5150"},
+    "Editor":{"$numberInt":"1984"}
+  },
+  "password":"$2b$10$Bat8X9qoWpqt7..ZSkAYPOsxsTb7dXk7n/U2kfodmHIaxjyM363u.",
+  "__v":{"$numberInt":"0"}
+}
+```
+
+# #End </details>
+
+<details>
+  <summary>122. MongoDB - Include Mongoose User data model in refreshTokenController </summary>
+
+controller/refreshTokenController.js:
+
+```js
+const User = require("../model/User");
+const jwt = require("jsonwebtoken");
+
+const handleRefreshToken = async (req, res) => {
+  const cookies = req.cookies;
+  if (!cookies?.jwt) return res.sendStatus(401);
+  const refreshToken = cookies.jwt;
+
+  const foundUser = await User.findOne({ refreshToken }).exec();
+  if (!foundUser) return res.sendStatus(403); //Forbidden
+  // evaluate jwt
+  jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, decoded) => {
+    if (err || foundUser.username !== decoded.username)
+      return res.sendStatus(403);
+    const roles = Object.values(foundUser.roles);
+    const accessToken = jwt.sign(
+      {
+        UserInfo: {
+          username: decoded.username,
+          roles: roles,
+        },
+      },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: "10s" }
+    );
+    res.json({ roles, accessToken });
+  });
+};
+
+module.exports = { handleRefreshToken };
+```
+
+# #End </details>
+
+<details>
+  <summary>123. MongoDB - Include Mongoose User data model in logoutController </summary>
+
+controller/logoutController.js:
+
+```js
+const User = require("../model/User");
+
+const handleLogout = async (req, res) => {
+  // On client, also delete the accessToken
+
+  const cookies = req.cookies;
+  if (!cookies?.jwt) return res.sendStatus(204); //No content
+  const refreshToken = cookies.jwt;
+
+  // Is refreshToken in db?
+  const foundUser = await User.findOne({ refreshToken }).exec();
+  if (!foundUser) {
+    res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+    return res.sendStatus(204);
+  }
+
+  // Delete refreshToken in db
+  foundUser.refreshToken = "";
+  const result = await foundUser.save();
+  console.log(result);
+
+  res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+  res.sendStatus(204);
+};
+
+module.exports = { handleLogout };
+```
+
+# #End </details>
+
+<details>
+  <summary>124. MongoDB - Include Mongoose User data model in authController </summary>
+
+controllers/authController.js:
+
+```js
+const User = require("../model/User");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+
+const handleLogin = async (req, res) => {
+  const { user, pwd } = req.body;
+  if (!user || !pwd)
+    return res
+      .status(400)
+      .json({ message: "Username and password are required." });
+
+  const foundUser = await User.findOne({ username: user }).exec();
+  if (!foundUser) return res.sendStatus(401); //Unauthorized
+  // evaluate password
+  const match = await bcrypt.compare(pwd, foundUser.password);
+  if (match) {
+    const roles = Object.values(foundUser.roles).filter(Boolean);
+    // create JWTs
+    const accessToken = jwt.sign(
+      {
+        UserInfo: {
+          username: foundUser.username,
+          roles: roles,
+        },
+      },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: "10s" }
+    );
+    const refreshToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.REFRESH_TOKEN_SECRET,
+      { expiresIn: "1d" }
+    );
+    // Saving refreshToken with current user
+    foundUser.refreshToken = refreshToken;
+    const result = await foundUser.save();
+    console.log(result);
+    console.log(roles);
+
+    // Creates Secure Cookie with refresh token
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "None",
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+
+    // Send authorization roles and access token to user
+    res.json({ roles, accessToken });
+  } else {
+    res.sendStatus(401);
+  }
+};
+
+module.exports = { handleLogin };
+```
+
+# #End </details>
+
+<details>
+  <summary>125. MongoDB - Testing updated Mongoose Controllers connections </summary>
+
+```bs
+npm run dev
+```
+
+POST: register user tom1
+
+Body = { "user": "tom1", "pwd": "Aa$12345"}
+
+```bs
+http://localhost:3500/register
+```
+
+```bs
+{
+  "success": "New user tom1 created!"
+}
+```
+
+```bs
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:81290) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Connected to MongoDB
+Server running on port 3500
+POST /register
+{
+  username: 'tom1',
+  roles: { User: 2001 },
+  password: '$2b$10$1CZI6p6iAb2atkkzwL/HN.WZeNVhXYN/qXwgNiv3MHV.7Bd1WDRTe',
+  _id: new ObjectId("63c7c5421388dadbeddff638"),
+  __v: 0
+}
+```
+
+POST: login user walt1
+
+Body = { "user": "walt1", "pwd": "Aa$12345"}
+
+authController.js:
+
+```bs
+ // Creates Secure Cookie with refresh token
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      secure: false, ---> Change to false in development
+      sameSite: "None",
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+```
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+{
+  "roles": [
+    2001,
+    1984,
+    5150
+  ],
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzY5MDYsImV4cCI6MTY3NDAzNjkxNn0.sqItOUNlgc2TcyQ4bMDhwn2dE1-XJev2_2uSLoZ1p_k"
+}
+```
+
+GET: refresh token for user
+
+```bs
+http://localhost:3500/refresh
+```
+
+```bs
+{
+  "roles": [
+    2001,
+    1984,
+    5150
+  ],
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzcxMDksImV4cCI6MTY3NDAzNzExOX0.MUDR3xp0NgSs6B65o4KaJvMefZcsttCRhNalWma1mNE"
+}
+```
+
+GET: logoout user
+
+```bs
+http://localhost:3500/logout
+```
+
+```bs
+204 No Content
+```
+
+```bs
+GET /logout
+{
+  roles: { User: 2001, Admin: 5150, Editor: 1984 },
+  _id: new ObjectId("63c6e768a56c2166c20704ef"),
+  username: 'walt1',
+  password: '$2b$10$Bat8X9qoWpqt7..ZSkAYPOsxsTb7dXk7n/U2kfodmHIaxjyM363u.',
+  __v: 0,
+  refreshToken: ''
+}
+```
+
+# #End </details>
+
+<details>
+  <summary>126. MongoDB - (CRUD) Include Mongoose User data model in employeesController </summary>
+
+Get all employees:
+
+```bs
+const getAllEmployees = async (req, res) => {
+  const employees = await Employee.find();
+  if (!employees)
+    return res.status(204).json({ message: "No employees found." });
+  res.json(employees);
+};
+```
+
+Create a new employee:
+
+```bs
+const createNewEmployee = async (req, res) => {
+  if (!req?.body?.firstname || !req?.body?.lastname) {
+    return res
+      .status(400)
+      .json({ message: "First and last names are required" });
+  }
+
+  try {
+    const result = await Employee.create({
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+    });
+
+    res.status(201).json(result);
+  } catch (err) {
+    console.error(err);
+  }
+};
+```
+
+Update an employee:
+
+```bs
+const updateEmployee = async (req, res) => {
+  if (!req?.body?.id) {
+    return res.status(400).json({ message: "ID parameter is required." });
+  }
+
+  const employee = await Employee.findOne({ _id: req.body.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.body.id}.` });
+  }
+  if (req.body?.firstname) employee.firstname = req.body.firstname;
+  if (req.body?.lastname) employee.lastname = req.body.lastname;
+  const result = await employee.save();
+  res.json(result);
+};
+```
+
+Delete an employee:
+
+```bs
+const deleteEmployee = async (req, res) => {
+  if (!req?.body?.id)
+    return res.status(400).json({ message: "Employee ID required." });
+
+  const employee = await Employee.findOne({ _id: req.body.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.body.id}.` });
+  }
+  const result = await employee.deleteOne(); //{ _id: req.body.id }
+  res.json(result);
+};
+```
+
+Get a single employee:
+
+```bs
+const getEmployee = async (req, res) => {
+  if (!req?.params?.id)
+    return res.status(400).json({ message: "Employee ID required." });
+
+  const employee = await Employee.findOne({ _id: req.params.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.params.id}.` });
+  }
+  res.json(employee);
+};
+```
+
+controllers/employeesController.js:
+
+```js
+const Employee = require("../model/Employee");
+
+const getAllEmployees = async (req, res) => {
+  const employees = await Employee.find();
+  if (!employees)
+    return res.status(204).json({ message: "No employees found." });
+  res.json(employees);
+};
+
+const createNewEmployee = async (req, res) => {
+  if (!req?.body?.firstname || !req?.body?.lastname) {
+    return res
+      .status(400)
+      .json({ message: "First and last names are required" });
+  }
+
+  try {
+    const result = await Employee.create({
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+    });
+
+    res.status(201).json(result);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+const updateEmployee = async (req, res) => {
+  if (!req?.body?.id) {
+    return res.status(400).json({ message: "ID parameter is required." });
+  }
+
+  const employee = await Employee.findOne({ _id: req.body.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.body.id}.` });
+  }
+  if (req.body?.firstname) employee.firstname = req.body.firstname;
+  if (req.body?.lastname) employee.lastname = req.body.lastname;
+  const result = await employee.save();
+  res.json(result);
+};
+
+const deleteEmployee = async (req, res) => {
+  if (!req?.body?.id)
+    return res.status(400).json({ message: "Employee ID required." });
+
+  const employee = await Employee.findOne({ _id: req.body.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.body.id}.` });
+  }
+  const result = await employee.deleteOne(); //{ _id: req.body.id }
+  res.json(result);
+};
+
+const getEmployee = async (req, res) => {
+  if (!req?.params?.id)
+    return res.status(400).json({ message: "Employee ID required." });
+
+  const employee = await Employee.findOne({ _id: req.params.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.params.id}.` });
+  }
+  res.json(employee);
+};
+
+module.exports = {
+  getAllEmployees,
+  createNewEmployee,
+  updateEmployee,
+  deleteEmployee,
+  getEmployee,
+};
+```
+
+# #End </details>
+
+<details>
+  <summary>127. MongoDB - Testing updated Mongoose Employee Controller </summary>
+
+```bs
+npm run dev
+```
+
+POST: login user walt1
+
+Body = { "user": "walt1", "pwd": "Aa$12345"}
+
+authController.js:
+
+```bs
+ // Creates Secure Cookie with refresh token
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      secure: false, ---> Change to false in development
+      sameSite: "None",
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+```
+
+```bs
+http://localhost:3500/auth
+```
+
+```bs
+{
+  "roles": [
+    2001,
+    1984,
+    5150
+  ],
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzkwMDAsImV4cCI6MTY3NDAzOTAxMH0.2yKx7OzrT_PpMc4zWdJxkEXllLcH432ZkAbbSWDtiSQ"
+}
+```
+
+GET: Get all Employees
+
+Bearer Token =
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzkwMDAsImV4cCI6MTY3NDAzOTAxMH0.2yKx7OzrT_PpMc4zWdJxkEXllLcH432ZkAbbSWDtiSQ
+```
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+[]
+```
+
+POST: Create a new employee
+
+Body = {"firstname":"John", "lastname": "Doe"}
+
+Bearer Token =
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzkwMDAsImV4cCI6MTY3NDAzOTAxMH0.2yKx7OzrT_PpMc4zWdJxkEXllLcH432ZkAbbSWDtiSQ
+```
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+{
+  "firstname": "John",
+  "lastname": "Doe",
+  "_id": "63c7d00ccb083a12a95cbfc5",
+  "__v": 0
+}
+```
+
+GET: Get an employee by ID
+
+Bearer Token =
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzkwMDAsImV4cCI6MTY3NDAzOTAxMH0.2yKx7OzrT_PpMc4zWdJxkEXllLcH432ZkAbbSWDtiSQ
+```
+
+```bs
+http://localhost:3500/employees/63c7d00ccb083a12a95cbfc5
+```
+
+```bs
+Status: 200 OK
+```
+
+```bs
+{
+  "_id": "63c7d00ccb083a12a95cbfc5",
+  "firstname": "John",
+  "lastname": "Doe",
+  "__v": 0
+}
+```
+
+PUT: Update an employee by ID
+
+Body = {"id": "63c7d00ccb083a12a95cbfc5", "lastname": "Brown"}
+
+Bearer Token =
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzkwMDAsImV4cCI6MTY3NDAzOTAxMH0.2yKx7OzrT_PpMc4zWdJxkEXllLcH432ZkAbbSWDtiSQ
+```
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+Status: 200 OK
+```
+
+```bs
+{
+  "_id": "63c7d00ccb083a12a95cbfc5",
+  "firstname": "John",
+  "lastname": "Brown",
+  "__v": 0
+}
+```
+
+DEL: Delete an employee by ID
+
+Body = {"id": "63c7d00ccb083a12a95cbfc5"}
+
+Bearer Token =
+
+```bs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IndhbHQxIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzQwMzkwMDAsImV4cCI6MTY3NDAzOTAxMH0.2yKx7OzrT_PpMc4zWdJxkEXllLcH432ZkAbbSWDtiSQ
+```
+
+```bs
+http://localhost:3500/employees
+```
+
+```bs
+Status: 200 OK
+```
+
+```bs
+{
+  "_id": "63c7d00ccb083a12a95cbfc5",
+  "firstname": "John",
+  "lastname": "Brown",
+  "__v": 0
+}
+```
+
+# #End </details>
+
+<details>
+  <summary>128.  MongoDB - Create User Admin routes </summary>
+
+routes/api/users.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const usersController = require("../../controllers/usersController");
+const ROLES_LIST = require("../../config/roles_list");
+const verifyRoles = require("../../middleware/verifyRoles");
+
+router
+  .route("/")
+  .get(verifyRoles(ROLES_LIST.Admin), usersController.getAllUsers)
+  .delete(verifyRoles(ROLES_LIST.Admin), usersController.deleteUser);
+
+router
+  .route("/:id")
+  .get(verifyRoles(ROLES_LIST.Admin), usersController.getUser);
+
+module.exports = router;
+```
+
+controllers/usersController.js:
+
+```js
+const User = require("../model/User");
+
+const getAllUsers = async (req, res) => {
+  const users = await User.find();
+  if (!users) return res.status(204).json({ message: "No users found" });
+  res.json(users);
+};
+
+const deleteUser = async (req, res) => {
+  if (!req?.body?.id)
+    return res.status(400).json({ message: "User ID required" });
+  const user = await User.findOne({ _id: req.body.id }).exec();
+  if (!user) {
+    return res
+      .status(204)
+      .json({ message: `User ID ${req.body.id} not found` });
+  }
+  const result = await user.deleteOne({ _id: req.body.id });
+  res.json(result);
+};
+
+const getUser = async (req, res) => {
+  if (!req?.params?.id)
+    return res.status(400).json({ message: "User ID required" });
+  const user = await User.findOne({ _id: req.params.id }).exec();
+  if (!user) {
+    return res
+      .status(204)
+      .json({ message: `User ID ${req.params.id} not found` });
+  }
+  res.json(user);
+};
+
+module.exports = {
+  getAllUsers,
+  deleteUser,
+  getUser,
+};
+```
+
+routes/api/employees.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const employeesController = require("../../controllers/employeesController");
+const ROLES_LIST = require("../../config/roles_list");
+const verifyRoles = require("../../middleware/verifyRoles");
+
+router
+  .route("/")
+  .get(employeesController.getAllEmployees)
+  .post(
+    verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),
+    employeesController.createNewEmployee
+  )
+  .put(
+    verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),
+    employeesController.updateEmployee
+  )
+  .delete(verifyRoles(ROLES_LIST.Admin), employeesController.deleteEmployee);
+
+router.route("/:id").get(employeesController.getEmployee);
+
+module.exports = router;
+```
+
+controllers/employeesController.js:
+
+```js
+const Employee = require("../model/Employee");
+
+const getAllEmployees = async (req, res) => {
+  const employees = await Employee.find();
+  if (!employees)
+    return res.status(204).json({ message: "No employees found." });
+  res.json(employees);
+};
+
+const createNewEmployee = async (req, res) => {
+  if (!req?.body?.firstname || !req?.body?.lastname) {
+    return res
+      .status(400)
+      .json({ message: "First and last names are required" });
+  }
+
+  try {
+    const result = await Employee.create({
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+    });
+
+    res.status(201).json(result);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+const updateEmployee = async (req, res) => {
+  if (!req?.body?.id) {
+    return res.status(400).json({ message: "ID parameter is required." });
+  }
+
+  const employee = await Employee.findOne({ _id: req.body.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.body.id}.` });
+  }
+  if (req.body?.firstname) employee.firstname = req.body.firstname;
+  if (req.body?.lastname) employee.lastname = req.body.lastname;
+  const result = await employee.save();
+  res.json(result);
+};
+
+const deleteEmployee = async (req, res) => {
+  if (!req?.body?.id)
+    return res.status(400).json({ message: "Employee ID required." });
+
+  const employee = await Employee.findOne({ _id: req.body.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.body.id}.` });
+  }
+  const result = await employee.deleteOne(); //{ _id: req.body.id }
+  res.json(result);
+};
+
+const getEmployee = async (req, res) => {
+  if (!req?.params?.id)
+    return res.status(400).json({ message: "Employee ID required." });
+
+  const employee = await Employee.findOne({ _id: req.params.id }).exec();
+  if (!employee) {
+    return res
+      .status(204)
+      .json({ message: `No employee matches ID ${req.params.id}.` });
+  }
+  res.json(employee);
+};
+
+module.exports = {
+  getAllEmployees,
+  createNewEmployee,
+  updateEmployee,
+  deleteEmployee,
+  getEmployee,
+};
+```
+
+config/roles_list.js:
+
+```js
+const ROLES_LIST = {
+  Admin: 5150,
+  Editor: 1984,
+  User: 2001,
+};
+
+module.exports = ROLES_LIST;
+```
+
+middleware/verifyRoles.js:
+
+```js
+const verifyRoles = (...allowedRoles) => {
+  return (req, res, next) => {
+    if (!req?.roles) return res.sendStatus(401);
+    const rolesArray = [...allowedRoles];
+    const result = req.roles
+      .map((role) => rolesArray.includes(role))
+      .find((val) => val === true);
+    if (!result) return res.sendStatus(401);
+    next();
+  };
+};
+
+module.exports = verifyRoles;
+```
+
+# #End </details>
+
++DEPLOY
+
+<details>
+  <summary>129. Deploy Node Server to Glitch </summary>
+
+Git Commands:
+
+```bs
+#Just follow next steps in console terminal ;)
+git init	#Initialize git in folder
+git add .	#add all files of folder to be pushed
+git commit -m "First commit"	#add first commit
+git remote add origin remote_repository_URL #replace with your remote repo url
+git remote -v	#verify that your remote repository url is properly found
+git branch -M main  #change main branch name to main
+git push --force origin main	#force pushing your project into github repo
+
+git remote set-url origin https://[token]@github.com/[username]/[repository]
+git remote set-url origin https://[token]@github.com/omeatai/deploy_node_server.git
+https://github.com/omeatai/deploy_node_server.git
+
+//make sure you're on the local branch, then:
+git pull origin YourRemoteBranch
+//which is the same as:
+git fetch origin YourRemoteBranch
+git merge origin/YourRemoteBranch
+
+git push origin --delete feature/login
+git push origin --delete master
+
+# Push newly created local branch to remote
+git push --set-upstream origin <branch name>
+git push --force origin main //force pushing to remote github repo
+git push -u origin new_branch
+
+github@branch/c/remote/push  (new-branch)
+git clone https://github.com/learn-git-fast/git-branch-examples.git
+cd git*
+git checkout -b new-branch
+```
+
+Create Glitch Remix Button:
+
+```bs
+[<img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" width="163px" />](https://glitch.com/edit/#!/import/github/omeatai/deploy_node_server)
+```
+
+```bs
+https://glitch.com/
+```
+
+# #End </details>
+
+<details>
+  <summary>130. sample </summary>
+
+```bs
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+```js
+
+```
+
+# #End </details>
+
++REACT AUTH
+
+<details>
+  <summary>189. React Auth - Create Register Component with Custom Validation</summary>
 
 # Create Register Component with Custom Validation
 
@@ -13183,7 +20296,7 @@ button {
 # #End  </details>
 
 <details>
-  <summary>80. React Form - Handle Submit with Axios to Register Inputs</summary>
+  <summary>190. React Auth - Handle Submit with Axios to Register Inputs</summary>
 
 # Handle Submit with Axios to Register Inputs
 
@@ -13620,9 +20733,9 @@ button {
 # #End  </details>
 
 <details>
-  <summary>81. React Form - Create User Login Component </summary>
+  <summary>191. React Auth - Create User Login Component </summary>
 
-# Create User Login Component   
+# Create User Login Component
 
 App.js:
 
@@ -13837,7 +20950,7 @@ button {
 # #End  </details>
 
 <details>
-  <summary>192. React Form - Handle Submit to Login Input </summary>
+  <summary>192. React Auth - Handle Submit to Login Input </summary>
 
 Login.js:
 
@@ -13935,7 +21048,7 @@ export default Login;
 # #End  </details>
 
 <details>
-  <summary>193. React Form -  Using Context API to create Auth Provider</summary>
+  <summary>193. React Auth -  Using Context API to create Auth Provider</summary>
 
 context/AuthProvider.js:
 
@@ -14078,7 +21191,7 @@ export default Login;
 # #End  </details>
 
 <details>
-  <summary>194. React Form - Using Axios to handle Login Submit to NodeJS Server</summary>
+  <summary>194. React Auth - Using Axios to handle Login Submit to NodeJS Server</summary>
 
 ```bs
 npm i axios
@@ -14222,7 +21335,7 @@ export default Login;
 # #End  </details>
 
 <details>
-  <summary>195. React Form - Setup Node Server and Test</summary>
+  <summary>195. React Auth - Setup Node Server and Test</summary>
 
 Frontend -
 
@@ -14404,7 +21517,7 @@ PW: Aa$12345
 # #End  </details>
 
 <details>
-  <summary>196. React Form (Role-Based Authorization) - Setup Routes and Components</summary>
+  <summary>196. React Auth (Role-Based Authorization) - Setup Routes and Components</summary>
 
 Install react-router-dom@6:
 
@@ -15049,7 +22162,7 @@ export default Missing;
 # #End  </details>
 
 <details>
-  <summary>197. React Form (Role-Based Authorization) - Require Auth Component 1 </summary>
+  <summary>197. React Auth (Role-Based Authorization) - Require Auth Component 1 </summary>
 
 hooks/useAuth.js:
 
@@ -15251,7 +22364,7 @@ export default App;
 # #End  </details>
 
 <details>
-  <summary>198. React Form (Role-Based Authorization) - Require Auth Component 2 with Route Auth </summary>
+  <summary>198. React Auth (Role-Based Authorization) - Require Auth Component 2 with Route Auth </summary>
 
 components/RequireAuth.js:
 
@@ -15476,7 +22589,7 @@ export default Unauthorized;
 # #End  </details>
 
 <details>
-  <summary>199. React Form (Role-Based Authorization) - Testing Protected Routes </summary>
+  <summary>199. React Auth (Role-Based Authorization) - Testing Protected Routes </summary>
 
 Users -
 
@@ -15559,7 +22672,7 @@ Note: Can Access all routes - Home, Editor, Lounge and Admin Routes!
 # #End  </details>
 
 <details>
-  <summary>200. React Form - Authentication with JWT Access, Refresh Tokens, Cookies and Axios</summary>
+  <summary>200. React Auth - Authentication with JWT Access, Refresh Tokens, Cookies and Axios</summary>
 
 ```bs
 npm update
@@ -15760,7 +22873,7 @@ export default useAuth;
 # #End  </details>
 
 <details>
-  <summary>201. React Form - Persistent User Login Authentication with JWT Tokens</summary>
+  <summary>201. React Auth - Persistent User Login Authentication with JWT Tokens</summary>
 
 components/PersistLogin.js:
 

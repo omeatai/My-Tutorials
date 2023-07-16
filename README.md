@@ -26,9 +26,9 @@
 
 ### [RD4-NEXTJS TUTORIAL - NET NINJA](/courses/RD4.md)
 
-### [RE1-REACT TUTORIAL - DAVE GRAY](/courses/RE1.md)
+### [RE1-REACT & NODE TUTORIAL - DAVE GRAY](/courses/RE1.md)
 
-### [RE2-NODE.JS TUTORIAL - DAVE GRAY](/courses/RE2.md)
+### [RE2-MERN TUTORIAL - DAVE GRAY](/courses/RE2.md)
 
 ### [RE3-JAVASCRIPT COURSE - DAVE GRAY](/courses/RE3.md)
 

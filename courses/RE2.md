@@ -1,4 +1,4 @@
-### [D2-NODE.JS TUTORIAL - DAVE GRAY](https://youtube.com/playlist?list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw)
+### [RE2-MERN TUTORIAL - DAVE GRAY](https://youtube.com/playlist?list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw)
 
 <details>
   <summary>1. Introduction </summary>
@@ -64,7 +64,7 @@ node server
 // }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>2. The OS Object, dirname and filename </summary>
@@ -124,7 +124,7 @@ node server
 // 10 1939936
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>3. The Path Object</summary>
@@ -168,7 +168,7 @@ node server
 // }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>4. Export Modules </summary>
@@ -218,7 +218,7 @@ node server
 // 1.5
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>63. Read File - fs.readFile()</summary>
@@ -255,7 +255,7 @@ node index
 // Hello, my name is Ifeanyi.
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>64. Read File with Path Module - fs.readFile()</summary>
@@ -297,7 +297,7 @@ node index
 // Hello, my name is Ifeanyi.
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>65. Write File - fs.writeFile()</summary>
@@ -332,7 +332,7 @@ node index
 // Write Complete.
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>66. Update File - fs.appendFile()</summary>
@@ -367,7 +367,7 @@ node index
 // Append Complete.
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>67. Write + Update File Sync order</summary>
@@ -422,7 +422,7 @@ Nice to meet you Bob!
 You really have a great car!
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>68. Write + Update + Rename File Sync order</summary>
@@ -488,7 +488,7 @@ Nice to meet you Bob!
 You really have a great car!
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>69. Read File with Promises</summary>
@@ -528,7 +528,7 @@ node index
 // Hello, my name is Ifeanyi.
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>70. Read + Delete + Write + Update + Rename File with Promises</summary>
@@ -612,7 +612,7 @@ Hello, my name is Ifeanyi.
 Nice to meet you.
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>71. Read and Write streams for large files with DataChunks</summary>
@@ -679,7 +679,7 @@ node stream
 // Completed Chunk: 30
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>72. Piping Read streams to Write files </summary>
@@ -712,7 +712,7 @@ node stream
 // Completed Streaming.
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>73. Create Folder Directory</summary>
@@ -736,7 +736,7 @@ node index
 // Directory created
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>74. Find out if Folder Directory Exists</summary>
@@ -754,7 +754,7 @@ if (!fs.existsSync("./newdir")) {
 }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>75. Delete Folder Directory</summary>
@@ -780,7 +780,7 @@ node index
 // Directory deleted successfully
 ```
 
-</details>
+# #End </details>
 
 +NPM
 
@@ -850,7 +850,7 @@ nodemon server.js
 // [nodemon] clean exit - waiting for changes before restart
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>77. NPM Date-fns</summary>
@@ -909,7 +909,7 @@ console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss"));
 // 20230105        15:11:20
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>78. NPM UUID</summary>
@@ -949,7 +949,7 @@ nodemon server.js
 // 36aee871-e2ef-4ce1-a75b-79e461ea685f
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>79. Uninstalling NPM Packages</summary>
@@ -960,7 +960,7 @@ npm uninstall uuid
 npm rm uuid
 ```
 
-</details>
+# #End </details>
 
 +NODE-SERVER
 
@@ -1033,7 +1033,7 @@ log/eventLog.txt:
 20230105	20:25:46	385ed21d-e060-4947-89e6-0bb2bd0e0904	Log event emitted!
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>81. Node Server - Initializing Server</summary>
@@ -1108,7 +1108,7 @@ Server running on port 3500
 GET
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>82. Node Server - Create Node Server</summary>
@@ -1277,7 +1277,7 @@ logs/reqLog.txt:
 20230106	19:38:27	106b8afc-4352-4c80-bcaa-9e7434cb0bde	/img/img1.jpg	GET
 ```
 
-</details>
+# #End </details>
 
 +EXPRESS
 
@@ -1321,7 +1321,7 @@ node run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>84. Express - Send HTML page to render</summary>
@@ -1352,7 +1352,7 @@ node run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>85. Express - Adding more routes</summary>
@@ -1387,7 +1387,7 @@ node run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>86. Express - Applying RegEx to routes </summary>
@@ -1431,7 +1431,7 @@ node run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>87. Express - Redirect routes</summary>
@@ -1471,7 +1471,7 @@ node run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>88. Express - Adding Custom 404 route</summary>
@@ -1516,7 +1516,7 @@ node run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>89. Express - Next Route handlers</summary>
@@ -1588,7 +1588,7 @@ Server running on port 3500
 loading hello.html...
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>90. Express - Chaining Route handlers</summary>
@@ -1682,7 +1682,7 @@ two
 three
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>91. Express - Built-in Middleware</summary>
@@ -1779,7 +1779,7 @@ node run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>92. Express - Custom Middleware Logger</summary>
@@ -1879,7 +1879,7 @@ GET /sfd
 GET /css/style.css
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>93. Express - Custom Middleware with logEvents.js</summary>
@@ -2020,7 +2020,7 @@ logs/reqLog.txt:
 20230106	23:06:50	ac65dbd1-916a-42e2-9664-7f1ea2fc62e3	GET	undefined	/css/style.css
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>94. Express - Custom Middleware with logEvents.js (Refactored)</summary>
@@ -2162,7 +2162,7 @@ logs/reqLog.txt:
 
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>95. Express - Third-Party Middleware (Cors)</summary>
@@ -2282,7 +2282,7 @@ log/reqLog.txt
 
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>96. Express -  Third-Party Middleware (Protected Cors with Whitelist)</summary>
@@ -2446,7 +2446,7 @@ npm run dev
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>97. Express - Custom Error Handler</summary>
@@ -2635,7 +2635,7 @@ reqLog.txt:
 20230107	08:30:56	a1fb6427-e7a9-468a-aa01-aba9f5f93c3e	GET	undefined	/css/style.css
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>98. Express - Using app.all() for Custom 404 route</summary>
@@ -2755,7 +2755,7 @@ GET /dsfdf
 GET /css/style.css
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>99. Express - Protecting Custom 404 route</summary>
@@ -2889,7 +2889,7 @@ GET /dsfdf
 GET /css/style.css
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>100. Express - Creating Routes with Router for subdir</summary>
@@ -3040,7 +3040,7 @@ GET /subdir/index.html
 GET /subdir/test
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>101. Express - Creating Routes with Router for index page </summary>
@@ -3183,7 +3183,7 @@ GET /css/style.css
 GET /img/img1.jpg
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>102. Express - Creating REST API Router </summary>
@@ -3400,7 +3400,7 @@ http://localhost:3500/employees/1
 }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>103. Express - Refactoring REST API to MVC Pattern </summary>
@@ -3603,7 +3603,7 @@ model/employees.json:
 ];
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>104. Express - Simulating a REST API db with Controllers </summary>
@@ -3904,7 +3904,7 @@ http://localhost:3500/employees/1
 }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>105. Express - User Password Registration </summary>
@@ -4138,7 +4138,7 @@ http://localhost:3500/register
 Conflict
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>106. Express - User Password Login Authentication </summary>
@@ -4326,7 +4326,7 @@ http://localhost:3500/auth
 Unauthorized
 ```
 
-</details>
+# #End </details>
 
 +JWT
 
@@ -4373,7 +4373,7 @@ node_modules
 .env
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>108. Express JWT Authentication - Creating JWT tokens and verification at Login Authorization</summary>
@@ -4534,7 +4534,7 @@ http://localhost:3500/employees
 If No Bearer Token is supplied -> 401 Unauthorized<br>
 If old Bearer Token is supplied -> 403 Forbidden (From verifyJWT middleware)<br>
 
-</details>
+# #End </details>
 
 <details>
   <summary>109. Express JWT Authentication - Protect all routes with JWT verification</summary>
@@ -4648,7 +4648,7 @@ http://localhost:3500/employees
 401 Unauthorized
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>110. Express JWT Authentication -  Adding cookie parser middleware</summary>
@@ -4716,7 +4716,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>111. Express JWT Authentication - Creating Refresh Token Controller and Route </summary>
@@ -4870,7 +4870,7 @@ http://localhost:3500/refresh
 }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>112. Express JWT Authentication - Creating Logout Controller and Route </summary>
@@ -5060,7 +5060,7 @@ http://localhost:3500/refresh
 401 Unauthorized
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>113. Express JWT Authentication - Front-End/Back-End Modifications </summary>
@@ -5294,7 +5294,7 @@ const handleLogin = async (req, res) => {
 module.exports = { handleLogin };
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>114. Authentication VS Authorization </summary>
@@ -5317,7 +5317,7 @@ User Roles & Permissions
 - Sent in access token payload
 - Verified with middleware
 
-</details>
+# #End </details>
 
 <details>
   <summary>115. Express JWT Authorization - Create User ROLES </summary>
@@ -5596,7 +5596,7 @@ const verifyJWT = (req, res, next) => {
 module.exports = verifyJWT;
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>116. Express JWT Authorization - Create verifyRoles middleware </summary>
@@ -5847,7 +5847,7 @@ DELETE /employees
 [ 2001, 1984, 5150 ]
 ```
 
-</details>
+# #End </details>
 
 +MONGODB
 
@@ -6004,7 +6004,7 @@ Connected to MongoDB
 Server running on port 3500
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>118. MongoDB - Understanding Mongoose Schema </summary>
@@ -6052,7 +6052,7 @@ const schema = new mongoose.Schema({ name: 'string', size: 'string' });
 const Tank = mongoose.model('Tank', schema);
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>119. MongoDB - Create Mongoose Employee Schema </summary>
@@ -6077,7 +6077,7 @@ const employeeSchema = new Schema({
 module.exports = mongoose.model("Employee", employeeSchema);
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>120. MongoDB - Create Mongoose User Schema </summary>
@@ -6111,7 +6111,7 @@ const userSchema = new Schema({
 module.exports = mongoose.model("User", userSchema);
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>121. MongoDB - Include Mongoose User data model in registerController  </summary>
@@ -6245,7 +6245,7 @@ Check Mongodb.com -> CompanyDB -> users (Manually Add Admin and Editor roles to 
 }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>122. MongoDB - Include Mongoose User data model in refreshTokenController </summary>
@@ -6285,7 +6285,7 @@ const handleRefreshToken = async (req, res) => {
 module.exports = { handleRefreshToken };
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>123. MongoDB - Include Mongoose User data model in logoutController </summary>
@@ -6321,7 +6321,7 @@ const handleLogout = async (req, res) => {
 module.exports = { handleLogout };
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>124. MongoDB - Include Mongoose User data model in authController </summary>
@@ -6386,7 +6386,7 @@ const handleLogin = async (req, res) => {
 module.exports = { handleLogin };
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>125. MongoDB - Testing updated Mongoose Controllers connections </summary>
@@ -6496,7 +6496,7 @@ GET /logout
 }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>126. MongoDB - (CRUD) Include Mongoose User data model in employeesController </summary>
@@ -6675,7 +6675,7 @@ module.exports = {
 };
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>127. MongoDB - Testing updated Mongoose Employee Controller </summary>
@@ -6833,7 +6833,7 @@ Status: 200 OK
 }
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>128.  MongoDB - Create User Admin routes </summary>
@@ -7043,7 +7043,7 @@ const verifyRoles = (...allowedRoles) => {
 module.exports = verifyRoles;
 ```
 
-</details>
+# #End </details>
 
 +DEPLOY
 
@@ -7096,7 +7096,7 @@ Create Glitch Remix Button:
 https://glitch.com/
 ```
 
-</details>
+# #End </details>
 
 <details>
   <summary>130. sample </summary>
@@ -7117,424 +7117,4 @@ https://glitch.com/
 
 ```
 
-</details>
-
-<details>
-  <summary>131. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>132. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>133. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>134. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>135. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>136. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>137. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>138. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>139. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>140. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>141. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>142. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>143. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>144. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>145. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>146. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>147. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>148. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>149. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>150. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
+# #End </details>
