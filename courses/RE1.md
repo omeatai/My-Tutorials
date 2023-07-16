@@ -12829,7 +12829,21 @@ button {
 
 # Create Register Component with Custom Validation
 
-App.js:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7697bb56-5a92-40c2-9b80-773e286a454d">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1fff523e-4d8c-4d1f-94a1-165bc9e4ee07">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/bd3c5d98-b150-4251-aa91-154c81d1b243">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/630162af-e43d-4b2a-9216-ccdad0ffc2a4">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8524ab0c-22c7-4b55-b084-1649da2c1d3f">
+
+### Add Font-Awesome SVG Core and Icon Packages
+
+```bs
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/react-fontawesome@latest
+```
+
+### x-dave-gray/react-auth/src/App.js:
 
 ```js
 import Register from "./Register";
@@ -12845,27 +12859,7 @@ function App() {
 export default App;
 ```
 
-Set Up Font-Awesome with React:
-
--Add SVG Core
-
-```bs
-npm i --save @fortawesome/fontawesome-svg-core
-```
-
--Add Icon Packages
-
-```bs
-npm i --save @fortawesome/free-solid-svg-icons
-```
-
--Add the React Component
-
-```bs
-npm i --save @fortawesome/react-fontawesome@latest
-```
-
-Register.js:
+### x-dave-gray/react-auth/src/Register.js:
 
 ```js
 import { useRef, useState, useEffect } from "react";
@@ -13066,7 +13060,7 @@ const Register = () => {
 export default Register;
 ```
 
-Index.css:
+### x-dave-gray/react-auth/src/index.css:
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
@@ -13186,20 +13180,24 @@ button {
 }
 ```
 
-![proj10](https://user-images.githubusercontent.com/32337103/214263079-855d21db-1aa5-4db5-bddb-32e8c87cbd40.png)
-
 # #End  </details>
 
 <details>
-  <summary>190. React Form - Handle Submit with Axios to Register Inputs</summary>
+  <summary>80. React Form - Handle Submit with Axios to Register Inputs</summary>
 
-Install Axios:
+# Handle Submit with Axios to Register Inputs
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8562bebf-bb49-465d-8d14-690693dcea54">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7ab439a9-b2ac-4079-b145-c06289dcedf7">
+<img width="1178" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c4f474d2-0aca-4042-b0a3-9f9dde315792">
+
+# Install Axios:
 
 ```bs
 npm install axios -S
 ```
 
-api/axios.js:
+### x-dave-gray/react-auth/src/api/axios.js:
 
 ```js
 import axios from "axios";
@@ -13209,7 +13207,7 @@ export default axios.create({
 });
 ```
 
-App.js:
+### x-dave-gray/react-auth/src/App.js:
 
 ```js
 import Register from "./Register";
@@ -13225,7 +13223,7 @@ function App() {
 export default App;
 ```
 
-Register.js:
+### x-dave-gray/react-auth/src/Register.js:
 
 ```js
 import React, { useRef, useState, useEffect } from "react";
@@ -13484,9 +13482,9 @@ const Register = () => {
 export default Register;
 ```
 
-Add React Frontend to Node backend Server -
+# Add React Frontend to Node backend Server -
 
-allowedOrigins.js:
+### allowedOrigins.js (in backend server):
 
 ```js
 const allowedOrigins = [
@@ -13499,13 +13497,7 @@ const allowedOrigins = [
 module.exports = allowedOrigins;
 ```
 
-Run Node.js Server:
-
-```bs
-npm run dev
-```
-
-index.css:
+### x-dave-gray/react-auth/src/index.css:
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
@@ -13628,7 +13620,9 @@ button {
 # #End  </details>
 
 <details>
-  <summary>191. React Form - Create User Login Component </summary>
+  <summary>81. React Form - Create User Login Component </summary>
+
+# Create User Login Component   
 
 App.js:
 
