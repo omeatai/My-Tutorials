@@ -12820,7 +12820,15 @@ button {
 
 # Create Register Component with Custom Validation
 
-App.js:
+### Add Font-Awesome SVG Core and Icon Packages
+
+```bs
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/react-fontawesome@latest
+```
+
+### x-dave-gray/react-auth/src/App.js:
 
 ```js
 import Register from "./Register";
@@ -12836,27 +12844,7 @@ function App() {
 export default App;
 ```
 
-Set Up Font-Awesome with React:
-
--Add SVG Core
-
-```bs
-npm i --save @fortawesome/fontawesome-svg-core
-```
-
--Add Icon Packages
-
-```bs
-npm i --save @fortawesome/free-solid-svg-icons
-```
-
--Add the React Component
-
-```bs
-npm i --save @fortawesome/react-fontawesome@latest
-```
-
-Register.js:
+### x-dave-gray/react-auth/src/Register.js:
 
 ```js
 import { useRef, useState, useEffect } from "react";
@@ -13057,7 +13045,7 @@ const Register = () => {
 export default Register;
 ```
 
-Index.css:
+### x-dave-gray/react-auth/src/index.css:
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
@@ -13176,8 +13164,6 @@ button {
   display: inline-block;
 }
 ```
-
-![proj10](https://user-images.githubusercontent.com/32337103/214263079-855d21db-1aa5-4db5-bddb-32e8c87cbd40.png)
 
 # #End  </details>
 
