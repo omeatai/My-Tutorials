@@ -13056,7 +13056,7 @@ node server
 <details>
   <summary>83. Node - Read File with fs.readFile()</summary>
 
-# Read File fs.readFile()
+# Read File with fs.readFile()
 
 <img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9bef1b9c-65cc-47a3-b4b1-ecb5c6667318">
 <img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1be14a09-a251-4f34-a489-85fa3961b841">
@@ -13113,7 +13113,7 @@ node index
 Hello, my name is Ifeanyi.
 ```
 
-index.js:
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
