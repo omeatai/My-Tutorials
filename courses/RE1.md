@@ -13729,7 +13729,7 @@ node index
 <details>
   <summary>96. Node NPM - Nodemon</summary>
 
-# Nodemon 
+# Nodemon
 
 <img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c2778f6e-2791-4e28-9bd5-cebdf2c4a16d">
 
@@ -13822,7 +13822,7 @@ nodemon server.js
 <details>
   <summary>97. Node NPM - Date-fns </summary>
 
-# Date-fns  
+# Date-fns
 
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/81c16523-9d44-4fd7-8f7b-177504b32c99">
 
