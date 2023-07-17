@@ -13919,20 +13919,51 @@ npm rm uuid
 <details>
   <summary>100. Node Server - Creating Node Log Events</summary>
 
-event.js:
+# Creating Node Log Events  
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c8232382-1ec1-478f-b059-95e80736fea2">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c3808440-1a46-48b9-98ae-97d6ee1f2097">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/fb8c631e-ae96-4894-b4ee-2930618af4fa">
+
+### x-dave-gray/node-app/package.json:
 
 ```js
-const { format } = require("date-fns");
-const { v4: uuid } = require("uuid");
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "uuid": "^9.0.0"
+  }
+}
+```
 
+### x-dave-gray/node-app/event.js:
+
+```js
 const fs = require("fs");
 const fsPromises = require("fs").promises;
 const path = require("path");
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
 
 const logEvents = async (message) => {
   const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
   const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
   console.log(logItem);
+
   try {
     if (!fs.existsSync(path.join(__dirname, "logs"))) {
       await fsPromises.mkdir(path.join(__dirname, "logs"));
@@ -13949,16 +13980,15 @@ const logEvents = async (message) => {
 module.exports = logEvents;
 ```
 
-index.js:
+### x-dave-gray/node-app/index.js:
 
 ```js
-const logEvents = require("./event");
 const EventEmitter = require("events");
-
 class MyEmitter extends EventEmitter {}
-
 // initialize object
 const myEmitter = new MyEmitter();
+
+const logEvents = require("./event");
 
 // add listener for the log event
 myEmitter.on("log", (msg) => logEvents(msg));
@@ -13969,20 +13999,18 @@ setTimeout(() => {
 }, 2000);
 ```
 
+# Start Node Server
+
 ```bs
 npm run dev
 ```
 
-```js
-// 20230105        20:25:46        385ed21d-e060-4947-89e6-0bb2bd0e0904    Log event emitted!
-```
-
-log/eventLog.txt:
+### x-dave-gray/node-app/logs/eventLog.txt:
 
 ```txt
-20230105	20:25:02	66da5e18-e0bf-4f20-926e-17f797e9edd4	Log event emitted!
-20230105	20:25:40	ba3759fb-c30e-4b5c-b9a4-2ce824076c00	Log event emitted!
-20230105	20:25:46	385ed21d-e060-4947-89e6-0bb2bd0e0904	Log event emitted!
+20230717	20:51:03	32e53958-0d2f-43a7-9bfd-659a5631763f	Log event emitted!
+20230717	20:54:19	bc3f31cc-4d38-4889-a520-610fff930ff5	Log event emitted!
+20230717	20:54:31	7b578935-c6c1-43a0-b4f9-43e7ab6296d3	Log event emitted!
 ```
 
 # #End </details>
