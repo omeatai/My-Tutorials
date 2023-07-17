@@ -13499,7 +13499,7 @@ node index
 # #End </details>
 
 <details>
-  <summary>71. Node - Read and Write streams for large files with DataChunks</summary>
+  <summary>91. Node - Read and Write streams for large files with DataChunks</summary>
 
 # Read and Write streams for large files with DataChunks
 
@@ -13565,7 +13565,7 @@ node stream
 # #End </details>
 
 <details>
-  <summary>72. Node - Read and Write streams for large files with Pipes </summary>
+  <summary>92. Node - Read and Write streams for large files with Pipes </summary>
 
 # Read and Write streams for large files with Pipes
 
@@ -13623,7 +13623,7 @@ node stream
 # #End </details>
 
 <details>
-  <summary>73. Node - Create Folder/Directory </summary>
+  <summary>93. Node - Create Folder/Directory </summary>
 
 # Create Folder/Directory
 
@@ -13655,7 +13655,7 @@ node index
 # #End </details>
 
 <details>
-  <summary>74. Node - Find out if Folder Directory Exists</summary>
+  <summary>94. Node - Find out if Folder Directory Exists</summary>
 
 # Find out if Folder Directory Exists
 
@@ -13691,7 +13691,7 @@ node index
 # #End </details>
 
 <details>
-  <summary>75. Node - Delete Folder Directory</summary>
+  <summary>95. Node - Delete Folder Directory</summary>
 
 # Delete Folder Directory
 
@@ -13724,12 +13724,30 @@ node index
 
 # #End </details>
 
-+NPM
++NODE NPM
 
 <details>
-  <summary>76. NPM Nodemon</summary>
+  <summary>96. Node NPM - Nodemon</summary>
 
-Install Nodemon:
+# Nodemon 
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c2778f6e-2791-4e28-9bd5-cebdf2c4a16d">
+
+# NPM Initialization:
+
+```bs
+npm init -y
+```
+
+# Setup .gitignore
+
+.gitignore:
+
+```bs
+node_modules
+```
+
+# Install Nodemon:
 
 ```bs
 <!-- Global Dependency  -->
@@ -13744,34 +13762,39 @@ npm install --save-dev nodemon
 npm install -D nodemon
 ```
 
-Set Scripts-
+# Set Scripts
 
-package.json:
+### x-dave-gray/node-app/package.json:
 
 ```json
 {
-  "name": "project",
+  "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "dev": "nodemon index"
+    "start": "node server",
+    "dev": "nodemon server"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "date-fns": "^2.29.3"
-  },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.0.1"
   }
 }
 ```
 
-Start Nodemon Server:
+### x-dave-gray/node-app/server.js:
+
+```bs
+console.log(3 + 2);
+console.log(3 - 2);
+console.log(3 * 2);
+console.log(3 / 2);
+```
+
+# Start Nodemon Server:
 
 ```bs
 npm run dev
@@ -13779,11 +13802,13 @@ OR
 nodemon server.js
 ```
 
+### output:
+
 ```js
-// [nodemon] 2.0.20
+// [nodemon] 3.0.1
 // [nodemon] to restart at any time, enter `rs`
 // [nodemon] watching path(s): *.*
-// [nodemon] watching extensions: js,mjs,json
+// [nodemon] watching extensions: js,mjs,cjs,json
 // [nodemon] starting `node server.js`
 // 5
 // 1
@@ -13795,57 +13820,43 @@ nodemon server.js
 # #End </details>
 
 <details>
-  <summary>77. NPM Date-fns</summary>
+  <summary>97. Node NPM - Date-fns </summary>
 
-NPM Initialization:
+# Date-fns  
 
-```bs
-npm init -y
-```
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/81c16523-9d44-4fd7-8f7b-177504b32c99">
 
-Setup .gitignore -
-
-.gitignore:
-
-```bs
-node_modules
-```
-
-Install date-fns:
+# Install date-fns:
 
 ```bs
 npm install date-fns --save
 npm install date-fns --S
 ```
 
-Example:
+### x-dave-gray/node-app/server.js:
 
 ```js
-import { compareAsc, format } from "date-fns";
+const { compareAsc, format } = require("date-fns");
 
-format(new Date(2014, 1, 11), "yyyy-MM-dd");
-//=> '2014-02-11'
+console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss")); // 20230717  14:01:24
+console.log(format(new Date(2014, 1, 11), "yyyy-MM-dd")); // '2014-01-11'
 
 const dates = [
   new Date(1995, 6, 2),
   new Date(1987, 1, 11),
   new Date(1989, 6, 10),
 ];
-dates.sort(compareAsc);
-//=> [
-//   Wed Feb 11 1987 00:00:00,
-//   Mon Jul 10 1989 00:00:00,
-//   Sun Jul 02 1995 00:00:00
+
+console.log(dates.sort(compareAsc));
+
+// [
+//     1987-02-10T23:00:00.000Z,
+//     1989-07-09T23:00:00.000Z,
+//     1995-07-01T23:00:00.000Z
 // ]
 ```
 
-server.js:
-
-```js
-const { format } = require("date-fns");
-
-console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss"));
-```
+### output:
 
 ```js
 // 20230105        15:11:20
@@ -13854,9 +13865,13 @@ console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss"));
 # #End </details>
 
 <details>
-  <summary>78. NPM UUID</summary>
+  <summary>98. Node NPM - NPM UUID</summary>
 
-Install UUID:
+# NPM UUID
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/58150c46-1407-4032-ac46-ca8b191c364d">
+
+# Install UUID:
 
 ```bs
 npm i uuid
@@ -13864,37 +13879,32 @@ npm i uuid@8.3.2
 npm i uuid@latest
 ```
 
-```js
-import { v4 as uuidv4 } from "uuid";
-uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
-
-const { v4: uuidv4 } = require("uuid");
-uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
-```
-
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```js
 const { format } = require("date-fns");
-const { v4: uuid } = require("uuid");
+const { v4: uuidv4 } = require("uuid");
 
-console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss"));
-console.log(uuid());
+uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+
+console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss")); // 20230717  14:10:33
+console.log(uuidv4()); // 274dc2cd-093d-45ed-8bc5-6d99d7eaa998
 ```
 
-```bs
-nodemon server.js
-```
+### output:
 
 ```js
-// 20230105        20:01:22
-// 36aee871-e2ef-4ce1-a75b-79e461ea685f
+// 20230717        14:10:33
+// 274dc2cd-093d-45ed-8bc5-6d99d7eaa998
 ```
 
 # #End </details>
 
 <details>
-  <summary>79. Uninstalling NPM Packages</summary>
+  <summary>99. Node NPM - Uninstalling NPM Packages</summary>
+
+# Uninstalling NPM Packages
 
 ```bs
 npm uninstall nodemon -D
@@ -13907,7 +13917,7 @@ npm rm uuid
 +NODE-SERVER
 
 <details>
-  <summary>80. Node Server - Creating Node Log Events</summary>
+  <summary>100. Node Server - Creating Node Log Events</summary>
 
 event.js:
 
