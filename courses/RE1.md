@@ -13496,9 +13496,29 @@ node index
 # #End </details>
 
 <details>
-  <summary>71. Read and Write streams for large files with DataChunks</summary>
+  <summary>71. Node - Read and Write streams for large files with DataChunks</summary>
 
-stream.js:
+# Read and Write streams for large files with DataChunks
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/11d11af2-2a36-4c08-a4ce-b786ce270c48">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/439e4317-4ad4-4ec9-9279-635c26154d69">
+
+### x-dave-gray/node-app/files/lorem.txt:
+
+```js
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum.
+```
+
+### x-dave-gray/node-app/stream.js:
 
 ```js
 const fs = require("fs");
@@ -13507,6 +13527,7 @@ const path = require("path");
 const rs = fs.createReadStream(path.join(__dirname, "files", "lorem.txt"), {
   encoding: "utf8",
 });
+
 const ws = fs.createWriteStream(path.join(__dirname, "files", "new-lorem.txt"));
 let count = 0;
 
@@ -13523,49 +13544,47 @@ rs.on("data", (dataChunk) => {
 });
 ```
 
+# Run Node Server
+
 ```bs
 node stream
 ```
+
+### output:
 
 ```js
 // Completed Chunk: 1
 // Completed Chunk: 2
 // Completed Chunk: 3
 // Completed Chunk: 4
-// Completed Chunk: 5
-// Completed Chunk: 6
-// Completed Chunk: 7
-// Completed Chunk: 8
-// Completed Chunk: 9
-// Completed Chunk: 10
-// Completed Chunk: 11
-// Completed Chunk: 12
-// Completed Chunk: 13
-// Completed Chunk: 14
-// Completed Chunk: 15
-// Completed Chunk: 16
-// Completed Chunk: 17
-// Completed Chunk: 18
-// Completed Chunk: 19
-// Completed Chunk: 20
-// Completed Chunk: 21
-// Completed Chunk: 22
-// Completed Chunk: 23
-// Completed Chunk: 24
-// Completed Chunk: 25
-// Completed Chunk: 26
-// Completed Chunk: 27
-// Completed Chunk: 28
-// Completed Chunk: 29
-// Completed Chunk: 30
 ```
 
 # #End </details>
 
 <details>
-  <summary>72. Piping Read streams to Write files </summary>
+  <summary>72. Node - Read and Write streams for large files with Pipes </summary>
 
-stream.js:
+# Read and Write streams for large files with Pipes
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4aefcb6b-378c-49e0-b42d-3b11d3c22c7b">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/70ccbdf1-898f-4e8d-80ba-acd23f20072a">
+
+### x-dave-gray/node-app/files/lorem.txt:
+
+```js
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum.
+```
+
+### x-dave-gray/node-app/stream.js:
 
 ```js
 const fs = require("fs");
@@ -13574,6 +13593,7 @@ const path = require("path");
 const rs = fs.createReadStream(path.join(__dirname, "files", "lorem.txt"), {
   encoding: "utf8",
 });
+
 const ws = fs.createWriteStream(path.join(__dirname, "files", "new-lorem.txt"));
 
 try {
@@ -13585,9 +13605,13 @@ try {
 }
 ```
 
+# Run Node Server
+
 ```bs
 node stream
 ```
+
+### output:
 
 ```js
 // Completed Streaming.
@@ -13596,9 +13620,13 @@ node stream
 # #End </details>
 
 <details>
-  <summary>73. Create Folder Directory</summary>
+  <summary>73. Node - Create Folder/Directory </summary>
 
-index.js:
+# Create Folder/Directory 
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d56c2223-a4ab-4833-9021-32946218c8a1">
+
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13609,9 +13637,13 @@ fs.mkdir("./newdir", (err) => {
 });
 ```
 
+# Run Node Server
+
 ```bs
 node index
 ```
+
+### output:
 
 ```js
 // Directory created
@@ -13620,9 +13652,13 @@ node index
 # #End </details>
 
 <details>
-  <summary>74. Find out if Folder Directory Exists</summary>
+  <summary>74. Node - Find out if Folder Directory Exists</summary>
 
-index.js:
+# Find out if Folder Directory Exists
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/135ec961-0598-4cc1-a41f-0f74ebec9ab1">
+
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13632,15 +13668,33 @@ if (!fs.existsSync("./newdir")) {
     if (err) throw err;
     console.log("Directory created");
   });
+} else {
+  console.log("Directory already exists");
 }
+```
+
+# Run Node Server
+
+```bs
+node index
+```
+
+### output:
+
+```js
+// Directory already exists
 ```
 
 # #End </details>
 
 <details>
-  <summary>75. Delete Folder Directory</summary>
+  <summary>75. Node - Delete Folder Directory</summary>
 
-index.js:
+# Delete Folder Directory
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f6ae5c4b-07bd-44c8-905a-d55f394f9663">
+
+### x-dave-gray/node-app/index.js:
 
 ```js
 const fs = require("fs");
@@ -13653,9 +13707,13 @@ if (fs.existsSync("./newdir")) {
 }
 ```
 
+# Run Node Server
+
 ```bs
 node index
 ```
+
+### output:
 
 ```js
 // Directory deleted successfully
