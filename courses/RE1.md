@@ -14385,15 +14385,20 @@ logs/reqLog.txt:
 +EXPRESS
 
 <details>
-  <summary>83. Express - Send Simple Data to Page</summary>
+  <summary>103. Express - Send Simple Data to Page</summary>
 
-Install Express:
+# Send Simple Data to Page  
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ff8b32ea-dd8a-4043-b437-1a39e34195d0">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/49acbcaf-4c85-48ec-a755-8036dc319b67">
+
+# Install Express:
 
 ```bs
 npm install express --save
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -14408,9 +14413,13 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
+# Start Node Server
+
 ```bs
 node run dev
 ```
+
+### output:
 
 ```bs
 > project@1.0.0 dev
