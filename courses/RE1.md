@@ -14592,7 +14592,10 @@ Server running on port 3500
 
 # Redirect routes
 
-server.js:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/12bd5444-a3a1-4781-85d8-9d5f55fa9c7f">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ac541ad8-42db-46ce-9d61-084a2de71e59">
+
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -14617,9 +14620,23 @@ app.get("/old-page(.html)?", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-node run dev
+### x-dave-gray/node-app/views/new-page.html:
+
+```js
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Page</title>
+  </head>
+  <body>
+    <h1>This is the New Page!</h1>
+  </body>
+</html>
 ```
+
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14630,9 +14647,15 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>88. Express - Adding Custom 404 route</summary>
+  <summary>108. Express - Adding Custom 404 route</summary>
 
-server.js:
+# Adding Custom 404 route
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d888f52f-5ec2-4a31-8df8-fe7b8182fc2d">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/905472bd-cfb8-4066-a30a-9a1bc6d9f6d0">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3197077d-8af8-4f86-8862-cb486da419e7">
+
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -14662,9 +14685,23 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-node run dev
+### x-dave-gray/node-app/views/404.html:
+
+```js
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Page</title>
+  </head>
+  <body>
+    <h1>404 Page!</h1>
+  </body>
+</html>
 ```
+
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14675,7 +14712,14 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>89. Express - Next Route handlers</summary>
+  <summary>109. Express - Next Route handlers</summary>
+
+# Next Route handlers
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/be44ed91-cf7d-4009-861c-115a1d14134a">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/15f01fbb-ec08-406d-80bc-763f836bbbc3">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // Next Route handlers
@@ -14690,8 +14734,6 @@ app.get(
   }
 );
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -14733,9 +14775,7 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-node run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14747,7 +14787,14 @@ loading hello.html...
 # #End </details>
 
 <details>
-  <summary>90. Express - Chaining Route handlers</summary>
+  <summary>110. Express - Chaining Route handlers</summary>
+
+# Chaining Route handlers
+
+<img width="963" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/61206d42-870e-43ff-b49a-22cfb3c1d8ba">
+
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // chaining route handlers
@@ -14766,8 +14813,6 @@ const three = (req, res) => {
 
 app.get("/chain(.html)?", [one, two, three]);
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -14825,9 +14870,7 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-node run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14841,7 +14884,9 @@ three
 # #End </details>
 
 <details>
-  <summary>91. Express - Built-in Middleware</summary>
+  <summary>111. Express - Built-in Middleware</summary>
+
+# Built-in Middleware
 
 ```bs
 // built-in middleware to handle urlencoded data
