@@ -14134,7 +14134,7 @@ GET
 
 # Create Node Server
 
-server.js
+### x-dave-gray/node-app/server.js:
 
 ```js
 const http = require("http");
@@ -14240,7 +14240,7 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-logEvents.js:
+### x-dave-gray/node-app/logEvents.js:
 
 ```js
 const { format } = require("date-fns");
@@ -14268,9 +14268,76 @@ const logEvents = async (message, logName) => {
 module.exports = logEvents;
 ```
 
+### x-dave-gray/node-app/views/index.html:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Welcome! This is the Index Home Page.</h1>
+  </body>
+</html>
+```
+
+### x-dave-gray/node-app/views/404.html:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Page</title>
+  </head>
+  <body>
+    <h1>404 Page!</h1>
+  </body>
+</html>
+```
+
+### x-dave-gray/node-app/views/new-page.html:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Page</title>
+  </head>
+  <body>
+    <h1>This is the New Page!</h1>
+  </body>
+</html>
+```
+
+### x-dave-gray/node-app/data/data.json:
+
+```js
+[
+  {
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
+```
+
+# Start Node Server
+
 ```bs
 node run dev
 ```
+
+### output:
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14296,6 +14363,15 @@ logs/reqLog.txt:
 20230106	19:38:27	c01a67e8-1255-4d21-9615-d7877282c4a5	/new-page	GET
 20230106	19:38:27	c2307b43-c81e-44ff-930c-1b0682e74232	/css/style.css	GET
 20230106	19:38:27	106b8afc-4352-4c80-bcaa-9e7434cb0bde	/img/img1.jpg	GET
+20230718	07:35:08	753ae74d-c8e8-477c-b823-976e4d4d05df	/	GET
+20230718	07:35:33	80c56abf-255d-4870-8bbd-1b67dce6c2c8	/	GET
+20230718	07:35:34	994baac5-2681-43a7-9758-21af56e47563	/favicon.ico	GET
+20230718	07:35:41	444ba75e-719e-4141-9eb1-d468473c7d35	/bj	GET
+20230718	07:35:50	56fbae1d-96c7-4b23-9383-e2d6fa54b50b	/bj	GET
+20230718	07:35:54	6c4f8944-eb5f-4a80-83e4-f0adc5135050	/bbbf	GET
+20230718	07:35:59	c4e30c7f-e80f-4b4c-ae49-1b768f4f6bef	/aedad	GET
+20230718	07:36:08	420ce001-792b-4840-bb6c-a8ac905e6569	/	GET
+20230718	07:38:42	2957ddf2-11ec-49d6-89e7-a083d92858c9	/data/data.json	GET
 ```
 
 # #End </details>
