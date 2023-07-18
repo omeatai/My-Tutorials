@@ -14888,9 +14888,15 @@ three
 
 # Built-in Middleware
 
+<img width="963" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4c9c9d5f-d0b8-479e-a008-ca1da3a290f5">
+<img width="963" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2c21b3fc-5531-4c65-9c5a-abc3d2ec808a">
+<img width="963" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/87afbfab-2e19-44d9-a5bc-ab022acc1dda">
+<img width="1178" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/858c0116-004a-400a-862e-f5f655090938">
+
+### x-dave-gray/node-app/server.js:
+
 ```bs
-// built-in middleware to handle urlencoded data
-// in other words, form data:
+// built-in middleware to handle urlencoded data, in other words, form data:
 // 'content-type: application/x-www-form-urlencoded'
 app.use(express.urlencoded({ extended: false }));
 
@@ -14901,16 +14907,13 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "/public")));
 ```
 
-server.js:
-
 ```js
 const express = require("express");
 const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 3500;
 
-// built-in middleware to handle urlencoded data
-// in other words, form data:
+// built-in middleware to handle urlencoded data, in other words, form data:
 // 'content-type: application/x-www-form-urlencoded'
 app.use(express.urlencoded({ extended: false }));
 
@@ -14970,9 +14973,43 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-node run dev
+### x-dave-gray/node-app/views/index.html:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Welcome! This is the Index Home Page.</h1>
+  </body>
+</html>
 ```
+
+### x-dave-gray/node-app/public/css/style.css:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 36px;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #000;
+  display: grid;
+  place-content: center;
+}
+```
+
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14983,7 +15020,14 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>92. Express - Custom Middleware Logger</summary>
+  <summary>112. Express - Custom Middleware Logger</summary>
+
+# Custom Middleware Logger
+
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f4a3e2f4-8def-4988-ae2e-ac2f861d03df">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e2522e9d-e274-40a8-822d-330a21c891ca">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // custom middleware logger
@@ -14992,8 +15036,6 @@ app.use((req, res, next) => {
   next();
 });
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -15068,9 +15110,7 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-node run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -15083,7 +15123,16 @@ GET /css/style.css
 # #End </details>
 
 <details>
-  <summary>93. Express - Custom Middleware with logEvents.js</summary>
+  <summary>113. Express - Custom Middleware with logEvents.js</summary>
+
+#  Custom Middleware with logEvents.js  
+
+<img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9bfb7c02-8010-4469-a051-7827c2b4841a">
+<img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6074e688-894a-46b1-9dfc-d4e6837ba8c2">
+<img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9c325b3e-8712-454e-b32e-557cf6fe8df6">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/a654cf50-e200-4ec9-9ec7-0418425a2aef">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // custom middleware logger
@@ -15093,8 +15142,6 @@ app.use((req, res, next) => {
   next();
 });
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -15171,7 +15218,7 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-middleware/logEvents.js:
+### x-dave-gray/node-app/middleware/logEvents.js:
 
 ```js
 const { format } = require("date-fns");
@@ -15202,9 +15249,7 @@ const logEvents = async (message, logName) => {
 module.exports = logEvents;
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -15214,24 +15259,31 @@ GET /
 GET /css/style.css
 ```
 
-logs/reqLog.txt:
+### ### x-dave-gray/node-app/server.js:
 
 ```txt
-20230106	23:06:50	5eb41bdb-5938-46ec-b764-59cd9796fb4c	GET	undefined	/
-20230106	23:06:50	ac65dbd1-916a-42e2-9664-7f1ea2fc62e3	GET	undefined	/css/style.css
+20230718	10:42:57	5341272e-8e15-431d-96a8-9ea1a2e4cb21	GET	undefined	/
+20230718	10:42:57	83aac56a-4a44-4436-ad13-4f8f0ba93a0e	GET	undefined	/css/style.css
 ```
 
 # #End </details>
 
 <details>
-  <summary>94. Express - Custom Middleware with logEvents.js (Refactored)</summary>
+  <summary>114. Express - Custom Middleware with logEvents.js (Refactored)</summary>
+
+# Custom Middleware with logEvents.js (Refactored)
+
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d1b88d23-09d2-492e-8ec8-89caa6663fa2">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/be15d8ca-9dd3-4056-8976-a738d91ac206">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/84b74b8e-57c2-475b-b104-16b27a5d21ef">
+<img width="1180" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/da3d8000-df46-4a74-b8dc-7481f4959bed">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // custom middleware logger
 app.use(logger);
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -15304,7 +15356,7 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-middleware/logEvents.js:
+### x-dave-gray/node-app/middleware/logEvents.js:
 
 ```js
 const { format } = require("date-fns");
@@ -15341,9 +15393,7 @@ const logger = (req, res, next) => {
 module.exports = { logger, logEvents };
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -15353,33 +15403,37 @@ GET /about
 GET /css/style.css
 ```
 
-logs/reqLog.txt:
+### x-dave-gray/node-app/logs/reqLog.txt:
 
 ```txt
 20230106	23:06:50	5eb41bdb-5938-46ec-b764-59cd9796fb4c	GET	undefined	/
 20230106	23:06:50	ac65dbd1-916a-42e2-9664-7f1ea2fc62e3	GET	undefined	/css/style.css
 20230106	23:16:29	d14a07b1-fd03-4a9c-b65a-1704551b5516	GET	undefined	/about
 20230106	23:16:29	c23db065-ae38-4994-ac7a-f669fc9a60d6	GET	undefined	/css/style.css
-
 ```
 
 # #End </details>
 
 <details>
-  <summary>95. Express - Third-Party Middleware (Cors)</summary>
+  <summary>115. Express - Third-Party Middleware (Cors)</summary>
 
-Install Cors:
+# Third-Party Middleware (Cors)
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4aa1e5e9-17e1-43f2-ab62-31863c5bdd8f">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8a299f04-d68b-4ffb-a610-e9ee6958c579">
+
+# Install Cors:
 
 ```bs
 npm i cors --save
 ```
 
+### x-dave-gray/node-app/server.js:
+
 ```bs
 // Cross Origin Resource Sharing
 app.use(cors());
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -15456,9 +15510,13 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
+# Fetch external domain
+
 ```bs
 google.com -> fetch('http://localhost:3500');
 ```
+
+# output
 
 ```bs
 [nodemon] 2.0.20
@@ -15471,7 +15529,7 @@ OPTIONS /
 GET /
 ```
 
-log/reqLog.txt
+### x-dave-gray/node-app/logs/reqLog.txt:
 
 ```bs
 20230106	23:06:50	5eb41bdb-5938-46ec-b764-59cd9796fb4c	GET	undefined	/
@@ -15480,13 +15538,19 @@ log/reqLog.txt
 20230106	23:16:29	c23db065-ae38-4994-ac7a-f669fc9a60d6	GET	undefined	/css/style.css
 20230106	23:26:00	f45458b3-760b-417f-9652-c4f433fc0e93	OPTIONS	https://www.google.com	/
 20230106	23:26:00	dba79f61-9cc7-461c-82ab-3a23fa42a3f2	GET	https://www.google.com	/
-
 ```
 
 # #End </details>
 
 <details>
-  <summary>96. Express -  Third-Party Middleware (Protected Cors with Whitelist)</summary>
+  <summary>116. Express -  Third-Party Middleware (Protected Cors with Whitelist) </summary>
+
+# Third-Party Middleware (Protected Cors with Whitelist)
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1e3dfc04-7b42-4ee3-9d1b-cbb27d7c3b06">
+<img width="1178" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f138c052-37ad-4e0a-8e61-a94dcbef63a5">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // Cross Origin Resource Sharing
@@ -15507,8 +15571,6 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -15600,7 +15662,7 @@ app.get("/*", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-middleware/logEvents.js:
+### x-dave-gray/node-app/middleware/logEvents.js:
 
 ```js
 const { format } = require("date-fns");
@@ -15637,9 +15699,7 @@ const logger = (req, res, next) => {
 module.exports = { logger, logEvents };
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -15650,9 +15710,19 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>97. Express - Custom Error Handler</summary>
+  <summary>117. Express - Custom Error Handler</summary>
+
+# Custom Error Handler 
+
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f5323f98-1f99-416e-b428-98062c6aaef1">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2a5ad5d4-2df6-449d-bdd0-3d309bcefdc7">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/fa249090-a25c-4acf-8c63-8105a97bf7b4">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/38c54398-7243-4c38-b8e8-145565e5f52f">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
+ // Include no origin (undefined) for "development" server
  if (whitelist.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     }
@@ -15660,13 +15730,14 @@ Server running on port 3500
 
 ```bs
 //Custom Error Handler
+app.use(errorHandler);
+
+//Custom Error Handler
 app.use(function (err, req, res, next) {
   console.error(err.stack);
   res.status(500).send(err.message);
 });
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -15762,7 +15833,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-middleware/errorHandler.js:
+### x-dave-gray/node-app/middleware/errorHandler.js:
 
 ```js
 const { logEvents } = require("./logEvents");
@@ -15775,7 +15846,7 @@ const errorHandler = (err, req, res, next) => {
 module.exports = errorHandler;
 ```
 
-middleware/logEvents.js:
+### x-dave-gray/node-app/middleware/logEvents.js:
 
 ```js
 const { format } = require("date-fns");
@@ -15812,9 +15883,7 @@ const logger = (req, res, next) => {
 module.exports = { logger, logEvents };
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] starting `node server.js`
@@ -15823,13 +15892,13 @@ GET /
 GET /css/style.css
 ```
 
-errLog.txt:
+### x-dave-gray/node-app/logs/errLog.txt:
 
 ```txt
 20230107	08:30:49	8b0bdd90-1ff8-41ad-b498-e77659453812	Error: Not allowed by CORS
 ```
 
-reqLog.txt:
+### x-dave-gray/node-app/logs/reqLog.txt:
 
 ```txt
 20230107	08:30:56	f1914109-16d7-48ec-bd64-3dcffb0ae53e	GET	undefined	/
@@ -15839,7 +15908,11 @@ reqLog.txt:
 # #End </details>
 
 <details>
-  <summary>98. Express - Using app.all() for Custom 404 route</summary>
+  <summary>118. Express - Using app.all() for Custom 404 route</summary>
+
+# Using app.all() for Custom 404 route
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 //Custom 404 Page
@@ -15847,8 +15920,6 @@ app.all("*", (req, res) => {
   res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
 });
 ```
-
-server.js:
 
 ```js
 const express = require("express");
@@ -15944,9 +16015,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -15959,7 +16028,9 @@ GET /css/style.css
 # #End </details>
 
 <details>
-  <summary>99. Express - Protecting Custom 404 route</summary>
+  <summary>119. Express - Protecting Custom 404 route</summary>
+
+# Protecting Custom 404 route
 
 ```bs
 //Custom 404 Page
