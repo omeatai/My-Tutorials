@@ -14134,6 +14134,12 @@ GET
 
 # Create Node Server
 
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c55e6261-bea3-4fda-96f2-ca9307d54218">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d62b6999-054e-4c1f-ada3-3a57996562b0">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b83e60a3-8e8d-484b-a9ba-9e0038c5a07b">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/84410202-440a-4325-9686-8bff7e3cfe0d">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ff41be0b-2f3e-4283-a2b4-776699782299">
+
 ### x-dave-gray/node-app/server.js:
 
 ```js
