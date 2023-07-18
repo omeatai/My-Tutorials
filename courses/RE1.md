@@ -16172,7 +16172,10 @@ GET /css/style.css
 
 # Creating Routes with Router for subdir
 
-routes/subdir.js:
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8ee8b5e8-daf2-421f-aff0-2651650c8648">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f9ef427f-db6f-42a0-b34b-4c31030830a5">
+
+### x-dave-gray/node-app/routes/subdir.js:
 
 ```js
 const express = require("express");
@@ -16190,13 +16193,12 @@ router.get("/test(.html)?", (req, res) => {
 module.exports = router;
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```bs
 //serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
 app.use("/subdir", express.static(path.join(__dirname, "/public")));
-
 app.use("/subdir", require("./routes/subdir"));
 ```
 
@@ -16323,7 +16325,12 @@ GET /subdir/test
 
 # Creating Routes with Router for index page
 
-routes/root.js:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9c13cd89-6fa7-4391-b78d-ef5423531c72">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/28c3e327-3a46-4c73-aa0c-19888e559669">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/bffa8571-265f-4fb1-add8-b7253e123fde">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c3c2f0d5-35a1-40f3-830a-96eb4a8143fb">
+
+### x-dave-gray/node-app/routes/root.js:
 
 ```js
 const express = require("express");
@@ -16346,7 +16353,7 @@ router.get("/old-page(.html)?", (req, res) => {
 module.exports = router;
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```bs
 //Routes
@@ -16400,34 +16407,6 @@ app.use("/subdir", express.static(path.join(__dirname, "/public")));
 app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
 
-// Next Route handlers
-app.get(
-  "/hello(.html)?",
-  (req, res, next) => {
-    console.log("loading hello.html...");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World!");
-  }
-);
-
-// chaining route handlers
-const one = (req, res, next) => {
-  console.log("one");
-  next();
-};
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-const three = (req, res) => {
-  console.log("three");
-  res.send("Finished!");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
-
 //Custom 404 Page
 app.all("*", (req, res) => {
   res.status(404);
@@ -16446,9 +16425,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -16464,9 +16441,11 @@ GET /img/img1.jpg
 # #End </details>
 
 <details>
-  <summary>102. Express - Creating REST API Router </summary>
+  <summary>122. Express - Creating REST API Router </summary>
 
-server.js:
+#  Creating REST API Router 
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 //Routes
@@ -16520,34 +16499,6 @@ app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
 app.use("/employees", require("./routes/api/employees"));
 
-// Next Route handlers
-app.get(
-  "/hello(.html)?",
-  (req, res, next) => {
-    console.log("loading hello.html...");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World!");
-  }
-);
-
-// chaining route handlers
-const one = (req, res, next) => {
-  console.log("one");
-  next();
-};
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-const three = (req, res) => {
-  console.log("three");
-  res.send("Finished!");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
-
 //Custom 404 Page
 app.all("*", (req, res) => {
   res.status(404);
@@ -16566,7 +16517,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-routes/api/employees.js:
+### x-dave-gray/node-app/routes/api/employees.js:
 
 ```js
 const express = require("express");
@@ -16602,11 +16553,24 @@ router.route("/:id").get((req, res) => {
 module.exports = router;
 ```
 
-GET:
+### x-dave-gray/node-app/data/employees.json:
 
-```bs
-http://localhost:3500/employees
+```js
+[
+  {
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
+  },
+  {
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
 ```
+
+# GET: http://localhost:3500/employees
 
 ```bs
 [
@@ -16623,13 +16587,9 @@ http://localhost:3500/employees
 ]
 ```
 
-POST:
+# POST: http://localhost:3500/employees
 
-Body = {"firstname":"John", "lastname":"Doe"}
-
-```bs
-http://localhost:3500/employees
-```
+### Body: {"firstname":"John", "lastname":"Doe"}
 
 ```bs
 {
@@ -16638,13 +16598,9 @@ http://localhost:3500/employees
 }
 ```
 
-PUT:
+# PUT: http://localhost:3500/employees
 
-Body = {"id":2, "firstname":"David"}
-
-```bs
-http://localhost:3500/employees
-```
+### Body: {"id":2, "firstname":"David"}
 
 ```bs
 {
@@ -16652,13 +16608,9 @@ http://localhost:3500/employees
 }
 ```
 
-DELETE:
+# DELETE: http://localhost:3500/employees
 
-Body = {"id": 3}
-
-```bs
-http://localhost:3500/employees
-```
+### Body: {"id": 3}
 
 ```bs
 {
@@ -16666,11 +16618,7 @@ http://localhost:3500/employees
 }
 ```
 
-GET:
-
-```bs
-http://localhost:3500/employees/1
-```
+# GET: http://localhost:3500/employees/1
 
 ```bs
 {
@@ -16681,7 +16629,9 @@ http://localhost:3500/employees/1
 # #End </details>
 
 <details>
-  <summary>103. Express - Refactoring REST API to MVC Pattern </summary>
+  <summary>123. Express - Refactoring REST API to MVC Pattern </summary>
+
+# Refactoring REST API to MVC Pattern
 
 server.js:
 
