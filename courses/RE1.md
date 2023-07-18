@@ -14016,9 +14016,14 @@ npm run dev
 # #End </details>
 
 <details>
-  <summary>81. Node Server - Initializing Server</summary>
+  <summary>101. Node Server - Initializing Server</summary>
 
-package.json:
+# Initializing Server  
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d8783e4c-bc36-4fb5-963f-ad6f61a46a51">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/612dc018-e00f-4dec-bad3-79ebaeb111a3">
+
+### x-dave-gray/node-app/package.json:
 
 ```json
 {
@@ -14031,20 +14036,19 @@ package.json:
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "date-fns": "^2.29.3",
-    "uuid": "^9.0.0"
-  },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "uuid": "^9.0.0"
   }
 }
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```js
 const http = require("http");
@@ -14070,9 +14074,43 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
+### x-dave-gray/node-app/logEvents.js:
+
+```js
+const fs = require("fs");
+const fsPromises = require("fs").promises;
+const path = require("path");
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
+
+const logEvents = async (message) => {
+  const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
+  const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
+  console.log(logItem);
+
+  try {
+    if (!fs.existsSync(path.join(__dirname, "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "logs"));
+    }
+    await fsPromises.appendFile(
+      path.join(__dirname, "logs", "eventLog.txt"),
+      logItem
+    );
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+module.exports = logEvents;
+```
+
+# Start Node Server
+
 ```bs
 npm run dev
 ```
+
+### output:
 
 ```bs
 > project@1.0.0 dev
@@ -14091,7 +14129,9 @@ GET
 # #End </details>
 
 <details>
-  <summary>82. Node Server - Create Node Server</summary>
+  <summary>102. Node Server - Create Node Server</summary>
+
+# Create Node Server
 
 server.js
 
