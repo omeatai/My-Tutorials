@@ -14436,9 +14436,11 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>84. Express - Send HTML page to render</summary>
+  <summary>104. Express - Send HTML page to render</summary>
 
-server.js
+# Send HTML page to render
+
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -14454,9 +14456,29 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
+### x-dave-gray/node-app/views/index.html:
+
+```js
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Welcome! This is the Index Home Page.</h1>
+  </body>
+</html>
+```
+
+# Start Node Server
+
 ```bs
 node run dev
 ```
+
+### output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14467,7 +14489,7 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>85. Express - Adding more routes</summary>
+  <summary>105. Express - Adding more routes</summary>
 
 server.js:
 
