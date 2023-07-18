@@ -14497,6 +14497,10 @@ Server running on port 3500
 
 # Adding more routes  
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b56fbe3b-0091-4a4d-9510-ad77aec0404d">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/37deec4e-98c2-4ba9-80aa-be626d5a9c60">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d227fbdb-56f9-4e43-9e5f-5e3bf9f01a5b">
+
 ### x-dave-gray/node-app/server.js:
 
 ```js
@@ -14515,6 +14519,22 @@ app.get("/new-page.html", (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+
+### x-dave-gray/node-app/views/new-page.html:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Page</title>
+  </head>
+  <body>
+    <h1>This is the New Page!</h1>
+  </body>
+</html>
 ```
 
 # Start Node Server
