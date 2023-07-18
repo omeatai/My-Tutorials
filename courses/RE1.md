@@ -16445,6 +16445,14 @@ GET /img/img1.jpg
 
 #  Creating REST API Router 
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4c71d80c-5f5e-4a3f-a392-95923eeeb121">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/20e0cf2c-c7da-46e0-8e75-a5703e4b3e9a">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f942f53e-225d-4217-81be-79f33775c64f">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7b79f409-92e8-4d8e-bae7-db8d7b1e979b">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b0ac1e50-291a-4d80-9e26-6c82167abcce">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5cda41da-df3c-4e52-87f6-4e0f3422779f">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ede482fa-8903-43ba-a091-25d4a01f9d9f">
+
 ### x-dave-gray/node-app/server.js:
 
 ```bs
