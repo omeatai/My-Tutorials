@@ -15912,6 +15912,9 @@ GET /css/style.css
 
 # Using app.all() for Custom 404 route
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/af530d36-b776-4394-bf8d-17a69c78e55b">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e6b7b4e0-580d-4af7-8b40-e06060a8138e">
+
 ### x-dave-gray/node-app/server.js:
 
 ```bs
@@ -16032,6 +16035,11 @@ GET /css/style.css
 
 # Protecting Custom 404 route
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0c823e0b-4bbe-4159-a166-3b968ed13fad">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2a7bbc6a-30f0-4a53-bf59-4bb614b26400">
+
+### x-dave-gray/node-app/server.js:
+
 ```bs
 //Custom 404 Page
 app.all("*", (req, res) => {
@@ -16045,8 +16053,6 @@ app.all("*", (req, res) => {
   }
 });
 ```
-
-express.js:
 
 ```js
 const express = require("express");
@@ -16149,9 +16155,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -16164,7 +16168,9 @@ GET /css/style.css
 # #End </details>
 
 <details>
-  <summary>100. Express - Creating Routes with Router for subdir</summary>
+  <summary>120. Express - Creating Routes with Router for subdir</summary>
+
+# Creating Routes with Router for subdir
 
 routes/subdir.js:
 
@@ -16298,9 +16304,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-npm run dev
-```
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -16315,7 +16319,9 @@ GET /subdir/test
 # #End </details>
 
 <details>
-  <summary>101. Express - Creating Routes with Router for index page </summary>
+  <summary>121. Express - Creating Routes with Router for index page </summary>
+
+# Creating Routes with Router for index page
 
 routes/root.js:
 
