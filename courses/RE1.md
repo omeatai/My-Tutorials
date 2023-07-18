@@ -13919,7 +13919,7 @@ npm rm uuid
 <details>
   <summary>100. Node Server - Creating Node Log Events</summary>
 
-# Creating Node Log Events  
+# Creating Node Log Events
 
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c8232382-1ec1-478f-b059-95e80736fea2">
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c3808440-1a46-48b9-98ae-97d6ee1f2097">
@@ -14018,7 +14018,7 @@ npm run dev
 <details>
   <summary>101. Node Server - Initializing Server</summary>
 
-# Initializing Server  
+# Initializing Server
 
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d8783e4c-bc36-4fb5-963f-ad6f61a46a51">
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/612dc018-e00f-4dec-bad3-79ebaeb111a3">
@@ -14375,7 +14375,7 @@ GET
 <details>
   <summary>103. Express - Send Simple Data to Page</summary>
 
-# Send Simple Data to Page  
+# Send Simple Data to Page
 
 <img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ff8b32ea-dd8a-4043-b437-1a39e34195d0">
 <img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/49acbcaf-4c85-48ec-a755-8036dc319b67">
@@ -14471,7 +14471,7 @@ Server running on port 3500
 <details>
   <summary>105. Express - Adding more routes</summary>
 
-# Adding more routes  
+# Adding more routes
 
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b56fbe3b-0091-4a4d-9510-ad77aec0404d">
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/37deec4e-98c2-4ba9-80aa-be626d5a9c60">
@@ -15125,7 +15125,7 @@ GET /css/style.css
 <details>
   <summary>113. Express - Custom Middleware with logEvents.js</summary>
 
-#  Custom Middleware with logEvents.js  
+#  Custom Middleware with logEvents.js
 
 <img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9bfb7c02-8010-4469-a051-7827c2b4841a">
 <img width="965" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6074e688-894a-46b1-9dfc-d4e6837ba8c2">
@@ -15712,7 +15712,7 @@ Server running on port 3500
 <details>
   <summary>117. Express - Custom Error Handler</summary>
 
-# Custom Error Handler 
+# Custom Error Handler
 
 <img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f5323f98-1f99-416e-b428-98062c6aaef1">
 <img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2a5ad5d4-2df6-449d-bdd0-3d309bcefdc7">
@@ -16443,15 +16443,11 @@ GET /img/img1.jpg
 <details>
   <summary>122. Express - Creating REST API Router </summary>
 
-#  Creating REST API Router 
+#  Creating REST API Router
 
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4c71d80c-5f5e-4a3f-a392-95923eeeb121">
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/20e0cf2c-c7da-46e0-8e75-a5703e4b3e9a">
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f942f53e-225d-4217-81be-79f33775c64f">
-<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7b79f409-92e8-4d8e-bae7-db8d7b1e979b">
-<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b0ac1e50-291a-4d80-9e26-6c82167abcce">
-<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5cda41da-df3c-4e52-87f6-4e0f3422779f">
-<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ede482fa-8903-43ba-a091-25d4a01f9d9f">
 
 ### x-dave-gray/node-app/server.js:
 
@@ -16595,6 +16591,8 @@ module.exports = router;
 ]
 ```
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7b79f409-92e8-4d8e-bae7-db8d7b1e979b">
+
 # POST: http://localhost:3500/employees
 
 ### Body: {"firstname":"John", "lastname":"Doe"}
@@ -16606,6 +16604,8 @@ module.exports = router;
 }
 ```
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b0ac1e50-291a-4d80-9e26-6c82167abcce">
+
 # PUT: http://localhost:3500/employees
 
 ### Body: {"id":2, "firstname":"David"}
@@ -16616,6 +16616,8 @@ module.exports = router;
 }
 ```
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5cda41da-df3c-4e52-87f6-4e0f3422779f">
+
 # DELETE: http://localhost:3500/employees
 
 ### Body: {"id": 3}
@@ -16625,6 +16627,8 @@ module.exports = router;
   "id": 3
 }
 ```
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ede482fa-8903-43ba-a091-25d4a01f9d9f">
 
 # GET: http://localhost:3500/employees/1
 
