@@ -14440,6 +14440,9 @@ Server running on port 3500
 
 # Send HTML page to render
 
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8f4605f4-6cca-4e3c-a40b-4aec444ad1cf">
+<img width="969" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1b44fda0-c8a8-40aa-b09e-e387678b2e40">
+
 ### x-dave-gray/node-app/server.js:
 
 ```js
@@ -14491,7 +14494,9 @@ Server running on port 3500
 <details>
   <summary>105. Express - Adding more routes</summary>
 
-server.js:
+# Adding more routes  
+
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -14511,9 +14516,13 @@ app.get("/new-page.html", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
+# Start Node Server
+
 ```bs
 node run dev
 ```
+
+### output
 
 ```bs
 [nodemon] restarting due to changes...
