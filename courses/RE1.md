@@ -14458,7 +14458,7 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 </html>
 ```
 
-### output
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14513,7 +14513,7 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 </html>
 ```
 
-### output
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14524,9 +14524,13 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>86. Express - Applying RegEx to routes </summary>
+  <summary>106. Express - Applying RegEx to routes </summary>
 
 # Applying RegEx to routes
+
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9001390f-f46e-4d76-9f91-6de62114423d">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/971da8f1-6385-46e1-8313-7d73e9ae7b8e">
+<img width="1181" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ffb6c6db-6811-47e1-b2ea-a390dd24a9c9">
 
 # "^/$|/index(.html)?" means:
 
@@ -14584,7 +14588,9 @@ Server running on port 3500
 # #End </details>
 
 <details>
-  <summary>87. Express - Redirect routes</summary>
+  <summary>107. Express - Redirect routes</summary>
+
+# Redirect routes
 
 server.js:
 
