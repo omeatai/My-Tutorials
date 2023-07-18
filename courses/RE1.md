@@ -12850,7 +12850,7 @@ console.log(global);
 node server
 ```
 
-### output:
+# output
 
 ```js
 // Hello world!
@@ -12930,7 +12930,7 @@ console.log(10, os.uptime());
 node server
 ```
 
-### output:
+# output
 
 ```js
 // 1 /Users/ifeanyi/Desktop/SERVER/Cloud/Labs/nodeproj
@@ -12981,7 +12981,7 @@ console.log(6, path.parse(__filename));
 node server
 ```
 
-### output:
+# output
 
 ```js
 // 1 /Users/ifeanyiomeata/Desktop/SERVER/Cloud/Labs/nodeproj
@@ -13045,7 +13045,7 @@ console.log(divide(3, 2));
 node server
 ```
 
-### output:
+# output
 
 ```js
 // 5
@@ -13094,7 +13094,7 @@ process.on("uncaughtException", (err) => {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Hello, my name is Ifeanyi.
@@ -13145,7 +13145,7 @@ process.on("uncaughtException", (err) => {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Hello, my name is Ifeanyi.
@@ -13189,7 +13189,7 @@ process.on("uncaughtException", (err) => {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Write Complete.
@@ -13233,7 +13233,7 @@ process.on("uncaughtException", (err) => {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Append Complete.
@@ -13288,7 +13288,7 @@ process.on("uncaughtException", (err) => {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Write Complete.
@@ -13354,7 +13354,7 @@ process.on("uncaughtException", (err) => {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Write Complete.
@@ -13405,7 +13405,7 @@ fileOps();
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Hello, my name is Ifeanyi.
@@ -13485,7 +13485,7 @@ fileOps();
 node index
 ```
 
-### output:
+# output
 
 ```js
 // #### OLD ####
@@ -13553,7 +13553,7 @@ rs.on("data", (dataChunk) => {
 node stream
 ```
 
-### output:
+# output
 
 ```js
 // Completed Chunk: 1
@@ -13614,7 +13614,7 @@ try {
 node stream
 ```
 
-### output:
+# output
 
 ```js
 // Completed Streaming.
@@ -13646,7 +13646,7 @@ fs.mkdir("./newdir", (err) => {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Directory created
@@ -13682,7 +13682,7 @@ if (!fs.existsSync("./newdir")) {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Directory already exists
@@ -13716,7 +13716,7 @@ if (fs.existsSync("./newdir")) {
 node index
 ```
 
-### output:
+# output
 
 ```js
 // Directory deleted successfully
@@ -13802,7 +13802,7 @@ OR
 nodemon server.js
 ```
 
-### output:
+# output
 
 ```js
 // [nodemon] 3.0.1
@@ -13856,7 +13856,7 @@ console.log(dates.sort(compareAsc));
 // ]
 ```
 
-### output:
+# output
 
 ```js
 // 20230105        15:11:20
@@ -13892,7 +13892,7 @@ console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss")); // 20230717  14:10:33
 console.log(uuidv4()); // 274dc2cd-093d-45ed-8bc5-6d99d7eaa998
 ```
 
-### output:
+# output
 
 ```js
 // 20230717        14:10:33
@@ -14105,13 +14105,7 @@ const logEvents = async (message) => {
 module.exports = logEvents;
 ```
 
-# Start Node Server
-
-```bs
-npm run dev
-```
-
-### output:
+# output
 
 ```bs
 > project@1.0.0 dev
@@ -14337,13 +14331,7 @@ module.exports = logEvents;
 ]
 ```
 
-# Start Node Server
-
-```bs
-node run dev
-```
-
-### output:
+# output
 
 ```bs
 [nodemon] restarting due to changes...
@@ -14361,7 +14349,7 @@ GET
 GET
 ```
 
-logs/reqLog.txt:
+# logs/reqLog.txt:
 
 ```txt
 20230106	19:37:43	c5104bff-35f1-4346-b26c-67aee49052a0	/index	GET
@@ -14413,13 +14401,7 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-# Start Node Server
-
-```bs
-node run dev
-```
-
-### output:
+# output
 
 ```bs
 > project@1.0.0 dev
@@ -14474,12 +14456,6 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     <h1>Welcome! This is the Index Home Page.</h1>
   </body>
 </html>
-```
-
-# Start Node Server
-
-```bs
-node run dev
 ```
 
 ### output
@@ -14537,12 +14513,6 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 </html>
 ```
 
-# Start Node Server
-
-```bs
-node run dev
-```
-
 ### output
 
 ```bs
@@ -14556,7 +14526,9 @@ Server running on port 3500
 <details>
   <summary>86. Express - Applying RegEx to routes </summary>
 
-"^/$|/index(.html)?" means:
+# Applying RegEx to routes
+
+# "^/$|/index(.html)?" means:
 
 ```bs
 ^/ - it must begin with a slash
@@ -14565,7 +14537,7 @@ Server running on port 3500
 /index(.html)? - it must look like /index or /index.html
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -14585,9 +14557,23 @@ app.get("/new-page(.html)?", (req, res) => {
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-node run dev
+### x-dave-gray/node-app/views/new-page.html:
+
+```js
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Page</title>
+  </head>
+  <body>
+    <h1>This is the New Page!</h1>
+  </body>
+</html>
 ```
+
+# output
 
 ```bs
 [nodemon] restarting due to changes...
