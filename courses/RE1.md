@@ -17889,17 +17889,16 @@ const verifyJWT = (req, res, next) => {
 module.exports = verifyJWT;
 ```
 
-POST:
+# POST: http://localhost:3500/employees
 
-Body = {"firstname":"John", "lastname": "Doe"}
-
-```bs
-http://localhost:3500/employees
-```
+### Body: {"firstname":"John", "lastname": "Doe"}
 
 ```bs
 401 Unauthorized
 ```
+
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/db21e964-7a2b-4fa9-88c0-6488d9fd4399">
+
 
 # #End </details>
 
@@ -17974,7 +17973,7 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 # #End </details>
 
 <details>
-  <summary>111. Express JWT Authentication - Creating Refresh Token Controller and Route </summary>
+  <summary>131. Express JWT Authentication - Creating Refresh Token Controller and Route </summary>
 
 controller/refreshTokenController.js:
 
