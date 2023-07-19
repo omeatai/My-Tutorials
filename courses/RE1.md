@@ -17785,47 +17785,11 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQxIiwiaWF0IjoxNjg5NzY
 
 # Protect all routes with JWT verification
 
-routes/api/employees.js:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/47ffe6aa-066a-4945-bb51-8eab3ba56357">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7f7dde56-429b-46c1-9816-49d53f7e3885">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1eed128c-d19b-4fe8-98de-8efb141f5cee">
 
-```js
-const express = require("express");
-const router = express.Router();
-const employeesController = require("../../controllers/employeesController");
-
-router
-  .route("/")
-  .get(employeesController.getAllEmployees)
-  .post(employeesController.createNewEmployee)
-  .put(employeesController.updateEmployee)
-  .delete(employeesController.deleteEmployee);
-
-router.route("/:id").get(employeesController.getEmployee);
-
-module.exports = router;
-```
-
-middleware/verifyJWT:
-
-```js
-const jwt = require("jsonwebtoken");
-require("dotenv").config();
-
-const verifyJWT = (req, res, next) => {
-  const authHeader = req.headers["authorization"];
-  if (!authHeader) return res.sendStatus(401);
-  console.log(authHeader); // Bearer token
-  const token = authHeader.split(" ")[1];
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
-    if (err) return res.sendStatus(403); //invalid token
-    req.user = decoded.username;
-    next();
-  });
-};
-
-module.exports = verifyJWT;
-```
-
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```bs
 app.use(verifyJWT);
@@ -17882,6 +17846,49 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
+### x-dave-gray/node-app/routes/api/employees.js:
+
+```js
+const express = require("express");
+const router = express.Router();
+const employeesController = require("../../controllers/employeesController");
+
+router
+  .route("/")
+  .get(employeesController.getAllEmployees)
+  .post(employeesController.createNewEmployee)
+  .put(employeesController.updateEmployee)
+  .delete(employeesController.deleteEmployee);
+
+//router.route("/:id").get(employeesController.getEmployee);
+router.get("/:id", employeesController.getEmployee);
+
+module.exports = router;
+```
+
+### x-dave-gray/node-app/middleware/verifyJWT.js:
+
+```js
+require("dotenv").config();
+const jwt = require("jsonwebtoken");
+
+const verifyJWT = (req, res, next) => {
+  const authHeader = req.headers["authorization"];
+  if (!authHeader) return res.sendStatus(401);
+
+  console.log(authHeader); // Bearer <token>
+  const token = authHeader.split(" ")[1];
+
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+    if (err) return res.sendStatus(403); //invalid token
+    req.user = decoded.username;
+    next();
+  });
+};
+
+module.exports = verifyJWT;
+```
+
 POST:
 
 Body = {"firstname":"John", "lastname": "Doe"}
@@ -17897,7 +17904,9 @@ http://localhost:3500/employees
 # #End </details>
 
 <details>
-  <summary>110. Express JWT Authentication -  Adding cookie parser middleware</summary>
+  <summary>130. Express JWT Authentication -  Adding cookie parser middleware</summary>
+
+# Adding cookie parser middleware
 
 server.js:
 
