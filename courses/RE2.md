@@ -1,4 +1,6 @@
-### [RE2-TYPESCRIPT TUTORIAL - DAVE GRAY](https://youtube.com/playlist?list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw)
+### [RE2-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/RE2.md)
+
+# TYPESCRIPT
 
 <details>
   <summary>1. Introduction </summary>
