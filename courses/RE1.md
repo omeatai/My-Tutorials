@@ -17907,7 +17907,9 @@ module.exports = verifyJWT;
 
 # Adding cookie parser middleware
 
-server.js:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/3ce02049-6cc6-49f9-ad9f-ed30d6e2c6bb">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 const cookieParser = require('cookie-parser');
@@ -17975,32 +17977,43 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 <details>
   <summary>131. Express JWT Authentication - Creating Refresh Token Controller and Route </summary>
 
-controller/refreshTokenController.js:
+# Creating Refresh Token Controller and Route
+
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d83088dc-a701-4f6d-b181-5a438662492b">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/6c1daf05-3034-4d27-aadb-a1761c1f0ec9">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/39f5d1da-d260-4269-b5d2-0e711b5d1b30">
+
+### x-dave-gray/node-app/controllers/refreshTokenController.js:
 
 ```js
+require("dotenv").config();
+const jwt = require("jsonwebtoken");
+
 const usersDB = {
   users: require("../model/users.json"),
   setUsers: function (data) {
     this.users = data;
   },
 };
-const jwt = require("jsonwebtoken");
-require("dotenv").config();
 
 const handleRefreshToken = (req, res) => {
   // console.log(req.cookies);
   const cookies = req.cookies;
+
   if (!cookies?.jwt) return res.sendStatus(401);
   const refreshToken = cookies.jwt;
 
   const foundUser = usersDB.users.find(
     (person) => person.refreshToken === refreshToken
   );
+
   if (!foundUser) return res.sendStatus(403); //Forbidden
+
   // evaluate jwt
   jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, decoded) => {
     if (err || foundUser.username !== decoded.username)
       return res.sendStatus(403);
+
     const accessToken = jwt.sign(
       { username: decoded.username },
       process.env.ACCESS_TOKEN_SECRET,
@@ -18013,7 +18026,7 @@ const handleRefreshToken = (req, res) => {
 module.exports = { handleRefreshToken };
 ```
 
-routes/refresh.js:
+### x-dave-gray/node-app/routes/refresh.js:
 
 ```js
 const express = require("express");
@@ -18025,7 +18038,7 @@ router.get("/", refreshTokenController.handleRefreshToken);
 module.exports = router;
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // routes
@@ -18088,17 +18101,9 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-npm run dev
-```
+# POST: http://localhost:3500/auth
 
-POST:
-
-Body = { "user": "walter1", "pwd": "walterpwd"}
-
-```bs
-http://localhost:3500/auth
-```
+### Body: { "user": "walt1", "pwd": "Aa$12345"}
 
 ```bs
 {
@@ -18106,17 +18111,13 @@ http://localhost:3500/auth
 }
 ```
 
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1b698a83-32be-4317-a8f0-765fe99673c3">
+
 Cookies -> jwt:
 
-```bs
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM1OTg3MDgsImV4cCI6MTY3MzY4NTEwOH0.zKPOHWMGPOyg-CGSSgQ9O6y3IGN7MDrmvQfDYU-RB8M
-```
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/141b1945-09d6-400d-89d8-8075a1253877">
 
-GET:
-
-```bs
-http://localhost:3500/refresh
-```
+# GET: http://localhost:3500/refresh
 
 ```bs
 {
@@ -18124,10 +18125,15 @@ http://localhost:3500/refresh
 }
 ```
 
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/719e1347-bcdd-466a-a256-e36722e468c8">
+
+
 # #End </details>
 
 <details>
-  <summary>112. Express JWT Authentication - Creating Logout Controller and Route </summary>
+  <summary>132. Express JWT Authentication - Creating Logout Controller and Route </summary>
+
+# Creating Logout Controller and Route
 
 controller/logoutController.js:
 
