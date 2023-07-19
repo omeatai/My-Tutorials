@@ -17358,10 +17358,6 @@ Server running on port 3500
 ### Body = { "user": "walt2", "pwd": "Aa$12345"}
 
 ```bs
-http://localhost:3500/register
-```
-
-```bs
 Conflict
 ```
 
@@ -17371,11 +17367,15 @@ Conflict
 # #End </details>
 
 <details>
-  <summary>126. Express - User Password Login Authentication </summary>
+  <summary>126. Express - User Login Authentication </summary>
 
-# User Password Login Authentication  
+# User Login Authentication  
 
-server.js:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e65da411-7b9d-4cc2-bbde-dcd354f2e277">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c054f1b8-c4ed-4b3c-a85d-a4be69ae9411">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/4fad52e4-87f6-42ed-a44a-9781c59e8655">
+
+### x-dave-gray/node-app/server.js:
 
 ```bs
 //Routes
@@ -17417,34 +17417,6 @@ app.use("/register", require("./routes/register"));
 app.use("/auth", require("./routes/auth"));
 app.use("/employees", require("./routes/api/employees"));
 
-// Next Route handlers
-app.get(
-  "/hello(.html)?",
-  (req, res, next) => {
-    console.log("loading hello.html...");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World!");
-  }
-);
-
-// chaining route handlers
-const one = (req, res, next) => {
-  console.log("one");
-  next();
-};
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-const three = (req, res) => {
-  console.log("three");
-  res.send("Finished!");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
-
 //Custom 404 Page
 app.all("*", (req, res) => {
   res.status(404);
@@ -17463,7 +17435,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-routes/auth.js:
+### x-dave-gray/node-app/routes/auth.js:
 
 ```js
 const express = require("express");
@@ -17475,16 +17447,17 @@ router.post("/", authController.handleLogin);
 module.exports = router;
 ```
 
-controllers/authController.js:
+### x-dave-gray/node-app/controllers/authController.js:
 
 ```js
+const bcrypt = require("bcrypt");
+
 const usersDB = {
   users: require("../model/users.json"),
   setUsers: function (data) {
     this.users = data;
   },
 };
-const bcrypt = require("bcrypt");
 
 const handleLogin = async (req, res) => {
   const { user, pwd } = req.body;
@@ -17492,10 +17465,14 @@ const handleLogin = async (req, res) => {
     return res
       .status(400)
       .json({ message: "Username and password are required." });
+
   const foundUser = usersDB.users.find((person) => person.username === user);
+
   if (!foundUser) return res.sendStatus(401); //Unauthorized
+
   // evaluate password
   const match = await bcrypt.compare(pwd, foundUser.password);
+
   if (match) {
     // create JWTs
     res.json({ success: `User ${user} is logged in!` });
@@ -17507,21 +17484,13 @@ const handleLogin = async (req, res) => {
 module.exports = { handleLogin };
 ```
 
-```bs
-npm run dev
-```
+# POST: http://localhost:3500/auth
 
-POST:
-
-Body = { "user": "walter1", "pwd": "walterpwd"}
-
-```bs
-http://localhost:3500/auth
-```
+### Body: { "user": "walt1", "pwd": "Aa$12345"}
 
 ```bs
 {
-  "success": "User walter1 is logged in!"
+  "success": "User walt1 is logged in!"
 }
 ```
 
@@ -17532,31 +17501,27 @@ Server running on port 3500
 POST /auth
 ```
 
-POST:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e554973e-b65f-40b3-abdf-a4a3f814b469">
 
-Wrong password:
+# POST: http://localhost:3500/auth (Wrong password)
 
-Body = { "user": "walter1", "pwd": "walterpwdssss"}
-
-```bs
-http://localhost:3500/auth
-```
+### Body: { "user": "walt1", "pwd": "Aa$12345pwdssss"}
 
 ```bs
 Unauthorized
 ```
 
-Wrong username:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5553b7c6-ab29-4a19-9e65-130c9c71a266">
 
-Body = { "user": "walter100", "pwd": "walterpwd"}
+# POST: http://localhost:3500/auth (Wrong username)
 
-```bs
-http://localhost:3500/auth
-```
+### Body: { "user": "walt100", "pwd": "Aa$12345"}
 
 ```bs
 Unauthorized
 ```
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b95ded09-98f3-448b-bf5c-ad2e72dc28b1">
 
 # #End </details>
 
