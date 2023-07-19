@@ -17155,22 +17155,27 @@ module.exports = {
 <details>
   <summary>125. Express - User Password Registration </summary>
 
-# User Password Registration  
+# User Password Registration
 
-Install bcrypt to hash passwords:
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/298e83c9-2608-457c-adef-94ab1e3f3d62">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7c628fbd-cd7c-4d66-b25b-bab7b3145445">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/2451c74e-3d58-484a-a1cc-119f133fa051">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7001d5ff-b298-4794-bf2d-b6a9067d2880">
+
+# Install bcrypt to hash passwords:
 
 ```bs
 npm install bcrypt --save
 npm i bcrypt
 ```
 
-model/users.json:
+### x-dave-gray/node-app/model/users.json:
 
 ```js
-[];
+[]
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```bs
 //Routes
@@ -17203,40 +17208,11 @@ app.use(express.json());
 
 //serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
-// app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 //Routes
 app.use("/", require("./routes/root"));
 app.use("/register", require("./routes/register"));
 app.use("/employees", require("./routes/api/employees"));
-
-// Next Route handlers
-app.get(
-  "/hello(.html)?",
-  (req, res, next) => {
-    console.log("loading hello.html...");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World!");
-  }
-);
-
-// chaining route handlers
-const one = (req, res, next) => {
-  console.log("one");
-  next();
-};
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-const three = (req, res) => {
-  console.log("three");
-  res.send("Finished!");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
 
 //Custom 404 Page
 app.all("*", (req, res) => {
@@ -17256,7 +17232,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-routes/register.js:
+### x-dave-gray/node-app/routes/register.js:
 
 ```js
 const express = require("express");
@@ -17268,27 +17244,31 @@ router.post("/", registerController.handleNewUser);
 module.exports = router;
 ```
 
-controllers/registerController.js:
+### x-dave-gray/node-app/controllers/registerController.js:
 
 ```js
+const fsPromises = require("fs").promises;
+const path = require("path");
+const bcrypt = require("bcrypt");
+
 const usersDB = {
   users: require("../model/users.json"),
   setUsers: function (data) {
     this.users = data;
   },
 };
-const fsPromises = require("fs").promises;
-const path = require("path");
-const bcrypt = require("bcrypt");
 
 const handleNewUser = async (req, res) => {
   const { user, pwd } = req.body;
+
   if (!user || !pwd)
     return res
       .status(400)
       .json({ message: "Username and password are required." });
+
   // check for duplicate usernames in the db
   const duplicate = usersDB.users.find((person) => person.username === user);
+  
   if (duplicate) return res.sendStatus(409); //Conflict
   try {
     //encrypt the password
@@ -17310,17 +17290,10 @@ const handleNewUser = async (req, res) => {
 module.exports = { handleNewUser };
 ```
 
-```bs
-npm run dev
-```
 
-POST:
+# POST: http://localhost:3500/register
 
-Body = { "user": "walter1", "pwd": "walterpwd"}
-
-```bs
-http://localhost:3500/register
-```
+### Body: { "user": "walt1", "pwd": "Aa$12345"}
 
 ```bs
 {
@@ -17329,29 +17302,31 @@ http://localhost:3500/register
 ```
 
 ```bs
-[nodemon] restarting due to changes...
 [nodemon] starting `node server.js`
 Server running on port 3500
+GET /
+GET /css/style.css
 POST /register
 [
   {
-    username: 'walter1',
-    password: '$2b$10$PWehpDsejK6FpA3UNqXFCeLikAFtQG5YbtHPXKQM5/ckUN4MSAtU2'
+    username: 'walt1',
+    password: '$2b$10$y0LX.oJg3RhMRcTeIaE0t.ox5rQI1KkcYq5quHHk8AeuUsQNzyv7C'
   }
 ]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
 ```
 
-POST:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9f4b1cd4-93af-46c2-b77e-eafa120924bd">
 
-Body = { "user": "walter2", "pwd": "walterpwd"}
+# POST: http://localhost:3500/register
 
-```bs
-http://localhost:3500/register
-```
+### Body = { "user": "walt2", "pwd": "Aa$12345"}
 
 ```bs
 {
-  "success": "New user walter2 created!"
+  "success": "New user walt2 created!"
 }
 ```
 
@@ -17362,21 +17337,25 @@ Server running on port 3500
 POST /register
 [
   {
-    username: 'walter1',
-    password: '$2b$10$PWehpDsejK6FpA3UNqXFCeLikAFtQG5YbtHPXKQM5/ckUN4MSAtU2'
+    username: 'walt1',
+    password: '$2b$10$y0LX.oJg3RhMRcTeIaE0t.ox5rQI1KkcYq5quHHk8AeuUsQNzyv7C'
   },
   {
-    username: 'walter2',
-    password: '$2b$10$J9/QhaIJO/Xhj86XzUaPBuftR/pJP/AEfbKhqw30.8/wbSkvvHKiC'
+    username: 'walt2',
+    password: '$2b$10$00/fPnvsJ8iAckSBoPzTNeoKKizI3Gtm/FU5cx0yxPBaTDgbO9qJq'
   }
 ]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Server running on port 3500
 ```
 
-POST:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c6013cb8-773e-4081-9029-fa82bb419436">
 
-Already Exist:
 
-Body = { "user": "walter1", "pwd": "walterpwd"}
+# POST: http://localhost:3500/register (Already Created)
+
+### Body = { "user": "walt2", "pwd": "Aa$12345"}
 
 ```bs
 http://localhost:3500/register
@@ -17386,10 +17365,15 @@ http://localhost:3500/register
 Conflict
 ```
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/0389e6fd-074b-4692-8064-dd7060c5a8b9">
+
+
 # #End </details>
 
 <details>
-  <summary>106. Express - User Password Login Authentication </summary>
+  <summary>126. Express - User Password Login Authentication </summary>
+
+# User Password Login Authentication  
 
 server.js:
 
@@ -17576,12 +17560,14 @@ Unauthorized
 
 # #End </details>
 
-+JWT
++EXPRESS JWT AUTHENTICATION
 
 <details>
-  <summary>107. Express JWT Authentication - Creating .dotenv Secrets</summary>
+  <summary>127. Express JWT Authentication - Creating .dotenv Secrets</summary>
 
-Install Dependencies:
+# Creating .dotenv Secrets
+
+# Install Dependencies:
 
 ```bs
 npm i dotenv jsonwebtoken cookie-parser --save
