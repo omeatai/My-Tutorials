@@ -18135,7 +18135,7 @@ Cookies -> jwt:
 
 # Creating Logout Controller and Route
 
-controller/logoutController.js:
+### x-dave-gray/node-app/controllers/logoutController.js:
 
 ```js
 const usersDB = {
