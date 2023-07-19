@@ -17531,6 +17531,9 @@ Unauthorized
 
 # Creating .dotenv Secrets
 
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/66a4f867-22dc-48a5-bf04-999731eb3ef6">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/419512d2-031b-488e-802c-285f6fc9121d">
+
 # Install Dependencies:
 
 ```bs
@@ -17541,11 +17544,42 @@ npm i jsonwebtoken
 npm i cookie-parser
 ```
 
-Generate Secret Keys:
+### x-dave-gray/node-app/package.json:
+
+```js
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "uuid": "^9.0.0"
+  }
+}
+```
+
+# Generate Refresh and Access Token Secret Keys:
 
 ```bs
-node
-require("crypto").randomBytes(64).toString("Hex")
+$ node
+$ require("crypto").randomBytes(64).toString("Hex")
 ```
 
 ```js
@@ -17553,18 +17587,14 @@ require("crypto").randomBytes(64).toString("Hex")
 // da009bd39b9455f84e4c55544587c8166b976d666bb5d7b79b3f77d0504500e02a0c01e9fe49d299acdd8d9f66df9b3258d083b38915d1a172842daacbca34f9
 ```
 
-```bs
-Ctrl + c
-```
-
-.env:
+### x-dave-gray/node-app/.env:
 
 ```bs
 ACCESS_TOKEN_SECRET=f69ac98ba015a05a1043b4c9536c2b0ce47d3f1dc71dd65f96db8e5e062ad5fcbe5440fabef0ecf2475bbb869b1741f37094804dde65d1f08bcd9e762b9e6479
 REFRESH_TOKEN_SECRET=da009bd39b9455f84e4c55544587c8166b976d666bb5d7b79b3f77d0504500e02a0c01e9fe49d299acdd8d9f66df9b3258d083b38915d1a172842daacbca34f9
 ```
 
-.gitignore:
+### x-dave-gray/node-app/.gitignore:
 
 ```bs
 node_modules
@@ -17574,23 +17604,30 @@ node_modules
 # #End </details>
 
 <details>
-  <summary>108. Express JWT Authentication - Creating JWT tokens and verification at Login Authorization</summary>
+  <summary>128. Express JWT Authentication - Creating JWT tokens and verification at Login Authorization</summary>
 
-controllers/authController.js:
+# Creating JWT tokens and verification at Login Authorization
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f152d95a-63a6-46f8-9f03-1097ab01016e">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8a627df2-d0f5-4c2f-931d-8020e26df9dd">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c7e57349-b8a5-4b7b-8b34-537fe9548295">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7fd50654-f533-4755-ab19-f691cbcb627a">
+
+### x-dave-gray/node-app/controllers/authController.js:
 
 ```js
+require("dotenv").config();
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const fsPromises = require("fs").promises;
+const path = require("path");
+
 const usersDB = {
   users: require("../model/users.json"),
   setUsers: function (data) {
     this.users = data;
   },
 };
-const bcrypt = require("bcrypt");
-
-const jwt = require("jsonwebtoken");
-require("dotenv").config();
-const fsPromises = require("fs").promises;
-const path = require("path");
 
 const handleLogin = async (req, res) => {
   const { user, pwd } = req.body;
@@ -17598,10 +17635,13 @@ const handleLogin = async (req, res) => {
     return res
       .status(400)
       .json({ message: "Username and password are required." });
+
   const foundUser = usersDB.users.find((person) => person.username === user);
   if (!foundUser) return res.sendStatus(401); //Unauthorized
+
   // evaluate password
   const match = await bcrypt.compare(pwd, foundUser.password);
+
   if (match) {
     // create JWTs
     const accessToken = jwt.sign(
@@ -17627,7 +17667,7 @@ const handleLogin = async (req, res) => {
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       sameSite: "None",
-      secure: true,
+      secure: true, // false for development
       maxAge: 24 * 60 * 60 * 1000,
     });
     res.json({ accessToken });
@@ -17639,19 +17679,21 @@ const handleLogin = async (req, res) => {
 module.exports = { handleLogin };
 ```
 
-Creating JWT verification middleware -
+# Creating JWT verification middleware
 
-middleware/verifyJWT.js:
+### x-dave-gray/node-app/middleware/verifyJWT.js:
 
 ```js
-const jwt = require("jsonwebtoken");
 require("dotenv").config();
+const jwt = require("jsonwebtoken");
 
 const verifyJWT = (req, res, next) => {
   const authHeader = req.headers["authorization"];
   if (!authHeader) return res.sendStatus(401);
-  console.log(authHeader); // Bearer token
+
+  console.log(authHeader); // Bearer <token>
   const token = authHeader.split(" ")[1];
+
   jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
     if (err) return res.sendStatus(403); //invalid token
     req.user = decoded.username;
@@ -17662,9 +17704,9 @@ const verifyJWT = (req, res, next) => {
 module.exports = verifyJWT;
 ```
 
-Placing verification middleware in GET Route -
+# Placing verification middleware in GET Route
 
-routes/api/employees.js:
+### x-dave-gray/node-app/routes/api/employees.js:
 
 ```bs
 .get(verifyJWT, employeesController.getAllEmployees)
@@ -17683,18 +17725,15 @@ router
   .put(employeesController.updateEmployee)
   .delete(employeesController.deleteEmployee);
 
-router.route("/:id").get(employeesController.getEmployee);
+//router.route("/:id").get(employeesController.getEmployee);
+router.get("/:id", employeesController.getEmployee);
 
 module.exports = router;
 ```
 
-POST:
+# POST: http://localhost:3500/auth
 
-Body = { "user": "walter1", "pwd": "walterpwd"}
-
-```bs
-http://localhost:3500/auth
-```
+### Body: { "user": "walt1", "pwd": "Aa$12345"}
 
 ```bs
 {
@@ -17702,16 +17741,12 @@ http://localhost:3500/auth
 }
 ```
 
-GET:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/16d8d843-bae8-47c1-bc8f-09717027df49">
 
-Auth -> Bearer Token:
-
-```bs
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM1NTA4MTgsImV4cCI6MTY3MzU1MDg0OH0.62Z_EOMV1FQJ7-bG84hApAWePKPkgynivA3zfXhs3KM
-```
+# GET: http://localhost:3500/employees (Auth -> Bearer Token)
 
 ```bs
-http://localhost:3500/employees
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQxIiwiaWF0IjoxNjg5NzY1MDk4LCJleHAiOjE2ODk3NjUxMjh9.zLzjxZm9TSFQABCdjDDrPDXJSNNE0bKAfNWt6G6FnYc
 ```
 
 ```bs
@@ -17729,13 +17764,26 @@ http://localhost:3500/employees
 ]
 ```
 
-If No Bearer Token is supplied -> 401 Unauthorized<br>
-If old Bearer Token is supplied -> 403 Forbidden (From verifyJWT middleware)<br>
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7c050d3e-057c-4f3b-991f-fa4f694a13ec">
+
+# GET: http://localhost:3500/employees (No Bearer Token)
+
+### If No Bearer Token is supplied -> 401 Unauthorized (From verifyJWT middleware)
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8033fdee-843b-49d6-b93d-fe91606754d5">
+
+# GET: http://localhost:3500/employees (Expired Bearer Token)
+
+### If old Bearer Token is supplied (expired after 30secs) -> 403 Forbidden (From verifyJWT middleware)
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ad5aa3fb-3ef1-44c2-8de7-1a33facfd7bc">
 
 # #End </details>
 
 <details>
-  <summary>109. Express JWT Authentication - Protect all routes with JWT verification</summary>
+  <summary>129. Express JWT Authentication - Protect all routes with JWT verification</summary>
+
+# Protect all routes with JWT verification
 
 routes/api/employees.js:
 
