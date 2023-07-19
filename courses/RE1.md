@@ -16647,7 +16647,29 @@ module.exports = router;
 
 # Refactoring REST API to MVC Pattern
 
-server.js:
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/63e18f1c-dc7f-4084-998e-e422f373cea7">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/26f74e65-1aec-4bdc-8792-64cbf3dadabf">
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c51a0af4-3dce-4562-908d-fc7b62230e0c">
+<img width="1179" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/f5c71f98-667b-4570-9d00-c87b60836e6a">
+
+### x-dave-gray/node-app/model/employees.json:
+
+```js
+[
+  {
+    id: 1,
+    firstname: "Dave",
+    lastname: "Gray",
+  },
+  {
+    id: 2,
+    firstname: "John",
+    lastname: "Smith",
+  },
+];
+```
+
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -16673,40 +16695,10 @@ app.use(express.json());
 
 //serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
-// app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 //Routes
 app.use("/", require("./routes/root"));
-// app.use("/subdir", require("./routes/subdir"));
 app.use("/employees", require("./routes/api/employees"));
-
-// Next Route handlers
-app.get(
-  "/hello(.html)?",
-  (req, res, next) => {
-    console.log("loading hello.html...");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World!");
-  }
-);
-
-// chaining route handlers
-const one = (req, res, next) => {
-  console.log("one");
-  next();
-};
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-const three = (req, res) => {
-  console.log("three");
-  res.send("Finished!");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
 
 //Custom 404 Page
 app.all("*", (req, res) => {
@@ -16726,30 +16718,7 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-config/corsOptions.js:
-
-```js
-const whitelist = [
-  "https://www.reactsite.com",
-  "http://127.0.0.1:5500",
-  "http://localhost:3500",
-];
-
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  optionsSuccessStatus: 200,
-};
-
-module.exports = corsOptions;
-```
-
-routes/root.js:
+### x-dave-gray/node-app/routes/root.js:
 
 ```js
 const express = require("express");
@@ -16763,7 +16732,7 @@ router.get("^/$|/index(.html)?", (req, res) => {
 module.exports = router;
 ```
 
-routes/api/employees.js:
+### x-dave-gray/node-app/routes/api/employees.js:
 
 ```js
 const express = require("express");
@@ -16777,12 +16746,13 @@ router
   .put(employeesController.updateEmployee)
   .delete(employeesController.deleteEmployee);
 
-router.route("/:id").get(employeesController.getEmployee);
+//router.route("/:id").get(employeesController.getEmployee);
+router.get("/:id", employeesController.getEmployee);
 
 module.exports = router;
 ```
 
-controllers/employeesController.js:
+### x-dave-gray/node-app/controllers/employeesController.js:
 
 ```js
 const data = {};
@@ -16828,29 +16798,104 @@ module.exports = {
 };
 ```
 
-model/employees.json:
+### x-dave-gray/node-app/config/corsOptions.js:
 
 ```js
+const whitelist = [
+  "https://www.reactsite.com",
+  "http://127.0.0.1:5500",
+  "http://localhost:3500",
+];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+
+module.exports = corsOptions;
+```
+
+# GET: http://localhost:3500/employees
+
+```bs
 [
   {
-    id: 1,
-    firstname: "Dave",
-    lastname: "Gray",
+    "id": 1,
+    "firstname": "Dave",
+    "lastname": "Gray"
   },
   {
-    id: 2,
-    firstname: "John",
-    lastname: "Smith",
-  },
-];
+    "id": 2,
+    "firstname": "John",
+    "lastname": "Smith"
+  }
+]
 ```
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7b79f409-92e8-4d8e-bae7-db8d7b1e979b">
+
+# POST: http://localhost:3500/employees
+
+### Body: {"firstname":"John", "lastname":"Doe"}
+
+```bs
+{
+  "firstname": "John",
+  "lastname": "Doe"
+}
+```
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/b0ac1e50-291a-4d80-9e26-6c82167abcce">
+
+# PUT: http://localhost:3500/employees
+
+### Body: {"id":2, "firstname":"David"}
+
+```bs
+{
+  "firstname": "David"
+}
+```
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5cda41da-df3c-4e52-87f6-4e0f3422779f">
+
+# DELETE: http://localhost:3500/employees
+
+### Body: {"id": 3}
+
+```bs
+{
+  "id": 3
+}
+```
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ede482fa-8903-43ba-a091-25d4a01f9d9f">
+
+# GET: http://localhost:3500/employees/1
+
+```bs
+{
+  "id": "1"
+}
+```
+
+<img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e63e215a-4716-49d2-af04-61ed43de63f8">
+
 
 # #End </details>
 
 <details>
-  <summary>104. Express - Simulating a REST API db with Controllers </summary>
+  <summary>124. Express - Simulating a REST API db with Controllers </summary>
 
-server.js:
+# Simulating a REST API db with Controllers
+
+### x-dave-gray/node-app/server.js:
 
 ```js
 const express = require("express");
@@ -16876,40 +16921,10 @@ app.use(express.json());
 
 //serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
-// app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 //Routes
 app.use("/", require("./routes/root"));
-// app.use("/subdir", require("./routes/subdir"));
 app.use("/employees", require("./routes/api/employees"));
-
-// Next Route handlers
-app.get(
-  "/hello(.html)?",
-  (req, res, next) => {
-    console.log("loading hello.html...");
-    next();
-  },
-  (req, res) => {
-    res.send("Hello World!");
-  }
-);
-
-// chaining route handlers
-const one = (req, res, next) => {
-  console.log("one");
-  next();
-};
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-const three = (req, res) => {
-  console.log("three");
-  res.send("Finished!");
-};
-
-app.get("/chain(.html)?", [one, two, three]);
 
 //Custom 404 Page
 app.all("*", (req, res) => {
@@ -17028,15 +17043,7 @@ module.exports = {
 };
 ```
 
-```bs
-npm run dev
-```
-
-GET:
-
-```bs
-http://localhost:3500/employees
-```
+# GET: http://localhost:3500/employees
 
 ```bs
 [
@@ -17053,13 +17060,11 @@ http://localhost:3500/employees
 ]
 ```
 
-POST:
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/9c21b1c4-39d9-478d-b5af-7336a17578ec">
 
-Body = {"firstname":"John", "lastname": "Doe"}
+# POST: http://localhost:3500/employees
 
-```bs
-http://localhost:3500/employees
-```
+### Body: {"firstname":"John", "lastname":"Doe"}
 
 ```bs
 [
@@ -17081,13 +17086,11 @@ http://localhost:3500/employees
 ]
 ```
 
-PUT:
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e96518d9-c56b-4d11-874f-bddae6775c1b">
 
-Body = {"id":2, "lastname": "Jonny"}
+# PUT: http://localhost:3500/employees
 
-```bs
-http://localhost:3500/employees
-```
+### Body: {"id":2, "firstname":"David"}
 
 ```bs
 [
@@ -17098,8 +17101,8 @@ http://localhost:3500/employees
   },
   {
     "id": 2,
-    "firstname": "John",
-    "lastname": "Jonny"
+    "firstname": "David",
+    "lastname": "Smith"
   },
   {
     "id": 3,
@@ -17109,13 +17112,11 @@ http://localhost:3500/employees
 ]
 ```
 
-DELETE:
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/87a6f2a0-a065-4fea-b9ab-20a40c31e24c">
 
-Body = {"id":3}
+# DELETE: http://localhost:3500/employees
 
-```bs
-http://localhost:3500/employees
-```
+### Body: {"id": 3}
 
 ```bs
 [
@@ -17126,17 +17127,15 @@ http://localhost:3500/employees
   },
   {
     "id": 2,
-    "firstname": "John",
-    "lastname": "Jonny"
+    "firstname": "David",
+    "lastname": "Smith"
   }
 ]
 ```
 
-GET:
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/15bcc812-64a3-4204-a5e1-46b61e2bd66b">
 
-```bs
-http://localhost:3500/employees/1
-```
+# GET: http://localhost:3500/employees/1
 
 ```bs
 {
@@ -17146,10 +17145,14 @@ http://localhost:3500/employees/1
 }
 ```
 
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/1303c598-d360-403a-a4c8-876457071136">
+
 # #End </details>
 
 <details>
-  <summary>105. Express - User Password Registration </summary>
+  <summary>125. Express - User Password Registration </summary>
+
+# User Password Registration  
 
 Install bcrypt to hash passwords:
 
