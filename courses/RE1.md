@@ -17409,7 +17409,6 @@ app.use(express.json());
 
 //serve static files
 app.use("/", express.static(path.join(__dirname, "/public")));
-// app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
 //Routes
 app.use("/", require("./routes/root"));
