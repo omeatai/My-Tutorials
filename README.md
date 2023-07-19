@@ -18,13 +18,11 @@
 
 ### [RC3-USING MYSQL WITH NODE.JS - BRAD TRAVESY](/courses/RC3.md)
 
-### [RD1-REACT CRASH COURSE - NET NINJA](/courses/RD1.md)
+### [RD1-REACT & NODE CRASH COURSE - NET NINJA](/courses/RD1.md)
 
-### [RD2-FIREBASE 9 TUTORIAL - NET NINJA](/courses/RD2.md)
+### [RD2-NEXTJS TUTORIAL - NET NINJA](/courses/RD2.md)
 
-### [RD3-NODE CRASH COURSE - NET NINJA](/courses/RD3.md)
-
-### [RD4-NEXTJS TUTORIAL - NET NINJA](/courses/RD4.md)
+### [RD3-FIREBASE 9 TUTORIAL - NET NINJA](/courses/RD3.md)
 
 ### [RE1-REACT & NODE TUTORIAL - DAVE GRAY](/courses/RE1.md)
 

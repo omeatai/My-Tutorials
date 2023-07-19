@@ -1,871 +1,115 @@
-### [B3-NODE CRASH COURSE - NET NINJA](https://youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
+### [RD3-FIREBASE 9 TUTORIAL - NET NINJA](/courses/RD3.md)
+
+# FIREBASE
 
 +INTRODUCTION
 
 <details>
-  <summary>1. Check for Node Version</summary>
+  <summary>85. Setting up Webpack</summary>
 
-```Javascript
-node -v
+```bs
+dist -> index.html
+src -> index.js
 ```
 
-</details>
+Create package.json file:
 
-<details>
-  <summary>2. Run Node File</summary>
-
-```Javascript
-node index.js
+```bs
+npm init -y
 ```
 
-</details>
+Install webpack:
 
-<details>
-  <summary>3. The Global Object</summary>
-
-Test.js:
-
-```Javascript
-let count = 0
-
-const program = global.setInterval(()=>{
-    count++
-    console.log(count)
-}, 1000)
-
-global.setTimeout(()=>{
-    console.log("Setting timeout")
-    clearInterval(program)
-}, 3000)
+```bs
+npm i webpack webpack-cli -D
+npm i webpack webpack-cli webpack-dev-server html-webpack-plugin -D
 ```
 
-Absolute Path
+watch.config.js:
 
-```Javascript
-console.log(__dirname)
-```
-
-```Javascript
-// ~/Desktop/SERVER/Cloud/node
-```
-
-Absolute Path + Filename
-
-```Javascript
-console.log(__filename)
-```
-
-```Javascript
-// ~/Desktop/SERVER/Cloud/node/test.js
-```
-
-</details>
-
-<details>
-  <summary>4. Modules and Require</summary>
-
-require.js:
-
-```Javascript
-const people = ['yoshi' , 'ryu', ' chun-li' , ' mario'];
-const ages = [20, 25, 30, 35];
+```js
+const path = require("path");
 
 module.exports = {
-    people,
-    ages
+  mode: "development",
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+  },
+  watch: true,
 };
-
 ```
 
-modules.js:
-
-```Javascript
-const {people, ages} = require('./require.js');
-
-console.log(people, ages);
-```
-
-```Javascript
-// [ 'yoshi', 'ryu', ' chun-li', ' mario' ] [ 20, 25, 30, 35 ]
-```
-
-</details>
-
-<details>
-  <summary>5. OS module</summary>
-
-```Javascript
-const os = require('os');
-
-console.log(os.platform(), os.homedir());
-
-```
-
-```Javascript
-// darwin /Users/ifeanyiomeata
-```
-
-</details>
-
-<details>
-  <summary>6. Reading Files</summary>
-
-```Javascript
-const fs = require("fs");
-
-// reading files
-fs.readFile('./docs/blog1.txt', (err, data) => {
-    if(err){
-    console.log(err);
-    }
-    console.log(data.toString());
-});
-
-console.log('last line');
-```
-
-```Javascript
-// last line
-// Hello World!
-// Hello World 2!
-```
-
-</details>
-
-<details>
-  <summary>7. Writing Files</summary>
-
-```Javascript
-const fs = require("fs");
-
-// writing files
-fs.writeFile('./docs/blog1.txt', 'hello, world', () => {
-    console.log('file was written');
-});
-fs.writeFile('./docs/blog2.txt', 'hello, again' , () => {
-    console.log('file was written');
-});
-```
-
-```Javascript
-// file was written
-// file was written
-```
-
-</details>
-
-<details>
-  <summary>8. Create and Delete Folder/Directory</summary>
-
-```Javascript
-const fs = require("fs");
-
-// Create and Delete directories/Folders
-if(!fs.existsSync('./assets')) {
-    fs.mkdir('./assets', (err) => {
-        if (err) {
-            console.error(err);
-        }
-        console.log('folder created');
-    });
-} else {
-    fs.rmdir('./assets', (err) => {
-        if(err) {
-            console.log(err)
-        }
-        console.log('folder deleted');
-    })
-}
-```
-
-```Javascript
-// folder created
-// folder deleted
-```
-
-</details>
-
-<details>
-  <summary>9. Delete Files</summary>
-
-```Javascript
-const fs = require("fs");
-
-// deleting files
-if (fs.existsSync('./docs/blog1.txt')) {
-    fs.unlink('./docs/blog1.txt', (err) => {
-        if(err) {
-            console.log(err)
-        }
-        console.log('file deleted');
-    })
-}
-```
-
-```Javascript
-// file deleted
-```
-
-</details>
-
-<details>
-  <summary>10. Read Stream</summary>
-
-```Javascript
-const fs = require("fs");
-
-const readStream = fs.createReadStream('./docs/blog2.txt', { encoding: 'utf8' });
-
-readStream.on('data', (chunk) => {
-    console.log('-------- NEW CHUNK -----');
-    console.log(chunk);
-});
-
-```
-
-```Javascript
-// -------- NEW CHUNK -----
-// <Buffer 4c 6f 72 65 6d 20 69 70 73 75 6d 20 64 6f 6c 6f 72 20 73 69 74 20 61 6d 65 74 2c 20 63 6f 6e 73 65 63 74 65 74 75 65 72 20 61 64 69 70 69 73 63 69 6e ... 65486 more bytes>
-// -------- NEW CHUNK -----
-// <Buffer 20 56 69 76 61 6d 75 73 20 69 6e 20 65 72 61 74 20 75 74 20 75 72 6e 61 20 63 75 72 73 75 73 20 76 65 73 74 69 62 75 6c 75 6d 2e 20 46 75 73 63 65 20 ... 65486 more bytes>
-// -------- NEW CHUNK -----
-// <Buffer 53 75 73 70 65 6e 64 69 73 73 65 20 66 65 75 67 69 61 74 2e 20 53 75 73 70 65 6e 64 69 73 73 65 20 65 6e 69 6d 20 74 75 72 70 69 73 2c 20 64 69 63 74 ... 65486 more bytes>
-// -------- NEW CHUNK -----
-// <Buffer 69 62 75 6c 75 6d 20 65 74 2c 20 74 65 6d 70 6f 72 20 61 75 63 74 6f 72 2c 20 6a 75 73 74 6f 2e 20 49 6e 20 61 63 20 66 65 6c 69 73 20 71 75 69 73 20 ... 65486 more bytes>
-// -------- NEW CHUNK -----
-// <Buffer 6c 61 6d 63 6f 72 70 65 72 20 75 6c 74 72 69 63 69 65 73 20 6e 69 73 69 2e 20 4e 61 6d 20 65 67 65 74 20 64 75 69 2e 20 45 74 69 61 6d 20 72 68 6f 6e ... 11132 more bytes>
-```
-
-</details>
-
-<details>
-  <summary>11. Write Stream</summary>
-
-```Javascript
-const fs = require("fs");
-
-const readStream = fs.createReadStream('./docs/blog2.txt',{ encoding: 'utf8' });
-const writeStream = fs.createWriteStream('./docs/blog3.txt');
-
-readStream.on('data' , (chunk) => {
-    console.log('------ NEW CHUNK -----');
-    console.log(chunk);
-    writeStream.write('\nNEW CHUNK\n');
-    writeStream.write(chunk);
-});
-```
-
-</details>
-
-<details>
-  <summary>12. Piping</summary>
-
-```Javascript
-const fs = require("fs");
-
-const readStream = fs.createReadStream('./docs/blog2.txt',{ encoding: 'utf8' });
-const writeStream = fs.createWriteStream('./docs/blog3.txt');
-
-// readStream.on('data' , (chunk) => {
-//     console.log('------ NEW CHUNK -----');
-//     console.log(chunk);
-//     writeStream.write('\nNEW CHUNK\n');
-//     writeStream.write(chunk);
-// });
-
-// piping
-readStream.pipe(writeStream);
-```
-
-</details>
-
-+REQUESTS & RESPONSES
-
-<details>
-  <summary>13. Create a Server</summary>
-
-```Javascript
-const http = require('http');
-
-const server = http.createServer((req, res) =>{
-    console.log('request made');
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-```Javascript
-// listening for requests on port 3000
-// request made
-```
-
-</details>
-
-<details>
-  <summary>14. Get Request URL and Method</summary>
-
-```Javascript
-
-const http = require('http');
-
-const server = http.createServer((req, res) =>{
-    console.log('request made');
-    console.log("Url: ", req.url);
-    console.log("Method: ", req.method);
-    console.log("Headers: ", req.headers);
-    console.log("Body: ", req.body);
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-```Javascript
-// listening for requests on port 3000
-// request made
-// Url:  /
-// Method:  GET
-// Headers:  {
-//   host: 'localhost:3000',
-//   connection: 'keep-alive',
-//   'sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
-//   'sec-ch-ua-mobile': '?0',
-//   'sec-ch-ua-platform': '"macOS"',
-//   'upgrade-insecure-requests': '1',
-//   'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
-//   accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-//   'sec-fetch-site': 'none',
-//   'sec-fetch-mode': 'navigate',
-//   'sec-fetch-user': '?1',
-//   'sec-fetch-dest': 'document',
-//   'accept-encoding': 'gzip, deflate, br',
-//   'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
-// }
-// Body:  undefined
-```
-
-</details>
-
-<details>
-  <summary>15. Response - Set Header Content Type </summary>
-
-```Javascript
-
-const http = require('http');
-
-const server = http.createServer((req, res) => {
-    console.log('request made');
-    console.log("Url: ", req.url);
-    console.log("Method: ", req.method);
-    console.log("Headers: ", req.headers);
-    console.log("Body: ", req.body);
-
-    // set header content type
-    res.setHeader('Content-Type', 'text/plain');
-    res.write('hello, ninjas');
-    res.end();
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-```Javascript
-const http = require('http');
-
-const server = http.createServer((req, res) => {
-    console.log('request made');
-    // console.log("Url: ", req.url);
-    // console.log("Method: ", req.method);
-    // console.log("Headers: ", req.headers);
-    // console.log("Body: ", req.body);
-
-    // set header content type
-    res.setHeader('Content-Type', 'text/html');
-    res.write('<head><link rel="stylesheet" href="#"></head>');
-    res.write('<h1>Welcome!</h1>');
-    res.write('<h2>hello, ninjas</h2>');
-    res.end();
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-</details>
-
-<details>
-  <summary>16. Returning HTML Pages </summary>
-
-```Javascript
-const http = require('http');
-const fs = require('fs');
-
-const server = http.createServer((req, res) => {
-    console.log('request made');
-
-    // set header content type
-    res.setHeader('Content-Type', 'text/html');
-
-    // send an html file.
-    fs.readFile('./views/index.html', (err, data) => {
-        if(err) {
-            console.log(err);
-            res.end();
-        } else {
-            res.write(data);
-            res.end();
-            // OR
-            // res.end(data);
-        }
-    })
-
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-</details>
-
-<details>
-  <summary>17. Routing HTML Pages</summary>
-
-```Javascript
-const http = require('http');
-const fs = require('fs');
-
-const server = http.createServer((req, res) => {
-    console.log('request made');
-
-    // set header content type
-    res.setHeader('Content-Type', 'text/html');
-
-    // get path from request
-    let path = './views/';
-    switch (req.url) {
-        case '/':
-            path += 'index.html';
-            break;
-        case '/about':
-            path += 'about.html';
-            break;
-        default:
-            path += '404.html';
-            break;
-    }
-
-    // send an html file.
-    fs.readFile(path, (err, data) => {
-        if(err) {
-            console.log(err);
-            res.end();
-        } else {
-            res.end(data);
-        }
-    })
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-</details>
-
-<details>
-  <summary>18. Set Status Codes </summary>
-
-Status codes describe the type of response sent to the browser.
-
-```markdown
-200- OK
-301- Resource moved
-404- Not found
-500- Internal server error
-```
-
-```markdown
-100 Range- Informational Responses
-200 Range- Success codes
-300 Range- Codes for redirects
-400 Range- User or client error codes
-500 Range- Server error codes
-```
-
-```Javascript
-const http = require('http');
-const fs = require('fs');
-
-const server = http.createServer((req, res) => {
-    console.log('request made');
-
-    // set header content type
-    res.setHeader('Content-Type', 'text/html');
-
-    // get path from request
-    let path = './views/';
-    switch (req.url) {
-        case '/':
-            path += 'index.html';
-            res.statusCode = 200;
-            break;
-        case '/about':
-            path += 'about.html';
-            res.statusCode = 200;
-            break;
-        default:
-            path += '404.html';
-            res.statusCode = 404;
-            break;
-    }
-
-    // send an html file.
-    fs.readFile(path, (err, data) => {
-        if(err) {
-            console.log(err);
-            res.end();
-        } else {
-            res.end(data);
-        }
-    })
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-</details>
-
-<details>
-  <summary>19. HTTP Redirects</summary>
-
-```Javascript
-
-const http = require('http');
-const fs = require('fs');
-
-const server = http.createServer((req, res) => {
-    console.log('request made');
-
-    // set header content type
-    res.setHeader('Content-Type', 'text/html');
-
-    // get path from request
-    let path = './views/';
-    switch (req.url) {
-        case '/':
-            path += 'index.html';
-            res.statusCode = 200;
-            break;
-        case '/about':
-            path += 'about.html';
-            res.statusCode = 200;
-            break;
-        case '/about-me':
-            res.statusCode = 301;
-            res.setHeader('Location', '/about');
-            res.end();
-            break;
-        default:
-            path += '404.html';
-            res.statusCode = 404;
-            break;
-    }
-
-    // send an html file.
-    fs.readFile(path, (err, data) => {
-        if(err) {
-            console.log(err);
-            res.end();
-        } else {
-            res.end(data);
-        }
-    })
-});
-
-server.listen(3000, 'localhost', () => {
-    console.log('listening for requests on port 3000')
-})
-```
-
-</details>
-
-+NODE PACKAGE MANAGER (NPM)
-
-<details>
-  <summary>20. Install Nodemon </summary>
-
-```Javascript
-npm install -g nodemon
-
-yarn global add nodemon
-```
-
-```Javascript
-nodemon server
-```
-
-</details>
-
-<details>
-  <summary>21. Create Package.json dependencies locally </summary>
-
-```Javascript
-npm init
-```
-
-```Javascript
-{
-  "name": "node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
+```js
+const path = require("path");
+
+module.exports = {
+  mode: "development",
+  entry: "./src/index.js",
+  output: {
+    path: path.join(__dirname, "dist"),
+    filename: "bundle.js",
+    sourceMapFilename: "bundle.js.map",
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC"
-}
-
-```
-
-</details>
-
-<details>
-  <summary>22. Install Lodash</summary>
-
-```Javascript
-npm i --save lodash
+  devtool: "source-map",
+  watch: true,
+};
 ```
 
 package.json:
 
-```Javascript
+```bs
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+},
+```
+
+```js
 {
-  "name": "node",
+  "name": "firebase-netninja",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "webpack"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "lodash": "^4.17.21"
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   }
 }
 ```
 
-package-lock.json:
+Run Webpack:
 
-```Javascript
-{
-  "name": "node",
-  "version": "1.0.0",
-  "lockfileVersion": 2,
-  "requires": true,
-  "packages": {
-    "": {
-      "name": "node",
-      "version": "1.0.0",
-      "license": "ISC",
-      "dependencies": {
-        "lodash": "^4.17.21"
-      }
-    },
-    "node_modules/lodash": {
-      "version": "4.17.21",
-      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
-      "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
-    }
-  },
-  "dependencies": {
-    "lodash": {
-      "version": "4.17.21",
-      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
-      "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
-    }
-  }
-}
-
+```bs
+npm run build
 ```
 
-</details>
+index.html:
 
-<details>
-  <summary>23. Install all dependencies in Package.json</summary>
-
-```Javascript
-npm install
+```bs
+<script src="bundle.js"></script>
 ```
-
-</details>
-
-+EXPRESS
-
-<details>
-  <summary>24. Express Introduction</summary>
-
-```Javascript
-// We can use express as shown as below
-const express = require('express')
-const app = express()
-const port = 3000
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
-```
-
-</details>
-
-<details>
-  <summary>25. Install Express</summary>
-
-```Javascript
-npm install express --save
-```
-
-```Javascript
-{
-  "name": "node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "lodash": "^4.17.21"
-  }
-}
-```
-
-</details>
-
-<details>
-  <summary>26. Display Home Page</summary>
-
-app.js:
-
-```Javascript
-const express = require('express');
-
-// express app
-const app = express();
-
-// listen for requests
-app.listen(3000);
-
-// get home page
-app.get('/', (req, res) => {
-    res.send('<h1>Home page</h1>');
-});
-```
-
-</details>
-
-<details>
-  <summary>27. Routing HTML Pages</summary>
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-
-const homePage = path.join(__dirname, 'views/index.html')
-const aboutPage = path.join(__dirname, 'views/about.html')
-const _404Page = path.join(__dirname, 'views/404.html')
-
-// express app
-const app = express();
-
-// listen for requests
-app.listen(3000);
-
-// get home page
-app.get('/', (req, res) => {
-    res.sendFile(homePage);
-    // res.sendFile('./views/index.html' , { root: __dirname });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.sendFile(aboutPage);
-    // res.sendFile('./views/about.html' , { root: __dirname });
-});
-```
-
-</details>
-
-<details>
-  <summary>28. Create Nav Links</summary>
-
-Index.html:
 
 ```html
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Node.js Crash Course</title>
+    <title>Firebase 9</title>
   </head>
   <body>
-    <nav>
-      <a href="/"> Homepage </a>
-      <a href="/about"> About page </a>
-    </nav>
-    <h1>Home</h1>
-    <h2>Your path to becoming a Node.js ninja!</h2>
-  </body>
-</html>
-```
-
-about.html:
-
-```html
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Node.js Crash Course</title>
-  </head>
-  <body>
-    <nav>
-      <a href="/"> Homepage </a>
-      <a href="/about"> About page </a>
-    </nav>
-    <h1>About</h1>
-    <h2>Your path to becoming a Node.js ninja!</h2>
+    <h1>Getting started with firebase 9</h1>
+    <script src="bundle.js"></script>
   </body>
 </html>
 ```
@@ -873,2609 +117,1724 @@ about.html:
 </details>
 
 <details>
-  <summary>29. Redirects & 404's</summary>
+  <summary>86. Create Firebase Project</summary>
 
-app.js:
+Install Firebase:
 
-```Javascript
-const express = require('express');
-const path = require('path');
-
-const homePage = path.join(__dirname, 'views/index.html')
-const aboutPage = path.join(__dirname, 'views/about.html')
-const _404Page = path.join(__dirname, 'views/404.html')
-
-// express app
-const app = express();
-
-// listen for requests
-app.listen(3000);
-
-// get home page
-app.get('/', (req, res) => {
-    res.sendFile(homePage);
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.sendFile(aboutPage);
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).sendFile(_404Page);
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
+```bs
+npm install firebase
 ```
 
-</details>
+index.js:
 
-+VIEW ENGINES
+```js
+import { initializeApp } from "firebase/app";
 
-<details>
-  <summary>30. Install EJS</summary>
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-```Javascript
-npm install ejs
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 ```
 
 </details>
 
 <details>
-  <summary>31. EJS Sample</summary>
+  <summary>87. Connect Firebase App</summary>
 
-```Javascript
-let ejs = require('ejs');
-let people = ['geddy', 'neil', 'alex'];
-let html = ejs.render('<%= people.join(", "); %>', {people: people});
+index.js:
+
+```js
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
+
+// Initialize Firebase App
+initializeApp(firebaseConfig);
+
+// init db services
+const db = getFirestore();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// get collection data
+getDocs(colRef)
+  .then((snapshot) => {
+    // console.log(snapshot.docs)
+    let books = [];
+    snapshot.docs.forEach((doc) => {
+      books.push({ ...doc.data(), id: doc.id });
+    });
+    console.log(books);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
 ```
 
-```bash
-ejs ./template_file.ejs -f data_file.json -o ./output.html
-```
+```js
+// author: "patrick bamford"
+// id: "5t16O84fjMNOU73F1pC5"
+// title: "the fall of snowden"
 
-```html
-<script src="ejs.js"></script>
-<script>
-  let people = ["geddy", "neil", "alex"];
-  let html = ejs.render('<%= people.join(", "); %>', { people: people });
-</script>
-```
-
-```html
-<% if (user) { %>
-<h2><%= user.name %></h2>
-<% } %>
-```
-
-```Javascript
-let template = ejs.compile(str, options);
-template(data);
-// => Rendered HTML string
-
-ejs.render(str, data, options);
-// => Rendered HTML string
-
-ejs.renderFile(filename, data, options, function(err, str){
-    // str => Rendered HTML string
-});
+// author: "gary nerds"
+// id: "OKNxNdBC2ncnpa16SjDB"
+// title: "the cloud"
 ```
 
 </details>
 
 <details>
-  <summary>32. Create EJS Pages</summary>
+  <summary>88. Adding and Deleting Documents</summary>
 
-Index.ejs:
+index.html:
 
-```html
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <title>Blog Ninja</title>
-  </head>
-  <body>
-    <nav>
-      <div class="site-title">
-        <a href="/"><h1>Blog Ninja</h1></a>
-        <p>A Net Ninja Site</p>
-      </div>
-      <ul>
-        <li><a href="/">Blogs</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blogs/create">New Blog</a></li>
-      </ul>
-    </nav>
-    <div class="blogs content">
-      <h2>All Blogs</h2>
-    </div>
-  </body>
-</html>
-```
-
-About.ejs:
-
-```Javascript
+```js
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Ninja</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase 9</title>
 </head>
 <body>
-    <nav>
-        <div class="site-title">
-            <a href="/"><h1>Blog Ninja</h1></a>
-            <p>A Net Ninja Site</p>
-        </div>
-        <ul>
-            <li><a href="/">Blogs</a></1li>
-            <li><a href="/about">About</a></1li>
-            <li><a href="/blogs/create">New Blog</a></1li>
-        </ul>
-    </nav>
-    <div class="about content">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quibusdam quaerat illo a </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quibusdam quaerat illo a </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quibusdam quaerat illo a </p>
-    </div>
+  <h1>Getting Started with Firebase 9</h1>
+
+  <h2>Firebase Firestore</h2>
+
+  <form class="add">
+    <label for="title">Title:</label>
+    <input type="text" name="title" required>
+    <label for="author">Author:</label>
+    <input type="text" name="author" required>
+
+    <button>add a new book</button>
+  </form>
+
+  <form class="delete">
+    <label for="id">Document id:</label>
+    <input type="text" name="id" required>
+
+    <button>delete a book</button>
+  </form>
+
+  <script src="bundle.js"></script>
 </body>
 </html>
-
 ```
 
-404.ejs:
+index.js:
 
-```Javascript
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Ninja</title>
-</head>
-<body>
-    <nav>
-        <div class="site-title">
-            <a href="/"><h1>Blog Ninja</h1></a>
-            <p>A Net Ninja Site</p>
-        </div>
-        <ul>
-            <li><a href="/">Blogs</a></1li>
-            <li><a href="/about">About</a></1li>
-            <li><a href="/blogs/create">New Blog</a></1li>
-        </ul>
-    </nav>
-    <div class="not-found content">
-        <h2>OOPS, page not found :)</h2>
-    </div>
-</body>
-</html>
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
+
+// Initialize Firebase App
+initializeApp(firebaseConfig);
+
+// init db services
+const db = getFirestore();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// get collection data
+getDocs(colRef)
+  .then((snapshot) => {
+    // console.log(snapshot.docs)
+    let books = [];
+    snapshot.docs.forEach((doc) => {
+      books.push({ ...doc.data(), id: doc.id });
+    });
+    console.log(books);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
 ```
 
 </details>
 
 <details>
-  <summary>33. Render EJS Template</summary>
+  <summary>89. Real Time onSnapshot Listener </summary>
 
-```Javascript
-const express = require('express');
-const path = require('path');
+index.js:
 
-// express app
-const app = express();
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-// listen for requests
-app.listen(3000);
+// Initialize Firebase App
+initializeApp(firebaseConfig);
 
-// get home page
-app.get('/', (req, res) => {
-    //res.sendFile(homePage);
-    res.render('index');
+// init db services
+const db = getFirestore();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// realtime collection data
+onSnapshot(colRef, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
 });
 
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about');
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+  }).then(() => {
+    addBookForm.reset();
+  });
 });
 
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404');
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
+  const docRef = doc(db, "books", deleteBookForm.id.value);
 
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
 ```
 
 </details>
 
 <details>
-  <summary>34. Render Create Blog</summary>
+  <summary>90. Firebase Where Queries</summary>
 
-app.js:
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+} from "firebase/firestore";
 
-```Javascript
-const express = require('express');
-const path = require('path');
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-// express app
-const app = express();
+// Initialize Firebase App
+initializeApp(firebaseConfig);
 
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
+// init db services
+const db = getFirestore();
 
-// listen for requests
-app.listen(3000);
+// collection ref
+const colRef = collection(db, "books");
 
-// get home page
-app.get('/', (req, res) => {
-    //res.sendFile(homePage);
-    res.render('index');
+// queries
+const q = query(colRef, where("author", "==", "Ashley Stampley"));
+
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
 });
 
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about');
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+  }).then(() => {
+    addBookForm.reset();
+  });
 });
 
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create');
-});
+  const docRef = doc(db, "books", deleteBookForm.id.value);
 
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404');
-    // res.sendFile('./views/404.html', { root: __dirname });
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
 });
-
 ```
 
-create.ejs:
+</details>
+
+<details>
+  <summary>91. Ordering by Property</summary>
+
+```bs
+// queries
+const q = query(colRef, where("author", "==", "dave ramsey"), orderBy("title", "asc"))
+```
+
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
+
+// Initialize Firebase App
+initializeApp(firebaseConfig);
+
+// init db services
+const db = getFirestore();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("title", "asc")
+);
+
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+```
+
+</details>
+
+<details>
+  <summary>92. Ordering by Timestamps</summary>
+
+```bs
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
+```
+
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
+
+// Initialize Firebase App
+initializeApp(firebaseConfig);
+
+// init db services
+const db = getFirestore();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
+
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+```
+
+</details>
+
+<details>
+  <summary>93. Fetching a Single Document</summary>
+
+```bs
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "M3bROLjs0pyabVoNvUaK");
+
+// getDoc(docRef)
+//   .then(doc => {
+//     console.log(doc.data(), doc.id)
+//   })
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+```
+
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  getDoc,
+} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
+
+// Initialize Firebase App
+initializeApp(firebaseConfig);
+
+// init db services
+const db = getFirestore();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
+
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "M3bROLjs0pyabVoNvUaK");
+
+// getDoc(docRef)
+//   .then(doc => {
+//     console.log(doc.data(), doc.id)
+//   })
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+```
+
+</details>
+
+<details>
+  <summary>94. Updating Documents</summary>
+
+index.html:
 
 ```html
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <title>Blog Ninja</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase 9</title>
   </head>
   <body>
-    <nav>
-      <div class="site-title">
-        <a href="/"><h1>Blog Ninja</h1></a>
-        <p>A Net Ninja Site</p>
-      </div>
-      <ul>
-        <li><a href="/">Blogs</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blogs/create">New Blog</a></li>
-      </ul>
-    </nav>
+    <h1>Getting Started with Firebase 9</h1>
 
-    <div class="create-blog content">
-      <form>
-        <label for="title">Blog Title:</label>
-        <input type="text" id="title" name="title" required />
-        <label for="snippet">Blog Snippet:</label>
-        <input type="text" id="snippet" name="snippet" required />
-        <label for="body">Blog Body:</label>
-        <textarea id="body" name="body" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <h2>Firebase Firestore</h2>
+
+    <form class="add">
+      <label for="title">Title:</label>
+      <input type="text" name="title" required />
+      <label for="author">Author:</label>
+      <input type="text" name="author" required />
+
+      <button>add a new book</button>
+    </form>
+
+    <form class="delete">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>delete a book</button>
+    </form>
+
+    <form class="update">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>update a book</button>
+    </form>
+
+    <script src="bundle.js"></script>
   </body>
 </html>
 ```
 
-</details>
+index.js:
 
-<details>
-  <summary>35. Displaying Internal Dynamic content</summary>
+```bs
+// updating a document
+const updateForm = document.querySelector('.update')
+updateForm.addEventListener('submit', (e) => {
+  e.preventDefault()
 
-```html
-<div class="site-title">
-  <a href="/"><h1>Blog Ninja</h1></a>
-  <p>A Net Ninja Site</p>
-  <% const firstName = 'Fred' %>
-  <p>His First Name is <%= firstName %>.</p>
-</div>
+  let docRef = doc(db, 'books', updateForm.id.value)
+
+  updateDoc(docRef, {
+    title: 'updated title'
+  })
+  .then(() => {
+    updateForm.reset()
+  })
+})
+```
+
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  getDoc,
+  updateDoc,
+} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
+
+// Initialize Firebase App
+initializeApp(firebaseConfig);
+
+// init db services
+const db = getFirestore();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
+
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "M3bROLjs0pyabVoNvUaK");
+
+// getDoc(docRef)
+//   .then(doc => {
+//     console.log(doc.data(), doc.id)
+//   })
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+
+// updating a document
+const updateForm = document.querySelector(".update");
+updateForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let docRef = doc(db, "books", updateForm.id.value);
+
+  updateDoc(docRef, {
+    title: "updated title",
+  }).then(() => {
+    updateForm.reset();
+  });
+});
 ```
 
 </details>
 
 <details>
-  <summary>36. Displaying Context Dynamic content</summary>
+  <summary>95. Signing up Users</summary>
 
-```Javascript
-// get home page
-app.get('/', (req, res) => {
-    //res.sendFile(homePage);
-    res.render('index', { title: 'Home' });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-```html
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Ninja | <%= title %></title>
-</head>
-```
-
-</details>
-
-<details>
-  <summary>37. Iterate through Blogs Array</summary>
-
-```Javascript
-const express = require('express');
-const path = require('path');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-// listen for requests
-app.listen(3000);
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
+index.html:
 
 ```html
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <title>Blog Ninja | <%= title %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase 9</title>
   </head>
   <body>
-    <nav>
-      <div class="site-title">
-        <a href="/"><h1>Blog Ninja</h1></a>
-        <p>A Net Ninja Site</p>
-      </div>
-      <ul>
-        <li><a href="/">Blogs</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blogs/create">New Blog</a></li>
-      </ul>
-    </nav>
-    <div class="blogs content">
-      <h2>All Blogs</h2>
-      <% if(blogs.length > 0){ %> <% blogs.forEach(blog => { %>
-      <div class="blog-preview">
-        <h3 class="title">
-          <a href="/blogs/<%= blog._id %>"><%= blog.title %></a>
-        </h3>
-        <p class="author">Written by <%= blog.author %></p>
-        <p class="snippet"><%= blog.snippet %></p>
-      </div>
-      <% }) %> <% }else{ %>
-      <p>No blogs to show</p>
-      <% } %>
-    </div>
+    <h1>Getting Started with Firebase 9</h1>
+
+    <h2>Firebase Firestore</h2>
+
+    <form class="add">
+      <label for="title">Title:</label>
+      <input type="text" name="title" required />
+      <label for="author">Author:</label>
+      <input type="text" name="author" required />
+
+      <button>add a new book</button>
+    </form>
+
+    <form class="delete">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>delete a book</button>
+    </form>
+
+    <form class="update">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>update a book</button>
+    </form>
+
+    <h2>Firebase Auth</h2>
+
+    <form class="signup">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>signup</button>
+    </form>
+
+    <script src="bundle.js"></script>
   </body>
 </html>
 ```
 
-</details>
+index.js:
 
-<details>
-  <summary>38. Include Partials</summary>
-
-Index.ejs:
-
-```html
-<html lang="en">
-  <%- include('./partials/head.ejs') %>
-  <body>
-    <%- include('./partials/nav.ejs') %>
-    <div class="blogs content">
-      <h2>All Blogs</h2>
-      <% if(blogs.length > 0){ %> <% blogs.forEach(blog => { %>
-      <div class="blog-preview">
-        <h3 class="title">
-          <a href="/blogs/<%= blog._id %>"><%= blog.title %></a>
-        </h3>
-        <p class="author">Written by <%= blog.author %></p>
-        <p class="snippet"><%= blog.snippet %></p>
-      </div>
-      <% }) %> <% }else{ %>
-      <p>No blogs to show</p>
-      <% } %>
-    </div>
-    <%- include('./partials/footer.ejs') %>
-  </body>
-</html>
+```bs
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+} from 'firebase/auth'
 ```
 
-Nav.ejs:
-
-```html
-<nav>
-  <div class="site-title">
-    <a href="/"><h1>Blog Ninja</h1></a>
-    <p>A Net Ninja Site</p>
-  </div>
-  <ul>
-    <li><a href="/">Blogs</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/blogs/create">New Blog</a></li>
-  </ul>
-</nav>
+```bs
+// init db services
+const db = getFirestore()
+const auth = getAuth()
 ```
 
-Head.ejs:
-
-```html
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-  <title>Blog Ninja | <%= title %></title>
-</head>
-```
-
-Footer.ejs:
-
-```html
-<footer>Copyright &copy; 2022</footer>
-```
-
-</details>
-
-<details>
-  <summary>39. Styling Head</summary>
-
-```html
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Ninja | <%= title %></title>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
-    body {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 20px;
-      font-family: "Noto Serif", serif;
-      max-width: 1200px;
-    }
-    p,
-    h1,
-    h2,
-    h3,
-    a,
-    ul {
-      margin: 0;
-      padding: 0;
-      text-decoration: none;
-      color: #222;
-    }
-
-    /* nav & footer styles */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 60px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #ddd;
-      text-transform: uppercase;
-    }
-    nav ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    nav li {
-      list-style-type: none;
-      margin-left: 20px;
-    }
-    nav h1 {
-      font-size: 3em;
-    }
-    nav p,
-    nav a {
-      color: #777;
-      font-weight: 300;
-    }
-    footer {
-      color: #777;
-      text-align: center;
-      margin: 80px auto 20px;
-    }
-    h2 {
-      margin-bottom: 40px;
-    }
-    h3 {
-      text-transform: capitalize;
-      margin-bottom: 8px;
-    }
-    .content {
-      margin-left: 20px;
-    }
-
-    /* index styles */
-
-    /* details styles */
-
-    /* create styles */
-    .create-blog form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    .create-blog input,
-    .create-blog textarea {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
-      padding: 8px;
-    }
-    .create-blog label {
-      display: block;
-      margin-top: 24px;
-    }
-    textarea {
-      height: 120px;
-    }
-    .create-blog button {
-      margin-top: 20px;
-      background: crimson;
-      color: white;
-      padding: 6px;
-      border: 0;
-      font-size: 1.2em;
-      cursor: pointer;
-    }
-  </style>
-</head>
-```
-
-</details>
-
-+MIDDLEWARES
-
-<details>
-  <summary>40. Create Middleware</summary>
-
-```Javascript
-// middleware
-app.use((req, res, next) => {
-    console.log('new request made:');
-    console.log('host: ', req.hostname);
-    console.log('path: ', req.path);
-    console.log('method: ', req.method);
-    next();
-});
-```
-
-```markdown
-new request made:
-host: localhost
-path: /
-method: GET
-```
-
-```Javascript
-const express = require('express');
-const path = require('path');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-// listen for requests
-app.listen(3000);
-
-// middleware
-app.use((req, res, next) => {
-    console.log('new request made:');
-    console.log('host: ', req.hostname);
-    console.log('path: ', req.path);
-    console.log('method: ', req.method);
-    next();
-});
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-</details>
-
-<details>
-  <summary>41. Use Morgan Middleware</summary>
-
-```markdown
-npm install morgan --save
-```
-
-Index.ejs:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-// listen for requests
-app.listen(3000);
-
-// middleware
-app.use((req, res, next) => {
-    console.log('new request made:');
-    console.log('host: ', req.hostname);
-    console.log('path: ', req.path);
-    console.log('method: ', req.method);
-    next();
-});
-
-app.use(morgan('dev'));
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-```markdown
-new request made:
-host: localhost
-path: /
-method: GET
-GET / 304 19.124 ms - -
-```
-
-</details>
-
-<details>
-  <summary>42. Use Style.css Static File</summary>
-
-```Javascript
-// static files
-app.use(express.static('public'));
-```
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-// listen for requests
-app.listen(3000);
-
-// middleware
-app.use((req, res, next) => {
-    console.log('new request made:');
-    console.log('host: ', req.hostname);
-    console.log('path: ', req.path);
-    console.log('method: ', req.method);
-    next();
-});
-
-app.use(morgan('dev'));
-
-// static files
-app.use(express.static('public'));
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-head.ejs:
-
-```html
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Ninja | <%= title %></title>
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-```
-
-public/styles.css:
-
-```Javascript
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-      body{
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 0 20px;
-        font-family: 'Noto Serif', serif;
-        max-width: 1200px;
-      }
-      p, h1, h2, h3, a, ul{
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        color: #222;
-      }
-
-      /* nav & footer styles */
-      nav{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ddd;
-        text-transform: uppercase;
-      }
-      nav ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-      }
-      nav li{
-        list-style-type: none;
-        margin-left: 20px;
-      }
-      nav h1{
-        font-size: 3em;
-      }
-      nav p, nav a{
-        color: #777;
-        font-weight: 300;
-      }
-      footer{
-        color: #777;
-        text-align: center;
-        margin: 80px auto 20px;
-      }
-      h2{
-        margin-bottom: 40px;
-      }
-      h3{
-        text-transform: capitalize;
-        margin-bottom: 8px;
-      }
-      .content{
-        margin-left: 20px;
-      }
-
-      /* index styles */
-
-      /* details styles */
-
-      /* create styles */
-      .create-blog form{
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      .create-blog input,
-      .create-blog textarea{
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-        padding: 8px;
-      }
-      .create-blog label{
-        display: block;
-        margin-top: 24px;
-      }
-      textarea{
-        height: 120px;
-      }
-      .create-blog button{
-        margin-top: 20px;
-        background: crimson;
-        color: white;
-        padding: 6px;
-        border: 0;
-        font-size: 1.2em;
-        cursor: pointer;
-      }
-```
-
-</details>
-
-+MONGODB
-
-<details>
-  <summary>43. Connect to MongoDB</summary>
-
-```markdown
-Mongodb Atlas
-https://www.mongodb.com/cloud/atlas
-```
-
-```Javascript
-const dbURI = 'mongodb+srv://admin:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority';
-```
-
-```Javascript
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-```
-
-</details>
-
-<details>
-  <summary>44. Connect with Mongoose</summary>
-
-```markdown
-npm install mongoose --save
-```
-
-```Javascript
-const mongoose = require('mongoose');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-```
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// middleware
-app.use((req, res, next) => {
-    console.log('new request made:');
-    console.log('host: ', req.hostname);
-    console.log('path: ', req.path);
-    console.log('method: ', req.method);
-    next();
-});
-
-app.use(morgan('dev'));
-
-// static files
-app.use(express.static('public'));
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-```Javascript
-// connected to db
-```
-
-</details>
-
-<details>
-  <summary>45. Create Database Model and Schema</summary>
-
-models/blog.js:
-
-```Javascript
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-
-const blogSchema = new Schema({
-    title: {
-        type: String,
-        required: true
-    },
-    snippet: {
-        type: String,
-        required: true
-    },
-    body: {
-        type: String,
-        required: true
-    }
-}, { timestamps: true });
-
-const Blog = mongoose.model('Blog', blogSchema);
-module.exports = Blog;
-```
-
-</details>
-
-<details>
-  <summary>46. Saving a Single Blog</summary>
-
-```Javascript
-const Blog = require('./models/blog');
-
-// mongoose sandbox routes
-app.get('/add-blog', (req, res) => {
-    const blog = new Blog({
-        title: 'new blog 2',
-        snippet: 'about my new blog',
-        body: 'more about my new blog'
-    });
-
-    blog.save()
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-```
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const Blog = require('./models/blog');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-
-// mongoose sandbox routes
-app.get('/add-blog', (req, res) => {
-    const blog = new Blog({
-        title: 'new blog 2',
-        snippet: 'about my new blog',
-        body: 'more about my new blog'
-    });
-
-    blog.save()
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-```Javascript
-// {
-// "title": "new blog 2",
-// "snippet": "about my new blog",
-// "body": "more about my new blog",
-// "_id": "635bd60ce18a55b9822dc59a",
-// "createdAt": "2022-10-28T13:15:56.807Z",
-// "updatedAt": "2022-10-28T13:15:56.807Z",
-// "__v": 0
-// }
-```
-
-</details>
-
-<details>
-  <summary>47. Get all Blogs</summary>
-
-```Javascript
-//get all blogs
-app.get('/all-blogs', (req, res) => {
-    Blog.find()
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-```
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const Blog = require('./models/blog');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-
-// mongoose sandbox routes
-// add blog
-app.get('/add-blog', (req, res) => {
-    const blog = new Blog({
-        title: 'new blog 2',
-        snippet: 'about my new blog',
-        body: 'more about my new blog'
-    });
-
-    blog.save()
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-//get all blogs
-app.get('/all-blogs', (req, res) => {
-    Blog.find()
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-```Javascript
-// [
-//   {
-//   "_id": "635bd60ce18a55b9822dc59a",
-//   "title": "new blog 2",
-//   "snippet": "about my new blog",
-//   "body": "more about my new blog",
-//   "createdAt": "2022-10-28T13:15:56.807Z",
-//   "updatedAt": "2022-10-28T13:15:56.807Z",
-//   "__v": 0
-//   },
-//   {
-//   "_id": "635bd7cfe18a55b9822dc59c",
-//   "title": "new blog 2",
-//   "snippet": "about my new blog",
-//   "body": "more about my new blog",
-//   "createdAt": "2022-10-28T13:23:27.292Z",
-//   "updatedAt": "2022-10-28T13:23:27.292Z",
-//   "__v": 0
-//   }
-// ]
-```
-
-</details>
-
-<details>
-  <summary>48. Get a Single Blog</summary>
-
-```Javascript
-//get single blog
-app.get('/single-blog', (req, res) => {
-    Blog.findById('635bd60ce18a55b9822dc59a')
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-```
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const Blog = require('./models/blog');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-// app.set('views', 'myviews');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-
-// mongoose sandbox routes
-// add blog
-app.get('/add-blog', (req, res) => {
-    const blog = new Blog({
-        title: 'new blog 2',
-        snippet: 'about my new blog',
-        body: 'more about my new blog'
-    });
-
-    blog.save()
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-//get all blogs
-app.get('/all-blogs', (req, res) => {
-    Blog.find()
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-//get single blog
-app.get('/single-blog', (req, res) => {
-    Blog.findById('635bd60ce18a55b9822dc59a')
-        .then((result) => {
-            res.send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// get home page
-app.get('/', (req, res) => {
-    const blogs = [
-        { title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-        { title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur' },
-    ];
-    res.render('index', { title: 'Home', blogs });
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// redirects
-app.get('/about-us' , (req, res) => {
-    res.redirect('/about');
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-```Javascript
-// {
-// "_id": "635bd60ce18a55b9822dc59a",
-// "title": "new blog 2",
-// "snippet": "about my new blog",
-// "body": "more about my new blog",
-// "createdAt": "2022-10-28T13:15:56.807Z",
-// "updatedAt": "2022-10-28T13:15:56.807Z",
-// "__v": 0
-// }
-```
-
-</details>
-
-+REQUESTS
-
-<details>
-  <summary>49. List of Requests</summary>
-
-```Javascript
-// localhost:3000/blogs        -----> GET (Get a list of blogs)
-// localhost:3000/blogs/create -----> GET (Render a form to create a new blog)
-// localhost:3000/blogs        -----> POST (Create a new blog)
-// localhost:3000/blogs/:id    -----> GET (Get a single blog)
-// localhost:3000/blogs/:id    -----> DELETE (Delete a single blog)
-// localhost:3000/blogs/:id    -----> PUT  (Update a single blog)
-```
-
-</details>
-
-<details>
-  <summary>50. Get Request with Route [/blogs]</summary>
-
-```Javascript
-// blogs routes
-app.get('/blogs' , (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-```
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const Blog = require('./models/blog');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-
-// get home page
-app.get('/', (req, res) => {
-    res.redirect('/blogs');
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// blogs routes
-// Get all Blogs
-app.get('/blogs' , (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-</details>
-
-<details>
-  <summary>51. Post Request with Route [/blogs]</summary>
-
-Create.ejs:
-
-```Javascript
-<html lang="en">
-    <%- include('./partials/head.ejs')  %>
-    <body>
-        <%- include('./partials/nav.ejs')  %>
-        <div class= "create-blog content">
-            <form action="/blogs" method="POST">
-                <label for="title">Blog Title:</label>
-                <input type="text" id="title" name="title" required>
-                <label for="snippet">Blog Snippet:</label>
-                <input type="text" id="snippet" name="snippet" required>
-                <label for="body">Blog Body:</label>
-                <textarea id="body" name="body" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <%- include('./partials/footer.ejs')  %>
-    </body>
-</html>
-```
-
-```Javascript
-// static files
-app.use(express.urlencoded({ extended: true }));
-
-// Post a new blog
-app.post('/blogs', (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-```
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const Blog = require('./models/blog');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
-
-// Routes
-// get home page
-app.get('/', (req, res) => {
-    res.redirect('/blogs');
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// Blogs routes
-// Get all Blogs
-app.get('/blogs' , (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Post a new blog
-app.post('/blogs', (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-</details>
-
-<details>
-  <summary>52. Get a Single blog with Route [/blogs/:id]</summary>
-
-index.ejs:
-
-```html
-<html lang="en">
-  <%- include('./partials/head.ejs') %>
-  <body>
-    <%- include('./partials/nav.ejs') %>
-    <div class="blogs content">
-      <h2>All Blogs</h2>
-      <% if(blogs.length > 0){ %> <% blogs.forEach(blog => { %>
-      <div class="blog-preview">
-        <a class="single" href="/blogs/<%= blog._id %>">
-          <h3 class="title"><%= blog.title %></h3>
-          <p class="author">Written by <%= blog.author %></p>
-          <p class="snippet"><%= blog.snippet %></p>
-        </a>
-      </div>
-      <% }) %> <% }else{ %>
-      <p>No blogs to show</p>
-      <% } %>
-    </div>
-    <%- include('./partials/footer.ejs') %>
-  </body>
-</html>
-```
-
-details.ejs:
-
-```html
-<html lang="en">
-  <%- include("./partials/head.ejs") %>
-
-  <body>
-    <%- include("./partials/nav.ejs") %>
-
-    <div class="details content">
-      <h2><%= blog.title %></h2>
-      <div class="content">
-        <p><%= blog.body %></p>
-      </div>
-      <a class="delete" data-doc="<%= blog._id %>">delete</a>
-    </div>
-
-    <%- include("./partials/footer.ejs") %>
-  </body>
-</html>
-```
-
-style.css:
-
-```css
-/* index styles */
-.blogs a {
-  display: block;
-  margin: 40px 0;
-  padding-left: 30px;
-  border-left: 6px solid crimson;
-}
-.blogs a:hover h3 {
-  color: crimson;
-}
-```
-
-```Javascript
-// Get a single blog
-app.get('/blogs/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-```
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const Blog = require('./models/blog');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
-
-// Routes
-// get home page
-app.get('/', (req, res) => {
-    res.redirect('/blogs');
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// Blogs routes
-// Get all Blogs
-app.get('/blogs' , (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Post a new blog
-app.post('/blogs', (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Get a single blog
-app.get('/blogs/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-</details>
-
-<details>
-  <summary>53. Delete a Single blog with Route [/blogs/:id] </summary>
-
-details.ejs:
-
-```html
-<html lang="en">
-  <%- include("./partials/head.ejs") %>
-
-  <body>
-    <%- include("./partials/nav.ejs") %>
-
-    <div class="details content">
-      <h2><%= blog.title %></h2>
-      <div class="content">
-        <p><%= blog.body %></p>
-      </div>
-      <a class="delete" data-doc="<%= blog._id %>">delete</a>
-    </div>
-
-    <%- include("./partials/footer.ejs") %>
-
-    <script>
-      const trashcan = document.querySelector("a.delete");
-
-      trashcan.addEventListener("click", (e) => {
-        const endpoint = `/blogs/${trashcan.dataset.doc}`;
-
-        fetch(endpoint, {
-          method: "DELETE",
-        })
-          .then((response) => response.json())
-          .then((data) => (window.location.href = data.redirect))
-          .catch((err) => console.log(err));
-      });
-    </script>
-  </body>
-</html>
-```
-
-style.css:
-
-```css
-/* details styles */
-.details {
-  position: relative;
-}
-.delete {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 50%;
-  padding: 8px;
-}
-.delete:hover {
-  cursor: pointer;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-```
-
-```Javascript
-app.delete('/blogs/:id', (req, res) => {
-  const id = req.params.id;
-
-  Blog.findByIdAndDelete(id)
-    .then(result => {
-      res.json({ redirect: '/blogs' });
+```bs
+// signing users up
+const signupForm = document.querySelector('.signup')
+signupForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  const email = signupForm.email.value
+  const password = signupForm.password.value
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then(cred => {
+      console.log('user created:', cred.user)
+      signupForm.reset()
     })
     .catch(err => {
-      console.log(err);
+      console.log(err.message)
+    })
+})
+```
+
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  getDoc,
+  updateDoc,
+} from "firebase/firestore";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
+
+// Initialize Firebase App
+initializeApp(firebaseConfig);
+
+// init db services
+const db = getFirestore();
+const auth = getAuth();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
+
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "gGu4P9x0ZHK9SspA1d9j");
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+
+// updating a document
+const updateForm = document.querySelector(".update");
+updateForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let docRef = doc(db, "books", updateForm.id.value);
+
+  updateDoc(docRef, {
+    title: "updated title",
+  }).then(() => {
+    updateForm.reset();
+  });
+});
+
+// signing users up
+const signupForm = document.querySelector(".signup");
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = signupForm.email.value;
+  const password = signupForm.password.value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user created:", cred.user);
+      signupForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
     });
 });
 ```
 
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const Blog = require('./models/blog');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
-
-// Routes
-// get home page
-app.get('/', (req, res) => {
-    res.redirect('/blogs');
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// Blogs routes
-// render create blog page
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// Get all Blogs
-app.get('/blogs' , (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Post a new blog
-app.post('/blogs', (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Get a single blog
-app.get('/blogs/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-//Delete a single blog
-app.delete('/blogs/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findByIdAndDelete(id)
-        .then(result => {
-        res.json({ redirect: '/blogs' });
-        })
-        .catch(err => {
-        console.log(err);
-        });
-});
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-</details>
-
-+EXPRESS ROUTER & MVC
-
-<details>
-  <summary>54. Create Express Router</summary>
-
-routes/blogRoutes.js:
-
-```Javascript
-const express = require('express');
-const Blog = require('../models/blog');
-
-const router = express.Router();
-
-// render create blog page
-router.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// Get all Blogs
-router.get('/blogs' , (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Post a new blog
-router.post('/blogs', (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Get a single blog
-router.get('/blogs/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-//Delete a single blog
-router.delete('/blogs/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findByIdAndDelete(id)
-        .then(result => {
-        res.json({ redirect: '/blogs' });
-        })
-        .catch(err => {
-        console.log(err);
-        });
-});
-
-module.exports = router;
-```
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const blogRoutes = require('./routes/blogRoutes');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
-
-// Routes
-// get home page
-app.get('/', (req, res) => {
-    res.redirect('/blogs');
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// Blogs routes
-app.use(blogRoutes);
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-```
-
 </details>
 
 <details>
-  <summary>55. Scoping the URL (Routing)</summary>
+  <summary>96. Logging in and out </summary>
 
-```Javascript
-// Blogs routes
-app.use('/blogs', blogRoutes);
-```
+index.html:
 
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const blogRoutes = require('./routes/blogRoutes');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
-
-// Routes
-// get home page
-app.get('/', (req, res) => {
-    res.redirect('/blogs');
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// Blogs routes
-app.use('/blogs', blogRoutes);
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-routes/blogRoutes.js:
-
-```Javascript
-const express = require('express');
-const Blog = require('../models/blog');
-
-const router = express.Router();
-
-// render create blog page
-router.get('/create', (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-});
-
-// Get all Blogs
-router.get('/' , (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Post a new blog
-router.post('/', (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-// Get a single blog
-router.get('/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-});
-
-//Delete a single blog
-router.delete('/:id', (req, res) => {
-    const id = req.params.id;
-    Blog.findByIdAndDelete(id)
-        .then(result => {
-        res.json({ redirect: '/blogs' });
-        })
-        .catch(err => {
-        console.log(err);
-        });
-});
-
-module.exports = router;
-```
-
-</details>
-
-<details>
-  <summary>56. The MVC Structure</summary>
-
-app.js:
-
-```Javascript
-const express = require('express');
-const path = require('path');
-const morgan = require('morgan')
-const mongoose = require('mongoose');
-const blogRoutes = require('./routes/blogRoutes');
-
-// express app
-const app = express();
-
-// register view engine
-app.set('view engine', 'ejs');
-
-const dbURI = "mongodb+srv://<accountName>:<password>@cluster0.ujjnbjl.mongodb.net/<dbname>?retryWrites=true&w=majority";
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => {
-        // listen for requests
-        app.listen(3000);
-        console.log('connected to db');
-    })
-    .catch((err) => console.log(err));
-
-// static files
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
-
-// Routes
-// get home page
-app.get('/', (req, res) => {
-    res.redirect('/blogs');
-});
-
-// get about page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
-});
-
-// Blogs routes
-app.use('/blogs', blogRoutes);
-
-// 404 page
-app.use((req, res) => {
-    res.status(404).render('404', { title: '404' });
-    // res.sendFile('./views/404.html', { root: __dirname });
-});
-
-```
-
-routes/blogRoutes.js:
-
-```Javascript
-const express = require('express');
-const blogController = require('../controllers/blogController');
-
-const router = express.Router();
-
-// render create blog page
-router.get('/create', blogController.blog_create_get);
-
-// Get all Blogs
-router.get('/', blogController.blog_index);
-
-// Post a new blog
-router.post('/', blogController.blog_create_post);
-
-// Get a single blog
-router.get('/:id', blogController.blog_details);
-
-//Delete a single blog
-router.delete('/:id', blogController.blog_delete);
-
-module.exports = router;
-```
-
-controllers/blogController.js:
-
-```Javascript
-const Blog = require('../models/blog');
-
-// Get all Blogs
-const blog_index = (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-}
-
-// Get a single blog
-const blog_details = (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-}
-
-// render create blog page
-const blog_create_get = (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-}
-
-// post a new blog
-const blog_create_post = (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-}
-
-//Delete a single blog
-const blog_delete = (req, res) => {
-    const id = req.params.id;
-    Blog.findByIdAndDelete(id)
-        .then(result => {
-        res.json({ redirect: '/blogs' });
-        })
-        .catch(err => {
-        console.log(err);
-        });
-}
-
-
-module.exports = {
-    blog_index,
-    blog_details,
-    blog_create_get,
-    blog_create_post,
-    blog_delete
-}
-```
-
-</details>
-
-<details>
-  <summary>57. Add Trash Can for Delete Button</summary>
-
-```Javascript
-<div class="details content">
-    <h2><%= blog.title %></h2>
-    <div class="content">
-        <p><%= blog.body %></p>
-    </div>
-    <a class="delete" data-doc="<%= blog._id %>">
-        <img src="/trashcan.svg" alt="delete icon">
-    </a>
-</div>
-```
-
-views/details.ejs:
-
-```Javascript
+```html
 <html lang="en">
-<%- include("./partials/head.ejs") %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase 9</title>
+  </head>
+  <body>
+    <h1>Getting Started with Firebase 9</h1>
 
-<body>
-  <%- include("./partials/nav.ejs") %>
+    <h2>Firebase Firestore</h2>
 
-  <div class="details content">
-    <h2><%= blog.title %></h2>
-    <div class="content">
-      <p><%= blog.body %></p>
-    </div>
-    <a class="delete" data-doc="<%= blog._id %>">
-        <img src="/trashcan.svg" alt="delete icon">
-    </a>
-  </div>
+    <form class="add">
+      <label for="title">Title:</label>
+      <input type="text" name="title" required />
+      <label for="author">Author:</label>
+      <input type="text" name="author" required />
 
-  <%- include("./partials/footer.ejs") %>
+      <button>add a new book</button>
+    </form>
 
-  <script>
-    const trashcan = document.querySelector('a.delete');
+    <form class="delete">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
 
-    trashcan.addEventListener('click', (e) => {
-      const endpoint = `/blogs/${trashcan.dataset.doc}`;
+      <button>delete a book</button>
+    </form>
 
-      fetch(endpoint, {
-        method: 'DELETE',
-      })
-      .then(response => response.json())
-      .then(data => window.location.href = data.redirect)
-      .catch(err => console.log(err));
-    });
+    <form class="update">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
 
-  </script>
-</body>
+      <button>update a book</button>
+    </form>
+
+    <h2>Firebase Auth</h2>
+
+    <form class="signup">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>signup</button>
+    </form>
+
+    <form class="login">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>login</button>
+    </form>
+
+    <button class="logout">logout</button>
+
+    <script src="bundle.js"></script>
+  </body>
 </html>
 ```
 
+index.js:
+
+```bs
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword, signOut
+} from 'firebase/auth'
+```
+
+```bs
+// logging in and out
+const logoutButton = document.querySelector('.logout')
+logoutButton.addEventListener('click', () => {
+  signOut(auth)
+    .then(() => {
+      console.log('user signed out')
+    })
+    .catch(err => {
+      console.log(err.message)
+    })
+})
+
+const loginForm = document.querySelector('.login')
+loginForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  const email = loginForm.email.value
+  const password = loginForm.password.value
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then(cred => {
+      console.log('user logged in:', cred.user)
+      loginForm.reset()
+    })
+    .catch(err => {
+      console.log(err.message)
+    })
+})
+```
+
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  updateDoc,
+} from "firebase/firestore";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDmXgb_58lO7aK_ujN37pGlNxzWGEU0YpI",
+  authDomain: "fb9-sandbox.firebaseapp.com",
+  projectId: "fb9-sandbox",
+  storageBucket: "fb9-sandbox.appspot.com",
+  messagingSenderId: "867529587246",
+  appId: "1:867529587246:web:dc754ab7840c737f47bdbf",
+};
+
+// init firebase
+initializeApp(firebaseConfig);
+
+// init services
+const db = getFirestore();
+const auth = getAuth();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "patrick rothfuss"),
+  orderBy("createdAt")
+);
+
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "gGu4P9x0ZHK9SspA1d9j");
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+
+// updating a document
+const updateForm = document.querySelector(".update");
+updateForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let docRef = doc(db, "books", updateForm.id.value);
+
+  updateDoc(docRef, {
+    title: "updated title",
+  }).then(() => {
+    updateForm.reset();
+  });
+});
+
+// signing users up
+const signupForm = document.querySelector(".signup");
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = signupForm.email.value;
+  const password = signupForm.password.value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user created:", cred.user);
+      signupForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+// logging in and out
+const logoutButton = document.querySelector(".logout");
+logoutButton.addEventListener("click", () => {
+  signOut(auth)
+    .then(() => {
+      console.log("user signed out");
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+const loginForm = document.querySelector(".login");
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = loginForm.email.value;
+  const password = loginForm.password.value;
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user logged in:", cred.user);
+      loginForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+```
+
 </details>
 
 <details>
-  <summary>58. Correct 404 page rendering</summary>
+  <summary>97. Subscribing to Auth Changes</summary>
 
-```Javascript
-// Get a single blog
-const blog_details = (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            res.status(404).render('404', { title: 'Blog not found' });
-        });
-}
+index.js:
+
+```bs
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword, signOut, onAuthStateChanged
+} from 'firebase/auth'
 ```
 
-controllers/blogController.js:
+```bs
+// subscribing to auth changes
+onAuthStateChanged(auth, (user) => {
+  console.log('user status changed:', user)
+})
+```
 
-```Javascript
-// blog_index, blog_details, blog_create_get, blog_create_post, blog_delete
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  getDoc,
+  updateDoc,
+} from "firebase/firestore";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth";
 
-const Blog = require('../models/blog');
+const firebaseConfig = {
+  apiKey: "AIzaSyAkkJyg-3xzVITPx6FU3wDaRKR4OGpmzSs",
+  authDomain: "fir-9-ninja-30222.firebaseapp.com",
+  projectId: "fir-9-ninja-30222",
+  storageBucket: "fir-9-ninja-30222.appspot.com",
+  messagingSenderId: "700813053129",
+  appId: "1:700813053129:web:165552244a3a57a0775118",
+};
 
-// Get all Blogs
-const blog_index = (req, res) => {
-    Blog.find({}).sort({ createdAt: -1 })
-        .then((result) => {
-            res.render('index', { title: 'All Blogs', blogs: result });
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-}
+// Initialize Firebase App
+initializeApp(firebaseConfig);
 
-// Get a single blog
-const blog_details = (req, res) => {
-    const id = req.params.id;
-    Blog.findById(id)
-        .then((result) => {
-            res.render('details', { blog: result, title: 'Blog Details' });
-        })
-        .catch((err) => {
-            res.status(404).render('404', { title: 'Blog not found' });
-        });
-}
+// init db services
+const db = getFirestore();
+const auth = getAuth();
 
-// render create blog page
-const blog_create_get = (req, res) => {
-    res.render('create', { title: 'Create a new blog' });
-}
+// collection ref
+const colRef = collection(db, "books");
 
-// post a new blog
-const blog_create_post = (req, res) => {
-    const blog = new Blog(req.body);
-    blog.save()
-        .then((result) => {
-            res.redirect('/blogs');
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-}
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "dave ramsey"),
+  orderBy("createdAt")
+);
 
-//Delete a single blog
-const blog_delete = (req, res) => {
-    const id = req.params.id;
-    Blog.findByIdAndDelete(id)
-        .then(result => {
-        res.json({ redirect: '/blogs' });
-        })
-        .catch(err => {
-        console.log(err);
-        });
-}
+// realtime collection data
+onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
 
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-module.exports = {
-    blog_index,
-    blog_details,
-    blog_create_get,
-    blog_create_post,
-    blog_delete
-}
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "gGu4P9x0ZHK9SspA1d9j");
+
+onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+
+// updating a document
+const updateForm = document.querySelector(".update");
+updateForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let docRef = doc(db, "books", updateForm.id.value);
+
+  updateDoc(docRef, {
+    title: "updated title",
+  }).then(() => {
+    updateForm.reset();
+  });
+});
+
+// signing users up
+const signupForm = document.querySelector(".signup");
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = signupForm.email.value;
+  const password = signupForm.password.value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user created:", cred.user);
+      signupForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+// logging in and out
+const logoutButton = document.querySelector(".logout");
+logoutButton.addEventListener("click", () => {
+  signOut(auth)
+    .then(() => {
+      console.log("user signed out");
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+const loginForm = document.querySelector(".login");
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = loginForm.email.value;
+  const password = loginForm.password.value;
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user logged in:", cred.user);
+      loginForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+// subscribing to auth changes
+onAuthStateChanged(auth, (user) => {
+  console.log("user status changed:", user);
+});
+```
+
+</details>
+
+<details>
+  <summary>98. Unsubscribing from Changes</summary>
+
+index.html:
+
+```bs
+  <button class="unsub">unsubscribe from db/auth changes</button>
+```
+
+```html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase 9</title>
+  </head>
+  <body>
+    <h1>Getting Started with Firebase 9</h1>
+
+    <h2>Firebase Firestore</h2>
+
+    <form class="add">
+      <label for="title">Title:</label>
+      <input type="text" name="title" required />
+      <label for="author">Author:</label>
+      <input type="text" name="author" required />
+
+      <button>add a new book</button>
+    </form>
+
+    <form class="delete">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>delete a book</button>
+    </form>
+
+    <form class="update">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>update a book</button>
+    </form>
+
+    <h2>Firebase Auth</h2>
+
+    <form class="signup">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>signup</button>
+    </form>
+
+    <form class="login">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>login</button>
+    </form>
+
+    <button class="logout">logout</button>
+
+    <h2>Unsubscribing</h2>
+    <button class="unsub">unsubscribe from db/auth changes</button>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
+```
+
+index.js:
+
+```bs
+// realtime collection data
+const unsubCol = onSnapshot(q, (snapshot) => {
+  let books = []
+  snapshot.docs.forEach(doc => {
+    books.push({ ...doc.data(), id: doc.id })
+  })
+  console.log(books)
+})
+
+// fetching a single document (& realtime)
+const docRef = doc(db, 'books', 'gGu4P9x0ZHK9SspA1d9j')
+
+const unsubDoc = onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id)
+})
+
+// subscribing to auth changes
+const unsubAuth = onAuthStateChanged(auth, (user) => {
+  console.log('user status changed:', user)
+})
+
+// unsubscribing from changes (auth & db)
+const unsubButton = document.querySelector('.unsub')
+unsubButton.addEventListener('click', () => {
+  console.log('unsubscribing')
+  unsubCol()
+  unsubDoc()
+  unsubAuth()
+})
+```
+
+```js
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  query,
+  where,
+  orderBy,
+  serverTimestamp,
+  updateDoc,
+} from "firebase/firestore";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDmXgb_58lO7aK_ujN37pGlNxzWGEU0YpI",
+  authDomain: "fb9-sandbox.firebaseapp.com",
+  projectId: "fb9-sandbox",
+  storageBucket: "fb9-sandbox.appspot.com",
+  messagingSenderId: "867529587246",
+  appId: "1:867529587246:web:dc754ab7840c737f47bdbf",
+};
+
+// init firebase
+initializeApp(firebaseConfig);
+
+// init services
+const db = getFirestore();
+const auth = getAuth();
+
+// collection ref
+const colRef = collection(db, "books");
+
+// queries
+const q = query(
+  colRef,
+  where("author", "==", "patrick rothfuss"),
+  orderBy("createdAt")
+);
+
+// realtime collection data
+const unsubCol = onSnapshot(q, (snapshot) => {
+  let books = [];
+  snapshot.docs.forEach((doc) => {
+    books.push({ ...doc.data(), id: doc.id });
+  });
+  console.log(books);
+});
+
+// adding docs
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+    createdAt: serverTimestamp(),
+  }).then(() => {
+    addBookForm.reset();
+  });
+});
+
+// deleting docs
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const docRef = doc(db, "books", deleteBookForm.id.value);
+
+  deleteDoc(docRef).then(() => {
+    deleteBookForm.reset();
+  });
+});
+
+// fetching a single document (& realtime)
+const docRef = doc(db, "books", "gGu4P9x0ZHK9SspA1d9j");
+
+const unsubDoc = onSnapshot(docRef, (doc) => {
+  console.log(doc.data(), doc.id);
+});
+
+// updating a document
+const updateForm = document.querySelector(".update");
+updateForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let docRef = doc(db, "books", updateForm.id.value);
+
+  updateDoc(docRef, {
+    title: "updated title",
+  }).then(() => {
+    updateForm.reset();
+  });
+});
+
+// signing users up
+const signupForm = document.querySelector(".signup");
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = signupForm.email.value;
+  const password = signupForm.password.value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user created:", cred.user);
+      signupForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+// logging in and out
+const logoutButton = document.querySelector(".logout");
+logoutButton.addEventListener("click", () => {
+  signOut(auth)
+    .then(() => {
+      console.log("user signed out");
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+const loginForm = document.querySelector(".login");
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = loginForm.email.value;
+  const password = loginForm.password.value;
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      console.log("user logged in:", cred.user);
+      loginForm.reset();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
+});
+
+// subscribing to auth changes
+const unsubAuth = onAuthStateChanged(auth, (user) => {
+  console.log("user status changed:", user);
+});
+
+// unsubscribing from changes (auth & db)
+const unsubButton = document.querySelector(".unsub");
+unsubButton.addEventListener("click", () => {
+  console.log("unsubscribing");
+  unsubCol();
+  unsubDoc();
+  unsubAuth();
+});
 ```
 
 </details>
