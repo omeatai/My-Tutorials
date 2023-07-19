@@ -16895,6 +16895,9 @@ module.exports = corsOptions;
 
 # Simulating a REST API db with Controllers
 
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8785a251-8af6-429a-a2d4-7f6c0de6faa3">
+<img width="967" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/7ff70752-774b-405d-8bc0-c47ea1385e4a">
+
 ### x-dave-gray/node-app/server.js:
 
 ```js
