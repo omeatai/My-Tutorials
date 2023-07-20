@@ -20377,27 +20377,6 @@ https://glitch.com/
 
 # #End </details>
 
-<details>
-  <summary>130. sample </summary>
-
-```bs
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-# #End </details>
-
 # REACT AUTH
 
 +REACT AUTH
