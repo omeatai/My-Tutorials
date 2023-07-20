@@ -17268,7 +17268,7 @@ const handleNewUser = async (req, res) => {
 
   // check for duplicate usernames in the db
   const duplicate = usersDB.users.find((person) => person.username === user);
-  
+
   if (duplicate) return res.sendStatus(409); //Conflict
   try {
     //encrypt the password
@@ -17369,7 +17369,7 @@ Conflict
 <details>
   <summary>126. Express - User Login Authentication </summary>
 
-# User Login Authentication  
+# User Login Authentication
 
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/e65da411-7b9d-4cc2-bbde-dcd354f2e277">
 <img width="968" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/c054f1b8-c4ed-4b3c-a85d-a4be69ae9411">
@@ -18595,7 +18595,7 @@ module.exports = { handleLogin };
 <details>
   <summary>135. Express JWT Authorization - Create User ROLES </summary>
 
-# Create User ROLES 
+# Create User ROLES
 
 config/role_list.js:
 
@@ -20398,7 +20398,7 @@ https://glitch.com/
 
 # #End </details>
 
-REACT AUTH
+# REACT AUTH
 
 +REACT AUTH
 
