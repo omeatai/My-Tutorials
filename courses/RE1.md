@@ -18135,6 +18135,10 @@ Cookies -> jwt:
 
 # Creating Logout Controller and Route
 
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/af7421a3-0754-4e0b-b1ad-9d4e10552e57">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/605b02ad-82f6-4fe4-8b17-ea8b879dabcd">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/067e68e4-10ea-4917-8d9c-73ecc8098290">
+
 ### x-dave-gray/node-app/controllers/logoutController.js:
 
 ```js
@@ -18159,7 +18163,7 @@ const handleLogout = async (req, res) => {
     (person) => person.refreshToken === refreshToken
   );
   if (!foundUser) {
-    res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+    res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true }); //secure: true only on https (prod)
     return res.sendStatus(204);
   }
 
@@ -18174,14 +18178,14 @@ const handleLogout = async (req, res) => {
     JSON.stringify(usersDB.users)
   );
 
-  res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+  res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true }); //secure: true only on https (prod)
   res.sendStatus(204);
 };
 
 module.exports = { handleLogout };
 ```
 
-routes/logout.js:
+### x-dave-gray/node-app/routes/logout.js:
 
 ```js
 const express = require("express");
@@ -18193,7 +18197,7 @@ router.get("/", logoutController.handleLogout);
 module.exports = router;
 ```
 
-secure.js:
+### x-dave-gray/node-app/server.js:
 
 ```bs
 // routes
@@ -18258,35 +18262,29 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-```bs
-npm run dev
-```
+# POST: http://localhost:3500/auth
 
-POST:
-
-Body = { "user": "walter1", "pwd": "walterpwd"}
-
-```bs
-http://localhost:3500/auth
-```
+### Body: { "user": "walt1", "pwd": "Aa$12345"}
 
 ```bs
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM2MjU3MjEsImV4cCI6MTY3MzYyNTc1MX0.u71GPvCTREnMzLqZWY1KS6JkjsEz0hR7nWSJ1S4y91Y"
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQxIiwiaWF0IjoxNjg5ODM5MjQzLCJleHAiOjE2ODk4MzkyNzN9.MgV1rzgjgEN0Aa-FUG-eqREyRH0CvUBVk0bOa1e-SDU"
 }
 ```
 
-Cookies -> jwt:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/ad967464-551a-4038-88e5-0a12fb0339f3">
+
+
+### Cookies -> jwt:
 
 ```bs
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHRlcjEiLCJpYXQiOjE2NzM2MjU3MjEsImV4cCI6MTY3MzcxMjEyMX0.b-CE3NYxR3GfYnhjEVpzwev_x9GiRns91kvTgb5y0aY
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQxIiwiaWF0IjoxNjg5ODM5MjQzLCJleHAiOjE2ODk5MjU2NDN9.mCMzB1FGu35a2GCNbb9K8Jln_NkPqtzaQWd0sWNoapQ
 ```
 
-GET:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/66f5975a-e958-4a22-9014-6d12133e8c40">
 
-```bs
-http://localhost:3500/refresh
-```
+
+# GET: http://localhost:3500/refresh
 
 ```bs
 {
@@ -18294,40 +18292,51 @@ http://localhost:3500/refresh
 }
 ```
 
-GET:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/8242274c-d0a2-4752-a9cc-717478ea7de0">
 
-```bs
-http://localhost:3500/logout
-```
+# GET: http://localhost:3500/logout
 
 ```bs
 204 No Content
 ```
 
-Cookies -> jwt:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/5cf24a6e-d3cb-45aa-9f5d-05b1cc1629d5">
+
+### Cookies -> jwt:
 
 ```bs
-null
+<null>
 ```
 
-GET:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d28d37b3-b870-4536-98aa-8ed49e448059">
 
-```bs
-http://localhost:3500/refresh
-```
+# GET: http://localhost:3500/refresh
 
 ```bs
 401 Unauthorized
 ```
 
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/d808e5fe-a31e-40ea-a5e9-011a04300daf">
+
+
 # #End </details>
 
 <details>
-  <summary>113. Express JWT Authentication - Front-End/Back-End Modifications </summary>
+  <summary>133. Express JWT Authentication - Front-End/Back-End Modifications </summary>
 
-Use credentials option when using fetch -
+# Front-End/Back-End Modifications
 
-main.js:
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/bb99f83f-db5d-430b-a653-dd9506913797">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/db52a5dd-a447-43a7-9333-9acbb065078d">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/a5442202-4485-44bd-b576-5552d893706e">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/97ee6e52-d174-4fbf-8cb8-3a62919f392f">
+<img width="966" alt="image" src="https://github.com/omeatai/My-Tutorials/assets/32337103/92df3ba8-a5eb-40c5-8aac-b54b83ffb6c3">
+
+# FRONT END
+
+- Use credentials option when using fetch
+
+### main.js:
 
 ```bs
 credentials: 'include',
@@ -18358,9 +18367,11 @@ const sendLogin = async () => {
 };
 ```
 
-Modify CORS Options config file -
+# BACK END
 
-config/corsOptions.js:
+- Modify CORS Options config files
+
+### x-dave-gray/node-app/config/corsOptions.js:
 
 ```js
 const allowedOrigins = require("./allowedOrigins");
@@ -18379,7 +18390,7 @@ const corsOptions = {
 module.exports = corsOptions;
 ```
 
-config/allowedOrigins.js:
+### x-dave-gray/node-app/config/allowedOrigins.js:
 
 ```js
 const allowedOrigins = [
@@ -18391,9 +18402,9 @@ const allowedOrigins = [
 module.exports = allowedOrigins;
 ```
 
-Create credentials middleware -
+- Create credentials middleware
 
-middleware/credentials.js:
+### x-dave-gray/node-app/middleware/credentials.js:
 
 ```js
 const allowedOrigins = require("../config/allowedOrigins");
@@ -18409,7 +18420,7 @@ const credentials = (req, res, next) => {
 module.exports = credentials;
 ```
 
-server.js:
+### x-dave-gray/node-app/server.js:
 
 ```bs
 const credentials = require('./middleware/credentials');
@@ -18480,17 +18491,17 @@ app.use(errorHandler);
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-Confirm sameSite and secure options in cookie creation -
+# Confirm sameSite and secure options in cookie creation
 
-controller/authController.js:
+### x-dave-gray/node-app/controllers/authController.js:
 
 ```bs
 res.cookie("jwt", refreshToken, {
-      httpOnly: true,
-      sameSite: "None", // None for production
-      secure: true, // true for production
-      maxAge: 24 * 60 * 60 * 1000,
-    });
+  httpOnly: true,
+  sameSite: "None", // None for production
+  secure: false, // true for production
+  maxAge: 24 * 60 * 60 * 1000,
+});
 ```
 
 ```js
@@ -18542,7 +18553,7 @@ const handleLogin = async (req, res) => {
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       sameSite: "None", // None for production
-      secure: true, // true for production
+      secure: false, // true for production
       maxAge: 24 * 60 * 60 * 1000,
     });
     res.json({ accessToken });
@@ -18557,21 +18568,23 @@ module.exports = { handleLogin };
 # #End </details>
 
 <details>
-  <summary>114. Authentication VS Authorization </summary>
+  <summary>134. Express JWT Authentication - Authentication VS Authorization </summary>
 
-Authentication
+# Authentication VS Authorization
+
+### Authentication
 
 - The Process of verifying who someone is.
 - Confirm authentication with JWT
 - Allow access to API endpoints
 - Endpoints provide data resources
 
-Authorization
+### Authorization
 
 - The Process of verifying what specific resources a user has access to.
 - Use Authorization header to restrict access
 
-User Roles & Permissions
+### User Roles & Permissions
 
 - Provide different levels of access
 - Sent in access token payload
@@ -18580,7 +18593,9 @@ User Roles & Permissions
 # #End </details>
 
 <details>
-  <summary>115. Express JWT Authorization - Create User ROLES </summary>
+  <summary>135. Express JWT Authorization - Create User ROLES </summary>
+
+# Create User ROLES 
 
 config/role_list.js:
 
@@ -18859,7 +18874,9 @@ module.exports = verifyJWT;
 # #End </details>
 
 <details>
-  <summary>116. Express JWT Authorization - Create verifyRoles middleware </summary>
+  <summary>136. Express JWT Authorization - Create verifyRoles middleware </summary>
+
+# Create verifyRoles middleware
 
 middleware/verifyRoles.js:
 
@@ -19112,7 +19129,9 @@ DELETE /employees
 +MONGODB
 
 <details>
-  <summary>117. MongoDB - Connect MongoDB to Application </summary>
+  <summary>137. MongoDB - Connect MongoDB to Application </summary>
+
+# Connect MongoDB to Application
 
 Install Mongoose:
 
