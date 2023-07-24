@@ -4,7 +4,7 @@
 
 ---
 
-### [R1-SCRIMBA REACT TUTORIAL - SCRIMBA](/courses/react/R1.md)
+#### [R1-SCRIMBA REACT TUTORIAL - SCRIMBA](/courses/react/R1.md)
 
 ### [R2-SCRIMBA JAVASCRIPT TUTORIAL - SCRIMBA](/courses/react/R2.md)
 
