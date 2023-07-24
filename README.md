@@ -18,6 +18,10 @@
 
 #### [R22-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/react/R22.md)
 
+#### [R23-TAILWIND CSS TUTORIAL - TRAVESY MEDIA](/courses/react/R23.md)
+
+#### [R24-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/react/R24.md)
+
 #### [R31-SASS TUTORIAL FOR BEGINNERS - CSS WITH SUPERPOWERS - FCC](/courses/react/R31.md)
 
 #### [R41-REACT & NODE CRASH COURSE - NET NINJA](/courses/react/R41.md)
@@ -31,6 +35,10 @@
 #### [R52-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/react/R52.md)
 
 #### [R53-JAVASCRIPT COURSE - DAVE GRAY](/courses/react/R53.md)
+
+#### [R61-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/react/R61.md)
+
+#### [R62-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/react/R62.md)
 
 #### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/react/1.md)
 
