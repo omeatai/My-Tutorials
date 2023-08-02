@@ -38,6 +38,8 @@
 
 #### [1-TAILWIND CSS TUTORIAL - TRAVESY MEDIA](/courses/mui/1.md)
 
+#### [2-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/mui/2.md)
+
 #### [10-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/mui/10.md) +
 
 #### [11-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/mui/11.md)
