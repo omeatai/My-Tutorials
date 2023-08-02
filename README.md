@@ -60,7 +60,7 @@
 
 #### [14-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](/courses/react/14.md)
 
-## NEXT
+## NEXTJS
 
 ---
 
