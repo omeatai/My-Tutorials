@@ -68,6 +68,8 @@
 
 #### [2-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/next/2.md)
 
+#### [3-NEXTJS TUTORIAL - CE](/courses/next/3.md)
+
 ## REACT NATIVE
 
 ---
