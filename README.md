@@ -66,9 +66,11 @@
 
 ---
 
-#### [1-NEXTJS TUTORIAL - NET NINJA](/courses/next/1.md)
+#### [1-NEXTJS TUTORIAL - NET NINJA](/courses/next/1.md) +
 
 #### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
+
+#### [3-NEXTJS TUTORIAL - DAVE GRAY](/courses/next/3.md)
 
 #### [10-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/next/10.md)
 
