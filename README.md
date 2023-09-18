@@ -12,12 +12,6 @@
 
 #### [4-DJANGO TUTORIAL - W3SCHOOLS](/courses/basics/4.md)
 
-#### [10-SCRIMBA REACT TUTORIAL - SCRIMBA](/courses/basics/10.md)
-
-#### [11-SCRIMBA JAVASCRIPT TUTORIAL - SCRIMBA](/courses/basics/11.md)
-
-#### [21-SASS TUTORIAL FOR BEGINNERS - CSS WITH SUPERPOWERS - FCC](/courses/basics/21.md)
-
 ## JAVASCRIPT & TYPESCRIPT
 
 ---
