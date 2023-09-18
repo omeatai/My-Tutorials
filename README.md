@@ -12,6 +12,16 @@
 
 #### [4-DJANGO TUTORIAL - W3SCHOOLS](/courses/basics/4.md)
 
+## MUI & TAILWINDCSS
+
+---
+
+#### [1-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/mui/1.md)
+
+#### [10-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/mui/10.md) +
+
+#### [11-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/mui/11.md)
+
 ## JAVASCRIPT & TYPESCRIPT
 
 ---
@@ -26,17 +36,7 @@
 
 #### [12-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/12.md)
 
-## MUI & TAILWINDCSS
-
----
-
-#### [1-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/mui/1.md)
-
-#### [10-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/mui/10.md) +
-
-#### [11-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/mui/11.md)
-
-## REACT & NODE (MERN)
+## REACT, NODE & NEXTJS (MERN)
 
 ---
 
@@ -56,15 +56,11 @@
 
 #### [14-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](/courses/react/14.md)
 
-## NEXTJS
+#### [21-NEXTJS TUTORIAL - CE](/courses/react/21.md) +
 
----
+#### [22-NEXTJS TUTORIAL - DAVE GRAY](/courses/react/22.md)
 
-#### [1-NEXTJS TUTORIAL - CE](/courses/next/1.md) +
-
-#### [2-NEXTJS TUTORIAL - DAVE GRAY](/courses/next/2.md)
-
-#### [10-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/next/10.md)
+#### [30-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/react/30.md)
 
 ## REACT NATIVE
 
