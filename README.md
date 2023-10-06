@@ -4,6 +4,8 @@
 
 ---
 
+#### [0-GIT COURSE - W3SCHOOLS](/courses/basics/0.md)
+
 #### [1-JAVASCRIPT COURSE - W3SCHOOLS](/courses/basics/1.md)
 
 #### [2-PYTHON TUTORIAL - W3SCHOOLS](/courses/basics/2.md)
