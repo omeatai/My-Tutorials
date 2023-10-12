@@ -6,13 +6,41 @@
 
 #### [0-GIT COURSE - W3SCHOOLS](https://www.w3schools.com/git/default.asp)
 
-#### [1-JAVASCRIPT COURSE - W3SCHOOLS](/courses/basics/1.md)
+#### [1-HTML COURSE - W3SCHOOLS](https://www.w3schools.com/html/default.asp)
 
-#### [2-PYTHON TUTORIAL - W3SCHOOLS](/courses/basics/2.md)
+#### [2-CSS COURSE - W3SCHOOLS](https://www.w3schools.com/css/default.asp)
 
-#### [3-PANDAS TUTORIAL - W3SCHOOLS](/courses/basics/3.md)
+#### [3-SASS COURSE - W3SCHOOLS](https://www.w3schools.com/sass/default.asp)
 
-#### [4-DJANGO TUTORIAL - W3SCHOOLS](/courses/basics/4.md)
+#### [4-BOOTSTRAP COURSE - W3SCHOOLS](https://www.w3schools.com/bootstrap5/index.php)
+
+#### [5-JAVASCRIPT COURSE - W3SCHOOLS](https://www.w3schools.com/js/default.asp)
+
+#### [6-TYPESCRIPT COURSE - W3SCHOOLS](https://www.w3schools.com/typescript/index.php)
+
+#### [7-REACT COURSE - W3SCHOOLS](https://www.w3schools.com/react/default.asp)
+
+#### [8-ANGULAR COURSE - W3SCHOOLS](https://www.w3schools.com/angular/default.asp)
+
+#### [9-VUE COURSE - W3SCHOOLS](https://www.w3schools.com/vue/index.php)
+
+#### [10-NODE TUTORIAL - W3SCHOOLS](https://www.w3schools.com/nodejs/default.asp)
+
+#### [11-PYTHON TUTORIAL - W3SCHOOLS](https://www.w3schools.com/python/default.asp)
+
+#### [12-DJANGO TUTORIAL - W3SCHOOLS](https://www.w3schools.com/django/index.php)
+
+#### [13-MYSQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/mysql/default.asp)
+
+#### [14-SQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/sql/default.asp)
+
+#### [15-POSTGRESQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/postgresql/index.php)
+
+#### [16-MONGODB TUTORIAL - W3SCHOOLS](https://www.w3schools.com/mongodb/index.php)
+
+#### [17-AWS TUTORIAL - W3SCHOOLS](https://www.w3schools.com/aws/index.php)
+
+---
 
 ## MUI & TAILWINDCSS
 
@@ -23,6 +51,8 @@
 #### [10-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/mui/10.md) +
 
 #### [11-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/mui/11.md)
+
+---
 
 ## JAVASCRIPT & TYPESCRIPT
 
@@ -37,6 +67,8 @@
 #### [11-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/11.md)
 
 #### [12-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/12.md)
+
+---
 
 ## REACT, NODE & NEXTJS (MERN)
 
@@ -64,11 +96,15 @@
 
 #### [30-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/react/30.md)
 
+---
+
 ## REACT NATIVE
 
 ---
 
 #### [10-COMPLETE REACT NATIVE IN 2023: ZERO TO MASTERY (WITH HOOKS) - ZTM](/courses/rn/10.md)
+
+---
 
 ## SQL & DATABASES
 
@@ -77,6 +113,8 @@
 #### [1-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/db/1.md) +
 
 #### [10-FIREBASE 9 TUTORIAL - NET NINJA](/courses/db/10.md)
+
+---
 
 ## PYTHON & DJANGO
 
@@ -89,6 +127,8 @@
 #### [10-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/python/10.md)
 
 #### [11-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/11.md)
+
+---
 
 ## DATA SCIENCE/AI & ALGORITHM
 
