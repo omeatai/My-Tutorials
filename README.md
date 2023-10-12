@@ -4,7 +4,7 @@
 
 ---
 
-#### [0-GIT COURSE - W3SCHOOLS](/courses/basics/0.md)
+#### [0-GIT COURSE - W3SCHOOLS](https://www.w3schools.com/git/default.asp)
 
 #### [1-JAVASCRIPT COURSE - W3SCHOOLS](/courses/basics/1.md)
 
