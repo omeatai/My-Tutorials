@@ -44,15 +44,34 @@
 
 ---
 
-## MUI & TAILWINDCSS
+## REACT, REACT NATIVE, NODE & NEXTJS (MERN)
 
 ---
 
-#### [1-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/mui/1.md)
 
-#### [10-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/mui/10.md) +
+#### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/react/1.md)
 
-#### [11-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/mui/11.md)
+#### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/react/2.md)
+
+#### [3-COMPLETE REACT NATIVE IN 2023: ZERO TO MASTERY (WITH HOOKS) - ZTM](/courses/react/3.md)
+
+#### [10-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](/courses/react/10.md)
+
+#### [12-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](/courses/react/12.md)
+
+#### [21-REACTJS COURSE - PEDROTECH](/courses/react/21.md)
+
+#### [22-REACT & NODE CRASH COURSE - NET NINJA](/courses/react/22.md)
+
+#### [23-REACT & NODE TUTORIAL - DAVE GRAY](/courses/react/23.md)
+
+#### [24-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/react/24.md)
+
+#### [25-NEXTJS TUTORIAL - CE](/courses/react/25.md) +
+
+#### [26-NEXTJS TUTORIAL - DAVE GRAY](/courses/react/26.md)
+
+#### [40-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/react/40.md)
 
 ---
 
@@ -60,61 +79,15 @@
 
 ---
 
-#### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
+#### [10-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/10.md)
 
-#### [2-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/2.md)
+#### [11-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/11.md)
 
-#### [10-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/10.md) +
+#### [12-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/12.md) +
 
-#### [11-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/11.md)
+#### [13-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/13.md)
 
-#### [12-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/12.md)
-
----
-
-## REACT, NODE & NEXTJS (MERN)
-
----
-
-#### [1-REACTJS COURSE - PEDROTECH](/courses/react/1.md)
-
-#### [2-REACT & NODE CRASH COURSE - NET NINJA](/courses/react/2.md)
-
-#### [3-REACT & NODE TUTORIAL - DAVE GRAY](/courses/react/3.md)
-
-#### [4-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/react/4.md)
-
-#### [10-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/react/10.md)
-
-#### [11-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/react/11.md)
-
-#### [12-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](/courses/react/12.md)
-
-#### [14-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](/courses/react/14.md)
-
-#### [21-NEXTJS TUTORIAL - CE](/courses/react/21.md) +
-
-#### [22-NEXTJS TUTORIAL - DAVE GRAY](/courses/react/22.md)
-
-#### [30-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/react/30.md)
-
----
-
-## REACT NATIVE
-
----
-
-#### [10-COMPLETE REACT NATIVE IN 2023: ZERO TO MASTERY (WITH HOOKS) - ZTM](/courses/rn/10.md)
-
----
-
-## SQL & DATABASES
-
----
-
-#### [1-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/db/1.md) +
-
-#### [10-FIREBASE 9 TUTORIAL - NET NINJA](/courses/db/10.md)
+#### [14-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/14.md)
 
 ---
 
@@ -126,14 +99,24 @@
 
 #### [2-COMPLETE PYTHON DEVELOPER IN 2023 - ZERO TO MASTERY](/courses/python/2.md)
 
-#### [10-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/python/10.md)
+#### [3-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/python/3.md)
 
-#### [11-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/11.md)
-
----
-
-## DATA SCIENCE/AI & ALGORITHM
+#### [10-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/10.md)
 
 ---
 
-#### [1-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](/courses/ds/1.md)
+## OTHERS
+
+---
+
+#### [1-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](/courses/others/1.md)
+
+#### [10-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/others/10.md)
+
+#### [11-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/others/11.md) +
+
+#### [12-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/others/12.md)
+
+#### [13-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/others/13.md) +
+
+#### [14-FIREBASE 9 TUTORIAL - NET NINJA](/courses/others/14.md)
