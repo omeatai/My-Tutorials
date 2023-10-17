@@ -120,3 +120,13 @@
 #### [13-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/others/13.md) +
 
 #### [14-FIREBASE 9 TUTORIAL - NET NINJA](/courses/others/14.md)
+
+---
+
+## PROJECTS
+
+---
+
+#### [1-x-react-ecommerce](https://github.com/omeatai/x-react-ecommerce)
+
+#### [2-x-node-streaming](https://github.com/omeatai/x-node-streaming)
