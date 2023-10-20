@@ -67,9 +67,11 @@
 
 #### [24-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/react/24.md)
 
-#### [25-NEXTJS TUTORIAL - CE](/courses/react/25.md) +
+#### [25-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/react/25.md)
 
-#### [26-NEXTJS TUTORIAL - DAVE GRAY](/courses/react/26.md)
+#### [30-NEXTJS TUTORIAL - CE](/courses/react/30.md) +
+
+#### [31-NEXTJS TUTORIAL - DAVE GRAY](/courses/react/31.md)
 
 #### [40-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/react/40.md)
 
@@ -83,11 +85,11 @@
 
 #### [11-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/11.md)
 
-#### [12-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/12.md) +
+#### [20-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/20.md) +
 
-#### [13-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/13.md)
+#### [21-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/21.md)
 
-#### [14-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/14.md)
+#### [22-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/22.md)
 
 ---
 
