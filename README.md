@@ -2,6 +2,18 @@
 
 ---
 
+## PROJECTS
+
+---
+
+#### [1-p-next-project-my-portfolio](https://github.com/omeatai/next-project-my-portfolio)
+
+#### [101-x-react-ecommerce](https://github.com/omeatai/x-react-ecommerce)
+
+#### [102-x-node-streaming](https://github.com/omeatai/x-node-streaming)
+
+---
+
 ## BASICS
 
 ---
@@ -125,12 +137,4 @@
 
 #### [14-FIREBASE 9 TUTORIAL - NET NINJA](/courses/others/14.md)
 
----
 
-## PROJECTS
-
----
-
-#### [101-x-react-ecommerce](https://github.com/omeatai/x-react-ecommerce)
-
-#### [102-x-node-streaming](https://github.com/omeatai/x-node-streaming)
