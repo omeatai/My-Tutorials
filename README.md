@@ -6,7 +6,7 @@
 
 ---
 
-#### [1-p-next-project-my-portfolio](https://github.com/omeatai/next-project-my-portfolio)
+#### [1-next-project-my-portfolio](https://github.com/omeatai/next-project-my-portfolio)
 
 #### [101-x-react-ecommerce](https://github.com/omeatai/x-react-ecommerce)
 
