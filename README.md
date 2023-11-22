@@ -28,8 +28,6 @@
 
 ### MERN
 
-[1-UDEMY-COMPLETE REACT DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) | [[LAB]](/courses/mern/1.md)
-
 ###### [1-UDEMY-COMPLETE REACT DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) | [[LAB]](/courses/mern/1.md)
 
 ###### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/mern/2.md)
