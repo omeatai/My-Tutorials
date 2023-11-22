@@ -6,7 +6,19 @@
 
 ---
 
-#### [1-next-project-my-portfolio](https://github.com/omeatai/next-project-my-portfolio)
+#### [1-Django Blog App](https://github.com/omeatai/Django-Blog-App)
+
+#### [2-React Firebase Todo App](https://github.com/omeatai/Firebase-Todo-App)
+
+#### [3-Next13 Open Weather App](https://github.com/omeatai/open-weather-app)
+
+#### [4-React ChatBot App](https://github.com/omeatai/ChatBot-API)
+
+#### [5-React Movie Search App](https://github.com/omeatai/Movie-search-app)
+
+#### [6-React QR code-Generator](https://github.com/omeatai/QRcode-Generator)
+
+#### [7-next-project-my-portfolio](https://github.com/omeatai/next-project-my-portfolio)
 
 #### [101-x-react-ecommerce](https://github.com/omeatai/x-react-ecommerce)
 
