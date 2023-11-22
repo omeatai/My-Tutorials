@@ -2,14 +2,6 @@
 
 ---
 
-## TUTORIALS
-
----
-
-#### [HERE](https://github.com/omeatai/Django-Blog-App)
-
----
-
 ## PROJECTS
 
 ---
@@ -28,17 +20,18 @@
 
 #### [7-NEXT-MY-PORTFOLIO](https://github.com/omeatai/next-project-my-portfolio)
 
-
 ---
 
-## COURSE LABS
+## COURSES
 
 ---
 
 ### MERN
 
 
-#### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/mern/1.md)
+###### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/mern/1.md)
+
+##### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/mern/1.md)
 
 #### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/mern/2.md)
 
