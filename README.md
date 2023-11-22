@@ -62,37 +62,25 @@
 
 #### [1-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](/courses/next/1.md)
 
+#### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
 
+#### [3-NEXTJS TUTORIAL - DAVE GRAY](/courses/next/3.md)
 
+#### [4-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/next/4.md)
 
+### JAVASCRIPT & TYPESCRIPT
 
-#### [30-NEXTJS TUTORIAL - CE](/courses/react/30.md) +
+#### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
 
-#### [31-NEXTJS TUTORIAL - DAVE GRAY](/courses/react/31.md)
+#### [2-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/2.md)
 
-#### [40-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/react/40.md)
+#### [3-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/3.md) +
 
----
+#### [4-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/4.md)
 
-## JAVASCRIPT & TYPESCRIPT
+#### [5-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/5.md)
 
----
-
-#### [10-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/10.md)
-
-#### [11-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/11.md)
-
-#### [20-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/20.md) +
-
-#### [21-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/21.md)
-
-#### [22-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/22.md)
-
----
-
-## PYTHON & DJANGO
-
----
+### PYTHON & DJANGO
 
 #### [1-100 DAYS OF CODE: THE COMPLETE PYTHON PRO BOOTCAMP FOR 2023 - ANGELA YU](/courses/python/1.md)
 
@@ -100,13 +88,9 @@
 
 #### [3-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/python/3.md)
 
-#### [10-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/10.md)
+#### [10-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/4.md)
 
----
-
-## OTHERS
-
----
+### OTHERS
 
 #### [1-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](/courses/others/1.md)
 
