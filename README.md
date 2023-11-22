@@ -30,8 +30,7 @@
 
 
 ###### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/mern/1.md)
-
-##### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/mern/1.md)
+###### [[LAB]](/courses/mern/1.md)
 
 #### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/mern/2.md)
 
