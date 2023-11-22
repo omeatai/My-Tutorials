@@ -54,7 +54,7 @@
 
 ###### [13-UDEMY-REACT - BUILD YOUR REACT APP FAST USING REACT DESIGN SYSTEM](https://www.udemy.com/course/creative-tim/)
 
-
++OTHERS
 
 ###### [6-REACTJS COURSE - PEDROTECH](/courses/mern/60.md)
 
@@ -84,7 +84,7 @@
 
 ###### [3-UDEMY-BUILD A QUIZ APP WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
 
-
++OTHERS
 
 ###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
 
@@ -95,6 +95,17 @@
 ###### [4-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/4.md)
 
 ###### [5-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/5.md)
+
+### GRAPHQL
+
+###### [1-UDEMY-GRAPHQL FROM GROUND UP](https://www.udemy.com/course/graphql-from-ground-up/)
+
+###### [2-UDEMY-GRAPHQL - A PRIMER](https://www.udemy.com/course/graphql-a-primer/)
+
+###### [3-UDEMY-GRAPHQL - BEGINNER'S COURSE](https://www.udemy.com/course/graphql-a-primer/)
+
+###### [4-UDEMY-GRAPHQL - GRAPHQL IN REACT.JS AND NODE.JS](https://www.udemy.com/course/graph-ql/)
+
 
 ### PYTHON & DJANGO
 
