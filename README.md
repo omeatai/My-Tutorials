@@ -44,15 +44,36 @@
 
 ###### [8-UDEMY-ADVANCED MERN STACK AUTHENTICATION - ZINO ACADEMY](https://www.udemy.com/course/advanced-mern-stack-authentication/)
 
-###### [9-UDEMY-THE COMPLETE 2023 WEB DEVELOPMENT BOOTCAMP - ANGELA YU](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
+###### [9-UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
 
-###### [10-UDEMY-THE WEB DEVELOPER BOOTCAMP 2023 - COLT STEELE](https://www.udemy.com/course/the-web-developer-bootcamp/)
+###### [10-UDEMY-THE COMPLETE 2023 WEB DEVELOPMENT BOOTCAMP - ANGELA YU](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 
-###### [11-UDEMY-REACT - THE COMPLETE GUIDE 2023 - MAX](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
+###### [11-UDEMY-THE WEB DEVELOPER BOOTCAMP 2023 - COLT STEELE](https://www.udemy.com/course/the-web-developer-bootcamp/)
 
-###### [12-UDEMY-THE COMPLETE NODE.JS DEVELOPER COURSE - ANDREW MEAD](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+###### [12-UDEMY-REACT-THE COMPLETE GUIDE 2023 - MAX](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 
-###### [13-UDEMY-REACT - BUILD YOUR REACT APP FAST USING REACT DESIGN SYSTEM](https://www.udemy.com/course/creative-tim/)
+###### [13-UDEMY-THE COMPLETE NODE.JS DEVELOPER COURSE - ANDREW MEAD](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+
+###### [14-UDEMY-REACT-BUILD YOUR REACT APP FAST USING REACT DESIGN SYSTEM](https://www.udemy.com/course/creative-tim/)
+
+###### [15-UDEMY-REACT TESTING LIBRARY AND JEST: THE COMPLETE GUIDE](https://www.udemy.com/course/react-testing-library-and-jest/)
+
+###### [16-UDEMY-CYPRESS END-TO-END TESTING - GETTING STARTED](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
+
+###### [17-UDEMY-MICROSERVICES WITH NODE JS AND REACT](https://www.udemy.com/course/microservices-with-node-js-and-react/)
+
+###### [18-UDEMY-MICROFRONTENDS WITH REACT: A COMPLETE DEVELOPER'S GUIDE](https://www.udemy.com/course/microfrontend-course/)
+
+###### [19-UDEMY-NESTJS MICROSERVICES: BUILD & DEPLOY A SCALEABLE BACKEND](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+
+###### [20-UDEMY-TYPESCRIPT DEVELOPER COURSE IN 2023 – BEGINNER TO EXPERT](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
+
+###### [21-UDEMY-REACT AND TYPESCRIPT: BUILD A PORTFOLIO PROJECT](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
+
+
+
+
+
 
 +OTHERS
 
@@ -84,6 +105,8 @@
 
 ###### [3-UDEMY-BUILD A QUIZ APP WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
 
+###### [4-JAVASCRIPT: THE ADVANCED CONCEPTS](https://www.udemy.com/course/advanced-javascript-concepts/)
+
 +OTHERS
 
 ###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
@@ -109,13 +132,30 @@
 
 ### PYTHON & DJANGO
 
-###### [1-100 DAYS OF CODE: THE COMPLETE PYTHON PRO BOOTCAMP FOR 2023 - ANGELA YU](/courses/python/1.md)
+###### [1-UDEMY-100 DAYS OF CODE: THE COMPLETE PYTHON PRO BOOTCAMP FOR 2023 - ANGELA YU](https://www.udemy.com/course/100-days-of-code/) | [[LAB]](/courses/python/1.md)
 
-###### [2-COMPLETE PYTHON DEVELOPER IN 2023 - ZERO TO MASTERY](/courses/python/2.md)
+###### [2-UDEMY-COMPLETE PYTHON DEVELOPER IN 2023 - ZERO TO MASTERY](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/) | [[LAB]](/courses/python/2.md)
 
-###### [3-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/python/3.md)
+###### [3-UDEMY-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/python/3.md) | [[LAB]](/courses/python/3.md)
 
-###### [10-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/4.md)
+###### [4-UDEMY-THE ULTIMATE PYTHON UNIT TESTING COURSE](https://www.udemy.com/course/python-unit-testing/)
+
+###### [5-UDEMY-RABBITMQ IN PRACTICE](https://www.udemy.com/course/rabbitmq-in-practice/)
+
+###### [6-UDEMY-REDIS: THE COMPLETE DEVELOPER'S GUIDE](https://www.udemy.com/course/redis-the-complete-developers-guide-p/)
+
+###### [100-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/100.md) | [[LAB]](/courses/python/100.md)
+
+
+### AI & LANGCHAIN
+
+###### [1-UDEMY-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
+
+###### [2-UDEMY-DATA STRUCTURES AND ALGORITHMS PYTHON: THE COMPLETE BOOTCAMP](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
+
+
+
+
 
 ### OTHERS
 
