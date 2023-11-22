@@ -72,11 +72,6 @@
 
 
 
-
-
-
-+OTHERS
-
 ###### [6-REACTJS COURSE - PEDROTECH](/courses/mern/60.md)
 
 ###### [7-REACT & NODE CRASH COURSE - NET NINJA](/courses/mern/70.md)
@@ -107,7 +102,7 @@
 
 ###### [4-JAVASCRIPT: THE ADVANCED CONCEPTS](https://www.udemy.com/course/advanced-javascript-concepts/)
 
-+OTHERS
+
 
 ###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
 
@@ -153,6 +148,25 @@
 
 ###### [2-UDEMY-DATA STRUCTURES AND ALGORITHMS PYTHON: THE COMPLETE BOOTCAMP](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
+###### [3-UDEMY-NEXT JS CHATGPT CLONE WITH NEXT.JS & OPENAI](https://www.udemy.com/course/nextjs-chatgpt/)
+
+###### [4-UDEMY-NEXT JS & OPEN AI / GPT: NEXT-GENERATION NEXT JS & AI APPS](https://www.udemy.com/course/next-js-ai/)
+
+###### [5-UDEMY-INTRODUCTION TO OPENAI API & CHATGPT API FOR DEVELOPERS](https://www.udemy.com/course/introduction-to-openai-api-chatgpt-api-chatgpt-plugins/)
+
+###### [6-UDEMY-CHATGPT AI VOICE CHATBOT BUILD WITH REACT AND FAST API COMBO](https://www.udemy.com/course/chatgpt-ai-voice-chatbot-build-with-react-and-fast-api-combo/)
+
+###### [7-UDEMY-LANGCHAIN: DEVELOP AI WEB-APPS WITH JAVASCRIPT AND LANGCHAIN](https://www.udemy.com/course/langchain-develop-ai-web-apps-with-javascript-and-langchain/)
+
+###### [8-UDEMY-LANGCHAIN- DEVELOP LLM POWERED APPLICATIONS WITH LANGCHAIN](https://www.udemy.com/course/langchain/)
+
+###### [9-UDEMY-LANGCHAIN 101 FOR BEGINNERS (OPENAI / CHATGPT / LLMOPS)](https://www.udemy.com/course/langchain-python/)
+
+###### [10-UDEMY-LEARN LANGCHAIN, PINECONE & OPENAI: BUILD NEXT-GEN LLM APPS](https://www.udemy.com/course/master-langchain-pinecone-openai-build-llm-applications/)
+
+###### [11-UDEMY-MASTERING OPENAI PYTHON APIS: UNLEASH CHATGPT AND GPT4](https://www.udemy.com/course/mastering-openai/)
+
+###### [12-UDEMY-OPENAI API WITH PYTHON BOOTCAMP: CHATGPT API, GPT-4, DALL·E](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
 
 
 
