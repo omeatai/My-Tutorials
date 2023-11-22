@@ -14,59 +14,57 @@
 
 ---
 
-#### [1-Django Blog App](https://github.com/omeatai/Django-Blog-App)
+#### [1-DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
 
-#### [2-React Firebase Todo App](https://github.com/omeatai/Firebase-Todo-App)
+#### [2-REACT-FIREBASE-TODO-APP](https://github.com/omeatai/Firebase-Todo-App)
 
-#### [3-Next13 Open Weather App](https://github.com/omeatai/open-weather-app)
+#### [3-NEXT-OPEN-WEATHER-APP](https://github.com/omeatai/open-weather-app)
 
-#### [4-React ChatBot App](https://github.com/omeatai/ChatBot-API)
+#### [4-REACT-CHATBOT-APP](https://github.com/omeatai/ChatBot-API)
 
-#### [5-React Movie Search App](https://github.com/omeatai/Movie-search-app)
+#### [5-REACT-MOVIE-SEARCH-APP](https://github.com/omeatai/Movie-search-app)
 
-#### [6-React QR code-Generator](https://github.com/omeatai/QRcode-Generator)
+#### [6-REACT-QR-CODE-GENERATOR](https://github.com/omeatai/QRcode-Generator)
 
-#### [7-next-project-my-portfolio](https://github.com/omeatai/next-project-my-portfolio)
+#### [7-NEXT-MY-PORTFOLIO](https://github.com/omeatai/next-project-my-portfolio)
 
-
----
-
-## REACT, REACT NATIVE, NODE & NEXTJS (MERN)
 
 ---
 
-MERN
+## COURSE LABS
 
-+MERN
-
-# MERN
-
-## MERN
+---
 
 ### MERN
 
 
-#### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/react/1.md)
+#### [1-COMPLETE REACT DEVELOPER IN 2023 - ZTM](/courses/mern/1.md)
 
-#### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/react/2.md)
+#### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/mern/2.md)
 
-#### [3-COMPLETE REACT NATIVE IN 2023: ZERO TO MASTERY (WITH HOOKS) - ZTM](/courses/react/3.md)
+#### [3-COMPLETE REACT NATIVE IN 2023: ZERO TO MASTERY (WITH HOOKS) - ZTM](/courses/mern/3.md)
 
-#### [4-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](/courses/react/4.md)
+#### [4-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](/courses/mern/4.md)
 
-#### [10-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](/courses/react/10.md)
+#### [5-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](/courses/mern/5.md)
 
-#### [12-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](/courses/react/12.md)
+#### [6-REACTJS COURSE - PEDROTECH](/courses/mern/6.md)
 
-#### [21-REACTJS COURSE - PEDROTECH](/courses/react/21.md)
+#### [7-REACT & NODE CRASH COURSE - NET NINJA](/courses/mern/7.md)
 
-#### [22-REACT & NODE CRASH COURSE - NET NINJA](/courses/react/22.md)
+#### [8-REACT & NODE TUTORIAL - DAVE GRAY](/courses/mern/8.md)
 
-#### [23-REACT & NODE TUTORIAL - DAVE GRAY](/courses/react/23.md)
+#### [9-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/mern/9.md)
 
-#### [24-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/react/24.md)
+#### [10-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/mern/10.md)
 
-#### [25-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/react/25.md)
+### NEXT
+
+#### [1-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](/courses/next/1.md)
+
+
+
+
 
 #### [30-NEXTJS TUTORIAL - CE](/courses/react/30.md) +
 
