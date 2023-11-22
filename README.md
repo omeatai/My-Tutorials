@@ -16,9 +16,9 @@
 
 ###### [5-REACT-MOVIE-SEARCH-APP](https://github.com/omeatai/Movie-search-app)
 
-###### [6-REACT-QR-CODE-GENERATOR](https://github.com/omeatai/QRcode-Generator)
+###### [6-REACT-QR-CODE-GENERATOR-APP](https://github.com/omeatai/QRcode-Generator)
 
-###### [7-NEXT-MY-PORTFOLIO](https://github.com/omeatai/next-project-my-portfolio)
+###### [7-NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
 
 ---
 
@@ -30,27 +30,35 @@
 
 ###### [1-UDEMY-COMPLETE REACT DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) | [[LAB]](/courses/mern/1.md)
 
-###### [2-COMPLETE NODE DEVELOPER IN 2023 - ZTM](/courses/mern/2.md)
+###### [2-UDEMY-COMPLETE NODE DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery/) | [[LAB]](/courses/mern/2.md)
 
-###### [3-COMPLETE REACT NATIVE IN 2023: ZERO TO MASTERY (WITH HOOKS) - ZTM](/courses/mern/3.md)
+###### [3-UDEMY-COMPLETE REACT NATIVE IN 2023 - ZTM](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/) | [[LAB]](/courses/mern/3.md)
 
-###### [4-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](/courses/mern/4.md)
+###### [4-UDEMY-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](https://www.udemy.com/course/full-stack-web-development-using-the-mern-stack-and-devops/) | [[LAB]](/courses/mern/4.md)
 
-###### [5-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](/courses/mern/5.md)
+###### [5-UDEMY-AUTOMATED TESTING USING SUPERTEST AND JEST - ODAFE](https://www.udemy.com/course/automated-testing-using-supertest-and-jest/)
 
-###### [6-REACTJS COURSE - PEDROTECH](/courses/mern/6.md)
+###### [6-UDEMY-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](https://www.udemy.com/course/react-beginner-to-advanced-with-redux-ecommerce-app/) | [[LAB]](/courses/mern/6.md)
 
-###### [7-REACT & NODE CRASH COURSE - NET NINJA](/courses/mern/7.md)
+###### [7-UDEMY-MERN STACK BOOTCAMP 2023 - MONGODB, EXPRESS, REACT & NODEJS - ZINO ACADEMY](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
 
-###### [8-REACT & NODE TUTORIAL - DAVE GRAY](/courses/mern/8.md)
+###### [8-UDEMY-ADVANCED MERN STACK AUTHENTICATION - ZINO ACADEMY](https://www.udemy.com/course/advanced-mern-stack-authentication//)
 
-###### [9-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/mern/9.md)
 
-###### [10-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/mern/10.md)
+
+###### [6-REACTJS COURSE - PEDROTECH](/courses/mern/60.md)
+
+###### [7-REACT & NODE CRASH COURSE - NET NINJA](/courses/mern/70.md)
+
+###### [8-REACT & NODE TUTORIAL - DAVE GRAY](/courses/mern/80.md)
+
+###### [9-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/mern/90.md)
+
+###### [10-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/mern/100.md)
 
 ### NEXT
 
-###### [1-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](/courses/next/1.md)
+###### [1-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/) | [[LAB]](/courses/next/1.md)
 
 ###### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
 
