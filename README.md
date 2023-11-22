@@ -24,47 +24,7 @@
 
 #### [102-x-node-streaming](https://github.com/omeatai/x-node-streaming)
 
----
 
-## BASICS
-
----
-
-#### [0-GIT COURSE - W3SCHOOLS](https://www.w3schools.com/git/default.asp)
-
-#### [1-HTML COURSE - W3SCHOOLS](https://www.w3schools.com/html/default.asp)
-
-#### [2-CSS COURSE - W3SCHOOLS](https://www.w3schools.com/css/default.asp)
-
-#### [3-SASS COURSE - W3SCHOOLS](https://www.w3schools.com/sass/default.asp)
-
-#### [4-BOOTSTRAP COURSE - W3SCHOOLS](https://www.w3schools.com/bootstrap5/index.php)
-
-#### [5-JAVASCRIPT COURSE - W3SCHOOLS](https://www.w3schools.com/js/default.asp)
-
-#### [6-TYPESCRIPT COURSE - W3SCHOOLS](https://www.w3schools.com/typescript/index.php)
-
-#### [7-REACT COURSE - W3SCHOOLS](https://www.w3schools.com/react/default.asp)
-
-#### [8-ANGULAR COURSE - W3SCHOOLS](https://www.w3schools.com/angular/default.asp)
-
-#### [9-VUE COURSE - W3SCHOOLS](https://www.w3schools.com/vue/index.php)
-
-#### [10-NODE TUTORIAL - W3SCHOOLS](https://www.w3schools.com/nodejs/default.asp)
-
-#### [11-PYTHON TUTORIAL - W3SCHOOLS](https://www.w3schools.com/python/default.asp)
-
-#### [12-DJANGO TUTORIAL - W3SCHOOLS](https://www.w3schools.com/django/index.php)
-
-#### [13-MYSQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/mysql/default.asp)
-
-#### [14-SQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/sql/default.asp)
-
-#### [15-POSTGRESQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/postgresql/index.php)
-
-#### [16-MONGODB TUTORIAL - W3SCHOOLS](https://www.w3schools.com/mongodb/index.php)
-
-#### [17-AWS TUTORIAL - W3SCHOOLS](https://www.w3schools.com/aws/index.php)
 
 ---
 
@@ -150,3 +110,44 @@
 #### [14-FIREBASE 9 TUTORIAL - NET NINJA](/courses/others/14.md)
 
 
+---
+
+## BASICS
+
+---
+
+#### [0-GIT COURSE - W3SCHOOLS](https://www.w3schools.com/git/default.asp)
+
+#### [1-HTML COURSE - W3SCHOOLS](https://www.w3schools.com/html/default.asp)
+
+#### [2-CSS COURSE - W3SCHOOLS](https://www.w3schools.com/css/default.asp)
+
+#### [3-SASS COURSE - W3SCHOOLS](https://www.w3schools.com/sass/default.asp)
+
+#### [4-BOOTSTRAP COURSE - W3SCHOOLS](https://www.w3schools.com/bootstrap5/index.php)
+
+#### [5-JAVASCRIPT COURSE - W3SCHOOLS](https://www.w3schools.com/js/default.asp)
+
+#### [6-TYPESCRIPT COURSE - W3SCHOOLS](https://www.w3schools.com/typescript/index.php)
+
+#### [7-REACT COURSE - W3SCHOOLS](https://www.w3schools.com/react/default.asp)
+
+#### [8-ANGULAR COURSE - W3SCHOOLS](https://www.w3schools.com/angular/default.asp)
+
+#### [9-VUE COURSE - W3SCHOOLS](https://www.w3schools.com/vue/index.php)
+
+#### [10-NODE TUTORIAL - W3SCHOOLS](https://www.w3schools.com/nodejs/default.asp)
+
+#### [11-PYTHON TUTORIAL - W3SCHOOLS](https://www.w3schools.com/python/default.asp)
+
+#### [12-DJANGO TUTORIAL - W3SCHOOLS](https://www.w3schools.com/django/index.php)
+
+#### [13-MYSQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/mysql/default.asp)
+
+#### [14-SQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/sql/default.asp)
+
+#### [15-POSTGRESQL TUTORIAL - W3SCHOOLS](https://www.w3schools.com/postgresql/index.php)
+
+#### [16-MONGODB TUTORIAL - W3SCHOOLS](https://www.w3schools.com/mongodb/index.php)
+
+#### [17-AWS TUTORIAL - W3SCHOOLS](https://www.w3schools.com/aws/index.php)
