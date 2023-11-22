@@ -2,6 +2,14 @@
 
 ---
 
+## TUTORIALS
+
+---
+
+#### [HERE](https://github.com/omeatai/Django-Blog-App)
+
+---
+
 ## PROJECTS
 
 ---
