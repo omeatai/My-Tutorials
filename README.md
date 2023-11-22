@@ -42,7 +42,17 @@
 
 ###### [7-UDEMY-MERN STACK BOOTCAMP 2023 - MONGODB, EXPRESS, REACT & NODEJS - ZINO ACADEMY](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
 
-###### [8-UDEMY-ADVANCED MERN STACK AUTHENTICATION - ZINO ACADEMY](https://www.udemy.com/course/advanced-mern-stack-authentication//)
+###### [8-UDEMY-ADVANCED MERN STACK AUTHENTICATION - ZINO ACADEMY](https://www.udemy.com/course/advanced-mern-stack-authentication/)
+
+###### [9-UDEMY-THE COMPLETE 2023 WEB DEVELOPMENT BOOTCAMP - ANGELA YU](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
+
+###### [10-UDEMY-THE WEB DEVELOPER BOOTCAMP 2023 - COLT STEELE](https://www.udemy.com/course/the-web-developer-bootcamp/)
+
+###### [11-UDEMY-REACT - THE COMPLETE GUIDE 2023 - MAX](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
+
+###### [12-UDEMY-THE COMPLETE NODE.JS DEVELOPER COURSE - ANDREW MEAD](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+
+###### [13-UDEMY-REACT - BUILD YOUR REACT APP FAST USING REACT DESIGN SYSTEM](https://www.udemy.com/course/creative-tim/)
 
 
 
@@ -58,7 +68,7 @@
 
 ### NEXT
 
-###### [1-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/) | [[LAB]](/courses/next/1.md)
+###### [1-UDEMY-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/) | [[LAB]](/courses/next/1.md)
 
 ###### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
 
@@ -67,6 +77,14 @@
 ###### [4-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/next/4.md)
 
 ### JAVASCRIPT & TYPESCRIPT
+
+###### [1-UDEMY-50 PROJECTS IN 50 DAYS - HTML, CSS & JAVASCRIPT](https://www.udemy.com/course/50-projects-50-days/)
+
+###### [2-UDEMY-10 MEGA RESPONSIVE WEBSITES WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/10-mega-responsive-websites-with-html-css-and-javascript/)
+
+###### [3-UDEMY-BUILD A QUIZ APP WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
+
+
 
 ###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
 
