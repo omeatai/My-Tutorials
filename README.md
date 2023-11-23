@@ -74,18 +74,6 @@
 
 ###### [21-UDEMY-REACT AND TYPESCRIPT: BUILD A PORTFOLIO PROJECT](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
-### MERN YOUTUBE
-
-###### [6-REACTJS COURSE - PEDROTECH](/courses/mern/60.md)
-
-###### [7-REACT & NODE CRASH COURSE - NET NINJA](/courses/mern/70.md)
-
-###### [8-REACT & NODE TUTORIAL - DAVE GRAY](/courses/mern/80.md)
-
-###### [9-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/mern/90.md)
-
-###### [10-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/mern/100.md)
-
 ---
 
 ## NEXTJS
@@ -113,18 +101,6 @@
 ###### [3-UDEMY-BUILD A QUIZ APP WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
 
 ###### [4-UDEMY-JAVASCRIPT: THE ADVANCED CONCEPTS](https://www.udemy.com/course/advanced-javascript-concepts/)
-
-
-
-###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
-
-###### [2-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/2.md)
-
-###### [3-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/3.md) +
-
-###### [4-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/4.md)
-
-###### [5-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/5.md)
 
 ---
 
@@ -222,22 +198,6 @@
 
 ---
 
-## OTHERS
-
----
-
-###### [10-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/others/10.md)
-
-###### [11-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/others/11.md) +
-
-###### [12-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/others/12.md)
-
-###### [13-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/others/13.md) +
-
-###### [14-FIREBASE 9 TUTORIAL - NET NINJA](/courses/others/14.md)
-
----
-
 ## BASICS
 
 ---
@@ -277,3 +237,53 @@
 ###### [16-MONGODB TUTORIAL - W3SCHOOLS](https://www.w3schools.com/mongodb/index.php)
 
 ###### [17-AWS TUTORIAL - W3SCHOOLS](https://www.w3schools.com/aws/index.php)
+
+
+---
+
+## YOUTUBE COURSES
+
+---
+
+
+###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
+
+###### [2-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/2.md)
+
+###### [3-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/3.md) +
+
+###### [4-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/4.md)
+
+###### [5-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/5.md)
+
+
+###### [10-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/others/10.md)
+
+###### [11-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/others/11.md) +
+
+###### [12-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/others/12.md)
+
+###### [13-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/others/13.md) +
+
+###### [14-FIREBASE 9 TUTORIAL - NET NINJA](/courses/others/14.md)
+
+
+###### [100-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/mern/100.md)
+
+###### [101-REACT CRASH COURSE - NET NINJA](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) | [LAB](/courses/mern/101.md)
+
+###### [101B-NODE CRASH COURSE - NET NINJA](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU) | [LAB](/courses/mern/101.md)
+
+###### [102-REACT & NODE TUTORIAL - DAVE GRAY](/courses/mern/102.md)
+
+###### [103-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/mern/103.md)
+
+###### [104-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/mern/104.md)
+
+
+
+---
+
+## YOUTUBE PR
+
+---
