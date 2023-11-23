@@ -131,32 +131,49 @@
 
 ###### [2-UDEMY-COMPLETE PYTHON DEVELOPER IN 2023 - ZERO TO MASTERY](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/) | [[LAB]](/courses/python/2.md)
 
-###### [3-UDEMY-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](/courses/python/3.md) | [[LAB]](/courses/python/3.md)
+###### [3-UDEMY-DJANGO & DJANGO REST FRAMEWORK WITH REACT FRONTEND - PARWIZ FOROGH](https://www.udemy.com/course/django-django-rest-framework-build-rest-api-in-python/) | [[LAB]](/courses/python/3.md)
 
-###### [4-UDEMY-THE ULTIMATE PYTHON UNIT TESTING COURSE](https://www.udemy.com/course/python-unit-testing/)
+###### [4-UDEMY-REACT AND DJANGO: A PRACTICAL GUIDE WITH DOCKER](https://www.udemy.com/course/react-django-admin/)
 
-###### [5-UDEMY-RABBITMQ IN PRACTICE](https://www.udemy.com/course/rabbitmq-in-practice/)
+###### [5-UDEMY-THE ULTIMATE AUTHENTICATION COURSE WITH DJANGO AND REACT](https://www.udemy.com/course/react-django-authentication/)
 
-###### [6-UDEMY-REDIS: THE COMPLETE DEVELOPER'S GUIDE](https://www.udemy.com/course/redis-the-complete-developers-guide-p/)
+###### [6-UDEMY-REACT, NEXT.JS AND DJANGO: A RAPID GUIDE - ADVANCED](https://www.udemy.com/course/react-django-advanced/)
 
-###### [7-UDEMY-AUTOMATE THE BORING STUFF WITH PYTHON PROGRAMMING](https://www.udemy.com/course/automate/)
+###### [7-UDEMY-BUILD REST APIS WITH DJANGO REST FRAMEWORK AND PYTHON](https://www.udemy.com/course/django-rest-framework/)
 
-###### [8-UDEMY-PYTHON: SCRIPTING PROGRAMMING WITH PYTHON 3](https://www.udemy.com/course/python-scripting/)
+###### [8-UDEMY-BUILD A BACKEND REST API WITH PYTHON & DJANGO - ADVANCED](https://www.udemy.com/course/django-python-advanced/)
 
-###### [9-UDEMY-PYTHON FOR BEGINNERS](https://www.udemy.com/course/python-core-and-advanced/)
+###### [9-UDEMY-DJANGO REST FRAMEWORK - BUILD EFFICIENT BACKEND WITH DJANGO](https://www.udemy.com/course/django-rest-framework-api/)
 
-###### [10-UDEMY-LEARN TO CODE FROM SCRATCH WITH PYTHON 3](https://www.udemy.com/course/learn-to-code-from-scratch-with-python-3/)
+###### [10-UDEMY-DJANGO A-Z: BUILD & DEPLOY WEB PROJECT WITH PYTHON & DJANGO](https://www.udemy.com/course/complete-django-masterclass/)
 
-###### [11-UDEMY-PYTHON & CRYPTOCURRENCY API: BUILD 5 REAL WORLD APPLICATIONS](https://www.udemy.com/course/coinmarketcap/)
+###### [11-UDEMY-PYTHON DJANGO - THE PRACTICAL GUIDE](https://www.udemy.com/course/python-django-the-practical-guide/)
 
-###### [12-UDEMY-DESIGN PATTERNS IN PYTHON](https://www.udemy.com/course/design-patterns-python/)
+###### [12-UDEMY-THE ULTIMATE AUTHENTICATION COURSE WITH NESTJS AND REACT](https://www.udemy.com/course/react-nest-authentication/)
+
+###### [13-UDEMY-THE ULTIMATE PYTHON UNIT TESTING COURSE](https://www.udemy.com/course/python-unit-testing/)
+
+###### [14-UDEMY-AUTOMATE THE BORING STUFF WITH PYTHON PROGRAMMING](https://www.udemy.com/course/automate/)
+
+###### [15-UDEMY-PYTHON: SCRIPTING PROGRAMMING WITH PYTHON 3](https://www.udemy.com/course/python-scripting/)
+
+###### [16-UDEMY-PYTHON FOR BEGINNERS](https://www.udemy.com/course/python-core-and-advanced/)
+
+###### [17-UDEMY-LEARN TO CODE FROM SCRATCH WITH PYTHON 3](https://www.udemy.com/course/learn-to-code-from-scratch-with-python-3/)
+
+###### [18-UDEMY-PYTHON & CRYPTOCURRENCY API: BUILD 5 REAL WORLD APPLICATIONS](https://www.udemy.com/course/coinmarketcap/)
+
+###### [19-UDEMY-DESIGN PATTERNS IN PYTHON](https://www.udemy.com/course/design-patterns-python/)
+
+###### [20-UDEMY-RABBITMQ IN PRACTICE](https://www.udemy.com/course/rabbitmq-in-practice/)
+
+###### [21-UDEMY-REDIS: THE COMPLETE DEVELOPER'S GUIDE](https://www.udemy.com/course/redis-the-complete-developers-guide-p/)
 
 ###### [100-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/100.md) | [[LAB]](/courses/python/100.md)
 
-
 ### AI & LANGCHAIN
 
-###### [1-UDEMY-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
+###### [1-UDEMY-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) [[LAB]](/courses/others/1.md)
 
 ###### [2-UDEMY-DATA STRUCTURES AND ALGORITHMS PYTHON: THE COMPLETE BOOTCAMP](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
@@ -180,12 +197,9 @@
 
 ###### [12-UDEMY-OPENAI API WITH PYTHON BOOTCAMP: CHATGPT API, GPT-4, DALL·E](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
 
-
-
-
 ### OTHERS
 
-###### [1-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](/courses/others/1.md)
+######
 
 ###### [10-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/others/10.md)
 
