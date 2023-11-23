@@ -241,6 +241,9 @@
 
 ### +NET NINJA
 
+<details>
+  <summary>1. HTML & CSS</summary>
+
 ###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
 
 ###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
@@ -256,6 +259,14 @@
 ###### [1G-BOOTSTRAP 5 TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR)
 
 ###### [1H-SASS TUTORIAL (BUILD YOUR OWN CSS LIBRARY)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
+
+</details>
+
+<details>
+  <summary>2. Initialize React App</summary>
+
+</details>
+
 
 ###### [2-MODERN JAVASCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc)
 
