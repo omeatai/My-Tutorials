@@ -241,21 +241,133 @@
 
 ### +NET NINJA
 
-###### [1-TYPESCRIPT CRASH COURSE)](https://youtube.com/playlist?list=PL4cUxeGkcC9gNhFQgS4edYLqP7LkZcFMN&si=2sczXTwX8w_p21GF)
+###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
 
+###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
 
+###### [1C-CSS GRID TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY)
 
-###### [1-STRAPI TUTORIAL (WITH REACT & GRAPHQL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h6OY8_8Oq6JerWqsKdAPxn)
+###### [1D-MOBILE-FIRST RESPONSIVE BUILD (WITH CSS GRID)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4)
 
-###### [2-GRAPHQL CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y)
+###### [1E-TAILWIND CSS TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw)
 
-###### [3-NEST.JS CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g8YFseGdkyj9RH9kVs_cMr)
+###### [1F-MATERIAL UI TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58)
 
-###### [4-NEXT 13 CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jZIVqmy_QhfQdi6mzQvJnT)
+###### [1G-BOOTSTRAP 5 TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR)
 
-###### [5-BUILD AN IMAGE GALLERY WITH NEXT.JS 13)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYBP0AZ3MNdEiiZqd4mHGm)
+###### [1H-SASS TUTORIAL (BUILD YOUR OWN CSS LIBRARY)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
 
+###### [2-MODERN JAVASCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc)
 
+###### [2B-ASYNCHRONOUS JAVASCRIPT](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jx2TTZk3IGWKSbtugYdrlu)
+
+###### [2C-OBJECT ORIENTED JAVASCRIPT](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7)
+
+###### [2D-JAVASCRIPT DOM TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V)
+
+###### [2E-REGULAR EXPRESSIONS (REGEX) TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD)
+
+###### [3-TYPESCRIPT CRASH COURSE](https://youtube.com/playlist?list=PL4cUxeGkcC9gNhFQgS4edYLqP7LkZcFMN&si=2sczXTwX8w_p21GF)
+
+###### [3B-TYPESCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
+
+###### [3C-WEBPACK & TYPESCRIPT SETUP](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hOkGbwzgYFmaxB0WiduYJC)
+
+###### [4-NEXT.JS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
+
+###### [4B-NEXT 13 CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jZIVqmy_QhfQdi6mzQvJnT)
+
+###### [5-MERN STACK CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE)
+
+###### [5B-MERN AUTH TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g8OhpOZxNdhXggFz2lOuCT)
+
+###### [5C-MONGODB TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA)
+
+###### [6-MODERN REACT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
+
+###### [6B-COMPLETE REACT TUTORIAL (WITH REDUX)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG)
+
+###### [6C-REACT CONTEXT & HOOKS TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI)
+
+###### [6D-REACT ROUTER IN DEPTH](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf)
+
+###### [6E-REACT ROUTER 6 TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h7F1LWaQ7MAI8ptg5VjvxJ)
+
+###### [6F-REACT QUERY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jpi7Ptjl5b50p9gLjOFani)
+
+###### [6G-REACT SKELETON SCREENS TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i6bZhMuAzQpC6YgLmB4k4-)
+
+###### [7-NODE.JS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
+
+###### [7B-NODE.JS AUTH TUTORIAL (JWT)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp)
+
+###### [7C-REST API TUTORIALS (NODE, EXPRESS & MONGO)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8)
+
+###### [8-REACT NATIVE TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ)
+
+###### [9-REACT TESTING LIBRARY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ)
+
+###### [10-GRAPHQL CRASH COURSE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y)
+
+###### [10B-GRAPHQL TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
+
+###### [11-STRAPI TUTORIAL (WITH REACT & GRAPHQL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h6OY8_8Oq6JerWqsKdAPxn)
+
+###### [12-SUPABASE CRASH COURSE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hUb6sHthUEwG7r9VDPBMKO)
+
+###### [13-FIREBASE 9 TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb)
+
+###### [13B-REACT, REDUX & FIREBASE APP TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3)
+
+###### [13C-FIREBASE AUTH TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jUPIes_B8vRjn1_GaplOPQ)
+
+###### [13D-FIREBASE HOSTING TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9he0kHAyiyr3dDO2xw0NWoP)
+
+###### [13E-FIREBASE FUNCTIONS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i_aLkr62adUTJi53y7OjOf)
+
+###### [14-VUE.JS 3 TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1)
+
+###### [14B-VUE 3 WITH TYPESCRIPT JUMP START](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gCtAuEdXTjNVE5bbMFo5OD)
+
+###### [14C-VUE CLI 3 TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iCKx06qSncuvEPZ7x1UnKD)
+
+###### [14D-VUETIFY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g0MQZfHwKcuB0Yswgb3gA5)
+
+###### [14E-VUEX TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i371QO_Rtkl26MwtiJ30P2)
+
+###### [14F-REAL-TIME CHAT WITH VUE & FIREBASE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i2TdO1NqDg0KigL-WkL4Vl)
+
+###### [15-DENO JUMP-START TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gnaJdxuGvEGYQ9iHb8mxsh)
+
+###### [16-FLUTTER TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
+
+###### [16B-FLUTTER & FIREBASE APP BUILD](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
+
+###### [17-PHP TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o)
+
+###### [17B-OBJECT ORIENTED PHP TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNpT-yVAYxNWOmxjxL51Hy)
+
+###### [18-LARAVEL 6 TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hL6aCFKyagrT1RCfVN4w2Q)
+
+###### [19-JSON SERVER TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i2v2ZqJgydXIcRq_ZizIdD)
+
+###### [20-OAUTH LOGIN (PASSPORT.JS) TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x)
+
+###### [21-REDIS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h3V2eqhi8rRdIDJshP-b4P)
+
+###### [22-GATSBY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB)
+
+###### [23-PYTHON 3 TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9idu6GZ8EU_5B6WpKTdYZbK)
+
+###### [24-DJANGO TUTORIAL (CREATE A BLOG)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc)
+
+###### [25-GO TUTORIAL (GOLANG) FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM)
+
+###### [26-OPENAI TUTORIAL (THE BASICS)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ipdXMDVcGimIVMG_Z6-Vsu)
+
+###### [27-GIT & GITHUB TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+
+###### [28-DOCKER CRASH COURSE TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7)
 
 
 ### +OTHERS
