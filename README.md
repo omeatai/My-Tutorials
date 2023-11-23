@@ -74,7 +74,7 @@
 
 ###### [21-UDEMY-REACT AND TYPESCRIPT: BUILD A PORTFOLIO PROJECT](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
-
+### MERN YOUTUBE
 
 ###### [6-REACTJS COURSE - PEDROTECH](/courses/mern/60.md)
 
@@ -88,7 +88,7 @@
 
 ---
 
-## NEXT
+## NEXTJS
 
 ---
 
