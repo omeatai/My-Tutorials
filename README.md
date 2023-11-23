@@ -241,11 +241,24 @@
 
 ### +NET NINJA
 
+###### [1-TYPESCRIPT CRASH COURSE)](https://youtube.com/playlist?list=PL4cUxeGkcC9gNhFQgS4edYLqP7LkZcFMN&si=2sczXTwX8w_p21GF)
+
+
+
+###### [1-STRAPI TUTORIAL (WITH REACT & GRAPHQL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h6OY8_8Oq6JerWqsKdAPxn)
+
+###### [2-GRAPHQL CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y)
+
+###### [3-NEST.JS CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g8YFseGdkyj9RH9kVs_cMr)
+
+###### [4-NEXT 13 CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jZIVqmy_QhfQdi6mzQvJnT)
+
+###### [5-BUILD AN IMAGE GALLERY WITH NEXT.JS 13)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYBP0AZ3MNdEiiZqd4mHGm)
 
 
 
 
-
+### +OTHERS
 
 ###### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
 
