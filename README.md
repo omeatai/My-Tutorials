@@ -263,7 +263,7 @@
 </details>
 
 <details>
-  <summary>2. Initialize React App</summary>
+  <summary>2. JAVASCRIPT</summary>
 
 ###### [2-MODERN JAVASCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc)
 
@@ -278,7 +278,7 @@
 </details>
 
 <details>
-  <summary>3. Initialize React App</summary>
+  <summary>3. TYPESCRIPT</summary>
 
 ###### [3-TYPESCRIPT CRASH COURSE](https://youtube.com/playlist?list=PL4cUxeGkcC9gNhFQgS4edYLqP7LkZcFMN&si=2sczXTwX8w_p21GF)
 
@@ -289,7 +289,7 @@
 </details>
 
 <details>
-  <summary>4. Initialize React App</summary>
+  <summary>4. NEXT.JS</summary>
 
 ###### [4-NEXT.JS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
 
@@ -298,7 +298,7 @@
 </details>
 
 <details>
-  <summary>5. Initialize React App</summary>
+  <summary>5. MERN</summary>
 
 ###### [5-MERN STACK CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE)
 
@@ -309,7 +309,7 @@
 </details>
 
 <details>
-  <summary>6. Initialize React App</summary>
+  <summary>6. REACT</summary>
 
 ###### [6-MODERN REACT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 
@@ -328,7 +328,7 @@
 </details>
 
 <details>
-  <summary>7. Initialize React App</summary>
+  <summary>7. NODE</summary>
 
 ###### [7-NODE.JS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
 
