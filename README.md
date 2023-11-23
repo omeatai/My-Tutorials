@@ -265,9 +265,6 @@
 <details>
   <summary>2. Initialize React App</summary>
 
-</details>
-
-
 ###### [2-MODERN JAVASCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc)
 
 ###### [2B-ASYNCHRONOUS JAVASCRIPT](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jx2TTZk3IGWKSbtugYdrlu)
@@ -278,21 +275,41 @@
 
 ###### [2E-REGULAR EXPRESSIONS (REGEX) TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD)
 
+</details>
+
+<details>
+  <summary>3. Initialize React App</summary>
+
 ###### [3-TYPESCRIPT CRASH COURSE](https://youtube.com/playlist?list=PL4cUxeGkcC9gNhFQgS4edYLqP7LkZcFMN&si=2sczXTwX8w_p21GF)
 
 ###### [3B-TYPESCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
 
 ###### [3C-WEBPACK & TYPESCRIPT SETUP](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hOkGbwzgYFmaxB0WiduYJC)
 
+</details>
+
+<details>
+  <summary>4. Initialize React App</summary>
+
 ###### [4-NEXT.JS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
 
 ###### [4B-NEXT 13 CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jZIVqmy_QhfQdi6mzQvJnT)
+
+</details>
+
+<details>
+  <summary>5. Initialize React App</summary>
 
 ###### [5-MERN STACK CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE)
 
 ###### [5B-MERN AUTH TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g8OhpOZxNdhXggFz2lOuCT)
 
 ###### [5C-MONGODB TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA)
+
+</details>
+
+<details>
+  <summary>6. Initialize React App</summary>
 
 ###### [6-MODERN REACT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 
@@ -308,11 +325,25 @@
 
 ###### [6G-REACT SKELETON SCREENS TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i6bZhMuAzQpC6YgLmB4k4-)
 
+</details>
+
+<details>
+  <summary>7. Initialize React App</summary>
+
 ###### [7-NODE.JS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
 
 ###### [7B-NODE.JS AUTH TUTORIAL (JWT)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp)
 
 ###### [7C-REST API TUTORIALS (NODE, EXPRESS & MONGO)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8)
+
+</details>
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
 
 ###### [8-REACT NATIVE TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ)
 
