@@ -139,6 +139,18 @@
 
 ###### [6-UDEMY-REDIS: THE COMPLETE DEVELOPER'S GUIDE](https://www.udemy.com/course/redis-the-complete-developers-guide-p/)
 
+###### [7-UDEMY-AUTOMATE THE BORING STUFF WITH PYTHON PROGRAMMING](https://www.udemy.com/course/automate/)
+
+###### [8-UDEMY-PYTHON: SCRIPTING PROGRAMMING WITH PYTHON 3](https://www.udemy.com/course/python-scripting/)
+
+###### [9-UDEMY-PYTHON FOR BEGINNERS](https://www.udemy.com/course/python-core-and-advanced/)
+
+###### [10-UDEMY-LEARN TO CODE FROM SCRATCH WITH PYTHON 3](https://www.udemy.com/course/learn-to-code-from-scratch-with-python-3/)
+
+###### [11-UDEMY-PYTHON & CRYPTOCURRENCY API: BUILD 5 REAL WORLD APPLICATIONS](https://www.udemy.com/course/coinmarketcap/)
+
+###### [12-UDEMY-DESIGN PATTERNS IN PYTHON](https://www.udemy.com/course/design-patterns-python/)
+
 ###### [100-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/100.md) | [[LAB]](/courses/python/100.md)
 
 
