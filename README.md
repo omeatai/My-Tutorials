@@ -239,6 +239,10 @@
 
 ---
 
+### +CODEVOLUTION
+
+### +DAVE GRAY
+
 ### +NET NINJA
 
 <details>
@@ -422,79 +426,107 @@
 
 
 <details>
-  <summary>8. Initialize React App</summary>
-
-</details>
-
-
-<details>
-  <summary>8. Initialize React App</summary>
-
-</details>
-
-
-<details>
-  <summary>8. Initialize React App</summary>
-
-</details>
-
-
-<details>
-  <summary>8. Initialize React App</summary>
-
-</details>
-
-
-<details>
-  <summary>8. Initialize React App</summary>
-
-</details>
-
-
-<details>
-  <summary>8. Initialize React App</summary>
-
-</details>
-
-
-<details>
-  <summary>8. Initialize React App</summary>
-
-</details>
-
-
-
-
+  <summary>16. FLUTTER</summary>
 
 ###### [16-FLUTTER TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
 
 ###### [16B-FLUTTER & FIREBASE APP BUILD](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
 
+</details>
+
+
+<details>
+  <summary>17. PHP</summary>
+
 ###### [17-PHP TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o)
 
 ###### [17B-OBJECT ORIENTED PHP TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNpT-yVAYxNWOmxjxL51Hy)
 
+</details>
+
+
+<details>
+  <summary>18. LARAVEL</summary>
+
 ###### [18-LARAVEL 6 TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hL6aCFKyagrT1RCfVN4w2Q)
+
+</details>
+
+
+<details>
+  <summary>19. JSON SERVER</summary>
 
 ###### [19-JSON SERVER TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i2v2ZqJgydXIcRq_ZizIdD)
 
+</details>
+
+
+<details>
+  <summary>20. PASSPORT.JS</summary>
+
 ###### [20-OAUTH LOGIN (PASSPORT.JS) TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x)
+
+</details>
+
+
+<details>
+  <summary>21. REDIS</summary>
 
 ###### [21-REDIS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h3V2eqhi8rRdIDJshP-b4P)
 
+</details>
+
+
+<details>
+  <summary>22. GATSBY</summary>
+
 ###### [22-GATSBY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB)
+
+</details>
+
+<details>
+  <summary>23. PYTHON 3</summary>
 
 ###### [23-PYTHON 3 TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9idu6GZ8EU_5B6WpKTdYZbK)
 
+</details>
+
+<details>
+  <summary>24. DJANGO</summary>
+
 ###### [24-DJANGO TUTORIAL (CREATE A BLOG)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc)
+
+</details>
+
+<details>
+  <summary>25. GO</summary>
 
 ###### [25-GO TUTORIAL (GOLANG) FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM)
 
+</details>
+
+<details>
+  <summary>26. OPENAI</summary>
+
 ###### [26-OPENAI TUTORIAL (THE BASICS)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ipdXMDVcGimIVMG_Z6-Vsu)
+
+</details>
+
+<details>
+  <summary>27. GIT & GITHUB</summary>
 
 ###### [27-GIT & GITHUB TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
 
+</details>
+
+<details>
+  <summary>28. DOCKER</summary>
+
 ###### [28-DOCKER CRASH COURSE TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7)
+
+</details>
+
+
 
 
 ### +OTHERS
