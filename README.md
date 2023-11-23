@@ -339,23 +339,48 @@
 </details>
 
 <details>
-  <summary>8. Initialize React App</summary>
+  <summary>8. REACT NATIVE</summary>
+
+###### [8-REACT NATIVE TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ)
+
+</details>
+
+<details>
+  <summary>9. REACT TESTING</summary>
+
+###### [9-REACT TESTING LIBRARY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ)
 
 </details>
 
 
-
-###### [8-REACT NATIVE TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ)
-
-###### [9-REACT TESTING LIBRARY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ)
+<details>
+  <summary>10. GRAPHQL</summary>
 
 ###### [10-GRAPHQL CRASH COURSE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y)
 
 ###### [10B-GRAPHQL TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
 
+</details>
+
+
+<details>
+  <summary>11. STRAPI</summary>
+
 ###### [11-STRAPI TUTORIAL (WITH REACT & GRAPHQL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h6OY8_8Oq6JerWqsKdAPxn)
 
+</details>
+
+
+<details>
+  <summary>12. SUPABASE</summary>
+
 ###### [12-SUPABASE CRASH COURSE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hUb6sHthUEwG7r9VDPBMKO)
+
+</details>
+
+
+<details>
+  <summary>13. FIREBASE</summary>
 
 ###### [13-FIREBASE 9 TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb)
 
@@ -366,6 +391,12 @@
 ###### [13D-FIREBASE HOSTING TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9he0kHAyiyr3dDO2xw0NWoP)
 
 ###### [13E-FIREBASE FUNCTIONS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i_aLkr62adUTJi53y7OjOf)
+
+</details>
+
+
+<details>
+  <summary>14. VUE.JS</summary>
 
 ###### [14-VUE.JS 3 TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1)
 
@@ -379,7 +410,61 @@
 
 ###### [14F-REAL-TIME CHAT WITH VUE & FIREBASE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i2TdO1NqDg0KigL-WkL4Vl)
 
+</details>
+
+
+<details>
+  <summary>15. DENO</summary>
+
 ###### [15-DENO JUMP-START TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gnaJdxuGvEGYQ9iHb8mxsh)
+
+</details>
+
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
+<details>
+  <summary>8. Initialize React App</summary>
+
+</details>
+
+
+
+
 
 ###### [16-FLUTTER TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
 
