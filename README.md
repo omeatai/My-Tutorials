@@ -45,11 +45,13 @@
 </details>
 
 <details>
-  <summary>IMG EDITOR</summary>
+  <summary>EDITOR</summary>
 
 ###### [1-CANVA](https://www.canva.com/)
 
 ###### [2-IPICCY](https://ipiccy.com/)
+
+###### [3-CONVERTCASE](https://convertcase.net/)
 
 </details>
 
