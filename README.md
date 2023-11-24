@@ -22,12 +22,6 @@
 
 ---
 
-## COURSES
-
----
-
----
-
 ## MERN
 
 ---
@@ -192,9 +186,14 @@
 
 ---
 
-## BASICS
+## COURSES
 
 ---
+
+### +WEB TUTORIALS
+
+<details>
+  <summary>1. W3SCHOOLS</summary>
 
 ###### [0-GIT COURSE - W3SCHOOLS](https://www.w3schools.com/git/default.asp)
 
@@ -232,12 +231,7 @@
 
 ###### [17-AWS TUTORIAL - W3SCHOOLS](https://www.w3schools.com/aws/index.php)
 
-
----
-
-## YOUTUBE COURSES
-
----
+</details>
 
 ### +CODEVOLUTION
 
