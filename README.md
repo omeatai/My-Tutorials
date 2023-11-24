@@ -705,6 +705,8 @@
 <details>
   <summary>FREECODECAMP </summary>
 
+###### [0-FREECODECAMP)](https://www.youtube.com/@freecodecamp/videos)
+
 ###### [101-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
 ###### [102-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
@@ -720,6 +722,8 @@
 
 <details>
   <summary>CODE WITH LARI </summary>
+
+###### [0-REACT REDUX TYPESCRIPT)](https://www.youtube.com/@codewithlari/videos)
 
 ###### [1-REACT REDUX TYPESCRIPT)](https://www.youtube.com/watch?v=4hZd2QP0OFM&t=875s&ab_channel=codewithlari)
 
@@ -775,7 +779,9 @@
 
 
 <details>
-  <summary>JS-MASTERY </summary>
+  <summary>JS MASTERY </summary>
+
+###### [0-JS MASTERY](https://www.youtube.com/@javascriptmastery/videos)
 
 ###### [1-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/pr/1.md) | [[LAB]](/courses/pr/jsmastery/1.md)
 
@@ -784,6 +790,8 @@
 
 <details>
   <summary>JAN MARSHAL </summary>
+
+###### [0-JAN MARSHAL](https://www.youtube.com/@janmarshalcoding/videos)
 
 ###### [101-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://www.youtube.com/watch?v=l0pkuHopo8A&ab_channel=JanMarshal)
 
@@ -799,6 +807,8 @@
 <details>
   <summary>DAILY TUITION </summary>
 
+###### [0-DAILY TUITION](https://www.youtube.com/@DailyTuition/playlists)
+
 ###### [106-COMPLETE MERN APP](https://www.youtube.com/playlist?list=PLynWqC6VC9KM_n_KrR1jVlaF8SQjWHb6i)
 
 ###### [106-COMPLETE NEXT.JS COURSE FOR BEGINNERS](https://www.youtube.com/playlist?list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD)
@@ -808,6 +818,8 @@
 
 <details>
   <summary>CODING WITH DAWID </summary>
+
+###### [0-CODING WITH DAWID](https://www.youtube.com/@CodingWithDawid/videos)
 
 ###### [108-BUILD A FULLSTACK BLOG APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=xKs2IZZya7c&t=5587s&ab_channel=CodingWithDawid)
 
@@ -822,6 +834,8 @@
 
 <details>
   <summary>PEDRO TECH</summary>
+
+###### [0-PEDRO TECH](https://www.youtube.com/@PedroTechnologies/videos)
 
 ###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/others/1.md)
 
