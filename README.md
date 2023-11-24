@@ -15,13 +15,25 @@
 
 ###### [3-CPANEL](https://cpanel-p3.web-hosting.com/cpsess5287646472/frontend/jupiter/index.html?login=1&post_login=79973471504338)
 
-###### [2-NAMECHEAP](https://ap.www.namecheap.com/)
+###### [4-NAMECHEAP](https://ap.www.namecheap.com/)
 
-+FRAMEWORKS
+###### [5-MONGODB ATLAS](https://cloud.mongodb.com/)
 
-###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+</details>
 
-###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
+<details>
+  <summary>FRAMEWORKS</summary>
+
+###### [1-DJANGO](https://www.djangoproject.com/)
+
+###### [2-DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
+
+</details>
+
+<details>
+  <summary>LAB EDITOR</summary>
+
+###### [1-REPLIT](https://replit.com/@omeatai)
 
 </details>
 
