@@ -2,6 +2,33 @@
 
 ---
 
+## TOOLS
+
+---
+
+<details>
+  <summary>HERE</summary>
+
++HOSTS
+
+###### [1-VERCEL](https://vercel.com/dashboard)
+
+###### [2-NETLIFY](https://app.netlify.com/teams/omeatai/overview)
+
+###### [3-CPANEL](https://cpanel-p3.web-hosting.com/cpsess5287646472/frontend/jupiter/index.html?login=1&post_login=79973471504338)
+
+###### [2-NAMECHEAP](https://ap.www.namecheap.com/)
+
++FRAMEWORKS
+
+###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+
+###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
+
+</details>
+
+---
+
 ## PROJECTS
 
 ---
