@@ -424,10 +424,45 @@
 <details>
   <summary>HERE</summary>
 
-###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+###### [1-HTML TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6OlAwitnFUubtE93DO-l0vu)
 
-###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
+###### [2-CSS TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit)
 
+###### [3-TAILWIND CSS TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft)
+
+###### [4-JAVASCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT)
+
+###### [5-ADVANCED JAVASCRIPT CONCEPTS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6N3bG4YZhkrCL3ZmDcLTuGd)
+
+###### [6-VANILLA JAVASCRIPT PROJECTS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PA3nkkEAr91n4bK-NunwPU)
+
+###### [7-TYPESCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6NS8GXt5nPrcYpust89zq_b)
+
+###### [8-REACT TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
+
+###### [9-REACT HOOKS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PSdiQpSxO9zxvB0ns6m3ta)
+
+###### [10-REACT AUTH](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PRCpm9clX0WiBEMB70FWwd)
+
+###### [11-REACT REDUX TOOLKIT TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M1J5I1w2-uZx36Qp6qhjKo)
+
+###### [12-REACT TESTING LIBRARY & JEST](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6NTWVG8eM7Dt43vvzulnIbK)
+
+###### [13-NEXT.JS TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj)
+
+###### [14-NODE.JS TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw)
+
+###### [15-EXPRESS JS TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6P4vnjQ_PJ5iRYsqJkQhtUu)
+
+###### [16-MONGODB TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6OJQfjH8g_CAjgMbLoIleKN)
+
+###### [17-MERN STACK TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6P4dQUsoDatjEGpmBpcOW8V)
+
+###### [18-SOCKET.IO - BUILDING A CHAT APP ](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6NOkbTDxKi7grs_oxJhLu07)
+
+###### [19-GIT AND GITHUB TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PkWWk_mA2vkimUTJf81mNz)
+
+###### [20-PYTHON TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6MQri81d012LwP5jvFZ_scc)
 
 </details>
 
