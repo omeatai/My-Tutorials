@@ -231,6 +231,77 @@
 
 </details>
 
+<details>
+  <summary>2. SCRIMBA</summary>
+
+###### [1-ALL COURSES](https://scrimba.com/allcourses)
+
+###### [2-THE FRONTEND DEVELOPER CAREER PATH](https://scrimba.com/learn/frontend)
+
+###### [3-THE AI ENGINEER PATH](https://scrimba.com/learn/aiengineer)
+
+###### [4-LEARN TO CODE WITH AI](https://scrimba.com/learn/aicoding)
+
+###### [5-BUILD AI APPS WITH CHATGPT, DALL-E AND GPT-4](https://scrimba.com/learn/buildaiapps)
+
+###### [6-THE OFFICIAL LANGCHAIN.JS COURSE](https://scrimba.com/learn/langchain)
+
+###### [7-PROMPT ENGINEERING FOR WEB DEVELOPERS](https://scrimba.com/learn/promptengineering)
+
+###### [8-LEARN HTML AND CSS](https://scrimba.com/learn/htmlandcss)
+
+###### [9-HTML & CSS CRASH COURSE](https://scrimba.com/learn/introhtmlcss)
+
+###### [10-LEARN FLEXBOX](https://scrimba.com/learn/flexbox)
+
+###### [11-LEARN CSS GRID](https://scrimba.com/learn/cssgrid)
+
+###### [12-LEARN CSS VARIABLES](https://scrimba.com/learn/cssvariables)
+
+###### [13-LEARN CSS ANIMATIONS](https://scrimba.com/learn/cssanimations)
+
+###### [14-LEARN RESPONSIVE WEB DESIGN](https://scrimba.com/learn/responsive)
+
+###### [15-LEARN TAILWIND CSS](https://scrimba.com/learn/tailwind)
+
+###### [16-LEARN BOOTSTRAP](https://scrimba.com/learn/bootstrap4)
+
+###### [17-FROM FIGMA TO CODE](https://scrimba.com/learn/figmatocode)
+
+###### [18-LEARN UI DESIGN FUNDAMENTALS](https://scrimba.com/learn/design)
+
+###### [19-LEARN UI DESIGN](https://scrimba.com/learn/designbootcamp)
+
+###### [20-LEARN JAVASCRIPT](https://scrimba.com/learn/learnjavascript)
+
+###### [21-JAVASCRIPT DEEP DIVE](https://scrimba.com/learn/javascript)
+
+###### [22-INTRODUCTION TO ES6+](https://scrimba.com/learn/introtoes6)
+
+###### [23-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+
+###### [24-INTRODUCTION TO UNIT TESTING](https://scrimba.com/learn/unittest)
+
+###### [25-LEARN REGULAR EXPRESSIONS](https://scrimba.com/learn/regularexpressions)
+
+###### [26-BUILD A COLOR TOOL IN VANILLA JAVASCRIPT](https://scrimba.com/learn/javascriptcolortool)
+
+###### [27-JAVASCRIPT INTERVIEW CHALLENGES](https://scrimba.com/learn/interviewchallenges)
+
+###### [28-LEARN BINARY SEARCH IN JAVASCRIPT](https://scrimba.com/learn/algorithmsguide)
+
+###### [29-LEARN MERGE SORT IN JAVASCRIPT](https://scrimba.com/learn/mergesort)
+
+###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+
+###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+
+###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+
+###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+
+</details>
+
 ---
 
 ## CODEVOLUTION
