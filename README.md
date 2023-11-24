@@ -819,17 +819,52 @@
 
 ###### [0-LAMA DEV)](https://www.youtube.com/@LamaDev/videos)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [1-COMPLETE E-COMMERCE APP WITH REACT, STRAPI, STRIPE | SHOPPING APP TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=BCkWFblNLKU&t=159s&ab_channel=LamaDev)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [2-FULL-STACK BLOG APP TUTORIAL | NEXT.JS MONGODB BLOG APP PROJECT FULL COURSE](https://www.youtube.com/watch?v=DpYE5zPDRVQ&t=31s&ab_channel=LamaDev)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [3-RESTAURANT FOOD DELIVERY APP DESIGN - REACT NEXT.JS & TAILWIND | RESPONSIVE FOOD ORDERING WEBSITE](https://www.youtube.com/watch?v=gXlcwtS40LA&t=4s&ab_channel=LamaDev)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [4-TYPESCRIPT FOR REACT/NEXT.JS DEVELOPERS | TYPESCRIPT TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=WlxcujsvcIY&ab_channel=LamaDev)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [5-NEXT.JS FULL TUTORIAL FOR BEGINNERS | NEXT.JS 13 FULL STACK APP USING APP ROUTER](https://www.youtube.com/watch?v=VE8BkImUciY&ab_channel=LamaDev)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [6-REACT STRIPE NODE.JS FIVERR APP FULL TUTORIAL | MERN STACK FREELANCE SERVICE APP W/ STRIPE](https://www.youtube.com/watch?v=csUM7yfiaMw&t=9s&ab_channel=LamaDev)
+
+###### [7-LEARN THE MERN STACK - REACT FIVERR APP DESIGN TUTORIAL | REACT UI FULL COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=KI5CnJ9u5ok&ab_channel=LamaDev)
+
+###### [8-REACT SOCIAL MEDIA APP DESIGN | DARK/LIGHT MODE & RESPONSIVE & HTML CSS](https://www.youtube.com/watch?v=FweHcYHkt9A&t=4s&ab_channel=LamaDev)
+
+###### [9-REACT NODE.JS MYSQL SOCIAL MEDIA APP TUTORIAL | FULL STACK SOCIAL NETWORK APP](https://www.youtube.com/watch?v=1EuNnZEp2sQ&t=62s&ab_channel=LamaDev)
+
+###### [10-REACT NODE.JS MYSQL CRUD TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=fPuLnzSjPLE&ab_channel=LamaDev)
+
+###### [11-CHAT APP USING REACT AND FIREBASE | REALTIME PRIVATE CHAT APPLICATION](https://www.youtube.com/watch?v=k4mjF4sPITE&ab_channel=LamaDev)
+
+###### [12-ANIMATED PORTFOLIO WEBSITE WITH REACT & FRAMER MOTION | REACT PROJECT FOR BEGINNERS](https://www.youtube.com/watch?v=CHGHuF24Cjw&t=52s&ab_channel=LamaDev)
+
+###### [13-REACT NODE.JS MYSQL FULL STACK BLOG APP TUTORIAL](https://youtu.be/0aPLk2e2Z3g?si=JzXQBmLhLnoiYlms)
+
+###### [14-NEXT.JS 14 ADMIN DASHBOARD TUTORIAL | FULLSTACK NEXT.JS 14 PROJECT WITH SERVER ACTIONS](https://www.youtube.com/watch?v=cBg6xA5C60s&t=83s&ab_channel=LamaDev)
+
+</details>
+
+<details>
+  <summary>KISHAN SHETH</summary>
+
+###### [0-KISHAN SHETH](https://www.youtube.com/@KishanSheth21/videos)
+
+###### [1-REALTIME CHAT APP WITH REACT, NODE.JS, SOCKET.IO AND MONGODB](https://www.youtube.com/watch?v=otaQKODEUFs&ab_channel=KishanSheth)
+
+###### [2-YOUTUBE CLONE WITH REACT, REDUX TOOLKIT, TYPESCRIPT, TAILWIND CSS AND YOUTUBE API V3](https://www.youtube.com/watch?v=I32ri7v3SYk&ab_channel=KishanSheth)
+
+###### [3-BUILD SPOTIFY CLONE WITH REACT JS AND STYLED COMPONENTS USING SPOTIFY API AND CONTEXT API](https://www.youtube.com/watch?v=ajVcLGEw8Xw&ab_channel=KishanSheth)
+
+###### [4-REACT VIDEO CHAT APP | ZOOM CLONE USING REACT ELASTIC UI REDUX TOOLKIT, FIREBASE AND ZEGOCLOUD](https://www.youtube.com/watch?v=KCqdXubNoE4&ab_channel=KishanSheth)
+
+###### [5-MERN STACK PROJECT | REACT PROJECT | NETFLIX CLONE WITH REACT, REDUX TOOLKIT, NODEJS, MONGODB](https://www.youtube.com/watch?v=HgaJW2I4Mbk&ab_channel=KishanSheth)
+
+###### [6-MERN STACK PROJECT | REACT PROJECT | NETFLIX CLONE WITH REACT, REDUX TOOLKIT, NODEJS, MONGODB](https://www.youtube.com/watch?v=HgaJW2I4Mbk&ab_channel=KishanSheth)
 
 </details>
 
@@ -896,6 +931,25 @@
 ###### [8-FOOTBALL LIVE-SCORES REACTJS APP BUILT WITH RAPIDAPI TAILWINDCSS AND DASIYUI](https://www.youtube.com/watch?v=9kUR3TjMJnc&ab_channel=9jaCoder)
 
 </details>
+
+
+<details>
+  <summary>CODING40</summary>
+
+###### [0-CODING40](https://www.youtube.com/@CodingForty/videos)
+
+###### [1-FULL STACK ONLINE STORE WITH REACT, NEXT 13, TAILWINDCSS, & STRIPE](https://www.youtube.com/watch?v=p_q8gy_jmP8&ab_channel=Coding40)
+
+###### [2-FULL STACK E-COMMERCE APP WITH NEXT 13, REACT, SANITY, STRIPE, & TAILWINDCSS](https://www.youtube.com/watch?v=g2sE034SGjw&ab_channel=Coding40)
+
+###### [3-BUILD A REAL-TIME CHAT APP WITH REACT, NEXT 13, FIREBASE 9 & MATERIAL UI](https://www.youtube.com/watch?v=yCPY3tHzVYM&ab_channel=Coding40)
+
+###### [4-FULL STACK SAAS APP WITH NEXT 13, REACT, SUPABASE, STRIPE, TAILWINDCSS)](https://www.youtube.com/watch?v=7ORL21ZVSI0&t=20s&ab_channel=Coding40)
+
+###### [5-HOW TO FETCH DATA IN REACT FROM A GRAPHQL API)](https://www.youtube.com/watch?v=N9jK9ipnPw8&t=226s&ab_channel=Coding40)
+
+</details>
+
 
 
 <details>
