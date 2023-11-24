@@ -850,6 +850,19 @@
 
 </details>
 
+<details>
+  <summary>INDGEEK </summary>
+
+###### [0-INDGEEK](https://www.youtube.com/@indgeek/videos)
+
+###### [1-CREATE A REALTIME CHAT APP WITH NODE.JS AND SOCKET.IO](https://www.youtube.com/watch?v=jSY4fbG8i_o&ab_channel=IndGeek)
+
+###### [2-STOCK PRICE DROP NOTIFIER USING NODEJS TUTORIAL | BACKEND | PART 1](https://www.youtube.com/watch?v=KCoVAUL5uMw&t=283s&ab_channel=IndGeek)
+
+###### [3-STOCK PRICE DROP NOTIFIER USING NODEJS TUTORIAL | FRONTEND | PART 2](https://www.youtube.com/watch?v=v4tT1JZN1BM&ab_channel=IndGeek)
+
+</details>
+
 
 <details>
   <summary>PEDRO TECH</summary>
