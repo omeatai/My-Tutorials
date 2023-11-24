@@ -30,6 +30,10 @@
 
 ###### [2-DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
 
+###### [3-REACT](https://react.dev/learn)
+
+###### [4-NEXTJS](https://nextjs.org/docs)
+
 </details>
 
 <details>
