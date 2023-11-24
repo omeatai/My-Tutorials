@@ -1,10 +1,15 @@
 # My-Tutorials
 
+<details>
+<summary>
+
 ---
 
 ## PROJECTS
 
 ---
+
+</summary>
 
 ###### [1-DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
 
@@ -20,6 +25,8 @@
 
 ###### [7-NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
 
+
+</details>
 ---
 
 ## MERN
