@@ -219,7 +219,7 @@
 
 ---
 
-###### [1-UDEMY-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) [[LAB]](/courses/others/1.md)
+###### [1-UDEMY-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) [[LAB]](/courses/ai/1.md)
 
 ###### [2-UDEMY-DATA STRUCTURES AND ALGORITHMS PYTHON: THE COMPLETE BOOTCAMP](https://www.udemy.com/course/data-structures-and-algorithms-masterclass/)
 
@@ -468,7 +468,7 @@
 
 ###### [30-NODE.JS EVENT LOOP](https://www.youtube.com/playlist?list=PLC3y8-rFHvwj1_l8acs_lBi3a0HNb3bAN)
 
-###### [31-NEXT.JS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
+###### [31-NEXT.JS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH) | [[LAB]](/courses/ce/31.md) +
 
 ###### [32-JSON SERVER TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
 
@@ -515,7 +515,7 @@
 
 ###### [7-TYPESCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6NS8GXt5nPrcYpust89zq_b)
 
-###### [8-REACT TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
+###### [8-REACT TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp) | [[LAB]](/courses/dave/8.md)
 
 ###### [9-REACT HOOKS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PSdiQpSxO9zxvB0ns6m3ta)
 
@@ -608,7 +608,7 @@
 
 ###### [6G-REACT SKELETON SCREENS TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i6bZhMuAzQpC6YgLmB4k4-)
 
-###### [7-NODE.JS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
+###### [7-NODE.JS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU) | [[LAB]](/courses/netninja/7.md)
 
 ###### [7B-NODE.JS AUTH TUTORIAL (JWT)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp)
 
@@ -626,7 +626,7 @@
 
 ###### [12-SUPABASE CRASH COURSE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hUb6sHthUEwG7r9VDPBMKO)
 
-###### [13-FIREBASE 9 TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb)
+###### [13-FIREBASE 9 TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb) | [[LAB]](/courses/netninja/13.md)
 
 ###### [13B-REACT, REDUX & FIREBASE APP TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3)
 
@@ -691,47 +691,13 @@
 <details>
   <summary>HERE</summary>
 
+###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/others/1.md)
 
-###### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
+###### [2-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/others/2.md) +
 
-###### [3-NEXTJS TUTORIAL - DAVE GRAY](/courses/next/3.md)
+###### [3-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/others/3.md) +
 
-###### [4-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/next/4.md)
-
-
-###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/js/1.md)
-
-###### [2-JAVASCRIPT COURSE - DAVE GRAY](/courses/js/2.md)
-
-###### [3-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](/courses/js/3.md) +
-
-###### [4-TYPESCRIPT TUTORIAL - DAVE GRAY](/courses/js/4.md)
-
-###### [5-TYPESCRIPT TUTORIAL - CODEVOLUTION](/courses/js/5.md)
-
-
-###### [10-LEARN TAILWIND CSS – COURSE FOR BEGINNERS - FCC](/courses/others/10.md)
-
-###### [11-MATERIAL UI REACT TUTORIAL - TRAVESY MEDIA](/courses/others/11.md) +
-
-###### [12-REACT MATERIAL UI TUTORIAL - CODEVOLUTION](/courses/others/12.md)
-
-###### [13-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](/courses/others/13.md) +
-
-###### [14-FIREBASE 9 TUTORIAL - NET NINJA](/courses/others/14.md)
-
-
-###### [100-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/mern/100.md)
-
-###### [101-REACT CRASH COURSE - NET NINJA](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) | [LAB](/courses/mern/101.md)
-
-###### [101B-NODE CRASH COURSE - NET NINJA](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU) | [LAB](/courses/mern/101.md)
-
-###### [102-REACT & NODE TUTORIAL - DAVE GRAY](/courses/mern/102.md)
-
-###### [103-REACTJS TUTORIAL FOR BEGINNERS - CE](/courses/mern/103.md)
-
-###### [104-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/mern/104.md)
+###### [4-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/others/4.md)
 
 </details>
 
@@ -744,9 +710,8 @@
 <details>
   <summary>HERE</summary>
 
-###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+###### [100-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/pr/100.md) | [[LAB]](/courses/pr/100.md)
 
-###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
 
 
 </details>
