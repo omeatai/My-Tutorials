@@ -292,13 +292,51 @@
 
 ###### [29-LEARN MERGE SORT IN JAVASCRIPT](https://scrimba.com/learn/mergesort)
 
-###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+###### [30-LEARN REACT](https://scrimba.com/learn/learnreact)
 
-###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+###### [31-ADVANCED REACT](https://scrimba.com/learn/react)
 
-###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+###### [32-LEARN REACT ROUTER 6](https://scrimba.com/learn/reactrouter6)
 
-###### [3-LEARN TYPESCRIPT](https://scrimba.com/learn/typescript)
+###### [33-BUILD REUSABLE REACT](https://scrimba.com/learn/reusablereact)
+
+###### [34-LEARN STYLED COMPONENTS IN REACT](https://scrimba.com/learn/styledcomponents)
+
+###### [35-LEARN CLASS COMPONENTS IN REACT](https://scrimba.com/learn/classcomponents)
+
+###### [36-BUILD TIC TAC TOE WITH REACT HOOKS](https://scrimba.com/learn/reactgame)
+
+###### [37-BUILD A MOVIE SEARCH APP IN REACT](https://scrimba.com/learn/reactmovie)
+
+###### [38-REACT CHALLENGES](https://scrimba.com/learn/reactchallenges)
+
+###### [39-REACT INTERVIEW QUESTIONS](https://scrimba.com/learn/reactinterview)
+
+###### [40-FRONTEND INTERVIEW TIPS](https://scrimba.com/learn/frontendinterview)
+
+###### [41-LEARN FIREBASE](https://scrimba.com/learn/learnfirebase)
+
+###### [42-BUILD A MOBILE APP WITH FIREBASE](https://scrimba.com/learn/firebase)
+
+###### [43-BUILD AND DEPLOY YOUR PORTFOLIO](https://scrimba.com/learn/portfolio)
+
+###### [44-BUILD A SPACE TRAVEL WEBSITE](https://scrimba.com/learn/spacetravel)
+
+###### [45-DEPLOYING WITH NETLIFY](https://scrimba.com/learn/netlify)
+
+###### [46-LEARN MARKDOWN](https://scrimba.com/learn/markdownblog)
+
+###### [47-INTRODUCTION TO CLEAN CODE](https://scrimba.com/learn/cleancode)
+
+###### [48-PRACTICAL MATH FOR FRONTEND DEVELOPERS](https://scrimba.com/learn/practicalmath)
+
+###### [49-LEARN PYTHON](https://scrimba.com/learn/python)
+
+###### [50-LEARN D3](https://scrimba.com/learn/d3js)
+
+###### [51-LEARN SVELTE](https://scrimba.com/learn/learnsvelte)
+
+###### [52-LEARN IMBA](https://scrimba.com/learn/imba)
 
 </details>
 
