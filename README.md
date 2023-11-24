@@ -186,11 +186,9 @@
 
 ---
 
-## COURSES
+## WEB TUTORIALS
 
 ---
-
-### +WEB TUTORIALS
 
 <details>
   <summary>1. W3SCHOOLS</summary>
@@ -233,11 +231,23 @@
 
 </details>
 
-### +CODEVOLUTION
+---
 
-### +DAVE GRAY
+## CODEVOLUTION
 
-### +NET NINJA
+---
+
+---
+
+## DAVE GRAY
+
+---
+
+---
+
+## NET NINJA
+
+---
 
 <details>
   <summary>1. HTML & CSS</summary>
@@ -520,10 +530,12 @@
 
 </details>
 
+---
 
+## OTHERS
 
+---
 
-### +OTHERS
 
 ###### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
 
