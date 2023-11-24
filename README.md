@@ -4,7 +4,7 @@
 ---
 <details>
 
-<summary> ## PROJECTS</summary>
+## <summary> PROJECTS</summary>
 
 ###### [1-DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
 
