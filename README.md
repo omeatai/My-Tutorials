@@ -568,6 +568,8 @@
 
 ###### [1H-SASS TUTORIAL (BUILD YOUR OWN CSS LIBRARY)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
 
+###### [1I-SHADCN UI TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h1NXLUuiAQ7c4UtdEInqma)
+
 ###### [2-MODERN JAVASCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc)
 
 ###### [2B-ASYNCHRONOUS JAVASCRIPT](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jx2TTZk3IGWKSbtugYdrlu)
