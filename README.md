@@ -7,9 +7,7 @@
 ---
 
 <details>
-  <summary>HERE</summary>
-
-+HOSTS
+  <summary>HOSTS</summary>
 
 ###### [1-VERCEL](https://vercel.com/dashboard)
 
