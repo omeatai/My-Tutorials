@@ -739,7 +739,7 @@
 <details>
   <summary>HERE </summary>
 
-+CODE WITH LARI
+#### +CODE WITH LARI
 
 ###### [100-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/pr/100.md) | [[LAB]](/courses/pr/100.md)
 
