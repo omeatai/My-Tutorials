@@ -737,7 +737,7 @@
 ---
 
 <details>
-  <summary>HERE/summary>
+  <summary>HERE </summary>
 
 +CODE WITH LARI
 
