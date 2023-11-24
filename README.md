@@ -954,11 +954,25 @@
 <details>
   <summary>CODE WITH ANTONIO</summary>
 
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio)
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
 
 ###### [1-FULL STACK NETFLIX CLONE IN REACT, TAILWIND CSS, NEXT.JS, PRISMA, MONGODB, NEXTAUTH & VERCEL (2023)](https://www.youtube.com/watch?v=mqUN4N2q4qY&list=PLMwCFr4NqgMqeQs4i-bc5dxd2GJYLJZwx&ab_channel=CodeWithAntonio)
 
-###### [4-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/others/4.md)
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
 
 </details>
 
