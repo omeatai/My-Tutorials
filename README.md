@@ -428,12 +428,12 @@
 
 ---
 
-## CODEVOLUTION
+## YOUTUBE PR
 
 ---
 
 <details>
-  <summary>HERE</summary>
+  <summary>CODEVOLUTION</summary>
 
 ###### [1-CODEVOLUTION PLAYLIST](https://www.youtube.com/@Codevolution/playlists)
 
@@ -519,14 +519,9 @@
 
 </details>
 
----
-
-## DAVE GRAY
-
----
 
 <details>
-  <summary>HERE</summary>
+  <summary>DAVE GRAY</summary>
 
 ###### [1-HTML TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6OlAwitnFUubtE93DO-l0vu)
 
@@ -570,14 +565,9 @@
 
 </details>
 
----
-
-## NET NINJA
-
----
 
 <details>
-  <summary>HERE</summary>
+  <summary>NET NINJA</summary>
 
 ###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
 
@@ -711,26 +701,22 @@
 
 </details>
 
----
-
-## OTHERS
-
----
 
 <details>
-  <summary>HERE</summary>
+  <summary>FREECODECAMP </summary>
 
-###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/others/1.md)
+###### [101-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
-###### [4-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/others/4.md)
+###### [102-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
 </details>
 
----
-
-## YOUTUBE PR
-
----
 
 <details>
   <summary>CODE WITH LARI </summary>
@@ -767,6 +753,7 @@
 
 </details>
 
+
 <details>
   <summary>TRAVERSY MEDIA </summary>
 
@@ -796,6 +783,54 @@
 
 
 <details>
+  <summary>JAN MARSHAL </summary>
+
+###### [101-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://www.youtube.com/watch?v=l0pkuHopo8A&ab_channel=JanMarshal)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+</details>
+
+
+<details>
+  <summary>DAILY TUITION </summary>
+
+###### [106-COMPLETE MERN APP](https://www.youtube.com/playlist?list=PLynWqC6VC9KM_n_KrR1jVlaF8SQjWHb6i)
+
+###### [106-COMPLETE NEXT.JS COURSE FOR BEGINNERS](https://www.youtube.com/playlist?list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD)
+
+</details>
+
+
+<details>
+  <summary>CODING WITH DAWID </summary>
+
+###### [108-BUILD A FULLSTACK BLOG APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=xKs2IZZya7c&t=5587s&ab_channel=CodingWithDawid)
+
+###### [109-BUILD A FULLSTACK BOOKING APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=MpQbwtSiZ7E&t=22638s&ab_channel=CodingWithDawid)
+
+###### [100-BUILD A FULLSTACK CHAT APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=mYy-d6BtqmU&t=13068s&ab_channel=CodingWithDawid)
+
+###### [107-BUILD A MERN MONEY TRACKER APP | SIMPLE MERN APP TUTORIAL FOR BEGINNERS)](https://www.youtube.com/watch?v=aD1c_YmHsFg&ab_channel=CodingWithDawid)
+
+</details>
+
+
+<details>
+  <summary>PEDRO TECH</summary>
+
+###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/others/1.md)
+
+###### [4-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/others/4.md)
+
+</details>
+
+
+<details>
   <summary>A </summary>
 
 ###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
@@ -813,31 +848,4 @@
 ###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
 </details>
-
-<details>
-  <summary>HERE </summary>
-
-###### [101-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://www.youtube.com/watch?v=l0pkuHopo8A&ab_channel=JanMarshal)
-
-###### [101-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
-
-###### [102-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
-
-
-
-###### [106-COMPLETE MERN APP](https://www.youtube.com/playlist?list=PLynWqC6VC9KM_n_KrR1jVlaF8SQjWHb6i)
-
-###### [107-BUILD A MERN MONEY TRACKER APP | SIMPLE MERN APP TUTORIAL FOR BEGINNERS)](https://www.youtube.com/watch?v=aD1c_YmHsFg&ab_channel=CodingWithDawid)
-
-###### [106-COMPLETE NEXT.JS COURSE FOR BEGINNERS](https://www.youtube.com/playlist?list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD)
-
-###### [108-BUILD A FULLSTACK BLOG APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=xKs2IZZya7c&t=5587s&ab_channel=CodingWithDawid)
-
-###### [109-BUILD A FULLSTACK BOOKING APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=MpQbwtSiZ7E&t=22638s&ab_channel=CodingWithDawid)
-
-###### [100-BUILD A FULLSTACK CHAT APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=mYy-d6BtqmU&t=13068s&ab_channel=CodingWithDawid)
-
-</details>
-
-
 
