@@ -408,9 +408,77 @@
 <details>
   <summary>HERE</summary>
 
-###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+###### [1-CODEVOLUTION PLAYLIST](https://www.youtube.com/@Codevolution/playlists)
 
-###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
+###### [1-JAVASCRIPT ALGORITHMS AND DATA STRUCTURES](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
+
+###### [1-JAVASCRIPT DATA STRUCTURES](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy)
+
+###### [1-JAVASCRIPT ALGORITHMS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiRYB4-HHKHblh3_bQNJTMa)
+
+###### [1-JAVASCRIPT CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=XIOLqoPHCJ4&ab_channel=Codevolution)
+
+###### [1-ADVANCED JAVASCRIPT CRASH COURSE](https://www.youtube.com/watch?v=R9I85RhI7Cg&ab_channel=Codevolution)
+
+###### [1-ASYNCHRONOUS JAVASCRIPT CRASH COURSE](https://www.youtube.com/watch?v=exBgWAIeIeg&ab_channel=Codevolution)
+
+###### [1-ES6 AND TYPESCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV)
+
+###### [1-HTML CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=N8YMl4Ezp4g&ab_channel=Codevolution)
+
+###### [1-CSS CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=Icf5D3fEKbM&ab_channel=Codevolution)
+
+###### [1-CSS GRID CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=p4Ith5qRM1g&ab_channel=Codevolution)
+
+###### [1-FLEXBOX CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=z62f2k38s64&ab_channel=Codevolution)
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+###### [1-CSS VARIABLES TUTORIAL]()
+
+
 
 
 </details>
