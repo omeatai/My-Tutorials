@@ -33,6 +33,29 @@
 </details>
 
 <details>
+  <summary>LIBRARIES</summary>
+
+###### [1-SHADCN](https://ui.shadcn.com/docs/installation)
+
+###### [2-MATERIAL UI](https://mui.com/material-ui/getting-started/installation/)
+
+###### [3-TAILWINDCSS](https://tailwindcss.com/docs/installation)
+
+###### [4-HEADLESS UI](https://headlessui.com/)
+
+###### [5-SEMANTIC UI](https://react.semantic-ui.com/usage)
+
+###### [6-SANITY.IO](https://www.sanity.io/docs/getting-started-with-sanity) | [SANITY STUDIO](https://www.sanity.io/manage)
+
+###### [7-STRAPI](https://docs.strapi.io/dev-docs/intro)
+
+###### [8-STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
+
+###### [9-LODASH](https://lodash.com/docs/4.17.15)
+
+</details>
+
+<details>
   <summary>LAB</summary>
 
 ###### [1-REPLIT](https://replit.com/@omeatai)
