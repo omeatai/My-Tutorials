@@ -721,6 +721,36 @@
 
 
 <details>
+  <summary>TRAVERSY MEDIA </summary>
+
+###### [0-TRAVERSY MEDIA)](https://www.youtube.com/@TraversyMedia/videos)
+
+###### [1-MERN CRASH COURSE | JWT AUTHENTICATION, REDUX TOOLKIT, DEPLOYMENT & MORE)](https://www.youtube.com/watch?v=R4AhvYORZRY&ab_channel=TraversyMedia)
+
+###### [2-LEARN THE MERN STACK)](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm)
+
+###### [3-GRAPHQL CRASH COURSE WITH FULL STACK MERN PROJECT)](https://www.youtube.com/watch?v=BcLNfwF04Kw&t=10405s&ab_channel=TraversyMedia)
+
+###### [4-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](https://www.youtube.com/watch?v=BCg4U1FzODs&ab_channel=TraversyMedia) | [[LAB]](/courses/pr/travesy/4.md) ++
+
+###### [5-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](https://www.youtube.com/watch?v=EN6Dx22cPRI&ab_channel=TraversyMedia) | [[LAB]](/courses/pr/travesy/5.md) ++
+
+###### [6-NODE.JS APP FROM SCRATCH | EXPRESS, MONGODB & GOOGLE OAUTH)](https://www.youtube.com/watch?v=SBvmnHTQIPY&ab_channel=TraversyMedia)
+
+</details>
+
+
+<details>
+  <summary>JS MASTERY </summary>
+
+###### [0-JS MASTERY](https://www.youtube.com/@javascriptmastery/videos)
+
+###### [1-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/pr/1.md) | [[LAB]](/courses/pr/jsmastery/1.md)
+
+</details>
+
+
+<details>
   <summary>CODE WITH LARI </summary>
 
 ###### [0-REACT REDUX TYPESCRIPT)](https://www.youtube.com/@codewithlari/videos)
@@ -754,36 +784,6 @@
 ###### [14-DESIGN A LANDING PAGE IN FIGMA)](https://www.youtube.com/watch?v=lF7LlSEz3-o&t=505s&ab_channel=codewithlari)
 
 ###### [15-FIGMA AUTO LAYOUT)](https://www.youtube.com/watch?v=Mb10e7f0cWo&ab_channel=codewithlari)
-
-</details>
-
-
-<details>
-  <summary>TRAVERSY MEDIA </summary>
-
-###### [0-TRAVERSY MEDIA)](https://www.youtube.com/@TraversyMedia/videos)
-
-###### [1-MERN CRASH COURSE | JWT AUTHENTICATION, REDUX TOOLKIT, DEPLOYMENT & MORE)](https://www.youtube.com/watch?v=R4AhvYORZRY&ab_channel=TraversyMedia)
-
-###### [2-LEARN THE MERN STACK)](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm)
-
-###### [3-GRAPHQL CRASH COURSE WITH FULL STACK MERN PROJECT)](https://www.youtube.com/watch?v=BcLNfwF04Kw&t=10405s&ab_channel=TraversyMedia)
-
-###### [4-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](https://www.youtube.com/watch?v=BCg4U1FzODs&ab_channel=TraversyMedia) | [[LAB]](/courses/pr/travesy/4.md) ++
-
-###### [5-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](https://www.youtube.com/watch?v=EN6Dx22cPRI&ab_channel=TraversyMedia) | [[LAB]](/courses/pr/travesy/5.md) ++
-
-###### [6-NODE.JS APP FROM SCRATCH | EXPRESS, MONGODB & GOOGLE OAUTH)](https://www.youtube.com/watch?v=SBvmnHTQIPY&ab_channel=TraversyMedia)
-
-</details>
-
-
-<details>
-  <summary>JS MASTERY </summary>
-
-###### [0-JS MASTERY](https://www.youtube.com/@javascriptmastery/videos)
-
-###### [1-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/pr/1.md) | [[LAB]](/courses/pr/jsmastery/1.md)
 
 </details>
 
