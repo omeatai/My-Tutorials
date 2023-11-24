@@ -31,9 +31,25 @@
 </details>
 
 <details>
-  <summary>LAB EDITOR</summary>
+  <summary>LAB</summary>
 
 ###### [1-REPLIT](https://replit.com/@omeatai)
+
+</details>
+
+<details>
+  <summary>AI</summary>
+
+###### [1-SUNO AI](https://app.suno.ai/)
+
+</details>
+
+<details>
+  <summary>IMG EDITOR</summary>
+
+###### [1-CANVA](https://www.canva.com/)
+
+###### [2-IPICCY](https://ipiccy.com/)
 
 </details>
 
