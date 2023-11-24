@@ -737,10 +737,63 @@
 ---
 
 <details>
-  <summary>HERE</summary>
+  <summary>HERE/summary>
+
++CODE WITH LARI
 
 ###### [100-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/pr/100.md) | [[LAB]](/courses/pr/100.md)
 
+###### [101-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://www.youtube.com/watch?v=l0pkuHopo8A&ab_channel=JanMarshal)
 
+###### [101-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [102-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
+
+###### [103-MERN CRASH COURSE | JWT AUTHENTICATION, REDUX TOOLKIT, DEPLOYMENT & MORE)](https://www.youtube.com/watch?v=R4AhvYORZRY&ab_channel=TraversyMedia)
+
+###### [104-LEARN THE MERN STACK)](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm)
+
+###### [105-GRAPHQL CRASH COURSE WITH FULL STACK MERN PROJECT)](https://www.youtube.com/watch?v=BcLNfwF04Kw&t=10405s&ab_channel=TraversyMedia)
+
+###### [106-COMPLETE MERN APP](https://www.youtube.com/playlist?list=PLynWqC6VC9KM_n_KrR1jVlaF8SQjWHb6i)
+
+###### [107-BUILD A MERN MONEY TRACKER APP | SIMPLE MERN APP TUTORIAL FOR BEGINNERS)](https://www.youtube.com/watch?v=aD1c_YmHsFg&ab_channel=CodingWithDawid)
+
+
+
+###### [106-COMPLETE NEXT.JS COURSE FOR BEGINNERS](https://www.youtube.com/playlist?list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD)
+
+
+
+###### [108-BUILD A FULLSTACK BLOG APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=xKs2IZZya7c&t=5587s&ab_channel=CodingWithDawid)
+
+###### [109-BUILD A FULLSTACK BOOKING APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=MpQbwtSiZ7E&t=22638s&ab_channel=CodingWithDawid)
+
+###### [100-BUILD A FULLSTACK CHAT APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=mYy-d6BtqmU&t=13068s&ab_channel=CodingWithDawid)
+
+
+
+
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+
+###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
 </details>
+
+
+
