@@ -410,76 +410,85 @@
 
 ###### [1-CODEVOLUTION PLAYLIST](https://www.youtube.com/@Codevolution/playlists)
 
-###### [1-JAVASCRIPT ALGORITHMS AND DATA STRUCTURES](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
+###### [2-JAVASCRIPT ALGORITHMS AND DATA STRUCTURES](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
 
-###### [1-JAVASCRIPT DATA STRUCTURES](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy)
+###### [3-JAVASCRIPT DATA STRUCTURES](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy)
 
-###### [1-JAVASCRIPT ALGORITHMS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiRYB4-HHKHblh3_bQNJTMa)
+###### [4-JAVASCRIPT ALGORITHMS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiRYB4-HHKHblh3_bQNJTMa)
 
-###### [1-JAVASCRIPT CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=XIOLqoPHCJ4&ab_channel=Codevolution)
+###### [5-JAVASCRIPT CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=XIOLqoPHCJ4&ab_channel=Codevolution)
 
-###### [1-ADVANCED JAVASCRIPT CRASH COURSE](https://www.youtube.com/watch?v=R9I85RhI7Cg&ab_channel=Codevolution)
+###### [6-ADVANCED JAVASCRIPT CRASH COURSE](https://www.youtube.com/watch?v=R9I85RhI7Cg&ab_channel=Codevolution)
 
-###### [1-ASYNCHRONOUS JAVASCRIPT CRASH COURSE](https://www.youtube.com/watch?v=exBgWAIeIeg&ab_channel=Codevolution)
+###### [7-ASYNCHRONOUS JAVASCRIPT CRASH COURSE](https://www.youtube.com/watch?v=exBgWAIeIeg&ab_channel=Codevolution)
 
-###### [1-ES6 AND TYPESCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV)
+###### [8-ES6 AND TYPESCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV)
 
-###### [1-HTML CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=N8YMl4Ezp4g&ab_channel=Codevolution)
+###### [9-HTML CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=N8YMl4Ezp4g&ab_channel=Codevolution)
 
-###### [1-CSS CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=Icf5D3fEKbM&ab_channel=Codevolution)
+###### [10-CSS CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=Icf5D3fEKbM&ab_channel=Codevolution)
 
-###### [1-CSS GRID CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=p4Ith5qRM1g&ab_channel=Codevolution)
+###### [11-CSS GRID CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=p4Ith5qRM1g&ab_channel=Codevolution)
 
-###### [1-FLEXBOX CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=z62f2k38s64&ab_channel=Codevolution)
+###### [12-FLEXBOX CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=z62f2k38s64&ab_channel=Codevolution)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [13-REACTJS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [14-REACT HOOKS TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [15-REACT RENDER TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg7czgqpQIBEAHn8D6l530t)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [16-REACT REDUX TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [17-REDUX TOOLKIT TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [18-REACT TYPESCRIPT TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [19-REACT NATIVE TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhiQJD1di4eRVN30WWCXkg1)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [20-REACT TESTING TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [21-REACT ROUTER TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [22-REACT QUERY TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [23-REACT FORMIK TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [24-REACT STORYBOOK TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhC-j3x3t9la8-GQJGViDQk)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [25-REACT TABLE TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgWTSrDiwmUsl4ZvipOw9Cz)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [26-REACT STYLED COMPONENTS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgu-G08-7ovbN9EyhF_cltM)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [27-PRACTICAL REACT](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhAh1ypBvcZLDO6I7QTY5CM)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [28-REACT 18 FUNDAMENTALS CRASH COURSE](https://youtu.be/jLS0TkAHvRg?si=PT4lA8UjsUwxJP_w)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [29-NODE.JS TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [30-NODE.JS EVENT LOOP](https://www.youtube.com/playlist?list=PLC3y8-rFHvwj1_l8acs_lBi3a0HNb3bAN)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [31-NEXT.JS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [32-JSON SERVER TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [33-ANGULAR TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [34-ANGULAR 2 TUTORIALS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg5gEu2KF4sbGvpUqMRSBSW)
 
-###### [1-CSS VARIABLES TUTORIAL]()
+###### [35-ANGULAR AUTHENTICATION TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg2RBz6UplKTGIXREj9dV0G)
 
+###### [36-VUE.JS ROADMAP FOR BEGINNERS 2022](https://www.youtube.com/watch?v=vuCEhS0q3v0&ab_channel=Codevolution)
 
+###### [37-VUE JS 3 TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)
 
+###### [38-VUE JS 2 TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjMjwF25ixu1j1uS63hm4p0)
+
+###### [39-NPM TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhgWwm5J3KqzX47n7dwWNrq)
+
+###### [40-CHROME EXTENSION TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg2-q6Kvw3Tl_4xhxtIaNlY)
+
+###### [41-ELECTRON JS TUTORIALS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW)
 
 </details>
 
