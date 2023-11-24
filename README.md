@@ -243,6 +243,16 @@
 
 ---
 
+<details>
+  <summary>HERE</summary>
+
+###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+
+###### [1B-CSS VARIABLES TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ)
+
+
+</details>
+
 ---
 
 ## NET NINJA
