@@ -6,9 +6,6 @@
 
 ---
 
-<details>
-  <summary>HERE</summary>
-
 ###### [1-DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
 
 ###### [2-REACT-FIREBASE-TODO-APP](https://github.com/omeatai/Firebase-Todo-App)
@@ -22,8 +19,6 @@
 ###### [6-REACT-QR-CODE-GENERATOR-APP](https://github.com/omeatai/QRcode-Generator)
 
 ###### [7-NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
-
-</details>
 
 ---
 
@@ -255,7 +250,7 @@
 ---
 
 <details>
-  <summary>1. HTML & CSS</summary>
+  <summary>HERE</summary>
 
 ###### [1-HTML & CSS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
 
@@ -273,11 +268,6 @@
 
 ###### [1H-SASS TUTORIAL (BUILD YOUR OWN CSS LIBRARY)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb)
 
-</details>
-
-<details>
-  <summary>2. JAVASCRIPT</summary>
-
 ###### [2-MODERN JAVASCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc)
 
 ###### [2B-ASYNCHRONOUS JAVASCRIPT](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jx2TTZk3IGWKSbtugYdrlu)
@@ -288,41 +278,21 @@
 
 ###### [2E-REGULAR EXPRESSIONS (REGEX) TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD)
 
-</details>
-
-<details>
-  <summary>3. TYPESCRIPT</summary>
-
 ###### [3-TYPESCRIPT CRASH COURSE](https://youtube.com/playlist?list=PL4cUxeGkcC9gNhFQgS4edYLqP7LkZcFMN&si=2sczXTwX8w_p21GF)
 
 ###### [3B-TYPESCRIPT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
 
 ###### [3C-WEBPACK & TYPESCRIPT SETUP](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hOkGbwzgYFmaxB0WiduYJC)
 
-</details>
-
-<details>
-  <summary>4. NEXT.JS</summary>
-
 ###### [4-NEXT.JS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
 
 ###### [4B-NEXT 13 CRASH COURSE)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jZIVqmy_QhfQdi6mzQvJnT)
-
-</details>
-
-<details>
-  <summary>5. MERN</summary>
 
 ###### [5-MERN STACK CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE)
 
 ###### [5B-MERN AUTH TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g8OhpOZxNdhXggFz2lOuCT)
 
 ###### [5C-MONGODB TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA)
-
-</details>
-
-<details>
-  <summary>6. REACT</summary>
 
 ###### [6-MODERN REACT TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 
@@ -338,62 +308,23 @@
 
 ###### [6G-REACT SKELETON SCREENS TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i6bZhMuAzQpC6YgLmB4k4-)
 
-</details>
-
-<details>
-  <summary>7. NODE</summary>
-
 ###### [7-NODE.JS CRASH COURSE TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
 
 ###### [7B-NODE.JS AUTH TUTORIAL (JWT)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp)
 
 ###### [7C-REST API TUTORIALS (NODE, EXPRESS & MONGO)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8)
 
-</details>
-
-<details>
-  <summary>8. REACT NATIVE</summary>
-
 ###### [8-REACT NATIVE TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ)
 
-</details>
-
-<details>
-  <summary>9. REACT TESTING</summary>
-
 ###### [9-REACT TESTING LIBRARY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ)
-
-</details>
-
-
-<details>
-  <summary>10. GRAPHQL</summary>
 
 ###### [10-GRAPHQL CRASH COURSE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y)
 
 ###### [10B-GRAPHQL TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
 
-</details>
-
-
-<details>
-  <summary>11. STRAPI</summary>
-
 ###### [11-STRAPI TUTORIAL (WITH REACT & GRAPHQL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h6OY8_8Oq6JerWqsKdAPxn)
 
-</details>
-
-
-<details>
-  <summary>12. SUPABASE</summary>
-
 ###### [12-SUPABASE CRASH COURSE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hUb6sHthUEwG7r9VDPBMKO)
-
-</details>
-
-
-<details>
-  <summary>13. FIREBASE</summary>
 
 ###### [13-FIREBASE 9 TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb)
 
@@ -404,12 +335,6 @@
 ###### [13D-FIREBASE HOSTING TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9he0kHAyiyr3dDO2xw0NWoP)
 
 ###### [13E-FIREBASE FUNCTIONS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i_aLkr62adUTJi53y7OjOf)
-
-</details>
-
-
-<details>
-  <summary>14. VUE.JS</summary>
 
 ###### [14-VUE.JS 3 TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1)
 
@@ -423,113 +348,35 @@
 
 ###### [14F-REAL-TIME CHAT WITH VUE & FIREBASE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i2TdO1NqDg0KigL-WkL4Vl)
 
-</details>
-
-
-<details>
-  <summary>15. DENO</summary>
-
 ###### [15-DENO JUMP-START TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gnaJdxuGvEGYQ9iHb8mxsh)
-
-</details>
-
-
-<details>
-  <summary>16. FLUTTER</summary>
 
 ###### [16-FLUTTER TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
 
 ###### [16B-FLUTTER & FIREBASE APP BUILD](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
 
-</details>
-
-
-<details>
-  <summary>17. PHP</summary>
-
 ###### [17-PHP TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o)
 
 ###### [17B-OBJECT ORIENTED PHP TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNpT-yVAYxNWOmxjxL51Hy)
 
-</details>
-
-
-<details>
-  <summary>18. LARAVEL</summary>
-
 ###### [18-LARAVEL 6 TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hL6aCFKyagrT1RCfVN4w2Q)
-
-</details>
-
-
-<details>
-  <summary>19. JSON SERVER</summary>
 
 ###### [19-JSON SERVER TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i2v2ZqJgydXIcRq_ZizIdD)
 
-</details>
-
-
-<details>
-  <summary>20. PASSPORT.JS</summary>
-
 ###### [20-OAUTH LOGIN (PASSPORT.JS) TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x)
-
-</details>
-
-
-<details>
-  <summary>21. REDIS</summary>
 
 ###### [21-REDIS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h3V2eqhi8rRdIDJshP-b4P)
 
-</details>
-
-
-<details>
-  <summary>22. GATSBY</summary>
-
 ###### [22-GATSBY TUTORIAL](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB)
-
-</details>
-
-<details>
-  <summary>23. PYTHON 3</summary>
 
 ###### [23-PYTHON 3 TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9idu6GZ8EU_5B6WpKTdYZbK)
 
-</details>
-
-<details>
-  <summary>24. DJANGO</summary>
-
 ###### [24-DJANGO TUTORIAL (CREATE A BLOG)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc)
-
-</details>
-
-<details>
-  <summary>25. GO</summary>
 
 ###### [25-GO TUTORIAL (GOLANG) FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM)
 
-</details>
-
-<details>
-  <summary>26. OPENAI</summary>
-
 ###### [26-OPENAI TUTORIAL (THE BASICS)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ipdXMDVcGimIVMG_Z6-Vsu)
 
-</details>
-
-<details>
-  <summary>27. GIT & GITHUB</summary>
-
 ###### [27-GIT & GITHUB TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
-
-</details>
-
-<details>
-  <summary>28. DOCKER</summary>
 
 ###### [28-DOCKER CRASH COURSE TUTORIAL)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7)
 
@@ -540,6 +387,9 @@
 ## OTHERS
 
 ---
+
+<details>
+  <summary>HERE</summary>
 
 
 ###### [2-NEXTJS TUTORIAL - CE](/courses/next/2.md) +
@@ -583,7 +433,7 @@
 
 ###### [104-REACT REDUX & REDUX TOOLKIT TUTORIAL - CE](/courses/mern/104.md)
 
-
+</details>
 
 ---
 
