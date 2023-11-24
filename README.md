@@ -432,17 +432,17 @@
 
 ###### [12-FLEXBOX CRASH COURSE - TUTORIAL FOR COMPLETE BEGINNERS](https://www.youtube.com/watch?v=z62f2k38s64&ab_channel=Codevolution)
 
-###### [13-REACTJS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
+###### [13-REACTJS TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3) | [[LAB]](/courses/ce/13.md)
 
 ###### [14-REACT HOOKS TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)
 
 ###### [15-REACT RENDER TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwg7czgqpQIBEAHn8D6l530t)
 
-###### [16-REACT REDUX TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK)
+###### [16-REACT REDUX TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK) | [[LAB]](/courses/ce/16.md)
 
 ###### [17-REDUX TOOLKIT TUTORIAL](https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3)
 
-###### [18-REACT TYPESCRIPT TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK)
+###### [18-REACT TYPESCRIPT TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK) | [[LAB]](/courses/ce/18.md)
 
 ###### [19-REACT NATIVE TUTORIAL FOR BEGINNERS](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhiQJD1di4eRVN30WWCXkg1)
 
@@ -507,7 +507,7 @@
 
 ###### [3-TAILWIND CSS TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft)
 
-###### [4-JAVASCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT)
+###### [4-JAVASCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT) | [[LAB]](/courses/dave/4.md)
 
 ###### [5-ADVANCED JAVASCRIPT CONCEPTS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6N3bG4YZhkrCL3ZmDcLTuGd)
 
