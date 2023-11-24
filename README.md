@@ -84,6 +84,17 @@
 
 </details>
 
+<details>
+  <summary>APIs</summary>
+
+###### [1-PUBLIC APIS 1](https://github.com/public-apis/public-apis#index)
+
+###### [2-PUBLIC APIS 2](https://github.com/n0shake/Public-APIs#sport)
+
+###### [3-THE DEV-FRIENDLY FOOTBALL API](https://www.football-data.org/)
+
+</details>
+
 
 
 ---
@@ -860,6 +871,29 @@
 ###### [2-STOCK PRICE DROP NOTIFIER USING NODEJS TUTORIAL | BACKEND | PART 1](https://www.youtube.com/watch?v=KCoVAUL5uMw&t=283s&ab_channel=IndGeek)
 
 ###### [3-STOCK PRICE DROP NOTIFIER USING NODEJS TUTORIAL | FRONTEND | PART 2](https://www.youtube.com/watch?v=v4tT1JZN1BM&ab_channel=IndGeek)
+
+</details>
+
+<details>
+  <summary>9JACODER </summary>
+
+###### [0-9JACODER](https://www.youtube.com/@9jaCoder/videos)
+
+###### [1-JUMIA ECOMMERCE CLONE BUILT WITH NEXTJS FIREBASE TAILWINDCSS MATERIALUI AND GOOGLE CLOUD CLIENT](https://www.youtube.com/watch?v=enp-9yWhD7k&ab_channel=9jaCoder)
+
+###### [2-JUMIA ECOMMERCE ADMIN PANEL BUILT WITH NEXTJS FIREBASE TAILWINDCSS AND DAISYUI](https://www.youtube.com/watch?v=8DQVMcP0ZUY&ab_channel=9jaCoder)
+
+###### [3-TWITTER CLONE BUILT WITH NEXTJS TAILWINDCSS FIREBASE AND GOOGLE CLOUD CLIENT](https://www.youtube.com/watch?v=Rk0w39JvY94&ab_channel=9jaCoder)
+
+###### [4-JIJI MARKETPLACE REACT APPLICATION BUILT WITH NEXTAUTH FIREBASE TAILWINDCSS](https://www.youtube.com/watch?v=vUL-o14vL9w&ab_channel=9jaCoder)
+
+###### [5-TRIPADVISOR CLONE USING NEXTJS TAILWINDCSS DAISYUI AND MATERIALUI](https://www.youtube.com/watch?v=c59sjkDpHXo&ab_channel=9jaCoder)
+
+###### [6-INSTAGRAM CLONE BUILT WITH NEXTJS TAILWINDCSS FIREBASE AND GOOGLE CLOUD CLIENT](https://www.youtube.com/watch?v=5wMz84Oz1Dg&ab_channel=9jaCoder)
+
+###### [7-IMDB CLONE BUILT WITH NEXTJS TAILWINDCSS AND TMDB API](https://www.youtube.com/watch?v=NYrBPf-C8gE&ab_channel=9jaCoder)
+
+###### [8-FOOTBALL LIVE-SCORES REACTJS APP BUILT WITH RAPIDAPI TAILWINDCSS AND DASIYUI](https://www.youtube.com/watch?v=9kUR3TjMJnc&ab_channel=9jaCoder)
 
 </details>
 
