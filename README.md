@@ -40,13 +40,6 @@
 </details>
 
 <details>
-  <summary>AI</summary>
-
-###### [1-SUNO AI](https://app.suno.ai/)
-
-</details>
-
-<details>
   <summary>EDITOR</summary>
 
 ###### [1-CANVA](https://www.canva.com/)
@@ -56,6 +49,15 @@
 ###### [3-CONVERTCASE](https://convertcase.net/)
 
 </details>
+
+<details>
+  <summary>AI</summary>
+
+###### [1-SUNO AI](https://app.suno.ai/)
+
+</details>
+
+
 
 ---
 
