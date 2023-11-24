@@ -1,10 +1,13 @@
 # My-Tutorials
 
+---
+
+## PROJECTS
 
 ---
-<details>
 
-## <summary> PROJECTS</summary>
+<details>
+  <summary>HERE</summary>
 
 ###### [1-DJANGO-BLOG-APP](https://github.com/omeatai/Django-Blog-App)
 
@@ -21,8 +24,6 @@
 ###### [7-NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
 
 </details>
-
----
 
 ---
 
