@@ -540,7 +540,7 @@
 
 ###### [3-TAILWIND CSS TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft)
 
-###### [4-JAVASCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT) | [[LAB]](/courses/dave/4.md)
+###### [4-JAVASCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT) | [[LAB]](/courses/pr/dave/4.md)
 
 ###### [5-ADVANCED JAVASCRIPT CONCEPTS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6N3bG4YZhkrCL3ZmDcLTuGd)
 
@@ -548,7 +548,7 @@
 
 ###### [7-TYPESCRIPT TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6NS8GXt5nPrcYpust89zq_b)
 
-###### [8-REACT TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp) | [[LAB]](/courses/dave/8.md)
+###### [8-REACT TUTORIALS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp) | [[LAB]](/courses/pr/dave/8.md)
 
 ###### [9-REACT HOOKS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PSdiQpSxO9zxvB0ns6m3ta)
 
@@ -718,15 +718,19 @@
 
 ###### [0-FREECODECAMP)](https://www.youtube.com/@freecodecamp/videos)
 
-###### [101-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [1-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
-###### [102-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
+###### [2-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [3-PERSONAL WEBSITE TUTORIAL WITH NEXT.JS 13, SANITY.IO, TAILWINDCSS, AND TYPESCRIPT](https://www.youtube.com/watch?v=OcTPaUfay5I&ab_channel=freeCodeCamp.org)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [4-SANITY CRASH COURSE: LEARN THE BASICS IN 20 MINUTES!](https://www.youtube.com/watch?v=bDVAQZVeebw&ab_channel=SanityComposableContentCloud)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [5-SANITY.IO CRASH COURSE | HEADLESS CMS](https://www.youtube.com/watch?v=32RP-sG1njE&ab_channel=TraversyMedia)
+
+###### [6-STRAPI V4 CRASH COURSE 2023 [ GETTING STARTED WITH STRAPI ]](https://www.youtube.com/watch?v=RceLeh9D85o&ab_channel=CodingAfterThirty)
+
+###### [7-STRAPI (HEADLESS CMS) CRASH COURSE](https://www.youtube.com/watch?v=KttoG7wDJP0&ab_channel=LaithAcademy)
 
 </details>
 
@@ -804,13 +808,29 @@
 
 ###### [0-JAN MARSHAL](https://www.youtube.com/@janmarshalcoding/videos)
 
-###### [101-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://www.youtube.com/watch?v=l0pkuHopo8A&ab_channel=JanMarshal)
+###### [1-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://youtu.be/l0pkuHopo8A?si=L-XOjadFX0Usr4XU)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [2-NEXT.JS 14 NETFLIX CLONE USING REACT, SUPABASE, NEXT-AUTH, PRISMA AND TAILWIND.CSS](https://www.youtube.com/watch?v=mTW3V2IpOrg&t=9s&ab_channel=JanMarshal)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [3-NEXT.JS 14 SERVER ACTIONS | EVERYTHING YOU NEED TO KNOW!](https://www.youtube.com/watch?v=T-G_wfL5MsM&t=7s&ab_channel=JanMarshal)
 
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [4-NEXT.JS 14 E-COMMERCE WEBSITE WITH STRIPE, AND SANITY.IO | FULL STACK TUTORIAL | 2023](https://www.youtube.com/watch?v=UnwmPuPdhFc&t=181s&ab_channel=JanMarshal)
+
+###### [5-CREATE A REALTIME CHAT APP WITH NEXT.JS 13 | REACT | PUSHER | PRISMA | SUPABASE](https://www.youtube.com/watch?v=eyQLhjycIkg&t=70s&ab_channel=JanMarshal)
+
+###### [6-BUILD A AI CHATBOT WITH NEXT.JS 13, REACT, TAILWIND, PRISMA | FULL STACK TUTORIAL | 2023](https://www.youtube.com/watch?v=jf7ocqdhiKc&t=735s&ab_channel=JanMarshal)
+
+###### [7-NEXT.JS 13 FULL STACK TUTORIAL 2023 | ROUTING, DATA FETCHING, SERVER ACTIONS](https://www.youtube.com/watch?v=t4fwWjXj_x8&t=13s&ab_channel=JanMarshal)
+
+###### [8-CREATE A FULL STACK REALTIME CHAT MESSAGING APP WITH REMIX.RUN](https://www.youtube.com/watch?v=WUoXCSYiNKk&ab_channel=JanMarshal)
+
+###### [9-BUILD AND DEPLOY A BLOG WITH NEXT.JS 13 | REACT, TAILWIND.CSS, SANITY.IO | TUTORIAL 2023](https://www.youtube.com/watch?v=MqmzrQ1MNG8&t=3374s&ab_channel=JanMarshal)
+
+###### [10-REMIX.RUN V2 FULL STACK TUTORIAL 2023 | CRASH COURSE](https://www.youtube.com/watch?v=Z_33-pco_aA&ab_channel=JanMarshal)
+
+###### [11-CREATE A PERSONAL WEBSITE / BLOG USING REMIX.RUN, TAILWIND.CSS, HYGRAPH AND GRAPHQL](https://www.youtube.com/watch?v=5mU1dzOikGI&ab_channel=JanMarshal)
+
+###### [12-BUILDING AN E-COMMERCE STORE WITH REMIX.RUN, STRIPE, AND SANITY.IO: FULL STACK TUTORIAL](https://www.youtube.com/watch?v=r3n7NPlv7bs&ab_channel=JanMarshal)
 
 </details>
 
@@ -910,9 +930,9 @@
 
 ###### [0-DAILY TUITION](https://www.youtube.com/@DailyTuition/playlists)
 
-###### [106-COMPLETE MERN APP](https://www.youtube.com/playlist?list=PLynWqC6VC9KM_n_KrR1jVlaF8SQjWHb6i)
+###### [1-COMPLETE MERN APP](https://www.youtube.com/playlist?list=PLynWqC6VC9KM_n_KrR1jVlaF8SQjWHb6i)
 
-###### [106-COMPLETE NEXT.JS COURSE FOR BEGINNERS](https://www.youtube.com/playlist?list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD)
+###### [2-COMPLETE NEXT.JS COURSE FOR BEGINNERS](https://www.youtube.com/playlist?list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD)
 
 </details>
 
@@ -922,13 +942,13 @@
 
 ###### [0-CODING WITH DAWID](https://www.youtube.com/@CodingWithDawid/videos)
 
-###### [108-BUILD A FULLSTACK BLOG APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=xKs2IZZya7c&t=5587s&ab_channel=CodingWithDawid)
+###### [1-BUILD A MERN MONEY TRACKER APP | SIMPLE MERN APP TUTORIAL FOR BEGINNERS)](https://www.youtube.com/watch?v=aD1c_YmHsFg&ab_channel=CodingWithDawid)
 
-###### [109-BUILD A FULLSTACK BOOKING APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=MpQbwtSiZ7E&t=22638s&ab_channel=CodingWithDawid)
+###### [2-BUILD A FULLSTACK BLOG APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=xKs2IZZya7c&t=5587s&ab_channel=CodingWithDawid)
 
-###### [100-BUILD A FULLSTACK CHAT APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=mYy-d6BtqmU&t=13068s&ab_channel=CodingWithDawid)
+###### [3-BUILD A FULLSTACK BOOKING APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=MpQbwtSiZ7E&t=22638s&ab_channel=CodingWithDawid)
 
-###### [107-BUILD A MERN MONEY TRACKER APP | SIMPLE MERN APP TUTORIAL FOR BEGINNERS)](https://www.youtube.com/watch?v=aD1c_YmHsFg&ab_channel=CodingWithDawid)
+###### [4-BUILD A FULLSTACK CHAT APP USING MERN (MONGO, EXPRESS, REACT, NODE))](https://www.youtube.com/watch?v=mYy-d6BtqmU&t=13068s&ab_channel=CodingWithDawid)
 
 </details>
 
@@ -990,13 +1010,37 @@
 
 
 <details>
+  <summary>ELLIOTT CHONG </summary>
+
+###### [0-ELLIOTT CHONG](https://www.youtube.com/@elliottchong/videos)
+
+###### [1-BUILD AND DEPLOY A FULL STACK AI SAAS | NEXT JS 13, DRIZZLEORM, OPENAI, STRIPE, TYPESCRIPT, TAILWIND)](https://www.youtube.com/watch?v=bZFedu-0emE&t=72s&ab_channel=ElliottChong)
+
+###### [2-BUILD CHATGPT IN 60 LINES WITH THIS LIBRARY](https://www.youtube.com/watch?v=guK02_cnC2k&t=10s&ab_channel=ElliottChong)
+
+###### [3-BUILD & DEPLOY: FULL STACK AI COURSE GENERATOR SAAS WITH NEXTJS 13, OPENAI, STRIPE, TAILWINDCSS](https://www.youtube.com/watch?v=EGW2HS2tqAQ&t=219s&ab_channel=ElliottChong)
+
+###### [4-BUILD & DEPLOY: FULL STACK AI QUIZ PLATFORM WITH NEXTJS 13, TAILWINDCSS, OPENAI, NEXT AUTH](https://www.youtube.com/watch?v=vIyU4nInlt0&ab_channel=ElliottChong)
+
+###### [5-I NEVER WANT TO CREATE TABLES ANY OTHER WAY](https://www.youtube.com/watch?v=Jgr8JjYOJsU&t=3953s&ab_channel=ElliottChong)
+
+###### [6-I NEVER WANT TO CREATE FORMS ANY OTHER WAY](https://www.youtube.com/watch?v=26bSDD9IEG4&t=14s&ab_channel=ElliottChong)
+
+###### [7-BUILD AND DEPLOY A FULL STACK NOTION CLONE | NEXTJS 13, DALL•E, DRIZZLEORM, OPENAI, TYPESCRIPT](https://www.youtube.com/watch?v=olsdGZcRGSQ&ab_channel=ElliottChong)
+
+</details>
+
+
+<details>
   <summary>PEDRO TECH</summary>
 
 ###### [0-PEDRO TECH](https://www.youtube.com/@PedroTechnologies/videos)
 
-###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH](/courses/others/1.md)
+###### [1-JAVASCRIPT OBJECT ORIENTED PROGRAMMING TUTORIAL - PEDROTECH]() | [[LAB]](/courses/pr/pedro/1.md)
 
-###### [4-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/others/4.md)
+###### [2-REACTJS COURSE - PEDROTECH](https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR) | [[LAB]](/courses/others/2.md)
+
+###### [3-MERN ECOMMERCE APP WITH AUTHENTICATION - BUILD A REACT ADVANCED PROJECT](https://www.youtube.com/watch?v=XnbUHzZkypQ&ab_channel=PedroTech)
 
 </details>
 
