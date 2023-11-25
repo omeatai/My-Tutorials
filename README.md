@@ -920,8 +920,6 @@
 
 ###### [5-MERN STACK PROJECT | REACT PROJECT | NETFLIX CLONE WITH REACT, REDUX TOOLKIT, NODEJS, MONGODB](https://www.youtube.com/watch?v=HgaJW2I4Mbk&ab_channel=KishanSheth)
 
-###### [6-MERN STACK PROJECT | REACT PROJECT | NETFLIX CLONE WITH REACT, REDUX TOOLKIT, NODEJS, MONGODB](https://www.youtube.com/watch?v=HgaJW2I4Mbk&ab_channel=KishanSheth)
-
 </details>
 
 
