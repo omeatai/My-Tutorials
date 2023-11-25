@@ -95,6 +95,22 @@
 
 ###### [1-SUNO AI](https://app.suno.ai/)
 
+###### [2-CHATGPT](https://chat.openai.com/)
+
+###### [3-ANTHROPIC](https://claude.ai/chats)
+
+###### [4-PERPLEXITY AI](https://www.perplexity.ai/)
+
+###### [5-PI AI](https://claude.ai/chats)
+
+###### [6-POE](https://poe.com/)
+
+###### [7-ELEVENLABS](https://elevenlabs.io/speech-synthesis)
+
+###### [8-RUNWAYML](https://app.runwayml.com/)
+
+###### [9-DECOHERENCE.CO](https://app.decoherence.co/stablevideo)
+
 </details>
 
 <details>
