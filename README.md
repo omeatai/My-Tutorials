@@ -738,19 +738,19 @@
 <details>
   <summary>TRAVERSY MEDIA </summary>
 
-###### [0-TRAVERSY MEDIA)](https://www.youtube.com/@TraversyMedia/videos)
+###### [0-TRAVERSY MEDIA](https://www.youtube.com/@TraversyMedia/videos)
 
 ###### [1-MERN CRASH COURSE | JWT AUTHENTICATION, REDUX TOOLKIT, DEPLOYMENT & MORE)](https://www.youtube.com/watch?v=R4AhvYORZRY&ab_channel=TraversyMedia)
 
-###### [2-LEARN THE MERN STACK)](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm)
+###### [2-LEARN THE MERN STACK](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm)
 
-###### [3-GRAPHQL CRASH COURSE WITH FULL STACK MERN PROJECT)](https://www.youtube.com/watch?v=BcLNfwF04Kw&t=10405s&ab_channel=TraversyMedia)
+###### [3-GRAPHQL CRASH COURSE WITH FULL STACK MERN PROJECT](https://www.youtube.com/watch?v=BcLNfwF04Kw&t=10405s&ab_channel=TraversyMedia)
 
 ###### [4-TYPESCRIPT TUTORIAL - TRAVESY MEDIA](https://www.youtube.com/watch?v=BCg4U1FzODs&ab_channel=TraversyMedia) | [[LAB]](/courses/pr/travesy/4.md) ++
 
 ###### [5-USING MYSQL WITH NODE.JS - TRAVESY MEDIA](https://www.youtube.com/watch?v=EN6Dx22cPRI&ab_channel=TraversyMedia) | [[LAB]](/courses/pr/travesy/5.md) ++
 
-###### [6-NODE.JS APP FROM SCRATCH | EXPRESS, MONGODB & GOOGLE OAUTH)](https://www.youtube.com/watch?v=SBvmnHTQIPY&ab_channel=TraversyMedia)
+###### [6-NODE.JS APP FROM SCRATCH, EXPRESS, MONGODB & GOOGLE OAUTH)](https://www.youtube.com/watch?v=SBvmnHTQIPY&ab_channel=TraversyMedia)
 
 </details>
 
@@ -768,37 +768,37 @@
 <details>
   <summary>CODE WITH LARI </summary>
 
-###### [0-REACT REDUX TYPESCRIPT)](https://www.youtube.com/@codewithlari/videos)
+###### [0-CODE WITH LARI](https://www.youtube.com/@codewithlari/videos)
 
-###### [1-REACT REDUX TYPESCRIPT)](https://www.youtube.com/watch?v=4hZd2QP0OFM&t=875s&ab_channel=codewithlari)
+###### [1-REACT REDUX TYPESCRIPT](https://www.youtube.com/watch?v=4hZd2QP0OFM&t=875s&ab_channel=codewithlari)
 
-###### [2-REDUX TOOLKIT, TYPESCRIPT, CREATEASYNCTHUNK AND REACT)](https://www.youtube.com/watch?v=80c33x2ne20&t=4s&ab_channel=codewithlari)
+###### [2-REDUX TOOLKIT, TYPESCRIPT, CREATEASYNCTHUNK AND REACT](https://www.youtube.com/watch?v=80c33x2ne20&t=4s&ab_channel=codewithlari)
 
-###### [3-REDUX TOOLKIT, TYPESCRIPT, TAILWINDCSS, REACT, CREATEASYNCTHUNK)](https://www.youtube.com/watch?v=Ha2u6H_Y-Zg&t=3647s&ab_channel=codewithlari)
+###### [3-REDUX TOOLKIT, TYPESCRIPT, TAILWINDCSS, REACT, CREATEASYNCTHUNK](https://www.youtube.com/watch?v=Ha2u6H_Y-Zg&t=3647s&ab_channel=codewithlari)
 
-###### [4-NEXTJS NODEJS MONGODB TAILWIND CSS TUTORIAL)](https://www.youtube.com/watch?v=crTfUKFT9Oo&ab_channel=codewithlari)
+###### [4-NEXTJS NODEJS MONGODB TAILWIND CSS TUTORIAL](https://www.youtube.com/watch?v=crTfUKFT9Oo&ab_channel=codewithlari)
 
-###### [5-FORM VALIDATION USING REACT-HOOK-FORM AND YUP)](https://www.youtube.com/watch?v=chYXh7TG9ZE&t=1s&ab_channel=codewithlari)
+###### [5-FORM VALIDATION USING REACT-HOOK-FORM AND YUP](https://www.youtube.com/watch?v=chYXh7TG9ZE&t=1s&ab_channel=codewithlari)
 
-###### [6-JAVASCRIPT MOVIE APPLICATION)](https://www.youtube.com/watch?v=v2NsTVXUijo&t=3469s&ab_channel=codewithlari)
+###### [6-JAVASCRIPT MOVIE APPLICATION](https://www.youtube.com/watch?v=v2NsTVXUijo&t=3469s&ab_channel=codewithlari)
 
-###### [7-BUILD A NEWS APPLICATION WITH REACT)](https://www.youtube.com/watch?v=6xthyE6QieY&t=1s&ab_channel=codewithlari)
+###### [7-BUILD A NEWS APPLICATION WITH REACT](https://www.youtube.com/watch?v=6xthyE6QieY&t=1s&ab_channel=codewithlari)
 
-###### [8-FIREBASE COMPLETE AUTHENTICATION GUIDE WITH REACT, TYPESCRIPT, REACT ROUTER DOM, AND REDUX)](https://www.youtube.com/watch?v=TGgJYeEfVOU&t=1s&ab_channel=codewithlari)
+###### [8-FIREBASE COMPLETE AUTHENTICATION GUIDE WITH REACT, TYPESCRIPT, REACT ROUTER DOM, AND REDUX](https://www.youtube.com/watch?v=TGgJYeEfVOU&t=1s&ab_channel=codewithlari)
 
-###### [9-BUILD AND DEPLOY A FULL-STACK AI-POWERED PROJECT MANAGEMENT PLATFORM (NEXT.JS 13, PRISMA, MONGODB))](https://www.youtube.com/watch?v=7Az9769yZBI&t=11125s&ab_channel=codewithlari)
+###### [9-BUILD AND DEPLOY A FULL-STACK AI-POWERED PROJECT MANAGEMENT PLATFORM (NEXT.JS 13, PRISMA, MONGODB](https://www.youtube.com/watch?v=7Az9769yZBI&t=11125s&ab_channel=codewithlari)
 
 ###### [10-BUILD AND DEPLOY A FULL-STACK BLOG WITH NEXT.JS, TYPESCRIPT, AND SANITY.IO)](https://www.youtube.com/watch?v=jrRR1nZfFes&t=13006s&ab_channel=codewithlari)
 
-###### [11-BUILD & DEPLOY AN ONLINE STORE WITH NEXT.JS, TYPESCRIPT, REDUX, SANITY.IO, AUTH.JS, MONGODB & STRIPE)](https://www.youtube.com/watch?v=aKl1JfszkWI&t=245s&ab_channel=codewithlari)
+###### [11-BUILD & DEPLOY AN ONLINE STORE WITH NEXT.JS, TYPESCRIPT, REDUX, SANITY.IO, AUTH.JS, MONGODB & STRIPE](https://www.youtube.com/watch?v=aKl1JfszkWI&t=245s&ab_channel=codewithlari)
 
-###### [12-FULLSTACK HOTEL MANAGEMENT WEBSITE: NEXT.JS 13, REACT, CMS, SANITY.IO, TAILWIND STRIPE | DEPLOYMENT)](https://www.youtube.com/watch?v=HKJ-ghEE0j8&t=35970s&ab_channel=codewithlari)
+###### [12-FULLSTACK HOTEL MANAGEMENT WEBSITE: NEXT.JS 13, REACT, CMS, SANITY.IO, TAILWIND STRIPE | DEPLOYMENT](https://www.youtube.com/watch?v=HKJ-ghEE0j8&t=35970s&ab_channel=codewithlari)
 
-###### [13-NEXTJS TESTING. JEST, REACT TESTING LIBRARY, MSW, TYPESCRIPT, HOOKS)](https://www.youtube.com/watch?v=4X3vfTdi6uA&ab_channel=codewithlari)
+###### [13-NEXTJS TESTING. JEST, REACT TESTING LIBRARY, MSW, TYPESCRIPT, HOOKS](https://www.youtube.com/watch?v=4X3vfTdi6uA&ab_channel=codewithlari)
 
-###### [14-DESIGN A LANDING PAGE IN FIGMA)](https://www.youtube.com/watch?v=lF7LlSEz3-o&t=505s&ab_channel=codewithlari)
+###### [14-DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&t=505s&ab_channel=codewithlari)
 
-###### [15-FIGMA AUTO LAYOUT)](https://www.youtube.com/watch?v=Mb10e7f0cWo&ab_channel=codewithlari)
+###### [15-FIGMA AUTO LAYOUT](https://www.youtube.com/watch?v=Mb10e7f0cWo&ab_channel=codewithlari)
 
 </details>
 
