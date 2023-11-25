@@ -814,6 +814,7 @@
 
 </details>
 
+
 <details>
   <summary>LAMA DEV </summary>
 
@@ -848,6 +849,41 @@
 ###### [14-NEXT.JS 14 ADMIN DASHBOARD TUTORIAL | FULLSTACK NEXT.JS 14 PROJECT WITH SERVER ACTIONS](https://www.youtube.com/watch?v=cBg6xA5C60s&t=83s&ab_channel=LamaDev)
 
 </details>
+
+
+<details>
+  <summary>CODE WITH ANTONIO</summary>
+
+###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
+
+###### [1-FULL STACK NETFLIX CLONE IN REACT, TAILWIND CSS, NEXT.JS, PRISMA, MONGODB, NEXTAUTH & VERCEL (2023)](https://www.youtube.com/watch?v=mqUN4N2q4qY&ab_channel=CodeWithAntonio)
+
+###### [2-THE COMPLETE GUIDE TO BUILDING A REST API WITH NODE, EXPRESS, TYPESCRIPT & MONGODB + AUTHENTICATION](https://www.youtube.com/watch?v=b8ZUb_Okxro&ab_channel=CodeWithAntonio)
+
+###### [3-BUILD AND DEPLOY: TWITTER CLONE WITH REACT, TAILWIND, NEXT, PRISMA, MONGO, NEXTAUTH & VERCEL (2023)](https://www.youtube.com/watch?v=ytkG7RT6SvU&ab_channel=CodeWithAntonio)
+
+###### [4-FULL STACK AIRBNB CLONE WITH NEXT.JS 13 APP ROUTER: REACT, TAILWIND, PRISMA, MONGODB, NEXTAUTH 2023](https://www.youtube.com/watch?v=c_-b_isI4vg&ab_channel=CodeWithAntonio)
+
+###### [5-REAL-TIME MESSENGER CLONE: NEXT.JS 13, REACT, TAILWIND, PRISMA, MONGODB, NEXTAUTH, PUSHER (2023)](https://www.youtube.com/watch?v=PGPGcKBpAk8&t=6s&ab_channel=CodeWithAntonio)
+
+###### [6-FULL STACK SPOTIFY CLONE: NEXT 13.4, REACT, STRIPE, SUPABASE, POSTGRESQL, TAILWIND (2023)](https://www.youtube.com/watch?v=2aeMRB8LL4o&t=23628s&ab_channel=CodeWithAntonio)
+
+###### [7-FULL STACK E-COMMERCE + DASHBOARD & CMS: NEXT.JS 13 APP ROUTER, REACT, TAILWIND, PRISMA, MYSQL, 2023](https://www.youtube.com/watch?v=5miHyP6lExg&ab_channel=CodeWithAntonio)
+
+###### [8-BUILD A SAAS AI PLATFORM WITH NEXT.JS 13, REACT, TAILWIND, PRISMA, STRIPE | FULL TUTORIAL 2023](https://www.youtube.com/watch?v=ffJ38dBzrlY&ab_channel=CodeWithAntonio)
+
+###### [9-BUILD A SAAS: AI COMPANION WITH NEXT 13, REACT, STRIPE, PRISMA, MYSQL, TAILWIND | TUTORIAL 2023](https://www.youtube.com/watch?v=PjYWpd7xkaM&ab_channel=CodeWithAntonio)
+
+###### [10-FULLSTACK DISCORD CLONE: NEXT.JS 13, REACT, SOCKET.IO, PRISMA, TAILWIND, MYSQL | FULL COURSE 2023](https://www.youtube.com/watch?v=ZbX4Ok9YX94&ab_channel=CodeWithAntonio)
+
+###### [11-BUILD A COURSE & LMS PLATFORM: NEXT 13, REACT, STRIPE, MUX, PRISMA, TAILWIND, MYSQL | UDEMY CLONE](https://www.youtube.com/watch?v=Big_aFLmekI&t=75s&ab_channel=CodeWithAntonio)
+
+###### [12-FULLSTACK NOTION CLONE: NEXT.JS 13, REACT, CONVEX, TAILWIND | FULL COURSE 2023](https://www.youtube.com/watch?v=0OaDyjB9Ib8&ab_channel=CodeWithAntonio)
+
+###### [13-FULLSTACK TRELLO CLONE: NEXT.JS 14, SERVER ACTIONS, REACT, PRISMA, STRIPE, TAILWIND, MYSQL](https://www.youtube.com/watch?v=pRybm9lXW2c&t=42s&ab_channel=CodeWithAntonio)
+
+</details>
+
 
 <details>
   <summary>KISHAN SHETH</summary>
@@ -896,6 +932,7 @@
 
 </details>
 
+
 <details>
   <summary>INDGEEK </summary>
 
@@ -908,6 +945,7 @@
 ###### [3-STOCK PRICE DROP NOTIFIER USING NODEJS TUTORIAL | FRONTEND | PART 2](https://www.youtube.com/watch?v=v4tT1JZN1BM&ab_channel=IndGeek)
 
 </details>
+
 
 <details>
   <summary>9JACODER </summary>
@@ -947,32 +985,6 @@
 ###### [4-FULL STACK SAAS APP WITH NEXT 13, REACT, SUPABASE, STRIPE, TAILWINDCSS)](https://www.youtube.com/watch?v=7ORL21ZVSI0&t=20s&ab_channel=Coding40)
 
 ###### [5-HOW TO FETCH DATA IN REACT FROM A GRAPHQL API)](https://www.youtube.com/watch?v=N9jK9ipnPw8&t=226s&ab_channel=Coding40)
-
-</details>
-
-
-<details>
-  <summary>CODE WITH ANTONIO</summary>
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [1-FULL STACK NETFLIX CLONE IN REACT, TAILWIND CSS, NEXT.JS, PRISMA, MONGODB, NEXTAUTH & VERCEL (2023)](https://www.youtube.com/watch?v=mqUN4N2q4qY&list=PLMwCFr4NqgMqeQs4i-bc5dxd2GJYLJZwx&ab_channel=CodeWithAntonio)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
-
-###### [0-CODE WITH ANTONIO](https://www.youtube.com/@codewithantonio/videos)
 
 </details>
 
