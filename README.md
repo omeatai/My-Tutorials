@@ -2,6 +2,19 @@
 
 ---
 
+## ALGORITHM & CODE CHALLENGES
+
+---
+
+<details>
+  <summary>CODEWARS</summary>
+
+###### [1-EVEN OR ODD](https://scrimba.com/scrim/cEgEzvAd) | [Python](https://scrimba.com/scrim/cEgEzvAd) | [Javascript](https://scrimba.com/scrim/caGEMPU3) | [Typescript](https://scrimba.com/scrim/cgwgPKfP)
+
+</details>
+
+---
+
 ## TOOLS
 
 ---
