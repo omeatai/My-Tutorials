@@ -310,6 +310,97 @@
 
 ###### [12-UDEMY-OPENAI API WITH PYTHON BOOTCAMP: CHATGPT API, GPT-4, DALL·E](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
 
+
+---
+
+## AWS
+
+---
+
+<details>
+  <summary>QUIZ</summary>
+
+###### [1-EXAM TOPICS FOLDERS](https://quizlet.com/omeatai/folders)
+
+###### [2-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT (SAA-C03) FOLDER](https://quizlet.com/omeatai/folders/amazon-aws-certified-solutions-architect-saa-c03/sets)
+
+</details>
+
+<details>
+  <summary>EXAMS</summary>
+
+###### [0-EXAM TOPICS](https://www.examtopics.com/exams/amazon/)
+
+###### [1-AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C01](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner/)
+
+###### [2-AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C02](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner-clf-c02/)
+
+###### [3-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c02/)
+
+###### [4-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C03 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c03/)
+
+###### [4B-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - ASSOCIATE SAA-C03 EXAM](https://www.freecram.net/question/Amazon.SAA-C03.v2023-11-20.q231/a-serverless-application-uses-amazon-api-gateway-aws-lambda-and-amazon-dynamodb-the-lambda-function)
+
+###### [5-AMAZON AWS CERTIFIED DEVELOPER - ASSOCIATE DVA-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate/)
+
+###### [6-AMAZON AWS CERTIFIED DEVELOPER - ASSOCIATE DVA-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-developer-associate-dva-c02/)
+
+###### [7-AMAZON AWS CERTIFIED SYSOPS ADMINISTRATOR - ASSOCIATE EXAM (SOA-C01)](https://www.examtopics.com/exams/amazon/aws-sysops/)
+
+###### [8-AMAZON AWS CERTIFIED SYSOPS ADMINISTRATOR - ASSOCIATE EXAM (SOA-C02)](https://www.examtopics.com/exams/amazon/aws-certified-sysops-administrator-associate/)
+
+###### [9- AMAZON AWS CERTIFIED SECURITY - SPECIALTY SCS-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty/)
+
+###### [10-AMAZON AWS CERTIFIED SECURITY - SPECIALTY SCS-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-security-specialty-scs-c02/)
+
+###### [11-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C01 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional/)
+
+###### [12-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
+
+
+<details>
+
+###### [1-AWS CERTIFIED CLOUD PRACTITIONER | MASTER AWS FUNDAMENTALS](https://www.udemy.com/course/aws-certified-cloud-practitioner-master-aws-fundamentals/)
+
+###### [2-ULTIMATE AWS CERTIFIED CLOUD PRACTITIONER CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
+
+###### [3-AMAZON WEB SERVICES (AWS) CERTIFIED - 4 CERTIFICATIONS!](https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/)
+
+###### [4-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE SAA-C03](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
+
+###### [5-ULTIMATE AWS CERTIFIED DEVELOPER ASSOCIATE 2023 NEW DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
+
+###### [6-ULTIMATE AWS CERTIFIED SYSOPS ADMINISTRATOR ASSOCIATE 2023](https://www.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/)
+
+###### [7-ULTIMATE AWS CERTIFIED SECURITY SPECIALTY SCS-C02](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/)
+
+###### [8-ULTIMATE AWS CERTIFIED SOLUTIONS ARCHITECT PROFESSIONAL 2023](https://www.udemy.com/course/aws-solutions-architect-professional/)
+
+###### [9-AWS CERTIFIED DEVOPS ENGINEER PROFESSIONAL 2023 - DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/)
+
+###### [10-AWS APPSYNC & AMPLIFY WITH REACT & GRAPHQL - COMPLETE GUIDE](https://www.udemy.com/course/aws-appsync-amplify-with-react-graphql-course/)
+
+###### [11-AWS & TYPESCRIPT MASTERCLASS - CDK V2, SERVERLESS, REACT](https://www.udemy.com/course/aws-typescript-cdk-serverless-react/)
+
+###### [12-BUILD SCALABLE APPLICATIONS USING DOCKER AND KUBERNETES](https://www.udemy.com/course/build-scalable-applications-using-docker-and-kubernetes/)
+
+###### [13-AWS SERVERLESS APIS & APPS - A COMPLETE INTRODUCTION](https://www.udemy.com/course/aws-serverless-a-complete-introduction/)
+
+###### [14-THE COMPLETE GUIDE TO BUILD SERVERLESS APPLICATIONS ON AWS](https://www.udemy.com/course/building-rest-apis-with-serverless/)
+
+###### [15-LEARN TO DEPLOY CONTAINERS ON AWS IN 2022](https://www.udemy.com/course/learn-to-deploy-containers-on-aws-in-2021/)
+
+###### [16-AWS LAMBDA AND THE SERVERLESS FRAMEWORK - HANDS ON LEARNING!](https://www.udemy.com/course/aws-lambda-serverless/)
+
+###### [17-AWS LAMBDA, PYTHON(BOTO3) & SERVERLESS- BEGINNER TO ADVANCED](https://www.udemy.com/course/aws-lambda-and-python-full-course-beginner-to-advanced/)
+
+###### [18-SERVERLESS USING AWS LAMBDA FOR PYTHON DEVELOPERS](https://www.udemy.com/course/serverless-using-aws-lambda-for-python-developers/)
+
+###### [19-DEVOPS DEPLOYMENT AUTOMATION WITH TERRAFORM, AWS AND DOCKER](https://www.udemy.com/course/devops-deployment-automation-terraform-aws-docker/)
+
+###### [20-DEVOPS BOOTCAMP: TERRAFORM](https://www.udemy.com/course/devops-bootcamp-terraform-certification/)
+
+
 ---
 
 ## WEB TUTORIALS
