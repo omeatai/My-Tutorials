@@ -9,7 +9,7 @@
 <details>
   <summary>CODEWARS</summary>
 
-###### [1-EVEN OR ODD](https://scrimba.com/scrim/cEgEzvAd) | [Python](https://scrimba.com/scrim/cEgEzvAd) | [Javascript](https://scrimba.com/scrim/caGEMPU3) | [Typescript](https://scrimba.com/scrim/cgwgPKfP)
+###### [1-EVEN OR ODD](https://scrimba.com/scrim/c6r8ngCM) | [Python](https://scrimba.com/scrim/c6r8ngCM) | [Javascript](https://scrimba.com/scrim/cN8JEqCr)
 
 </details>
 
