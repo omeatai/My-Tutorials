@@ -322,7 +322,9 @@
 
 ###### [1-EXAM TOPICS FOLDERS](https://quizlet.com/omeatai/folders)
 
-###### [2-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT (SAA-C03) FOLDER](https://quizlet.com/omeatai/folders/amazon-aws-certified-solutions-architect-saa-c03/sets)
+###### [2-AMAZON CERTIFIED CLOUD PRACTITIONER (CLF-C02) FOLDER](https://quizlet.com/omeatai/folders/amazon-certified-cloud-practitioner-clf-c02/sets)
+
+###### [3-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT (SAA-C03) FOLDER](https://quizlet.com/omeatai/folders/amazon-aws-certified-solutions-architect-saa-c03/sets)
 
 </details>
 
