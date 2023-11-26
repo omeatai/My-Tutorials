@@ -359,6 +359,9 @@
 
 </details>
 
+<details>
+  <summary>COURSES</summary>
+
 ###### [1-AWS CERTIFIED CLOUD PRACTITIONER | MASTER AWS FUNDAMENTALS](https://www.udemy.com/course/aws-certified-cloud-practitioner-master-aws-fundamentals/)
 
 ###### [2-ULTIMATE AWS CERTIFIED CLOUD PRACTITIONER CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
@@ -399,6 +402,7 @@
 
 ###### [20-DEVOPS BOOTCAMP: TERRAFORM](https://www.udemy.com/course/devops-bootcamp-terraform-certification/)
 
+</details>
 
 ---
 
