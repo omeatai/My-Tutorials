@@ -357,8 +357,7 @@
 
 ###### [12-AMAZON AWS CERTIFIED SOLUTIONS ARCHITECT - PROFESSIONAL SAP-C02 EXAM](https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-professional-sap-c02/)
 
-
-<details>
+</details>
 
 ###### [1-AWS CERTIFIED CLOUD PRACTITIONER | MASTER AWS FUNDAMENTALS](https://www.udemy.com/course/aws-certified-cloud-practitioner-master-aws-fundamentals/)
 
