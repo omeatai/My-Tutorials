@@ -148,6 +148,8 @@
 
 ###### [7-NEXT-MY-PORTFOLIO-APP](https://github.com/omeatai/next-project-my-portfolio)
 
+###### [8-MERN-PROJECT-LIBRARY-TRACKER](https://github.com/omeatai/mern-project-library-tracker)
+
 ---
 
 ## MERN
