@@ -49,6 +49,8 @@
 
 ###### [4-NEXTJS](https://nextjs.org/docs)
 
+###### [5-LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
+
 </details>
 
 <details>
