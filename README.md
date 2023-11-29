@@ -855,7 +855,7 @@
 
 ###### [0-FREECODECAMP)](https://www.youtube.com/@freecodecamp/videos)
 
-###### [1-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
+###### [*1-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
 ###### [2-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
 
