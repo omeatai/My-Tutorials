@@ -945,7 +945,7 @@
 
 ###### [0-JAN MARSHAL](https://www.youtube.com/@janmarshalcoding/videos)
 
-###### [1-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://youtu.be/l0pkuHopo8A?si=L-XOjadFX0Usr4XU)
+###### [***1-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://youtu.be/l0pkuHopo8A?si=L-XOjadFX0Usr4XU) +++
 
 ###### [2-NEXT.JS 14 NETFLIX CLONE USING REACT, SUPABASE, NEXT-AUTH, PRISMA AND TAILWIND.CSS](https://www.youtube.com/watch?v=mTW3V2IpOrg&t=9s&ab_channel=JanMarshal)
 
