@@ -34,7 +34,11 @@
 
 ###### [5-MONGODB ATLAS](https://cloud.mongodb.com/)
 
-###### [6-IMGBB](https://anyi-o.imgbb.com/)
+###### [6-SUPABASE](https://supabase.com/dashboard/projects)
+
+###### [7-FIREBASE](https://firebase.google.com/)
+
+###### [8-IMGBB](https://anyi-o.imgbb.com/)
 
 </details>
 
@@ -50,6 +54,8 @@
 ###### [4-NEXTJS](https://nextjs.org/docs)
 
 ###### [5-LANGCHAIN](https://js.langchain.com/docs/integrations/vectorstores/)
+
+###### [6-LANGCHAIN-SUPABASE](https://js.langchain.com/docs/integrations/vectorstores/supabase)
 
 </details>
 
