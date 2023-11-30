@@ -43,6 +43,22 @@
 </details>
 
 <details>
+  <summary>APIs</summary>
+
+###### [1-PUBLIC APIS 1](https://github.com/public-apis/public-apis#index)
+
+###### [2-PUBLIC APIS 2](https://github.com/n0shake/Public-APIs#sport)
+
+###### [3-THE DEV-FRIENDLY FOOTBALL API](https://www.football-data.org/)
+
+###### [4-RANDOM USER GENERATOR](https://randomuser.me/)[WWW](https://randomuser.me/api/)
+
+###### [5-RANDOM USERS](https://xsgames.co/randomusers/)
+
+</details>
+
+
+<details>
   <summary>FRAMEWORKS</summary>
 
 ###### [1-DJANGO](https://www.djangoproject.com/)
@@ -123,16 +139,6 @@
 
 </details>
 
-<details>
-  <summary>APIs</summary>
-
-###### [1-PUBLIC APIS 1](https://github.com/public-apis/public-apis#index)
-
-###### [2-PUBLIC APIS 2](https://github.com/n0shake/Public-APIs#sport)
-
-###### [3-THE DEV-FRIENDLY FOOTBALL API](https://www.football-data.org/)
-
-</details>
 
 
 
