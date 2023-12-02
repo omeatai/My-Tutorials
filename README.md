@@ -94,7 +94,9 @@
 
 ###### [8-STORYBOOK](https://storybook.js.org/docs/react/get-started/install/)
 
-###### [9-LODASH](https://lodash.com/docs/4.17.15)
+###### [9-LODASH](https://lodash.com/docs/)
+
+###### [10-LOREM IPSUM](https://www.lipsum.com/)
 
 </details>
 
