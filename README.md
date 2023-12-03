@@ -166,6 +166,8 @@
 
 ###### [8-MERN-PROJECT-LIBRARY-TRACKER](https://github.com/omeatai/mern-project-library-tracker)
 
+###### [9-MERN-PROJECT-AUTH-REDUX-TOOLKIT-APP](https://github.com/omeatai/mern-project-auth-redux)
+
 ---
 
 ## MERN
