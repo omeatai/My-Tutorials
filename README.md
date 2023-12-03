@@ -98,6 +98,10 @@
 
 ###### [10-LOREM IPSUM](https://www.lipsum.com/)
 
+###### [11-VITE](https://vitejs.dev/)
+
+###### [12-REACT BOOTSTRAP](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
+
 </details>
 
 <details>
