@@ -176,6 +176,9 @@
 
 ---
 
+<details>
+  <summary>UDEMY</summary>
+
 ###### [1-UDEMY-COMPLETE REACT DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) | [[LAB]](/courses/mern/1.md)
 
 ###### [2-UDEMY-COMPLETE NODE DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery/) | [[LAB]](/courses/mern/2.md)
@@ -218,19 +221,29 @@
 
 ###### [21-UDEMY-REACT AND TYPESCRIPT: BUILD A PORTFOLIO PROJECT](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
+</details>
+
 ---
 
 ## NEXTJS
 
 ---
 
+<details>
+  <summary>UDEMY</summary>
+
 ###### [1-UDEMY-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/) | [[LAB]](/courses/next/1.md)
+
+</details>
 
 ---
 
 ## JAVASCRIPT & TYPESCRIPT
 
 ---
+
+<details>
+  <summary>UDEMY</summary>
 
 ###### [1-UDEMY-50 PROJECTS IN 50 DAYS - HTML, CSS & JAVASCRIPT](https://www.udemy.com/course/50-projects-50-days/)
 
@@ -240,11 +253,16 @@
 
 ###### [4-UDEMY-JAVASCRIPT: THE ADVANCED CONCEPTS](https://www.udemy.com/course/advanced-javascript-concepts/)
 
+</details>
+
 ---
 
 ## GRAPHQL
 
 ---
+
+<details>
+  <summary>UDEMY</summary>
 
 ###### [1-UDEMY-GRAPHQL FROM GROUND UP](https://www.udemy.com/course/graphql-from-ground-up/)
 
@@ -254,11 +272,16 @@
 
 ###### [4-UDEMY-GRAPHQL - GRAPHQL IN REACT.JS AND NODE.JS](https://www.udemy.com/course/graph-ql/)
 
+</details>
+
 ---
 
 ## PYTHON & DJANGO
 
 ---
+
+<details>
+  <summary>UDEMY</summary>
 
 ###### [1-UDEMY-100 DAYS OF CODE: THE COMPLETE PYTHON PRO BOOTCAMP FOR 2023 - ANGELA YU](https://www.udemy.com/course/100-days-of-code/) | [[LAB]](/courses/python/1.md)
 
@@ -304,11 +327,16 @@
 
 ###### [100-DJANGO COURSE FOR ABSOLUTE BEGINNERS - SSALI JONATHAN](/courses/python/100.md) | [[LAB]](/courses/python/100.md)
 
+</details>
+
 ---
 
 ## AI & LANGCHAIN
 
 ---
+
+<details>
+  <summary>UDEMY</summary>
 
 ###### [1-UDEMY-MASTER THE CODING INTERVIEW: DATA STRUCTURES + ALGORITHMS - ZERO TO MASTERY](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/) [[LAB]](/courses/ai/1.md)
 
@@ -334,6 +362,7 @@
 
 ###### [12-UDEMY-OPENAI API WITH PYTHON BOOTCAMP: CHATGPT API, GPT-4, DALL·E](https://www.udemy.com/course/openai-api-chatgpt-gpt4-with-python-bootcamp/)
 
+</details>
 
 ---
 
