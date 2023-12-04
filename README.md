@@ -586,6 +586,73 @@
 
 </details>
 
+</details>
+
+<details>
+  <summary>3. FIGMA</summary>
+
+  ###### [1-]()
+
+  ###### [2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://youtu.be/c9Wg6Cb_YlU?si=ZnqA2oSvwl-oxqp_)
+
+  ###### [3-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
+
+  ###### [4-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
+
+  ###### [5-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
+
+  ###### [6-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+  ###### [1-]()
+
+</details>
+
 ---
 
 ## YOUTUBE PR
