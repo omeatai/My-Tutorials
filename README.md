@@ -591,65 +591,83 @@
 <details>
   <summary>3. FIGMA</summary>
 
-  ###### [1-]()
+  ###### [0-DREAMAXHQ](https://app.dreamaxhq.com/courses/)
 
-  ###### [2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://youtu.be/c9Wg6Cb_YlU?si=ZnqA2oSvwl-oxqp_)
+  ###### [1-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
 
-  ###### [3-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
+  ###### [2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
 
-  ###### [4-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
+  ###### [3-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
 
-  ###### [5-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
+  ###### [4-STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
 
-  ###### [6-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
+  ###### [5-MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
 
-  ###### [1-]()
+  ###### [6-DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
 
-  ###### [1-]()
+  ###### [7-FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
 
-  ###### [1-]()
+  ###### [8-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
 
-  ###### [1-]()
+  ###### [9-FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
 
-  ###### [1-]()
+  ###### [10-FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
 
-  ###### [1-]()
+  ###### [11-FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
 
-  ###### [1-]()
+  ###### [12-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
 
-  ###### [1-]()
+  ###### [13-DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
 
-  ###### [1-]()
+  ###### [14-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
 
-  ###### [1-]()
+  ###### [15-FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
 
-  ###### [1-]()
+  ###### [16-DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
 
-  ###### [1-]()
+  ###### [17-FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
 
-  ###### [1-]()
+  ###### [18-WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
 
-  ###### [1-]()
+  ###### [19-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
 
-  ###### [1-]()
+  ###### [20-FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
 
-  ###### [1-]()
+  ###### [21-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
 
-  ###### [1-]()
+  ###### [22-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
 
-  ###### [1-]()
+  ###### [23-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
 
-  ###### [1-]()
+  ###### [24-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
 
-  ###### [1-]()
+  ###### [25-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
 
-  ###### [1-]()
+  ###### [26-FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
 
-  ###### [1-]()
+  ###### [27-RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
 
-  ###### [1-]()
+  ###### [28-DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
 
-  ###### [1-]()
+  ###### [29-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
+
+  ###### [30-FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
+
+  ###### [31-FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
+
+  ###### [32-NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
+
+  ###### [33-WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
+
+  ###### [34-CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
+
+  ###### [35-FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
+
+  ###### [36-THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
+
+  ###### [37-FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
+
+  ###### [38-THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
 
 </details>
 
