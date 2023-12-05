@@ -515,13 +515,13 @@
 
 ###### [3-THE AI ENGINEER PATH](https://scrimba.com/learn/aiengineer)
 
-###### [4-LEARN TO CODE WITH AI](https://scrimba.com/learn/aicoding)
+###### [4-BUILD AI APPS WITH CHATGPT, DALL-E AND GPT-4](https://scrimba.com/learn/buildaiapps)
 
-###### [5-BUILD AI APPS WITH CHATGPT, DALL-E AND GPT-4](https://scrimba.com/learn/buildaiapps)
+###### [5-THE OFFICIAL LANGCHAIN.JS COURSE](https://scrimba.com/learn/langchain)
 
-###### [6-THE OFFICIAL LANGCHAIN.JS COURSE](https://scrimba.com/learn/langchain)
+###### [6-PROMPT ENGINEERING FOR WEB DEVELOPERS](https://scrimba.com/learn/promptengineering)
 
-###### [7-PROMPT ENGINEERING FOR WEB DEVELOPERS](https://scrimba.com/learn/promptengineering)
+###### [7-LEARN TO CODE WITH AI](https://scrimba.com/learn/aicoding)
 
 ###### [8-LEARN HTML AND CSS](https://scrimba.com/learn/htmlandcss)
 
@@ -1308,16 +1308,6 @@
 
 <details>
   <summary>A </summary>
-
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
-
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
-
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
-
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
-
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
 ###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
 
