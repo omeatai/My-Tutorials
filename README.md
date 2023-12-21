@@ -181,47 +181,69 @@
 <details>
   <summary>UDEMY</summary>
 
-###### [1-UDEMY-COMPLETE REACT DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) | [[LAB]](/courses/mern/1.md)
+###### [1-UDEMY-50 PROJECTS IN 50 DAYS - HTML, CSS & JAVASCRIPT](https://www.udemy.com/course/50-projects-50-days/)
 
-###### [2-UDEMY-COMPLETE NODE DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery/) | [[LAB]](/courses/mern/2.md)
+###### [2-UDEMY-10 MEGA RESPONSIVE WEBSITES WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/10-mega-responsive-websites-with-html-css-and-javascript/)
 
-###### [3-UDEMY-COMPLETE REACT NATIVE IN 2023 - ZTM](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/) | [[LAB]](/courses/mern/3.md)
+###### [3-UDEMY-BUILD A QUIZ APP WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
 
-###### [4-UDEMY-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](https://www.udemy.com/course/full-stack-web-development-using-the-mern-stack-and-devops/) | [[LAB]](/courses/mern/4.md)
+###### [4-UDEMY-JAVASCRIPT: THE ADVANCED CONCEPTS](https://www.udemy.com/course/advanced-javascript-concepts/)
 
-###### [5-UDEMY-AUTOMATED TESTING USING SUPERTEST AND JEST - ODAFE](https://www.udemy.com/course/automated-testing-using-supertest-and-jest/)
+###### [5-UDEMY-TYPESCRIPT DEVELOPER COURSE IN 2023 – BEGINNER TO EXPERT](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
 
-###### [6-UDEMY-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](https://www.udemy.com/course/react-beginner-to-advanced-with-redux-ecommerce-app/) | [[LAB]](/courses/mern/6.md)
+###### [6-UDEMY-REACT & TYPESCRIPT - THE PRACTICAL GUIDE](https://www.udemy.com/course/react-typescript-the-practical-guide/)
 
-###### [7-UDEMY-MERN STACK BOOTCAMP 2023 - MONGODB, EXPRESS, REACT & NODEJS - ZINO ACADEMY](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
+###### [7-UDEMY-REACT AND TYPESCRIPT: BUILD A PORTFOLIO PROJECT](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
-###### [8-UDEMY-ADVANCED MERN STACK AUTHENTICATION - ZINO ACADEMY](https://www.udemy.com/course/advanced-mern-stack-authentication/)
+###### [8-UDEMY-JAVASCRIPT UNIT TESTING - THE PRACTICAL GUIDE](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
 
-###### [9-UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
+###### [9-UDEMY-CYPRESS END-TO-END TESTING - GETTING STARTED](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
 
-###### [10-UDEMY-THE COMPLETE 2023 WEB DEVELOPMENT BOOTCAMP - ANGELA YU](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
+###### [10-UDEMY-REACT TESTING LIBRARY AND JEST: THE COMPLETE GUIDE](https://www.udemy.com/course/react-testing-library-and-jest/)
 
-###### [11-UDEMY-THE WEB DEVELOPER BOOTCAMP 2023 - COLT STEELE](https://www.udemy.com/course/the-web-developer-bootcamp/)
+###### [11-UDEMY-REACT NATIVE - THE PRACTICAL GUIDE [2023]](https://www.udemy.com/course/react-native-the-practical-guide/)
 
-###### [12-UDEMY-REACT-THE COMPLETE GUIDE 2023 - MAX](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
+###### [12-UDEMY-COMPLETE REACT NATIVE IN 2023 - ZTM](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/) | [[LAB]](/courses/mern/12.md)
 
-###### [13-UDEMY-THE COMPLETE NODE.JS DEVELOPER COURSE - ANDREW MEAD](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+###### [13-UDEMY-DOCKER & KUBERNETES: THE PRACTICAL GUIDE [2023 EDITION]](https://www.udemy.com/course/docker-kubernetes-the-practical-guide/)
 
-###### [14-UDEMY-REACT-BUILD YOUR REACT APP FAST USING REACT DESIGN SYSTEM](https://www.udemy.com/course/creative-tim/)
+###### [14-UDEMY-REACT - THE COMPLETE GUIDE 2023 (INCL. REACT ROUTER & REDUX)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 
-###### [15-UDEMY-REACT TESTING LIBRARY AND JEST: THE COMPLETE GUIDE](https://www.udemy.com/course/react-testing-library-and-jest/)
+###### [15-UDEMY-COMPLETE REACT DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) | [[LAB]](/courses/mern/15.md)
 
-###### [16-UDEMY-CYPRESS END-TO-END TESTING - GETTING STARTED](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
+###### [16-UDEMY-REACT-BUILD YOUR REACT APP FAST USING REACT DESIGN SYSTEM](https://www.udemy.com/course/creative-tim/)
 
-###### [17-UDEMY-MICROSERVICES WITH NODE JS AND REACT](https://www.udemy.com/course/microservices-with-node-js-and-react/)
+###### [17-UDEMY-COMPLETE NODE DEVELOPER IN 2023 - ZTM](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery/) | [[LAB]](/courses/mern/17.md)
 
-###### [18-UDEMY-MICROFRONTENDS WITH REACT: A COMPLETE DEVELOPER'S GUIDE](https://www.udemy.com/course/microfrontend-course/)
+###### [18-UDEMY-THE COMPLETE NODE.JS DEVELOPER COURSE - ANDREW MEAD](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
 
-###### [19-UDEMY-NESTJS MICROSERVICES: BUILD & DEPLOY A SCALEABLE BACKEND](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+###### [19-UDEMY-MICROSERVICES WITH NODE JS AND REACT](https://www.udemy.com/course/microservices-with-node-js-and-react/)
 
-###### [20-UDEMY-TYPESCRIPT DEVELOPER COURSE IN 2023 – BEGINNER TO EXPERT](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
+###### [20-UDEMY-MICROFRONTENDS WITH REACT: A COMPLETE DEVELOPER'S GUIDE](https://www.udemy.com/course/microfrontend-course/)
 
-###### [21-UDEMY-REACT AND TYPESCRIPT: BUILD A PORTFOLIO PROJECT](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
+###### [21-UDEMY-FULL STACK WEB DEVELOPMENT USING THE MERN STACK AND DEVOPS - ODAFE](https://www.udemy.com/course/full-stack-web-development-using-the-mern-stack-and-devops/) | [[LAB]](/courses/mern/21.md)
+
+###### [22-UDEMY-AUTOMATED TESTING USING SUPERTEST AND JEST - ODAFE](https://www.udemy.com/course/automated-testing-using-supertest-and-jest/)
+
+###### [23-UDEMY-REACT - BEGINNER TO ADVANCED (REDUX & ECOMMERCE APP) - ZINO ACADEMY](https://www.udemy.com/course/react-beginner-to-advanced-with-redux-ecommerce-app/) | [[LAB]](/courses/mern/23.md)
+
+###### [24-UDEMY-MERN STACK BOOTCAMP 2023 - MONGODB, EXPRESS, REACT & NODEJS - ZINO ACADEMY](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
+
+###### [25-UDEMY-ADVANCED MERN STACK AUTHENTICATION - ZINO ACADEMY](https://www.udemy.com/course/advanced-mern-stack-authentication/)
+
+###### [26-UDEMY-COMPLETE WEB & MOBILE DESIGNER IN 2023](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
+
+###### [27-UDEMY-THE COMPLETE 2023 WEB DEVELOPMENT BOOTCAMP - ANGELA YU](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
+
+###### [28-UDEMY-THE WEB DEVELOPER BOOTCAMP 2023 - COLT STEELE](https://www.udemy.com/course/the-web-developer-bootcamp/)
+
+###### [29-UDEMY-COMPLETE ANGULAR DEVELOPER IN 2023: ZERO TO MASTERY](https://www.udemy.com/course/complete-angular-developer-zero-to-mastery/)
+
+###### [30-UDEMY-ANGULAR - THE COMPLETE GUIDE (2023 EDITION)](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
+
+###### [31-UDEMY-ANGULAR (FULL APP) WITH ANGULAR MATERIAL, ANGULARFIRE & NGRX](https://www.udemy.com/course/angular-full-app-with-angular-material-angularfire-ngrx/)
+
+###### [32-UDEMY-NESTJS MICROSERVICES: BUILD & DEPLOY A SCALEABLE BACKEND](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 
 </details>
 
@@ -235,25 +257,6 @@
   <summary>UDEMY</summary>
 
 ###### [1-UDEMY-COMPLETE NEXTJS DEVELOPER 2023 - ZTM](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/) | [[LAB]](/courses/next/1.md)
-
-</details>
-
----
-
-## JAVASCRIPT & TYPESCRIPT
-
----
-
-<details>
-  <summary>UDEMY</summary>
-
-###### [1-UDEMY-50 PROJECTS IN 50 DAYS - HTML, CSS & JAVASCRIPT](https://www.udemy.com/course/50-projects-50-days/)
-
-###### [2-UDEMY-10 MEGA RESPONSIVE WEBSITES WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/10-mega-responsive-websites-with-html-css-and-javascript/)
-
-###### [3-UDEMY-BUILD A QUIZ APP WITH HTML, CSS, AND JAVASCRIPT](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
-
-###### [4-UDEMY-JAVASCRIPT: THE ADVANCED CONCEPTS](https://www.udemy.com/course/advanced-javascript-concepts/)
 
 </details>
 
