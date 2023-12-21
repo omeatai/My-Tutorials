@@ -102,6 +102,8 @@
 
 ###### [12-REACT BOOTSTRAP](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
 
+###### [13-PYTHON MODULE INDEX](https://docs.python.org/3/py-modindex.html)
+
 </details>
 
 <details>
@@ -114,11 +116,11 @@
 <details>
   <summary>EDITOR</summary>
 
-###### [1-CANVA](https://www.canva.com/)
+###### [1-CONVERTCASE](https://convertcase.net/)
 
-###### [2-IPICCY](https://ipiccy.com/)
+###### [2-CANVA](https://www.canva.com/)
 
-###### [3-CONVERTCASE](https://convertcase.net/)
+###### [3-IPICCY](https://ipiccy.com/)
 
 ###### [4-JSON VIEWER](https://codebeautify.org/jsonviewer)
 
