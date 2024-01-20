@@ -266,25 +266,6 @@
 
 ---
 
-## GRAPHQL
-
----
-
-<details>
-  <summary>UDEMY</summary>
-
-###### [1-UDEMY-GRAPHQL FROM GROUND UP](https://www.udemy.com/course/graphql-from-ground-up/)
-
-###### [2-UDEMY-GRAPHQL - A PRIMER](https://www.udemy.com/course/graphql-a-primer/)
-
-###### [3-UDEMY-GRAPHQL - BEGINNER'S COURSE](https://www.udemy.com/course/graphql-a-primer/)
-
-###### [4-UDEMY-GRAPHQL - GRAPHQL IN REACT.JS AND NODE.JS](https://www.udemy.com/course/graph-ql/)
-
-</details>
-
----
-
 ## PYTHON & DJANGO
 
 ---
@@ -994,16 +975,6 @@
 
 ###### [2-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
 
-###### [3-PERSONAL WEBSITE TUTORIAL WITH NEXT.JS 13, SANITY.IO, TAILWINDCSS, AND TYPESCRIPT](https://www.youtube.com/watch?v=OcTPaUfay5I&ab_channel=freeCodeCamp.org)
-
-###### [4-SANITY CRASH COURSE: LEARN THE BASICS IN 20 MINUTES!](https://www.youtube.com/watch?v=bDVAQZVeebw&ab_channel=SanityComposableContentCloud)
-
-###### [5-SANITY.IO CRASH COURSE | HEADLESS CMS](https://www.youtube.com/watch?v=32RP-sG1njE&ab_channel=TraversyMedia)
-
-###### [6-STRAPI V4 CRASH COURSE 2023 [ GETTING STARTED WITH STRAPI ]](https://www.youtube.com/watch?v=RceLeh9D85o&ab_channel=CodingAfterThirty)
-
-###### [7-STRAPI (HEADLESS CMS) CRASH COURSE](https://www.youtube.com/watch?v=KttoG7wDJP0&ab_channel=LaithAcademy)
-
 </details>
 
 
@@ -1314,13 +1285,70 @@
 
 </details>
 
+---
+
+## TOP PR
+
+---
 
 <details>
-  <summary>A </summary>
-
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
-
-###### [100-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org)
-
+  <summary>HTML, CSS, TAILWINDCSS, MUI & FIGMA</summary>
+  
 </details>
+
+<details>
+  <summary>JAVASCRIPT & TYPESCRIPT</summary>
+  
+</details>
+
+<details>
+  <summary>REACT, NODEJS & NEXTJS</summary>
+  
+</details>
+
+<details>
+  <summary>PYTHON, DJANGO & OPENAI</summary>
+  
+</details>
+
+<details>
+  <summary>HEADLESS CMS, STRAPI, SANITY.IO</summary>
+
+###### [1-PERSONAL WEBSITE TUTORIAL WITH NEXT.JS 13, SANITY.IO, TAILWINDCSS, AND TYPESCRIPT](https://www.youtube.com/watch?v=OcTPaUfay5I&ab_channel=freeCodeCamp.org)
+
+###### [2-SANITY CRASH COURSE: LEARN THE BASICS IN 20 MINUTES!](https://www.youtube.com/watch?v=bDVAQZVeebw&ab_channel=SanityComposableContentCloud)
+
+###### [3-SANITY.IO CRASH COURSE | HEADLESS CMS](https://www.youtube.com/watch?v=32RP-sG1njE&ab_channel=TraversyMedia)
+
+###### [4-STRAPI V4 CRASH COURSE 2023 [ GETTING STARTED WITH STRAPI ]](https://www.youtube.com/watch?v=RceLeh9D85o&ab_channel=CodingAfterThirty)
+
+###### [5-STRAPI (HEADLESS CMS) CRASH COURSE](https://www.youtube.com/watch?v=KttoG7wDJP0&ab_channel=LaithAcademy)
+  
+</details>
+
+<details>
+  <summary>GRAPHQL</summary>
+
+###### [1-UDEMY-GRAPHQL FROM GROUND UP](https://www.udemy.com/course/graphql-from-ground-up/)
+
+###### [2-UDEMY-GRAPHQL - A PRIMER](https://www.udemy.com/course/graphql-a-primer/)
+
+###### [3-UDEMY-GRAPHQL - BEGINNER'S COURSE](https://www.udemy.com/course/graphql-a-primer/)
+
+###### [4-UDEMY-GRAPHQL - GRAPHQL IN REACT.JS AND NODE.JS](https://www.udemy.com/course/graph-ql/)
+  
+</details>
+
+
+<details>
+  <summary>A</summary>
+  
+</details>
+
+
+<details>
+  <summary>A</summary>
+  
+</details>
+
 
