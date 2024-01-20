@@ -57,7 +57,6 @@
 
 </details>
 
-
 <details>
   <summary>FRAMEWORKS</summary>
 
@@ -150,7 +149,6 @@
 ###### [10-GETIMG.AI](https://getimg.ai/)
 
 </details>
-
 
 ---
 
@@ -610,83 +608,83 @@
 <details>
   <summary>3. FIGMA</summary>
 
-  ###### [0-DREAMAXHQ](https://app.dreamaxhq.com/courses/)
+###### [0-DREAMAXHQ](https://app.dreamaxhq.com/courses/)
 
-  ###### [1-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
+###### [1-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://www.youtube.com/watch?v=jwCmIBJ8Jtc&t=145s&ab_channel=freeCodeCamp.org)
 
-  ###### [2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
+###### [2-UI / UX DESIGN TUTORIAL – WIREFRAME, MOCKUP & DESIGN IN FIGMA](https://www.youtube.com/watch?v=c9Wg6Cb_YlU&ab_channel=freeCodeCamp.org)
 
-  ###### [3-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
+###### [3-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&t=8653s&ab_channel=JesseShowalter)
 
-  ###### [4-STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
+###### [4-STAY AHEAD IN 2024 WITH THIS REEDED GLASS EFFECT | SIGNUP SCREEN DESIGN](https://www.youtube.com/watch?v=P4r2AO2pyyY&ab_channel=DesignSense)
 
-  ###### [5-MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
+###### [5-MESSAGES RECOVERY APP DESIGN | UX/UI (LO-FI & HI-FI & PROTOTYPING)](https://www.youtube.com/watch?v=HE2MYMvBHKo&ab_channel=DesignSense)
 
-  ###### [6-DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
+###### [6-DESIGN A WEBSITE IN UNDER 1 HOUR WITH FIGMA](https://www.youtube.com/watch?v=FK4YusHIIj0&ab_channel=developedbyed)
 
-  ###### [7-FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
+###### [7-FIGMA TUTORIAL FOR UI DESIGN](https://www.youtube.com/watch?v=YmdtXc_bzDw&ab_channel=DevAndDesign)
 
-  ###### [8-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
+###### [8-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://www.youtube.com/watch?v=kbZejnPXyLM&t=21s&ab_channel=BringYourOwnLaptop)
 
-  ###### [9-FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
+###### [9-FIGMA MASTERCLASS FOR BEGINNERS (2023 UPDATED)](https://www.youtube.com/watch?v=II-6dDzc-80&ab_channel=JesseShowalter)
 
-  ###### [10-FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
+###### [10-FIGMA MASTERCLASS COURSE 2023 | FIGMA TUTORIAL FOR BEGINNERS](https://www.youtube.com/watch?v=XiqitRY3swo&ab_channel=Mizko)
 
-  ###### [11-FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
+###### [11-FIGMA TUTORIAL FOR BEGINNERS: COMPLETE WEBSITE FROM START TO FINISH](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&ab_channel=FluxAcademy)
 
-  ###### [12-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
+###### [12-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://youtu.be/JGLfyTDgfDc?si=i80GFsAzlOGKn99N)
 
-  ###### [13-DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
+###### [13-DESIGN A SIGNUP PAGE IN FIGMA | UI/WEB DESIGN TUTORIAL](https://www.youtube.com/watch?v=8ly4Z3e3cPw&ab_channel=JesseShowalter)
 
-  ###### [14-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
+###### [14-DAILY UI DESIGN CHALLENGE | DAY - 01 | SIGN UP PAGE](https://www.youtube.com/watch?v=xyr3Vj83lJI&ab_channel=DesignSense)
 
-  ###### [15-FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
+###### [15-FIGMA TUTORIAL FOR BEGINNERS 2023 | WEB DESIGN OF LANDING PAGE](https://www.youtube.com/watch?v=sUM0IUURMqM&ab_channel=SteveEditor)
 
-  ###### [16-DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
+###### [16-DESIGN A LANDING PAGE IN FIGMA](https://www.youtube.com/watch?v=lF7LlSEz3-o&ab_channel=codewithlari)
 
-  ###### [17-FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
+###### [17-FLAT UI DESIGN IN FIGMA: SOCIAL MEDIA APP - FULL COURSE](https://www.youtube.com/watch?v=qiW2qKVGT6k&ab_channel=DesignCode)
 
-  ###### [18-WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
+###### [18-WEATHER APP UI DESIGN IN FIGMA - FULL COURSE](https://www.youtube.com/watch?v=48YwaTiYau0&ab_channel=DesignCode)
 
-  ###### [19-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
+###### [19-FIGMA TUTORIAL FOR UI DESIGN - COURSE FOR BEGINNERS](https://youtu.be/jwCmIBJ8Jtc?si=DHcaKIWI9cLOasIo)
 
-  ###### [20-FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
+###### [20-FIGMA TUTORIAL: A CRASH COURSE FOR BEGINNERS](https://youtu.be/IOVFRMuPeVQ?si=v0FYx12R5pACZv93)
 
-  ###### [21-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
+###### [21-FREE FIGMA UX DESIGN UI ESSENTIALS COURSE](https://youtu.be/kbZejnPXyLM?si=R1A1omPWQnNxYAv3)
 
-  ###### [22-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
+###### [22-FIGMA UI UX DESIGN TUTORIAL - DESIGN A FINTECH APP FROM SCRATCH](https://www.youtube.com/watch?v=PHsVJhco6dY&ab_channel=DevAndDesign)
 
-  ###### [23-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
+###### [23-HOW TO CREATE ANIMATION IN FIGMA - FIGMOTION TUTORIAL](https://www.youtube.com/watch?v=eDBsaSmkREQ&ab_channel=DevAndDesign)
 
-  ###### [24-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
+###### [24-MATERIAL DESIGN FOR UI UX DESIGNERS - UI UX DESIGN TUTORIAL](https://www.youtube.com/watch?v=Abj65tkSblQ&ab_channel=DevAndDesign)
 
-  ###### [25-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
+###### [25-FULL FIGMA COURSE: DESIGN A JOB WEBSITE START TO FINISH](https://www.youtube.com/watch?v=_9-znx3dwjQ&ab_channel=JesseShowalter)
 
-  ###### [26-FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
+###### [26-FIGMA ADVANCED TUTORIAL: A 2-HOUR MASTERCLASS](https://www.youtube.com/watch?v=31wzhvz0vsw&ab_channel=BringYourOwnLaptop)
 
-  ###### [27-RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
+###### [27-RELUME AI WEBSITE BUILDER | $3,000 AN HOUR](https://www.youtube.com/watch?v=3fcjxaYE5aw&ab_channel=JesseShowalter)
 
-  ###### [28-DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
+###### [28-DESIGN A WEBSITE IN FIGMA : PLAYLIST](https://www.youtube.com/playlist?list=PLCUPtxXqnWn0AMIjZmNdkrzWVjLHOW2NT)
 
-  ###### [29-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
+###### [29-INTRODUCING FIGMA: A BEGINNERS TUTORIAL (2023 UI UX DESIGN)](https://www.youtube.com/watch?v=JGLfyTDgfDc&ab_channel=Rino-LivingWithPixels)
 
-  ###### [30-FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
+###### [30-FIGMA MOBILE APP DESIGN TUTORIAL](https://www.youtube.com/watch?v=PeGfX7W1mJk&ab_channel=BuildingAmazingThings)
 
-  ###### [31-FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
+###### [31-FIGMA UI DESIGN TUTORIAL: GET STARTED IN JUST 24 MINUTES!](https://www.youtube.com/watch?v=FTFaQWZBqQ8&ab_channel=AJ%26Smart)
 
-  ###### [32-NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
+###### [32-NIKE MODERN SHOE POSTER DESIGN](https://www.youtube.com/watch?v=PuGXs-7INLo&ab_channel=duiverse)
 
-  ###### [33-WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
+###### [33-WEB DESIGN FOR BEGINNERS | FREE COURSE](https://www.youtube.com/watch?v=B-ytMSuwbf8&ab_channel=EnvatoTuts%2B)
 
-  ###### [34-CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
+###### [34-CREATE A UI INTO A 3D PERSPECTIVE IN FIGMA](https://www.youtube.com/watch?v=JJi5KwdxmiI&ab_channel=DesignCode)
 
-  ###### [35-FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
+###### [35-FIGMA VARIABLES & ADVANCED PROTOTYPING - CRASH COURSE](https://www.youtube.com/watch?v=Tx45NcbU6aA&ab_channel=DesignCourse)
 
-  ###### [36-THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
+###### [36-THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
 
-  ###### [37-FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
+###### [37-FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
 
-  ###### [38-THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
+###### [38-THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
 
 </details>
 
@@ -783,7 +781,6 @@
 
 </details>
 
-
 <details>
   <summary>DAVE GRAY</summary>
 
@@ -828,7 +825,6 @@
 ###### [20-PYTHON TUTORIALS FOR BEGINNERS](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6MQri81d012LwP5jvFZ_scc)
 
 </details>
-
 
 <details>
   <summary>NET NINJA</summary>
@@ -965,25 +961,23 @@
 
 </details>
 
-
 <details>
   <summary>FREECODECAMP </summary>
 
 ###### [0-FREECODECAMP)](https://www.youtube.com/@freecodecamp/videos)
 
-###### [***1-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org) +++
+###### [\*\*\*1-LEARN THE MERN STACK - FULL TUTORIAL (MONGODB, EXPRESS, REACT, NODE.JS)](https://www.youtube.com/watch?v=7CqJlxBYj-M&ab_channel=freeCodeCamp.org) +++
 
 ###### [2-MERN STACK COURSE - ALSO: CONVERT BACKEND TO SERVERLESS WITH MONGODB REALM)](https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org)
 
 </details>
-
 
 <details>
   <summary>TRAVERSY MEDIA </summary>
 
 ###### [0-TRAVERSY MEDIA](https://www.youtube.com/@TraversyMedia/videos)
 
-###### [***1-MERN CRASH COURSE | JWT AUTHENTICATION, REDUX TOOLKIT, DEPLOYMENT & MORE)](https://www.youtube.com/watch?v=R4AhvYORZRY&ab_channel=TraversyMedia) +++
+###### [\*\*\*1-MERN CRASH COURSE | JWT AUTHENTICATION, REDUX TOOLKIT, DEPLOYMENT & MORE)](https://www.youtube.com/watch?v=R4AhvYORZRY&ab_channel=TraversyMedia) +++
 
 ###### [2-LEARN THE MERN STACK](https://www.youtube.com/playlist?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm)
 
@@ -997,7 +991,6 @@
 
 </details>
 
-
 <details>
   <summary>JS MASTERY </summary>
 
@@ -1006,7 +999,6 @@
 ###### [1-BUILD AND DEPLOY A FULL STACK APP USING NEXT.JS 13 - JS MASTERY](/courses/pr/1.md) | [[LAB]](/courses/pr/jsmastery/1.md)
 
 </details>
-
 
 <details>
   <summary>CODE WITH LARI </summary>
@@ -1045,13 +1037,12 @@
 
 </details>
 
-
 <details>
   <summary>JAN MARSHAL </summary>
 
 ###### [0-JAN MARSHAL](https://www.youtube.com/@janmarshalcoding/videos)
 
-###### [***1-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://youtu.be/l0pkuHopo8A?si=L-XOjadFX0Usr4XU) +++
+###### [\*\*\*1-BUILD A MODERN PORTFOLIO WEBSITE WITH NEXT.JS 13, REACT, SANITY.IO, TAILWIND.CSS](https://youtu.be/l0pkuHopo8A?si=L-XOjadFX0Usr4XU) +++
 
 ###### [2-NEXT.JS 14 NETFLIX CLONE USING REACT, SUPABASE, NEXT-AUTH, PRISMA AND TAILWIND.CSS](https://www.youtube.com/watch?v=mTW3V2IpOrg&t=9s&ab_channel=JanMarshal)
 
@@ -1076,7 +1067,6 @@
 ###### [12-BUILDING AN E-COMMERCE STORE WITH REMIX.RUN, STRIPE, AND SANITY.IO: FULL STACK TUTORIAL](https://www.youtube.com/watch?v=r3n7NPlv7bs&ab_channel=JanMarshal)
 
 </details>
-
 
 <details>
   <summary>LAMA DEV </summary>
@@ -1113,7 +1103,6 @@
 
 </details>
 
-
 <details>
   <summary>CODE WITH ANTONIO</summary>
 
@@ -1147,7 +1136,6 @@
 
 </details>
 
-
 <details>
   <summary>KISHAN SHETH</summary>
 
@@ -1165,7 +1153,6 @@
 
 </details>
 
-
 <details>
   <summary>DAILY TUITION </summary>
 
@@ -1176,7 +1163,6 @@
 ###### [2-COMPLETE NEXT.JS COURSE FOR BEGINNERS](https://www.youtube.com/playlist?list=PLynWqC6VC9KOvExUuzhTFsWaxnpP_97BD)
 
 </details>
-
 
 <details>
   <summary>CODING WITH DAWID </summary>
@@ -1193,7 +1179,6 @@
 
 </details>
 
-
 <details>
   <summary>INDGEEK </summary>
 
@@ -1206,7 +1191,6 @@
 ###### [3-STOCK PRICE DROP NOTIFIER USING NODEJS TUTORIAL | FRONTEND | PART 2](https://www.youtube.com/watch?v=v4tT1JZN1BM&ab_channel=IndGeek)
 
 </details>
-
 
 <details>
   <summary>9JACODER </summary>
@@ -1231,7 +1215,6 @@
 
 </details>
 
-
 <details>
   <summary>CODING40</summary>
 
@@ -1248,7 +1231,6 @@
 ###### [5-HOW TO FETCH DATA IN REACT FROM A GRAPHQL API)](https://www.youtube.com/watch?v=N9jK9ipnPw8&t=226s&ab_channel=Coding40)
 
 </details>
-
 
 <details>
   <summary>ELLIOTT CHONG </summary>
@@ -1271,7 +1253,6 @@
 
 </details>
 
-
 <details>
   <summary>PEDRO TECH</summary>
 
@@ -1293,22 +1274,22 @@
 
 <details>
   <summary>HTML, CSS, TAILWINDCSS, MUI & FIGMA</summary>
-  
+
 </details>
 
 <details>
   <summary>JAVASCRIPT & TYPESCRIPT</summary>
-  
+
 </details>
 
 <details>
   <summary>REACT, NODEJS & NEXTJS</summary>
-  
+
 </details>
 
 <details>
   <summary>PYTHON, DJANGO & OPENAI</summary>
-  
+
 </details>
 
 <details>
@@ -1323,7 +1304,7 @@
 ###### [4-STRAPI V4 CRASH COURSE 2023 [ GETTING STARTED WITH STRAPI ]](https://www.youtube.com/watch?v=RceLeh9D85o&ab_channel=CodingAfterThirty)
 
 ###### [5-STRAPI (HEADLESS CMS) CRASH COURSE](https://www.youtube.com/watch?v=KttoG7wDJP0&ab_channel=LaithAcademy)
-  
+
 </details>
 
 <details>
@@ -1336,19 +1317,15 @@
 ###### [3-UDEMY-GRAPHQL - BEGINNER'S COURSE](https://www.udemy.com/course/graphql-a-primer/)
 
 ###### [4-UDEMY-GRAPHQL - GRAPHQL IN REACT.JS AND NODE.JS](https://www.udemy.com/course/graph-ql/)
-  
-</details>
 
+</details>
 
 <details>
   <summary>A</summary>
-  
-</details>
 
+</details>
 
 <details>
   <summary>A</summary>
-  
+
 </details>
-
-
