@@ -703,11 +703,6 @@
 
 </details>
 
-<details>
-  <summary>A</summary>
-
-</details>
-
 ---
 
 ## YOUTUBE
