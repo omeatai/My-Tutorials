@@ -62,6 +62,8 @@
 
 ###### [1-DJANGO](https://www.djangoproject.com/)
 
+###### [1B-DJANGO CLASSES](https://ccbv.co.uk/)
+
 ###### [2-DJANGO REST FRAMEWORK](https://www.django-rest-framework.org/)
 
 ###### [3-REACT](https://react.dev/learn)
